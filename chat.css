@@ -1,0 +1,89 @@
+html,body {margin:0px;padding:0px; height: 100%;}
+
+.chat_header {background: url(img/chat_header.gif) top repeat-x; font-size: 16px; font-weight: bold; color:#ffffff; padding: 4px 10px 6px; height: 30px;}
+.chat_header a {font-size: 12px; font-weight: normal; color:#91c2ed; margin-left: 10px;}
+.chattbl {width: 100%; height: 100%; background: url(img/chatbgleft.gif) left top #dce1e7 repeat-y;}
+.chattbl td {vertical-align: top;}
+.searchf {width: 195px; padding-top: 5px; padding-bottom: 5px; padding-right: 25px; margin: 10px 0 0 10px; color:#585757;}
+.searchfclose {position: absolute; z-index:10; top: 16px; left: 211px;}
+
+.ch_userlstbx {overflow: auto; height: 370px; margin-top: 7px;}
+.ch_userlist {width: 100%;}
+.ch_userlist td {padding: 2px 4px 2px 5px; vertical-align: middle;}
+
+.ch_start {color:#989fab; font-size: 30px; font-weight: bold; text-align:center; line-height: 95%;}
+.ch_start_m { font-size: 18px; padding: 17px 0;}
+.ch_start_b {color:#545e70; font-size: 24px;}
+
+.chatarr {padding: 4px 5px !important;}
+.chatarr a {background: url(img/chatarrow_right.gif) 5px center no-repeat; padding-left: 15px; font-weight: bold;}
+.chatarr_dwn {padding: 4px 5px !important;}
+.chatarr_dwn a {background: url(img/chatarrow_down.gif) 5px center no-repeat; padding-left: 15px; color:#030303; font-weight: bold;}
+
+.chbg1 {background-color:#f0ede0;}
+.chbg2 {background-color:#dce1e7;}
+.chbg3 {background-color:#e4e2da;}
+
+.notactive {color:#bababa;}
+.notactive a {color:#bababa;}
+
+.chbotbutbx {height: 50px; padding-top: 10px;}
+.chbotbut {overflow: hidden; zoom: 1; margin-left: 7px;}
+.chbotbut li {float: left;}
+
+.messagestd {background-color:#ffffff; border-left: solid 10px #DCE1E7; border-right: solid 10px #DCE1E7; padding: 0px !important;}
+.messagesbx {background-color:#ffffff; overflow: auto; /*height: 370px;*/}
+.messagesbx ul {width: 100%;}
+.messagesbx ul li {padding: 5px 3px 5px 10px; overflow: hidden;}
+.messagesbx .timeline {border-top: solid 1px #cdcdcd;}
+.messagesbx .time {float: right; width: 50px; color:#999999 !important; text-align: right;}
+.messagesbx .time span {font-weight: normal !important; padding: 2px 4px; color:#999999 !important;}
+.messagesbx .current {background-color:#f0ede0; -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px; font-weight: normal !important; padding: 2px 4px; color:#999999 !important;}
+.messagesbx .mess {margin-right: 50px;}
+.messagesbx .user1 {border-top: solid 1px #cdcdcd;}
+.messagesbx .user1 span {color:#454545; font-weight: bold;}
+.messagesbx .user2 {border-top: solid 1px #ededed;}
+.messagesbx .user2 span {color:#a8bb0b; font-weight: bold;}
+
+.chatrighttbltoptd {height: 70px;}
+.chatrighttbltop {overflow: hidden; zoom: 1; position: relative;}
+.chatrighttbltop .uname {margin-top: 20px; float: left; font-size: 14px; font-weight: bold;}
+.chatrighttbltop .brdpic8 {float: left; margin-right: 7px;}
+
+.chatrighttbl {width: 100%; height: 100%;}
+.chatrighttbl td {padding: 10px 10px 0 10px;}
+
+.chatrighttblsrchbg {height: 37px;}
+.chsearch {width: 100%;}
+.chsearch td {vertical-align: middle; padding: 0 5px 0 0;}
+
+.chinputtd {height: 120px;}
+.chinputmes {background: url(img/chinputtxbg.gif) top repeat-x; padding: 6px 0 4px;}
+.chinputmes .leftlnks {float: left; margin-left: 10px;}
+.chinputmes .leftlnks li {float: left; margin-right: 5px;}
+.chinputmes .rightlnks {float: right; margin-right: 10px;}
+.chinputmesarea {background-color:#ffffff;}
+.chinputmesarea textarea {border: none; width: 100%; height: 70px;}
+
+.matches1 {background: url(img/matchesbg1.gif) left no-repeat; width: 111px; font-size: 14px; color:#8894a3; font-weight: bold; text-shadow:0px -1px 0px #d5dbe2; text-align:center; padding: 7px 0;}
+.matches2 {background: url(img/matchesbg2.gif) left no-repeat; width: 110px; font-size: 14px; color:#ffffff; font-weight: bold; text-shadow:0px -1px 0px #586d88; text-align:center; padding: 7px 0;}
+.inbox1 {background: url(img/inboxbg1.gif) right no-repeat; width: 109px; font-size: 14px; color:#ffffff; font-weight: bold; text-shadow:0px 1px 0px #938d7a; text-align:center; padding: 7px 0;}
+.inbox2 {background: url(img/inboxbg2.gif) right no-repeat; width: 110px; font-size: 14px; color:#8894a3; font-weight: bold; text-shadow:0px 1px 0px #ced4de; text-align:center; padding: 7px 0;}
+
+.cntr3 {background: url(img/hm_left.png) left no-repeat; color:#ffffff; text-decoration: none; padding: 2px 0px 2px 6px; font-size: 12px;}
+.cntr3 span {font-size: 12px; color:#ffffff; background: url(img/hm_right.png) right no-repeat; padding: 2px 5px 2px 0px; text-shadow: none; font-weight: normal;}
+
+.cntr4 {background: url(img/hm_left2.gif) left no-repeat; color:#ffffff; text-decoration: none; padding: 2px 0px 2px 6px; font-size: 12px;}
+.cntr4 span {font-size: 12px; color:#ffffff; background:
+url(img/hm_right2.gif) right no-repeat; padding: 2px 5px 2px 0px; text-shadow:
+none; font-weight: normal;}
+
+
+
+.timeline {border-bottom: solid 1px #cccccc; border-top: solid 1px #cccccc; padding:6px 3px; color:#808080; line-height: 16px;}
+.tl_topmess {overflow: hidden; color:#}
+.tl_topmess li {float: left; padding: 0px 3px 1px; margin-right: 0px;}
+.tl_topmess li.active {font-weight:bold;}
+.tl_topmess li.active a {color:#333}
+.tl_topmess li.active a:hover {color:#ffffff; text-decoration: none;}
+

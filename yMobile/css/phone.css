@@ -1,0 +1,34 @@
+.fs12{font-size:12px;}
+.normal{font-weight:normal;}
+
+.ui-header .under-title, .ui-footer .under-title {
+    display: block;
+    font-size: 10px;
+    font-weight: normal;
+    margin: 0 90px 0.8em;
+    min-height: 1.1em;
+    outline: 0 none !important;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    white-space: nowrap;
+}
+.ui-header .ui-title{
+	margin-bottom:0;
+}
+.ui-table{
+	border-collapse:collapse;
+	width:100%;
+}
+.ui-table td{
+	font-size:11px;
+	padding:5px;
+	font-weight:normal;
+}
+.listview-w3{
+	width:33%;
+	float:left;
+}
+.ui-content.ui-body-b{
+	background:transparent;
+}

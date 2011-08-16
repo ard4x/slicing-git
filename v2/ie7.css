@@ -1,0 +1,11 @@
+.button_blue, .button_green, .button_white {padding: 0 10px; overflow: visible}
+
+    .gb_left,.gb_right,.bb_left,.bb_right { top:0px;} 
+	.gb_left,.bb_left{left:0px!important;}
+    .blue_but.big .bb_left ,.blue_but.big .bb_right { top:-0px!important;} 
+    .blue_but.big .bb_left ,.blue_but.big .bb_right { top:-0px!important;} 
+	.lookingbx .searchbox {margin-right:20px;}
+	.invis {display: inline;}
+	.subnav li {display: block; float:left;}
+	.register_info_table .proflist .description {margin-left: 0px;}
+	.yangutu_popap .yp_content_left{width:100%;}

@@ -1,0 +1,12 @@
+body {
+    color: #010101;
+    font-family: arial,sans-serif;
+    font-size: 12px;
+    text-align: left;
+}
+.button_blue,.button_green,.button_white{background:url(../img/buttons_bg.jpg) 0 0 repeat-x; box-shadow:1px 1px 3px #666565; -moz-box-shadow:1px 1px 3px #666565; -webkit-box-shadow:1px 1px 3px #666565; cursor:pointer; padding:0 6px 3px 6px; font-weight:bold; text-shadow: 1px -1px 1px #6e6d6d; border:none;}
+	.button_blue,.button_green{color:#fff;}
+	.button_green{background-position: 0 -33px;}
+	.button_white{color:#a09f9f; background-position: 0 -66px; text-shadow: 1px -1px 1px #fff;}
+	.button_blue.large,.button_green.large,.button_white.large{height:33px; font-size:14px;}
+	.button_blue.small,.button_green.small,.button_white.small{height:27px; font-size:12px;}
