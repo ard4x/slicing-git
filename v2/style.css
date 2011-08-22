@@ -1266,6 +1266,7 @@ a:hover.thlink{text-decoration:underline!important;}
 	.mess3{background: url(img/message_ico.png) 50% 0 no-repeat; height:27px; margin-bottom:3px; position:relative; left:1px;}
 	.mess4{background: url(img/soul_ico.png) 50% 0 no-repeat; height:27px; margin-bottom:3px;}
 	.mess5{background: url(img/notif_ico.png) 50% 0 no-repeat; height:28px; margin-bottom:2px;}
+	.mess6{background: url(img/fbdatting_ico.png) 50% 0 no-repeat; height:28px; margin-bottom:2px;}
 
 .wtit {background-color:#f7f2d5; font-weight: bold; padding: 4px 3px 4px 6px; overflow: hidden; zoom: 1;}
 .lookingbx .titlebar {font-size: 14px; overflow: hidden;  padding-bottom: 4px;}
@@ -1776,7 +1777,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 
 .bic_up_name{background:#426087; height:28px; width:100%; text-align:center; color:#fff; position:relative;}
 .bic_up_name_bot {background: url(img/bic_up_name_bot.png) 0 0 no-repeat; bottom: -4px; height: 5px; left: 49%; position: absolute; width: 9px;}
-.bic_up_name a{color:#fff;}
+.bic_up_name a{color:#fff; line-height:26px;}
 .bic_up_name_inner {padding:6px 10px;}
 .bic_up_name a:hover{color:#fff;}
 
@@ -1859,3 +1860,20 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .toInlist .minus{right:0; top:16px;}
 .publish_editLink{position:absolute; top:15px; right:20px; font:normal 12px Arial;}
 .pablish_scroll{background:url(img/publish_saved_arrow.gif) 100% 50% no-repeat; padding-right:15px; color:#436187!important; cursor:pointer;}
+
+.chat_usrCard{width:175px!important;}
+.chat_usrCard.rubber .cntr{top:188px; left:32px;}
+.chat_usrCard.rubber .bic_up_name{background: url(img/bic_usrCard_bg.jpg) 0 0 repeat-x;}
+.chat_usrCard.rubber .bic_up_name a,.chat_usrCard.rubber .bic_up_name {color:#000;}
+.chat_usrCard.rubber .bic_up_name_bot {background: url(img/bic_usrCard_bot.png) 0 0 no-repeat;}
+.chat_usrCard.rubber .yp_grad {padding: 5px 15px;}
+
+.yangutu_invite p{ padding:0;}
+.yangutu_invite_choise{border-bottom: 1px dashed #E5E5E5;}
+.yangutu_invite_choise.active{background-color:#F6F6F7;}
+.yangutu_invite_choise.active .inviteLink a:hover{background:transparent;}
+.yangutu_invite p img,.yangutu_invite p span{float:left; line-height:30px; padding-right:20px;}
+.yangutu_invite p a{color:#000; display:block; height:30px; padding:10px;}
+.yangutu_invite p a:hover{text-decoration:none; background-color:#E8F4FF;}
+.yangutu_invite_opt {display:none;}
+.yangutu_invite_opt td { padding: 0 10px 10px 0;}

@@ -272,7 +272,7 @@ a:hover.put_me{text-decoration:none;}
 .photo-usr{padding-left:20px;}
 #photo-box{z-index:999; background-color:#000; color:#fff;}
 #photo-box .preview{text-align:center; padding:4px 0 2px;}
-#photo-box .preview img{width:50px; height:50px; margin-bottom:3px;}
+#photo-box .preview img{width:50px; height:50px; margin-bottom:0px;}
 #photo-box .rate{position:absolute; left:0; background: url(img/opacity.png) 0 0 repeat;}
 #photo-box .flike{position:absolute; left:2px; bottom:5px;}
 #photo-box .rate p{padding:3px 10px; font:bold 30px Arial; color:#fff;}
@@ -350,3 +350,5 @@ a:hover.put_me{text-decoration:none;}
 	.photo-viewer-top-navi .horlist li.edit ul li{padding:0; margin:0;}
 	
 #ny_body .photo-viewer-block,#ny_body .photo-viewer-top-navi{width:760px;}
+.slButton{left: 0px; position: absolute; top: -30px; width: 100px;}
+#photo-box .preview .prelative{padding-left:107px;}
