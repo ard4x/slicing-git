@@ -1,9 +1,5 @@
-.button_blue, .button_green, .button_white {padding: 0 10px; overflow: visible}
+.button_blue, .button_green, .button_black {padding: 0 10px; overflow: visible}
 
-    .gb_left,.gb_right,.bb_left,.bb_right { top:0px;} 
-	.gb_left,.bb_left{left:0px!important;}
-    .blue_but.big .bb_left ,.blue_but.big .bb_right { top:-0px!important;} 
-    .blue_but.big .bb_left ,.blue_but.big .bb_right { top:-0px!important;} 
 	.lookingbx .searchbox {margin-right:20px;}
 	.invis {display: inline;}
 	.subnav li {display: block; float:left;}

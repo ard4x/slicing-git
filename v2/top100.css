@@ -1,0 +1,58 @@
+
+.usr_choise{width:575px; margin:0 auto;}
+.usr_answer_block{margin-top:28px;}
+.bic_up_name{background:#426087; left:0; height:28px; width:100%; text-align:center; position:absolute; top:-27px; color:#fff;}
+.bic_up_name_bot{background:url(img/bic_up_name_bot.png) 0 0 no-repeat; height:5px; width:9px; position:absolute; bottom:-4px; left:49%;}
+.bic_up_name a{color:#fff; font:14px helvetica; line-height:26px;}
+.bic_up_name a:hover{color:#fff;}
+.brdpic .bic_up_name a{color:#fff; font:12px helvetica; line-height:26px; display:inline;}
+
+	.compare_choice{margin-top:25px; padding:30px 2px 25px; position:relative;}
+	.compare_choice.hover{background-color:#426087; /*background-color:#d67e0c;*/}
+	.compare_choice.hover .compare_ask{display:block;}
+	.compare_choice .choise_block{height: 28px; position: absolute; top: -30px; width:100%; line-height: 40px;}
+	.compare_choice .choise_block a span{background:url(img/compare_icos.png) 0 0 no-repeat; height:27px; display:block; margin-right:5px;}
+	.compare_choice .choise_block a:hover{text-decoration:none;}
+	.compare_choice .choise_block a.star,.compare_choice .choise_block a.talk,
+	.compare_choice .choise_block a.message,.compare_choice .choise_block a.alert{float:right;}
+	.compare_choice .choise_block a.star span{width:22px; background-position:0 0;}
+	.compare_choice .choise_block a.talk span{width:22px; background-position:-28px 0;}
+	.compare_choice .choise_block a.message span{width:22px; background-position:-57px 0;}
+	.compare_choice .choise_block a.alert span{width:22px; background-position:-85px 0;}
+	.compare_choice.left .choise_block{left: 0;}
+	.compare_choice.right .choise_block{right: 0;}
+	.compare_choice.left{margin-left:25px;}
+	.compare_choice.right{margin-right:25px;}
+	.compare_ask{display:none; position:absolute; text-align:center; width:100%; font:bold 18px Arial; color:#fff; z-index:999; bottom:5px; padding:0;}
+	.usr_choise .brdpic5 { display: block;}
+	.usr_choise .brdpic5 img{ margin: 4px 0 0;}
+	.vip_usr_photo {background: url(img/vip_ico_big.png) 0 0 no-repeat; bottom: 6px; height: 296px; position: absolute; right: 5px; width: 225px;}
+	
+	.or{font:24px Arial; float:left; padding:170px 12px 0;}
+
+.topToday{background:#edf9e3; padding:1px 0px;}
+.topToday p{padding-bottom:5px;}
+.topToday .inner{border-top:1px solid #f6fcf1; border-bottom:1px solid #e3f1d6; padding:4px 3px 4px 6px;}
+.topToday .tt_rate_list{padding:5px 0 10px 45px; position:relative;}
+.topToday .tt_rate_list img{position:absolute; left:8px; top:8px;}
+
+.country_rate {margin-bottom:8px;}
+.country_rate .score_box div.tleft,.country_rate .score_box div.tright{width:auto;}
+.country_rate .title{font:13px Arial; color:#4f6b8d; padding-bottom:0px;}
+.score_box div.tleft{width:40%; float:left;}
+.score_box div.tright{width:60%; float:left;}
+.score_box div.upscore span{font:bold 10px Arial; color:#009900; padding-left:10px; background:url(img/upscore.png) 0 50% no-repeat; margin-left:3px;}
+.score_box div.downscore span{font:bold 10px Arial; color:#cc0000; padding-left:10px; background:url(img/downscore.png) 0 50% no-repeat; margin-left:3px;}
+
+.compare_photolist_viewer .brdpic {background: url(img/173x227bg.png) 0 0 no-repeat; height: 227px; margin-bottom: 3px; text-align: center; width: 173px; float: left; margin: 65px 13px 0 0; position: relative;}
+.compare_photolist_viewer .brdpic .cpv_pic_info {top: -55px;}
+.cpv_pic_info {position: absolute; width: 100%;}
+.vip_stat{background:url(img/crown.png) 0 0 no-repeat; padding:0 0 3px 23px; font-size:11px; top:8px; left:63px; position:absolute;}
+.cpv_pic_info .country_rate {margin-top: 7px;}
+
+.leader_list_usr {margin: 25px 100px 15px 0; position: relative;}
+.leader_list_usr .country_rate{float:left; margin-right:10px; width:100px;}
+.leader_list_usr .lsTd { position: absolute; right: -100px; text-align: right; top: 0; width: 100px;}
+.leader_list_usr .ava { width: 65px; height:85px; position:relative;}
+.leader_list_usr .score_counter span{color:#426087; font:bold 21px Arial; position:relative;}
+.leader_list_usr .vip_stat{top:28px; left:-4px;}

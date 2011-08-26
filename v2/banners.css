@@ -1,6 +1,8 @@
-.bannerbx{color:#ffffff;}
+.bannerbx{color:#ffffff; position:relative;}
 .bannerbx .inner{padding:20px 15px;}
 .bannerbx.colored{color:#000000;}
+
+.bannerClose{position:absolute; top:10px; right:10px;}
 
 .bg1{background:#d68114 url(img/banners-new/bg1.jpg) 0 0 repeat-x;}
 .bg2{background:#d53b0c url(img/banners-new/bg2.jpg) 0 0 repeat-x;}

@@ -1,0 +1,551 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Yangutu</title>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" href="chat.css" type="text/css" id="" />
+	<link rel="stylesheet" href="style.css" type="text/css" id="" />
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/chat.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$(window).resize(setChatHeight);
+			setChatHeight();
+			
+			$('.chbotbut li a').live('click',function(){
+				$('.chbotbut li a').removeClass('active');
+				$(this).addClass('active');
+				var tabId =  $(this).attr('id');
+				if(tabId == 'inbox-tab'){
+					$('#contacts').hide(); $('#inbox').show();
+				}else if(tabId == 'contacts-tab'){
+					$('#contacts').show(); $('#inbox').hide();
+				}
+				return false;
+			});
+			
+		});
+	</script>
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="ie7.css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="ie8.css" />
+	<![endif]-->
+</head>
+<body id="chat_body">
+
+<table height="100%" cellspacing="0" cellpadding="0" class="chattbl">
+	<col width="240">
+	<col width="">
+	<tr>
+		<td id="left-panel">
+
+			<ul class="chbotbut">
+				<li><a href="" id="contacts-tab"> <span>Conversation</span> </a></li>
+				<li><a href="" id="inbox-tab"> <span>All contacts</span> </a></li>
+			</ul>
+			
+			<div class="prelative scrh_cht">
+				<input type="text" value="Quick search people" class="input2 searchf" id="quicksearch" />
+			</div>
+			
+			<div id="contacts" class="ch_userlstbx">
+				<table cellspacing="0" cellpadding="0" class="ch_userlist contactslist">
+					<col width="50">
+					<col width="140">
+					<col width="">
+					<tr class="conversation_date">
+						<td class="first" colspan="3">Today</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/46x46.gif" /></a></div></td>
+						<td><a href="#" class="name">Davide Russi</a>, 34</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Cori</a>, 28</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="conversation_date">
+						<td class="first" colspan="3">Yesterday</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/46x46.gif" /></a></div></td>
+						<td><a href="#" class="name">Davide Russi</a>, 34</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Cori</a>, 28</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Zouhour</a>, 30</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Leighton 'Lee'</a>, 21</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Agnes</a>, 34</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Karen</a>, 34</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Priscilla</a>, 32</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="conversation_date">
+						<td class="first" colspan="3">21.10.2011</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/46x46.gif" /></a></div></td>
+						<td><a href="#" class="name">Davide Russi</a>, 34</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Cori</a>, 28</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Zouhour</a>, 30</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Leighton 'Lee'</a>, 21</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Agnes</a>, 34</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Karen</a>, 34</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Priscilla</a>, 32</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Kat</a>, 34</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Sarah</a>, 24</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Licia</a>, 32</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Jennifer</a>, 28</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Licia</a>, 32</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Jennifer</a>, 28</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Licia</a>, 32</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Jennifer</a>, 28</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Licia</a>, 32</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Jennifer</a>, 28</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="tcenter" colspan="3"><a href="">More dialogs 30+ </a></td>
+					</tr>
+				</table>
+			</div>
+			<div id="inbox" class="ch_userlstbx hidden" style="display:none;">
+				<table cellspacing="0" cellpadding="0" class="ch_userlist contactslist">
+					<col width="50">
+					<col width="140">
+					<col width="">
+					
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/46x46.gif" /></a></div></td>
+						<td><a href="#" class="name">Davide Russi</a>, 34</td>
+						<td class="sum"><a class="cntr2" href="#"><span>1</span></a></td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Cori</a>, 28</td>
+						<td class="sum"><a class="cntr2" href="#"><span>12</span></a></td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Zouhour</a>, 30</td>
+						<td class="sum"><a class="cntr2" href="#"><span>5</span></a></td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Leighton 'Lee'</a>, 21</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Agnes</a>, 34</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Karen</a>, 34</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Priscilla</a>, 32</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/46x46.gif" /></a></div></td>
+						<td><a href="#" class="name">Davide Russi</a>, 34</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Cori</a>, 28</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Zouhour</a>, 30</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Leighton 'Lee'</a>, 21</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Agnes</a>, 34</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Karen</a>, 34</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Priscilla</a>, 32</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/46x46.gif" /></a></div></td>
+						<td><a href="#" class="name">Davide Russi</a>, 34</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Cori</a>, 28</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Zouhour</a>, 30</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Leighton 'Lee'</a>, 21</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Agnes</a>, 34</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Karen</a>, 34</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+					<tr class="inactive">
+						<td class="first"><div class="brdpic7"><a href="#"><img width="28" height="28" src="./img/g46x46.gif"></a></div></td>
+						<td><a href="#" class="name">Priscilla</a>, 32</td>
+						<td class="sum">&nbsp;</td>
+					</tr>
+				</table>
+			</div>
+		</td>
+			<td id="no-chat" class="ch_main" rowspan="2">
+				<p class="title">Start communication with your Favourites</p>
+				These are the 12 people youcontact most
+				<div class="indentTop20">
+					<div class="chat_usrCard">
+						<div class="bic_up_name">
+							<div class="bic_up_name_bot"></div>
+							<a href="" class="usr_answer_link">Albina Fox</a>
+						</div>
+						<div class="brdpic2">
+							<a title="" href=""><img src="./img/small2.jpg" alt="" width="56" title=""></a>
+						</div>
+					</div>
+					<div class="chat_usrCard">
+						<div class="bic_up_name">
+							<div class="bic_up_name_bot"></div>
+							<a href="" class="usr_answer_link">Albina Fox</a>
+						</div>
+						<div class="brdpic2">
+							<a title="" href=""><img src="./img/small2.jpg" alt="" width="56" title=""></a>
+						</div>
+					</div>
+					<div class="chat_usrCard">
+						<div class="bic_up_name">
+							<div class="bic_up_name_bot"></div>
+							<a href="" class="usr_answer_link">Albina Fox</a>
+						</div>
+						<div class="brdpic2">
+							<a title="" href=""><img src="./img/small2.jpg" alt="" width="56" title=""></a>
+						</div>
+					</div>
+					<div class="chat_usrCard">
+						<div class="bic_up_name">
+							<div class="bic_up_name_bot"></div>
+							<a href="" class="usr_answer_link">Albina Fox</a>
+						</div>
+						<div class="brdpic2">
+							<a title="" href=""><img src="./img/small2.jpg" alt="" width="56" title=""></a>
+						</div>
+					</div>
+					<div class="chat_usrCard">
+						<div class="bic_up_name">
+							<div class="bic_up_name_bot"></div>
+							<a href="" class="usr_answer_link">Albina Fox</a>
+						</div>
+						<div class="brdpic2">
+							<a title="" href=""><img src="./img/small2.jpg" alt="" width="56" title=""></a>
+						</div>
+					</div>
+					<div class="chat_usrCard">
+						<div class="bic_up_name">
+							<div class="bic_up_name_bot"></div>
+							<a href="" class="usr_answer_link">Albina Fox</a>
+						</div>
+						<div class="brdpic2">
+							<a title="" href=""><img src="./img/small2.jpg" alt="" width="56" title=""></a>
+						</div>
+					</div>
+					<div class="chat_usrCard">
+						<div class="bic_up_name">
+							<div class="bic_up_name_bot"></div>
+							<a href="" class="usr_answer_link">Albina Fox</a>
+						</div>
+						<div class="brdpic2">
+							<a title="" href=""><img src="./img/small2.jpg" alt="" width="56" title=""></a>
+						</div>
+					</div>
+					<div class="chat_usrCard">
+						<div class="bic_up_name">
+							<div class="bic_up_name_bot"></div>
+							<a href="" class="usr_answer_link">Albina Fox</a>
+						</div>
+						<div class="brdpic2">
+							<a title="" href=""><img src="./img/small2.jpg" alt="" width="56" title=""></a>
+						</div>
+					</div>
+					<div class="chat_usrCard">
+						<div class="bic_up_name">
+							<div class="bic_up_name_bot"></div>
+							<a href="" class="usr_answer_link">Albina Fox</a>
+						</div>
+						<div class="brdpic2">
+							<a title="" href=""><img src="./img/small2.jpg" alt="" width="56" title=""></a>
+						</div>
+					</div>
+					<div class="chat_usrCard">
+						<div class="bic_up_name">
+							<div class="bic_up_name_bot"></div>
+							<a href="" class="usr_answer_link">Albina Fox</a>
+						</div>
+						<div class="brdpic2">
+							<a title="" href=""><img src="./img/small2.jpg" alt="" width="56" title=""></a>
+						</div>
+					</div>
+					<div class="chat_usrCard">
+						<div class="bic_up_name">
+							<div class="bic_up_name_bot"></div>
+							<a href="" class="usr_answer_link">Albina Fox</a>
+						</div>
+						<div class="brdpic2">
+							<a title="" href=""><img src="./img/small2.jpg" alt="" width="56" title=""></a>
+						</div>
+					</div>
+					<div class="chat_usrCard">
+						<div class="bic_up_name">
+							<div class="bic_up_name_bot"></div>
+							<a href="" class="usr_answer_link">Albina Fox</a>
+						</div>
+						<div class="brdpic2">
+							<a title="" href=""><img src="./img/small2.jpg" alt="" width="56" title=""></a>
+						</div>
+					</div>
+					<div class="clr2"></div>
+				</div>
+			</td>
+			<td id="chat-window" class="" rowspan="2" style="display: none;">
+				<table cellspacing="0" cellpadding="0" class="chatrighttbl" style="display: table;">
+					<tr>
+						<td id="messages">
+							<table cellspacing="0" cellpadding="0" class="chatrighttbl">
+								<tr>
+									<td class="chatrighttbltoptd">
+										<div style="overflow:visible" class="chatrighttbltop">
+											<div class="brdpic8"><a target="_blank" href="/998114343"><img width="48" height="48" src="/light/generate-photo/id/158316/size/avatar?1295872361"></a></div>
+											<p rel="360642" class="uname"><a rel="360642" target="_blank" href="/998114343">Yuyu</a>,&nbsp;28<br><span class="chatLoc">Wants to meet with a woman, 25-35</span></p>
+											<div class="lsTd">
+											<ul class="horlist">									 
+												<li><a id="add-gift" href="/payments/features/add-gift/user/360642">Send Gift</a></li>
+											</ul>
+											<div class="orborder2">
+												<a href="#">or <img alt="" src="./img/orarr.gif"></a>
+													<div style="left:-116px;display:none;" class="orborderlistfull">
+													 <div class="inn">
+														<ul id="profile_ull">
+															<li><a href="" target="_blank" class="icebreaker">Send Icebreaker</a></li>
+															<li><a href="" class="fav-contact">Add to favorites</a></li>
+															<li><a href="" class="close-contact">Hide</a></li>
+															<li><a id="report_abuse2" class="report_abuse" href="/spam/abuse-report">Report Abuse</a></li>
+														</ul>
+													   </div>
+													   <div class="bot"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td id="find_scroll" class="messagestd">
+										<div id="scroll" class="messagesbx">		
+											<div class="chMess tcenter">
+												<p class="chMess_title">Writing your first message<br>
+																		for Yuyu</p>
+												<p>
+													Your never get a second chance to make a first impression.<br>
+													<a id="add-gift" href="/payments/features/add-gift/user/360642">Send a gift</a> to impress your new contact. <br>
+													Or simply write something interesting and exciting.<br>
+													Stuck for something to say? Use an <a target="_blank" href="/icebreaker/send/360642">Ice Breaker</a>.
+												</p>
+											</div> 	
+											<ul class="HIDDEN" id="chat-messages"></ul>
+										</div>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td id="msg-finder" class="chatrighttblsrchbg hidden">
+							<table cellspacing="0" cellpadding="0" id="msg-table" class="chsearch hidden">
+								<col width="">
+								<col width="70">
+								<col width="30">
+								<tr>
+									<td class="innerRight20"><input type="text" id="finder-query" class="input2 flWidth100"></td>
+									<td><a class="indentRight10" id="finder-prev" href="#">Prev</a><a id="finder-next" href="#">Next</a></td>
+									<td class="tright"><a class="finder-toggle" href="#"><img alt="close" src="./img/closeic4.gif"></a></td>
+								</tr>
+							</table>
+							<table class="hidden chsearch" id="smiles-table">
+								<col width="">
+								<col width="70">
+								<col width="30">
+								<tr>
+									<td class="innerRight20"> 
+										<a title="smile title" href="#"> <span code=":)" class="sm1"></span> </a>
+										<a title="smile title" href="#"> <span code="(nod)" class="sm2"></span> </a>
+										<a title="smile title" href="#"> <span code=":(" class="sm3"></span> </a>
+										<a title="smile title" href="#"> <span code=":D" class="sm4"></span> </a>
+										<a title="smile title" href="#"> <span code="(rofl)" class="sm4"></span> </a>
+										<a title="smile title" href="#"> <span code="(mm)" class="sm6"></span> </a> 
+										<a title="smile title" href="#"> <span code=":O" class="sm7"></span> </a> 
+										<a title="smile title" href="#"> <span code="(inlove)" class="sm8"></span> </a>
+										<a title="smile title" href="#"> <span code="(big smile" class="sm9"></span> </a>
+										<a title="smile title" href="#"> <span code="(joy)" class="sm10"></span> </a> 
+										<a title="smile title" href="#"> <span code="(chagrin)" class="sm11"></span> </a>
+										<a title="smile title" href="#"> <span code=";(" class="sm12"></span> </a> 	
+									</td>
+									<td></td>
+									<td class="tright"><a class="smile-toggle" href="#"><img alt="close" src="./img/closeic4.gif"></a></td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="chinputtd">
+						<div class="chinputmes">					<p class="gray left">Write a message:</p>
+						<p class="smiles-link right"><a href="#" id="select-smile"><span class="smile">Smiles</span></a></p>
+						<p class="help-contact right">Any problems with chat? <a target="_blank" href="/dating/feedback">Contact us</a></p>
+						<div class="clr2"></div>
+						</div>
+						<div style="position: relative;" id="texteditor" class="chinputmesarea"><textarea id="msgtxt"></textarea>
+						<div><input type="submit" id="reply" class="button_green large indentTop10 indentRight10 fixWidth120" value="Send"> 
+						<span title="Ctrl-Enter or Shift-Enter for a new line" class="gray">Use Enter to send a message</span>
+
+						<div class="ctIcos indentTop15"><a id="find-message" href="#"><span class="find"></span></a> 
+					 
+						<a id="report_abuse" class="report_abuse" href="">Report spam</a>
+					 
+						<a href="/profile/block/blockId/" id="block">Block</a>
+						</div>
+						</div>
+
+						</div>
+						</td>
+					</tr>
+				</tbody></table>
+				
+			</td>
+			</tr>
+		</tbody></table>
+	</body>
+</html>

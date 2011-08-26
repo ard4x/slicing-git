@@ -1,10 +1,15 @@
-.button_blue,.button_green,.button_white,.button_black{background:url(img/buttons_bg.jpg) 0 0 repeat-x; text-align:center; box-shadow:1px 1px 3px #666565; -webkit-box-shadow:1px 1px 3px #666565; -moz-box-shadow:1px 1px 3px #666565; cursor:pointer; padding:0 6px 3px 6px; font-weight:bold; text-shadow: 1px -1px 1px #6e6d6d; border:none;}
+	.super_button_green,.super_button_blue{background:url(img/buttons_super_bg.jpg) 0 0 repeat-x; height:57px; font-size:24px; text-align:center; box-shadow:1px 1px 3px #666565; -webkit-box-shadow:1px 1px 3px #666565; -moz-box-shadow:1px 1px 3px #666565; cursor:pointer; padding:0 10px 3px 10px; font-weight:bold; text-shadow: 1px -1px 1px #6e6d6d; border:none;}
+	.button_blue{background:url(img/blue-button-bg.jpg) 0 0 repeat-x; text-shadow: 1px -1px 1px #6e6d6d;}
+	.button_green{background:url(img/green-button-bg.jpg) 0 0 repeat-x; text-shadow: 1px -1px 1px #6e6d6d;}
+	.button_black{background:url(img/black-button-bg.jpg) 0 0 repeat-x; text-shadow: 1px -1px 1px #6e6d6d;}
 	.button_blue,.button_green{color:#fff;}
-	.button_green{background-position: 0 -33px;}
-	.button_white{color:#a09f9f; background-position: 0 -66px; text-shadow: 1px -1px 1px #fff;}
-	.button_black{color:#cccccc; background-position: 0 -99px; text-shadow: 1px -1px 1px #000000;}
-	.button_blue.large,.button_green.large,.button_white.large,.button_black.large{height:33px; font-size:14px;}
-	.button_blue.small,.button_green.small,.button_white.small,.button_black.small{height:27px; font-size:12px;}
+	.button_green,.button_blue,.button_black{background-position: 0 -33px;  text-align:center; cursor:pointer; padding:0 6px 3px 6px; border:none;}
+	.button_green.hover,.button_blue.hover,.button_black.hover{background-position: 0 -66px;}
+	.button_green:active,.button_blue:active,.button_black:active{background-position: 0 -99px;}
+	.button_green.disabled,.button_blue.disabled,.button_black.disabled{background-position: 0 0; cursor:default; color:#9f9f9f; text-shadow: 1px 1px 0px #fff;}
+	.button_black{text-shadow: 1px -1px 1px #000000; color:#cccccc;}
+	.button_blue.large,.button_green.large,.button_black.large{height:33px; font:bold 14px Arial;}
+	.button_blue.small,.button_green.small,.button_black.small{height:27px; font:bold 12px Arial;}
 	@media screen and (-webkit-min-device-pixel-ratio:0) {
 			 .button_blue,.button_green,.button_white{padding:0px 10px;}
 		}

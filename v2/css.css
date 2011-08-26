@@ -349,6 +349,9 @@ a:hover.put_me{text-decoration:none;}
 	.photo-viewer-top-navi .horlist li.edit ul a:hover{color:#B2B2B2;}
 	.photo-viewer-top-navi .horlist li.edit ul li{padding:0; margin:0;}
 	
+	.rate-6{background:url(img/rate-6.png) 0px 0 no-repeat; padding-left:80px;}
+	.rate-7{background:url(img/rate-7.png) 0px 0 no-repeat; padding-left:80px;}
+	
 #ny_body .photo-viewer-block,#ny_body .photo-viewer-top-navi{width:760px;}
 .slButton{left: 0px; position: absolute; top: -30px; width: 100px;}
 #photo-box .preview .prelative{padding-left:107px;}
