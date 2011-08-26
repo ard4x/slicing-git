@@ -44,7 +44,8 @@
 .score_box div.upscore span{font:bold 10px Arial; color:#009900; padding-left:10px; background:url(img/upscore.png) 0 50% no-repeat; margin-left:3px;}
 .score_box div.downscore span{font:bold 10px Arial; color:#cc0000; padding-left:10px; background:url(img/downscore.png) 0 50% no-repeat; margin-left:3px;}
 
-.compare_photolist_viewer .brdpic {background: url(img/173x227bg.png) 0 0 no-repeat; height: 227px; margin-bottom: 3px; text-align: center; width: 173px; float: left; margin: 65px 13px 0 0; position: relative;}
+.compare_photolist_viewer .brdpic {background: url(img/173x227bg.png) 0 0 no-repeat; height: 227px; margin-bottom: 3px; text-align: center; width: 173px; float: left; margin: 65px 12px 0 0; position: relative;}
+.compare_photolist_viewer .brdpic.fourth{margin-right:-20px;}
 .compare_photolist_viewer .brdpic .cpv_pic_info {top: -55px;}
 .cpv_pic_info {position: absolute; width: 100%;}
 .vip_stat{background:url(img/crown.png) 0 0 no-repeat; padding:0 0 3px 23px; font-size:11px; top:8px; left:63px; position:absolute;}
@@ -56,3 +57,9 @@
 .leader_list_usr .ava { width: 65px; height:85px; position:relative;}
 .leader_list_usr .score_counter span{color:#426087; font:bold 21px Arial; position:relative;}
 .leader_list_usr .vip_stat{top:28px; left:-4px;}
+
+.usr_choise_rate_block{background-color:#f0f9e2; margin-bottom:5px; position:relative;}
+.usr_choise_rate_block .inner{padding:5px 15px 5px 15px;}
+.usr_choise_rate_block .title{padding-top:5px; font:bold 12px Arial; color:#B2B2B2; padding-bottom:5px;}
+.usr_choise_rate_block .country_rate{margin-right:20px; float:left;}
+.usr_choise_rate_block .inside_link{position:absolute; right:10px; top:10px;}
