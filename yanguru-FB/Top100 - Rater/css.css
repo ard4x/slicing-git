@@ -676,7 +676,7 @@ ul.inline.right li{margin-left:10px;}
 	
 	.uploadPhoto {background:#e9eff6 url(img-add/uplpharr.png)  50% 100px no-repeat; border: 1px solid #dadada; height: 360px;position: relative; width: 320px;}
 	.uploadPhoto a {color: #788692;display: block; font-size: 18px;font-weight: normal; margin: 160px auto 0;text-align: center; width: 149px;}
-	.more_upl_info { bottom: 20px;left: 20px;position: absolute;}
+	.more_upl_info { bottom: 20px; left: 20px;position: absolute;}
 	.more_upl_info span {color: #788692; display: inline-block;padding: 0 3px;}
 
 	.rubber .yp_top { background: url(img-add/rubber_box_top_left.png) 0 0 no-repeat; height: 16px; margin-right: 18px; position: relative;}
