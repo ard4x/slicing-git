@@ -16,3 +16,7 @@
 		@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0){
 			  head~body .button_blue,.button_green,.button_white{padding:0px 10px;}
 		}
+		
+	.button-loading {position:relative;}
+	.button-loading img{position:absolute; top:-3px; left:3px;}
+	.button-loading input[type="button"]{padding-left:30px;}
