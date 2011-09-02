@@ -32,3 +32,6 @@
 .ui-content.ui-body-b{
 	background:transparent;
 }
+.logo{
+	background:url(../img/logo.png) 50% 50% no-repeat; height:95px;
+}
