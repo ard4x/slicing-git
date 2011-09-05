@@ -4,30 +4,33 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,  minimum-scale=1.0, maximum-scale=1.0" />
 	<title>jQuery Mobile: Demos and Documentation</title>
-	<link rel="stylesheet"  href="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.css" />
+	<link rel="stylesheet"  href="css/jquery.mobile-1.0b2.min.css" />
 	<link rel="stylesheet"  href="css/phone.css" />
 	<script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.0b2/jquery.mobile-1.0b2.min.js"></script>
 	
 </head> 
 <body> 
-<div data-role="page" data-theme="b" id="jqm-home" class="type-home">
+<div data-role="page" id="jqm-home" class="type-home">
 
 	<div data-role="content">
 	
-		<div style="padding-top:20px; text-align:center;">
-		
-			<img src="./img/logo.png" alt="" title=""/>
-		</div>
+		<div class="logo"><img src="./img/logo.png" alt="" title=""/></div>
 		
 		<div class="content-primary">
 			<nav>
 				
-				<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b">
-					<li><a class="ui-link-inherit" href="registered.html">Registered <span class="ui-li-count ui-btn-up-c ui-btn-corner-all">100, 789, 981 / 10, 981</span></a></li>
-					<li><a class="ui-link-inherit" href="logged.html">Logged in <span class="ui-li-count ui-btn-up-c ui-btn-corner-all">170, 000, 891 / 10, 123, 981</span></a></li>
-					<li><a class="ui-link-inherit" href="totalincome.html">Total income <span class="ui-li-count ui-btn-up-c ui-btn-corner-all">1, 454, 000 / 2, 000, 981</span></a></li>
-					<li><a class="ui-link-inherit" href="ARPU.html">ARPU <span class="ui-li-count ui-btn-up-c ui-btn-corner-all">5 / 7</span></a></li>
+				<ul data-role="listview" data-inset="true" data-theme="yb">
+					<li><a class="ui-link-inherit link-log" href="registered.html">Login </a></li>
+					<li><a class="ui-link-inherit link-log-fb" href="logged.html">Login with Facebook </a></li>
+					<li><a class="ui-link-inherit link-log-gm" href="totalincome.html">Login with Gmail </a></li>
+				</ul>
+
+			</nav>
+			<nav>
+				
+				<ul data-role="listview" data-inset="true" data-theme="yb">
+					<li><a class="ui-link-inherit link-log-bm" href="registered.html">Bacome a member </a></li>
 				</ul>
 
 			</nav>
@@ -38,11 +41,11 @@
 	<div data-role="footer" data-position="fixed">
 		<div data-role="navbar">
 			<ul>
-				<li><a href="index.html" data-iconpos="top" data-icon="home" class="ui-btn-active">Main</a></li>
-				<li><a href="visitors.html" data-iconpos="top" data-icon="search">Visitors</a></li>
-				<li><a href="actions.html" data-iconpos="top" data-icon="star">Actions</a></li>
-				<li><a href="mailings.html" data-iconpos="top" data-icon="check">Mailings</a></li>
-				<li><a href="more.html" data-iconpos="top" data-icon="grid">More</a></li>
+				<li><a href="index.html" data-iconpos="top" data-icon="home" class="ui-btn-active">Profile</a></li>
+				<li><a href="visitors.html" data-iconpos="top" data-icon="search">Stream</a></li>
+				<li><a href="actions.html" data-iconpos="top" data-icon="star">Matches</a></li>
+				<li><a href="mailings.html" data-iconpos="top" data-icon="check">Messages</a></li>
+				<li><a href="more.html" data-iconpos="top" data-icon="grid">Apps</a></li>
 			</ul>
 		</div><!-- /navbar -->
 	</div>

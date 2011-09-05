@@ -108,6 +108,7 @@ input[type="text"]:focus,textarea:focus{border-color:#45729a; -moz-box-shadow: 0
 .nobg{background:transparent!important;}
 
 .minWidth100 { min-width: 100px !important;}
+.fixWidth190{width:190px!important;}
 .fixWidth230{width:230px!important;}
 .fixWidth235 { width: 235px !important;}
 .fixWidth270 { width: 270px !important;}
@@ -832,15 +833,6 @@ a.hover .last.rate_star{background-position:0 -76px;}
 
 .content_menu_bottom input[type="radio"]{margin:4px 4px 0 0;}
 .content_menu_bottom input[type="text"]{width:100%;}
-
-.progressbar{width:100%; padding-top:2px; background:url(img-add/progressbar-bg.jpg) 0 0 repeat-x; margin:10px 0; position:relative;}
-.progress-line{background:url(img-add/progress-line-bg.jpg) 0 0 repeat-x; height:4px; position:relative;}
-.progress-control{background:url(img-add/progress-control-point-bg.jpg) 100% 0 no-repeat; position:absolute; height:7px; width:100%; top:-7px; left:0px;}
-.progress-control-point{width:25%; float:left; height:5px; background:url(img-add/progress-control-point-bg.jpg) 0 0 no-repeat;}
-.progress-line-button{background:url(img-add/progress-line-button.png) 0 0 no-repeat; height:18px; width:13px; position:absolute; right:-7px; top:-5px; cursor:pointer;}
-.progress-line-button p{position:absolute; top:auto; bottom:100%; margin-bottom:3px; padding:0px; left:50%; z-index:9999;}
-.progress-line-button p span{background-color:#eceff3; font-size:11px; color:#426087; border:1px solid #c0c8cd; padding:2px 5px;  visibility: visible; position:relative; right:auto; display:block; top:-3px; left:-50%; z-index:9999;}
-.progress-line-button p img{position:absolute; bottom:-5px; left:50%; margin-left:-4px; z-index:9999;}
 
 .compare_fav .brdpic .add_fav,.compare_fav .brdpic .close{position:absolute; bottom:5px;}
 .compare_fav .brdpic .add_fav{left:8px;}

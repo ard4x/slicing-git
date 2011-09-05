@@ -1,0 +1,14 @@
+
+.progressbar{width:100%; padding-top:2px; background:url(img/progressbar-bg.jpg) 0 0 repeat-x; margin:10px 0; position:relative;}
+.progress-line{background:url(img/progress-line-bg.jpg) 0 0 repeat-x; height:4px; position:relative;}
+.progress-control{background:url(img/progress-control-point-bg.jpg) 100% 0 no-repeat; position:absolute; height:7px; width:100%; top:-7px; left:0px;}
+.progress-control-point{width:25%; float:left; height:5px; background:url(img/progress-control-point-bg.jpg) 0 0 no-repeat;}
+.progress-line-button{background:url(img/progress-line-button.png) 0 0 no-repeat; height:18px; width:13px; position:absolute; right:-7px; top:-5px; cursor:pointer;}
+.progress-line-button p{position:absolute; top:auto; bottom:100%; margin-bottom:3px; padding:0px; left:50%; z-index:9999;}
+.progress-line-button p span{background-color:#eceff3; font-size:11px; color:#426087; border:1px solid #c0c8cd; padding:2px 5px;  visibility: visible; position:relative; right:auto; display:block; top:-3px; left:-50%; z-index:9999;}
+.progress-line-button p img{position:absolute; bottom:-5px; left:50%; margin-left:-4px; z-index:9999;}
+
+.aged .newListSelected{width:80px;}
+
+.lookingbx label {font-weight:normal!important;}
+.lookingbx label input{margin-left:0px;}

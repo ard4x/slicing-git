@@ -212,6 +212,7 @@ p {padding: 0 0 10px 0; margin:0;}
 .fixWidth160 {width: 160px;}
 .fixWidth210 {width: 210px;}
 .fixWidth220 {width: 220px;}
+.fixWidth225 {width: 225px;}
 .fixWidth230 {width: 230px;}
 .fixWidth240 {width: 236px;}
 .fixWidth300 {width: 300px!important;}
@@ -1558,8 +1559,8 @@ a:hover.put_me{text-decoration:none;}
 .lookingbx .searchbox p{font-size:14px; padding:0 0 5px 0px;}
 .lookingbx .searchbox label input[type="radio"]{margin-left:0px;}
 .lookingbx  a.dotted{font:bold 13px Arial; padding-right:10px; text-decoration:none; border-bottom:1px dashed;}
-#s-more {background:url(/img/yab_h_arr.gif) 100% 6px no-repeat;}
-#s-less {background:url(/img/yab_v_arr.gif) 100% 6px no-repeat;}
+#s-more {background:url(img/yab_h_arr.gif) 100% 6px no-repeat;}
+#s-less {background:url(img/yab_v_arr.gif) 100% 6px no-repeat;}
 .lookingbx  a.dotted.nobg{background:transparent; padding-right:0px;}
 .lookingbx  a:hover.dotted{border:none;}
 .lookingbx  .selection{width:205px; float:left; min-height:10px; padding-right:30px; position:relative; margin-right:5px;}
@@ -1656,8 +1657,8 @@ a:hover.put_me{text-decoration:none;}
 	
 	ul.ulist li{padding:5px 0;}
 .fb_ltr { padding-bottom:2px!important;  }
-.invisHim {background: url(/img/invis_him.gif) 0 -50px no-repeat;}
-.invisHer {background: url(/img/invis_her.gif) 0 -50px no-repeat;}
+.invisHim {background: url(img/invis_him.gif) 0 -50px no-repeat;}
+.invisHer {background: url(img/invis_her.gif) 0 -50px no-repeat;}
 .label-input {margin-top: 0px; margin-right: 10px; position: absolute; left: 0px; top: 0px;}
 .label-text {padding-left: 25px; display: block}
 	
