@@ -1770,7 +1770,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 
 .bot_navigation{margin-top:8px; height:33px;}
 .main_menu{margin-left:242px; position: relative; top:2px;}
-.main_menu li{margin:0 5px;}
+.main_menu li{margin:0 5px; position:relative;}
 .main_menu li a{color:#ffffff; font:bold 16px Arial; padding:3px 5px;}
 .main_menu li.active a{background-color:#f6f5eb; color:#436187;}
 .main_menu li a:hover{text-decoration:none;}
@@ -1883,3 +1883,10 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 
 .form-validation{background:url(img/form-validation-icos.png) 0 0 no-repeat; display:block; width:17px; height:17px; position:absolute; top:7px; right:3px;}
 .form-validation.false{background-position:0 100%;}
+
+.main-menu-popap{background-color:#f6f5eb; max-width:997px; -moz-box-shadow:0 0px 5px #898787; -webkit-box-shadow:0 0px 5px #898787; -khtml-box-shadow:0 0px 5px #898787; box-shadow:0 0px 5px #898787;}
+.main-menu-popap .arrow{background:url(img/main-menu-popap-arrow.png) 0 0 no-repeat; position:absolute; width:12px; height:5px; top:-5px; left:20px;}
+	.main-menu-popap-inner ul li {display:block; margin:0px;}
+	.main-menu-popap-inner ul li a{display:block; padding:6px 10px; font:normal 12px Arial;}
+	.main-menu-popap-inner ul li a:hover{text-decoration:none; background:#ECF4FB; color:#000;}
+	
