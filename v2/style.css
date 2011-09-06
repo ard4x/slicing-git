@@ -1346,7 +1346,8 @@ a.yab_loglink {float:right; font-weight:bold; margin-top:37px;}
 .photo_tape_grad{background:url(img/putme_grad.png) 0 0 no-repeat; width:7px; height:46px; position:absolute; right:0px; top:5px;}
 .photo_tape img{display:inline; margin:0; padding:0 0 0 2px; width:46px; height:46px;}
 .photo_tape.noBut img{border-left:1px solid #fff;}
-.photo_tape a{float:left;}
+.photo_tape a{float:left; position:relative;}
+.photo_tape a .pmh_vip{position:absolute; top:3px; left:3px; width:16px; height:16px;}
 a.put_me{background:url(img/putmehere.jpg) 50% 50% no-repeat; position:absolute; left:0; display:block; height:46px; width:100px;}
 a:hover.put_me{text-decoration:none;}
 
@@ -1777,3 +1778,6 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .fbd_block .fbd_u4{top:70px; right:20px;}
 .fbd_block .fbd_u5{top:140px; right:20px;}
 .fbd_block .fbd_u6{top:210px; right:20px;}
+
+
+.f2f_user_photo_link  .f2f_vip{position:absolute; top:5px; left:5px; width:63px; height:63px;}
