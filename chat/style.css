@@ -1201,8 +1201,8 @@ a.cntr2 span {font-size: 12px; color:#ffffff; background: url(img/hm_right.png) 
 
 
 /*-------------- styles from custom.css-----------------------*/
-.brdpic3, .brdpic4, .brdpic5, .brdpic6, .brdpic7, .brdpic8 {display:table-cell; vertical-align:middle; text-align: center}
-.brdpic2 img, .brdpic3 img, .brdpic4 img, .brdpic5 img, .brdpic6 img, .brdpic7 img, .brdpic8 img {margin: 0px; margin-top: expression((parentNode.offsetHeight - this.offsetHeight)<0 ? "0" : (parentNode.offsetHeight - this.offsetHeight)/2 + "px");}
+.brdpic3, .brdpic4, .brdpic5, .brdpic6, .brdpic8 {display:table-cell; vertical-align:middle; text-align: center}
+.brdpic2 img, .brdpic3 img, .brdpic4 img, .brdpic5 img, .brdpic6 img, .brdpic8 img {margin: 0px; margin-top: expression((parentNode.offsetHeight - this.offsetHeight)<0 ? "0" : (parentNode.offsetHeight - this.offsetHeight)/2 + "px");}
 .brdpic .checkbx, .brdpic2 .checkbx, .brdpic3 .checkbx, .brdpic4 .checkbx, .brdpic5 .checkbx, .brdpic6 .checkbx, .brdpic7 .checkbx, .brdpic8 .checkbx {bottom: 22px}
 .actuser3 .checkbx { left: 6px}
 .piclist4 li {position:relative}

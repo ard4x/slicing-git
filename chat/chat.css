@@ -22,7 +22,7 @@ a:hover#contacts-tab,a:hover#inbox-tab{text-decoration:none; cursor:pointer;}
 
 #left-panel{border-right:1px solid #e3e1e0;}
 #inbox,#contacts{padding-top:0px; min-height: 360px; width:240px;}
-#inbox table .first,#contacts table .first{padding:4px 5px 4px 10px;}
+#inbox table .first,#contacts table .first{padding:4px 5px 4px 10px; position:relative;}
 .ch_userlstbx { overflow-x:hidden; overflow-y:auto; min-height: 325px; background-color:#fff; padding-top: 7px;}
 .ch_userlist {width: 240px;}
 .ch_userlist td {padding: 2px 0; vertical-align: middle;}
@@ -177,3 +177,5 @@ a:hover#contacts-tab,a:hover#inbox-tab{text-decoration:none; cursor:pointer;}
 		@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0){
 			  head~body .button_blue,.button_green,.button_white{padding:0px 10px;}
 		}
+		
+.vip{position:absolute; top:-5px; left:-5px;}
