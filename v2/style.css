@@ -1781,3 +1781,6 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 
 
 .f2f_user_photo_link  .f2f_vip{position:absolute; top:5px; left:5px; width:63px; height:63px;}
+
+.infobox{background:#f7f2d5; padding:10px;}
+.vipinfo{background:url(img/f2f_vip.png) 0 0 no-repeat; padding:5px 0 5px 80px; height:65px;}
