@@ -1593,7 +1593,8 @@ a:hover.put_me{text-decoration:none;}
 
 .piclist .inner{}
 .piclist .found_usr{padding:10px; width:355px; float:left; position:relative;}
-.piclist .found_usr .brdpic{float:left;}
+.piclist .found_usr.vip_usr{background-color:#fef2ae;}
+.piclist .found_usr .brdpic{float:left; position:relative;}
 .piclist .found_usr .usr_info{float:left; margin-left:10px; padding-right:10px; width:190px;}
 .piclist .found_usr .usr_info ul li{clear:left; padding:0; margin:0;}
 .piclist .found_usr.hover{background-color:#ecf4fb;}
@@ -1797,3 +1798,5 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .vipTable .ya_mbx3_top{background:url(img/yab_helptop.png) 0 0 no-repeat; height:22px;}
 .vipTable .ya_mbx_bot3{background:url(img/yab_helpbot.png) 0 0 no-repeat; height:18px;}
 .vipTable .ya_mbx_help {left:-35px; bottom: 22px; display:none; position: absolute; width: 280px; z-index: 1100;}
+
+.birdpic_vip{position:absolute; top:2px; left:5px;}
