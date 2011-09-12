@@ -1311,7 +1311,7 @@ a:hover.thlink{text-decoration:underline!important;}
 a.yab_loglink {float:right; font-weight:bold; margin-top:37px;}
 
 .h_menu li a {color: #426087;font-weight: bold;}
-.h_menu {float: right; margin-top: 50px;}
+.h_menu {float: right; margin-top: 50px; position:relative;}
 .h_menu .account a {background: url(img/yab_h_arr.gif) 100% 6px no-repeat; padding-right: 13px;}
 .innerTop50 {padding-top: 50px !important;}
 
@@ -1585,7 +1585,7 @@ a:hover.put_me{text-decoration:none;}
 .chat .sm12{background-position:0 -286px; }
 .chat .sm13{background-position:0 -312px; }
 
-.ucredits{background:url(img/credit_ico.gif) 0 50% no-repeat; position:relative; padding-left:22px;}
+.ucredits{background:#e7e7e7 url(img/credit_ico.png) 5px 50% no-repeat; border:1px solid #dddddd; position:absolute!important; display: block; padding: 5px 8px 5px 28px;  right: 120px;  top: -6px; }
 .ucredits a{display:block;}
 .ucredits .ubnow{position:absolute; left:22px; bottom:-10px; font-size:10px; width:50px;}
 
