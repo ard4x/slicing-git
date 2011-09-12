@@ -1800,3 +1800,5 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .vipTable .ya_mbx_help {left:-35px; bottom: 22px; display:none; position: absolute; width: 280px; z-index: 1100;}
 
 .birdpic_vip{position:absolute; top:2px; left:5px;}
+
+.skip{background:url(img/skip.png) 0 50% no-repeat; font:14px Arial; color:#b2b2b2; padding-left:25px; }

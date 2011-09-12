@@ -1889,4 +1889,6 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 	.main-menu-popap-inner ul li {display:block; margin:0px;}
 	.main-menu-popap-inner ul li a{display:block; padding:6px 10px; font:normal 12px Arial;}
 	.main-menu-popap-inner ul li a:hover{text-decoration:none; background:#ECF4FB; color:#000;}
+
 	
+.skip{background:url(img/skip.png) 0 50% no-repeat; font:14px Arial; color:#b2b2b2; padding-left:20px; }
