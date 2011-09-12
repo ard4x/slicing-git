@@ -2,6 +2,7 @@
 	body{background:url(../img/mobile/back.png) 0 0 repeat-x;}
 	
 	.gray{color:#808080;}
+	.black{color:#000000;}
 	
 	.bold{font-weight:bold!important;}
 	
@@ -9,6 +10,7 @@
 	.right{float:right;}
 	
 	.f-middle{font:16px Arial;}
+	.f-small{font:12px Arial;}
 	
 	.ui-page,.ui-content{background:transparent!important;}
 	.ui-shadow{-webkit-box-shadow:rgba(0, 0, 0, 0) 0 0 0;}
@@ -54,7 +56,12 @@
 	.usr-card {width:47%; display:inline-block; vertical-align:top; margin-bottom:10px;}
 	.usr-card.c-left{float:left;}
 	.usr-card.c-right{float:right;}
-	.usr-card .usr-card-inner{margin-top:5px;}
+	.usr-card .ui-btn{height:28px; position:absolute; right:5px; bottom:5px; border-radius:0.5em 0.5em 0.5em 0.5em;}
+	.usr-card .ui-btn-inner{padding: 0.5em 8px; font-size:12px;}
+	.usr-card .usr-card-inner{margin-top:5px; position:relative;}
+	.usr-card .usr-card-inner .ttp{ position:absolute; top:45%; left:0; padding:0 10px;}
+	.usr-card .usr-card-inner .ttc{ position:absolute; bottom:20px; left:10px;}
+	.usr-card .usr-card-inner .ui-li-count-bg{ position:absolute; top:100%; right:8px; margin-top:-30px;}
 	.usr-card .usr-card-inner img{width:100%;}
 	.usr-card p {margin:0px;}
 	
