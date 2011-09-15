@@ -1804,3 +1804,5 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .birdpic_vip{position:absolute; top:2px; left:5px;}
 
 .skip{background:url(img/skip.png) 0 50% no-repeat; font:14px Arial; color:#b2b2b2; padding-left:25px; }
+.text-list {padding-left:15px;}
+.text-list li{list-style:disc;}
