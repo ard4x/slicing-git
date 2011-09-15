@@ -1252,7 +1252,7 @@ a:hover.thlink{text-decoration:underline!important;}
 .yab_mess{height:30px; float:left; margin:20px 0px 0; position: relative;}
 .yab_mess span{display:block;}
 .yab_mess {height: 60px; text-align: center; width: 84px;}
-.yab_mess a.active{display: block; position:relative; top:-5px; height: 50px; padding: 5px 0;background: url("img/wqm_selected.png") no-repeat scroll 0 0 transparent; color: #FFFFFF;}
+.yab_mess a.active{display: block; position:relative; top:-5px; height: 50px; padding: 5px 0;background: url(img/wqm_selected.png) 0 0 no-repeat; color: #FFFFFF;}
 .yab_mess a:hover.active{color:#fff;}
 .yab_mess a.active span.hme,.yab_mess a:hover.active span.hme{background-position:50% 100%!important;}
 .yab_mess a:hover{text-decoration:none; color:#47acf3;}
@@ -1264,6 +1264,8 @@ a:hover.thlink{text-decoration:underline!important;}
 	.mess3{background: url(img/message_ico.png) 50% 0 no-repeat; height:27px; margin-bottom:3px; position:relative; left:1px;}
 	.mess4{background: url(img/soul_ico.png) 50% 0 no-repeat; height:27px; margin-bottom:3px;}
 	.mess5{background: url(img/notif_ico.png) 50% 0 no-repeat; height:28px; margin-bottom:2px;}
+	.mess6{background: url(img/fbdatting_ico.png) 50% 0 no-repeat; height:28px; margin-bottom:2px;}
+	.mess7{background: url(img/top100_ico.png) 50% 0 no-repeat; height:28px; margin-bottom:2px;}
 
 .wtit {background-color:#f7f2d5; font-weight: bold; padding: 4px 3px 4px 6px; overflow: hidden; zoom: 1;}
 .lookingbx .titlebar {font-size: 14px; overflow: hidden;  padding-bottom: 4px;}
