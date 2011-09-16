@@ -1,0 +1,12 @@
+#close{position:absolute; top:15px; right:15px;}
+.vid-viewer{background:url(img/opacity.png) 0 0 repeat; position:absolute; top:0; width:100%; z-index:888;}
+.vid-viewer-block{background:#000; position:absolute; width:685px; margin-top:70px; left:50%; margin-left:-342px;}
+.vid-viewer-block .inner{padding:20px;}
+.vid-viewer-block .vid-comment{background:#fff;}
+.vid-viewer-block .vid-comment textarea{width:560px!important;}
+.vid-viewer-block .vanilla{background:#f0efe1;}
+.vid-viewer-block .title{color:#fff; font:bold 15px Arial;}
+.vid-viewer-block .vid-views { position:relative; color:#828282; font:13px Arial; margin-top:10px; padding-right:50%;}
+.vid-viewer-block .vid-views span{padding-top:5px; padding-bottom:5px;}
+.vid-viewer-block .vidlike{position:relative; top:0px; margin-left:10px; border-left:1px solid #525252; padding-left:30px; background-position:10px 50%;}
+.vid-viewer-block .social{position:absolute; top:0px; right:0px;}

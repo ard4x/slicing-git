@@ -5,6 +5,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
 	<link rel="stylesheet" href="style(next).css" type="text/css" id="" />
 	<link rel="stylesheet" href="buttons.css" type="text/css" id="" />
+	<link rel="stylesheet" href="vidviewer.css" type="text/css" id="" />
 	
 	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
     <script src="js/jquery.stylish-select.js" type="text/javascript"></script>
@@ -19,9 +20,41 @@
 	<!--[if IE 8]>
 		<link rel="stylesheet" type="text/css" href="ie8.css" />
 	<![endif]-->
+	<script type="text/javascript" >
+		$(document).ready(function (){
+		
+			vidView();
+			$(window).resize(vidView);
+			
+			function vidView(){
+				$('#close').click(function(e){e.preventDefault(); hideOp($(this));});
+				$('.vid-viewer').height($(document).height());
+			}
+			function hideOp(el){
+				el.parents('.vid-viewer').css('display','none');
+			}
+		});
+	
+		
+	</script>
 </head>
 <body>
-
+<div class="vid-viewer">
+	<div class="vid-viewer-block">
+		<div class="inner vanilla">
+			<a href="" id="close"><img title="Close" alt="Close" src="./img/photo_close.png" /></a>
+			<p class="fs24 tbold">Recommend video</p>
+			<p>
+				You can recommend us video to post.<br/>
+				Just enter url of the video you would like to recommend, we will check it and add.
+			</p>
+			<textarea class="fixWidth635"></textarea>
+			<div class="indentTop20">
+				<input type="button" class="button_blue large indentRight10" value="Recommend" /> <a href="">Cencel</a>
+			</div>
+		</div>
+	</div>
+</div>
 	<div class="header">
 		<div class="header_inn">
 			<div class="top_navigation">

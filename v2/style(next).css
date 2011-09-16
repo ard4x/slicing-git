@@ -563,7 +563,7 @@ textarea{padding:1px 2px 2px; font-size:14px; background-color:#fff;  border-top
 .uspopbot2 {background: url(img/uspopbot2.png) bottom no-repeat; height: 5px;}
 
 .mbox {background-color:#f6f5eb; font-size: 14px; line-height: 18px; margin-bottom: 20px; padding: 20px 20px 15px 20px;}
-.mbox2,.profile_first_block {background-color:#f6f5eb; font-size: 12px; line-height: 16px; margin-top: 0px; padding: 20px 25px 15px 20px; position: relative;}
+.mbox2,.profile_first_block {background-color:#f6f5eb; font-size: 12px; line-height: 16px; margin-top: 0px; padding: 20px 25px 15px 20px; position: relative; zoom:1; overflow:visible;}
 .mbox_bot {background:url(img/mbarr.gif) center top #ffffff no-repeat; height: 23px; margin-bottom: 30px;}
 .visIt .mbox_bot {padding-bottom:20px;}
 
@@ -1520,7 +1520,7 @@ a:hover.put_me{text-decoration:none;}
 		.fromF{background:url(img/fbic.gif) 0 0 no-repeat;}
 	
 	.p_sch {position:relative;}
-	.p_sch .search{ padding-right:22px; margin-bottom:0;}
+	.p_sch .search{ padding-left:22px; margin-bottom:0;}
 	#schClose{position:absolute; right:5px; top:5px;}
 	
 	
@@ -1897,3 +1897,15 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .block_reference{position:absolute; right:0px; top:5px;}
 .rss-link{font:bold 17px Arial;}
 .rss-link.wb{padding-left:10px; border-left:1px solid #c5d6ec;}
+
+.vidbox_big,.vidbox_small{display:inline-block; vertical-align:top; margin:5px 0;}
+.vidbox_big{width:275px; padding-right:40px;}
+.vidbox_small{width:170px; padding-right:20px;}
+.vidbox_small .vidbox_title{padding-right:0px;}
+.vidbox_big.last,.vidbox_small.last{margin-right:-40px;}
+.vidbox_title{ font:bold 15px Arial; position:relative; padding:5px 50px 5px 0;}
+.vidlike{background:url(img/vidlike.png) 0 50% no-repeat; padding-left:15px; color:#828282; position:absolute; top:6px; right:0; font:normal 12px Arial;}
+
+.tags_menu li{display:block; height:26px; margin:2px 0;}
+.tags_menu li a{padding:5px; background:#f6f5eb;}
+.tags_menu li a:hover{text-decoration:none; background:#e4e3d4;}
