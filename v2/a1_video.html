@@ -7,10 +7,11 @@
 	<link rel="stylesheet" href="buttons.css" type="text/css" id="" />
 	
 	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
-    <script src="js/jquery.stylish-select.js" type="text/javascript"></script>
+    <script src="../js/jquery.stylish-select.js" type="text/javascript"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('input[type="button"],input[type="submit"]').hover(function(){$(this).toggleClass('hover');})
+			$('.sSelect').sSelect();
 		});
 	</script>
 	<!--[if IE 7]>
@@ -134,6 +135,28 @@
 					</div>
 					<div class="clr2"></div>
 				</div>
+				<div class="indentTop20">
+					<p class="fs24 left indentRight10"><b>Videos tune</b></p>
+					<ul class="subnav left">
+					   <li><a href="" class="button2"><span>Recent </span></a></li>
+					   <li class="action subselect">
+							<a href="" class="button2">
+								<span>Best</span>
+							</a>
+							<div class="stylish">
+								<select class="sSelect">
+									<option>off all time</option>
+									<option>off all time</option>
+									<option>off all time</option>
+								</select>
+							</div>
+					   </li>
+					</ul>
+					<div class="right indentTop10 p_sch">
+						<input type="text" onblur="if (this.value == '') {this.value = 'Search';}" onfocus="if (this.value == 'Search') {this.value = '';}" value="Search" class="input2 search " />
+					</div>
+					<div class="clr2"></div>
+				</div>
 				
 				<div class="indentTop20">
 					<div class="vidbox_small">
@@ -143,7 +166,7 @@
 						<p class="vidbox_title"><a href="">Katty and Luis in the park</a></p>
 						<p class="gray">12,855 views</p>
 					</div>
-					<div class="vidbox_small ">
+					<div class="vidbox_small">
 						<div class="vidpreview">
 							<img src="./img/video_preview.jpg" alt="" title="" width="100%"/>
 						</div>

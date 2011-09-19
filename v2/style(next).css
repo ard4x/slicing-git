@@ -874,6 +874,12 @@ a.pluscount2:hover {color:#ffffff; text-decoration: none;}
 .topmess2 {width: 950px; margin: 0 auto;}
 .topmess2 .inner {background-color:#f6f5eb; width: 455px; margin-left: 240px; color:#888672; font-size: 14px; padding: 5px 25px 5px 10px; text-align:center; letter-spacing: -0.1px; position: relative; text-align: left;}
 
+.subnav .subselect {position:relative;}
+.subnav .subselect .button2{padding-right:90px!important;}
+.subnav .stylish {position:absolute; top:3px; right:5px; width:80px;}
+.subnav .newListSelected {background:#ffffff url(img/customselect3.gif) right top no-repeat; color:#030303; border: solid 1px #8098ae; padding:0px 2px 1px 3px;}
+.subnav .newListSelected .selectedTxt,.subnav .newList li{font-size:11px; display:block;}
+.subnav .newListSelected .newList{top:16px!important;}
 .newListSelected {background: url("data:image/gif;base64,R0lGODlhFQAVAMQAAEJdgENpj0JfgkNnjUJghENmi0BVdkVxmUFYe0VwmEFafERvlkRrkUNkiUJihkFbfkFXeURsk0BWd0RulEVymv///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAVABUAAAV6ICWOZGkeaKqubOK+cCwvdG3f+KTvfO9HwKBwSGQYj8ikMsBsOisVp3RArVahUKu1wO1ysVhvt0Eum89oh3rNbrsJ8DgcDJXHBfh8HqzXA/6AgVCBhA+Gh4iJigqMjY6PkAiSk5SVlhCYmZqbnBKen6ChogakpaanqCEAOw==") right top #ffffff no-repeat; color:#030303; border: solid 1px #8098ae; padding:3px 2px 2px 3px;}
 @media all and (-webkit-min-device-pixel-ratio:0) {
 .newListSelected {height:15px;}
