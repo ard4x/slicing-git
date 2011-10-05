@@ -217,6 +217,7 @@ p {padding: 0 0 10px 0; margin:0;}
 .fixWidth240 {width: 236px;}
 .fixWidth300 {width: 300px!important;}
 .fixWidth320 {width: 320px!important;}
+.fixWidth360 {width: 360px!important;}
 .fixWidth385 {width: 385px!important;}
 .fixWidth450 {width: 450px!important;}
 .fixWidth485 {width: 485px!important;}
@@ -236,11 +237,11 @@ p {padding: 0 0 10px 0; margin:0;}
 
 .req {color:#bd0e0e;}
 
-h1 {font-size: 30px; color:#030303; margin:10px 0 5px; padding:0;}
-h2 {font-size: 18px; color:#030303; margin:10px 0 10px; padding:0;}
-h3 {font-size: 16px; color:#030303; margin:10px 0 5px; padding:0;}
-h4 {font-size: 14px; color:#494949; margin:10px 0 5px; padding:0; letter-spacing: -0.5px;}
-h5 {font-size: 14px; color:#030303; margin:10px 0 5px; padding:0;}
+h1 {font-size: 30px; color:#030303; margin:5px 0; padding:0;}
+h2 {font-size: 18px; color:#030303; margin:5px 0; padding:0;}
+h3 {font-size: 16px; color:#030303; margin:5px 0; padding:0;}
+h4 {font-size: 14px; color:#494949; margin:5px 0; padding:0; letter-spacing: -0.5px;}
+h5 {font-size: 14px; color:#030303; margin:5px 0; padding:0;}
 
 .btit {font-size: 24px; color:#030303; margin:10px 0 5px; padding:0; font-weight: bold;}
 
@@ -564,7 +565,8 @@ textarea{padding:1px 2px 2px; font-size:14px; background-color:#fff;  border-top
 .uspopbot2 {background: url(img/uspopbot2.png) bottom no-repeat; height: 5px;}
 
 .mbox {background-color:#f6f5eb; font-size: 14px; line-height: 18px; margin-bottom: 20px; padding: 20px 20px 15px 20px;}
-.mbox2,.profile_first_block {background-color:#f6f5eb; font-size: 12px; line-height: 16px; margin-top: 0px; padding: 20px 25px 15px 20px; position: relative; zoom:1; overflow:visible;}
+.mbox2,.profile_first_block {background-color:#f6f5eb; font-size: 12px; line-height: 16px; margin-top: 0px; padding: 15px; position: relative; zoom:1; overflow:visible;}
+.mbox3 {background-color:#ecf4fb; font-size: 12px; line-height: 16px; margin-top: 0px; padding: 15px; position: relative; zoom:1; overflow:visible;}
 .mbox_bot {background:url(img/mbarr.gif) center top #ffffff no-repeat; height: 23px; margin-bottom: 30px;}
 .visIt .mbox_bot {padding-bottom:20px;}
 
@@ -885,7 +887,7 @@ a.pluscount2:hover {color:#ffffff; text-decoration: none;}
 @media all and (-webkit-min-device-pixel-ratio:0) {
 .newListSelected {height:15px;}
 }
-.publish_block .newListSelected {background: url(img/customselect2.gif) right top #ffffff no-repeat; color:#030303; border-top: solid 1px #aaadb2; border-bottom: solid 1px #e2e9ef; border-left: solid 1px #e2e9ef; border-right: solid 1px #e2e9ef; font-size:14px ; padding:7px 2px 5px 3px;}
+.publish_block .newListSelected,.newStylish .newListSelected {background: url(img/customselect2.gif) right top #ffffff no-repeat; color:#030303; border-top: solid 1px #aaadb2; border-bottom: solid 1px #e2e9ef; border-left: solid 1px #e2e9ef; border-right: solid 1px #e2e9ef; font-size:14px ; padding:7px 2px 5px 6px;}
 @media all and (-webkit-min-device-pixel-ratio:0) {
 .publish_block .newListSelected {height:15px;}
 }
@@ -1864,7 +1866,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .saved .description {color:#898989; font-size:14px;}
 .publish_block .lookingbx .prmbch{width:148px;}
 .publish_block .toInlist .newListSelected {float: left; margin: 0 23px 10px 0; width: 120px !important;}
-.publish_block  ul.newList {top:28px!important;}
+.publish_block  ul.newList,.newStylish ul.newList {top:28px!important;}
 .publish_block .toInlist.full .newListSelected {float: left; margin: 0 23px 10px 0; width: 134px !important;}
 
 .plus,.minus{position:absolute;}
@@ -1948,3 +1950,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 	.wtit_box .new_gifts #gifts-list{margin-left:50px;}
 	.wtit_box .new_gifts img{border:1px solid #F7F2D5;}
 	.wtit_box .new_freinds .ava{margin-left:70px;}
+	
+	.select_search{background:url(img/ico_select_search.gif) 5px 50% no-repeat; padding-left:28px!important; color:#acacac;}
+	.active-label{background-color:#bdccdc;}
+	.answer_scroll{overflow-y:auto; height:100px;}
