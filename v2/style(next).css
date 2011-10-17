@@ -1954,3 +1954,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 	.select_search{background:url(img/ico_select_search.gif) 5px 50% no-repeat; padding-left:28px!important; color:#acacac;}
 	.active-label{background-color:#bdccdc;}
 	.answer_scroll{overflow-y:auto; height:100px;}
+	
+.icebreak-answer-span{position:absolute; top:5px; right:5px; font-weight:normal;}
+.icebreak-answer-block{margin-bottom:10px;}
+.icebreak-answer-block p{padding-bottom:3px;}
