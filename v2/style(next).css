@@ -1956,5 +1956,8 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 	.answer_scroll{overflow-y:auto; height:100px;}
 	
 .icebreak-answer-span{position:absolute; top:5px; right:5px; font-weight:normal;}
-.icebreak-answer-block{margin-bottom:10px;}
-.icebreak-answer-block p{padding-bottom:3px;}
+.icebreak-answer-block,.icebreaker-list-item{margin-bottom:10px;}
+.icebreak-answer-block p,.icebreaker-list-item p{padding-bottom:5px;}
+
+.icebreaker-list-item{font-size:15px; padding:5px 0; border-bottom:1px solid #eee;}
+.icebreaker-list-item .icetime{display:block; color:#000; font-size:12px;}
