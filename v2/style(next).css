@@ -1961,3 +1961,14 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 
 .icebreaker-list-item{font-size:15px; padding:5px 0; border-bottom:1px solid #eee;}
 .icebreaker-list-item .icetime{display:block; color:#000; font-size:12px;}
+
+.service_notice{background-color:#ffea02;}
+.service_notice .inner{width:950px; margin:0 auto; padding:5px 0; position:relative;}
+.service_notice .snClose{position:absolute; right:0; top:5px;}
+.service_notice .service_mail span{color:#4e6ba1;}
+.service_notice .service_mail{background:url(img/service_mail.png) 0 50% no-repeat; color:#000; padding:2px 0 2px 35px; text-decoration:none;}
+
+.spam_mail_menu table{border-collapse:collapse; width:100%;}
+.spam_mail_menu table td{text-align:center; padding:0; border-right:1px solid #fff;}
+.spam_mail_menu table td a{height:37px; background-color:#446e95; color:#fff; font:14px/34px Arial; display:block;}
+.spam_mail_menu table td a:hover{text-decoration:none; background-color:#8097b4;}
