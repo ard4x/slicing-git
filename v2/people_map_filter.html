@@ -1,0 +1,285 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Yangutu</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf8" />
+	
+	<link rel="stylesheet" href="style(next).css" type="text/css" id="" />
+	<link rel="stylesheet" href="people_map.css" type="text/css" id="" />
+	<link rel="stylesheet" href="banners.css" type="text/css" id="" />
+	<link rel="stylesheet" href="forms.css" type="text/css" id="" />
+	
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+    <script src="../js/jquery.stylish-select.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.sSelect').sSelect();
+			$('input[type="button"],input[type="submit"]').hover(function(){$(this).toggleClass('hover');})
+			$('.usr_choise_info ul li,.compare_choice').hover(function(){$(this).addClass('hover');},function(){$(this).removeClass('hover');});
+		});
+	</script>
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="ie7.css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="ie8.css" />
+	<![endif]-->
+</head>
+<body>
+	<div class="header">
+		<div class="header_inn">
+			<div class="top_navigation">
+				<ul class="left">
+					<li><a href="">Messages</a><span class="new_event">2</span></li>
+					<li><a href="">Signals</a><span class="new_event">45</span></li>
+					<li><a href="">Soulmates</a><span class="new_event">167</span></li>
+				</ul>
+				<ul class="right">
+					<li class="coints">1450 Coins <a href="#">Add</a></li>
+					<li class="profile"><a href="#">Profile </a></li>
+					<li class="account"><a href="#">Account Settings</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<div class="bot_navigation">
+				<a href="#"><img src="./img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>	
+				<ul class="main_menu">
+					<li><a href="">Home</a></li>
+					<li class="active"><a href="">Matches</a></li>
+					<li><a href="">TOP-100</a></li>
+					<li><a href="">Apps and Games</a></li>
+					<li><a href="">Blogs</a></li>
+				</ul>
+				<div class="clr2"></div>
+			</div>
+		</div>
+	</div>
+	<div class="breadcrump">
+			<div class="inner">
+				<ul>
+					<li><a href="#">Main</a></li>
+					<li>&rarr;</li>
+					<li><a href="#">Top-100</a></li>
+					<li>&rarr;</li>
+					<li><span>Leaders</span></li>
+				</ul>
+			</div>
+		</div>
+	<div class="content">
+		<div class="content_inn">
+			<div class="c_left2">
+				<h1>People on the Map</h1>
+				<div class="mbox2 indentTop10 helpblock">
+					<a id="close_helpblock" href="#"><img src="img/closeic.gif" alt="" class="cls2"></a>
+					<div class="people_main_info_inner">
+						<p>Отлично!<br/>
+							Сайт успешно определил ваше местоположение. Теперь вам нужно заполнить все поля <br/>
+							связанные с вашим местоположением.</p>
+					</div>
+				</div>
+				<div class="mbox_bot helpblock"></div>
+				
+				
+				<div class="lookingbx">
+					<div class="content_menu_bottom">
+						<div class="inner">
+							<div class="progressbar">
+								<div class="progress-control">
+									<div class="progress-control-point"></div>									
+									<div class="progress-control-point"></div>									
+									<div class="progress-control-point"></div>									
+									<div class="progress-control-point"></div>									
+								</div>
+								<div class="progress-line" style="width:40%;"><div class="progress-line-button"><p><span><img src="./img-add/progress-line-arrow.png" alt="" title="" /><nobr>Within 15 miles</nobr></span></p></div></div>
+							</div>
+							<div>
+								<p class="left"><span>Minsk</span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Select from the list</a></p>
+								<p class="right"><span>Belarus</span></p>
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+							<div class="left indentRight20">
+								<p><b>Looking for a</b>  <label class="indentLeft10"><input type="radio" /> Any</label>    <label class="indentLeft10"><input type="radio" /> Woman</label>  <label class="indentLeft10"><input type="radio" /> Man</label> <b class="indentLeft20">Aged</b></p>
+							</div>
+							<div class="aged left">
+								<select class="sSelect">
+									<option>any aged</option>
+									<option>19</option>
+									<option>..</option>
+									<option>99</option>
+								</select>
+							</div>
+							<div class="right">
+								<input type="button" value="Find people" class="button_blue small fixWidth120" />
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="hidden" id="advanced-search" style="display: block;">
+						<div class="hr"><div></div></div>
+						<div class="fixWidth290 left">
+							
+							<div>
+								<p class="fs2 tbold">Что здесь делаю</p>
+								<div class="newStylish">
+									<select class="sSelect">
+										<option>Развлекаюсь</option>
+										<option>Развлекаюсь</option>
+										<option>Развлекаюсь</option>
+										<option>Развлекаюсь</option>
+										<option>Развлекаюсь</option>
+									</select>
+								</div>
+							</div>
+							<div class="indentTop10">
+								<p class="fs2 tbold">В каких местах бывает/находится</p>
+								<div class="newStylish">
+									<select class="sSelect">
+										<option>Арт-галлерея</option>
+										<option>Арт-галлерея</option>
+										<option>Арт-галлерея</option>
+										<option>Арт-галлерея</option>
+										<option>Арт-галлерея</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="fixWidth390 right">
+							<div>
+								<p class="fs2 tbold">Актуально</p>
+								<div class="newStylish fixWidth90 left">
+									<select class="sSelect">
+										<option>Утром</option>
+										<option>Утром</option>
+										<option>Утром</option>
+									</select>
+								</div>
+								<div class="newStylish fixWidth90 left indentLeft10">
+									<select class="sSelect">
+										<option>Будни</option>
+										<option>Будни</option>
+										<option>Будни</option>
+									</select>
+								</div>
+								<div class="newStylish fixWidth190 left indentLeft10">
+									<select class="sSelect">
+										<option>Один раз в день</option>
+										<option>Один раз в день</option>
+										<option>Один раз в день</option>
+									</select>
+								</div>
+								<div class="clr2"></div>
+							</div>
+							<div class="indentTop15">
+								<input type="text" class="indentTop20 stylishInput flWidth99" />
+								<div class="clr2"></div>
+							</div>
+						</div>
+						<div class="clr2"></div>
+					</div>
+					<div class="tcenter indentTop10">
+						<a class="dotted" id="s-more" href="">Basic Search</a>
+					</div>
+				</div>
+				
+				<div class="people_map indentTop10 prelative">
+					<div class="people-map-navi">
+						<input type="button" class="button_blue small" value="На весь экран" />
+						<input type="button" class="button_blue small" value="Добавить место" />
+						<input type="button" class="button_blue small" value="Править поиск" />
+					</div>
+					<div class="people-map-usrcard" style="top:20px; left:280px;">
+						<a class="popClose" href=""><img src="./img/close_ic.png" class="cls4" alt=""></a>
+						<div class="post_block">
+							<span class="usr_pic"><img alt="" src="./img/28x28pic.jpg"></span>
+							<div class="usr_info"><b><a href="">Tony Dexter</a></b>, 21<br/><span class="fs9">Minsk, Belarus</span></div>
+						</div>
+						<ul>
+							<li>Парк.  Им. Солнца</li>
+							<li>Прогуливаюсь</li>
+							<li>Утро, будни, один раз в неделю</li>
+							<li>Хожу по лесу часами и наворачиваю по 30 км. Ищу маленьких девочек =)</li>
+						</ul>
+						<div class="indentTop10 tcenter">
+							<a href="">Edit</a>
+						</div>
+					</div>
+					<div class="people-map-actlink" style="bottom:20px; right:20px;">
+						<p><a href="">Добавить ваше место</a></p>
+						<p><a href="">Карту на весь экран</a></p>
+						<p><a href="">Показать мои места</a></p>						
+					</div>
+					<a href="" style="position:absolute; top:320px; left:450px;"><img src="./img/place_mark.png" alt="" /></a>
+					<a href="" style="position:absolute; top:250px; left:300px;" class="ppl-ava"><img src="./img/46x46pic.jpg" alt="" /></a>
+					<a href="" style="position:absolute; top:280px; left:350px;" class="ppl-ava"><img src="./img/46x46pic.jpg" alt="" /></a>
+					<a href="" style="position:absolute; top:200px; left:150px;" class="ppl-ava"><img src="./img/46x46pic.jpg" alt="" /></a>
+					<a href="" style="position:absolute; top:150px; left:200px;" class="ppl-ava"><img src="./img/46x46pic.jpg" alt="" /></a>
+					<img src="./img/map1.gif" width="100%" alt="" title="" />
+				</div>
+				
+				<div class="clr2"></div>
+				
+			</div>
+			<div class="c_right ">
+				<div class="wtit">TOP-100</div>
+				<ul class="rlist">
+					<li><a href="#" class="">Leaders</a></li>
+					<li><a href="#" class="">Play</a></li>
+					<li><a href="#" class="">My choises</a></li>
+					<li><a href="#" class="">My score</a></li>
+				</ul>
+				<div class="wtit">TOP-100</div>
+				<ul class="rlist">
+					<li><a href="#" class="">Leaders</a></li>
+					<li><a href="#" class="">Play</a></li>
+					<li><a href="#" class="">My choises</a></li>
+					<li><a href="#" class="">My score</a></li>
+				</ul>
+				<div class="bannerbx bg1">
+					<div class="inner">
+						<img alt="" src="img/banners-new/banner_invisible_ico.png">
+						<p class="fs2"><b>Show me more</b></p>
+						<p>Up to 10 times</p>
+						<input type="button" value="Get now!" class="button_green large flWidth100" />
+					</div>
+				</div>
+			</div>
+			
+			<div class="clr2"></div>
+		</div>
+	</div>
+	
+	<div class="footer">
+	  <div class="footer_inn">
+		<ul>
+			<li><a href="/page/about">About us</a></li>
+			<li><a href="/help">FAQ</a></li>
+			<li><a href="http://blog.yangutu.com/">Our blog</a></li>
+			<li><a href="/feedback">Contact us</a></li>
+		</ul>
+		<ul>
+			<li><a href="/page/policy">Privacy</a></li>
+			<li><a href="/page/terms">Terms of use</a></li>
+		</ul>
+		<ul>			
+			<li><a href="/page/scams">Scam warning</a></li>
+			<li><a href="/page/safety">Safety Tips</a></li>
+		</ul>
+		<ul>
+			<li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+			<li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+			<li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+		
+		</ul>
+		<ul>
+		  <li><a href="/dating/all">People Directory</a></li>
+		</ul>
+		<div class="right">
+			<font color="black">&copy; 2010-2011 Yangutu Inc. All rights reserved</font><br>
+		  <span>Yangutu (swahili) - My one and only.</span>
+		</div>
+		 <div class="clear"></div>
+	  </div>
+</div>
+</body>
+</html>

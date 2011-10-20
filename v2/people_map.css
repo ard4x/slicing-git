@@ -1,0 +1,11 @@
+.people_main_block{background:url(img/people_main_bg.jpg) 0 0 no-repeat; height:520px;}
+.people_main_info{background:url(img/wopacity.png) 0 0 repeat; padding:20px; width:650px; position:absolute; bottom:20px; left:20px;}
+.people_main_info_inner{background:url(img/people_main_info_bg.png) 0 0 no-repeat; padding-left:50px;}
+
+.ppl-ava{padding:5px; background:#fff; height:46px; -moz-box-shadow:1px 0px 5px #6e6b69; -webkit-box-shadow:1px 0px 5px #6e6b69; -khtml-box-shadow:1px 0px 5px #6e6b69; box-shadow:1px 0px 5px #6e6b69;}
+.people-map-navi{position:absolute; top:20px; right:20px; z-index:999; width:150px;}
+.people-map-navi input{width:100%; margin-bottom:10px;}
+.people-map-actlink{background-color:#ecf4fb; padding:15px; width:140px; position:absolute; z-index:998; -moz-box-shadow:1px 0px 5px #6e6b69; -webkit-box-shadow:1px 0px 5px #6e6b69; -khtml-box-shadow:1px 0px 5px #6e6b69; box-shadow:1px 0px 5px #6e6b69;}
+.people-map-actlink a{font-size:13px; text-decoration:underline;}
+.people-map-usrcard{background-color:#ecf4fb; padding:0 10px 10px; width:220px; position:absolute; z-index:998; -moz-box-shadow:1px 0px 5px #6e6b69; -webkit-box-shadow:1px 0px 5px #6e6b69; -khtml-box-shadow:1px 0px 5px #6e6b69; box-shadow:1px 0px 5px #6e6b69;}
+.people-map-usrcard li{background:url(img/people-map-usrcard-list.png) 5px 5px no-repeat; padding:2px 0 2px 25px;}

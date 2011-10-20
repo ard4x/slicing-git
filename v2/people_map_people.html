@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Yangutu</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf8" />
+	
+	<link rel="stylesheet" href="style(next).css" type="text/css" id="" />
+	<link rel="stylesheet" href="people_map.css" type="text/css" id="" />
+	<link rel="stylesheet" href="banners.css" type="text/css" id="" />
+	
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+    <script src="../js/jquery.stylish-select.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.sSelect').sSelect();
+			$('input[type="button"],input[type="submit"]').hover(function(){$(this).toggleClass('hover');})
+			$('.usr_choise_info ul li,.compare_choice').hover(function(){$(this).addClass('hover');},function(){$(this).removeClass('hover');});
+		});
+	</script>
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="ie7.css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="ie8.css" />
+	<![endif]-->
+</head>
+<body>
+	<div style="position: absolute; top: 320px; left: 450px;" class="yangutu_popap rubber fixWidth450">
+		<a class="popClose" href=""><img src="./img/close_ic.png" class="cls4" alt=""></a>
+		<div class="yp_top"><div class="rubber_top_right"></div></div>
+		<div class="yp_content_left">
+			<div class="yp_content_right">
+				<div class="yp_grad">
+					<p class="fs16">Сейчас вы находитесь на <input type="text" class="indentLeft10" value="Серова, 21" /></p>
+					<div class="indentTop20">
+						<p class="fs2 tbold">Вы в</p>
+						<div class="newStylish">
+							<select class="sSelect">
+								<option>Жилой дом</option>
+								<option>Жилой дом</option>
+								<option>Жилой дом</option>
+								<option>Жилой дом</option>
+								<option>Жилой дом</option>
+							</select>
+						</div>
+						<a href="">В списке нет такого места, хочу добавить сам</a>
+					</div>
+					<div class="indentTop20">
+						<p class="fs2 tbold">Что здесь делаю</p>
+						<div class="newStylish">
+							<select class="sSelect">
+								<option>Развлекаюсь</option>
+								<option>Развлекаюсь</option>
+								<option>Развлекаюсь</option>
+								<option>Развлекаюсь</option>
+								<option>Развлекаюсь</option>
+							</select>
+						</div>
+					</div>
+					<div class="indentTop20">
+						<p class="fs2 tbold">Актуально</p>
+						<div class="newStylish fixWidth90 left">
+							<select class="sSelect">
+								<option>Утром</option>
+								<option>Утром</option>
+								<option>Утром</option>
+							</select>
+						</div>
+						<div class="newStylish fixWidth90 left indentLeft10">
+							<select class="sSelect">
+								<option>Будни</option>
+								<option>Будни</option>
+								<option>Будни</option>
+							</select>
+						</div>
+						<div class="newStylish fixWidth190 left indentLeft10">
+							<select class="sSelect">
+								<option>Один раз в день</option>
+								<option>Один раз в день</option>
+								<option>Один раз в день</option>
+							</select>
+						</div>
+						<div class="clr2"></div>
+					</div>
+					<div class="indentTop20">
+						<p class="fs2 tbold">Комментарий</p>
+						<div class="newStylish">
+							<textarea class="fixWidth385"></textarea>
+						</div>
+					</div>
+					<div class="indentTop20">
+						<input type="button" class="button_blue large indentRight10 fixWidth120" value="Add" />
+						<a href="">Cancel</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="yp_bot"><div class="rubber_bot_right"></div></div>
+	</div>
+	<div class="header">
+		<div class="header_inn">
+			<div class="top_navigation">
+				<ul class="left">
+					<li><a href="">Messages</a><span class="new_event">2</span></li>
+					<li><a href="">Signals</a><span class="new_event">45</span></li>
+					<li><a href="">Soulmates</a><span class="new_event">167</span></li>
+				</ul>
+				<ul class="right">
+					<li class="coints">1450 Coins <a href="#">Add</a></li>
+					<li class="profile"><a href="#">Profile </a></li>
+					<li class="account"><a href="#">Account Settings</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<div class="bot_navigation">
+				<a href="#"><img src="./img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>	
+				<ul class="main_menu">
+					<li><a href="">Home</a></li>
+					<li class="active"><a href="">Matches</a></li>
+					<li><a href="">TOP-100</a></li>
+					<li><a href="">Apps and Games</a></li>
+					<li><a href="">Blogs</a></li>
+				</ul>
+				<div class="clr2"></div>
+			</div>
+		</div>
+	</div>
+	<div class="breadcrump">
+			<div class="inner">
+				<ul>
+					<li><a href="#">Main</a></li>
+					<li>&rarr;</li>
+					<li><a href="#">Top-100</a></li>
+					<li>&rarr;</li>
+					<li><span>Leaders</span></li>
+				</ul>
+			</div>
+		</div>
+	<div class="content">
+		<div class="content_inn">
+			<div class="c_left2">
+				<h1>People on the Map</h1>
+				<div class="mbox2 indentTop10 helpblock">
+					<a id="close_helpblock" href="#"><img src="img/closeic.gif" alt="" class="cls2"></a>
+					<div class="people_main_info_inner">
+						<p>Отлично!<br/>
+							Сайт успешно определил ваше местоположение. Теперь вам нужно заполнить все поля <br/>
+							связанные с вашим местоположением.</p>
+					</div>
+				</div>
+				<div class="mbox_bot helpblock"></div>
+				
+				<div class="people_map">
+					<img src="./img/map1.gif" width="100%" alt="" title="" />
+				</div>
+				<div class="clr2"></div>
+				
+			</div>
+			<div class="c_right ">
+				<div class="wtit">TOP-100</div>
+				<ul class="rlist">
+					<li><a href="#" class="">Leaders</a></li>
+					<li><a href="#" class="">Play</a></li>
+					<li><a href="#" class="">My choises</a></li>
+					<li><a href="#" class="">My score</a></li>
+				</ul>
+				<div class="wtit">TOP-100</div>
+				<ul class="rlist">
+					<li><a href="#" class="">Leaders</a></li>
+					<li><a href="#" class="">Play</a></li>
+					<li><a href="#" class="">My choises</a></li>
+					<li><a href="#" class="">My score</a></li>
+				</ul>
+				<div class="bannerbx bg1">
+					<div class="inner">
+						<img alt="" src="img/banners-new/banner_invisible_ico.png">
+						<p class="fs2"><b>Show me more</b></p>
+						<p>Up to 10 times</p>
+						<input type="button" value="Get now!" class="button_green large flWidth100" />
+					</div>
+				</div>
+			</div>
+			
+			<div class="clr2"></div>
+		</div>
+	</div>
+	
+	<div class="footer">
+	  <div class="footer_inn">
+		<ul>
+			<li><a href="/page/about">About us</a></li>
+			<li><a href="/help">FAQ</a></li>
+			<li><a href="http://blog.yangutu.com/">Our blog</a></li>
+			<li><a href="/feedback">Contact us</a></li>
+		</ul>
+		<ul>
+			<li><a href="/page/policy">Privacy</a></li>
+			<li><a href="/page/terms">Terms of use</a></li>
+		</ul>
+		<ul>			
+			<li><a href="/page/scams">Scam warning</a></li>
+			<li><a href="/page/safety">Safety Tips</a></li>
+		</ul>
+		<ul>
+			<li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+			<li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+			<li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+		
+		</ul>
+		<ul>
+		  <li><a href="/dating/all">People Directory</a></li>
+		</ul>
+		<div class="right">
+			<font color="black">&copy; 2010-2011 Yangutu Inc. All rights reserved</font><br>
+		  <span>Yangutu (swahili) - My one and only.</span>
+		</div>
+		 <div class="clear"></div>
+	  </div>
+</div>
+</body>
+</html>

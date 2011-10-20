@@ -207,18 +207,22 @@ p {padding: 0 0 10px 0; margin:0;}
 .fixWidth30 {width: 30px;}
 .fixWidth50 {width: 50px;}
 .fixWidth65 {width: 62px;}
+.fixWidth90 {width: 90px;}
 .fixWidth120 {width: 120px;}
 .fixWidth145 {width: 145px;}
 .fixWidth150 {width: 150px;}
 .fixWidth160 {width: 160px;}
+.fixWidth190 {width: 190px;}
 .fixWidth210 {width: 210px;}
 .fixWidth220 {width: 220px;}
 .fixWidth230 {width: 230px;}
 .fixWidth240 {width: 236px;}
+.fixWidth290 {width: 290px!important;}
 .fixWidth300 {width: 300px!important;}
 .fixWidth320 {width: 320px!important;}
 .fixWidth360 {width: 360px!important;}
 .fixWidth385 {width: 385px!important;}
+.fixWidth390 {width: 390px!important;}
 .fixWidth450 {width: 450px!important;}
 .fixWidth485 {width: 485px!important;}
 .fixWidth635 {width: 635px!important;}
@@ -567,7 +571,7 @@ textarea{padding:1px 2px 2px; font-size:14px; background-color:#fff;  border-top
 .mbox {background-color:#f6f5eb; font-size: 14px; line-height: 18px; margin-bottom: 20px; padding: 20px 20px 15px 20px;}
 .mbox2,.profile_first_block {background-color:#f6f5eb; font-size: 12px; line-height: 16px; margin-top: 0px; padding: 15px; position: relative; zoom:1; overflow:visible;}
 .mbox3 {background-color:#ecf4fb; font-size: 12px; line-height: 16px; margin-top: 0px; padding: 15px; position: relative; zoom:1; overflow:visible;}
-.mbox_bot {background:url(img/mbarr.gif) center top #ffffff no-repeat; height: 23px; margin-bottom: 30px;}
+.mbox_bot {background:url(img/mbarr.gif) center top #ffffff no-repeat; height: 23px; margin-bottom: 10px;}
 .visIt .mbox_bot {padding-bottom:20px;}
 
 .c_mid h1,.c_mid4 h1,.c_left2 h1{margin:0px 0px 20px;}
@@ -1972,3 +1976,5 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .spam_mail_menu table td{text-align:center; padding:0; border-right:1px solid #fff;}
 .spam_mail_menu table td a{height:37px; background-color:#446e95; color:#fff; font:14px/34px Arial; display:block;}
 .spam_mail_menu table td a:hover{text-decoration:none; background-color:#8097b4;}
+
+.stylishInput{font-size: 14px; padding: 5px 2px 3px!important;}
