@@ -41,8 +41,8 @@
 .country_rate .title{font:13px Arial; color:#4f6b8d; padding-bottom:0px;}
 .score_box div.tleft{width:40%; float:left;}
 .score_box div.tright{width:60%; float:left;}
-.score_box div.upscore span{font:bold 10px Arial; color:#009900; padding-left:10px; background:url(img/upscore.png) 0 50% no-repeat; margin-left:3px;}
-.score_box div.downscore span{font:bold 10px Arial; color:#cc0000; padding-left:10px; background:url(img/downscore.png) 0 50% no-repeat; margin-left:3px;}
+.score_box div.upscore span,.upscore-txt{font:bold 10px Arial; color:#009900; padding-left:10px; background:url(img/upscore.png) 0 50% no-repeat; margin-left:3px;}
+.score_box div.downscore span,.downscore-txt{font:bold 10px Arial; color:#cc0000; padding-left:10px; background:url(img/downscore.png) 0 50% no-repeat; margin-left:3px;}
 
 .compare_photolist_viewer .brdpic {background: url(img/173x227bg.png) 0 0 no-repeat; height: 227px; margin-bottom: 3px; text-align: center; width: 173px; float: left; margin: 65px 12px 0 0; position: relative;}
 .compare_photolist_viewer .brdpic.fourth{margin-right:-20px;}
