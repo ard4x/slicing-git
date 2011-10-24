@@ -63,3 +63,7 @@
 .usr_choise_rate_block .title{padding-top:5px; font:bold 12px Arial; color:#B2B2B2; padding-bottom:5px;}
 .usr_choise_rate_block .country_rate{margin-right:20px; float:left;}
 .usr_choise_rate_block .inside_link{position:absolute; right:10px; top:10px;}
+
+.top100_votebox{width:45%;}
+.top100_votebox .title{font-size:26px; color:#426087;}
+.top100_votebox .brdpic6{margin:0 5px 5px;}

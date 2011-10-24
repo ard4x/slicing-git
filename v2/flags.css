@@ -1,0 +1,6 @@
+.flags{background:url(img/flags.gif) 0 50% no-repeat; padding-left:25px;}
+.lang_knowledge{background:url(img/lang_knowledge.png) 0 2px no-repeat; padding-left:35px; overflow:hidden; height:11px;}
+.lang_knowledge.lk1{background-position:0 2px;}
+.lang_knowledge.lk2{background-position:0 -11px;}
+.lang_knowledge.lk3{background-position:0 -24px;}
+.lang_knowledge.lk4{background-position:0 -37px;}
