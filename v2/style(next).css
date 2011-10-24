@@ -132,6 +132,7 @@ p {padding: 0 0 10px 0; margin:0;}
 .fs16{font-size:16px;}
 .fs18{font-size:18px;}
 .fs24{font-size:24px;}
+.fs40{font-size:40px;}
 
 .hcenter {margin: 0 auto !important;}
 
@@ -1993,3 +1994,24 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 
 .upl_photo_dragbox{width:230px; float:left; height:200px; border:1px dashed #457098; color:#457098; background:#fff url(img/upl_photo_arrow.png) 50% 50% no-repeat;}
 .upl_photo_dragbox .dragbox_info{padding-top:50px; text-align:center; font-size:14px;}
+
+.rendez_block{background:#fff url(img/rendez_bg.jpg) 0 100% repeat-x; }
+.rendez_block .inner{padding:30px 0 70px; margin:0 auto; width:950px;}
+.rendez_block .rendez_main_img{float:left;}
+.rendez_block .rendez_main_content{width:555px; margin-left:20px; float:left;}
+.rendez_block .rendez_main_content .or{background:url(img/or2.gif) 50% 50% no-repeat;padding:23px 40px;}
+.rendez_block .rendez_main_img img{background:#fff; padding:4px; -moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; -moz-box-shadow:0 1px 3px #818181; -webkit-box-shadow:0 1px 3px #818181;}
+.rendez_startbut{background:url(img/rendez_startbut.jpg) 0 0 no-repeat; width:239px; height:47px; border:none; cursor:pointer;}
+.rendez_startbut_facebook{background:url(img/rendez_startbut_facebook.jpg) 0 0 no-repeat; width:226px; height:47px; border:none; cursor:pointer;}
+
+.infobox{background:#f7f2d5; padding:10px;}.vipinfo{background:url(img/f2f_vip.png) 0 0 no-repeat; padding:5px 0 5px 80px; height:65px;}
+.vipTable{border-collapse:collapse; width:100%; border:solid #dedede; border-width:1px 1px 0 0;}
+.vipTable tr.hover td{background:#ddedfb;}
+.vipTable .first td{font:bold 14px Arial;}
+.vipTable td{padding:10px; border:solid #dedede; border-width:0 0 1px 1px; text-align:center;}
+.vipTable td.bg{background:#eaf5fb;}
+
+.helpinfo{cursor:pointer;}
+.vipTable .ya_mbx3_top{background:url(img/yab_helptop.png) 0 0 no-repeat; height:22px;}
+.vipTable .ya_mbx_bot3{background:url(img/yab_helpbot.png) 0 0 no-repeat; height:18px;}
+.vipTable .ya_mbx_help {left:-35px; bottom: 22px; display:none; position: absolute; width: 280px; z-index: 1100;}
