@@ -1044,7 +1044,7 @@ a.cntr2 span {font-size: 12px; color:#ffffff; background: url(img/hm_right.png) 
 .piclist{margin-top:6px;}
 
 .content {background-color:#ffffff;}
-.content_inn {width: 950px; margin: 0 auto; padding-bottom: 30px; padding-top: 40px; position:relative; z-index:1}
+.content_inn {width: 950px; margin: 0 auto; padding-bottom: 30px; padding-top: 10px; position:relative; z-index:1}
 .techpage .content_inn {width: 740px;}
 .content_inn2 {width: 950px; margin: 0 auto; padding-bottom: 30px; padding-top: 0px;}
 .c_left {float: left; width: 180px; margin-right: 15px;}
@@ -1608,11 +1608,12 @@ a:hover.put_me{text-decoration:none;}
 .pagination_search{font:14px Arial; float:right; margin-top:25px;}
 
 .piclist .inner{}
-.piclist .found_usr{padding:10px; width:355px; float:left; position:relative;}
-.piclist .found_usr .brdpic{float:left;}
-.piclist .found_usr .usr_info{float:left; margin-left:10px; padding-right:10px; width:190px;}
+.piclist .found_usr{padding:10px; width:345px; float:left; position:relative;}
+.piclist .found_usr .brdpic{float:left; position:relative;}
+.piclist .found_usr .usr_info{float:left; margin-left:10px; padding-right:10px; width:180px;}
 .piclist .found_usr .usr_info ul li{clear:left; padding:0; margin:0;}
 .piclist .found_usr.hover{background-color:#ecf4fb;}
+
 	.pup{position:absolute; right:10px; top:10px;}
 	
 	.dcredits{background: url(img/credit_ico.gif) 0 0px no-repeat; padding-left: 22px;}
@@ -1800,6 +1801,8 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .bic_up_name a{color:#fff; line-height:26px;}
 .bic_up_name_inner {padding:6px 10px;}
 .bic_up_name a:hover{color:#fff;}
+
+.birdpic_vip{position:absolute; top:2px; left:5px;}
 
 .publish_block{background-color:#ecf4fb; margin-bottom:5px; position:relative;}
 .publish_block.saved{background-color:#fff;}
@@ -1995,15 +1998,6 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .upl_photo_dragbox{width:230px; float:left; height:200px; border:1px dashed #457098; color:#457098; background:#fff url(img/upl_photo_arrow.png) 50% 50% no-repeat;}
 .upl_photo_dragbox .dragbox_info{padding-top:50px; text-align:center; font-size:14px;}
 
-.rendez_block{background:#fff url(img/rendez_bg.jpg) 0 100% repeat-x; }
-.rendez_block .inner{padding:30px 0 70px; margin:0 auto; width:950px;}
-.rendez_block .rendez_main_img{float:left;}
-.rendez_block .rendez_main_content{width:555px; margin-left:20px; float:left;}
-.rendez_block .rendez_main_content .or{background:url(img/or2.gif) 50% 50% no-repeat;padding:23px 40px;}
-.rendez_block .rendez_main_img img{background:#fff; padding:4px; -moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; -moz-box-shadow:0 1px 3px #818181; -webkit-box-shadow:0 1px 3px #818181;}
-.rendez_startbut{background:url(img/rendez_startbut.jpg) 0 0 no-repeat; width:239px; height:47px; border:none; cursor:pointer;}
-.rendez_startbut_facebook{background:url(img/rendez_startbut_facebook.jpg) 0 0 no-repeat; width:226px; height:47px; border:none; cursor:pointer;}
-
 .infobox{background:#f7f2d5; padding:10px;}.vipinfo{background:url(img/f2f_vip.png) 0 0 no-repeat; padding:5px 0 5px 80px; height:65px;}
 .vipTable{border-collapse:collapse; width:100%; border:solid #dedede; border-width:1px 1px 0 0;}
 .vipTable tr.hover td{background:#ddedfb;}
@@ -2019,3 +2013,50 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .lookingbx.greenbx{background-color:#edf9e3;}
 .nopad p{padding:0px;}
 .spec_or{background:url(img/or2.gif) 10px 50% no-repeat; padding-left:60px; display:inline-block;}
+
+.rendez_block{background:#fff url(img/rendez_bg.jpg) 0 100% repeat-x; }
+.rendez_block .inner{padding:30px 0 70px; margin:0 auto; width:950px;}
+.rendez_block .rendez_main_img{float:left;}
+.rendez_block .rendez_main_content{width:555px; margin-left:20px; float:left;}
+.rendez_block .rendez_main_content .or{background:url(img/or2.gif) 50% 50% no-repeat;padding:23px 40px;}
+.rendez_block .rendez_main_img img{background:#fff; padding:4px; -moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; -moz-box-shadow:0 1px 3px #818181; -webkit-box-shadow:0 1px 3px #818181;}
+.rendez_startbut{background:url(img/rendez_startbut.jpg) 0 0 no-repeat; width:239px; height:47px; border:none; cursor:pointer;}
+.rendez_startbut_facebook{background:url(img/rendez_startbut_facebook.jpg) 0 0 no-repeat; width:226px; height:47px; border:none; cursor:pointer;}
+
+.rendez_celendar{}
+.rendez_celendar ul li{float:left; width:13%; height:80px; padding:10px 0; text-align:center; margin:0 4px;}
+.rendez_celendar ul li a{color:#000;}
+.rendez_celendar ul li.select{background:url(img/rendez_calendar_bg.png) 0 0 no-repeat;}
+.rendez_celendar ul li.select a{color:#ffffff;}
+.rendez_celendar ul li.holiday a{color:#cb5959;}
+
+.rendez_menu ul{ width:33%; float:left; font-size:13px; color:#de4e0f;}
+.rendez_menu ul li{margin:10px 0; padding:0px 10px 0px 25px; background:url(img/rendez_icos.png) 0 0 no-repeat;}
+.rendez_menu ul li.l1{background-position: 0 0;}
+.rendez_menu ul li.l2{background-position: 0 -33px;}
+.rendez_menu ul li.l3{background-position: 0 -64px;}
+.rendez_menu ul li.l4{background-position: 0 -100px;}
+.rendez_menu ul li.l5{background-position: 0 -130px;}
+.rendez_menu ul li.l6{background-position: 0 -160px;}
+.rendez_menu ul li.l7{background-position: 0 -191px;}
+.rendez_menu ul li.l8{background-position: 0 -223px;}
+.rendez_menu ul li.l9{background-position: 0 -256px;}
+.rendez_menu ul li.l10{background-position: 0 -287px;}
+.rendez_menu ul li.l11{background-position: 0 -319px;}
+.rendez_menu ul li.l12{background-position: 0 -351px;}
+
+.rendezlist .found_usr{padding:10px; width:343px; border:1px solid #fff; height:165px; float:left; position:relative;}
+.rendezlist .found_usr p{padding:0 0 5px;}
+.rendezlist .found_usr.mutual{border-color:#82d88c; background-color:#f6fcf7;}
+.rendezlist .found_usr .mutual_label{position:absolute; right:10px; top:10px; color:#82d88c; text-transform:uppercase;}
+.rendezlist .found_usr .brdpic{float:left; position:relative;}
+.rendezlist .found_usr .usr_info{float:left; margin-left:10px; padding-right:10px; width:180px; font-size:11px;}
+.rendezlist .found_usr .usr_info ul li{clear:left; padding:0; margin:0;}
+.rendezlist .found_usr.hover{background-color:#ecf4fb;}
+.rendezlist .found_usr .responded{ background:url(img/rendez_icos.png) 0 -384px no-repeat; color:#82d88c; font-weight:bold; padding:2px 0 2px 25px; margin-right:10px;}
+
+.piclist .found_usr.vip_usr{background-color:#fef2ae;}
+.action_tools{position:absolute; bottom:18px; left:148px; height:27px;}
+.found_usr_orbx{position:absolute; bottom:5px; right:-50px;}
+.likeTo{margin-top:10px; padding-top:7px!important; border-top:1px solid #e8e8e8; font-size:11px;}
+.likeTo span{color:#747474; margin-right:5px;}
