@@ -1999,7 +1999,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .rendez_block .inner{padding:30px 0 70px; margin:0 auto; width:950px;}
 .rendez_block .rendez_main_img{float:left;}
 .rendez_block .rendez_main_content{width:555px; margin-left:20px; float:left;}
-.rendez_block .rendez_main_content .or,.spec_or{background:url(img/or2.gif) 50% 50% no-repeat;padding:23px 40px;}
+.rendez_block .rendez_main_content .or{background:url(img/or2.gif) 50% 50% no-repeat;padding:23px 40px;}
 .rendez_block .rendez_main_img img{background:#fff; padding:4px; -moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; -moz-box-shadow:0 1px 3px #818181; -webkit-box-shadow:0 1px 3px #818181;}
 .rendez_startbut{background:url(img/rendez_startbut.jpg) 0 0 no-repeat; width:239px; height:47px; border:none; cursor:pointer;}
 .rendez_startbut_facebook{background:url(img/rendez_startbut_facebook.jpg) 0 0 no-repeat; width:226px; height:47px; border:none; cursor:pointer;}
@@ -2018,3 +2018,4 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 
 .lookingbx.greenbx{background-color:#edf9e3;}
 .nopad p{padding:0px;}
+.spec_or{background:url(img/or2.gif) 10px 50% no-repeat; padding-left:60px; display:inline-block;}
