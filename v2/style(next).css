@@ -1408,8 +1408,7 @@ a:hover.put_me{text-decoration:none;}
 	.banner .yp_bot{background:url(img/yp_banner_bot_bg.png) 0 0 no-repeat; height:10px;}
 	.banner .yp_grad{margin:0 14px 0 13px; padding:10px;}
 	.banner .yp_grad p{padding:0 5px 10px; line-height: 20px;}
-	.banner #popClose {position: absolute; right: 20px; top: 15px;
-}
+	.banner #popClose {position: absolute; right: 20px; top: 15px;}
 	
 	.yp_grad{background:url(img/yp_grad.jpg) 0 0 repeat-x; padding:20px 0 20px 0; margin:0 8px 0 7px;}
 

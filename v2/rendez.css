@@ -51,8 +51,8 @@
 
 .rInfo_block{background:#fff url(img/rendez_info_block.jpg) 0 50% no-repeat; padding-left:30px;}
 
-.rendez_looking{position:relative; border:1px solid #e7e7e7; background-color:#f5f5f5; padding:20px 15px;}
-.rendez_looking .prev,.rendez_looking .next{position:absolute; top:60px;}
+.rendez_looking{position:relative; zoom:1; overflow:visible; border:1px solid #e7e7e7; background-color:#f5f5f5; padding:20px 15px; z-index:9;}
+.rendez_looking .prev,.rendez_looking .next{position:absolute; top:60px; z-index:99; display:block; width:30px; height:30px;  zoom:1;}
 .rendez_looking .prev{left:-18px;}
 .rendez_looking .next{right:-18px;}
 .looking_usr{margin:0 5px; float:left;}
@@ -64,3 +64,15 @@
 .rendez_yl .inner{padding:20px 0; width:950px; margin:0 auto;}
 
 .howit_work{background:url(img/rend_how_it_work.jpg) 0 0 no-repeat; height:167px;}
+
+.rend_select_menu ul li {height:33px; float:left; padding-bottom:6px;}
+.rend_select_menu ul li.first a,.rend_select_menu ul li.last a{background:url(img/rend_select_corners.png) 0 0 no-repeat;}
+.rend_select_menu ul li.first.select a {background-position:0 0;}
+.rend_select_menu ul li.first a {background-position:0 100%; padding-left:3px;}
+.rend_select_menu ul li.last.select a {background-position:100% 0;}
+.rend_select_menu ul li.last a {background-position:100% 100%; padding-right:3px;}
+.rend_select_menu ul li.select {background:url(img/rend_select_bg.png) 50% 100% no-repeat;}
+.rend_select_menu ul li a {display:block;}
+.rend_select_menu ul li a:hover {text-decoration:none;}
+.rend_select_menu ul li span{background:url(img/rend_select_menu.jpg) 0 -33px repeat-x; display:block; height:33px; padding:0 10px; color:#fff; font:16px/30px Arial;}
+.rend_select_menu ul li.select span{ background-position:0 0;}
