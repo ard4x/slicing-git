@@ -1,6 +1,7 @@
 .lang_edit{padding-left:15px;}
-.lang_edit li{list-style:decimal; margin:0 0 10px;}
-.lang_edit .lang_control{width:230px; float:left;}
+.lang_edit li{list-style:none; display:block; margin:0 0 10px;}
+.lang_edit .lang_control{position:relative; width:230px; float:left;}
+.lang_edit .lang_control .count{position:absolute; top:3px; left:-15px;}
 .lookingbx .lang_control{width:140px; float:left;}
 .lang_edit .lang_level{position:relative; width:150px; margin-left:50px; float:left;}
 .lang_edit .lang_level .level{position:absolute; top:4px; left:-35px;}
