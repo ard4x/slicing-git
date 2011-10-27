@@ -1,3 +1,11 @@
+.lang_edit{padding-left:15px;}
+.lang_edit li{list-style:decimal; margin:0 0 10px;}
+.lang_edit .lang_control{width:230px; float:left;}
+.lookingbx .lang_control{width:140px; float:left;}
+.lang_edit .lang_level{position:relative; width:150px; margin-left:50px; float:left;}
+.lang_edit .lang_level .level{position:absolute; top:4px; left:-35px;}
+.lang_edit .lang_level .langClose{position:absolute; top:3px; right:-25px;}
+
 .lang_knowledge{background:url(img/lang_knowledge.png) 0 2px no-repeat; padding-left:35px; overflow:hidden; height:11px;}
 .lang_knowledge.lk1{background-position:0 2px;}
 .lang_knowledge.lk2{background-position:0 -11px;}
@@ -249,3 +257,18 @@
 .flags.flag-za {background-position: 0 -165px}
 .flags.flag-zm {background-position: -16px -165px}
 .flags.flag-zw {background-position: -32px -165px}
+
+
+.lnPeopleslist .found_usr{padding:10px; width:343px; border:1px solid #fff; height:165px; float:left; position:relative;}
+.lnPeopleslist .found_usr .brdpic{float:left; position:relative;}
+.lnPeopleslist .found_usr .usr_info{float:left; margin-left:10px; padding-right:10px; width:180px; font-size:11px;}
+.lnPeopleslist .found_usr .usr_info ul li{clear:left; padding:0; margin:0;}
+.lnPeopleslist .found_usr.hover{background-color:#ecf4fb;}
+.lnPeopleslist .found_usr .responded{ background:url(img/rendez_icos.png) 0 -384px no-repeat; color:#82d88c; font-weight:bold; padding:2px 0 2px 25px; margin-right:10px;}
+
+.found_usr.vip_usr{background-color:#fef2ae;}
+.lnPeopleslist .action_tools{position:absolute; bottom:18px; left:148px; height:27px;}
+.lnPeopleslist .found_usr_orbx{position:absolute; bottom:5px; right:-50px;}
+
+.fixWidth555{width:555px;}
+.pen-coints{position:absolute; top:-25px; left:0px;}
