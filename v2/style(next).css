@@ -1577,11 +1577,11 @@ a:hover.put_me{text-decoration:none;}
 .lookingbx .searchbox p{font-size:14px; padding:0 0 5px 0px;}
 .lookingbx .searchbox label input[type="radio"]{margin-left:0px;}
 .lookingbx  a.dotted{font:bold 13px Arial; padding-right:10px; text-decoration:none; border-bottom:1px dashed;}
-#s-more {background:url(/img/yab_h_arr.gif) 100% 6px no-repeat;}
-#s-less {background:url(/img/yab_v_arr.gif) 100% 6px no-repeat;}
+#s-more {background:url(img/yab_h_arr.gif) 100% 6px no-repeat;}
+#s-less {background:url(img/yab_v_arr.gif) 100% 6px no-repeat;}
 .lookingbx  a.dotted.nobg{background:transparent; padding-right:0px;}
 .lookingbx  a:hover.dotted{border:none;}
-.lookingbx  .selection{width:205px; float:left; min-height:10px; padding-right:30px; position:relative; margin-right:5px;}
+.lookingbx  .selection{width:200px; float:left; min-height:10px; padding-right:30px; position:relative; margin-right:0px;}
 .lookingbx  .selection .popClose{right:10px; top:3px; z-index: 9999;}
 .lookingbx  .selection .inner{margin:10px 0;}
 .chat .sm1, .chat .sm2, .chat .sm3, .chat .sm4,
@@ -1626,25 +1626,6 @@ a:hover.put_me{text-decoration:none;}
 		.in7{background: url(img/services_7.jpg) 0 0px no-repeat;}
 		.in8{background: url(img/services_8.jpg) 0 0px no-repeat;}
 		
-	.super_button_green,.super_button_blue{background:url(img/buttons_super_bg.jpg) 0 0 repeat-x; height:57px; font-size:24px; text-align:center; box-shadow:1px 1px 3px #666565; -webkit-box-shadow:1px 1px 3px #666565; -moz-box-shadow:1px 1px 3px #666565; cursor:pointer; padding:0 10px 3px 10px; font-weight:bold; text-shadow: 1px -1px 1px #6e6d6d; border:none;}
-	.button_blue{background:url(img/blue-button-bg.jpg) 0 0 repeat-x; text-shadow: 1px -1px 1px #6e6d6d;}
-	.button_green{background:url(img/green-button-bg.jpg) 0 0 repeat-x; text-shadow: 1px -1px 1px #6e6d6d;}
-	.button_black{background:url(img/black-button-bg.jpg) 0 0 repeat-x; text-shadow: 1px -1px 1px #6e6d6d;}
-	.button_blue,.button_green{color:#fff;}
-	.button_green,.button_blue,.button_black{background-position: 0 -33px;  text-align:center; cursor:pointer; padding:0 6px 3px 6px; border:none;}
-	.button_green.hover,.button_blue.hover,.button_black.hover{background-position: 0 -66px;}
-	.button_green:active,.button_blue:active,.button_black:active{background-position: 0 -99px;}
-	.button_green.disabled,.button_blue.disabled,.button_black.disabled{background-position: 0 0; cursor:default; color:#9f9f9f; text-shadow: 1px 1px 0px #fff;}
-	.button_black{text-shadow: 1px -1px 1px #000000; color:#cccccc;}
-	.button_blue.large,.button_green.large,.button_black.large{height:33px; font:bold 14px Arial;}
-	.button_blue.small,.button_green.small,.button_black.small{height:27px; font:bold 12px Arial;}
-	@media screen and (-webkit-min-device-pixel-ratio:0) {
-			 .button_blue,.button_green,.button_white{padding:0px 10px;}
-		}
-		@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0){
-			  head~body .button_blue,.button_green,.button_white{padding:0px 10px;}
-		}
-	
 	.lv_tab .cntr{position:relative; left:0; top:0;}
 	
 	.bannerbx_orange {background:#f8a10f url(img/panel_right_banner_bg.jpg) 0 100% repeat-x; margin-bottom: 30px; color:#fff;}
@@ -2013,3 +1994,6 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .lookingbx.greenbx{background-color:#edf9e3;}
 .nopad p{padding:0px;}
 .spec_or{background:url(img/or2.gif) 10px 50% no-repeat; padding-left:60px; display:inline-block;}
+
+.closeSelection{padding-top:10px; border-top:1px solid #CCDAE8;}
+.show_pl{background:url(img/looking_ico.png) 0 0 no-repeat; padding:10px 75px 0; height:50px;}
