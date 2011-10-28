@@ -1997,5 +1997,5 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .closeSelection{padding-top:10px; border-top:1px solid #CCDAE8;}
 .show_pl{background:url(img/looking_ico.png) 0 0 no-repeat; padding:10px 75px 0; height:50px;}
 
-.yangutu_proposal_list{text-align:center;}
+.yangutu_proposal_list{text-align:center; width:750px; margin:0 auto;}
 .yangutu_proposal_block{display:inline-block; *display:inline; zoom:1; text-align:left; vertical-align:top; height:270px; width:215px; margin-right:20px; color:#333333;}
