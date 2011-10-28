@@ -29,7 +29,7 @@ p {padding: 0 0 10px 0; margin:0;}
 .vtop {vertical-align: top !important;}
 .vmiddle {vertical-align: middle !important;}
 .prelative {position: relative;}
-.blue,.blue:hover{color:#5496ed;}
+.blue,.blue:hover{color:#436187;}
 .nobg{background:transparent!important;}
 
 .width50p{width:50%;}
@@ -59,7 +59,7 @@ p {padding: 0 0 10px 0; margin:0;}
 .ya_count_online{padding:0 0 0 15px;}
 	.count_sp{color:#7f8080; font-size:14px;}
 	
-.ya_main_title{background:url(img/main_title.jpg) 0 0 no-repeat; height:50px; padding-bottom:30px;}
+.ya_main_title{background:url(img/main_title.png) 50% 0 no-repeat; height:50px; padding-bottom:10px;}
 
 .ya_usr_block{width:525px;}
 	.ya_one_usr{width:85px; height:85px; border:solid #fff; border-width:1px 2px 1px 0;}
@@ -231,7 +231,7 @@ p {padding: 0 0 10px 0; margin:0;}
 .fixWidth815 {width: 815px!important;}
 
 .black {color:#000000 !important;}
-.gray {color:#b2b2b2 !important;}
+.gray {color:#808790 !important;}
 .lightgr {color:#9d9d9f !important;}
 .orange {color:#ffac2f !important;}
 .lightBlue a {color:#b6d9f7;}
@@ -1996,3 +1996,6 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 
 .closeSelection{padding-top:10px; border-top:1px solid #CCDAE8;}
 .show_pl{background:url(img/looking_ico.png) 0 0 no-repeat; padding:10px 75px 0; height:50px;}
+
+.yangutu_proposal_list{}
+.yangutu_proposal_block{float:left; height:270px; width:215px; margin-right:20px; color:#333333;}
