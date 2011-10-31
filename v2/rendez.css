@@ -1,5 +1,6 @@
 
 .fixWidth670{width:670px;}
+.yellow{color:#DE4E0F;}
 
 .rendez_block{background:#fff url(img/rendez_bg.jpg) 0 100% repeat-x; }
 .rendez_block .inner{padding:30px 0 70px; margin:0 auto; width:950px;}
@@ -19,19 +20,22 @@
 .rendez_celendar ul li.holiday a{color:#cb5959;}
 
 .rendez_menu ul{ width:33%; float:left; font-size:13px; color:#de4e0f;}
-.rendez_menu ul li{margin:10px 0; padding:0px 10px 0px 25px; background:url(img/rendez_icos.png) 0 0 no-repeat;}
-.rendez_menu ul li.l1{background-position: 0 0;}
-.rendez_menu ul li.l2{background-position: 0 -33px;}
-.rendez_menu ul li.l3{background-position: 0 -64px;}
-.rendez_menu ul li.l4{background-position: 0 -100px;}
-.rendez_menu ul li.l5{background-position: 0 -130px;}
-.rendez_menu ul li.l6{background-position: 0 -160px;}
-.rendez_menu ul li.l7{background-position: 0 -191px;}
-.rendez_menu ul li.l8{background-position: 0 -223px;}
-.rendez_menu ul li.l9{background-position: 0 -256px;}
-.rendez_menu ul li.l10{background-position: 0 -287px;}
-.rendez_menu ul li.l11{background-position: 0 -319px;}
-.rendez_menu ul li.l12{background-position: 0 -351px;}
+.rendez_menu ul li{margin:10px 0;}
+.rendez_menu ul li span{padding:5px;}
+.rendez_menu ul li.active span{background-color:#e8f4ff;}
+.rendez_menu ul li a{padding:0px 10px 0px 25px; background:url(img/rendez_icos.png) 0 0 no-repeat;}
+.rendez_menu ul li.l1 a{background-position: 0 0;}
+.rendez_menu ul li.l2 a{background-position: 0 -33px;}
+.rendez_menu ul li.l3 a{background-position: 0 -64px;}
+.rendez_menu ul li.l4 a{background-position: 0 -100px;}
+.rendez_menu ul li.l5 a{background-position: 0 -130px;}
+.rendez_menu ul li.l6 a{background-position: 0 -160px;}
+.rendez_menu ul li.l7 a{background-position: 0 -191px;}
+.rendez_menu ul li.l8 a{background-position: 0 -223px;}
+.rendez_menu ul li.l9 a{background-position: 0 -256px;}
+.rendez_menu ul li.l10 a{background-position: 0 -287px;}
+.rendez_menu ul li.l11 a{background-position: 0 -319px;}
+.rendez_menu ul li.l12 a{background-position: 0 -351px;}
 
 .rendezlist .found_usr{padding:10px; width:343px; border:1px solid #fff; height:165px; float:left; position:relative;}
 .rendezlist .found_usr p{padding:0 0 5px;}
@@ -72,7 +76,14 @@
 .rend_select_menu ul li.last.select a {background-position:100% 0;}
 .rend_select_menu ul li.last a {background-position:100% 100%; padding-right:3px;}
 .rend_select_menu ul li.select {background:url(img/rend_select_bg.png) 50% 100% no-repeat;}
-.rend_select_menu ul li a {display:block;}
+.rend_select_menu ul li.select b {color:#fff;}
+.rend_select_menu ul li b {color:#DE4E0F;}
+.rend_select_menu ul li a {display:block; white-space:nowrap;}
 .rend_select_menu ul li a:hover {text-decoration:none;}
-.rend_select_menu ul li span{background:url(img/rend_select_menu.jpg) 0 -33px repeat-x; display:block; height:33px; padding:0 10px; color:#fff; font:16px/30px Arial;}
-.rend_select_menu ul li.select span{ background-position:0 0;}
+.rend_select_menu ul li span{background:url(img/rend_select_menu.jpg) 0 -33px repeat-x; display:block; height:33px; padding:0 10px; color:#61758f; font:16px/30px Arial; border-right:1px solid #adabac;}
+.rend_select_menu ul li.first span,.rend_select_menu ul li.last span{border-right:none;}
+.rend_select_menu ul li.select span{ background-position:0 0; color:#fff;}
+
+.rend_select_second_menu{background:url(img/rend_select_second_top.png) 0 0 no-repeat;}
+.rend_select_second_menu ul li{height:auto; margin-right:20px; font-size:14px; padding:10px 0 0;}
+.rend_select_second_menu .inner{padding:0 10px 10px; background:url(img/rend_select_second_bottom.jpg) 0 100% no-repeat;}
