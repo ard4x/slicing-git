@@ -8,8 +8,6 @@
 .rendez_block .rendez_main_content{width:555px; margin-left:20px; float:left;}
 .rendez_block .rendez_main_content .or{background:url(img/or2.gif) 50% 50% no-repeat;padding:23px 40px;}
 .rendez_block .rendez_main_img img{background:#fff; padding:4px; -moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; -moz-box-shadow:0 1px 3px #818181; -webkit-box-shadow:0 1px 3px #818181;}
-.rendez_startbut{background:url(img/rendez_startbut.jpg) 0 0 no-repeat; width:239px; height:47px; border:none; cursor:pointer;}
-.rendez_startbut_facebook{background:url(img/rendez_startbut_facebook.jpg) 0 0 no-repeat; width:226px; height:47px; border:none; cursor:pointer;}
 
 .rendez_celendar{}
 .rendez_celendar ul li{float:left; width:13%; height:80px; padding:10px 0; text-align:center; margin:0 4px;}
