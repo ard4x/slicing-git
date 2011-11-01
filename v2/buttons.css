@@ -23,3 +23,4 @@
 .button-loading input[type="button"]{padding-left:30px;}
 
 .vipTablebut{background:url(img/vipTablebut.png) 0 0 repeat-x; text-shadow: 0px -1px 0px #821eac; width:104px; height:24px; border:none; padding-bottom:5px; color:#fff;}
+.facedata{background:url(img/facebut_data.jpg) 0 0 no-repeat; width:185px; height:27px; border:none; cursor:pointer;}
