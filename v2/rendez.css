@@ -78,7 +78,7 @@
 .rend_select_menu ul li b {color:#DE4E0F;}
 .rend_select_menu ul li a {display:block; white-space:nowrap;}
 .rend_select_menu ul li a:hover {text-decoration:none;}
-.rend_select_menu ul li span{background:url(img/rend_select_menu.jpg) 0 -33px repeat-x; display:block; height:33px; padding:0 10px; color:#61758f; font:16px/30px Arial; border-right:1px solid #adabac;}
+.rend_select_menu ul li span{background:url(img/rend_select_menu.jpg) 0 -33px repeat-x; display:block; height:33px; padding:0 10px; color:#61758f; font:16px/30px Arial; border-right:1px solid #c3c2c2;}
 .rend_select_menu ul li.first span,.rend_select_menu ul li.last span{border-right:none;}
 .rend_select_menu ul li.select span{ background-position:0 0; color:#fff;}
 

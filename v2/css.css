@@ -272,7 +272,8 @@ a:hover.put_me{text-decoration:none;}
 .photo-usr{padding-left:20px;}
 #photo-box{z-index:999; background-color:#000; color:#fff;}
 #photo-box .preview{text-align:center; padding:4px 0 2px;}
-#photo-box .preview img{width:50px; height:50px; margin-bottom:0px;}
+#photo-box .preview img{width:50px; height:50px; margin-bottom:0px; opacity:.3;}
+#photo-box .preview .active img{opacity:1;}
 #photo-box .rate{position:absolute; left:0; background: url(img/opacity.png) 0 0 repeat;}
 #photo-box .flike{position:absolute; left:2px; bottom:5px;}
 #photo-box .rate p{padding:3px 10px; font:bold 30px Arial; color:#fff;}
@@ -317,20 +318,6 @@ a:hover.put_me{text-decoration:none;}
 .ucredits{background:url(img/credit_ico.gif) 0 50% no-repeat; position:relative; padding-left:22px; width:50px;}
 .ucredits .ubnow{position:absolute; left:22px; bottom:-10px; font-size:10px;}
 
-.button_blue,.button_green,.button_white{background:url(img/buttons_bg.jpg) 0 0 repeat-x; box-shadow:1px 1px 3px #666565; -webkit-box-shadow:1px 1px 3px #666565; -moz-box-shadow:1px 1px 3px #666565; cursor:pointer; padding:0 6px 3px 6px; font-weight:bold; text-shadow: 1px -1px 1px #6e6d6d; border:none;}
-	.button_blue,.button_green{color:#fff;}
-	.button_green{background-position: 0 -33px;}
-	.button_white{color:#a09f9f; background-position: 0 -66px; text-shadow: 1px -1px 1px #fff;}
-	.button_blue.large,.button_green.large,.button_white.large{height:33px; font-size:14px;}
-	.button_blue.small,.button_green.small,.button_white.small{height:27px; font-size:12px;}
-	
-	@media screen and (-webkit-min-device-pixel-ratio:0) {
-			 .button_blue,.button_green,.button_white{padding:0px 10px;}
-		}
-		@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0){
-			  head~body .button_blue,.button_green,.button_white{padding:0px 10px;}
-		}
-		
 	.photo-view-reguest { position: relative; text-align:center; width:220px; margin:0 auto; height: 290px; z-index:999; overflow:visible; zoom:1;}
 	.photo-view-reguest a {height: 290px; text-decoration:none; position:absolute; top:0; left:0; width:220px; overflow:visible; zoom:1;}
 	.photo-view-reguest a:hover span{background-color:#758292; color:#fff; text-decoration:none;}
