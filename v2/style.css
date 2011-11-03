@@ -363,7 +363,7 @@ a.loglink:hover span {border-bottom: none; color:#b6d9f7;}
 			  .blue_but.big .bb_right{top:0px!important;}
 		}
 
-.prvic{bottom: -5px; left: 45%; position: absolute;}		
+.prvic{bottom: 10px; left: 45%; position: absolute;}		
 
 .findbut {border: none; background: url(img/find.gif) no-repeat; width: 148px; height: 33px; cursor: pointer;}
 .remindbut {border: none; background: url(img/remind.png) no-repeat; width: 90px; height: 26px; cursor: pointer;}
