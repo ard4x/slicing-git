@@ -65,5 +65,8 @@
 .usr_choise_rate_block .inside_link{position:absolute; right:10px; top:10px;}
 
 .top100_votebox{width:45%;}
-.top100_votebox .title{font-size:26px; color:#426087;}
-.top100_votebox .brdpic6{margin:0 5px 5px;}
+.top100_votebox .title{font-size:24px; color:#426087;}
+.top100_votebox .brdpic6{margin:0px 5px 5px;}
+.top100_votebox.voter_stat .brdpic6{margin:10px 5px 30px;}
+.top100_votebox .brdpic_place{position:absolute; top:-15px; left:0px;}
+.top100_votebox .brdpic_points{position:absolute; bottom:-15px; left:0px; font-size:11px;}
