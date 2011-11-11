@@ -2003,3 +2003,8 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .profile-infoblock{background-color:#d3e6f7; padding:5px;}
 
 .iVip{background:url(img/pmh_vip.png) 0 50% no-repeat; padding:2px 0 2px 20px;}
+
+
+/*Ask profile blok's*/
+.ask-profile-form1{padding:5px 0 5px 55px ; background:url(img/ask-blockico1.png) 10px 0 no-repeat;}
+.ask-profile-form2{ width:60%; margin:0 auto; padding:5px 0 5px 50px; background:url(img/ask-blockico2.png) 0 0 no-repeat;}
