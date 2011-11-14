@@ -2009,3 +2009,5 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 /*Ask profile blok's*/
 .ask-profile-form1{padding:5px 0 5px 55px ; background:url(img/ask-blockico1.png) 10px 0 no-repeat;}
 .ask-profile-form2{ width:60%; margin:0 auto; padding:5px 0 5px 50px; background:url(img/ask-blockico2.png) 0 0 no-repeat;}
+
+.seo_finder li{ display:block; float:left; width:30%; padding-right:20px; margin:5px 0;}
