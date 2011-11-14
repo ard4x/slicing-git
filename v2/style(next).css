@@ -22,6 +22,7 @@ p {padding: 0 0 10px 0; margin:0;}
 .tcenter {text-align: center !important;}
 .tleft {text-align: left !important;}
 .tright {text-align:right !important;}
+.tjust {text-align:justify !important;}
 .tnormal {font-weight: normal !important;}
 .titalic {font-style: italic !important;}
 .tbold {font-weight: bold !important;}
