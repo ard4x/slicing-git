@@ -235,7 +235,7 @@ p {padding: 0 0 10px 0; margin:0;}
 .black {color:#000000 !important;}
 .gray {color:#808790 !important;}
 .lightgr {color:#9d9d9f !important;}
-.orange {color:#ffac2f !important;}
+.orange {color:#ff5d00 !important;}
 .lightBlue a {color:#b6d9f7;}
 .red {color:#bf0d0d;}
 
@@ -881,7 +881,7 @@ ul.newList {background-color:#FFFFFF; border:1px solid #8098ae; color:#000000; l
 .rlist li:hover {background-color:#4F6B8D;}
 .rlist li:hover a,.rlist li:hover .rnum { color:#fff;}
 .rlist .rlab {display:block;}
-.rlist .rnum {padding: 3px 5px 3px 7px; float:right; margin-top: -3px;}
+.rlist .rnum {padding: 3px 5px 3px 7px; float:right; margin-top: -3px; color:#636363;}
 .rlist .rnum.wbg,.profile_menu .rnum.wbg {background: url(img/rlistnumbg.gif) left no-repeat; color:#ffffff;}
 .rlist .rnum.wbg:hover,.profile_menu .rnum.wbg:hover {text-decoration: none;}
 .rlist li.navactive:hover {background-color:#ffffff;}
@@ -1799,7 +1799,6 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .main_menu li.active a{background-color:#f6f5eb; color:#436187;}
 .main_menu li a:hover{text-decoration:none;}
 
-.breadcrumbs{position:absolute; top:10px; left:0px;}
 .breadcrumbs,.breadcrumbs a{color:#898989;}
 
 .publish_block{background-color:#ecf4fb; margin-bottom:5px; position:relative;}

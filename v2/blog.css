@@ -1,0 +1,41 @@
+
+.rss_link{background:url(img/blog_icos.png) 0 0 no-repeat; padding-left:20px;}
+.main_title_tape{width:480px; float:left;}
+
+.blog_sort{margin-top:10px;}
+.blog_sort li{display:inline; margin-left:5px;}
+.blog_sort li a{padding:5px;}
+.blog_sort li a.active{text-decoration:none; background-color:#f2f2f2!important;}
+.blog_sort li a:hover,.blog_sort li a.sort_list,.blog_sort li a:hover.sort_list{text-decoration:none; background-color:#f2f2f2;}
+.blog_sort li a.sort_list{padding-right:15px; background:url(img/sort_icos.png) 95% -15px no-repeat;}
+
+/*copied from rendez.css*/
+.renpic{background:url(img/80x80bg.png) 0 0 no-repeat; padding:4px 6px 6px 4px; }
+.renpic .inner{overflow:hidden; height:81px; width:81px;}
+.renpic .inner img{width:100%;}
+
+.blog_article .article_descript{padding-left:110px;}
+.blog_article .article_descript .art_title{font:bold 14px Arial;}
+.blog_article  .art_context{color:#636363; line-height:18px;}
+.blog_article .special_info{padding:10px; background-color:#f5f7f9; zoom:1;}
+.blog_article .post_like .i_like,.blog_article .post_like .dont_like{float:left;background:url(img/blog_icos.png) 0 -22px no-repeat; width:15px; height:15px; display:block;}
+.blog_article .post_like .dont_like{background-position:0 -42px;}
+.blog_article .post_like .like_ressult.false{color:#b10212;}
+.blog_article .post_like .like_ressult.true{color:#42bc4f;}
+.blog_article .post_like .like_ressult{float:left; padding:0 10px;}
+
+.hr {margin:15px 0; border-bottom:1px solid #fff;}
+.hr div{margin:0; padding:0; background-color:#e5e5e5; height:1px;}
+
+.breadcrumbs {color:#a7a8aa;}
+.breadcrumbs a{background:url(img/sort_icos.png) 100% -40px no-repeat; padding-right:15px; margin-right:5px; color:#a7a8aa;}
+
+.post_tags{margin-top:10px;}
+.post_tags a{margin-right:5px;}
+
+.publish_comment{padding:10px 20px 20px; background-color:#f5f7f9; zoom:1;}
+.publish_comment textarea{width:625px!important; height:42px;}
+.publish_comment .text_comment{padding-left:60px; position:relative;}
+.publish_comment .usrpic_comment{position:absolute; left:0px; top:0px;}
+
+.post_comments{padding:10px 0px 0px 20px;}
