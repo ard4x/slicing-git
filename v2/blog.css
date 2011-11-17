@@ -16,13 +16,13 @@
 
 .blog_article .article_descript{padding-left:110px;}
 .blog_article .article_descript .art_title{font:bold 14px Arial;}
-.blog_article  .art_context{color:#636363; line-height:18px;}
+.blog_article  .art_context,.comment_txt{color:#636363; line-height:18px;}
 .blog_article .special_info{padding:10px; background-color:#f5f7f9; zoom:1;}
-.blog_article .post_like .i_like,.blog_article .post_like .dont_like{float:left;background:url(img/blog_icos.png) 0 -22px no-repeat; width:15px; height:15px; display:block;}
-.blog_article .post_like .dont_like{background-position:0 -42px;}
-.blog_article .post_like .like_ressult.false{color:#b10212;}
-.blog_article .post_like .like_ressult.true{color:#42bc4f;}
-.blog_article .post_like .like_ressult{float:left; padding:0 10px;}
+.post_like .i_like, .post_like .dont_like{float:left; background:url(img/blog_icos.png) 0 -22px no-repeat; width:15px; height:15px; display:block;}
+.post_like .dont_like{background-position:0 -42px;}
+.post_like .like_ressult.false{color:#b10212;}
+.post_like .like_ressult.true{color:#42bc4f;}
+.post_like .like_ressult{float:left; padding:0 10px;}
 
 .hr {margin:15px 0; border-bottom:1px solid #fff;}
 .hr div{margin:0; padding:0; background-color:#e5e5e5; height:1px;}
@@ -38,4 +38,25 @@
 .publish_comment .text_comment{padding-left:60px; position:relative;}
 .publish_comment .usrpic_comment{position:absolute; left:0px; top:0px;}
 
-.post_comments{padding:10px 0px 0px 20px;}
+.post_comments{margin-bottom:50px; }
+.post_comments .comment .comment_txt.active,.post_comments .mypost_comment {background-color:#eef3f8;}
+.post_comments .comment ,.post_comments .mypost_comment{ border-top:1px solid #dae1e9;}
+.post_comments .comment .comment{padding-left:20px; background:url(img/post_content_bg.png) 5px 20px no-repeat; border-top:1px solid #dae1e9;}
+.post_comments .comment .post_content{padding-right:10px;}
+.post_comments .comment .comment_txt{padding:15px 0 0 70px;}
+.post_comments .comment .comment_usrpic{float:left; padding:15px 0 0 10px;}
+.post_comments .comment .comment_info{text-align:right; font-size:14px; padding:0 10px 5px 0;}
+.post_comments .mypost_comment{padding:10px 20px 15px 20px;}
+.post_comments textarea{resize: none; height:44px;}
+
+.alphabet_search a{margin:0 2px;}
+.alphabet_search{text-align:center; font:16px Arial; text-transform:uppercase;}
+
+.gapon_usr.hover{background:#f7f6d5;}
+.gapon_usr p{font-size:11px; padding-bottom:0px;}
+.gapon_usr .gapon_usr_content{padding-left:45px;}
+.gapon_usr{width:160px; margin:5px; vertical-align:top; background:#f5f7f9; cursor:pointer; padding:10px; display:inline-block;}
+
+.posthot_table{border-collapse:collapse; width:100%; text-align:left;}
+.posthot_table .even{background-color:#f5f7f9;}
+.posthot_table td{vertical-align:top; padding:10px;}
