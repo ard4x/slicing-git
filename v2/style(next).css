@@ -60,7 +60,7 @@ p {padding: 0 0 10px 0; margin:0;}
 .ya_count_online{padding:0 0 0 15px;}
 	.count_sp{color:#7f8080; font-size:14px;}
 	
-.ya_main_title{background:url(img/main_title.png) 50% 0 no-repeat; height:50px; padding-bottom:10px;}
+.ya_main_title{background:url(img/main_title.png) 50% 0 no-repeat; height:50px;}
 
 .ya_usr_block{width:525px;}
 	.ya_one_usr{width:85px; height:85px; border:solid #fff; border-width:1px 2px 1px 0;}
@@ -2012,3 +2012,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 
 .seo_finder { width:33%; float:left;}
 .seo_finder li{ display:block; width:100%; padding-right:20px; margin:5px 0;}
+
+
+/*main_player*/
+.main_player{padding-bottom:50px; background:url(img/shade_original.png) 50% 100% no-repeat; width:638px; margin:0 auto;}
