@@ -2136,12 +2136,15 @@ a:hover#new-notifications-count,a:hover#new-messages-count{text-decoration:none;
 /*Vip price new box*/
 .priceGroup{margin:40px auto 60px; width:630px; position:relative; z-index:1;}
 .vipGreenBox{background:#fff; border:1px solid #85940a; position:absolute; z-index:3; left:210px; top:-30px; zoom:1; overflow:visible;}
+.vipBlueBox{background:#fff; border:1px solid #0e76ab; position:absolute; z-index:3; left:210px; top:-30px; zoom:1; overflow:visible;}
 .vipGrayBox { position:relative; z-index:2; background:url(img/vipGrayBox_content.png) 0 100% repeat-x; border:1px solid #c4c7ca;}
-.vipGrayBox ,.vipGreenBox{text-align:center; -webkit-box-shadow:0 0 7px #b1b4b7; -moz-box-shadow:0 0 7px #b1b4b7; -khtml-box-shadow:0 0 7px #b1b4b7; box-shadow:0 0 7px #b1b4b7;}
-.vipGrayBox .tContent,.vipGreenBox .tContent{padding:0px 15px 50px; min-height:160px;}
+.vipGrayBox ,.vipGreenBox,.vipBlueBox{text-align:center; -webkit-box-shadow:0 0 7px #b1b4b7; -moz-box-shadow:0 0 7px #b1b4b7; -khtml-box-shadow:0 0 7px #b1b4b7; box-shadow:0 0 7px #b1b4b7;}
+.vipGrayBox .tContent,.vipGreenBox .tContent,.vipBlueBox .tContent{padding:0px 15px 50px; min-height:160px;}
 .vipGrayBox .tContent p{ border-bottom:1px solid #b1b4b7; padding:10px 0; color:#232c35;}
 .vipGreenBox .tContent p{ border-bottom:1px solid #85940a; padding:10px 0; color:#28446c;}
+.vipBlueBox .tContent p{ border-bottom:1px solid #0e76ab; padding:10px 0; color:#28446c;}
 .vipGrayBox .tTitle{background:#d0d0d0 url(img/vipGrayBox_title.jpg) 0 0 repeat-x; border-bottom:1px solid #b1b4b7; font:bold 23px Arial; padding:5px; text-shadow:1px 1px 0px #fff;}
 .vipGreenBox .tTitle{background:#85940a url(img/vipGreenBox_title.jpg) 0 0 repeat-x;  font:bold 23px Arial; color:#fff; padding:5px; text-shadow:-1px -1px 0px #4a5305;}
-.vipGreenBox .tButton,.vipGrayBox .tButton{position:absolute; bottom:10px; left:0px; width:100%; text-align:center;}
-.vipGreenBox .red{color:#ec2424;}
+.vipBlueBox .tTitle{background:#034d8d url(img/vipBlueBox_title.jpg) 0 0 repeat-x;  font:bold 23px Arial; color:#fff; padding:5px; text-shadow:-1px -1px 0px #054478;}
+.vipGreenBox .tButton,.vipGrayBox .tButton,.vipBlueBox .tButton{position:absolute; bottom:10px; left:0px; width:100%; text-align:center;}
+.vipGreenBox .red,.vipBlueBox .red{color:#ec2424;}

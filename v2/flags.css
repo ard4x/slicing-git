@@ -268,7 +268,7 @@
 .lnPeopleslist .found_usr .responded{ background:url(img/rendez_icos.png) 0 -384px no-repeat; color:#82d88c; font-weight:bold; padding:2px 0 2px 25px; margin-right:10px;}
 
 .found_usr.vip_usr{background-color:#fef2ae;}
-.lnPeopleslist .action_tools{position:absolute; bottom:18px; left:148px; height:27px;}
+.lnPeopleslist .action_tools{position:relative; float:left; height:27px;}
 .lnPeopleslist .found_usr_orbx{position:absolute; bottom:5px; right:-50px;}
 
 .fixWidth555{width:555px;}
