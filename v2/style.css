@@ -2148,3 +2148,33 @@ a:hover#new-notifications-count,a:hover#new-messages-count{text-decoration:none;
 .vipBlueBox .tTitle{background:#034d8d url(img/vipBlueBox_title.jpg) 0 0 repeat-x;  font:bold 23px Arial; color:#fff; padding:5px; text-shadow:-1px -1px 0px #054478;}
 .vipGreenBox .tButton,.vipGrayBox .tButton,.vipBlueBox .tButton{position:absolute; bottom:10px; left:0px; width:100%; text-align:center;}
 .vipGreenBox .red,.vipBlueBox .red{color:#ec2424;}
+
+
+/*rendez menu*/
+.rend_select_menu ul li {height:33px; float:left; padding-bottom:6px;}
+.rend_select_menu ul li.first a,.rend_select_menu ul li.last a{background:url(img/rend_select_corners.png) 0 0 no-repeat;}
+.rend_select_menu ul li.first.select a {background-position:0 0;}
+.rend_select_menu ul li.first a {background-position:0 100%; padding-left:3px;}
+.rend_select_menu ul li.last.select a {background-position:100% 0;}
+.rend_select_menu ul li.last a {background-position:100% 100%; padding-right:3px;}
+.rend_select_menu ul li.select {background:url(img/rend_select_bg.png) 50% 100% no-repeat;}
+.rend_select_menu ul li.select b {color:#fff;}
+.rend_select_menu ul li b {color:#DE4E0F;}
+.rend_select_menu ul li a {display:block; white-space:nowrap;}
+.rend_select_menu ul li a:hover {text-decoration:none;}
+.rend_select_menu ul li span{background:url(img/rend_select_menu.jpg) 0 -33px repeat-x; display:block; height:33px; padding:0 10px; color:#61758f; font:16px/30px Arial; border-right:1px solid #c3c2c2;}
+.rend_select_menu ul li.first span,.rend_select_menu ul li.last span{border-right:none;}
+.rend_select_menu ul li.select span{ background-position:0 0; color:#fff;}
+
+/*payments*/
+.acc_summary{border-collapse:collapse; width:100%;}
+.acc_summary input[type="checkbox"]{margin:0px 5px 0 0;}
+.acc_summary .acc_summary{border-top:1px solid #fff;}
+.acc_summary .acc_summary td{padding:5px 0!important;}
+.acc_summary .activetab{background-color:#ecf4fb;}
+.acc_summary .activetab .hr{border-top:1px solid #ccdae8;}
+.acc_summary .activetab td{border-bottom:1px solid #ecf4fb;}
+.acc_summary td{padding:5px; border-bottom:1px solid #e2e2e2; vertical-align:top;}
+.acc_summary .ya_mbx3_top{background:url(img/yab_helptop.png) 0 0 no-repeat; height:22px;}
+.acc_summary  .ya_mbx_bot3{background:url(img/yab_helpbot.png) 0 0 no-repeat; height:18px;}
+.acc_summary .ya_mbx_help {left:-35px; bottom: 22px; display:none; position: absolute; width: 280px; z-index: 1100;}

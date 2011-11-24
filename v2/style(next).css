@@ -2018,3 +2018,19 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 
 /*main_player*/
 .main_player{padding-bottom:50px; background:url(img/shade_original.png) 50% 100% no-repeat; width:638px; margin:0 auto;}
+
+/*rendez menu*/
+.rend_select_menu ul li {height:33px; float:left; padding-bottom:6px;}
+.rend_select_menu ul li.first a,.rend_select_menu ul li.last a{background:url(img/rend_select_corners.png) 0 0 no-repeat;}
+.rend_select_menu ul li.first.select a {background-position:0 0;}
+.rend_select_menu ul li.first a {background-position:0 100%; padding-left:3px;}
+.rend_select_menu ul li.last.select a {background-position:100% 0;}
+.rend_select_menu ul li.last a {background-position:100% 100%; padding-right:3px;}
+.rend_select_menu ul li.select {background:url(img/rend_select_bg.png) 50% 100% no-repeat;}
+.rend_select_menu ul li.select b {color:#fff;}
+.rend_select_menu ul li b {color:#DE4E0F;}
+.rend_select_menu ul li a {display:block; white-space:nowrap;}
+.rend_select_menu ul li a:hover {text-decoration:none;}
+.rend_select_menu ul li span{background:url(img/rend_select_menu.jpg) 0 -33px repeat-x; display:block; height:33px; padding:0 10px; color:#61758f; font:16px/30px Arial; border-right:1px solid #c3c2c2;}
+.rend_select_menu ul li.first span,.rend_select_menu ul li.last span{border-right:none;}
+.rend_select_menu ul li.select span{ background-position:0 0; color:#fff;}

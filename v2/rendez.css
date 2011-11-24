@@ -67,25 +67,9 @@
 
 .howit_work{background:url(img/rend_how_it_work.jpg) 0 0 no-repeat; height:167px;}
 
-.rend_select_menu ul li {height:33px; float:left; padding-bottom:6px;}
-.rend_select_menu ul li.first a,.rend_select_menu ul li.last a{background:url(img/rend_select_corners.png) 0 0 no-repeat;}
-.rend_select_menu ul li.first.select a {background-position:0 0;}
-.rend_select_menu ul li.first a {background-position:0 100%; padding-left:3px;}
-.rend_select_menu ul li.last.select a {background-position:100% 0;}
-.rend_select_menu ul li.last a {background-position:100% 100%; padding-right:3px;}
-.rend_select_menu ul li.select {background:url(img/rend_select_bg.png) 50% 100% no-repeat;}
-.rend_select_menu ul li.select b {color:#fff;}
-.rend_select_menu ul li b {color:#DE4E0F;}
-.rend_select_menu ul li a {display:block; white-space:nowrap;}
-.rend_select_menu ul li a:hover {text-decoration:none;}
-.rend_select_menu ul li span{background:url(img/rend_select_menu.jpg) 0 -33px repeat-x; display:block; height:33px; padding:0 10px; color:#61758f; font:16px/30px Arial; border-right:1px solid #c3c2c2;}
-.rend_select_menu ul li.first span,.rend_select_menu ul li.last span{border-right:none;}
-.rend_select_menu ul li.select span{ background-position:0 0; color:#fff;}
-
 .rend_select_second_menu{background:url(img/rend_select_second_top.png) 0 0 no-repeat;}
 .rend_select_second_menu ul li{height:auto; margin-right:20px; font-size:14px; padding:10px 0 0;}
 .rend_select_second_menu .inner{padding:0 10px 10px; background:url(img/rend_select_second_bottom.jpg) 0 100% no-repeat;}
-
 
 .rendez_past{position:relative; margin:0 0 10px 80px; padding:15px 10px 15px 70px; background-color:#f3f3f3!important;}
 .rendez_past_title{font-size:16px;}
