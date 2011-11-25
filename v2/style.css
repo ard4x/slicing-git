@@ -2178,3 +2178,7 @@ a:hover#new-notifications-count,a:hover#new-messages-count{text-decoration:none;
 .acc_summary .ya_mbx3_top{background:url(img/yab_helptop.png) 0 0 no-repeat; height:22px;}
 .acc_summary  .ya_mbx_bot3{background:url(img/yab_helpbot.png) 0 0 no-repeat; height:18px;}
 .acc_summary .ya_mbx_help {left:-35px; bottom: 22px; display:none; position: absolute; width: 280px; z-index: 1100;}
+
+/*new ivent top menu*/
+.new_event.v2{background-color:#ef8902!important;}
+a.new_event:hover{text-decoration:none;}
