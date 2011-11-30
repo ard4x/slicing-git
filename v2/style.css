@@ -2036,8 +2036,8 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 	.photo-view-reguest a p{ padding: 11px; position: absolute; bottom: 50px; left:4px; text-align:center; width: 190px; }
 
 	.pall-list li{clear:left; margin:6px 0;}
-	.pall-progress{padding:1px 5px; display:block; width:190px; float:left; background:url(img/pall-progress-bg.gif) 0 0 no-repeat; margin-right:5px;}
-
+	.pall-progress{padding:1px 5px; display:block; width:190px; float:left; position:relative; background:url(img/pall-progress-bg.gif) 0 0 no-repeat; margin-right:5px;}
+	.pall-progress span{position:absolute; left:205px; top:0; width:30px; text-align:left;}
 
 	.twitter_post{background:url(img/post_twitter_ico.jpg) 0 0 no-repeat; padding:9px; position:absolute; left:-25px; top:0px;}
 	.wtit_box .gifts ul li {margin:0 15px;}
