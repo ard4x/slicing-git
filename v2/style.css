@@ -2182,3 +2182,13 @@ a:hover#new-notifications-count,a:hover#new-messages-count{text-decoration:none;
 /*new ivent top menu*/
 .new_event.v2{background-color:#ef8902!important;}
 a.new_event:hover{text-decoration:none;}
+
+/*interest style*/
+.interest-usr-search .piclist .found_usr {width: 294px;}
+.interest-usr-search .piclist .found_usr .usr_info{width: 145px;}
+.ifacebook{background:url(img/en_facebook-ico.png) 0 0 no-repeat; padding:0 0 5px 85px; height:80px;}
+.ifacebook .ifacelink{position:absolute; right:-140px; top:35%;}
+.ifacelink{background:url(img/face_original.png) 0 0 no-repeat; padding:2px 0 2px 20px; font:normal 12px Arial;}
+.people-like{background:url(img/rendez_icos.png) 0 -350px no-repeat; font-size:14px; padding:2px 0 2px 25px;}
+.hb {margin:15px 0; border-bottom:1px solid #fff;}
+.hb div{margin:0; padding:0; background-color:#ccdae8; height:1px;}

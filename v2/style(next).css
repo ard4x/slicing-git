@@ -1922,7 +1922,6 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .post_block .comment_close{position:absolute; right:10px; top:10px; display:none;}
 .post_block.hover .comment_close{display:block;}
 .post_block .usr_pic img{ border:1px solid #e1dfdf;}
-.usr_info{font-size:14px; margin-bottom:10px;}
 .usr_photo_box{padding:15px; background:#f6e6b5 url(img/usr-photo-box-repeat.jpg) 0 100% repeat-x; position:relative;}
 .usr_photo_box .comment_close{display:block;}
 .usr_photo_box.gray_bg{background:#eaeaea url(img/usr-photo-box-private-repeat.jpg) 0 100% repeat-x;}
