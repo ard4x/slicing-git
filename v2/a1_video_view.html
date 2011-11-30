@@ -22,14 +22,7 @@
 	<![endif]-->
 	<script type="text/javascript" >
 		$(document).ready(function (){
-		
-			vidView();
-			$(window).resize(vidView);
-			
-			function vidView(){
-				$('#close').click(function(e){e.preventDefault(); hideOp($(this));});
-				$('.vid-viewer').height($(document).height());
-			}
+			$('#close').click(function(e){e.preventDefault(); hideOp($(this));});
 			function hideOp(el){
 				el.parents('.vid-viewer').css('display','none');
 			}

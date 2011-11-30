@@ -2037,3 +2037,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 
 /*customize profile*/
 .paginator.profile_in{padding:0px; position:absolute; right:0; top:10px;}
+
+/*viral modification*/
+.vMode body{overflow:hidden; margin-right:15px;}
+.vMode .vid-viewer{overflow-x:auto; overflow-y:scroll; position:fixed; height:100%; width:100%;}
