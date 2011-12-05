@@ -873,7 +873,7 @@ a.pluscount2:hover {color:#ffffff; text-decoration: none;}
 .paginator {padding-top: 20px;}
 .paginator ul {overflow: hidden; zoom: 1;}
 .paginator ul li {float: left; margin-right: 3px;}
-.paginator ul li.prev a {border: solid 1px #d0d3cf; color:#d0d3cf;}
+.paginator ul li.prev a {border: solid 1px #d0d3cf; color:#d0d3cf; background-color:#ffffff;}
 .paginator ul li.prev a:hover {border: solid 1px #d0d3cf; color:#d0d3cf; background-color:#ffffff;}
 .paginator ul li.act a {background-color:#4f6b8d; color:#ffffff;}
 .paginator ul li a {display: block; border: solid 1px #4f6b8d; padding: 4px 8px;}
