@@ -2013,7 +2013,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .hr-line.gray{border-color:#e2e2e2;}
 
 .tags_menu li{display:block; height:26px; margin:2px 0;}
-.tags_menu li a{padding:5px; background:#f6f5eb;}
+.tags_menu li a{padding:5px; background:#f6f5eb; font-size:14px;}
 .tags_menu li a:hover,.tags_menu li.active a{text-decoration:none; background:#4F6B8D; color:#fff;}
 
 
