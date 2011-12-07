@@ -1,9 +1,13 @@
 #close{position:absolute; top:15px; right:15px;}
 .vid-viewer{background:url(img/opacity.png) 0 0 repeat; position:absolute; top:0; width:100%; z-index:888;}
-.vid-viewer-block{background:#000; position:absolute; width:685px; margin-top:70px; left:50%; margin-left:-342px;}
+.vid-viewer-block{background:#000; position:absolute; width:950px; margin-top:70px; margin-bottom:20px; left:50%; margin-left:-475px;}
+.vid-viewer-block table{width:100%; border-collapse:collapse;}
 .vid-viewer-block .inner{padding:20px;}
+.vid-viewer-block .vidbox_small.previous{padding:0 20px 0 0;}
+.vid-viewer-block .vidbox_small.next{padding:0 0 0 20px;}
+.vid-viewer-block .vid-comment-position{width:530px; margin:0 auto;}
 .vid-viewer-block .vid-comment{background:#fff;}
-.vid-viewer-block .vid-comment textarea{width:560px!important;}
+.vid-viewer-block .vid-comment textarea{width:454px!important;}
 .vid-viewer-block .vanilla{background:#f0efe1;}
 .vid-viewer-block .title{color:#fff; font:bold 15px Arial;}
 .vid-viewer-block .vid-views { position:relative; color:#828282; font:13px Arial; margin-top:10px; padding-right:50%;}
