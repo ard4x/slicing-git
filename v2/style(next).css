@@ -1395,16 +1395,6 @@ a:hover.put_me{text-decoration:none;}
 	.big .yp_grad{margin:0 8px; padding:20px;}
 	.big .newText{width:373px; height:43px;}
 	
-	.rubber p{padding-bottom:5px;}
-	.rubber .yp_top{background:url(img/rubber_box_top_left.png) 0 0 no-repeat; height:16px; margin-right:17px; position:relative;}
-	.rubber .yp_bot{background:url(img/rubber_box_bottom_left.png) 0 0 no-repeat; height:16px; margin-right:17px; position:relative;}
-	.rubber .yp_content_left{background:url(img/rubber_box_left.png) 0 0 repeat-y;}
-	.rubber .yp_content_right{background:url(img/rubber_box_right.png) 100% 0 repeat-y; padding:0 9px 0 10px;}
-	.rubber .yp_grad{margin:0px; padding:10px 20px; background-color:#fff;}
-	.rubber .rubber_bot_right,.rubber .rubber_top_right{position:absolute; right:-17px; top:0px; width:17px; height:16px;}
-	.rubber .rubber_bot_right{background:url(img/rubber_box_bottom_right.png) 0 0 no-repeat;}
-	.rubber .rubber_top_right{background:url(img/rubber_box_top_right.png) 0 0 no-repeat;}
-	
 	.banner p{padding-bottom:5px;}
 	.banner .yp_top{background:url(img/yp_banner_top_bg.png) 0 0 no-repeat; height:9px;}
 	.banner .yp_content{background:url(img/yp_banner_content_bg.png) 0 0 repeat-y;}
@@ -1572,7 +1562,6 @@ a:hover.put_me{text-decoration:none;}
 .c_social {background:url(img/soul_soc.jpg) 0 0 no-repeat;}
 .c_psy {background:url(img/soul_psy.jpg) 0 0 no-repeat;}
 
-.lookingbx  {margin-bottom:5px;}
 .lookingbx  .hr {margin:15px 0; border-bottom:1px solid #fff;}
 .lookingbx  .hr div{margin:0; padding:0; background-color:#ccdae8; height:1px;}
 .lookingbx .searchbox {margin-right:25px;}
