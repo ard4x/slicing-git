@@ -1736,7 +1736,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .register_info_table .proflist .ya_reg_gender {float: none; text-align: left; width: auto;}
 .proflist .prmbch  label{margin-left:0; display:inline;}
 .logor3 {position:relative; text-align: center; border-right: 1px solid #cfdbe7; float: left; height: 620px; margin: 0 40px;}
-.logor3 img{background: #FFFFFF; left: -23px; padding: 5px; position: absolute; top: 100px;}
+.logor3 img{left: -23px; padding: 5px; position: absolute; top: 100px;}
 
 .usr_choise_city_form{height:300px; overflow-y:auto; overflow-x:none; border:1px solid #CFDBE7;}
 .usr_choise_city_form ul li{padding:3px 0 2px; border-bottom:1px solid #fff;}
@@ -2032,3 +2032,12 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 /*viral modification*/
 .vMode body{overflow:hidden; margin-right:15px;}
 .vMode .vid-viewer{overflow-x:auto; overflow-y:scroll; position:fixed; height:100%; width:100%;}
+
+/*registr popup*/
+.register_info_table.right-col {width:440px;}
+.register_info_table .prmbch {width:140px;}
+.register_info_table .prmbch li{margin:0 0 5px; color:#4F6B8D;}
+.register_info_table .day {width:90px;}
+.register_info_table .year {width:80px;}
+.register_info_table .month {width:120px;}
+.loggin-bot {position:absolute; bottom:20px; left:30px;}

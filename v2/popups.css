@@ -16,7 +16,7 @@
 .rubber.ng .yp_content_left{background:url(img/rubber_box_left.png) 0 0 repeat-y;}
 .rubber.ng .yp_content_right{background:url(img/rubber_box_right.png) 100% 0 repeat-y; padding:0 9px 0 10px;}
 .rubber.ng .yp_grad{margin:0px; padding:10px 20px; background:#fff;}
-.rubber.ng .inner{padding:20px;}
+.rubber.ng .inner{padding:20px; background-color:#fff;}
 .rubber.ng .rubber_bot_right,.rubber.ng .rubber_top_right{position:absolute; right:-17px; top:0px; width:17px; height:9px;}
 .rubber.ng .rubber_bot_right{background:url(img/rubber_bottom_right.png) 0 100% no-repeat;}
 .rubber.ng .rubber_top_right{background:url(img/rubber_top_right.png) 0 0 no-repeat;}
