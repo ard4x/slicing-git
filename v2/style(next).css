@@ -2035,7 +2035,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 
 /*registr popup*/
 .register_info_table.right-col {width:440px;}
-.register_info_table .prmbch {width:140px;}
+.register_info_table .prmbch {width:180px;}
 .register_info_table .prmbch li{margin:0 0 5px; color:#4F6B8D;}
 .register_info_table .day {width:90px;}
 .register_info_table .year {width:80px;}
