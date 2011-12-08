@@ -215,3 +215,12 @@ textarea{padding:1px 2px 2px; font-size:14px; background-color:#fff;  border-top
 .table-style.v1{background:#f4f4f4 url(img/table-style1.jpg) 0 0 repeat-x; padding:0 15px 20px; -moz-border-radius:3px; -webkit-border-radius:3px; -khtml-border-radius:3px; border-radius:3px; line-height:18px;}
 .table-style.v1 .first td{height:20px; padding:10px 10px 30px; vertical-align:bottom;}
 .table-style .hover.first td{background:transparent; border:0; cursor:default;}
+
+	.gallery li{width:630px; height:400px;}
+		.pg_paging{float:left; margin: 200px 0 0;}
+		.pg_paging a{text-decoration:none;}
+		.pg_previous a.disabled{background-position:0 100%; cursor:default;}
+		.pg_next a.disabled{background-position:100% 100%; cursor:default;}
+		.pg_previous a{display:block; background:url(img/photo-navi.png) 0 0 no-repeat; width:30px; height:47px;}
+		.pg_next a{display:block; background:url(img/photo-navi.png) 100% 0 no-repeat; width:30px; height:47px;}
+		

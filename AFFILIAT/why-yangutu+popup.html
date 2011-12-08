@@ -6,11 +6,14 @@
 	<link rel="stylesheet" href="affiliates.css" type="text/css" id="" />
 	
 	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="gallery.js"></script>
 	<script type="text/javascript">
 		$(function(){
 			$('table tr').hover(function(){
 				$(this).toggleClass('hover');
 			});
+			
+			$('ul.gallery').prettyGallery({itemsPerPage:1,navigation:'both',animationSpeed:'fast'});
 		});
 	</script>
 
@@ -22,7 +25,44 @@
 	<![endif]-->
 </head>
 <body>
-
+	<div class="screen_fade">
+		<div class="popup" style="width:700px; margin-left:-350px; margin-top:-220px;"> <!--  -->
+			<a id="this-close" href=""><img src="./img/close_ic.png" alt="Close" title="Close" /></a>
+			
+			<ul class="gallery">
+				<li>
+					<div>
+						<p class="fs18 tbold">Yangutu propose the biggest affiliate commission in the industry</p>
+						<img src="./img/graph-2.jpg" alt="" />
+					</div>
+				</li>
+				<li>
+					<div class="indentTop10">
+						<p class="fs18 tbold">Yangutu's Conversion rate is one of the highest in the industry</p>
+						<img src="./img/graph-3.jpg" alt="" />
+					</div>
+				</li>
+				<li>
+					<div class="indentTop10">
+						<p class="fs18 tbold">Yangutu has the lowest percent of subscription refusals</p>
+						<img src="./img/graph-11.jpg" alt="" />
+					</div>
+				</li>
+				<li>
+					<div class="indentTop10">
+						<p class="fs18 tbold">Yangutu's Conversion has low payment threshold.<br/>Minimal payment is 30 $</p>
+						<img src="./img/graph-9.jpg" alt="" />
+					</div>
+				</li>
+				<li>
+					<div class="indentTop10">
+						<p class="fs18 tbold">Yangutu's average subscription lifetime is about a year</p>
+						<img src="./img/graph-10.jpg" alt="" />
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
 	<div class="header">
 		<div class="header_inn">
 			<div class="top_navigation">
