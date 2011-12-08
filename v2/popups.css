@@ -21,3 +21,8 @@
 .rubber.ng .rubber_bot_right{background:url(img/rubber_bottom_right.png) 0 100% no-repeat;}
 .rubber.ng .rubber_top_right{background:url(img/rubber_top_right.png) 0 0 no-repeat;}
 
+.rubber .ya_mbx3_top{background:url(img/yab_helptop.png) 0 0 no-repeat; height:22px;}
+.rubber .ya_mbx_bot3{background:url(img/yab_helpbot.png) 0 0 no-repeat; height:18px;}
+.rubber .ya_mbx_help {left:-35px; bottom: 22px; display:none; position: absolute; width: 280px; z-index: 1100;}
+
+
