@@ -14,3 +14,7 @@
 .vid-viewer-block .vid-views span{padding-top:5px; padding-bottom:5px;}
 .vid-viewer-block .vidlike{position:relative; top:0px; margin-left:10px; border-left:1px solid #525252; padding-left:30px; background-position:10px 50%;}
 .vid-viewer-block .social{position:absolute; top:0px; right:0px;}
+
+.vidbox-preview{height:350px; overflow:hidden; background:url(img/default-videos.jpg) 50% 100px no-repeat;}
+.vidbox-preview .inner{padding-top:170px; color:#fff; text-align:center;}
+.vidbox-preview .title{font:bold 48px Arial;}
