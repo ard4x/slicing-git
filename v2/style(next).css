@@ -2118,3 +2118,6 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .fixHeight350{height:350px;}
 .mauto{margin:0 auto;}
 .inner15{padding:15px!important;}
+
+/*popup riseup*/
+.rise-up-banner{background:url(img/riseup_popup_bg.jpg) 0 0 no-repeat; width:485px; height:243px; margin:0 auto; position:relative; zoom:1;}
