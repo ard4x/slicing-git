@@ -1642,7 +1642,7 @@ a:hover.put_me{text-decoration:none;}
 	.profile_usr_view{padding:5px 0; border:solid #E5E5E5;  border-width:1px 0; text-align:center;}
 	.profile_up{margin:0 5px; position:relative; top:5px;}
 	
-	.rightBox  .yp_grad{padding:10px; font-size:11px;}
+	.rightBox  .yp_grad{padding:10px; font-size:11px; margin:0;}
 	.found_usr_chekbox {height:165px;}
 	.found_usr_chekbox input{margin:75px 5px 0 0;}
 	
@@ -2121,3 +2121,6 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 
 /*popup riseup*/
 .rise-up-banner{background:url(img/riseup_popup_bg.jpg) 0 0 no-repeat; width:485px; height:243px; margin:0 auto; position:relative; zoom:1;}
+.rise-up-banner .rise-img-big{position:absolute; top:17px; left:22px;}
+.rise-up-banner .rise-img-small{position:absolute; top:124px; left:183px;}
+.step-control{float:left; background:url(img/step_control_bg.png) 0 0 no-repeat; color:#fff; width:36px; height:36px; font:bold 22px/35px Arial; text-align:center; margin-right:10px;}
