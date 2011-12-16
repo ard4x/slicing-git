@@ -2092,8 +2092,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .brdpic10 img{margin:5px 0 0 0px;}
 .brdpic10 {text-align: center; vertical-align: middle; background: url(img/168x168bg.png) 0 0 no-repeat;	margin-bottom: 3px;	height: 168px;	position:relative;	width: 168px;}
 
-.fb-friends-blok{}
-.fb-friends-blok .usr-friend-block{float:left; width:235px;}
+ .fb-friends-blok .usr-friend-block{float:left; width:235px;}
 .fb-friends-blok .usr-friend-block .ava{text-align:left; margin:10px; position:relative;}
 .fb-friends-blok .usr-friend-block .brdpic{position:relative; z-index:2;}
 .fb-friends-blok .usr-friend-block .brdpic .fof-hover-but{position:absolute; z-index:4; top:40%; left:20px;}
@@ -2124,3 +2123,9 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .rise-up-banner .rise-img-big{position:absolute; top:17px; left:22px;}
 .rise-up-banner .rise-img-small{position:absolute; top:124px; left:183px;}
 .step-control{float:left; background:url(img/step_control_bg.png) 0 0 no-repeat; color:#fff; width:36px; height:36px; font:bold 22px/35px Arial; text-align:center; margin-right:10px;}
+
+/*gift page styles*/
+.gtr {background: url(img/hm_left.png) 0 0 no-repeat;  color: #FFFFFF; padding: 0 0 1px 7px; white-space:nowrap; -moz-text-blink: blink; text-decoration:blink;}
+.gtr span {background: url(img/hm_right.png) 100% 0 no-repeat; font-size: 11px; padding: 1px 6px 1px 0; -moz-text-blink: blink;}
+.prof-block-usrlist .paginator{padding:0; margin:0 auto;}
+.prof-block-usrlist .brdpic{position:relative; margin:0 auto;}
