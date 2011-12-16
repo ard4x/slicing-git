@@ -1992,7 +1992,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .closeSelection{padding-top:10px; border-top:1px solid #CCDAE8;}
 .show_pl{background:url(img/looking_ico.png) 0 0 no-repeat; padding:10px 75px 0; height:50px;}
 
-.yangutu_proposal_list{text-align:center; width:750px; margin:0 auto;}
+.yangutu_proposal_list{text-align:center; }
 .yangutu_proposal_block{display:inline-block; *display:inline; zoom:1; text-align:left; vertical-align:top; height:270px; width:215px; margin-right:20px; color:#333333;}
 
 .profile-infoblock{background-color:#d3e6f7; padding:5px;}
@@ -2130,3 +2130,16 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .prof-block-usrlist .paginator{padding:0; margin:0 auto;}
 .prof-block-usrlist .brdpic{position:relative; margin:0 auto;}
 .prof-block-usrlist {padding:10px; background:#ECF4FB;}
+
+
+/*main new proposal style*/
+.pro .v-10{background:url(img/proposal_10.png) 0 100% no-repeat; height:138px;}
+.pro .v-9{background:url(img/proposal_9.png) 0 100% no-repeat; height:138px;}
+.pro .v-7{background:url(img/proposal_7.png) 0 100% no-repeat; height:138px;}
+.pro .v-6{background:url(img/proposal_6.png) 0 100% no-repeat; height:138px;}
+.pro .v-1{background:url(img/proposal_1.png) 0 100% no-repeat; height:138px;}
+.pro .v-4{background:url(img/proposal_4.png) 0 100% no-repeat; height:138px;}
+.pro .v-3{background:url(img/proposal_3.png) 0 100% no-repeat; height:137px;}
+.pro .v-2{background:url(img/proposal_2.png) 0 100% no-repeat; height:137px;}
+.pro:hover { text-decoration:none;}
+.pro:hover .v-10,.pro:hover .v-9,.pro:hover .v-7,.pro:hover .v-6,.pro:hover .v-1,.pro:hover .v-4,.pro:hover .v-3,.pro:hover .v-2{background-position:0 0!important;}
