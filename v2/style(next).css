@@ -2141,5 +2141,6 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .pro .v-4{background:url(img/proposal_4.png) 0 100% no-repeat; height:138px;}
 .pro .v-3{background:url(img/proposal_3.png) 0 100% no-repeat; height:137px;}
 .pro .v-2{background:url(img/proposal_2.png) 0 100% no-repeat; height:137px;}
-.pro:hover { text-decoration:none;}
+.pro:hover p{color:#000!important;}
+.pro:hover {text-decoration:none;}
 .pro:hover .v-10,.pro:hover .v-9,.pro:hover .v-7,.pro:hover .v-6,.pro:hover .v-1,.pro:hover .v-4,.pro:hover .v-3,.pro:hover .v-2{background-position:0 0!important;}
