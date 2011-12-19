@@ -1775,7 +1775,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .bic_up_name_inner {padding:6px 10px;}
 .bic_up_name a:hover{color:#fff;}
 
-.birdpic_vip{position:absolute; top:2px; left:5px;}
+.birdpic_vip{position:absolute; bottom:2px; left:5px;}
 
 .publish_block{background-color:#ecf4fb; margin-bottom:5px; position:relative;}
 .publish_block.saved{background-color:#fff;}
@@ -2037,9 +2037,9 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .register_info_table.right-col {width:440px;}
 .register_info_table .prmbch {width:180px;}
 .register_info_table .prmbch li{margin:0 0 5px; color:#4F6B8D;}
-.register_info_table .day {width:90px;}
-.register_info_table .year {width:80px;}
-.register_info_table .month {width:120px;}
+.r2.pdate  .day {width:90px;}
+.r2.pdate  .year {width:80px;}
+.r2.pdate  .month {width:120px;}
 .loggin-bot {position:absolute; bottom:20px; left:30px;}
 
 /*main(login)*/
@@ -2129,7 +2129,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .gtr span {background: url(img/hm_right.png) 100% 0 no-repeat; font-size: 11px; padding: 1px 6px 1px 0;}
 .prof-block-usrlist .paginator{padding:0; margin:0 auto;}
 .prof-block-usrlist .brdpic{position:relative; margin:0 auto;}
-.prof-block-usrlist {padding:10px; background:#ECF4FB;}
+.prof-block-usrlist {padding:10px 10px 20px; background:#ECF4FB;}
 
 
 /*main new proposal style*/
@@ -2144,3 +2144,14 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .pro:hover p{color:#000!important;}
 .pro:hover {text-decoration:none;}
 .pro:hover .v-10,.pro:hover .v-9,.pro:hover .v-7,.pro:hover .v-6,.pro:hover .v-1,.pro:hover .v-4,.pro:hover .v-3,.pro:hover .v-2{background-position:0 0!important;}
+
+/*vip_month.html*/
+.prof-block-usrlist.or-bg,.lookingbx.or-bg{background:#fffecb;}
+.invite-myfriends{background:url(img/invite_orarr.gif) 0 50% no-repeat; padding-left:80px; width:190px;}
+.invite-myfriends .brdpic{margin:0 auto;}
+.invite-cards{float:left; width:30%; margin-right:10px;}
+.invite-cards .brdpic2{margin-right:10px;}
+.invite-cards .description{float:left; width:60%;}
+.invite-cards .invite-act{background:url(img/invite-activated.png) -100px 0 no-repeat; padding-left:15px; white-space:nowrap; font:11px Arial;}
+.invite-cards .invite-act.true{background-position:0 -24px; color:#FFAC2F;}
+.invite-cards .invite-act.false{background-position:0 2px; color:#808790;}
