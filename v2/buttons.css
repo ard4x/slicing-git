@@ -30,3 +30,52 @@
 
 .rendez_startbut,.rendez_startbut_facebook,.rendez_startbut_google{border:5px solid transparent; height:57px; cursor:pointer;}
 .rendez_startbut:hover,.rendez_startbut_facebook:hover,.rendez_startbut_google:hover{border-color:#b2c420;}
+
+
+/*new buttons*/
+a.btn, span.btn {
+    display: inline-block;
+    height: 35px;
+    overflow: hidden;
+    padding: 0 6px 0 0;
+    text-decoration: none !important;
+    vertical-align: middle;
+}
+.btn .btn-lc {
+    display: block;
+    padding: 0 0 0 6px;
+}
+.btn span {
+    cursor: pointer;
+}
+.btn .btn-m {
+    display: block;
+    height: 35px;
+    position: relative;
+}
+.btn:focus .btn-txt {line-height:12px;}
+.btn .btn-txt {
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    font-family: Arial;
+    font-weight: 900;
+    line-height: 14px;
+    padding: 10px 5px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+}
+
+
+.btn-pink {background: url(img/buttons-bg.png) 100% -70px no-repeat; text-shadow:0 1px 1px #231e39;}
+.btn-pink .btn-lc {background: url(img/buttons-bg.png) 0 0 no-repeat;}
+.btn-pink .btn-m {background: url(img/buttons-bg.png) 0 -35px repeat-x;}
+
+.btn-pink:hover {background: url(img/buttons-bg.png) 100% -174px no-repeat;}
+.btn-pink:hover .btn-lc {background: url(img/buttons-bg.png) 0 -104px no-repeat;}
+.btn-pink:hover .btn-m {background: url(img/buttons-bg.png) 0 -139px repeat-x;}
+
+.btn-pink:focus {background: url(img/buttons-bg.png) 100% -279px no-repeat;}
+.btn-pink:focus .btn-lc {background: url(img/buttons-bg.png) 0 -209px no-repeat;}
+.btn-pink:focus .btn-m {background: url(img/buttons-bg.png) 0 -244px repeat-x;}
