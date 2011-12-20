@@ -2204,3 +2204,9 @@ a.new_event:hover{text-decoration:none;}
 .vMode{overflow:hidden;}
 .vMode body{overflow:hidden; margin-right:15px;}
 .vMode .vid-viewer{overflow-x:auto; overflow-y:scroll; position:fixed; height:100%; width:100%; z-index:100001;}
+
+/*register box*/
+.register_action{position:fixed; left:-3px; top:40%; z-index:999;}
+.register_action_link a{background:url(img/register_action_link.png)  0 0 no-repeat; display:block; width:35px; height:102px; position:absolute; top:0; right:-32px;}
+.register_box{border:1px solid #cccccc; min-height:150px; width:250px; color:#fff;}
+.register_box .inner{ background:#000 url(img/default-videos.jpg) 50% 30px no-repeat; padding:100px 0 20px;  text-align:center; border:2px solid #ffffff;}
