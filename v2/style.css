@@ -2212,6 +2212,7 @@ a.new_event:hover{text-decoration:none;}
 .register_box .inner{ background:#000 url(img/default-videos.jpg) 50% 30px no-repeat; padding:100px 0 20px;  text-align:center; border:2px solid #ffffff;}
 
 /*cct-main*/
+.mauto{margin:0 auto;}
 .cct-choice{width:410px; margin:0 auto;}
 .cct-choice .cct-usr-left{float:left; width:124px; font-size:11px;}
 .cct-choice .cct-brdpic-select{position:absolute; bottom:10px; left:0px; width:100%; text-align:center;}
@@ -2224,3 +2225,4 @@ a.new_event:hover{text-decoration:none;}
 .cct-spec-blok .cct-descript-blok{width:250px; float:left; padding-left:60px; padding-right:20px; color:#413a45;}
 
 .step-control-wb {background: url(img/step_control_wb_bg.png) 0 0 no-repeat; color: #FFFFFF; position:absolute; left:-45px; top:0; font: bold 22px/32px Arial; height: 32px; margin-right: 10px; text-align: center; width: 32px;}
+.fixWidth750 {width: 750px!important;}

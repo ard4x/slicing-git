@@ -1,4 +1,4 @@
-.super_button_green,.super_button_blue{background:url(img/buttons_super_bg.jpg) 0 0 repeat-x; color:#fff; height:57px; font-size:24px; text-align:center; cursor:pointer; padding:0 10px 3px 10px; font-weight:bold; text-shadow: 1px -1px 1px #6e6d6d; border:none;}
+.super_button_green,.super_button_blue{background:url(img/buttons_super_bg.jpg) 0 0 repeat-x; color:#fff; height:57px; text-align:center; cursor:pointer; padding:0 10px 3px 10px; font:bold 24px/58px Arial; text-shadow: 1px -1px 1px #6e6d6d; border:none;}
 .super_button_blue{background-position:0 -57px;}
 .button_blue{background:url(img/blue-button-bg.jpg) 0 0 repeat-x; text-shadow: 1px -1px 1px #6e6d6d;}
 .button_green{background:url(img/green-button-bg.jpg) 0 0 repeat-x; text-shadow: 1px -1px 1px #6e6d6d;}
