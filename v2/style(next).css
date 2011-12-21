@@ -2155,3 +2155,4 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .invite-cards .invite-act{background:url(img/invite-activated.png) -100px 0 no-repeat; padding-left:15px; white-space:nowrap; font:11px Arial;}
 .invite-cards .invite-act.true{background-position:0 -24px; color:#FFAC2F;}
 .invite-cards .invite-act.false{background-position:0 2px; color:#808790;}
+.vipsc{background:url(img/vipsc.png) 0 0 no-repeat; font:bold 36px Arial; padding:4px 9px;}
