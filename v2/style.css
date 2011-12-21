@@ -2210,3 +2210,17 @@ a.new_event:hover{text-decoration:none;}
 .register_action_link a{background:url(img/register_action_link.png)  0 0 no-repeat; display:block; width:35px; height:102px; position:absolute; top:0; right:-32px;}
 .register_box{border:1px solid #cccccc; min-height:150px; width:250px; color:#fff;}
 .register_box .inner{ background:#000 url(img/default-videos.jpg) 50% 30px no-repeat; padding:100px 0 20px;  text-align:center; border:2px solid #ffffff;}
+
+/*cct-main*/
+.cct-choice{width:410px; margin:0 auto;}
+.cct-choice .cct-usr-left{float:left; width:124px; font-size:11px;}
+.cct-choice .cct-brdpic-select{position:absolute; bottom:10px; left:0px; width:100%; text-align:center;}
+.cct-choice .cct-usr-right{float:left; background:url(img/cct-choise-bg.gif) 0 50% no-repeat; padding-left:135px; margin-left:5px; width:124px; font-size:11px;}
+
+.cct-spec-blok{background:#f1f5fa; padding-bottom:10px;}
+.cct-spec-blok .title{background:#e8edf6; color:#9096a9; font:bold 22px/48px Arial; text-align:center; height:50px; border-bottom:1px solid #fff; text-shadow:0px 1px 1px #fff;}
+.cct-spec-blok .descript{border-top:1px solid #dadee8; background:#f1f5fa; padding:20px;}
+.cct-spec-blok .descript ul li{background:url(img/cct-list-bg.png) 0 50% no-repeat; padding-left:15px; margin:3px 0;}
+.cct-spec-blok .cct-descript-blok{width:250px; float:left; padding-left:60px; padding-right:20px; color:#413a45;}
+
+.step-control-wb {background: url(img/step_control_wb_bg.png) 0 0 no-repeat; color: #FFFFFF; position:absolute; left:-45px; top:0; font: bold 22px/32px Arial; height: 32px; margin-right: 10px; text-align: center; width: 32px;}

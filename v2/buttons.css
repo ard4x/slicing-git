@@ -9,8 +9,8 @@
 .button_green:active,.button_blue:active,.button_black:active{background-position: 0 -99px;}
 .button_green.disabled,.button_blue.disabled,.button_black.disabled{background-position: 0 0; cursor:default; color:#9f9f9f; text-shadow: 1px 1px 0px #fff;}
 .button_black{text-shadow: 1px -1px 1px #000000; color:#cccccc;}
-.button_blue.large,.button_green.large,.button_black.large{height:33px; font:bold 14px Arial;}
-.button_blue.small,.button_green.small,.button_black.small{height:27px; font:bold 12px Arial;}
+.button_blue.large,.button_green.large,.button_black.large{height:33px; font:bold 14px/33px Arial;}
+.button_blue.small,.button_green.small,.button_black.small{height:27px; font:bold 12px/28px Arial;}
 @media screen and (-webkit-min-device-pixel-ratio:0) {
                  .button_blue,.button_green,.button_white{padding:0px 10px;}
         }
