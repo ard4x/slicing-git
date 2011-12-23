@@ -220,7 +220,7 @@ p {padding: 0 0 10px 0; margin:0;}
 .fixWidth220 {width: 220px;}
 .fixWidth225 {width: 225px;}
 .fixWidth230 {width: 230px;}
-.fixWidth240 {width: 236px;}
+.fixWidth240 {width: 236px!important;}
 .fixWidth300 {width: 300px!important;}
 .fixWidth320 {width: 320px!important;}
 .fixWidth385 {width: 385px!important;}
@@ -2226,3 +2226,4 @@ a.new_event:hover{text-decoration:none;}
 
 .step-control-wb {background: url(img/step_control_wb_bg.png) 0 0 no-repeat; color: #FFFFFF; position:absolute; left:-45px; top:0; font: bold 22px/32px Arial; height: 32px; margin-right: 10px; text-align: center; width: 32px;}
 .fixWidth750 {width: 750px!important;}
+
