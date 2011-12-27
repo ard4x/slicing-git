@@ -2168,3 +2168,4 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .invite-search-list .title{padding:5px; border-bottom:1px solid #bababa;}
 .invite-search-list .friends-mail{height:130px; overflow-x:hidden; overflow-y:auto; padding:5px;}
 .invite-search-list .friends-mail label{display:block; white-space:nowrap; margin-bottom:3px;}
+.step-control.or{background:url(img/step_control_or_bg.png) 0 0 no-repeat;}
