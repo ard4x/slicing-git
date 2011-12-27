@@ -214,6 +214,7 @@ p {padding: 0 0 10px 0; margin:0;}
 .fixWidth145 {width: 145px;}
 .fixWidth150 {width: 150px;}
 .fixWidth160 {width: 160px;}
+.fixWidth170 {width: 170px;}
 .fixWidth190 {width: 190px;}
 .fixWidth210 {width: 210px;}
 .fixWidth220 {width: 220px;}
@@ -2160,6 +2161,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 
 /*a2_invite_new*/
 .content-hr-white{background:url(img/content-hr-white.gif) 0 0 repeat-x; height:30px;}
+.social-invite-list.verls a{margin:0; white-space:nowrap;}
 .social-invite-list a{text-decoration:none; margin-right:60px; font:bold 14px Arial;}
 .social-invite-list a span{position:relative; top:-13px; padding-left:10px;}
 .invite-search{padding:4px; background-color:#f8fccd;}
@@ -2169,3 +2171,15 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .invite-search-list .friends-mail{height:130px; overflow-x:hidden; overflow-y:auto; padding:5px;}
 .invite-search-list .friends-mail label{display:block; white-space:nowrap; margin-bottom:3px;}
 .step-control.or{background:url(img/step_control_or_bg.png) 0 0 no-repeat;}
+
+/*sell a friend*/
+.vipsc-small{background:url(img/vipsc-small.png) 0 0 no-repeat; font:bold 18px/34px Arial; padding:7px 8px;}
+.vip_friends_static_info{margin:5px 0 10px;}
+.vfs_send,.vfs_activ,.vfs_vip{background:url(img/vfs-status.png) 0 0 no-repeat; font:13px Arial; padding:5px 0 5px 27px; color:#5faa2b;}
+.vfs_send{color:#000; background-position:0 -64px;}
+.vfs_vip{color:#ff8b19; background-position:0 -32px;}
+.vip_friends_static_info .vfs_ttols{width:130px; float:left;}
+.vip_friends_static_info .vfs_status{width:100px; float:left; margin:0 10px;}
+.vip_friends_static_info .vfs_name{font:bold 16px Arial; background:url(img/vfs-bg.jpg) 0 15px repeat-x; width:500px; float:left; overflow:hidden;}
+.vip_friends_static_info .vfs_name span{font:normal 14px Arial; color:#666666;}
+.vip_friends_static_info .vfs_name p{display:inline; background:#fff; white-space:nowrap;}
