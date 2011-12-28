@@ -37,3 +37,5 @@
 .colored.bg7 .inner,.colored.bg8 .inner,
 .colored.bg9 .inner,.colored.bg10 .inner,
 .colored.bg11 .inner,.colored.bg12 .inner{border-top:1px solid #fff;}
+
+.friend-board{background:url(img/friend-board.png) 0 0 no-repeat; height:120px; padding:30px 255px 0;}
