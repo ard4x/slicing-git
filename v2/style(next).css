@@ -2171,7 +2171,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .invite-search-list .friends-mail{height:130px; overflow-x:hidden; overflow-y:auto; padding:5px;}
 .invite-search-list .friends-mail label{display:block; white-space:nowrap; margin-bottom:3px;}
 .step-control.or{background:url(img/step_control_or_bg.png) 0 0 no-repeat;}
-.cashmaker{background:url(img/cashmaker.png) 0 0 no-repeat; margin:0 auto; width:193px; height:281px; text-align:center; padding-top:35px; color:#fff; font:bold 48px Arial;}
+.cashmaker{background:url(img/cashmaker.png) 0 0 no-repeat; margin:0 auto; width:217px; height:281px; text-align:center; padding:27px 0 0 10px; color:#fff; font:bold 48px Arial;}
 
 /*sell a friend*/
 .vipsc-small{background:url(img/vipsc-small.png) 0 0 no-repeat; font:bold 18px/34px Arial; padding:7px 8px;}
