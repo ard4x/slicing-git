@@ -10,6 +10,7 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('input[type="button"],input[type="submit"]').hover(function(){$(this).toggleClass('hover');})
+			$('.btn').bind('click',function(){$(this).toggleClass('focus');})
 		});
 	</script>
 	<!--[if IE 7]>
@@ -25,15 +26,30 @@
 
 		
 		<div style="margin-top:30px; float:left; width:150px;">
-			<h1>НАША КНОПКА</h1>
+			<h1>OLD BUTTONS</h1>
 			<div style="margin-top:20px;">
 				<input type="button" class="button_blue large" value="How it work" />
 			</div>
 		</div>
-		<div style="margin-top:30px; float:left; width:150px;">
-			<h1>TEST КНОПКИ</h1>
+		<div style="margin:30px; float:left; width:150px;">
+			<h1>NEW BUTTONS</h1>
 			<div style="margin-top:20px;">
 				<a class="btn btn-pink" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth120">How it work</span></span></span></a>
+			</div>
+			<div style="margin-top:20px;">
+				<a class="btn btn-green" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth120">How it work</span></span></span></a>
+			</div>
+			<div style="margin-top:20px;">
+				<a class="btn btn-orange" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth120">How it work</span></span></span></a>
+			</div>
+			<div style="margin-top:20px;">
+				<a class="btn btn-blue" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth120">How it work</span></span></span></a>
+			</div>
+			<div style="margin-top:20px;">
+				<a class="btn btn-red" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth120">How it work</span></span></span></a>
+			</div>
+			<div style="margin-top:20px;">
+				<a class="btn btn-red disabled" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth120">Disabled</span></span></span></a>
 			</div>
 		</div>
 		<div class="clr2"></div>
