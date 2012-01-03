@@ -40,7 +40,7 @@ a.btn, span.btn {display: inline-block; height: 35px; overflow: hidden; padding:
 .btn:focus .btn-txt,.btn.focus .btn-txt {line-height:12px;}
 .btn .btn-txt {color: #fff; display: block; font-size: 14px;font-family: Arial; font-weight: 900; line-height: 13px; padding: 10px 5px; position: relative;text-align: center; white-space: nowrap;}
 
-.btn.disabled,.btn.disabled span{cursor:default;}
+.btn.disabled,.btn.disabled span{cursor:default; text-shadow:0 1px 1px #292929;}
 .btn.disabled,.btn.disabled:hover,.btn.disabled:focus,.btn.disabled.focus {background: url(img/buttons-bg.png) 100% -1643px no-repeat;}
 .btn.disabled .btn-lc,.btn.disabled:hover .btn-lc,.btn.disabled:focus .btn-lc,.btn.disabled.focus .btn-lc {background: url(img/buttons-bg.png) 0 -1573px no-repeat;}
 .btn.disabled .btn-m ,.btn.disabled:hover .btn-m,.btn.disabled:focus .btn-m ,.btn.disabled.focus .btn-m {background: url(img/buttons-bg.png) 0 -1608px repeat-x;}
@@ -55,7 +55,7 @@ a.btn, span.btn {display: inline-block; height: 35px; overflow: hidden; padding:
 .btn-pink:focus .btn-lc,.btn-pink.focus .btn-lc{background: url(img/buttons-bg.png) 0 -209px no-repeat;}
 .btn-pink:focus .btn-m,.btn-pink.focus .btn-m{background: url(img/buttons-bg.png) 0 -244px repeat-x;}
 
-.btn-green {background: url(img/buttons-bg.png) 100% -384px no-repeat; text-shadow:0 1px 1px #231e39;}
+.btn-green {background: url(img/buttons-bg.png) 100% -384px no-repeat; text-shadow:0 1px 1px #20440b;}
 .btn-green .btn-lc {background: url(img/buttons-bg.png) 0 -314px no-repeat;}
 .btn-green .btn-m {background: url(img/buttons-bg.png) 0 -349px repeat-x;}
 .btn-green:hover {background: url(img/buttons-bg.png) 100% -489px no-repeat;}
@@ -65,7 +65,7 @@ a.btn, span.btn {display: inline-block; height: 35px; overflow: hidden; padding:
 .btn-green:focus .btn-lc,.btn-green.focus .btn-lc {background: url(img/buttons-bg.png) 0 -524px no-repeat;}
 .btn-green:focus .btn-m,.btn-green.focus .btn-m{background: url(img/buttons-bg.png) 0 -559px repeat-x;}
 
-.btn-orange{background: url(img/buttons-bg.png) 100% -698px no-repeat; text-shadow:0 1px 1px #231e39;}
+.btn-orange{background: url(img/buttons-bg.png) 100% -698px no-repeat; text-shadow:0 1px 1px #833410;}
 .btn-orange .btn-lc {background: url(img/buttons-bg.png) 0 -628px no-repeat;}
 .btn-orange .btn-m {background: url(img/buttons-bg.png) 0 -663px repeat-x;}
 .btn-orange:hover {background: url(img/buttons-bg.png) 100% -803px no-repeat;}
@@ -75,7 +75,7 @@ a.btn, span.btn {display: inline-block; height: 35px; overflow: hidden; padding:
 .btn-orange:focus .btn-lc,.btn-orange.focus .btn-lc{background: url(img/buttons-bg.png) 0 -838px no-repeat;}
 .btn-orange:focus .btn-m,.btn-orange.focus .btn-m {background: url(img/buttons-bg.png) 0 -873px repeat-x;}
 
-.btn-blue {background: url(img/buttons-bg.png) 100% -1013px no-repeat; text-shadow:0 1px 1px #231e39;}
+.btn-blue {background: url(img/buttons-bg.png) 100% -1013px no-repeat; text-shadow:0 1px 1px #144162;}
 .btn-blue .btn-lc {background: url(img/buttons-bg.png) 0 -943px no-repeat;}
 .btn-blue .btn-m {background: url(img/buttons-bg.png) 0 -978px repeat-x;}
 .btn-blue:hover {background: url(img/buttons-bg.png) 100% -1118px no-repeat;}
@@ -85,7 +85,7 @@ a.btn, span.btn {display: inline-block; height: 35px; overflow: hidden; padding:
 .btn-blue:focus .btn-lc,.btn-blue.focus .btn-lc {background: url(img/buttons-bg.png) 0 -1153px no-repeat;}
 .btn-blue:focus .btn-m,.btn-blue.focus .btn-m {background: url(img/buttons-bg.png) 0 -1188px repeat-x;}
 
-.btn-red {background: url(img/buttons-bg.png) 100% -1328px no-repeat; text-shadow:0 1px 1px #231e39;}
+.btn-red {background: url(img/buttons-bg.png) 100% -1328px no-repeat; text-shadow:0 1px 1px #5d0b0c;}
 .btn-red .btn-lc {background: url(img/buttons-bg.png) 0 -1258px no-repeat;}
 .btn-red .btn-m {background: url(img/buttons-bg.png) 0 -1293px repeat-x;}
 .btn-red:hover {background: url(img/buttons-bg.png) 100% -1433px no-repeat;}
