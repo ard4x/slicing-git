@@ -45,7 +45,7 @@ a.btn, span.btn {display: inline-block; height: 35px; overflow: hidden; padding:
 .btn.disabled .btn-lc,.btn.disabled:hover .btn-lc,.btn.disabled:focus .btn-lc,.btn.disabled.focus .btn-lc {background: url(img/buttons-bg.png) 0 -1573px no-repeat;}
 .btn.disabled .btn-m ,.btn.disabled:hover .btn-m,.btn.disabled:focus .btn-m ,.btn.disabled.focus .btn-m {background: url(img/buttons-bg.png) 0 -1608px repeat-x;}
 
-.btn-pink {background: url(img/buttons-bg.png) 100% -70px no-repeat; text-shadow:0 1px 1px #231e39;}
+.btn-pink {background: url(img/buttons-bg.png) 100% -70px no-repeat; text-shadow:0 1px 1px #504292;}
 .btn-pink .btn-lc {background: url(img/buttons-bg.png) 0 0 no-repeat;}
 .btn-pink .btn-m {background: url(img/buttons-bg.png) 0 -35px repeat-x;}
 .btn-pink:hover {background: url(img/buttons-bg.png) 100% -174px no-repeat;}
