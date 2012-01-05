@@ -60,3 +60,7 @@
 .posthot_table{border-collapse:collapse; width:100%; text-align:left;}
 .posthot_table .even{background-color:#f5f7f9;}
 .posthot_table td{vertical-align:top; padding:10px;}
+
+/*scroll top*/
+.scroll_up{padding:5px 10px 5px 20px; position:fixed; border:solid #cccccc; border-width:0 1px 1px; background:#f7f2d5 url(img/sort_icos.png) 7px 10px no-repeat; top:0px; z-index:999;}
+a:hover.scroll_up{text-decoration:none;}

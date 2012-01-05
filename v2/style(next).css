@@ -2184,3 +2184,11 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .vip_friends_static_info .vfs_name{font:bold 16px Arial; background:url(img/vfs-bg.jpg) 0 15px repeat-x; width:500px; float:left; overflow:hidden;}
 .vip_friends_static_info .vfs_name span{font:normal 14px Arial; color:#666666;}
 .vip_friends_static_info .vfs_name p{display:inline; background:#fff; white-space:nowrap;}
+
+.country_rate {margin-bottom:8px;}
+.country_rate .score_box div.tleft,.country_rate .score_box div.tright{width:auto;}
+.country_rate .title{font:13px Arial; color:#4f6b8d; padding-bottom:0px;}
+.score_box div.tleft{width:40%; float:left;}
+.score_box div.tright{width:60%; float:left;}
+.score_box div.upscore span,.upscore-txt{font:bold 10px Arial; color:#009900; padding-left:10px; background:url(img/upscore.png) 0 50% no-repeat; margin-left:3px;}
+.score_box div.downscore span,.downscore-txt{font:bold 10px Arial; color:#cc0000; padding-left:10px; background:url(img/downscore.png) 0 50% no-repeat; margin-left:3px;}
