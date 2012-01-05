@@ -1529,7 +1529,7 @@ a:hover.put_me{text-decoration:none;}
 	
 	.p_sch {position:relative;}
 	.p_sch .search{ padding-left:22px; margin-bottom:0;}
-	#schClose{position:absolute; right:5px; top:5px;}
+	#schClose,#schCloseSeo{position:absolute; right:5px; top:5px;}
 	
 	
 	.some_div{background-color:#000; opacity:0.7; height: 100%; position: absolute; width: 100%; z-index: 888;} /* CAAEOOEA aey IAAE?AIINOE, aa ia eiieianoei, eniieucoai nai?. */ 
