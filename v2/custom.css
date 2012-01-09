@@ -1,0 +1,11 @@
+/*Стили которые уже есть на проде*/
+div.profileGroupLegend {background: url('img/1x1xAAAAAA.png') 50% 50% repeat-x; margin-top: 7px;}
+div.profileGroupLegend span.legend {
+    background-color: white;
+    font-weight: bold;
+    white-space: nowrap;
+}div.profileGroupLegend span.legend-link {
+    background-color: white;
+    white-space: nowrap;
+	padding:0 5px;
+}
