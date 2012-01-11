@@ -319,10 +319,6 @@ a.loglink:hover span {border-bottom: none; color:#b6d9f7;}
 .extd .indentTop15 {margin-top: 10px !important;}
 #region-group  .newListSelected{width:143px;}
 
-#about-info-div #profile-edit-form .label{float:none; clear:left;}
-#about-info-div #profile-edit-form .description{margin:5px 0 0 0px;}
-#about-info-div #profile-edit-form textarea#about{margin:5px 0 0 0px; width:455px!important;}
-
 .radiolist3 {}
 .radiolist3 li {margin-bottom: 12px; text-align:left;}
 .radiolist3 input {float: left; margin-top: 0px !important;}
