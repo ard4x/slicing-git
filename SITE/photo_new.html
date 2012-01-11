@@ -1,0 +1,753 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Yangutu</title>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" href="style.css" type="text/css" id="" />
+	
+	<link rel="stylesheet" href="photoviewer.css" type="text/css" id="" />
+	<link rel="stylesheet" href="buttons.css" type="text/css" id="" />
+	
+	<script src="../js/jquery-1.4.4.min.js"></script>
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="ie7.css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="ie8.css" />
+	<![endif]-->
+	<script type="text/javascript" >
+		$(document).ready(function (){
+		
+		photoView();
+		$(window).resize(photoView);
+		
+		function photoView(){
+			$('#close').click(function(e){e.preventDefault(); hideOp($(this));});
+			$('.photo-viewer').height($(document).height());
+		}
+			function hideOp(el){
+				el.parents('div.photo-viewer').css('display','none');
+			}
+			
+			
+			
+			makeStars( 'with-stars-big', './img/ratestarsorange.png', './img/ratestarsred.png');
+
+			function makeStars( starsClass, brightStarPath, lastSratsPath ){
+				$('.' + starsClass).each(function(){
+					var self = $(this);
+					var stars = self.find('img');
+					var arr = new Array();
+					stars.mouseover(function(){
+						
+						// запоминаем src всех звезд в текущем контейнере
+						stars.each(function(){
+							arr.push( $(this).attr('src') );
+						});
+						
+						// определяем индекс элемента, на который навели курсор
+						var inx = self.find('img').index(this) + 1;
+						console.log(inx);
+						// у всех предыдущих элементов меняем src
+						var sImg = self.find('img:lt(' + inx + ')');
+						sImg.attr('src', brightStarPath);
+						if(inx == 6 || inx == 7 ){
+							$(this).attr('src', lastSratsPath);
+						}if(inx == 7){
+							$(this).prev().attr('src', lastSratsPath);
+						}
+					});
+					
+					// возвращаем на место src звезд
+					stars.mouseout(function(){
+						var i = 0;
+						stars.each(function(){
+							$(this).attr('src', arr[ i++ ] );
+						});
+					});
+					
+					stars.click(function(e){
+						var inx = self.find('img').index(this) + 1;
+						$('form#news_rate').find('input[type=hidden]').attr('value', inx).end().submit();
+					});
+				});
+			}
+			
+			
+		});
+	
+		
+	</script>
+</head>
+
+<body>
+	 <div class="yangutu_popap fixWidth485 rubber" style="position: absolute; top: 100px; left: 500px;">
+		<a href="" class="popClose"><img alt="" class="cls4" src="./img/close_ic.png"></a>
+		<div class="yp_top"><div class="rubber_top_right"></div></div>
+		<div class="yp_content_left">
+			<div class="yp_content_right">
+				<div class="yp_grad">
+					<h3>Let the person know you think he/she is special for you!</h3>
+					<div class="rate-6 indentTop20">
+						<p>Draw attention to yourself by presenting a user you like with 6 stars!</p>
+						<p class="coints">100 coins</p>
+						<input type="button" class="button_green large fixWidth60 indentRight10" value="Buy Now" />
+					</div>
+					<div class="rate-7 indentTop20">
+						<p>Presenting all your stars means you declare yourself.</p>
+						<p class="coints">100 coins</p>
+						<input type="button" class="button_green large fixWidth60 indentRight10" value="Buy Now" />
+					</div>
+					<div class="indentTop20 tcenter">
+						<input type="button" class="button_blue small indentRight10" value="Cencel" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="yp_bot"><div class="rubber_bot_right"></div></div>
+	</div> 
+<div class="photo-viewer">
+	<div class="photo-viewer-block">
+		<div class="photo-viewer-top-navi">
+			<div class="inner">
+				<table>
+					<col width="">
+					<col width="">
+					<col width="45px">
+					<tr>
+						<td>
+							<div class="photo-usr"> <img src="./img/pmh_vip.png" alt="" title="" /> <a href="">Наталья</a>, 45 	 <img alt="online" src="../img/onlinepsmile.png" /></div>
+						</td>
+						<td>
+							<div>
+								<ul class="horlist left">									 
+									<li><a href="#">Send icebreakers</a></li>
+									<li><a href="#">Add to favorites</a></li>
+									<li><a href="#">Chat now</a></li>
+								</ul>
+								<div class="orborder2 indentLeft20 indentTop10 left">
+									<a class="bold" href="#">&nbsp;</a>
+								</div>
+								<ul class="horlist right drop-down">
+									<li class="edit active">
+										<a class="gray" href="">Edit this photo</a>
+										<ul>									 
+											<li><a href="#">Send icebreakers</a></li>
+											<li><a href="#">Add to favorites</a></li>
+											<li><a href="#">Chat now</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</td>
+						<td>
+							<a id="close" href=""><img src="./img/photo_close.png" alt="Close" title="Close" /></a>
+						</td>
+					</tr>
+				</table>
+				
+			</div>
+		</div>
+
+		<div id="photo-box">
+			<div class="photo">
+				<table>
+					<col width="80px">
+					<col width="">
+					<col width="80px">
+					<tr>
+						<td><div class="photo-prev disable indentRight20"><a href="" title="Prev photo"><span>&nbsp;</span></a></div></td>
+						<td>
+							<span class="prelative">
+								<div class="photo-view-reguest"><a href=""><img src="./img/private_photo.jpg" alt="photo" title="Title of photo"  /><p><span>Request Send</span></p></a></div>
+							</span>
+						</td>
+						<td><div class="photo-next indentLeft20"><a href="" title="Next photo"><span>&nbsp;</span></a></div></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="preview">
+							
+							<a href="" class="prelative">
+								<input type="button" class="button_black small slButton" value="Slideshow" style="width:100px;" />
+								<img src="./img/private_x50.jpg" alt="" title="" />
+							</a>
+							<a href=""><img src="./photo/male/img_2.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_3.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_4.jpg" alt="" title="" /></a>
+							<a href=""><img src="./img/private_x50.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_2.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_3.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_4.jpg" alt="" title="" /></a>
+							<a href=""><img src="./img/private_x50.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_2.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_3.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_4.jpg" alt="" title="" /></a>
+							<a href=""><img src="./img/private_x50.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_2.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_3.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_4.jpg" alt="" title="" /></a>
+							<a href=""><img src="./img/private_x50.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_2.jpg" alt="" title="" /></a>
+							<a href=""><img src="./img/private_x50.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_2.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_3.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_4.jpg" alt="" title="" /></a>
+							<a href=""><img src="./img/private_x50.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_2.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_3.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_4.jpg" alt="" title="" /></a>
+							<a href=""><img src="./img/private_x50.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_2.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_3.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_4.jpg" alt="" title="" /></a>
+							<a href=""><img src="./img/private_x50.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_2.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_3.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_4.jpg" alt="" title="" /></a>
+							<a href=""><img src="./img/private_x50.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_2.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_3.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_4.jpg" alt="" title="" /></a>
+							<a href=""><img src="./img/private_x50.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_2.jpg" alt="" title="" /></a>
+							<a class="active" href=""><img src="./photo/male/img_3.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_4.jpg" alt="" title="" /></a>
+							<a href=""><img src="./img/private_x50.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_2.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_3.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_4.jpg" alt="" title="" /></a>
+							<a href=""><img src="./img/private_x50.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_2.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_3.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_4.jpg" alt="" title="" /></a>
+							<a href=""><img src="./img/private_x50.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_2.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_3.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_4.jpg" alt="" title="" /></a>
+							<a href=""><img src="./img/private_x50.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_2.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_3.jpg" alt="" title="" /></a>
+							<a href=""><img src="./photo/male/img_4.jpg" alt="" title="" /></a>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="innerTop20">
+							<p>Rate this picture "I am in the snowbo…</p>
+							<div class="with-stars-big">
+								<img title="" alt="" src="./img/ratestarsblack.png" />
+								<img title="" alt="" src="./img/ratestarsblack.png" />
+								<img title="" alt="" src="./img/ratestarsblack.png" />
+								<img title="" alt="" src="./img/ratestarsblack.png" />
+								<img title="" alt="" src="./img/ratestarsblack.png" />
+								<img title="" alt="" src="./img/ratestarsblack.png" />
+								<img title="" alt="" src="./img/ratestarsblack.png" />
+								<div class="clear"></div>
+							</div>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="innerTop20">
+							<p class="gray">Your rating <span class="yellow fs4 tbold">5</span> <a class="yellow" href="">Put the above estimate</a></p>
+						</td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="photo-comments">
+			<div class="inner vanilla-bg">			
+			<h2>These users are waiting for your permission to view this private photo</h2>
+				<div>
+					<p class="ava"><img src="../img/46x46pic.jpg" alt="" /></p>
+					<p class="left fixWidth230"><b class="black"><a href="">Anna</a>, 30</b><br/> Wants to meet with a man, 25-65</p>
+					<p class="left fixWidth230 indentTop10">
+						<input type="button" value="Aprove" class="button_green small fixWidth65 indentRight10" />
+						<input type="button" value="Reject" class="button_white small fixWidth65" />
+					</p>
+					<div class="clear"></div>
+				</div>
+				<div>
+					<p class="ava"><img src="../img/46x46pic.jpg" alt="" /></p>
+					<p class="left fixWidth230"><b class="black"><a href="">Anna</a>, 30</b><br/> Wants to meet with a man, 25-65</p>
+					<p class="left fixWidth230 indentTop10">
+						<input type="button" value="Aprove" class="button_green small fixWidth65 indentRight10" />
+						<input type="button" value="Reject" class="button_white small fixWidth65" />
+					</p>
+					<div class="clear"></div>
+				</div>
+				<div>
+					<p class="ava"><img src="../img/46x46pic.jpg" alt="" /></p>
+					<p class="left fixWidth230"><b class="black"><a href="">Anna</a>, 30</b><br/> Wants to meet with a man, 25-65</p>
+					<p class="left fixWidth230 indentTop10">
+						<input type="button" value="Aprove" class="button_green small fixWidth65 indentRight10" />
+						<input type="button" value="Reject" class="button_white small fixWidth65" />
+					</p>
+					<div class="clear"></div>
+				</div>
+				<div>
+					<p class="ava"><img src="../img/46x46pic.jpg" alt="" /></p>
+					<p class="left fixWidth230"><b class="black"><a href="">Anna</a>, 30</b><br/> Wants to meet with a man, 25-65</p>
+					<p class="left fixWidth230 indentTop10">
+						<input type="button" value="Aprove" class="button_green small fixWidth65 indentRight10" />
+						<input type="button" value="Reject" class="button_white small fixWidth65" />
+					</p>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="inner">		
+				<div class="left width60p">
+					<a href="">Report this photo</a>
+					<h1>Comments</h1>
+					<div class="photo_comment_usr">
+							<div class="brdpic2wrapper"><div class="brdpic2"><img alt="" src="img/56x76pic.jpg"></div></div>
+							<div class="userblock prelative">
+								<span class="fs3"><a class="bold" href="#">John</a>, 30 <img alt="online" src="img/onlinepsmile.png"> <img alt="" src="img/smallstar.png"></span><br>
+								<span class="gray">11:24 am</span><br>
+								<p class="indentTop10">Прошел тест и теперь получает рассылку Soulmates с подходящими ему женщинами</p>
+							</div>
+							<div class="clr2"></div>
+					</div>
+					<div class="photo_comment_usr">
+							<div class="brdpic2wrapper"><div class="brdpic2"><img alt="" src="img/56x76pic.jpg"></div></div>
+							<div class="userblock prelative">
+								<span class="fs3"><a class="bold" href="#">John</a>, 30 <img alt="online" src="img/onlinepsmile.png"> <img alt="" src="img/smallstar.png"></span><br>
+								<span class="gray">11:24 am</span><br>
+								<p class="indentTop10">Баннер возле комментов ты уже рисовал в таске 
+								«Stand-Up». Просто вставь туда его.</p>
+							</div>
+							<div class="clr2"></div>
+					</div>
+					<div>
+							<div class="brdpic2wrapper"><div class="brdpic2"><img alt="" src="img/56x76pic.jpg"></div></div>
+							<div class="userblock prelative">
+								<span class="fs3"><a class="bold" href="#">John</a>, 30 <img alt="online" src="img/onlinepsmile.png"> <img alt="" src="img/smallstar.png"></span><br>
+								<span class="gray">11:24 am</span><br>
+								<p class="indentTop10">Прошел тест и теперь получает рассылку Soulmates 
+									с подходящими ему женщинами. Прошел тест и теперь получает рассылку Soulmates 
+									с подходящими ему женщинами</p>
+							</div>
+							<div class="clr2"></div>
+					</div>					
+					<h1>Your comment</h1>
+					<div>
+							<div class="brdpic2wrapper"><div class="brdpic2"><img alt="" src="img/56x76pic.jpg"></div></div>
+							<div class="userblock prelative">
+								<textarea></textarea>
+								<div class="indentTop10">
+									<input type="button" value="Write Comment" class="button_white large">
+								</div>
+							</div>
+							<div class="clr2"></div>
+					</div>	
+				</div>
+				<div class="left width40p">
+					<div class="bannerbx_orange right fixWidth210">
+						<div class="inner">
+							<img alt="" src="./img/f2f_mens_banner_ico.png" />
+							<p class="fs3"><b>Увеличь шансы на успех!</b></p>
+							<p>Будь чаще в <br> «Face-to-Face»,<br> купи специальное размещение.</p>
+							<input type="button" value="Купить" class="button_green large flWidth100">
+						</div>
+					</div>
+					<div class="clr2"></div>
+				</div>
+				<div class="clr2"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="header inner">
+    <div class="header_inn">
+        <a href="/"><img src="http://yangutu.com/img-new/ya_block_logo_in.png" class="logo" alt="Yangutu"></a>
+		<div class="indentLeft35 left">
+			<div class="yab_mess">
+				<a href="#1" class="th_b notify_list_icn"><span class="mess4 hme">&nbsp;</span>Soulmates</a>
+				<div class="ya_mbx3 hl_mbx hidden">
+					<div class="ya_mbx3_top"></div>
+					<div class="ya_mbx_mid3">
+						<div class="inn">
+							<div class="poptitebar">
+								<a href="/soulmates/settings/" class="floatRight">Edit settings</a>
+								<h2>New Soulmates</h2>
+							</div>
+							<ul class="matches">
+											<li class="trans-bg">
+									<div class="ya_mbx_sb">
+										<div class="tbold fs2">What is it?</div>Soulmates are users, carefully selected by our system for you after you have completed our Compatibility test and specified your Soulmates settings.
+										<br><a class="thlink" href="/help#question-20">Read More</a>
+									</div>
+								</li>
+								<li class="noBorder innerTop10">
+									<a href="/soulmates/">Start using Soulmate Finder </a>
+								</li>
+								
+											
+							</ul>
+
+						</div>
+					</div>
+					<div class="ya_mbx_bot3"> &nbsp; </div>
+				</div>			
+		</div>
+			<div class="yab_mess">
+				<a href="#1" id="pp-chat-message" class="th_b notify_list_icn chatm"><span class="mess3 hme">&nbsp;</span>Chat</a>
+					<a id="new-messages-count" href="#2" class="cntr notify_list_icn chatm"><span>1</span></a>
+
+					<div class="ya_mbx3 hl_mbx" style="display: none;" id="msg-ttip">
+						<div class="ya_mbx3_top"></div>
+						<div class="ya_mbx_mid3">
+							<div class="inn">
+							
+								<div class="poptitebar"><h2>Chat</h2></div>
+								<ul class="matches">
+																				<li class="usline">
+										  <div class="ava">
+											 <a href="/chat/dialog/353135/folder/inbox" class="message chat">
+												<img ilo-full-src="http://yangutu.com/photos/37/cd/93/46x46_162765.jpg" src="/photos/37/cd/93/46x46_162765.jpg" alt="">
+											 </a>
+										  </div>
+										  <div class="descr">
+											 <a href="/chat/dialog/353135/folder/inbox" class="message chat">
+												  <span style="font-weight: bold;">Yaraslau, 29</span> <img ilo-full-src="http://yangutu.com/img/onlinepsmile.png" src="/img/onlinepsmile.png" alt="online" class="online" />							<br>
+												  test						 </a>
+										 </div>
+									</li>
+																<li class="noBorder innerTop10">
+											<a href="/chat/dialog/folder/inbox" class="chat">Open Chat</a>
+									</li>
+								</ul>
+								
+							</div>
+						</div>
+						<div class="ya_mbx_bot3"> &nbsp; </div>
+					</div>
+			</div>
+			<div class="yab_mess">
+				    <a href="#1" class="msbx notify_list_icn notif"><span class="mess5 hme">&nbsp;</span> Notifications </a>
+
+    <a id="new-notifications-count" href="#2" class="cntr notify_list_icn notif" style="display: none;"><span>0</span></a>
+
+    <div class="ya_mbx3 hl_mbx" style="display: none;">
+        <div class="ya_mbx3_top"></div>
+        <div class="ya_mbx_mid3">
+            <div class="inn" id="notif-ttip">
+        	<div class="poptitebar">
+            	<h2>Notifications</h2>
+            </div>
+            <ul class="matches">
+                            <li class="trans-bg"><div class="ya_mbx_sb">No new notifications</div></li>
+            
+                <li class="noBorder innerTop10">
+                    <a href="/notifications">View All Notifications</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="ya_mbx_bot3"> &nbsp; </div>
+</div>
+			</div>
+		</div>
+
+        <ul class="h_menu">
+            <li><a href="/profile">Profile</a></li>
+            <li id="accountMenu" class="account"><a href="#">Account</a></li>
+        </ul>
+        <div class="clr2"></div>
+    </div>
+</div>
+
+	    
+<div class="content">
+    <div class="content_inn">
+
+        
+<div class="c_left4">
+    
+			<div class="proftopmes">
+			<div id="matchPref">Wants to meet a woman, 18-99</div>
+							<a href="#" onclick="$('.lookingbx').slideDown();return false;">Edit</a>
+					</div>
+     
+	 <div class="my_brdpic_top"></div>		<div class="my_brdpic4">
+															<a class="playSlideshow" href="http://yangutu.com/photo/slideshow/?userId=385560&amp;photoId=4835894">
+																<img src="http://yangutu.com/photos/a6/34/18/216x286_4835894.JPG">									</a>
+						</div>
+	<div class="my_brdpic_bottom"></div>
+	    <div class="profsmpic">
+        <ul>
+                                        <li><a href="/photo/add"><div class="addphoto"><span>Upload<br>photos</span></div></a></li>
+                    </ul>
+    </div>
+    <ul class="linkslist indentTop20">
+        <li class="tbold">
+                                    <a href="/profile/photos/385560">
+                                View all photos</a>
+                <a href="#" class="pluscount">1</a>
+            
+        </li>
+            </ul>
+	 
+</div>
+<div class="c_mid4">
+<h1>Taras, 22 </h1>
+
+<div class="prof_loc indentBottom10">
+	<span class="loc-sub-city" title="Minsk">Minsk, </span>
+	<span class="loc-sub-country" title="Belarus">Belarus</span>
+</div>
+<div class="subnav2 indentTop10">
+    <ul class="links">
+		<li><a href="">Add to favorites </a></li>
+		<li><a href="">Send Icebreaker</a></li>
+		<li><a href="">Chat Now</a></li>
+		<li><a href="">Wink</a></li>
+		<li class="orbx">
+			<div class="orborder2" id="prof_or"><a href="#">or <img alt="" src="../img/orarr.gif" ilo-full-src="http://yangutu.com/img/orarr.gif"></a>
+				<div style="display: none;" class="orborderlistfull">
+				 <div class="inn">
+					<ul id="profile_ull">
+													<li class="rem-fav"><a href="/favorites/remove/userId/360563">Remove from favorites</a></li>
+						<li><a href="/profile/block/blockId/360563">Block</a></li>
+						<li><a href="/profile/close/blockId/360563">Close</a></li>
+													<li><a username="Svetlana, 18" userid="360563" class="report_abuse" href="/spam/abuse-report">Report Abuse</a></li>
+					</ul>
+				   </div>
+				   <div class="bot"></div>
+				</div>
+			</div>
+		</li>
+	</ul>
+    <div class="clr2"></div>
+</div>
+<div id="about-info-div">
+<div class="rtit">Icebreakers</div>
+    <ul class="proflist saved-list">
+            <div style="padding: 0pt 5px;"><a href="">Elena</a> send <a href="">new icebreakers to me</a></div>
+    </ul>
+</div>
+<div id="about-info-div">
+<div class="rtit">About me <a id="edit-about-link" class="tnormal" href="/profile/edit-about-me">Edit</a></div>
+    <ul class="proflist saved-list">
+            <div style="padding: 0pt 5px; color: rgb(103, 103, 103);">Describe yourself in a few words.</div>
+    </ul>
+</div>
+<div id="about-info-div">
+<div class="rtit">Icebreakers</div>
+    <ul class="proflist saved-list">
+            <div style="padding: 0pt 5px;"><a href="">Elena</a> send <a href="">new icebreakers to me</a></div>
+    </ul>
+</div>
+<div id="about-info-div">
+<div class="rtit">About me <a id="edit-about-link" class="tnormal" href="/profile/edit-about-me">Edit</a></div>
+    <ul class="proflist saved-list">
+            <div style="padding: 0pt 5px; color: rgb(103, 103, 103);">Describe yourself in a few words.</div>
+    </ul>
+</div>
+<div id="about-info-div">
+<div class="rtit">Icebreakers</div>
+    <ul class="proflist saved-list">
+            <div style="padding: 0pt 5px;"><a href="">Elena</a> send <a href="">new icebreakers to me</a></div>
+    </ul>
+</div>
+<div id="about-info-div">
+<div class="rtit">About me <a id="edit-about-link" class="tnormal" href="/profile/edit-about-me">Edit</a></div>
+    <ul class="proflist saved-list">
+            <div style="padding: 0pt 5px; color: rgb(103, 103, 103);">Describe yourself in a few words.</div>
+    </ul>
+</div>
+<div id="about-info-div">
+<div class="rtit">Icebreakers</div>
+    <ul class="proflist saved-list">
+            <div style="padding: 0pt 5px;"><a href="">Elena</a> send <a href="">new icebreakers to me</a></div>
+    </ul>
+</div>
+<div id="about-info-div">
+<div class="rtit">About me <a id="edit-about-link" class="tnormal" href="/profile/edit-about-me">Edit</a></div>
+    <ul class="proflist saved-list">
+            <div style="padding: 0pt 5px; color: rgb(103, 103, 103);">Describe yourself in a few words.</div>
+    </ul>
+</div>
+<div id="about-info-div">
+<div class="rtit">Icebreakers</div>
+    <ul class="proflist saved-list">
+            <div style="padding: 0pt 5px;"><a href="">Elena</a> send <a href="">new icebreakers to me</a></div>
+    </ul>
+</div>
+<div id="about-info-div">
+<div class="rtit">About me <a id="edit-about-link" class="tnormal" href="/profile/edit-about-me">Edit</a></div>
+    <ul class="proflist saved-list">
+            <div style="padding: 0pt 5px; color: rgb(103, 103, 103);">Describe yourself in a few words.</div>
+    </ul>
+</div>
+<div id="about-info-div">
+<div class="rtit">Icebreakers</div>
+    <ul class="proflist saved-list">
+            <div style="padding: 0pt 5px;"><a href="">Elena</a> send <a href="">new icebreakers to me</a></div>
+    </ul>
+</div>
+<div id="about-info-div">
+<div class="rtit">About me <a id="edit-about-link" class="tnormal" href="/profile/edit-about-me">Edit</a></div>
+    <ul class="proflist saved-list">
+            <div style="padding: 0pt 5px; color: rgb(103, 103, 103);">Describe yourself in a few words.</div>
+    </ul>
+</div>
+<div id="about-info-div">
+<div class="rtit">Icebreakers</div>
+    <ul class="proflist saved-list">
+            <div style="padding: 0pt 5px;"><a href="">Elena</a> send <a href="">new icebreakers to me</a></div>
+    </ul>
+</div>
+<div id="about-info-div">
+<div class="rtit">About me <a id="edit-about-link" class="tnormal" href="/profile/edit-about-me">Edit</a></div>
+    <ul class="proflist saved-list">
+            <div style="padding: 0pt 5px; color: rgb(103, 103, 103);">Describe yourself in a few words.</div>
+    </ul>
+</div>
+<div id="about-info-div">
+<div class="rtit">Icebreakers</div>
+    <ul class="proflist saved-list">
+            <div style="padding: 0pt 5px;"><a href="">Elena</a> send <a href="">new icebreakers to me</a></div>
+    </ul>
+</div>
+<div id="about-info-div">
+<div class="rtit">About me <a id="edit-about-link" class="tnormal" href="/profile/edit-about-me">Edit</a></div>
+    <ul class="proflist saved-list">
+            <div style="padding: 0pt 5px; color: rgb(103, 103, 103);">Describe yourself in a few words.</div>
+    </ul>
+</div>
+<div id="about-info-div">
+<div class="rtit">Icebreakers</div>
+    <ul class="proflist saved-list">
+            <div style="padding: 0pt 5px;"><a href="">Elena</a> send <a href="">new icebreakers to me</a></div>
+    </ul>
+</div>
+<div id="about-info-div">
+<div class="rtit">About me <a id="edit-about-link" class="tnormal" href="/profile/edit-about-me">Edit</a></div>
+    <ul class="proflist saved-list">
+            <div style="padding: 0pt 5px; color: rgb(103, 103, 103);">Describe yourself in a few words.</div>
+    </ul>
+</div>
+<div id="about-info-div">
+<div class="rtit">Icebreakers</div>
+    <ul class="proflist saved-list">
+            <div style="padding: 0pt 5px;"><a href="">Elena</a> send <a href="">new icebreakers to me</a></div>
+    </ul>
+</div>
+<div id="about-info-div">
+<div class="rtit">About me <a id="edit-about-link" class="tnormal" href="/profile/edit-about-me">Edit</a></div>
+    <ul class="proflist saved-list">
+            <div style="padding: 0pt 5px; color: rgb(103, 103, 103);">Describe yourself in a few words.</div>
+    </ul>
+</div>
+
+<div id="basic-info-div">
+<div class="rtit">
+                    <div class="rtitrs"> <div class="per_cont" style="width: 73px;"><div class="per" style="width: 0%;"></div></div> 0% <span>filled</span> </div>                        				Personal information <a id="edit-basic-link" class="tnormal" href="/profile/edit">Edit</a></div>
+    <ul class="proflist saved-list">
+            <li>
+        <div class="label">
+            Current city:
+        </div>
+        <div class="description">
+            <span class="loc-sub-city" title="Minsk">Minsk, </span><span class="loc-sub-country" title="Belarus">Belarus</span>                                </div>
+    </li>
+
+                                                                                    </ul>
+</div>
+
+<div id="more-info-div">
+<div class="rtit">Hobbies and Pastimes <a href="/profile/edit-more-about-me" id="edit-more-link" class="tnormal">Edit</a><a style="margin-left: 10px; display: none; cursor: pointer;" id="get-from-fb">Get from Facebook</a><span style="margin-left: 10px;" id="fb-spinner"></span></div>
+    <div class="prinfo saved-list">Share your views and interests.</div>
+</div>
+ 
+<div id="words-info-div">
+    <div class="rtit">In my own words <a href="/profile/edit-about" id="edit-words-link" class="tnormal">Edit</a></div>
+            <div class="prinfo saved-list">Stand out of the crowd - tell the world what you are all about. </div>
+    </div>
+ </div>
+
+
+        
+  <div class="c_right">
+	<div class="wtit">Face-to-face</div>
+	<ul class="rlist">
+		 <li><span class="rnum "></span> <a href="" class="rlab">Want to Meet Me</a></li>
+		 <li><span class="rnum "></span> <a href="" class="rlab">I'm want to meet</a></li>
+		 <li><span class="rnum "></span> <a href="" class="rlab">Mutual attractions</a></li>
+	</ul>
+	
+    <div class="wtit">Quicklinks</div>    
+	<ul class="rlist">
+		<li id="menu_soulmates"><span class="rnum ">5</span> <a href="/soulmates" class="rlab">Soulmates</a></li>
+		<li id="menu_search"><span class="rnum "></span> <a href="/search" class="rlab">Matches</a></li>
+		<li id="menu_favorites"><span class="rnum ">24</span> <a href="/favorites" class="rlab">Favorites</a></li>
+		<li id="menu_visitors"><span class="rnum ">6</span> <a href="/visitors" class="rlab">Visitors</a></li>
+		<li id="menu_blocked"><span class="rnum "></span> <a href="/profile/blocked" class="rlab">Blocked</a></li>
+		<li id="menu_closed"><span class="rnum "></span> <a href="/profile/closed" class="rlab">Closed</a></li>
+		<li id="menu_notifications"><span class="rnum "></span> <a href="/notifications" class="rlab">Notifications</a></li>
+	</ul>    
+   
+    
+    <div class="wtit">Get connected</div>
+	<ul class="rlist">
+		 <li><span class="rnum "></span> <a href="/invite" class="rlab">Invite people</a></li>
+		 <li><span class="rnum "></span> <a href="/invite/history" class="rlab">Track your invites</a></li>
+	</ul>
+    
+    
+    <div class="wtit">Your profile address</div>
+        <div class="profaddress">
+            <input readonly="readonly" class="input2 sf width180 indentTop10" value="http://yangutu.com/597083568" type="text">
+            <div class="clr2 indentBottom5"></div>
+             <a href="/profile/custom-url">Customize</a>
+         </div>
+    
+    <div class="problk">
+        <script language="Javascript">try{TS_AdService.CreateZone("MDEyMzQ0MTM0NTQzMjE=");}catch(e){}</script>
+    </div>
+</div>                
+        <div class="clr2"></div>
+    </div>
+</div>
+<div class="clr2"></div>
+
+<div class="footer">
+  <div class="footer_inn">
+	<ul>
+		<li><a href="/page/about">About us</a></li>
+		<li><a href="/help">FAQ</a></li>
+		<li><a href="http://blog.yangutu.com/">Our blog</a></li>
+		<li><a href="/feedback">Contact us</a></li>
+	</ul>
+	<ul>
+		<li><a href="/page/policy">Privacy</a></li>
+		<li><a href="/page/terms">Terms of use</a></li>
+	</ul>
+	<ul>			
+		<li><a href="/page/scams">Scam warning</a></li>
+		<li><a href="/page/safety">Safety Tips</a></li>
+	</ul>
+	<ul>
+		<li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+		<li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+		<li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+	
+	</ul>
+	<ul>
+	  <li><a href="/dating/all">People Directory</a></li>
+	</ul>
+    <div class="right">
+        <font color="black">© 2010-2011 Yangutu Inc. All rights reserved</font><br>
+      <span>Yangutu (swahili) - My one and only.</span>
+    </div>
+	 <div class="clear"></div>
+  </div>
+</div>
+</body>
+</html>

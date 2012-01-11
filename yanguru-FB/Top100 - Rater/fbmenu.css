@@ -1,8 +1,0 @@
-.vq_content_menu{ margin: 0 17px 10px; background-color:#426087; border-radius:3px 3px 0 0; -webkit-border-radius:3px 3px 0 0; -moz-border-radius:3px 3px 0 0;}
-.vq_content_menu table{width:100%; border-collapse:collapse;}
-.vq_content_menu table td{border-right:1px solid #DBE0E8; text-align:center;}
-.vq_content_menu table td a{ font:normal 14px/40px helvetica; color:#fff; display:block; height:40px;}
-.vq_content_menu table td.last{border:none;}
-.vq_content_menu table td.active{background-color:#f6f5eb;}
-.vq_content_menu table td.active a{color:#666556;}
-.vq_content_menu table td a:hover{text-decoration:none;}

@@ -1,0 +1,240 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Yangutu</title>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" href="style(next).css" type="text/css" id="" />
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.inviteLink').bind('click',function (e) {
+				e.preventDefault();
+				$('.yangutu_invite_opt').hide();
+				$('.yangutu_invite_choise').removeClass('active');
+				$(this).next().show();
+				$(this).parent('.yangutu_invite_choise').toggleClass('active');
+			});
+		});
+	</script>
+</head>
+<body>
+	
+	<div class="header">
+		<div class="header_inn">
+			<div class="top_navigation">
+				<ul class="left">
+					<li><a href="">Messages</a><span class="new_event">2</span></li>
+					<li><a href="">Signals</a><span class="new_event">45</span></li>
+					<li><a href="">Soulmates</a><span class="new_event">167</span></li>
+				</ul>
+				<ul class="right">
+					<li class="coints">1450 Coins <a href="#">Add</a></li>
+					<li class="profile"><a href="#">Profile </a></li>
+					<li class="account"><a href="#">Account Settings</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<div class="bot_navigation">
+				<a href="#"><img src="./img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>	
+				<ul class="main_menu">
+					<li><a href="">Home</a></li>
+					<li><a href="">Matches</a></li>
+					<li><a href="">TOP-100</a></li>
+					<li><a href="">Apps and Games</a></li>
+					<li><a href="">Blogs</a></li>
+				</ul>
+				<div class="clr2"></div>
+			</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="content_inn">
+			<h1>Invite people</h1>
+			<p>How do you talk to the people you know? Choose a service:</p>
+			
+			<div class="yangutu_invite">
+				<div class="yangutu_invite_choise">
+					<p class="inviteLink"><a href=""><img src="./img/facebook.gif" alt="facebook" /><span class="tbold fs4">Facebook</span></a></p>
+					<div id="invitefrm" class="yangutu_invite_opt">
+						<table cellspacing="0" cellpadding="0">
+							<colgroup><col width="64">
+							<col width="250">
+							<col width="">
+							</colgroup>
+							<tr>
+								<td>&nbsp;</td>
+								<td>
+									<input type="submit" class="button_blue small" value="Find Friends" id="webmail_form_submit" />
+								</td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="yangutu_invite_choise">
+					<p class="inviteLink"><a href=""><img src="./img/gmail.gif" alt="gmail" /><span class="fs4 tbold">Google Gmail</span></a></p>
+					<div id="invitefrm" class="yangutu_invite_opt">
+						<table cellspacing="0" cellpadding="0">
+							<colgroup><col width="140">
+							<col width="250">
+							<col width="">
+							</colgroup>
+							<tr>
+								<td class="tright loginLabel">Login/email:</td>
+								<td><input type="text" class="input2 fixWidth240" name="email"></td>
+								<td>&nbsp;</td>
+							</tr>
+							<tr>
+								<td class="tright">Password:</td>
+								<td><input type="password" class="input2 fixWidth240" name="password"></td>
+								<td class="gray"><img align="absmiddle" alt="" src="/img/lockic2.gif"> Yangutu will not store your password. <a href="/page/policy">Learn More</a></td>
+							</tr>
+							<tr>
+								<td>&nbsp;</td>
+								<td>
+									<input type="submit" class="button_blue small" value="Find Friends" id="webmail_form_submit">
+								</td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="yangutu_invite_choise">
+					<p class="inviteLink"><a href=""><img src="./img/yahoo.gif" alt="yahoo" /><span class="fs4 tbold">Yahoo! Mail</span></a></p>
+					<div id="invitefrm" class="yangutu_invite_opt">
+						<table cellspacing="0" cellpadding="0">
+							<colgroup><col width="64">
+							<col width="250">
+							<col width="">
+							</colgroup>
+							<tr>
+								<td>&nbsp;</td>
+								<td>
+									<input type="submit" class="button_blue small" value="Find Friends" id="webmail_form_submit">
+								</td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="yangutu_invite_choise">
+					<p class="inviteLink"><a href=""><img src="../img/twitter.gif" alt="twitter" /><span class="fs4 tbold">Twitter</span></a></p>
+					<div id="invitefrm" class="yangutu_invite_opt">
+						<table cellspacing="0" cellpadding="0">
+							<colgroup><col width="64">
+							<col width="250">
+							<col width="">
+							</colgroup>
+							<tr>
+								<td>&nbsp;</td>
+								<td>
+									<input type="submit" class="button_blue small" value="Find Friends" id="webmail_form_submit">
+								</td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="yangutu_invite_choise">
+					<p class="inviteLink"><a href=""><img src="../img/othertools.gif" alt="other tools" /><span class="fs4 tbold">Other Tools</span></a></p>
+					<div id="invitefrm" class="yangutu_invite_opt">
+						<table cellspacing="0" cellpadding="0">
+							<colgroup><col width="64">
+							<col width="250">
+							<col width="">
+							</colgroup>
+							<tr>
+								<td>&nbsp;</td>
+								<td>
+									<ul class="linkslist">
+										<li><a href="/invite/one-post-inv">Send email invitation</a></li>
+										<li><a href="/invite/history">Your invite history</a></li>
+									</ul>
+								</td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="yangutu_invite_choise">
+					<p class="inviteLink"><a href=""><img src="./img/hotmail1.gif" alt="Hotmail" /><span class="fs4 tbold">Windows LIVE/Hotmail</span></a></p>
+					<div id="invitefrm" class="yangutu_invite_opt">
+						<table cellspacing="0" cellpadding="0">
+							<colgroup><col width="64">
+							<col width="250">
+							<col width="">
+							</colgroup>
+							<tr>
+								<td>&nbsp;</td>
+								<td>
+									<ul class="linkslist">
+										<li><a href="/invite/one-post-inv">Send email invitation</a></li>
+										<li><a href="/invite/history">Your invite history</a></li>
+									</ul>
+								</td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="yangutu_invite_choise">
+					<p class="inviteLink"><a href=""><img src="./img/orkut.png" alt="Orkut" /><span class="fs4 tbold">orkut.com</span></a></p>
+					<div id="invitefrm" class="yangutu_invite_opt">
+						<table cellspacing="0" cellpadding="0">
+							<colgroup><col width="64">
+							<col width="250">
+							<col width="">
+							</colgroup>
+							<tr>
+								<td>&nbsp;</td>
+								<td>
+									<ul class="linkslist">
+										<li><a href="/invite/one-post-inv">Send email invitation</a></li>
+										<li><a href="/invite/history">Your invite history</a></li>
+									</ul>
+								</td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<p class="indentTop10"><a href="" class="skip">Skip</a></p>
+			<div class="clr2"></div>
+		</div>
+	</div>
+	
+	<div class="footer">
+	  <div class="footer_inn">
+		<ul>
+			<li><a href="/page/about">About us</a></li>
+			<li><a href="/help">FAQ</a></li>
+			<li><a href="http://blog.yangutu.com/">Our blog</a></li>
+			<li><a href="/feedback">Contact us</a></li>
+		</ul>
+		<ul>
+			<li><a href="/page/policy">Privacy</a></li>
+			<li><a href="/page/terms">Terms of use</a></li>
+		</ul>
+		<ul>			
+			<li><a href="/page/scams">Scam warning</a></li>
+			<li><a href="/page/safety">Safety Tips</a></li>
+		</ul>
+		<ul>
+			<li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+			<li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+			<li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+		
+		</ul>
+		<ul>
+		  <li><a href="/dating/all">People Directory</a></li>
+		</ul>
+		<div class="right">
+			<font color="black">&copy; 2010-2011 Yangutu Inc. All rights reserved</font><br>
+		  <span>Yangutu (swahili) - My one and only.</span>
+		</div>
+		 <div class="clear"></div>
+	  </div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.button_blue, .button_green, .button_black {padding: 0 10px; overflow: visible}
+
+	.lookingbx .searchbox {margin-right:20px;}
+	.invis {display: inline;}
+	.subnav li {display: block; float:left;}
+	.yangutu_popap .yp_content_left{width:100%;}
+	
+	.vidbox_big,.vidbox_small{display:inline;}
+	.tags_menu li a{overflow:visible; zoom:1;}
+	
+	
+	/*blog*/
+	.gapon_usr{display:inline;}

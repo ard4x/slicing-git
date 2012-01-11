@@ -1,0 +1,22 @@
+	
+	.button_blue{background:url(img-add/blue-button-bg.jpg) 0 0 repeat-x; text-shadow: 1px -1px 1px #6e6d6d;}
+	.button_green{background:url(img-add/green-button-bg.jpg) 0 0 repeat-x; text-shadow: 1px -1px 1px #6e6d6d;}
+	.button_black{background:url(img-add/black-button-bg.jpg) 0 0 repeat-x; text-shadow: 1px -1px 1px #6e6d6d;}
+	.button_blue,.button_green{color:#fff;}
+	.button_green,.button_blue,.button_black{background-position: 0 -33px;  text-align:center; cursor:pointer; padding:0 6px 3px 6px; border:none;}
+	.button_green.hover,.button_blue.hover,.button_black.hover{background-position: 0 -66px;}
+	.button_green:active,.button_blue:active,.button_black:active{background-position: 0 -99px;}
+	.button_green.disabled,.button_blue.disabled,.button_black.disabled{background-position: 0 0; cursor:default; color:#9f9f9f; text-shadow: 1px 1px 0px #fff;}
+	.button_black{text-shadow: 1px -1px 1px #000000; color:#cccccc;}
+	.button_blue.large,.button_green.large,.button_black.large{height:33px; font:bold 14px Arial;}
+	.button_blue.small,.button_green.small,.button_black.small{height:27px; font:bold 12px Arial;}
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+			 .button_blue,.button_green,.button_white{padding:0px 10px;}
+		}
+		@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0){
+			  head~body .button_blue,.button_green,.button_white{padding:0px 10px;}
+		}
+		
+	.button-loading {position:relative;}
+	.button-loading img{position:absolute; top:-3px; left:3px;}
+	.button-loading input[type="button"]{padding-left:30px;}

@@ -1,0 +1,7 @@
+    .contButGreen {position:relative;} 
+    .gb_left,.gb_right,.bb_left,.bb_right { padding:10px 0px; top:-7px;} 
+    .big .bb_left ,.big .bb_right { top:-16px;} 
+	.vq_content_menu li{float:left;}
+	.vq_content_menu{height:40px;}
+.usr_choise_photos .brdpic2{float:left;}
+.usr_choise_photos .brdpic2 img{margin-top:4px;}

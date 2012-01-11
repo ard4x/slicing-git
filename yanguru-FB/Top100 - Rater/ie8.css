@@ -1,8 +1,0 @@
-	.gb_left,.gb_right,.bb_left,.bb_right { top:-10px;} 
-	.gb_left,.bb_left{left:0px!important;}
-	.gb_right,.bb_right{right:0px!important;}
-    .blue_but.big .bb_left ,.blue_but.big .bb_right { top:-21px!important;} 
-    .blue_but.big .bb_left ,.blue_but.big .bb_right { top:-21px!important;} 
-	
-	.vq_content_menu ul.vq_main_menu li.last {border:none;}
-	.vq_content_menu ul.vq_main_menu li a{font:normal 13px/20px helvetica;}

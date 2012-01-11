@@ -1,0 +1,46 @@
+html,body {margin:0;padding:0;}
+body {font-family: arial, sans-serif; font-size:12px; text-align:left; color:#010101;}
+img {border: none;}
+ul {list-style-type:none; padding: 0; margin: 0;}
+form {padding: 0; margin: 0}
+
+a {color:#4f6b8d; text-decoration: none;}
+a:hover {color:#4f6b8d; text-decoration: underline;}
+
+p {padding: 0 0 10px 0; margin:0;}
+
+h1 {font-size: 30px; color:#030303; margin:10px 0 5px; padding:0;}
+h2 {font-size: 18px; color:#030303; margin:10px 0 10px; padding:0;}
+h3 {font-size: 16px; color:#030303; margin:10px 0 5px; padding:0;}
+
+.tcenter {text-align: center !important;}
+.tleft {text-align: left !important;}
+.tright {text-align:right !important;}
+.tnormal {font-weight: normal !important;}
+.titalic {font-style: italic !important;}
+.tbold {font-weight: bold !important;}
+.lheight18 {line-height: 18px;}
+.lheight25 {line-height: 25px;}
+
+.clr {overflow: hidden; _zoom:1;}
+.clr2 {clear:both; height:0px; width: 100%;}
+
+.indentTop15 {margin-top: 15px !important;}
+
+.gray {color:#b2b2b2 !important;}
+
+.fs1 {font-size: 12px !important;}
+.fs2 {font-size: 14px !important;}
+.fs3 {font-size: 18px !important;}
+.fs4 {font-size: 21px !important;}
+
+.techbx {padding: 50px 0; text-align: center;}
+
+.sttable {width: 100%;}
+.sttable td {padding: 0 5px 15px 0;}
+
+.fbpage {background-color: #ececf1;}
+.fbpage_main {width: 600px;}
+.fbpage_header {background: url(img/chat_header.gif) top repeat-x; height: 30px;}
+.fbpage_header img {margin: 7px 0 0 20px;}
+.fbpage_content {background-color:#ececf1; padding: 18px; font-size: 14px;}
