@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="style.css" type="text/css" id="" />
 	<link rel="stylesheet" href="buttons.css" type="text/css" id="" />
 	
-	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('input[type="button"],input[type="submit"]').hover(function(){$(this).toggleClass('hover');})
@@ -32,7 +32,7 @@
 			</div>
 		</div>
 		<div style="margin:30px; float:left; width:150px;">
-			<h1>NEW BUTTONS</h1>
+			<h1>NEW BUTTONS <span><</span>a<span> /></span></h1>
 			<div style="margin-top:20px;">
 				<a class="btn btn-pink" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth120">How it work</span></span></span></a>
 			</div>
@@ -51,8 +51,29 @@
 			<div style="margin-top:20px;">
 				<a class="btn btn-red disabled" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth120">Disabled</span></span></span></a>
 			</div>
+		</div>
+		<div style="margin:30px; float:left; width:150px;">
+			<h1>NOT IE <span><</span>input<span> /></span></h1>
 			<div style="margin-top:20px;">
-				<a class="btn btn-blue" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt">How it work</span></span></span></a>
+				<input type="button" class="button_pink small fixWidth120" value="How it work" />
+			</div>
+			<div style="margin-top:20px;">
+				<input type="button" class="button_green small fixWidth120" value="How it work" />
+			</div>
+			<div style="margin-top:20px;">
+				<input type="button" class="button_orange small fixWidth120" value="How it work" />
+			</div>
+			<div style="margin-top:20px;">
+				<input type="button" class="button_blue small fixWidth120" value="How it work" />
+			</div>
+			<div style="margin-top:20px;">
+				<input type="button" class="button_red small fixWidth120" value="How it work" />
+			</div>
+			<div style="margin-top:20px;">
+				<input type="button" class="button_blue disabled small fixWidth120" value="How it work" />
+			</div>
+			<div style="margin-top:20px;">
+				<input type="button" class="button_black small fixWidth120" value="How it work" />
 			</div>
 		</div>
 		<div class="clr2"></div>
