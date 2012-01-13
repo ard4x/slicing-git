@@ -929,7 +929,7 @@ ul.newList {background-color:#FFFFFF; border:1px solid #8098ae; color:#000000; l
 
 .rlist {margin-bottom: 20px;}
 .rlist a:hover {text-decoration: none;}
-.rlist li {float: none; padding: 5px 0 5px 5px; }
+.rlist li {float: none; padding: 5px 0 5px 5px; position:relative;}
 .rlist li:hover {background-color:#4F6B8D;}
 .rlist li:hover a,.rlist li:hover .rnum { color:#fff;}
 .rlist .rlab {display:block;}
@@ -937,7 +937,7 @@ ul.newList {background-color:#FFFFFF; border:1px solid #8098ae; color:#000000; l
 .rlist .rnum.wbg,.profile_menu .rnum.wbg {background: url(img/rlistnumbg.gif) left no-repeat; color:#ffffff;}
 .rlist .rnum.wbg:hover,.profile_menu .rnum.wbg:hover {text-decoration: none;}
 .rlist li.navactive:hover {background-color:#ffffff;}
-.rlist .ranav {position: absolute; /*z-index: 999*/; top: -1px; left: -9px; background: url(img/quickactbg.gif) left no-repeat; width: 176px; height: 22px; color:#ffffff; padding:6px 0 0 13px;}
+.rlist .ranav {position: absolute; /*z-index: 999*/; top: -1px; left: -9px; background: url(img/quickactbg.gif) left no-repeat; width: 196px; height: 22px; color:#ffffff; padding:6px 0 0 13px;}
 .rlist .ranav a {color:#ffffff; display:block;}
 
 .rlist2 { margin-bottom: 5px;}
