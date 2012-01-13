@@ -2137,9 +2137,9 @@ a:hover#new-notifications-count,a:hover#new-messages-count{text-decoration:none;
 #random_status{background: url(img/reloadic.gif) 0 0 no-repeat; border: none; width: 20px; height:15px; position:relative; top:5px; cursor: pointer;}
 
 /*Vip price new box*/
-.priceGroup{margin:40px auto 60px; width:630px; position:relative; z-index:1;}
-.vipGreenBox{background:#fff; border:1px solid #85940a; position:absolute; z-index:3; left:210px; top:-30px; zoom:1; overflow:visible;}
-.vipBlueBox{background:#fff; border:1px solid #0e76ab; position:absolute; z-index:3; left:210px; top:-30px; zoom:1; overflow:visible;}
+.priceGroup{margin:40px auto 60px;  position:relative; z-index:1;}
+.vipGreenBox{background:#fff; border:1px solid #85940a; position:absolute; z-index:3; left:183px; top:-30px; zoom:1; overflow:visible;}
+.vipBlueBox{background:#fff; border:1px solid #0e76ab; position:absolute; z-index:3; left:183px; top:-30px; zoom:1; overflow:visible;}
 .vipGrayBox { position:relative; z-index:2; background:url(img/vipGrayBox_content.png) 0 100% repeat-x; border:1px solid #c4c7ca;}
 .vipGrayBox ,.vipGreenBox,.vipBlueBox{text-align:center; -webkit-box-shadow:0 0 7px #b1b4b7; -moz-box-shadow:0 0 7px #b1b4b7; -khtml-box-shadow:0 0 7px #b1b4b7; box-shadow:0 0 7px #b1b4b7;}
 .vipGrayBox .tContent,.vipGreenBox .tContent,.vipBlueBox .tContent{padding:0px 15px 50px; min-height:160px;}
@@ -2227,3 +2227,6 @@ a.new_event:hover{text-decoration:none;}
 .step-control-wb {background: url(img/step_control_wb_bg.png) 0 0 no-repeat; color: #FFFFFF; position:absolute; left:-45px; top:0; font: bold 22px/32px Arial; height: 32px; margin-right: 10px; text-align: center; width: 32px;}
 .fixWidth750 {width: 750px!important;}
 
+
+/*new class*/
+.fixWidth180 {width: 180px;}
