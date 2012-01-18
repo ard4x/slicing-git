@@ -2211,3 +2211,15 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .ptools .tools.pok{background-position:0 -41px;}
 .ptools.top{top:4px;}
 .ptools.bot{bottom:6px;}
+
+/*YOU IN TOP-100 */
+.t100-previev{position:relative; padding:0 40px;}
+.t100-previev .previev-usr-info{font:18px/16px Arial; color:#808790;}
+.t100-previev .navi{background:url(img/preview-navi.png) 0 0 no-repeat; width:11px; height:22px; position:absolute; top:120px;}
+.t100-previev .navi.lb{background-position:0 0; left:0px;}
+.t100-previev .navi.lb.false{background-position:0 100%;}
+.t100-previev .navi.rb{background-position:100% 0; right:0px;}
+.t100-previev .navi.rb.false{background-position:100% 100%;}
+.t100-previev .navi.false a{cursor:default;}
+.t100-previev .navi a{display:block; height:22px;}
+.t100-previev .navi a:hover{text-decoration:none;}
