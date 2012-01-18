@@ -2205,12 +2205,13 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 
 
 /*pHOTO tools*/
-.ptools{background:url(img/opacity.png) 0 0 repeat; position:absolute; z-index:99; padding:5px; color:#b8b7b6; display:none; left:20px;}
-.ptools .tools{background:url(img/own-phototools.png) 0 0 no-repeat; padding-left:20px; color:#b8b7b6; font-size:14px;}
+.ptools{background:url(img/opacity.png) 0 0 repeat; position:absolute; width:213px; z-index:99; padding:5px; color:#b8b7b6; display:none; left:6px;  font-size:14px;}
+.ptools .tools{background:url(img/own-phototools.png) 0 0 no-repeat; padding-left:20px; color:#b8b7b6;}
 .ptools .tools.premove{background-position:0 -78px;}
 .ptools .tools.pok{background-position:0 -41px;}
 .ptools.top{top:4px;}
 .ptools.bot{bottom:6px;}
+.ptools.info{bottom:6px; display:block;}
 
 /*YOU IN TOP-100 */
 .t100-previev{position:relative; padding:0 40px;}
