@@ -1219,8 +1219,8 @@ a.cntr2 span {font-size: 12px; color:#ffffff; background: url(img/hm_right.png) 
 
 
 /*-------------- styles from custom.css-----------------------*/
-.brdpic3, .brdpic4, .my_brdpic4, .brdpic6, .brdpic7, .brdpic8 {vertical-align:middle; text-align: center}
-.brdpic2 img, .brdpic3 img, .brdpic4 img, .brdpic7 img, .brdpic8 img {margin: 0px; margin-top: expression((parentNode.offsetHeight - this.offsetHeight)<0 ? "0" : (parentNode.offsetHeight - this.offsetHeight)/2 + "px");}
+.brdpic3, .brdpic4, .my_brdpic4, .brdpic6, .brdpic7 {vertical-align:middle; text-align: center}
+.brdpic2 img, .brdpic3 img, .brdpic4 img, .brdpic7 img{margin: 0px; margin-top: expression((parentNode.offsetHeight - this.offsetHeight)<0 ? "0" : (parentNode.offsetHeight - this.offsetHeight)/2 + "px");}
 .brdpic .checkbx, .brdpic2 .checkbx, .brdpic3 .checkbx, .brdpic4 .checkbx, .brdpic5 .checkbx, .brdpic6 .checkbx, .brdpic7 .checkbx, .brdpic8 .checkbx {bottom: 22px}
 .actuser3 .checkbx { left: 6px}
 .piclist4 li {position:relative}
@@ -2228,3 +2228,10 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 /*forms new search matches*/
 .search-button-overflow{position:absolute; left:120px; top:-7px;}
 a.dotted{text-decoration:none; border-bottom:1px dashed;} /*THIS STYLE IS CHANGED -> .lookingbx a.dotted*/
+
+/*gift.html brdpic infobox*/
+.brdpic-infobox{position:absolute; bottom:60px; left:0px; background-color:#000; color:#fff; box-shadow:1px 1px 4px #5F5F5F; -moz-box-shadow:1px 1px 4px #5F5F5F; -webkit-box-shadow:1px 1px 4px #5F5F5F;}
+.brdpic-infobox .brdpic-infobox-content{padding-left:78px;}
+.brdpic-infobox img{margin-left:3px;}
+.brdpic-infobox .inner{padding:6px; width:215px;}
+.brdpic-infobox .arrow{position:absolute; bottom:-12px; left:15px;}
