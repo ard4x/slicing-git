@@ -1,0 +1,42 @@
+/*
+    Only structural properties, such as element positioning
+
+    Each selector in this file must specify project-specific (Yangutu) ID or class
+ */
+
+/* Horizontal control-group with 'filter-buttons' class placed in header */
+.ui-header .ui-controlgroup-horizontal.filter-buttons {
+    text-align: center;
+    margin: .4em 0; /* see 'top' @ '.ui-header .ui-btn-left' */
+}
+
+/* Shrink margin-top of .ui-title element containing user avatar */
+.ui-header .ui-title.contains-user-avatar {
+    margin-top: 3px;
+}
+
+/* Position .ui-title element text as on pages without user avatar */
+.ui-header .ui-title.contains-user-avatar span {
+    vertical-align: .9em;
+}
+
+/* User avatar placed in header must be resized to 35x35 pixels */
+.ui-header img.avatar {
+    width: 35px;
+    height: 35px;
+}
+
+/* .profile-heading must be relatively positioned in order to position some
+ * child elements absolutely
+ */
+.ui-content .profile-heading {
+    position: relative;
+}
+
+/* .location must be shown at a top right corner of a profile heading
+ */
+.ui-content .profile-heading .location {
+    position: absolute;
+    top: 0;
+    right: 0;
+}

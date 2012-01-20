@@ -1564,9 +1564,8 @@ a:hover.put_me{text-decoration:none;}
 .lookingbx .searchbox {margin-right:25px;}
 .lookingbx .searchbox p{font-size:14px; padding:0 0 5px 0px;}
 .lookingbx .searchbox label input[type="radio"]{margin-left:0px;}
-.lookingbx  a.dotted{font:bold 13px Arial; padding-right:10px; text-decoration:none; border-bottom:1px dashed;}
-#s-more {background:url(img/yab_h_arr.gif) 100% 6px no-repeat;}
-#s-less {background:url(img/yab_v_arr.gif) 100% 6px no-repeat;}
+#s-more {background:url(img/yab_h_arr.gif) 100% 6px no-repeat; padding-right:15px;}
+#s-less {background:url(img/yab_v_arr.gif) 100% 6px no-repeat; padding-right:15px;}
 .lookingbx  a.dotted.nobg{background:transparent; padding-right:0px;}
 .lookingbx  a:hover.dotted{border:none;}
 .lookingbx  .selection{width:200px; float:left; min-height:10px; padding-right:30px; position:relative; margin-right:0px;}
@@ -2224,3 +2223,8 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .t100-previev .navi.false a{cursor:default;}
 .t100-previev .navi a{display:block; height:22px;}
 .t100-previev .navi a:hover{text-decoration:none;}
+
+
+/*forms new search matches*/
+.search-button-overflow{position:absolute; left:120px; top:-7px;}
+a.dotted{text-decoration:none; border-bottom:1px dashed;} /*THIS STYLE IS CHANGED -> .lookingbx a.dotted*/

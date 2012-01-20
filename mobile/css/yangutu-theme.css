@@ -1,0 +1,181 @@
+.ui-bar-a {
+    border: none;
+    background: url(/img/mobile/ui-bar-bg.jpg) 0 0 repeat-x;
+    background-color: none;
+}
+
+.ui-btn-up-a,.prebut .ui-btn-hover-a {
+    border: 1px solid #155678;
+    background: url(/img/mobile/button-theme-a.png) 0 0 repeat-x;
+    background-color: none;
+}
+
+.ui-btn-hover-a,.ui-btn-down-a,.prebut .ui-btn-active {
+    border: 1px solid       #155678;
+    background:             url(/img/mobile/button-theme-a.png) 0 100% repeat-x;
+    background-color: none;
+}
+
+.ui-header .ui-btn-up-a,
+.ui-header .ui-btn-hover-a,
+.ui-header .ui-btn-down-a {
+    height:28px;
+}
+
+.ui-body-c {
+    background:             #fff;
+}
+
+.ui-btn-up-c {
+    background:             #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #fff, #fff); /* Chrome 10+, Saf5.1+ */
+    background-image:    -moz-linear-gradient(top, #fff, #fff); /* FF3.6 */
+    background-image:     -ms-linear-gradient(top, #fff, #fff); /* IE10 */
+    background-image:      -o-linear-gradient(top, #fff, #fff); /* Opera 11.10+ */
+    background-image:         linear-gradient(top, #fff, #fff);
+}
+
+.ui-btn-hover-c {
+    background:             #dcecf8;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#dcecf8), to(#dcecf8)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #dcecf8, #dcecf8); /* Chrome 10+, Saf5.1+ */
+    background-image:    -moz-linear-gradient(top, #dcecf8, #dcecf8); /* FF3.6 */
+    background-image:     -ms-linear-gradient(top, #dcecf8, #dcecf8); /* IE10 */
+    background-image:      -o-linear-gradient(top, #dcecf8, #dcecf8); /* Opera 11.10+ */
+    background-image:         linear-gradient(top, #dcecf8, #dcecf8);
+}
+
+.ui-btn-down-c {
+    background-color:           #4596ce!important;
+    color:                  #fff;
+    cursor: pointer;
+    text-shadow: 0 -1px 1px #145072;
+    text-decoration: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#85bae4), to(#5393c5)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #85bae4, #5393c5); /* Chrome 10+, Saf5.1+ */
+    background-image:    -moz-linear-gradient(top, #85bae4, #5393c5); /* FF3.6 */
+    background-image:     -ms-linear-gradient(top, #85bae4, #5393c5); /* IE10 */
+    background-image:      -o-linear-gradient(top, #85bae4, #5393c5); /* Opera 11.10+ */
+    background-image:         linear-gradient(top, #85bae4, #5393c5);
+    outline: none;
+}
+
+.ui-btn-down-c a.ui-link-inherit {
+    color:                  #fff;
+}
+
+.ui-btn-active {
+    background-color:           #4596ce!important;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#85bae4), to(#5393c5)); /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #85bae4, #5393c5); /* Chrome 10+, Saf5.1+ */
+    background-image:    -moz-linear-gradient(top, #85bae4, #5393c5); /* FF3.6 */
+    background-image:     -ms-linear-gradient(top, #85bae4, #5393c5); /* IE10 */
+    background-image:      -o-linear-gradient(top, #85bae4, #5393c5); /* Opera 11.10+ */
+    background-image:         linear-gradient(top, #85bae4, #5393c5);
+}
+
+.ui-btn-inner {
+    border-top: none;
+    border-color: none;
+}
+
+.ui-header .ui-btn,.ui-header .ui-btn-corner-all{
+    -moz-border-radius:                 0.5em;
+    -webkit-border-radius:              0.5em;
+    border-radius:                      0.5em;
+}
+
+.ui-bar-a .ui-shadow,
+.ui-bar-b .ui-shadow ,
+.ui-bar-c .ui-shadow ,
+.ui-icon-shadow {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.ui-header .ui-btn-left { position: absolute; left: 10px; top: .5em;  }
+.ui-header .ui-btn-right { position: absolute; right: 10px; top: .5em; }
+
+.ui-navbar li .ui-btn, .ui-navbar .ui-navbar-toggle .ui-btn { display: block; font-size: 12px; text-align: center; margin: 0; border-right-width: 0; border-left-width: 0; }
+.ui-navbar li .ui-btn {  margin: 0px 5px!important; }
+
+.ui-header .ui-btn, .ui-footer .ui-btn, .ui-bar .ui-btn { display: inline-block; font-size: 12px; margin: 0; }
+.ui-header .ui-btn-inner, .ui-footer .ui-btn-inner, .ui-bar .ui-btn-inner { padding: .5em 8px .5em; }
+
+.ui-header .ui-btn-icon-top .ui-btn-inner,
+ .ui-footer .ui-btn-icon-top .ui-btn-inner,
+.ui-bar .ui-btn-icon-top .ui-btn-inner { padding-top: 33px; margin-top:3px;}
+
+.ui-header .ui-btn-icon-top .ui-icon,
+ .ui-footer .ui-btn-icon-top .ui-icon,
+.ui-bar .ui-btn-icon-top .ui-icon { top: 9px; }
+
+.ui-li-count { border: none; text-shadow:0px 0px 0px transparent!important; float:left;  font-size: 14px; color:#808080; position: absolute; top: 50%; margin-top: -.6em; padding:.2em!important; right: 38px; font-weight: normal;}
+.ui-li-count-pad {padding:.2em .4em!important;}
+.ui-li-count-bg-inner { border: none; text-shadow:0px 0px 0px transparent!important; float:left;  font-size: 11px; color:#fff; font-weight: normal; padding: 0 .4em;  background:url(/img/mobile/ui-li-count-repeat.gif) 0 0 repeat-x; -moz-border-radius:1em; -webkit-border-radius:1em; -khtml-border-radius:1em; border-radius:1em;}
+.ui-li-count-bg { box-shadow: 0 1px 1px #6c6b6b; -moz-box-shadow: 0 1px 1px #6c6b6b; -webkit-box-shadow: 0 1px 1px #6c6b6b; -khtml-box-shadow: 0 1px 1px #6c6b6b; background-color:#fff; -moz-border-radius:1em; -webkit-border-radius:1em; -khtml-border-radius:1em; border-radius:1em;}
+
+.yangutu-users .header {
+    font-weight: normal;
+}
+
+.yangutu-users .header .name {
+    font-weight: bold;
+}
+
+.yangutu-users .location {
+    color: grey;
+}
+
+.ui-controlgroup, fieldset.ui-controlgroup {margin: 0.4em 0 1em;}
+.ui-bar-b {
+	border: 1px solid 		#99a4aa;
+	border-width: 1px 0px;
+	background: 			#b4bdc2;
+	color: 					#fff;
+	font-weight: bold;
+	text-shadow: 0 -1px 1px #b4bdc2;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#98a5ae), to(#b4bdc2)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #98a5ae, #b4bdc2); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient(top, #98a5ae, #b4bdc2); /* FF3.6 */
+	background-image:     -ms-linear-gradient(top, #98a5ae, #b4bdc2); /* IE10 */
+	background-image:      -o-linear-gradient(top, #98a5ae, #b4bdc2); /* Opera 11.10+ */
+	background-image:         linear-gradient(top, #98a5ae, #b4bdc2);
+}
+.ui-controlgroup-horizontal .ui-btn, .ui-controlgroup-horizontal .ui-checkbox, .ui-controlgroup-horizontal .ui-radio { display: inline-block!important; margin: 0 -5px 0 0!important; }
+.ui-corner-right {
+	-moz-border-radius-topleft: 		0em!important;
+	-webkit-border-top-left-radius: 	0em!important;
+	border-top-left-radius: 			0em!important;
+	-moz-border-radius-bottomleft: 		0em!important;
+	-webkit-border-bottom-left-radius: 	0em!important;
+	border-bottom-left-radius: 			0em!important;
+	-moz-border-radius-topright: 		.6em!important;
+	-webkit-border-top-right-radius: 	.6em!important;
+	border-top-right-radius: 			.6em!important;
+	-moz-border-radius-bottomright: 	.6em!important;
+	-webkit-border-bottom-right-radius: .6em!important;
+	border-bottom-right-radius:  		.6em!important;
+	-moz-border-radius-bottomleft: 		.0em!important;
+	-webkit-border-bottom-left-radius:  .0em!important;
+	border-bottom-left-radius: 			.0em!important;
+}
+.ui-corner-left {
+	-moz-border-radius-topleft: 		.6em!important;
+	-webkit-border-top-left-radius: 	.6em!important;
+	border-top-left-radius: 			.6em!important;
+	-moz-border-radius-bottomleft: 		.6em!important;
+	-webkit-border-bottom-left-radius: 	.6em!important;
+	border-bottom-left-radius: 			.6em!important;
+	-moz-border-radius-topright: 		0em!important;
+	-webkit-border-top-right-radius: 	0em!important;
+	border-top-right-radius: 			0em!important;
+	-moz-border-radius-bottomright: 	0em!important;
+	-webkit-border-bottom-right-radius: 0em!important;
+	border-bottom-right-radius:  		0em!important;
+	-moz-border-radius-bottomleft: 		.6em!important;
+	-webkit-border-bottom-left-radius:  .6em!important;
+	border-bottom-left-radius: 			.6em!important;
+}
