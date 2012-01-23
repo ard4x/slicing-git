@@ -983,7 +983,7 @@ ul.newList {background-color:#FFFFFF; border:1px solid #8098ae; color:#000000; l
 .subnav li.action .button2 span font {color:#ffffff;}
 
 .subnav2 {margin-bottom: 15px;}
-.subnav2 li {float: left; margin-right: 12px; font-size: 14px; font-weight: bold; padding-top: 3px;}
+.subnav2 li {float: left; margin-right: 3px; font-size: 14px; font-weight: bold; padding-top: 0px;}
 .subnav2 li.orbx {padding-top: 0px;}
 
 .h_mess2 {float: left; height: 18px; margin: 15px 22px 0px 4px; position: relative;}
@@ -2235,3 +2235,6 @@ a.dotted{text-decoration:none; border-bottom:1px dashed;} /*THIS STYLE IS CHANGE
 .brdpic-infobox img{margin-left:3px;}
 .brdpic-infobox .inner{padding:6px; width:215px;}
 .brdpic-infobox .arrow{position:absolute; bottom:-12px; left:15px;}
+
+/*birthday ico profile*/
+.birth_ico{position:absolute; right:-35px; top:0;}
