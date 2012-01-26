@@ -2230,7 +2230,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 a.dotted{text-decoration:none; border-bottom:1px dashed;} /*THIS STYLE IS CHANGED -> .lookingbx a.dotted*/
 
 /*gift.html brdpic infobox*/
-.brdpic-infobox{position:absolute; bottom:60px; left:0px; background-color:#000; color:#fff; box-shadow:1px 1px 4px #5F5F5F; -moz-box-shadow:1px 1px 4px #5F5F5F; -webkit-box-shadow:1px 1px 4px #5F5F5F;}
+.brdpic-infobox{position:absolute; z-index:99; bottom:60px; left:0px; background-color:#000; color:#fff; box-shadow:1px 1px 4px #5F5F5F; -moz-box-shadow:1px 1px 4px #5F5F5F; -webkit-box-shadow:1px 1px 4px #5F5F5F;}
 .brdpic-infobox .brdpic-infobox-content{padding-left:78px;}
 .brdpic-infobox img{margin-left:3px;}
 .brdpic-infobox .inner{padding:6px; width:215px;}
@@ -2238,3 +2238,12 @@ a.dotted{text-decoration:none; border-bottom:1px dashed;} /*THIS STYLE IS CHANGE
 
 /*birthday ico profile*/
 .birth_ico{position:absolute; right:-35px; top:0;}
+
+/*gift.html photo three*/
+.usr-photo-profile-three{margin-left:-1px;}
+.usr-photo-profile-three .photopic{float:left; background:url(img/photo-profile-three-bg.png) 0 0 no-repeat; margin:2px 0 0 2px;}
+.usr-photo-profile-three .photopic .photosl_add{background:#e9eff6 url(img/photosl_add.jpg) 50% 50% no-repeat;}
+.usr-photo-profile-three .photopic img{margin:4px 0 0 4px;}
+.usr-photo-profile-three .photopic.sl1,.usr-photo-profile-three .photopic.sl4{width:148px; height:98px; background-position:0 0;}
+.usr-photo-profile-three .photopic.sl2,.usr-photo-profile-three .photopic.sl3{width:73px; height:98px; background-position:100% 0;}
+.usr-photo-profile-three .photopic.sl5{width:73px; height:74px; background-position:100% 100%;}
