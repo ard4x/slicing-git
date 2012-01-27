@@ -2247,3 +2247,6 @@ a.dotted{text-decoration:none; border-bottom:1px dashed;} /*THIS STYLE IS CHANGE
 .usr-photo-profile-three .photopic.sl1,.usr-photo-profile-three .photopic.sl4{width:148px; height:98px; background-position:0 0;}
 .usr-photo-profile-three .photopic.sl2,.usr-photo-profile-three .photopic.sl3{width:73px; height:98px; background-position:100% 0;}
 .usr-photo-profile-three .photopic.sl5{width:73px; height:74px; background-position:100% 100%;}
+
+/*gift.html RISE TO THE TOP*/
+.lookingbx_shadow{background:url(img/lookingbx_shadow.png) 50% 0 no-repeat; height:23px;}
