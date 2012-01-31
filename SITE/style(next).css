@@ -2251,3 +2251,7 @@ a.dotted{text-decoration:none; border-bottom:1px dashed;} /*THIS STYLE IS CHANGE
 
 /*gift.html RISE TO THE TOP*/
 .lookingbx_shadow{background:url(img/lookingbx_shadow.png) 50% 0 no-repeat; height:23px;}
+
+/*mobile theme*/
+.mobile-theme-block{background:url(img/mobile-theme-bg.png) 0 0 no-repeat; padding-left:310px; width:400px; margin:0 auto; height:345px; position:relative;}
+.mobile-theme-block .mobile-theme-preview{position:absolute; top:54px; left:129px; width:129px; height:193px; overflow:hidden;}
