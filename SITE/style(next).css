@@ -2157,7 +2157,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 /*a2_invite_new*/
 .content-hr-white{background:url(img/content-hr-white.gif) 0 0 repeat-x; height:30px;}
 .social-invite-list.verls a{margin:0; white-space:nowrap;}
-.social-invite-list a{text-decoration:none; margin-right:60px; font:bold 14px Arial;}
+.social-invite-list a{text-decoration:none; margin-right:35px; font:bold 14px Arial;}
 .social-invite-list a span{position:relative; top:-13px; padding-left:10px;}
 .invite-search{padding:4px; background-color:#f8fccd;}
 .invite-search input{width:353px;}

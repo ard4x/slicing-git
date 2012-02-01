@@ -1,11 +1,12 @@
+input[type="button"],input[type="submit"]{border:none;}
+
 .super_button_green,.super_button_blue{background:url(img/buttons_super_bg.jpg) 0 0 repeat-x; color:#fff; height:57px; font-size:24px; text-align:center; cursor:pointer; padding:0 10px 3px 10px; font-weight:bold; text-shadow: 1px -1px 1px #6e6d6d; border:none;}
 .super_button_blue{background-position:0 -57px;}
-
 
 .button_blue,.button_green,.button_pink,.button_black,.button_red,.button_orange{background:url(img/buttons-bg.png) 0 0 repeat-x;}
 
 .button_blue{background-position:0 -978px; text-shadow: 1px -1px 1px #6e6d6d;}
-.button_green{background-position:0 -349px; text-shadow:0 1px 1px #316811;}
+.button_green{background-position:0 -348px; text-shadow:0 1px 1px #316811;}
 .button_black{background-position:0 -1608px; text-shadow:0 1px 1px #292929;}
 .button_pink{background-position:0 -35px; text-shadow:0 1px 1px #504292;}
 .button_red{background-position:0 -1293px; text-shadow:0 1px 1px #9c2122;}
@@ -19,10 +20,10 @@
 .button_orange.large{background-position:0 -2534px;}
 
 
-.button_blue,.button_green,.button_pink,
+.button_blue,.button_green,.button_pink,.button_ftf,
 .button_black,.button_red,.button_orange{color:#fff; font-family: Arial; font-weight: 900; border-radius:6px; -moz-border-radius:6px; -khtml-border-radius:6px; -webkit-border-radius:6px; text-align:center; cursor:pointer; padding:0 10px 3px 10px; border:none;}
 
-.button_green.hover{background-position: 0 -454px;}
+.button_green.hover{background-position: 0 -453px;}
 	.button_green.large.hover{background-position:0 -2264px;}
 .button_blue.hover{background-position: 0 -1083px;}
 	.button_blue.large.hover{background-position:0 -3074px;}
@@ -35,7 +36,7 @@
 .button_black.hover{background-position:0 -1608px;}
 	.button_black.large.hover{background-position:0 -3749px;}
 
-.button_green:active{background-position: 0 -559px;}
+.button_green:active{background-position: 0 -558px;}
 	.button_green.large:active{background-position:0 -2399px;}
 .button_blue:active{background-position: 0 -1188px;}
 	.button_blue.large:active{background-position:0 -3209px;}
@@ -52,7 +53,7 @@
 .button_green.disabled.large,.button_blue.disabled.large,.button_black.disabled.large,.button_red.disabled.large,.button_orange.disabled.large,.button_pink.disabled.large{background-position: 0 -3749px; cursor:default; color:#fff; text-shadow:0 1px 1px #292929;}
 
 .button_blue.large,.button_green.large,.button_black.large,.button_pink.large,.button_red.large,.button_orange.large{height:44px; font:bold 18px/13px Arial;}
-.button_blue.small,.button_green.small,.button_black.small,.button_pink.small,.button_red.small,.button_orange.small{height:35px; font:bold 14px/13px Arial;}
+.button_blue.small,.button_ftf.small,.button_green.small,.button_black.small,.button_pink.small,.button_red.small,.button_orange.small{height:35px; font:bold 14px/13px Arial;}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
                  .button_blue,.button_green,.button_pink,
@@ -114,15 +115,15 @@ a.btn.large, span.btn.large,.btn.large .btn-m  {height:44px;}
 	.btn-pink.large:focus .btn-lc,.btn-pink.large.focus .btn-lc{background-position:0 -1949px;}
 	.btn-pink.large:focus .btn-m,.btn-pink.large.focus .btn-m{background-position:0 -1994px;}
 
-.btn-green {background: url(img/buttons-bg.png) 100% -384px no-repeat; text-shadow:0 1px 1px #316811;}
-.btn-green .btn-lc {background: url(img/buttons-bg.png) 0 -314px no-repeat;}
-.btn-green .btn-m {background: url(img/buttons-bg.png) 0 -349px repeat-x;}
-.btn-green:hover {background: url(img/buttons-bg.png) 100% -489px no-repeat;}
-.btn-green:hover .btn-lc {background: url(img/buttons-bg.png) 0 -419px no-repeat;}
-.btn-green:hover .btn-m {background: url(img/buttons-bg.png) 0 -454px repeat-x;}
-.btn-green:focus,.btn-green.focus{background: url(img/buttons-bg.png) 100% -594px no-repeat;}
-.btn-green:focus .btn-lc,.btn-green.focus .btn-lc {background: url(img/buttons-bg.png) 0 -524px no-repeat;}
-.btn-green:focus .btn-m,.btn-green.focus .btn-m{background: url(img/buttons-bg.png) 0 -559px repeat-x;}
+.btn-green {background: url(img/buttons-bg.png) 100% -383px no-repeat; text-shadow:0 1px 1px #316811;}
+.btn-green .btn-lc {background: url(img/buttons-bg.png) 0 -313px no-repeat;}
+.btn-green .btn-m {background: url(img/buttons-bg.png) 0 -348px repeat-x;}
+.btn-green:hover {background: url(img/buttons-bg.png) 100% -488px no-repeat;}
+.btn-green:hover .btn-lc {background: url(img/buttons-bg.png) 0 -418px no-repeat;}
+.btn-green:hover .btn-m {background: url(img/buttons-bg.png) 0 -453px repeat-x;}
+.btn-green:focus,.btn-green.focus{background: url(img/buttons-bg.png) 100% -593px no-repeat;}
+.btn-green:focus .btn-lc,.btn-green.focus .btn-lc {background: url(img/buttons-bg.png) 0 -523px no-repeat;}
+.btn-green:focus .btn-m,.btn-green.focus .btn-m{background: url(img/buttons-bg.png) 0 -558px repeat-x;}
 	.btn-green.large {background-position:100% -2174px;}
 	.btn-green.large .btn-lc{background-position:0 -2084px;}
 	.btn-green.large .btn-m{background-position:0 -2129px;}
@@ -189,6 +190,15 @@ a.btn.large, span.btn.large,.btn.large .btn-m  {height:44px;}
 	.btn-red.large:focus,.btn-red.large.focus {background-position:100% -3659px;}
 	.btn-red.large:focus .btn-lc,.btn-red.large.focus .btn-lc{background-position:0 -3569px;}
 	.btn-red.large:focus .btn-m,.btn-red.large.focus .btn-m{background-position:0 -3614px;}
-
+	
+.btn-ftf{background: url(img/buttons-bg-ftf.png) 0 1px repeat-x; text-shadow:0 1px 1px #292929;}
+.button_ftf {background: url(img/buttons-bg-ftf.png) 0 1px repeat-x;}
+.button_ftf.hover,.btn-ftf:hover  {background-position:0 -34px;}
+.button_ftf:active,.btn-ftf:focus,.btn-ftf.focus {background-position:0 -69px;}
 
 /*new buttons input*/
+input[type="button"].cl-both{border-radius:0; -webkit-border-radius:0; -moz-border-radius:0; -khtml-border-radius:0; }
+input[type="button"].cl-left{border-radius:0 6px 6px 0; -webkit-border-radius:0 6px 6px 0; -moz-border-radius:0 6px 6px 0; -khtml-border-radius:0 6px 6px 0; }
+input[type="button"].cl-right{border-radius:6px 0 0 6px; -webkit-border-radius:6px 0 0 6px; -moz-border-radius:6px 0 0 6px; -khtml-border-radius:6px 0 0 6px; }
+.btn.cl-right,.btn.cl-both{padding-right:0; background:transparent;}
+.btn.cl-both .btn-lc,.btn.cl-left .btn-lc{padding-left:0; background:transparent;}
