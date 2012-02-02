@@ -3,12 +3,12 @@ input[type="button"],input[type="submit"]{border:none; outline:none; cursor:poin
 input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner   { border : 0px; }
 input[type="submit"]:focus, input[type="button"]:focus   { outline : none;}
 
-.super_button_green,.super_button_blue{background:url(img/buttons_super_bg.jpg) 0 0 repeat-x; color:#fff; height:57px; font-size:24px; text-align:center; cursor:pointer; padding:0 10px 3px 10px; font-weight:bold; text-shadow: 1px -1px 1px #6e6d6d; border:none;}
+.super_button_green,.super_button_blue{background:url(img/buttons_super_bg.jpg) 0 0 repeat-x; color:#fff; height:57px; font-size:24px; text-align:center; cursor:pointer; padding:0 10px 3px 10px; font-weight:bold; text-shadow:0 1px 1px #1c5b8a; border:none;}
 .super_button_blue{background-position:0 -57px;}
 
 .button_blue,.button_green,.button_pink,.button_black,.button_red,.button_orange{background:url(img/buttons-bg.png) 0 0 repeat-x;}
 
-.button_blue{background-position:0 -978px; text-shadow: 1px -1px 1px #6e6d6d;}
+.button_blue{background-position:0 -978px; text-shadow:0 1px 1px #1c5b8a;}
 .button_green{background-position:0 -348px; text-shadow:0 1px 1px #316811;}
 .button_black{background-position:0 -1608px; text-shadow:0 1px 1px #292929;}
 .button_pink{background-position:0 -35px; text-shadow:0 1px 1px #504292;}
