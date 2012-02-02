@@ -59,12 +59,12 @@ input[type="submit"]:focus, input[type="button"]:focus   { outline : none;}
 .button_blue.small,.button_ftf.small,.button_green.small,.button_black.small,.button_pink.small,.button_red.small,.button_orange.small{height:35px; font:bold 14px/13px Arial;}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
-                 .button_blue,.button_green,.button_pink,
+                 .button_blue,.button_green,.button_pink,.button_ftf,
 					.button_black,.button_red,.button_orange{padding:0px 10px;}
         }
         @media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0){
-                  head~body .button_blue,.button_green,.button_pink,
-						.button_black,.button_red,.button_orange{padding:0px 10px;}
+                  head~body .button_blue,.button_green,.button_pink,.button_ftf,
+					.button_black,.button_red,.button_orange{padding:0px 10px;}
         }
 
 .button-loading {position:relative;}
