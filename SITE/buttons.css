@@ -1,4 +1,7 @@
-input[type="button"],input[type="submit"]{border:none;}
+input[type="button"],input[type="submit"]{border:none; outline:none; cursor:pointer;}
+*:focus, a:focus,input:focus,img:focus,button:focus,select:focus{outline:none;}
+input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner   { border : 0px; }
+input[type="submit"]:focus, input[type="button"]:focus   { outline : none;}
 
 .super_button_green,.super_button_blue{background:url(img/buttons_super_bg.jpg) 0 0 repeat-x; color:#fff; height:57px; font-size:24px; text-align:center; cursor:pointer; padding:0 10px 3px 10px; font-weight:bold; text-shadow: 1px -1px 1px #6e6d6d; border:none;}
 .super_button_blue{background-position:0 -57px;}
@@ -202,3 +205,53 @@ input[type="button"].cl-left{border-radius:0 6px 6px 0; -webkit-border-radius:0 
 input[type="button"].cl-right{border-radius:6px 0 0 6px; -webkit-border-radius:6px 0 0 6px; -moz-border-radius:6px 0 0 6px; -khtml-border-radius:6px 0 0 6px; }
 .btn.cl-right,.btn.cl-both{padding-right:0; background:transparent;}
 .btn.cl-both .btn-lc,.btn.cl-left .btn-lc{padding-left:0; background:transparent;}
+
+
+/*SLIDER*/
+.paginator-style ul li {margin-right:2px; float:left; }
+.paginator-style ul li a{height:24px; padding-left:3px; display:block; white-space:nowrap; padding-bottom:0px; background:url(img/paginator-bg.png) 0 0 no-repeat; color:#494949; text-shadow:1px 1px 1px #f9f9f9;}
+.paginator-style ul li.disable a{cursor:default; color:#cbcbcb;}
+.paginator-style ul li.disable a:hover{background-position:0 0;}
+.paginator-style ul li.disable a:hover span{background-position:100% 0;}
+.paginator-style ul li.act a,.paginator-style ul li.act a:hover{background-position:0 -50px; text-decoration:none; color:#f9f9f9; text-shadow:1px 1px 1px #494949;}
+.paginator-style ul li.act a span,.paginator-style ul li.act a:hover span{background-position:100% -50px;}
+.paginator-style ul li a:hover{background-position:0 -25px; text-decoration:none;}
+.paginator-style ul li a:hover span{background-position:100% -25px;}
+.paginator-style ul li span{background:#fff url(img/paginator-bg.png) 100% 0 no-repeat; display:block; height:24px; padding:0 10px 0 7px; font:12px/23px Arial;}
+
+.select_menu ul li{float:left;}
+.select_menu ul li a{height:31px; display:block; white-space:nowrap; padding-bottom:0px; background:url(img/slider-bg.png) -3px 0 no-repeat; color:#494949; text-shadow:1px 1px 1px #f9f9f9;}
+.select_menu ul li.first a{background-position:0 0;}
+.select_menu ul li.last a{background-position:100% 0;}
+.select_menu ul li.first a:hover{background-position:0 -64px;}
+.select_menu ul li.last a:hover{background-position:100% -64px;}
+.select_menu ul li a:hover{background-position:-3px -64px; text-decoration:none;}
+.select_menu ul li.select a{background-position:-3px -32px;}
+.select_menu ul li.first.select a{background-position:0 -32px;}
+.select_menu ul li.last.select a{background-position:100% -32px;}
+
+.select_menu ul li span{display:block; height:31px; padding:0 10px; font:14px/30px Arial; border-right:1px solid #c3c2c2;}
+.select_menu ul li.last span{border-right:none;}
+
+
+.select_menu ul li.select a{color:#f9f9f9; text-shadow:1px 1px 1px #494949;}
+.select_menu ul li.select b {color:#fff;}
+.select_menu ul li b {color:#DE4E0F;}
+
+/*CONNECT buttons*/
+.connect-button {background:url(img/connect-button-bg.png) 0 0 no-repeat; width:282px; height:53px; font:bold 18px Arial; padding:0 10px 5px 0; text-shadow:1px 1px 1px #07487d; color:#fff; text-align:right;}
+.connect-button.b1 {background-position:0 0;}
+	.connect-button.b1:hover,.connect-button.b1.hover{background-position:0 -76px;}
+	.connect-button.b1:focus,.connect-button.b1.focus{background-position:0 -149px;}
+.connect-button.b2 {background-position:-305px 0;}
+	.connect-button.b2:hover,.connect-button.b2.hover{background-position:-305px -76px;}
+	.connect-button.b2:focus,.connect-button.b2.focus{background-position:-305px -149px;}
+.connect-button.b3 {background-position:-621px 0;}
+	.connect-button.b3:hover,.connect-button.b3.hover{background-position:-621px -76px;}
+	.connect-button.b3:focus,.connect-button.b3.focus{background-position:-621px -149px;}
+
+/*SHARED buttons*/
+.shared-button-t{background:url(img/shared-button-t.png) 0 0 no-repeat; height:35px; width:88px; font:bold 14px Arial; padding:0 10px 5px 0; text-shadow:1px 1px 1px #07487d; color:#fff; text-align:right;}
+.shared-button-t:hover,.shared-button-t.hover,.shared-button-f:hover,.shared-button-f.hover{background-position:0 -35px;}
+.shared-button-t:focus,.shared-button-t.focus,.shared-button-f:focus,.shared-button-f.focus{background-position:0 -70px;}
+.shared-button-f{background:url(img/shared-button-f.png) 0 0 no-repeat; height:35px; width:88px; font:bold 14px Arial; padding:0 10px 5px 0; text-shadow:1px 1px 1px #07487d; color:#fff; text-align:right;}
