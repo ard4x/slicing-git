@@ -77,8 +77,8 @@ input[type="submit"]:focus, input[type="button"]:focus   { outline : none;}
 .rendez_startbut_facebook{background:url(img/rendez_startbut_facebook.jpg) 0 0 no-repeat; width:236px;}
 .rendez_startbut_google{background:url(img/rendez_startbut_google.jpg) 0 0 no-repeat; width:236px;}
 
-.rendez_startbut,.rendez_startbut_facebook,.rendez_startbut_google{border:5px solid transparent; height:57px; cursor:pointer;}
-.rendez_startbut:hover,.rendez_startbut_facebook:hover,.rendez_startbut_google:hover{border-color:#b2c420;}
+.rendez_startbut,.rendez_startbut_facebook,.rendez_startbut_google{border:5px solid transparent!important; height:57px; cursor:pointer;}
+.rendez_startbut:hover,.rendez_startbut_facebook:hover,.rendez_startbut_google:hover{border-color:#b2c420!important;}
                                                                    
 
 /*new buttons link*/
