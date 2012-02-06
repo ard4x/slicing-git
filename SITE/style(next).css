@@ -1373,7 +1373,7 @@ a:hover.put_me{text-decoration:none;}
 
 .w148{width:148px!important;}
 
-#popClose,.popClose{position:absolute; right:15px; top:15px; z-index: 9999;}
+#popClose,.popClose{position:absolute; right:18px; top:15px; z-index: 9999;}
 .yangutu_popap{width:379px; z-index:9999;}
 .yangutu_popap.big{width:435px; z-index:9999;}
 .yangutu_popap.banner{width:680px; z-index:9999;}
@@ -2255,3 +2255,7 @@ a.dotted{text-decoration:none; border-bottom:1px dashed;} /*THIS STYLE IS CHANGE
 /*mobile theme*/
 .mobile-theme-block{background:url(img/mobile-theme-bg.png) 0 0 no-repeat; padding-left:310px; width:400px; margin:0 auto; height:345px; position:relative;}
 .mobile-theme-block .mobile-theme-preview{position:absolute; top:54px; left:129px; width:129px; height:193px; overflow:hidden;}
+
+/*popups_new*/
+a:hover#popClose,a:hover.popClose{text-decoration:none;}
+.indentLeft150{margin-left:150px;}
