@@ -15,7 +15,7 @@
 .renpic .inner img{width:100%;}
 
 .blog_article .article_descript{padding-left:110px;}
-.blog_article .article_descript .art_title{font:bold 14px Arial;}
+.blog_article .article_descript .art_title{font:bold 18px Arial; position:relative;}
 .blog_article  .art_context,.comment_txt{color:#636363; line-height:18px;}
 .blog_article .special_info{padding:10px; background-color:#f5f7f9; zoom:1;}
 .post_like .i_like, .post_like .dont_like{float:left; background:url(img/blog_icos.png) 0 -22px no-repeat; width:15px; height:15px; display:block;}
@@ -64,3 +64,7 @@
 /*scroll top*/
 .scroll_up{padding:5px 10px 5px 20px; position:fixed; border:solid #cccccc; border-width:0 1px 1px; background:#f7f2d5 url(img/sort_icos.png) 7px 10px no-repeat; top:0px; z-index:999;}
 a:hover.scroll_up{text-decoration:none;}
+
+/*poll_icos*/
+.pi_small{background:url(img/poll_ico_small.png) 100% 50% no-repeat; padding:5px 20px 5px 0;}
+.pi_big{background:url(img/poll_ico_big.png) 100% 50% no-repeat;  padding:5px 35px 5px 0;}
