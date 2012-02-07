@@ -30,3 +30,10 @@
 /*rubber no grad popup*/
 .rubber.tr .yp_top,.rubber.tr .yp_bot,.rubber.tr .yp_content_left,.rubber.tr .yp_content_right{background:transparent;  padding: 4px;}
 .rubber.tr .yp_content_right{box-shadow:0px 2px 6px #C0C0C0; padding:0;}
+
+
+/*viral modification*/
+.vMode{overflow:hidden;}
+.vMode body{overflow:hidden; margin-right:15px;}
+.vMode .p-viewer{overflow-x:auto; overflow-y:scroll; position:fixed; height:100%; width:100%; z-index:100001; background: url(img/opacity.png) 0 0 repeat;}
+.vMode .p-viewer{position: absolute; top: 0; width: 100%; z-index: 888;}

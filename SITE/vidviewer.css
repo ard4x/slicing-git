@@ -1,5 +1,4 @@
 #close{position:absolute; top:15px; right:15px;}
-.vid-viewer{background:url(img/opacity.png) 0 0 repeat; position:absolute; top:0; width:100%; z-index:888;}
 .vid-viewer-block{background:#000; position:absolute; width:950px; margin-top:70px; margin-bottom:20px; left:50%; margin-left:-475px;}
 .vid-viewer-block table{width:100%; border-collapse:collapse;}
 .vid-viewer-block .inner{padding:20px;}

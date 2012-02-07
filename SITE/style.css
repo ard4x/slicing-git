@@ -2200,11 +2200,6 @@ a.new_event:hover{text-decoration:none;}
 /*customize profile*/
 .paginator.profile_in{padding:0px; position:absolute; right:0; top:10px;}
 
-/*viral modification*/
-.vMode{overflow:hidden;}
-.vMode body{overflow:hidden; margin-right:15px;}
-.vMode .vid-viewer{overflow-x:auto; overflow-y:scroll; position:fixed; height:100%; width:100%; z-index:100001;}
-
 /*register box*/
 .register_action{position:fixed; left:-3px; top:40%; z-index:999;}
 .register_action_link a{background:url(img/register_action_link.png) 0 0 no-repeat; display:block; width:35px; height:102px; position:absolute; top:0; right:-32px;}
