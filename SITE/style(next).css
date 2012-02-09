@@ -2260,3 +2260,8 @@ a.dotted{text-decoration:none; border-bottom:1px dashed;} /*THIS STYLE IS CHANGE
 a:hover#popClose,a:hover.popClose{text-decoration:none;}
 .indentLeft0{margin-left:0px;}
 .indentLeft150{margin-left:150px;}
+
+/*gift in pictures*/
+.present-gift{position:absolute;}
+.present-gift.small{right:0; bottom:-1px;}
+.present-gift.larger{right:-7px; bottom:-7px;}
