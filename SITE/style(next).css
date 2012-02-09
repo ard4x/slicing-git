@@ -162,7 +162,7 @@ p {padding: 0 0 10px 0; margin:0;}
 .innerRight40 {padding-right: 40px !important;}
 .innerRight60 {padding-right: 60px !important;}
 
-.innerBoth20 {padding: 0px 20px !important;}
+.innerBoth20 {padding: 20px !important;}
 
 .indentTop0 {margin-top: 0px !important;}
 .indentTop1 {margin-top: 1px !important;}
@@ -2265,3 +2265,7 @@ a:hover#popClose,a:hover.popClose{text-decoration:none;}
 .present-gift{position:absolute;}
 .present-gift.small{right:0; bottom:-1px;}
 .present-gift.larger{right:-7px; bottom:-7px;}
+
+
+/*need for new popups*/
+.innerBoth20{padding:20px;}

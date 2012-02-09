@@ -37,3 +37,9 @@
 .vMode body{overflow:hidden; margin-right:15px;}
 .vMode .p-viewer{overflow-x:auto; overflow-y:scroll; position:fixed; height:100%; width:100%; z-index:100001; background: url(img/opacity.png) 0 0 repeat;}
 .vMode .p-viewer{position: absolute; top: 0; width: 100%; z-index: 888;}
+
+/*mailerform*/
+.yangutu_popap.mailerform {width:610px;}
+.yangutu_popap.mailerform .yp_top {background:url(img/mailform-bg-top.png) 0 0 no-repeat; height:20px;}
+.yangutu_popap.mailerform .yp_bot {background:url(img/mailform-bg-bottom.png) 0 0 no-repeat; height:42px;}
+.yangutu_popap.mailerform .yp_content_right .inner {background:url(img/mailform-bg-repeat.png) 0 0 repeat-y; padding:0 25px;}
