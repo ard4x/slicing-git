@@ -58,15 +58,6 @@ input[type="submit"]:focus, input[type="button"]:focus   { outline : none;}
 .button_blue.large,.button_green.large,.button_black.large,.button_pink.large,.button_red.large,.button_orange.large{height:44px; font:bold 18px/13px Arial;}
 .button_blue.small,.button_ftf.small,.button_green.small,.button_black.small,.button_pink.small,.button_red.small,.button_orange.small{height:35px; font:bold 14px/13px Arial;}
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-                 .button_blue,.button_green,.button_pink,.button_ftf,
-					.button_black,.button_red,.button_orange{padding:0px 10px;}
-        }
-        @media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0){
-                  head~body .button_blue,.button_green,.button_pink,.button_ftf,
-					.button_black,.button_red,.button_orange{padding:0px 10px;}
-        }
-
 .button-loading {position:relative;}
 .button-loading img{position:absolute; top:-3px; left:3px;}
 .button-loading input[type="button"]{padding-left:30px;}
@@ -193,6 +184,18 @@ a.btn.large, span.btn.large,.btn.large .btn-m  {height:44px;}
 	.btn-red.large:focus,.btn-red.large.focus {background-position:100% -3659px;}
 	.btn-red.large:focus .btn-lc,.btn-red.large.focus .btn-lc{background-position:0 -3569px;}
 	.btn-red.large:focus .btn-m,.btn-red.large.focus .btn-m{background-position:0 -3614px;}
+	
+.btn-select {background: url(img/slider-bg.png) 100% 0 no-repeat; height:31px!important;}
+.btn-select .btn-txt {font:14px/30px Arial; text-shadow:1px 1px 1px #F9F9F9; color:#494949; padding:1px 5px;}
+.btn-select .btn-lc {background:#fff url(img/slider-bg.png) 0 0 no-repeat;}
+.btn-select .btn-m {background: url(img/slider-bg.png) -3px 0 no-repeat; height:31px;}
+.btn-select:hover {background-position:100% -64px;}
+.btn-select:hover .btn-lc {background-position:0 -64px;}
+.btn-select:hover .btn-m {background-position:-3px -64px;}
+.btn-select:focus,.btn-select.focus{background-position:100% -32px;}
+.btn-select:focus .btn-txt,.btn-select.focus .btn-txt{font:14px/30px Arial; color:#fff; text-shadow:1px 1px 1px #494949;}
+.btn-select:focus .btn-lc,.btn-select.focus .btn-lc {background-position:0 -32px;}
+.btn-select:focus .btn-m,.btn-select.focus .btn-m{background-position:-3px -32px;}
 	
 .btn-ftf{background: url(img/buttons-bg-ftf.png) 0 1px repeat-x; text-shadow:0 1px 1px #292929;}
 .button_ftf {background: url(img/buttons-bg-ftf.png) 0 1px repeat-x;}

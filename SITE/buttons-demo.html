@@ -10,7 +10,7 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('input[type="button"],input[type="submit"]').hover(function(){$(this).toggleClass('hover');})
-			$('.btn').bind('click',function(){$(this).toggleClass('focus');})
+			$('.btn,input[type="button"],input[type="submit"]').bind('click',function(){$(this).toggleClass('focus');})
 		});
 	</script>
 	<!--[if IE 7]>
@@ -174,7 +174,16 @@
 					<div class="clr2"></div>
 				</div>
 			</div>
+			<h1>Slider type buttons</h1>
+			<div style="margin-top:20px;">
+				<a class="btn btn-select" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt">All</span></span></span></a>
+				<a class="btn btn-select" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Canceled</span></span></span></a>
+				<a class="btn btn-select" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Successful</span></span></span></a>
+				<a class="btn btn-select focus" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Canceled</span></span></span></a>
+			</div>
 		</div>
+		
+		<div class="clr2"></div>
 		
 		<div style="margin:30px; float:left; width:500px;">
 			<h1>Paginator</h1>

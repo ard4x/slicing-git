@@ -158,6 +158,7 @@ p {padding: 0 0 10px 0; margin:0;}
 .innerLeft3 {padding-left: 3px !important;}
 .innerLeft5 {padding-left: 5px !important;}
 .innerLeft20 {padding-left: 20px !important;}
+.innerRight10 {padding-right: 10px !important;}
 .innerRight20 {padding-right: 20px !important;}
 .innerRight40 {padding-right: 40px !important;}
 .innerRight60 {padding-right: 60px !important;}
@@ -680,10 +681,10 @@ textarea{padding:1px 2px 2px; font-size:14px; background-color:#fff;  border-top
 .brdpic6 img {margin: 4px 0 0 0;}
 
 .brdpic7 {background: url(img/36x36bg.png) no-repeat; width: 36px; height: 36px; position: relative;}
-.brdpic7 img {margin: 3px 0 0 4px;}
+.brdpic7 img {margin: 3px 0 0 0;}
 
 .brdpic8 {background: url(img/56x56bg.png) no-repeat; width: 56px; height: 56px; position: relative;}
-.brdpic8 img {margin: 4px 0 0 5px;}
+.brdpic8 img {margin: 4px 0 0 0;}
 
 .piccheckbox {position: absolute; z-index: 20; bottom: 10px; left: 8px;}
 
@@ -1220,7 +1221,7 @@ a.cntr2 span {font-size: 12px; color:#ffffff; background: url(img/hm_right.png) 
 
 /*-------------- styles from custom.css-----------------------*/
 .brdpic3, .brdpic4, .my_brdpic4, .brdpic6, .brdpic7 {vertical-align:middle; text-align: center}
-.brdpic2 img, .brdpic3 img, .brdpic4 img, .brdpic7 img{margin: 0px; margin-top: expression((parentNode.offsetHeight - this.offsetHeight)<0 ? "0" : (parentNode.offsetHeight - this.offsetHeight)/2 + "px");}
+.brdpic2 img, .brdpic3 img, .brdpic4 img{margin: 0px; margin-top: expression((parentNode.offsetHeight - this.offsetHeight)<0 ? "0" : (parentNode.offsetHeight - this.offsetHeight)/2 + "px");}
 .brdpic .checkbx, .brdpic2 .checkbx, .brdpic3 .checkbx, .brdpic4 .checkbx, .brdpic5 .checkbx, .brdpic6 .checkbx, .brdpic7 .checkbx, .brdpic8 .checkbx {bottom: 22px}
 .actuser3 .checkbx { left: 6px}
 .piclist4 li {position:relative}
@@ -2269,3 +2270,11 @@ a:hover#popClose,a:hover.popClose{text-decoration:none;}
 
 /*need for new popups*/
 .innerBoth20{padding:20px;}
+
+/*invite_friends.html*/
+ul.list li {margin:5px 0;}
+ul.list li table{width:100%; border-collapse:collapse;}
+ul.list li table td{vertical-align:top;}
+.invite-box-scroll{height:200px; overflow-y:auto; overflow-x:hidden; background-color:#f7f7f7; width:305px; zoom:1; position:relative; border:solid #E5E5E5; border-width:1px 0;}
+.invite-box-scroll ul.list li{padding:5px 10px; margin:0;}
+.invite-box-scroll ul.list li p{padding-bottom:0;}
