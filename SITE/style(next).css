@@ -2278,3 +2278,9 @@ ul.list li table td{vertical-align:top;}
 .invite-box-scroll{height:200px; overflow-y:auto; overflow-x:hidden; background-color:#f7f7f7; width:305px; zoom:1; position:relative; border:solid #E5E5E5; border-width:1px 0;}
 .invite-box-scroll ul.list li{padding:5px 10px; margin:0;}
 .invite-box-scroll ul.list li p{padding-bottom:0;}
+
+/**/
+.facebook-iblock{background:url(img/facebook.gif) 5px 0 no-repeat; padding-left:50px;}
+.yangutu-iblock{background:url(img/yangutu.gif) 5px 0 no-repeat; padding-left:50px;}
+.main-dash-close{position:absolute; top:-34px; font:11px Arial; color:#999999; left:0;}
+.main-dash-close:hover{text-decoration:none;}

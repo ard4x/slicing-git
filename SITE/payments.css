@@ -1,0 +1,65 @@
+
+.w400{width:400px!important;}
+.w300{width:300px!important;}
+.w200{width:200px!important;}
+.w260{width:260px!important;}
+.w575{width:575px!important;}
+
+
+.indentLeft115 { margin-left: 115px !important;}
+.indentLeft165 { margin-left: 165px !important;}
+.indentLeft200 { margin-left: 200px !important;}
+
+	.vq_wrapper_gray{background-color:#f6f6f7; margin:20px 0;}
+	.vq_wrapper_gray .inner{padding:15px 17px;}
+	.vq_wrapper_gray .inner table,.vq_prof_set table{border-collapse:collapse; width:100%;}
+	.vq_wrapper_gray .inner table td,.vq_prof_set table td{vertical-align:middle; padding:5px 0;}
+
+#ny_body,#fb_main {width: 760px;}
+#ny_body .content_inn,#fb_main .content_inn { margin: 0 auto; padding-bottom: 30px; padding-top: 10px; position: relative; width: 100%; z-index: 1;}
+
+
+.pp{background:url(img/pp_ico.png) 0 0 no-repeat; padding-left:20px;}
+
+
+.labels label{padding-top:5px;}
+
+	.vq_pay_col{width:100%;}
+	.vq_pay_col .pay_menu li{position:relative; display:block; float:left; width:87px; height:54px; padding:6px 7px 14px; margin-right:10px; }
+	.vq_pay_col .pay_menu li*{cursor:pointer;}
+	.vq_pay_col .pay_menu li a:hover{text-decoration:none;}
+	.vq_pay_col .pay_menu li .pay_menu_link{position:absolute; bottom:15px; left:0px; width:90px; text-align:center;}
+	.vq_pay_col .pay_menu li.select{background:url(img/pay_bg.png) 0 0 no-repeat;}
+	.vq_pay_col .pay_col_left{width:196px; float:left;}
+	.vq_pay_col .pay_col_right{width:75%; float:left;}
+	.vq_pay_col .paypal{margin-right:10px;}
+		.paypal{background:url(img/paypalbut.jpg) 0 0 no-repeat; width:150px; height:52px; border:none; cursor:pointer;}
+	
+.helper{background:url(img/type_help.gif) 0 0 no-repeat; width:29px; height:21px; cursor:pointer; position:relative;}
+    .helper .ya_mbx3{top:15px; left:-35px; display:none;}
+    .tblp .helper{margin:4px 0 0 10px;}
+    .helper.hover{background-position:100% 0;}
+    .helper.hover .ya_mbx3{display:block;}
+	
+	.vq_wrapper_gray .day{ float: left; margin-right: 4px; width: 56px;}
+	.vq_wrapper_gray .year { float: left; width: 60px;}
+	
+.hidden {display:none}
+
+.ucredits{background:url(img/credit_ico.gif) 0 50% no-repeat; position:relative; padding-left:22px;}
+.ucredits a{display:block;}
+.ucredits .ubnow{position:absolute; left:22px; bottom:-10px; font-size:10px; width:50px;}
+
+.inh{position:relative;}
+	.helper_top{background:url(img/help-icons.png) 0 0 no-repeat; width:16px; height:16px; cursor:pointer;}
+	.inh .ya_mbx3_top{background:url(img/yab_helptop.png) 0 0 no-repeat; height:22px;}
+	.inh .ya_mbx_bot3{background:url(img/yab_helpbot.png) 0 0 no-repeat; height:18px;}
+	.helper_top.inh  .ya_mbx_help {left:-35px; bottom: 22px;}
+	.inh .ya_mbx_help {left:-9px; display:none; position: absolute; bottom: 12px; width: 280px; z-index: 1100;}
+	.tblp .helper_top{margin:4px 0 0 10px;}
+	.helper_top.hover{background-position:100% 0;}
+	.inh.hover .ya_mbx_help{display:block;}	
+	
+a#service_conditions { text-decoration:none; border-bottom:1px dashed #999}
+div.service_conditions {font:14px/18px Arial; padding: 0px 20px 0px 45px;}
+#payment-methods li input[type="radio"]{margin-left:0px;}
