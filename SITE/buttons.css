@@ -334,3 +334,7 @@ input[type="button"].cl-right{border-radius:6px 0 0 6px; -webkit-border-radius:6
 .shared-button-t:hover,.shared-button-t.hover,.shared-button-f:hover,.shared-button-f.hover{background-position:0 -35px;}
 .shared-button-t:focus,.shared-button-t.focus,.shared-button-f:focus,.shared-button-f.focus{background-position:0 -70px;}
 .shared-button-f{background:url(img/shared-button-f.png) 0 0 no-repeat; height:35px; width:88px; font:bold 14px Arial; padding:0 10px 5px 0; text-shadow:1px 1px 1px #07487d; color:#fff; text-align:right;}
+
+/*NARROW*/
+.button_blue.narrow,.button_green.narrow,.button_black.narrow,.button_pink.narrow,.button_red.narrow,.button_orange.narrow,.btn-txt.narrow{font:bold 12px/13px Arial !important;}
+.button_blue,.button_green,.button_black,.button_pink,.button_red,.button_orange{-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;-o-user-select: none;user-select: none;}
