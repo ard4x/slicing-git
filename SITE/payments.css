@@ -14,6 +14,7 @@
 	.vq_wrapper_gray .inner{padding:15px 17px;}
 	.vq_wrapper_gray .inner table,.vq_prof_set table{border-collapse:collapse; width:100%;}
 	.vq_wrapper_gray .inner table td,.vq_prof_set table td{vertical-align:middle; padding:5px 0;}
+	.vq_prof_set table td.first-cell{vertical-align:top; padding:5px 20px 5px 0; text-align:right;}
 
 #ny_body,#fb_main {width: 760px;}
 #ny_body .content_inn,#fb_main .content_inn { margin: 0 auto; padding-bottom: 30px; padding-top: 10px; position: relative; width: 100%; z-index: 1;}
@@ -41,8 +42,8 @@
     .helper.hover{background-position:100% 0;}
     .helper.hover .ya_mbx3{display:block;}
 	
-	.vq_wrapper_gray .day{ float: left; margin-right: 4px; width: 56px;}
-	.vq_wrapper_gray .year { float: left; width: 60px;}
+	.vq_wrapper_gray .day,.vq_prof_set .day{ float: left; margin-right: 4px; width: 56px;}
+	.vq_wrapper_gray .year,.vq_prof_set .year { float: left; width: 60px;}
 	
 .hidden {display:none}
 
