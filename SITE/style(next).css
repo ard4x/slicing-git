@@ -2130,9 +2130,10 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 
 
 /*main new proposal style*/
+.pro .v-11{background:url(img/proposal_11.png) 0 100% no-repeat; height:135px;}
 .pro .v-10{background:url(img/proposal_10.png) 0 100% no-repeat; height:138px;}
 .pro .v-9{background:url(img/proposal_9.png) 0 100% no-repeat; height:138px;}
-.pro .v-7{background:url(img/proposal_7.png) 0 100% no-repeat; height:138px;}
+.pro .v-7{background:url(img/proposal_7.png) 0 100% no-repeat; height:136px;}
 .pro .v-6{background:url(img/proposal_6.png) 0 100% no-repeat; height:138px;}
 .pro .v-1{background:url(img/proposal_1.png) 0 100% no-repeat; height:138px;}
 .pro .v-4{background:url(img/proposal_4.png) 0 100% no-repeat; height:138px;}
@@ -2140,7 +2141,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .pro .v-2{background:url(img/proposal_2.png) 0 100% no-repeat; height:137px;}
 .pro:hover p{color:#000!important;}
 .pro:hover {text-decoration:none;}
-.pro:hover .v-10,.pro:hover .v-9,.pro:hover .v-7,.pro:hover .v-6,.pro:hover .v-1,.pro:hover .v-4,.pro:hover .v-3,.pro:hover .v-2{background-position:0 0!important;}
+.pro:hover .v-11,.pro:hover .v-10,.pro:hover .v-9,.pro:hover .v-7,.pro:hover .v-6,.pro:hover .v-1,.pro:hover .v-4,.pro:hover .v-3,.pro:hover .v-2{background-position:0 0!important;}
 
 /*vip_month.html*/
 .prof-block-usrlist.or-bg,.lookingbx.or-bg{background:#fffecb;}
