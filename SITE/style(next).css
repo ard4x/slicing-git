@@ -683,7 +683,7 @@ textarea{padding:1px 2px 2px; font-size:14px; background-color:#fff;  border-top
 .brdpic7 {background: url(img/36x36bg.png) no-repeat; width: 36px; height: 36px; position: relative;}
 .brdpic7 img {margin: 3px 0 0 0;}
 
-.brdpic8 {background: url(img/56x56bg.png) no-repeat; width: 56px; height: 56px; position: relative;}
+.brdpic8 {background: url(img/56x56bg.png) no-repeat; width: 56px; height: 56px; position: relative; text-align:center;}
 .brdpic8 img {margin: 4px 0 0 0;}
 
 .piccheckbox {position: absolute; z-index: 20; bottom: 10px; left: 8px;}
@@ -2233,7 +2233,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 a.dotted{text-decoration:none; border-bottom:1px dashed;} /*THIS STYLE IS CHANGED -> .lookingbx a.dotted*/
 
 /*gift.html brdpic infobox*/
-.brdpic-infobox{position:absolute; z-index:99; bottom:60px; left:0px; background-color:#000; color:#fff; box-shadow:1px 1px 4px #5F5F5F; -moz-box-shadow:1px 1px 4px #5F5F5F; -webkit-box-shadow:1px 1px 4px #5F5F5F;}
+.brdpic-infobox{position:absolute; text-align:left; z-index:99; bottom:60px; left:0px; background-color:#000; color:#fff; box-shadow:1px 1px 4px #5F5F5F; -moz-box-shadow:1px 1px 4px #5F5F5F; -webkit-box-shadow:1px 1px 4px #5F5F5F;}
 .brdpic-infobox .brdpic-infobox-content{padding-left:78px;}
 .brdpic-infobox img{margin-left:3px;}
 .brdpic-infobox .inner{padding:6px; width:215px;}
