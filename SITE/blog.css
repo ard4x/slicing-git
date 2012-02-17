@@ -19,6 +19,8 @@
 .blog_article  .art_context,.comment_txt{color:#636363; line-height:18px;}
 .blog_article .special_info{padding:10px; background-color:#f5f7f9; zoom:1;}
 .post_like .i_like, .post_like .dont_like{float:left; background:url(img/blog_icos.png) 0 -22px no-repeat; width:15px; height:15px; display:block;}
+.post_like {position:relative;}
+.post_like .tec_popap{width:80px; padding-right:15px; border:none; background-color:#fff; padding-top:10px;}
 .post_like .dont_like{background-position:0 -42px;}
 .post_like .like_ressult.false{color:#b10212;}
 .post_like .like_ressult.true{color:#42bc4f;}
