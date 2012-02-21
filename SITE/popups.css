@@ -51,3 +51,11 @@
 /*yangutu_popap -> usrpic*/
 .yangutu_popap .piclist{margin:0;}
 .yangutu_popap .whitebg{background:#fff;}
+
+/*payments popup style*/
+.payment-box-title,.payment-box-content{background:#edeef0; padding:5px 10px;}
+.payment-box-content{padding-bottom:10px;}
+.payment-box-content table{width:100%; border-collapse:collapse;}
+.payment-box-content input {height:40px; color:#3c4359; font:36px Arial;}
+.payment-box-content input.form-1 {width:280px;}
+.payment-box-content input.form-2 {width:85px;}
