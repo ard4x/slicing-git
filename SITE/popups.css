@@ -54,6 +54,7 @@
 
 /*payments popup style*/
 .payment-box-title,.payment-box-content{background:#edeef0; padding:5px 10px;}
+.vip-score{background:url(img/vip-score.png) 0 0 no-repeat; display:block; width:27px; height:27px; color:#fff; font:bold 14px/26px Arial; letter-spacing:-1px; text-align:center; text-shadow:1px 0 1px #c36815; position:absolute; left:-35px; top:0px;}
 .payment-box-content{padding-bottom:10px;}
 .payment-box-content table{width:100%; border-collapse:collapse;}
 .payment-box-content input {height:40px; color:#3c4359; font:36px Arial;}
