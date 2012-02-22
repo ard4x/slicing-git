@@ -2250,3 +2250,9 @@ a.new_event:hover{text-decoration:none;}
 
 /*new class*/
 .fixWidth180 {width: 180px;}
+
+
+.brdpic.rubber{background: url(img/126x166r.png) 0 0 repeat-y; margin:0; padding:0; height:auto;}
+.brdpic.rubber img{margin:0 0 0 5px; padding:0; width:116px; display:block;}
+.brdpic-top{background: url(img/126x166rt.png) 0 0 no-repeat; height:4px;}
+.brdpic-bot{background: url(img/126x166rb.png) 0 0 no-repeat; height:6px;}
