@@ -11,6 +11,8 @@ input[type="text"]:focus,input[type="password"]:focus,textarea:focus{border-colo
 
 a {color:#4f6b8d; text-decoration: none;}
 a:hover {color:#4f6b8d; text-decoration: underline;}
+a.understyle {text-decoration: underline;}
+a.understyle:hover {text-decoration: none;}
 
 p {padding: 0 0 10px 0; margin:0;}
 
@@ -30,7 +32,7 @@ p {padding: 0 0 10px 0; margin:0;}
 .vtop {vertical-align: top !important;}
 .vmiddle {vertical-align: middle !important;}
 .prelative {position: relative;}
-.blue,.blue:hover{color:#436187;}
+.blue,.blue:hover{color:#489bef;}
 .nobg{background:transparent!important;}
 
 .width50p{width:50%;}
