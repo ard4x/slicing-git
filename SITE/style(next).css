@@ -2175,7 +2175,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 /*sell a friend*/
 .vipsc-small{background:url(img/vipsc-small.png) 0 0 no-repeat; font:bold 18px/34px Arial; padding:7px 8px;}
 .vip_friends_static_info{margin:5px 0 10px;}
-.vfs_send,.vfs_activ,.vfs_vip{background:url(img/vfs-status.png) 0 0 no-repeat; font:13px Arial; padding:5px 0 5px 27px; color:#5faa2b;}
+.vfs_send,.vfs_activ,.vfs_vip{background:url(img/vfs-status.png) 0 0 no-repeat; font:13px Arial; padding:5px 0 5px 27px; color:#5faa2b; display:block;}
 .vfs_send{color:#000; background-position:0 -64px;}
 .vfs_vip{color:#ff8b19; background-position:0 -32px;}
 .vip_friends_static_info .vfs_date{width:60px; float:left; padding:5px 0 0 5px;}
