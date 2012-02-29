@@ -2289,3 +2289,20 @@ ul.list li table td{vertical-align:top;}
 .yangutu-iblock{background:url(img/yangutu.gif) 5px 0 no-repeat; padding-left:50px;}
 .main-dash-close{position:absolute; top:-34px; font:11px Arial; color:#999999; left:0;}
 .main-dash-close:hover{text-decoration:none;}
+
+
+/*main-vip*/
+.main-vip{background:url(img/main-vip-bg.png) 0 0 no-repeat;}
+.main-vip .pre-div{width:525px; height:208px; padding:50px 0 60px 397px; color:#fff; text-shadow:1px 1px 1px #395c88;}
+.main-vip .pre-div .inner{padding:15px 20px;}
+.ya_mbx_help .ya_mbx3_top{background:url(img/yab_helptop.png) 0 0 no-repeat; height:22px;}
+.ya_mbx_help .ya_mbx_bot3{background:url(img/yab_helpbot.png) 0 0 no-repeat; height:18px;}
+.ya_mbx_help {left:-35px; bottom: 22px; display:none; position: absolute; width: 280px; z-index: 1100;}
+
+.radio-select-box{width:562px; height:116px; background:url(img/radio-select-box-bg.png) 0 0 no-repeat;}
+.radio-select-box.selected{background-position:0 100%;}
+.radio-select-box .label{height:116px; width:45px; float:left; text-align:center; cursor:pointer;}
+.radio-select-box .label input{margin-top:50px; cursor:pointer;}
+.radio-select-box .description{color:#51575e; padding-top:5px;}
+.radio-select-box .title{font:bold 30px Arial; color:#5d6773; text-shadow:1px 0 0 #47505c; letter-spacing:1px;}
+.radio-select-box .price-color{color:#cf7e04;}
