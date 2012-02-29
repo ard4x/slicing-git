@@ -2306,3 +2306,6 @@ ul.list li table td{vertical-align:top;}
 .radio-select-box .description{color:#51575e; padding-top:5px;}
 .radio-select-box .title{font:bold 30px Arial; color:#5d6773; text-shadow:1px 0 0 #47505c; letter-spacing:1px;}
 .radio-select-box .price-color{color:#cf7e04;}
+
+.hor-fag{background:#e7eff5 url(img/hor-faq-bg.jpg) 0 0 no-repeat; width:954px; padding-top:7px;}
+.hor-fag .inner{padding:10px 15px; border:solid #d9e4ec; border-width:0 1px 1px;}
