@@ -2313,3 +2313,6 @@ ul.list li table td{vertical-align:top;}
 .hor-fag{background:#e7eff5 url(img/hor-faq-bg.jpg) 0 0 no-repeat; width:954px; padding-top:7px;}
 .hor-fag .inner{padding:10px 25px; border:solid #d9e4ec; border-width:0 1px 1px;}
 .top-offer{position:absolute; top:-3px; right:-3px; width:80px; height:80px; background:url(img/top-offer.png) 0 0 no-repeat;}
+
+/*first singles usr place*/
+.found_usr.first-place,.found_usr.first-place.hover{background-color:#F7F2D5;}
