@@ -2316,3 +2316,13 @@ ul.list li table td{vertical-align:top;}
 
 /*first singles usr place*/
 .found_usr.first-place,.found_usr.first-place.hover{background-color:#F7F2D5;}
+
+/*top-100 styles*/
+.helpbx.c5{background-color:#ffffcc;}
+.helpbx.c6{background-color:#ffb263;}
+
+.myrate-inline {width:110px; margin:0 auto;}
+.myrate-inline .country_rate{position:relative;}
+.myrate-inline .score_box{position:absolute; right:0; top:0;}
+
+.new-topstat .usr-stat button{position:absolute; bottom:5px; right:5px; font:bold 11px Arial!important;}
