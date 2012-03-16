@@ -318,14 +318,14 @@ input[type="button"].cl-right{border-radius:6px 0 0 6px; -webkit-border-radius:6
 .select_menu ul li b {color:#DE4E0F;}
 
 /*CONNECT buttons*/
-.connect-button {background:url(img/connect-button-bg.png) 0 0 no-repeat; width:282px; height:53px; font:bold 18px Arial; padding:0 10px 5px 0; text-shadow:1px 1px 1px #07487d; color:#fff; text-align:right;}
-.connect-button.b1 {background-position:0 0;}
+.connect-button {background:url(img/connect-button-bg.png) 0 0 no-repeat; width:282px; height:53px; font:bold 18px Arial; padding:0 0 5px 0; text-shadow:1px 1px 1px #07487d; color:#fff; text-align:center;}
+.connect-button.b1 {background-position:0 0; padding-left: 46px;}
 	.connect-button.b1:hover,.connect-button.b1.hover{background-position:0 -76px;}
 	.connect-button.b1:focus,.connect-button.b1.focus{background-position:0 -149px;}
-.connect-button.b2 {background-position:-305px 0;}
+.connect-button.b2 {background-position:-305px 0; padding-left: 46px;}
 	.connect-button.b2:hover,.connect-button.b2.hover{background-position:-305px -76px;}
 	.connect-button.b2:focus,.connect-button.b2.focus{background-position:-305px -149px;}
-.connect-button.b3 {background-position:-621px 0;}
+.connect-button.b3 {background-position:-621px 0; padding-left: 55px;}
 	.connect-button.b3:hover,.connect-button.b3.hover{background-position:-621px -76px;}
 	.connect-button.b3:focus,.connect-button.b3.focus{background-position:-621px -149px;}
 

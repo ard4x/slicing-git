@@ -1876,7 +1876,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 
 .main-menu-popap{background-color:#f6f5eb; max-width:997px; -moz-box-shadow:0 0px 5px #898787; -webkit-box-shadow:0 0px 5px #898787; -khtml-box-shadow:0 0px 5px #898787; box-shadow:0 0px 5px #898787;}
 .main-menu-popap .arrow{background:url(img/main-menu-popap-arrow.png) 0 0 no-repeat; position:absolute; width:12px; height:5px; top:-5px; left:20px;}
-	.main-menu-popap-inner ul li {display:block; margin:0px;}
+	.main-menu-popap-inner ul li {display:block; margin:0px; white-space:nowrap;}
 	.main-menu-popap-inner ul li a{display:block; padding:6px 10px; font:normal 12px Arial;}
 	.main-menu-popap-inner ul li a:hover{text-decoration:none; background:#ECF4FB; color:#000;}
 
