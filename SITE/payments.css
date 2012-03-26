@@ -13,7 +13,7 @@
 	.vq_wrapper_gray{background-color:#f6f6f7; margin:20px 0;}
 	.vq_wrapper_gray .inner{padding:15px 17px;}
 	.vq_wrapper_gray .inner table,.vq_prof_set table{border-collapse:collapse; width:100%;}
-	.vq_wrapper_gray .inner table td,.vq_prof_set table td{vertical-align:middle; padding:5px 0;}
+	.vq_wrapper_gray .inner table td,.vq_prof_set table td{vertical-align:middle; padding:3px 0;}
 	.vq_prof_set table td.first-cell{vertical-align:top; padding:5px 20px 5px 0; text-align:left; width:90px;}
 
 #ny_body,#fb_main {width: 760px;}
@@ -26,7 +26,8 @@
 .labels label{padding-top:5px;}
 
 	.vq_pay_col{width:100%;}
-	.vq_pay_col .pay_menu li{position:relative; display:block; float:left; width:87px; height:54px; padding:6px 7px 14px; margin-right:10px; }
+	.vq_pay_col .pay_menu li{position:relative; display:block; float:left; width:91px; height:43px; margin-right:10px; }
+	.vq_pay_col .pay_menu li label{display:block; height:29px; padding:7px 0 7px 8px; width:75px;}
 	.vq_pay_col .pay_menu li*{cursor:pointer;}
 	.vq_pay_col .pay_menu li a:hover{text-decoration:none;}
 	.vq_pay_col .pay_menu li .pay_menu_link{position:absolute; bottom:15px; left:0px; width:90px; text-align:center;}
