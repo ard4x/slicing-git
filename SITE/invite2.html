@@ -10,10 +10,10 @@
 		$(function(){
 			$('.inviteLink').bind('click',function (e) {
 				e.preventDefault();
-				$('.yangutu_invite_opt').hide();
+				$('.yangutu_invite_opt').slideUp();
 				$('.yangutu_invite_choise').removeClass('active');
-				$(this).next().show();
-				$(this).parent('.yangutu_invite_choise').toggleClass('active');
+				$(this).next().slideDown();
+				$(this).parent('.yangutu_invite_choise').addClass('active');
 			});
 		});
 	</script>
