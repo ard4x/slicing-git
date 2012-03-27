@@ -17,3 +17,5 @@
 .vidbox-preview{height:350px; overflow:hidden; background:url(img/default-videos.jpg) 50% 100px no-repeat;}
 .vidbox-preview .inner{padding-top:170px; color:#fff; text-align:center;}
 .vidbox-preview .title{font:bold 48px Arial;}
+
+.vidbox-preview .mobile-act-buttons{position:absolute; bottom:20px; right:20px;}
