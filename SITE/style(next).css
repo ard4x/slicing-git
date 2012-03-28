@@ -2293,15 +2293,15 @@ ul.list li table td{vertical-align:top;}
 
 
 /*main-vip*/
-.main-vip{background:url(img/main-vip-bg.png) 0 0 no-repeat;}
+/*.main-vip{background:url(img/main-vip-bg.png) 0 0 no-repeat;}*/
 .main-vip .pre-div{width:525px; height:208px; padding:50px 0 60px 397px; color:#fff; text-shadow:1px 1px 1px #395c88;}
 .main-vip .pre-div .inner{padding:15px 20px;}
 .ya_mbx_help .ya_mbx3_top{background:url(img/yab_helptop.png) 0 0 no-repeat; height:22px;}
 .ya_mbx_help .ya_mbx_bot3{background:url(img/yab_helpbot.png) 0 0 no-repeat; height:18px;}
 .ya_mbx_help {left:-35px; bottom: 22px; display:none; position: absolute; width: 280px; z-index: 1100;}
 
-.radio-select-box{width:562px; height:116px; background:url(img/radio-select-box-bg.png) 0 0 no-repeat;  cursor:pointer; position:relative; zoom:1;}
-.radio-select-box.small{width:562px; height:83px; background:url(img/radio-select-box-small-bg.png) 0 0 no-repeat;  cursor:pointer; position:relative; zoom:1;}
+.radio-select-box{width:428px; height:116px; background:url(img/radio-select-box-bg.png) 0 0 no-repeat;  cursor:pointer; position:relative; zoom:1;}
+.radio-select-box.small{width:428px; height:83px; background:url(img/radio-select-box-small-bg.png) 0 0 no-repeat;  cursor:pointer; position:relative; zoom:1;}
 .radio-select-box.selected{background-position:0 100%;}
 .radio-select-box.small .label{height:83px;}
 .radio-select-box.small .label input{margin-top:35px;}
@@ -2327,3 +2327,10 @@ ul.list li table td{vertical-align:top;}
 .myrate-inline .score_box{position:absolute; right:0; top:0;}
 
 .new-topstat .usr-stat button{position:absolute; bottom:5px; right:5px; font:bold 11px Arial!important;}
+
+.mvip-table{width:507px; background:url(img/main-vip-table-top.png) 0 0 no-repeat;}
+.mvip-table-body{background:url(img/main-vip-table.png) 0 0 repeat-y; margin-top:5px;}
+.mvip-table-bottom{height:7px; background:url(img/main-vip-table-bot.png) 0 0 no-repeat;}
+.mvip-table table{width:100%; border-collapse:collapse; font-size:13px; text-align:center;}
+.mvip-table table td{padding:5px; width:100px; height:36px;}
+.mvip-table table .first{width:278px; text-align:left; padding-left:10px;}
