@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="photoviewer.css" type="text/css" id="" />
 	<link rel="stylesheet" href="buttons.css" type="text/css" id="" />
 	
-	<script src="../js/jquery-1.4.4.min.js"></script>
+	<script src="js/jquery-1.4.4.min.js"></script>
 	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
 	<!--[if IE 7]>
 		<link rel="stylesheet" type="text/css" href="ie7.css" />
@@ -19,60 +19,60 @@
 	<script type="text/javascript" >
 		$(document).ready(function (){
 		
-		photoView();
-		$(window).resize(photoView);
-		
-		function photoView(){
-			$('#close').click(function(e){e.preventDefault(); hideOp($(this));});
-			$('.photo-viewer').height($(document).height());
-		}
+			photoView();
+			$(window).resize(photoView);
+			
+			function photoView(){
+				$('#close').click(function(e){e.preventDefault(); hideOp($(this));});
+				$('.photo-viewer').height($(document).height());
+			}
 			function hideOp(el){
 				el.parents('div.photo-viewer').css('display','none');
 			}
 			
 			
 			
-			makeStars( 'with-stars-big', './img/ratestarsorange.png', './img/ratestarsred.png');
+		//	makeStars( 'with-stars-big', './img/ratestarsorange.png', './img/ratestarsred.png');
 
-			function makeStars( starsClass, brightStarPath, lastSratsPath ){
-				$('.' + starsClass).each(function(){
-					var self = $(this);
-					var stars = self.find('img');
-					var arr = new Array();
-					stars.mouseover(function(){
+		//	function makeStars( starsClass, brightStarPath, lastSratsPath ){
+		//		$('.' + starsClass).each(function(){
+		//			var self = $(this);
+		//			var stars = self.find('img');
+		//			var arr = new Array();
+		//			stars.mouseover(function(){
 						
 						// запоминаем src всех звезд в текущем контейнере
-						stars.each(function(){
-							arr.push( $(this).attr('src') );
-						});
+		//				stars.each(function(){
+		//					arr.push( $(this).attr('src') );
+		//				});
 						
 						// определяем индекс элемента, на который навели курсор
-						var inx = self.find('img').index(this) + 1;
-						console.log(inx);
-						// у всех предыдущих элементов меняем src
-						var sImg = self.find('img:lt(' + inx + ')');
-						sImg.attr('src', brightStarPath);
-						if(inx == 6 || inx == 7 ){
-							$(this).attr('src', lastSratsPath);
-						}if(inx == 7){
-							$(this).prev().attr('src', lastSratsPath);
-						}
-					});
+		//				var inx = self.find('img').index(this) + 1;
+		//				console.log(inx);
+		//				// у всех предыдущих элементов меняем src
+		//				var sImg = self.find('img:lt(' + inx + ')');
+		//				sImg.attr('src', brightStarPath);
+		//				if(inx == 6 || inx == 7 ){
+		//					$(this).attr('src', lastSratsPath);
+		//				}if(inx == 7){
+		//					$(this).prev().attr('src', lastSratsPath);
+		//				}
+		//			});
 					
 					// возвращаем на место src звезд
-					stars.mouseout(function(){
-						var i = 0;
-						stars.each(function(){
-							$(this).attr('src', arr[ i++ ] );
-						});
-					});
-					
-					stars.click(function(e){
-						var inx = self.find('img').index(this) + 1;
-						$('form#news_rate').find('input[type=hidden]').attr('value', inx).end().submit();
-					});
-				});
-			}
+		//			stars.mouseout(function(){
+		//				var i = 0;
+		//				stars.each(function(){
+		//					$(this).attr('src', arr[ i++ ] );
+		//				});
+		//			});
+		//			
+		//			stars.click(function(e){
+		//				var inx = self.find('img').index(this) + 1;
+		//				$('form#news_rate').find('input[type=hidden]').attr('value', inx).end().submit();
+		//			});
+		//		});
+		//	}
 			
 			
 		});
@@ -237,14 +237,12 @@
 						<td></td>
 						<td class="innerTop20">
 							<p>Rate this picture "I am in the snowbo…</p>
-							<div class="with-stars-big">
-								<img title="" alt="" src="./img/ratestarsblack.png" />
-								<img title="" alt="" src="./img/ratestarsblack.png" />
-								<img title="" alt="" src="./img/ratestarsblack.png" />
-								<img title="" alt="" src="./img/ratestarsblack.png" />
-								<img title="" alt="" src="./img/ratestarsblack.png" />
-								<img title="" alt="" src="./img/ratestarsblack.png" />
-								<img title="" alt="" src="./img/ratestarsblack.png" />
+							<div class="photo-rate">
+								<a href=""><span>1</span></a>
+								<a href=""><span>2</span></a>
+								<a href=""><span>3</span></a>
+								<a href=""><span>4</span><p>You are the queen!</p></a>
+								<a href="" class="bigstar"><span>+5</span></a>
 								<div class="clear"></div>
 							</div>
 						</td>
