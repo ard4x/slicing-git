@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="rendez.css" type="text/css" id="" />
 	<link rel="stylesheet" href="buttons.css" type="text/css" id="" />
 	<link rel="stylesheet" href="flags.css" type="text/css" id="" />
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
 	
 	<!--[if IE 7]>
 		<link rel="stylesheet" type="text/css" href="ie7.css" />
@@ -15,14 +16,23 @@
 	<!--[if IE 8]>
 		<link rel="stylesheet" type="text/css" href="ie8.css" />
 	<![endif]-->
+	<script type="text/javascript">
+		$(function(){
+			var profileNavButtons = $('.left-scroll-bar,.right-scroll-bar'),
+				winHeight = ($(window).height() - $('.header').height()) - 20;
+				winWidth = (($(window).width() - $('.content_inn').width()) / 2) - 20;
+			profileNavButtons.height(winHeight);
+			profileNavButtons.width(winWidth);
+		});
+	</script>
 </head>
 
 <body>
 	<div class="left-scroll-bar">
-		
+		<a href=""><span><img src="./img/lsb-left.png" alt="" /></span></a>
 	</div>
 	<div class="right-scroll-bar">
-		
+		<a href=""><span><img src="./img/lsb-right.png" alt="" /></span></a>
 	</div>
 	<div class="header">
 		<div class="header_inn">
