@@ -2335,7 +2335,8 @@ body.lang-ru .top-offer{background:url(img/top-offer-rus.png) 0 0 no-repeat;}
 .mvip-table table{width:100%; border-collapse:collapse; font-size:13px; text-align:center;}
 .mvip-table table.topTable td{padding:0 5px; height:36px; font:12px Arial;}
 .mvip-table table td{padding:5px; width:100px;}
-.mvip-table table .first{width:278px; text-align:left; padding-left:10px;}
+.mvip-table table .first{width:250px; text-align:left; padding-left:10px;}
+.mvip-table table .second{width:22px; padding:0;}
 
 /**/
 .edit-link{background:url(img/yangutu-icos.png) 0 -2px no-repeat; padding-left:18px;}
