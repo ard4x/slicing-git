@@ -317,6 +317,27 @@ input[type="button"].cl-right{border-radius:6px 0 0 6px; -webkit-border-radius:6
 .select_menu ul li.select b {color:#fff;}
 .select_menu ul li b {color:#DE4E0F;}
 
+/*Small select from navigation-bg*/
+.select_menu.small ul li a{height:24px; display:block; white-space:nowrap; padding-bottom:0px; background:url(img/paginator-bg.png) -3px 0 no-repeat; color:#494949; text-shadow:1px 1px 1px #f9f9f9;}
+.select_menu.small ul li.first a{background-position:0 0;}
+.select_menu.small ul li.last a{background-position:100% 0;}
+.select_menu.small ul li.first a:hover{background-position:0 -25px;}
+.select_menu.small ul li.last a:hover{background-position:100% -25px;}
+.select_menu.small ul li a:hover{background-position:-3px -25px; text-decoration:none;}
+.select_menu.small ul li.select a{background-position:-3px -50px;}
+.select_menu.small ul li.first.select a{background-position:0 -50px;}
+.select_menu.small ul li.last.select a{background-position:100% -50px;}
+
+.select_menu.small ul li span{display:block; height:24px; padding:0 10px; font:11px/24px Arial; border-right:1px solid #c3c2c2;}
+.select_menu.small ul li.last span{border-right:none;}
+.select_menu ul li span.ygi-man{background:url(img/yangutu-icos.png) 5px -17px no-repeat; padding-left:25px;}
+.select_menu ul li.select span.ygi-man{background-position:5px -38px;}
+
+
+.select_menu ul li.select a{color:#f9f9f9; text-shadow:1px 1px 1px #494949;}
+.select_menu ul li.select b {color:#fff;}
+.select_menu ul li b {color:#DE4E0F;}
+
 /*CONNECT buttons*/
 .connect-button {background:url(img/connect-button-bg.png) 0 0 no-repeat; width:282px; height:53px; font:bold 18px Arial; padding:0 0 5px 0; text-shadow:1px 1px 1px #07487d; color:#fff; text-align:center;}
 .connect-button.b1 {background-position:0 0; padding-left: 46px;}
