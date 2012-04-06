@@ -644,7 +644,7 @@ textarea{padding:1px 2px 2px; font-size:14px; background-color:#fff;  border-top
 .listicons {overflow: hidden; zoom: 1; float: right; margin-top: 2px; margin-right: 2px; height: 14px;}
 .listicons li {float: left; margin: 0 0 0 4px;-moz-box-shadow: none !important; -webkit-box-shadow: none !important; -khtml-box-shadow: none !important; box-shadow: none !important;}
 .listicons li.onlinedot {margin-top: -2px;}
-.piclist2 li {float: left; margin-right: 14px; margin-bottom: 12px; position:relative;}
+.piclist2 li {float: left; margin-right: 8px; margin-bottom: 12px; position:relative;}
 .piclist3 li {float: left; margin-right: 21px; margin-bottom: 12px;}
 .piclist4 li {float: left; margin-right: 10px; margin-bottom: 10px;}
 .piclist5 li {float: left; margin-right: 13px; margin-bottom: 10px;}
@@ -2166,6 +2166,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .social-invite-list.verls a{margin:0; white-space:nowrap;}
 .social-invite-list a{text-decoration:none; margin-right:35px; font:bold 14px Arial;}
 .social-invite-list a span{position:relative; top:-13px; padding-left:10px;}
+.social-invite-list a:hover span{text-decoration:underline;}
 .invite-search{padding:4px; background-color:#f8fccd;}
 .invite-search input{width:353px;}
 .invite-search-list{border:1px solid #bababa;}
@@ -2352,3 +2353,9 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 
 /*usr pic rate*/
 .birdpic_rate{position:absolute; bottom:4px; right:4px;}
+
+/*usr-album style*/
+.owner-pic li{padding-bottom:20px; position:relative;}
+.owner-pic li .display-box{display:none; position:absolute; bottom:5px; left:5px;}
+.owner-pic li.hover{background:#ECF4FB;}
+.owner-pic li.hover .display-box{display:block;}
