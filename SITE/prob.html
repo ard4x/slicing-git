@@ -1,0 +1,237 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Yangutu</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf8" />
+	
+	<link rel="stylesheet" href="style.css" type="text/css" id="" />
+	<link rel="stylesheet" href="banners.css" type="text/css" id="" />
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript">
+		var timeout    = 500;
+		var closetimer = 0;
+		var ddmenuitem = 0;
+
+		function jsddm_open()
+		{  
+		   jsddm_canceltimer();
+		   jsddm_close();
+		   ddmenuitem = $(this).children('ul').css('visibility', 'visible');
+		}
+
+		function jsddm_open_click(obj)
+		{  
+		   jsddm_canceltimer();
+		   jsddm_close();
+		   ddmenuitem = $(obj).children('ul').css('visibility', 'visible');
+
+		}
+		function jsddm_close()
+		{if(ddmenuitem) ddmenuitem.css('visibility', 'hidden');}
+
+		function jsddm_timer()
+		{closetimer = window.setTimeout(jsddm_close, timeout);}
+
+		function jsddm_canceltimer()
+		{if(closetimer)
+		   {window.clearTimeout(closetimer);
+			  closetimer = null;}}
+
+		$(document).ready(function()
+		{
+		   $('#jsddm > li').bind('mouseover', jsddm_open)
+		   $('#jsddm > li').bind('mouseout',  jsddm_timer)
+		   $('.hasSubmenu').hover(function(){$(this).children('ul').css('visibility', 'visible')}, 
+								  function(){$(this).children('ul').css('visibility', 'hidden')})
+		   $('#jsddm a').bind('click', function(){
+
+			var self = $(this);
+			if (self.attr('href') == '#') {
+				var obj = self.parent('li');
+				jsddm_open_click(obj[0]);
+				return false;
+			}
+		   });
+		});
+
+		document.onclick = jsddm_close;
+	</script>
+	
+	<style>
+		#jsddm
+{	margin: 0;
+	padding: 0;
+	z-index:1000;
+}
+	
+	#jsddm li
+	{	float: left;
+		list-style: none;
+		z-index:10000;
+		font: 12px Tahoma, Arial}
+
+	#jsddm li a
+	{	display: block;
+		background: #20548E;
+		padding: 5px 12px;
+		text-decoration: none;
+		border-right: 1px solid white;
+		width: 70px;
+		color: #EAFFED;
+		white-space: nowrap}
+
+	#jsddm li a:hover
+	{	background: #1A4473}
+		
+		#jsddm li ul
+		{	margin: 0;
+			padding: 0;
+			position: absolute;
+			visibility: hidden;
+			z-index:10000;
+			border-top: 1px solid white}
+		
+		#jsddm li ul li
+		{	float: none;
+		    z-index:10000;
+			display: inline}
+		
+		#jsddm li ul li a
+		{	width: auto;
+			background: #9F1B1B}
+		
+		#jsddm li ul li a:hover
+		{	background: #7F1616}
+	</style>
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="ie7.css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="ie8.css" />
+	<![endif]-->
+</head>
+<body>
+	<ul id="jsddm">
+    <li><a href="#">Content</a>
+        <ul>
+            <li><a href="/admin/signal-templates/">Signal Templates</a></li>
+            <li><a href="/admin/email-templates/">E-mail Templates</a></li>
+            <li class="hasSubmenu"><a href="#">Static content</a>
+                <ul style="margin-top: -25px; margin-right: 0px; margin-bottom: 0px; margin-left: 142px; visibility: hidden; ">
+                    <li><a href="/admin/static-page/">Static pages</a></li>
+                    <li><a href="/admin/static-block/">Static blocks</a></li>
+                </ul>
+            </li>
+
+            <!-- dboard -->
+            <li class="hasSubmenu"><a href="/admin/dboard-admin/">Daily Talks</a>
+                <ul style="margin-top: -25px; margin-right: 0px; margin-bottom: 0px; margin-left: 142px; visibility: hidden; ">
+                    <li><a href="/admin/dboard-admin/">Manager</a></li>
+                    <li><a href="/admin/dboard-content/article/">New article</a></li>
+                    <li><a href="/admin/dboard-content/link/">New link</a></li>
+                    <li><a href="/admin/dboard-content/poll/">New poll</a></li>
+                </ul>
+            </li>
+
+            <li><a href="/admin/help-block/">Guide blocks</a></li>
+            <li class="hasSubmenu"><a href="#">Faq</a>
+                <ul style="margin-top: -25px; margin-right: 0px; margin-bottom: 0px; margin-left: 142px; visibility: hidden; ">
+                    <li><a href="/admin/help/menu/">Menu</a></li>
+                    <li><a href="/admin/help/categories/">Categories</a></li>
+                    <li><a href="/admin/help/items/">Items</a></li>
+                </ul>
+            </li>
+            <li><a href="/admin/side-bar-ads/">Side bar ads</a></li>
+            <li><a href="/admin/notifications/vq-wall-post">FQ wall post template</a></li>
+
+            <li class="hasSubmenu"><a href="#">Icebreakers</a>
+                <ul style="margin-top: -25px; margin-right: 0px; margin-bottom: 0px; margin-left: 142px; visibility: hidden; ">
+                    <li><a href="/admin/icebreakers/sections-list">Sections</a></li>
+                    <li><a href="/admin/icebreakers/questions-list">Questions</a></li>
+                </ul>
+            </li>
+            <li><a href="/admin/vv/newsletter/">Video Newsletter</a></li>
+        </ul>
+    </li>
+
+    <li><a href="#">Catalogs</a>
+         <ul style="visibility: hidden; ">
+            <li><a href="/admin/vgift">Virtual Gifts</a></li>
+            <li><a href="/admin/features/list">Traits of character</a></li>
+            <li><a href="/admin/vq/">FQ questions</a></li>
+            <li><a href="/admin/user-status/list">"I want" statuses</a></li>
+            <li><a href="/admin/interes/list">Interests</a></li>
+            <li><a href="/admin/vv/list">Video</a></li>
+            <li><a href="/admin/vv-tags/list">Video Tags</a></li>
+            <li><a href="/admin/vv-categories/list">Video Categories</a></li>
+         </ul>
+    </li>
+
+    <li><a href="#">Moderation</a>
+        <ul style="visibility: hidden; ">
+           <li><a href="/admin/user/list">Users</a>
+           </li><li><a href="/admin/user-photo/list">Photos</a></li>
+           <li><a href="/admin/photo-matrix/" target="blank">Photo Matrix</a></li>
+           <li><a href="/admin/photo-stream/">Photo Stream</a></li>
+           <li><a href="/admin/chatmessages/chatmessages">Chat messages</a></li>
+           <li><a href="/admin/chatmessages/icebreakers">Icebreakers</a></li>
+           <li><a href="/admin/report-photo-reasons/list">Photo remove reasons</a></li>
+           <li><a href="/admin/suppress-email/index">Suppress Email</a></li>
+           <li><a href="/admin/vv-recommends/list">Video Recommends</a></li>
+           <li><a href="/admin/comment-reports/list">Comment Reports</a></li>
+           <li><a href="/admin/vv-comments/list">Video Comments</a></li>
+           <li><a href="/admin/photo-comments/list">Photo Comments</a></li>
+           <li><a href="/admin/user-ethnicity/list" target="blank">Users Ethnicity</a></li>
+        </ul>
+    </li>
+
+    <li><a href="#">Spam reports</a>
+        <ul style="visibility: hidden; ">
+            <li><a href="/admin/photo-reports/">Photo reports</a></li>
+            <li><a href="/admin/spam-reports/list">User Reports</a></li>
+            <li><a href="/admin/spam-reports/auto-list">Auto Spam Reports</a></li>
+            <li><a href="/admin/bad-words/list">Badwords</a></li>
+        </ul>
+    </li>
+
+    <li><a href="#">Payments</a>
+        <ul style="visibility: hidden; ">
+            <li><a href="/admin/payments">Top ups history</a></li>
+            <li><a href="/admin/payments/paid-features">Purchase history</a></li>
+            <li><a href="/admin/fraud">Fraud attempts</a></li>
+        </ul>
+    </li>
+
+    <li><a href="#">Statistics</a>
+        <ul style="visibility: hidden; ">
+            <li><a href="/admin/statistic/">Main Statistic</a></li>
+            
+            <li><a href="/admin/actions-statistics/">Actions KPIs</a></li>
+            <li><a href="/admin/mailstats/">Mail Stats</a></li>
+            
+            
+            <li><a href="/admin/cct-statistics/">Cct statistics</a></li>
+            <li><a href="/admin/cashfriends-stats/">Cashfriends Stats</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Profile</a>
+        <ul style="visibility: hidden; ">
+            <li><a href="/admin/admin/my-email">My e-mail address</a></li>
+            <li><a href="/admin/gapon-admin/">Gapons</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Settings</a>
+        <ul style="visibility: hidden; ">
+            <li><a href="/admin/admin/list">Administrators</a></li>
+            <li><a href="/admin/admin-groups/list">Administrator Groups</a></li>
+            <li><a href="/admin/matches/">SMF info and debug</a></li>
+            <li><a href="/admin/blacklist/">Blacklisted Countries &amp; IPs</a></li>
+            <li><a href="/admin/notifications/">Broadcast announce</a></li>
+            <li><a href="/admin/dashboard">Maintenance mode</a></li>
+            <li><a href="/admin/export">Export users</a></li>
+            <li><a href="/admin/login/logout">Logout</a></li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>

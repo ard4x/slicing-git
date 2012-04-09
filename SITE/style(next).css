@@ -2355,7 +2355,9 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .birdpic_rate{position:absolute; bottom:4px; right:4px;}
 
 /*usr-album style*/
-.owner-pic li{padding-bottom:20px; position:relative;}
-.owner-pic li .display-box{display:none; position:absolute; bottom:5px; left:5px;}
+.owner-pic li{padding-bottom:25px; position:relative;}
+.owner-pic li .display-box{display:none; position:absolute; bottom:1px; left:5px; width:95%;}
+.display-box .label{float:left; margin:5px 0;}
+.display-box li{float:none;}
 .owner-pic li.hover{background:#ECF4FB;}
 .owner-pic li.hover .display-box{display:block;}
