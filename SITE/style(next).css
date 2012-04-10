@@ -2361,3 +2361,8 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .display-box li{float:none;}
 .owner-pic li.hover{background:#ECF4FB;}
 .owner-pic li.hover .display-box{display:block;}
+
+/*services.html*/
+.coints-info{background:url(img/coints-ico.png) 0 0 no-repeat; padding-left:60px; min-height:45px;}
+*.services-preview{width:130px; display:inline-block; vertical-align:top;}
+*html .services-preview{display:inline;}
