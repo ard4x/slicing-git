@@ -82,6 +82,7 @@ input[type="submit"]:focus, input[type="button"]:focus   { outline : none;}
 
 .button_green.disabled,.button_blue.disabled,.button_black.disabled,.button_red.disabled,.button_orange.disabled,.button_pink.disabled{background-position: 0 -1608px; cursor:default; color:#fff; text-shadow:0 1px 1px #292929;}
 .button_green.disabled.large,.button_blue.disabled.large,.button_black.disabled.large,.button_red.disabled.large,.button_orange.disabled.large,.button_pink.disabled.large{background-position: 0 -3749px; cursor:default; color:#fff; text-shadow:0 1px 1px #292929;}
+.button_green.disabled.mini,.button_blue.disabled.mini,.button_black.disabled.mini,.button_red.disabled.mini,.button_orange.disabled.mini,.button_pink.disabled.mini{background-position: 0 -5126px; cursor:default; color:#fff; text-shadow:0 1px 1px #292929;}
 
 .button_blue.large,.button_green.large,.button_black.large,.button_pink.large,.button_red.large,.button_orange.large{height:44px; font:bold 18px/13px Arial;}
 .button_blue.small,.button_ftf.small,.button_green.small,.button_black.small,.button_pink.small,.button_red.small,.button_orange.small{height:35px; font:bold 14px/13px Arial;}
@@ -120,6 +121,9 @@ a.btn.mini, span.btn.mini,.btn.mini .btn-m  {height:28px;}
 .btn.large.disabled,.btn.large.disabled:hover,.btn.large.disabled:focus,.btn.large.disabled.focus {background-position:100% -3794px;}
 .btn.large.disabled .btn-lc,.btn.large.disabled:hover .btn-lc,.btn.large.disabled:focus .btn-lc,.btn.large.disabled.focus .btn-lc {background-position:0 -3704px;}
 .btn.large.disabled .btn-m ,.btn.large.disabled:hover .btn-m,.btn.large.disabled:focus .btn-m ,.btn.large.disabled.focus .btn-m {background-position:0 -3749px;}
+.btn.mini.disabled,.btn.mini.disabled:hover,.btn.mini.disabled:focus,.btn.mini.disabled.focus {background-position:100% -5154px;}
+.btn.mini.disabled .btn-lc,.btn.mini.disabled:hover .btn-lc,.btn.mini.disabled:focus .btn-lc,.btn.mini.disabled.focus .btn-lc {background-position:0 -5098px;}
+.btn.mini.disabled .btn-m ,.btn.mini.disabled:hover .btn-m,.btn.mini.disabled:focus .btn-m ,.btn.mini.disabled.focus .btn-m {background-position:0 -5126px;}
 
 .btn-pink {background: url(img/buttons-bg.png) 100% -70px no-repeat; text-shadow:0 1px 1px #504292;}
 .btn-pink .btn-lc {background: url(img/buttons-bg.png) 0 0 no-repeat;}
