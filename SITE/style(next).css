@@ -2364,5 +2364,4 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 
 /*services.html*/
 .coints-info{background:url(img/coints-ico.png) 0 0 no-repeat; padding-left:60px; min-height:45px;}
-*.services-preview{width:130px; display:inline-block; vertical-align:top;}
-*html .services-preview{display:inline;}
+.services-preview{width:130px; display:inline-block; *display:inline; vertical-align:top; zoom:1; position:relative;}
