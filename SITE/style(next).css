@@ -2365,3 +2365,12 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 /*services.html*/
 .coints-info{background:url(img/coints-ico.png) 0 0 no-repeat; padding-left:60px; min-height:45px;}
 .services-preview{width:130px; display:inline-block; *display:inline; vertical-align:top; zoom:1; position:relative;}
+
+/*main-coints.html*/
+.ver-faq{background-color:#e7eff5; padding:15px; border:1px solid #d9e4ec; border-top:1px solid #bfcedb; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}
+.check-list li{margin:5px 0 10px; padding:0 0 3px 25px; background:url(img/check-ico.png) 0 50% no-repeat;}
+.check-list li.true{background-position:0 0;}
+.check-list li.false{background-position:0 100%;}
+
+.coints-info2{background:url(img/coints-ico2.png) 0 50% no-repeat; padding:10px 0 10px 45px;}
+.coints-info3{background:url(img/coints-ico3.png) 0 35% no-repeat; padding:10px 0 10px 35px; height:25px; line-height:14px;}
