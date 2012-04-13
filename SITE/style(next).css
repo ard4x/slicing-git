@@ -2345,9 +2345,12 @@ body.lang-ru .top-offer{background:url(img/top-offer-rus.png) 0 0 no-repeat;}
 a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:absolute; width:87px; height:87px; display:block; left:50%; top:50%; margin:-43px 0 0 -43px;}
 
 /**/
-.left-scroll-bar,.right-scroll-bar{position:absolute; top:80px;}
-.left-scroll-bar a,.right-scroll-bar a{position:absolute; width:100%; height:100%; background-color:#e2e2e2;}
-.left-scroll-bar a:hover,.right-scroll-bar a:hover{position:absolute; width:100%; height:100%; background-color:#000;}
+.left-scroll-bar,.right-scroll-bar{position:fixed; top:80px;}
+.left-scroll-bar a,.right-scroll-bar a{position:absolute; width:100%; height:100%; background-color:transparent;}
+.left-scroll-bar a span,.right-scroll-bar a span{position:absolute; width:20%; height:100%; color:#fff; background:url(img/scroll-box-bg.png) 0 0 repeat; top:0; display:none; font:11px/22px Arial;}
+.left-scroll-bar a span{left:0; text-align:right; padding-right:10px;}
+.right-scroll-bar a span{right:0; text-align:left; padding-left:10px;}
+.left-scroll-bar a:hover span,.right-scroll-bar a:hover span{display:block;}
 .left-scroll-bar{left:10px;}
 .right-scroll-bar{right:10px;}
 
@@ -2374,3 +2377,16 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 
 .coints-info2{background:url(img/coints-ico2.png) 0 50% no-repeat; padding:10px 0 10px 45px;}
 .coints-info3{background:url(img/coints-ico3.png) 0 35% no-repeat; padding:10px 0 10px 35px; height:25px; line-height:14px;}
+
+/*patterns*/
+.pattern.theme-1 .content{background:url(img/pattern/pattern_01.png) 0 0 repeat;}
+.pattern.theme-2 .content{background:url(img/pattern/pattern_02.png) 0 0 repeat;}
+.pattern.theme-3 .content{background:url(img/pattern/pattern_03.jpg) 0 0 repeat;}
+.pattern.theme-4 .content{background:url(img/pattern/pattern_04.png) 0 0 repeat;}
+.pattern.theme-5 .content{background:url(img/pattern/pattern_05.png) 0 0 repeat;}
+.pattern.theme-6 .content{background:url(img/pattern/pattern_06.png) 0 0 repeat;}
+.pattern.theme-7 .content{background:url(img/pattern/pattern_07.png) 0 0 repeat;}
+.pattern.theme-8 .content{background:url(img/pattern/pattern_08.png) 0 0 repeat;}
+.pattern.theme-9 .content{background:url(img/pattern/pattern_09.png) 0 0 repeat;}
+.pattern.theme-10 .content{background:url(img/pattern/pattern_10.png) 0 0 repeat;}
+.pattern .content_inn{background:url(img/content_inn_bg.png) 0 0 repeat; padding:0 10px ;}
