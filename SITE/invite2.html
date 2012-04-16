@@ -8,14 +8,23 @@
 	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
 	<script type="text/javascript">
 		$(function(){
-			$('.inviteLink').bind('click',function (e) {
-				e.preventDefault();
-				$('.yangutu_invite_opt').slideUp();
+			$('.inviteLink').bind('click',function () {
+				$('.yangutu_invite_opt').hide(200);
 				$('.yangutu_invite_choise').removeClass('active');
-				$(this).next().slideDown();
-				$(this).parent('.yangutu_invite_choise').addClass('active');
+				$(this).closest('.yangutu_invite_choise').toggleClass('active');
+				$(this).next()[!$(this).next().is(':visible') ? 'show' : 'hide'](200);
+				return false;
 			});
 		});
+		//$(function(){
+		//	$('.inviteLink').bind('click',function (e) {
+		//		e.preventDefault();
+		//		$('.yangutu_invite_opt').slideUp();
+		//		$('.yangutu_invite_choise').removeClass('active');
+		//		$(this).next().slideDown();
+		//		$(this).parent('.yangutu_invite_choise').addClass('active');
+		//	});
+		//});
 	</script>
 </head>
 <body>
