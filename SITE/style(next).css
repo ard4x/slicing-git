@@ -2405,3 +2405,5 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .profile-photo-info .leftTxt{width:80px; color:#fff; text-shadow:1px 1px 1px #504F4F; float:left;}
 
 .mbox{background-color:#fffce2; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}
+
+.mbox.attention,.lookingbx.attention{border:1px solid red;}
