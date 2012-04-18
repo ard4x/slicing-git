@@ -623,7 +623,7 @@ textarea{padding:1px 2px 2px; font-size:14px; background-color:#fff;  border-top
 .yh a:hover {background: url(img/accounticons.png) -71px -32px no-repeat;}
 .aol a:hover {background: url(img/accounticons.png) -107px -33px no-repeat;}
 
-.my_brdpic4 {background: url(img/226-bg.png) 0 0 repeat-y; width: 226px; max-height: 296px; position: relative;}
+.my_brdpic4 {background: url(img/226-bg.png) 0 0 repeat-y; width: 226px; position: relative;}
 	.my_brdpic_top {background: url(img/226-Top.png) 0 2px no-repeat; width: 226px; height: 6px;}
 	.my_brdpic_bottom {background: url(img/226-Bottom.png) 0 -2px no-repeat; width: 226px; height: 6px; }
 
@@ -2370,7 +2370,8 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .services-preview{width:130px; display:inline-block; *display:inline; vertical-align:top; zoom:1; position:relative;}
 
 /*main-coints.html*/
-.ver-faq{background-color:#e7eff5; padding:15px; border:1px solid #d9e4ec; border-top:1px solid #bfcedb; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}
+.ver-faq,.lookingbx{background-color:#e7eff5; padding:15px; border:1px solid #d9e4ec; border-top:1px solid #bfcedb; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}
+.lookingbx.low-fade{background:url(img/low-fade.png) 0 0 repeat-x; border:none;}
 .check-list li{margin:5px 0 10px; padding:0 0 3px 25px; background:url(img/check-ico.png) 0 50% no-repeat;}
 .check-list li.true{background-position:0 0;}
 .check-list li.false{background-position:0 100%;}
@@ -2392,3 +2393,15 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .pattern .content_inn{background:url(img/content_inn_bg.png) 0 0 repeat; padding-left:10px; padding-right:10px;}
 .pattern  .content_sr{background:url(img/content-sr.png) 100% 0 repeat-y; padding-right:8px;}
 .pattern  .content_sl{background:url(img/content-sl.png) 0 0 repeat-y; width:978px; padding-left:8px; margin:0 auto;}
+
+.lookingbx .looking_usr{margin:0 4px;}
+.looking_usr{margin:0 5px; float:left;}
+.renpic{background:url(img/80x80bg.png) 0 0 no-repeat; padding:4px 6px 6px 4px; }
+.renpic .inner{overflow:hidden; height:81px; width:81px;}
+.renpic .inner img{width:100%;}
+
+.profile-photo-info{width:205px; margin:-4px 5px 0; padding-bottom:2px; margin-top:-5px;}
+.profile-photo-info .inner{padding:5px; background:url(img/profile-photo-info-bg.jpg) 0 50% repeat-x;}
+.profile-photo-info .leftTxt{width:80px; color:#fff; text-shadow:1px 1px 1px #504F4F; float:left;}
+
+.mbox{background-color:#fffce2; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}
