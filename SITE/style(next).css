@@ -2409,5 +2409,6 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .mbox.attention,.lookingbx.attention{border:1px solid red;}
 
 /*popups-vip*/
-.list-2cells{width:49%; display:inline-block; *display:inline; *position:relative; *zoom:1; vertical-align:top;}
-.list-2cells .inner{padding:5px 10px 0 0!important;}
+.list-2cells{width:49%; display:inline-block; *display:inline; position:relative; *zoom:1; vertical-align:top;}
+.list-2cells img{position:absolute; left:0; top:5px;}
+.list-2cells .inner{padding:5px 10px 0 50px!important;}
