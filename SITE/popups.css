@@ -60,3 +60,7 @@
 .payment-box-content input {height:40px; color:#3c4359; font:36px Arial;}
 .payment-box-content input.form-1 {width:280px;}
 .payment-box-content input.form-2 {width:85px;}
+
+/*error*/
+.error-ico{background:url(img/error-ico-low.png) 15px 50% no-repeat; padding-left:80px!important;}
+.error-ico.hight{background:url(img/error-ico-hight.png) 15px 50% no-repeat;}
