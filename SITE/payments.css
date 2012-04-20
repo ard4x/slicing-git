@@ -65,3 +65,5 @@
 a#service_conditions { text-decoration:none; border-bottom:1px dashed #999}
 div.service_conditions {font:14px/18px Arial; padding: 0px 20px 0px 45px;}
 #payment-methods li input[type="radio"]{margin-left:0px;}
+
+.rapidSSL{position:absolute; right:0; bottom:0;}
