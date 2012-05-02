@@ -2387,19 +2387,21 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .coints-info3{background:url(img/coints-ico3.png) 0 35% no-repeat; padding:10px 0 10px 35px; height:25px; line-height:14px;}
 
 /*patterns*/
-.pattern.theme-1 .content{background:url(img/pattern/pattern_01.png) 0 0 repeat;}
-.pattern.theme-2 .content{background:url(img/pattern/pattern_02.png) 0 0 repeat;}
-.pattern.theme-3 .content{background:url(img/pattern/pattern_03.jpg) 0 0 repeat;}
-.pattern.theme-4 .content{background:url(img/pattern/pattern_04.png) 0 0 repeat;}
-.pattern.theme-5 .content{background:url(img/pattern/pattern_05.png) 0 0 repeat;}
-.pattern.theme-6 .content{background:url(img/pattern/pattern_06.png) 0 0 repeat;}
-.pattern.theme-7 .content{background:url(img/pattern/pattern_07.png) 0 0 repeat;}
-.pattern.theme-8 .content{background:url(img/pattern/pattern_08.png) 0 0 repeat;}
-.pattern.theme-9 .content{background:url(img/pattern/pattern_09.png) 0 0 repeat;}
-.pattern.theme-10 .content{background:url(img/pattern/pattern_10.png) 0 0 repeat;}
+.pattern.theme-1 .content,.th-repeat-1{background:url(img/pattern/pattern_01.png) 0 0 repeat;}
+.pattern.theme-2 .content,.th-repeat-2{background:url(img/pattern/pattern_02.png) 0 0 repeat;}
+.pattern.theme-3 .content,.th-repeat-3{background:url(img/pattern/pattern_03.jpg) 0 0 repeat;}
+.pattern.theme-4 .content,.th-repeat-4{background:url(img/pattern/pattern_04.png) 0 0 repeat;}
+.pattern.theme-5 .content,.th-repeat-5{background:url(img/pattern/pattern_05.png) 0 0 repeat;}
+.pattern.theme-6 .content,.th-repeat-6{background:url(img/pattern/pattern_06.png) 0 0 repeat;}
+.pattern.theme-7 .content,.th-repeat-7{background:url(img/pattern/pattern_07.png) 0 0 repeat;}
+.pattern.theme-8 .content,.th-repeat-8{background:url(img/pattern/pattern_08.png) 0 0 repeat;}
+.pattern.theme-9 .content,.th-repeat-9{background:url(img/pattern/pattern_09.png) 0 0 repeat;}
+.pattern.theme-10 .content,.th-repeat-10{background:url(img/pattern/pattern_10.png) 0 0 repeat;}
 .pattern .content_inn{background:url(img/content_inn_bg.png) 0 0 repeat; padding-left:10px; padding-right:10px;}
 .pattern  .content_sr{background:url(img/content-sr.png) 100% 0 repeat-y; padding-right:8px;}
 .pattern  .content_sl{background:url(img/content-sl.png) 0 0 repeat-y; width:978px; padding-left:8px; margin:0 auto;}
+.found_usr.pattern  {padding:5px; width:355px;}
+.found_usr .th-inner {padding:4px; background:url(img/found-usr-pattern-bg.png) 0 0 repeat; border:1px solid #fff; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}
 
 .lookingbx .looking_usr{margin:0 4px;}
 .looking_usr{margin:0 5px; float:left;}
