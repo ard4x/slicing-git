@@ -9,10 +9,12 @@
 	
 	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
     <script src="js/jquery.stylish-select.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/gallery.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('.sSelect').sSelect();
 			$('.helpinfo').hover(function(){$(this).next('.ya_mbx_help').show();},function(){$(this).next('.ya_mbx_help').hide();})
+			$('ul.gallery').prettyGallery({itemsPerPage:4,navigation:'both',animationSpeed:'fast'});
 		});
 	</script>
 	<!--[if IE 7]>
@@ -44,6 +46,104 @@
 				</div>
 				<div class="lookingbx tcenter">
 					<input type="button" value="Купить сейчас" class="button_green small" />
+				</div>
+			</div>
+		</div>
+		<div class="yp_bot"><div class="rubber_bot_right"></div></div>
+	</div>
+	
+	<div style="position: absolute; top: 260px; left: 20px;" class="yangutu_popap fixWidth570 rubber ng">
+		<a class="popClose" href=""><img src="./img/close_ic.png" class="cls4" alt=""></a>
+		<div class="yp_top"><div class="rubber_top_right"></div></div>
+		<div class="yp_content_left">
+			<div class="yp_content_right">
+				<div class="inner">
+					<h2>Выберите оформление для своей анкеты</h2>
+					<p class="gray">Мы собрали 10 видов оформления вашего профиля. Это стоит поробовать ;)</p>
+					
+					<div class="indentTop10">
+						<ul class="gallery">
+							<li>
+								<div class="renpic">
+									<div class="inner">
+										<a href=""><img alt="" src="./img/pattern/pattern_01_prev.png" ></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="renpic">
+									<div class="inner">
+										<a href=""><img alt="" src="./img/pattern/pattern_02_prev.png" ></a>
+									</div>
+								</div>
+							</li>
+							<li class="selected">
+								<div class="renpic">
+									<div class="inner">
+										<a href=""><img alt="" src="./img/pattern/pattern_03_prev.jpg" ></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="renpic">
+									<div class="inner">
+										<a href=""><img alt="" src="./img/pattern/pattern_04_prev.png" ></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="renpic">
+									<div class="inner">
+										<a href=""><img alt="" src="./img/pattern/pattern_05_prev.png" ></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="renpic">
+									<div class="inner">
+										<a href=""><img alt="" src="./img/pattern/pattern_06_prev.png" ></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="renpic">
+									<div class="inner">
+										<a href=""><img alt="" src="./img/pattern/pattern_07_prev.png" ></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="renpic">
+									<div class="inner">
+										<a href=""><img alt="" src="./img/pattern/pattern_08_prev.png" ></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="renpic">
+									<div class="inner">
+										<a href=""><img alt="" src="./img/pattern/pattern_09_prev.png" ></a>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="renpic">
+									<div class="inner">
+										<a href=""><img alt="" src="./img/pattern/pattern_10_prev.png" ></a>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="clr2"></div>
+					</div>
+					<div class="indentTop10">
+						<a href="">Стандартное оформление</a>
+					</div>
+					<div class="clr2"></div>
+				</div>
+				<div class="lookingbx tcenter">
+					<input type="button" value="Выбрать" class="button_green small indentRight10" />
+					<a href="">Спасибо, в следующий раз</a>
 				</div>
 			</div>
 		</div>

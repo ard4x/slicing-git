@@ -64,3 +64,16 @@
 /*error*/
 .error-ico{background:url(img/error-ico-low.png) 15px 50% no-repeat; padding-left:80px!important;}
 .error-ico.hight{background:url(img/error-ico-hight.png) 15px 50% no-repeat;}
+
+/*vip gallery*/
+.yangutu_popap.fixWidth570  .gallery{width:425px!important;}
+.yangutu_popap .renpic .inner{padding:0!important;}
+.yangutu_popap .gallery li{width:105px; height:95px; padding-top:5px;}
+.yangutu_popap .gallery .renpic{margin:0 auto; width:82px;}
+.yangutu_popap .gallery .selected{background-color:#ecf4fb; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px;}
+	.pg_paging{float:left; margin: 30px 5px 0;}
+	.pg_paging a{text-decoration:none; display:block; background:url(img/renpic_navi.png) 0 0 no-repeat; width:32px; height:32px;}
+	.pg_previous a.disabled{background-position:0 100%; cursor:default;}
+	.pg_next a.disabled{background-position:100% 100%; cursor:default;}
+	.pg_previous a{background-position:0 0;}
+	.pg_next a{background-position:100% 0;}
