@@ -2429,3 +2429,6 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .usr-progress-line{background:url(img/user-progress-line-bg.png) 0 0 no-repeat; padding-top:38px;}
 .usr-progress-line .upl-box{margin-right:25px; float:left; position:relative;}
 .usr-progress-line .upl-box img{position:absolute; top:-22px; left:-5px;}
+
+/**/
+#photo-box .photo{background-color:#000;}

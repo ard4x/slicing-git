@@ -2253,14 +2253,3 @@ a.new_event:hover{text-decoration:none;}
 .brdpic.rubber img{margin:0 0 0 5px; padding:0; width:116px; display:block;}
 .brdpic-top{background: url(img/126x166rt.png) 0 0 no-repeat; height:4px;}
 .brdpic-bot{background: url(img/126x166rb.png) 0 0 no-repeat; height:6px;}
-
-/*photo rate*/
-.photo-rate{width:220px; margin:0 auto; position:relative; margin-top:10px; padding-bottom:15px;}
-.photo-rate p{position:absolute; width:150px; bottom:-18px; left:50%; margin-left:-75px; text-align:center; font:10px Arial; color:#fff; padding:0;}
-.photo-rate a{text-align:center; float:left; color:#000; margin-right:10px; position:relative;}
-.photo-rate span{background:url(img/photo-rate-ys.png) 0 0 no-repeat; height:32px; width:32px; display:block; font:bold 11px/34px Arial;}
-.photo-rate .bigstar{padding:15px; position:absolute; right:-20px; top:-22px;}
-.photo-rate .bigstar span{background:url(img/photo-rate-rb.png) 0 0 no-repeat; height:46px; width:49px; display:block; font:bold 18px/49px Arial; color:#fff; text-shadow:-1px 1px 1px #bc0208; letter-spacing:-1px;}
-.photo-rate .bigstar p{bottom:0px;}
-.photo-rate a:hover{text-decoration:none;}
-.photo-rate a:hover.bigstar{background:url(img/star-shine.png) 50% 50% no-repeat;}
