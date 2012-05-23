@@ -908,7 +908,6 @@ a.pluscount2:hover {color:#ffffff; text-decoration: none;}
 }
 .selectedTxt {padding-right: 20px; text-align:left;}
 @media all and (-webkit-min-device-pixel-ratio:0) {
-	.selectedTxt {padding-right: 20px;text-align: left;float: left;width: 245px;	}
 	.c_left .lookingbx .selectedTxt {width: 123px!important;}
 	#extended .selectedTxt {width: 154px!important;}
 	#age_from_sc .selectedTxt,#age_to_sc .selectedTxt {width:30px!important;}
@@ -2378,7 +2377,7 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .services-preview{width:130px; display:inline-block; *display:inline; vertical-align:top; zoom:1; position:relative;}
 
 /*main-coints.html*/
-.ver-faq,.lookingbx{background-color:#e7eff5; padding:15px; border:1px solid #d9e4ec; border-top:1px solid #bfcedb; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}
+.ver-faq,.lookingbx{background-color:#e7eff5; padding:15px; border:1px solid #d9e4ec; border-top:1px solid #bfcedb; zoom:1; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}
 .lookingbx.low-fade{background:url(img/low-fade.png) 0 0 repeat-x; border:none;}
 .check-list li{margin:5px 0 10px; padding:0 0 3px 25px; background:url(img/check-ico.png) 0 50% no-repeat;}
 .check-list li.true{background-position:0 0;}
@@ -2433,3 +2432,94 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 
 /**/
 #photo-box .photo{background-color:#000;}
+
+
+
+/*travel style*/
+
+.dg_color{color:#575757;}
+.or_color{color:#f48239;}
+.gr_color{color:#65a62b;}
+.indentLeft15{margin-left:15px;}
+.flWidth50{width:50%;}
+.flWidth45{width:45%;}
+.fixWidth80{width:80px;}
+.fixWidth335{width:335px;}
+.fixWidth520{width:520px;}
+.newListSelected{background:#fff url(img/travel/newListSelect.png) 100% 0 no-repeat;} /*tb new stype for all selecters*/
+.selectedTxt{white-space: nowrap; text-overflow: ellipsis; display: block; overflow: hidden;} /*tb new stype for all selecters*/
+.helpbx.c7{background-color:#edf9e3;}
+
+.tb_logotype{background:url(img/travel/tb_logo_bg.png) 0 0 no-repeat; height:250px; margin-top:-15px; *margin-top:-10px; padding-left:40px; text-align:center;}
+.tb_logotype h3{color:#fff; text-shadow:1px 1px 3px #597f9a; padding-top:95px;}
+.tb_piclist {margin-left:-15px; position:relative; left:15px; zoom:1;}
+.tb_piclist .brdpic6{margin:5px 15px 5px 0;}
+.tb_info{position:relative; padding-left:35%; min-height:30px;}
+.tb_info.t_done, .tb_info.t_done .img{color:#b7b7b7;}
+.tb_info .collect{background:url(img/travel/tb_done.png) 0 0 no-repeat; padding-left:20px; color:#999; *display:inline;}
+.tb_info img,.tb_info .img{position:absolute; left:0; top:0; max-width:30%; max-height:90px; font:bold 22px Arial;}
+
+.piclist.tb_style{position:relative; left:10px; margin-left:-10px; zoom:1;}
+.piclist.tb_style.tb_guide .found_usr.selected{background-color:#fffce2; border-color:#fdaa59;}
+.piclist.tb_style.tb_guide .found_usr.selected .tb_foundrate{background-color:#fdaa59; color:#fff;}
+.piclist.tb_style.tb_guide .found_usr.selected .tb_foundrate .title{color:#762100;}
+.piclist.tb_style.tb_guide .found_usr .tb_foundrate{zoom:1; *width:50px; *height:45px; z-index:999; text-align:center; color:#000; font:bold 26px Arial; padding:5px 10px; position:absolute; right:0; top:30px; border-radius:8px 0 0 8px; -moz-border-radius:8px 0 0 8px; -webkit-border-radius:8px 0 0 8px; -khtml-border-radius:8px 0 0 8px;}
+.piclist.tb_style.tb_guide .found_usr .tb_foundrate .title{font:bold 12px Arial; color:#999999;}
+.piclist.tb_style .found_usr.selected{background-color:#ecf4fb; border-color:#6ebeed; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; -khtml-border-radius:8px;}
+.piclist.tb_style .found_usr{width:330px; margin:5px 10px 5px 0; border:4px solid transparent; background-color:transparent; zoom:1; float:none; display:inline;}
+
+.fixWidth815 .c_mid4{width:540px;}
+.fixWidth815 .c_mid4 textarea{width:505px!important;}
+.tb_addfav{background:url(img/travel/tb_favorit.png) 0 50% no-repeat; padding:10px 0 10px 30px; position:relative; left:20px; top:10px;}
+.tb_style .rtit{background:url(img/travel/tb_rtit.png) 0 0 repeat-x; font:bold 12px Arial; color:#fff;}
+
+.tb_rateinfo{background-color:#fff; border:1px solid #fdaa59; padding:3px; *padding-bottom:0; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; -khtml-border-radius:8px;}
+.tb_rateinfo .tb_ratebx{background:url(img/travel/tb_ratebx.png) 0 0 repeat-x; float:left; height:64px; width:125px; font:bold 30px Arial; color:#fff; text-align:center; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; -khtml-border-radius:8px;}
+.tb_rateinfo .tb_ratebx .title{color:#762100; font:bold 14px Arial; text-shadow:1px 1px 1px #f9a371; padding-top:10px;}
+.tb_rateinfo .tb_ratebox{width:23%; float:left; margin:0 3px; text-align:center; color:#666666; font-size:11px;}
+
+.tb_contenthr{margin:10px 0; border-top:1px solid #FDAA59;}
+.tb_contenthr div{border-bottom:1px solid #fff;}
+.tb_whitebx{background-color:#fff; border:1px solid #fdaa59; padding:10px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; -khtml-border-radius:4px;}
+
+.tb_usrcard{padding-left:65px; position:relative; min-height:80px;}
+.tb_usrcard .brdpic8{position:absolute; left:0; top:0;}
+
+.helpbx .tb_rateinfo{background-color:transparent; border:none;}
+
+.tb_logotype2{background:url(img/travel/tb_logo2_bg.png) 0 0 no-repeat; height:219px; padding-left:475px; text-align:left; color:#5f6975; font:18px Arial;}
+.tb_logotype3{background:url(img/travel/tb_logo3_bg.png) 0 0 no-repeat; height:219px; padding-left:475px; text-align:left; color:#5f6975; font:18px Arial;}
+.tb_logotype2 h1,.tb_logotype3 h1{color:#333333; padding-top:50px;}
+
+.tb_form .tb_form_content {margin-bottom:10px; padding-top:5px;}
+.tb_form .tb_form_content .in-select{position:absolute; right:0; top:0;}
+.tb_form .tb_form_content .label{width:120px; margin-right:15px; float:left; font:12px Arial; color:#333333;}
+.tb_form .tb_form_content .description{width:380px; float:left; *float:none; position:relative; *height:auto!important; zoom:1;}
+.c_mid4 .tb_form .tb_form_content .description{width:320px;}
+.c_mid4 .tb_form .tb_form_content .newText{width:315px!important;}
+.tb_form .tb_form_content .description .inner{padding-bottom:10px; position:relative; *height:auto!important;  zoom:1; overflow:visible;}
+.tb_form .tb_form_content .list {display: block; float: left; white-space: nowrap; width: 50%; text-overflow: ellipsis; overflow: hidden;}
+.tb_form .tb_form_content .newText {width:380px!important; min-height:150px;}
+.tb_infocheck {float:left; margin:15px 10px;}
+.tb_mark {float:left; padding-left:50px; background:url(img/travel/tb_mark_ico.png) 0 0 no-repeat; width:70%;}
+.tb_mark_yellow {float:left; padding-left:70px; background:url(img/travel/tb_mark_yellow_ico.png) 0 0 no-repeat; width:300px;}
+.tb_form .tb_form_content .clrow {width:15px; height:16px; position:absolute; left:-20px; top:3px; *float:left;}
+.tb_form .tb_form_content .errorlog {padding-left:7px; background:url(img/travel/errorlog_arrow.png) 0 50% no-repeat; position:absolute; left:420px; top:0;}
+.tb_form .tb_form_content .errorlog .content{min-height:20px; padding:10px; color:#666666; font:11px Arial; background-color:#fff; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; -khtml-border-radius:8px; width:110px;}
+
+.labelCount{background:url(img/travel/labelCount_bg.png) 0 0 repeat-x; padding:5px 10px; color:#fff; font:bold 14px Arial; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; -khtml-border-radius:4px; }
+
+.horor{margin:50px 0; border-top:1px solid #dce1e8; position:relative;}
+.horor img{position:absolute; top:-20px; left:10%;}
+
+.list-view3 li{display:inline-block; *display:inline; vertical-align:top; width:30%; padding-right:2%; padding-bottom:10px;}
+.list-view4 li{display:inline-block; *display:inline; vertical-align:top; width:23%; padding-right:1%; padding-bottom:10px;}
+
+.tb_sico1,.tb_sico2,.tb_sico3,.tb_sico4,
+.tb_sico5,.tb_sico6,.tb_sico7{background:url(img/travel/tb_services.png) 0 0 no-repeat; padding-left:40px; min-height:30px; *height:30px;}
+.tb_sico2{background-position:0 -55px;}
+.tb_sico3{background-position:0 -110px;}
+.tb_sico4{background-position:0 -165px;}
+.tb_sico5{background-position:0 -226px;}
+.tb_sico6{background-position:0 -275px;}
+.tb_sico7{background-position:0 -330px;}

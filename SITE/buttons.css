@@ -316,10 +316,12 @@ input[type="button"].cl-right{border-radius:6px 0 0 6px; -webkit-border-radius:6
 .select_menu ul li span{display:block; height:31px; padding:0 10px; font:14px/30px Arial; border-right:1px solid #c3c2c2;}
 .select_menu ul li.last span{border-right:none;}
 
-
 .select_menu ul li.select a{color:#f9f9f9; text-shadow:1px 1px 1px #494949;}
 .select_menu ul li.select b {color:#fff;}
 .select_menu ul li b {color:#DE4E0F;}
+
+.select_menu .double li{width:50%; text-align:center;}
+
 
 /*Small select from navigation-bg*/
 .select_menu.small ul li a{height:24px; display:block; white-space:nowrap; padding-bottom:0px; background:url(img/paginator-bg.png) -3px 0 no-repeat; color:#494949; text-shadow:1px 1px 1px #f9f9f9;}
@@ -373,3 +375,10 @@ input[type="button"].cl-right{border-radius:6px 0 0 6px; -webkit-border-radius:6
 .btn-ico.v4 .btn-txt{background-position:0 -124px;}
 .btn-ico.v5 .btn-txt{background-position:0 -168px;}
 .btn-ico.v6 .btn-txt{background-position:0 -210px;}
+
+.select_menu.small.profile_in {
+    padding: 0px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
