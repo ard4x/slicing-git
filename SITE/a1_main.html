@@ -24,15 +24,14 @@
                     e.pageY = e.clientY + (html && html.scrollTop || body && body.scrollTop || 0) - (html.clientTop || 0)
                 }
                 var t = e.target || e.srcElement,
-                    tUsr = $(t).parents('div').hasClass('looking_usr'),
+                    tUsr = $(t).data('type'),
                     winHalf = $(window).width()/2,
                     pUsr = $('#rendez-usr-viewer'),
                     xPosRight = pUsr.width();
-                    
-                pUsr.hide();
-                
-                if(tUsr == true){
-                    $('.looking_usr a').live('click', function(){ return false; })                    
+                    console.log(tUsr);
+                                    
+                if(tUsr == 'x-ren'){
+                    $(t).closest('a').one('click', function(){ return false; })                    
                     if(e.pageX < winHalf){
                         pUsr.css({
                             'top': e.pageY,
@@ -242,7 +241,7 @@
 					<div class="looking_usr">
 						<div class="renpic">
 							<div class="inner">
-								<a href=""><img src="photo/famale/img_1.jpg" alt="" /></a>
+								<a href=""><img src="photo/famale/img_1.jpg" alt="" data-type="x-ren" /></a>
 							</div>
 						</div>
 						<div class="clear"></div>
@@ -251,7 +250,7 @@
 					<div class="looking_usr">
 						<div class="renpic">
 							<div class="inner">
-								<a href=""><img src="photo/famale/img_2.jpg" alt="" /></a>
+								<a href=""><img src="photo/famale/img_2.jpg" alt="" data-type="x-ren"  /></a>
 							</div>
 						</div>
 						<div class="clear"></div>
@@ -260,7 +259,7 @@
 					<div class="looking_usr">
 						<div class="renpic">
 							<div class="inner">
-								<a href=""><img src="photo/famale/img_3.jpg" alt="" /></a>
+								<a href=""><img src="photo/famale/img_3.jpg" alt="" data-type="x-ren"  /></a>
 							</div>
 						</div>
 						<div class="clear"></div>
@@ -269,7 +268,7 @@
 					<div class="looking_usr">
 						<div class="renpic">
 							<div class="inner">
-								<a href=""><img src="photo/famale/img_4.jpg" alt="" /></a>
+								<a href=""><img src="photo/famale/img_4.jpg" alt="" data-type="x-ren"  /></a>
 							</div>
 						</div>
 						<div class="clear"></div>
@@ -278,7 +277,7 @@
 					<div class="looking_usr">
 						<div class="renpic">
 							<div class="inner">
-							<a href=""><img src="photo/famale/img_5.jpg" alt="" /></a>
+							<a href=""><img src="photo/famale/img_5.jpg" alt="" data-type="x-ren"  /></a>
 							</div>
 						</div>
 						<div class="clear"></div>
@@ -287,7 +286,7 @@
 					<div class="looking_usr">
 						<div class="renpic">
 							<div class="inner">
-								<a href=""><img src="photo/famale/img_6.jpg" alt="" /></a>
+								<a href=""><img src="photo/famale/img_6.jpg" alt="" data-type="x-ren"  /></a>
 							</div>
 						</div>
 						<div class="clear"></div>
@@ -296,7 +295,7 @@
 					<div class="looking_usr">
 						<div class="renpic">
 							<div class="inner">
-								<a href=""><img src="photo/famale/img_7.jpg" alt="" /></a>
+								<a href=""><img src="photo/famale/img_7.jpg" alt="" data-type="x-ren"  /></a>
 							</div>
 						</div>
 						<div class="clear"></div>
@@ -305,7 +304,7 @@
 					<div class="looking_usr">
 						<div class="renpic">
 							<div class="inner">
-								<a href=""><img src="photo/famale/img_3.jpg" alt="" /></a>
+								<a href=""><img src="photo/famale/img_3.jpg" alt="" data-type="x-ren"  /></a>
 							</div>
 						</div>
 						<div class="clear"></div>
@@ -314,7 +313,7 @@
 					<div class="looking_usr">
 						<div class="renpic">
 							<div class="inner">
-								<a href=""><img src="photo/famale/img_2.jpg" alt="" /></a>
+								<a href=""><img src="photo/famale/img_2.jpg" data-type="x-ren"  alt="" /></a>
 							</div>
 						</div>
 						<div class="clear"></div>

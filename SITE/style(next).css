@@ -2437,6 +2437,7 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 
 /*travel style*/
 
+.hidden{display:none;}
 .dg_color{color:#575757;}
 .or_color{color:#f48239;}
 .gr_color{color:#65a62b;}
@@ -2466,7 +2467,7 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .piclist.tb_style.tb_guide .found_usr .tb_foundrate{zoom:1; *width:50px; *height:45px; z-index:999; text-align:center; color:#000; font:bold 26px Arial; padding:5px 10px; position:absolute; right:0; top:30px; border-radius:8px 0 0 8px; -moz-border-radius:8px 0 0 8px; -webkit-border-radius:8px 0 0 8px; -khtml-border-radius:8px 0 0 8px;}
 .piclist.tb_style.tb_guide .found_usr .tb_foundrate .title{font:bold 12px Arial; color:#999999;}
 .piclist.tb_style .found_usr.selected{background-color:#ecf4fb; border-color:#6ebeed; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; -khtml-border-radius:8px;}
-.piclist.tb_style .found_usr{width:330px; margin:5px 10px 5px 0; border:4px solid transparent; background-color:transparent; zoom:1; float:none; display:inline;}
+.piclist.tb_style .found_usr{width:330px; margin:5px 10px 5px 0; border:4px solid transparent; background-color:transparent; zoom:1; *float:none; *display:inline;}
 
 .fixWidth815 .c_mid4{width:540px;}
 .fixWidth815 .c_mid4 textarea{width:505px!important;}
@@ -2523,3 +2524,20 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .tb_sico5{background-position:0 -226px;}
 .tb_sico6{background-position:0 -275px;}
 .tb_sico7{background-position:0 -330px;}
+
+/*rendex style*/
+.rb_logotype{background:url(img/rb_logo_bg.png) 0 0 no-repeat; height:311px; margin-top:-15px; *margin-top:-10px; text-align:center;}
+.rb_logotype h3{color:#fff; text-shadow:1px 1px 3px #597f9a; padding-top:165px;}
+.rend_rb{float:right; padding-left:10px; width:150px;}
+.rend_rb > div{white-space:nowrap; text-overflow:ellipsis; overflow:hidden;}
+.rend-calendar{position:relative; margin-left:-20px; left:20px; zoom:1;}
+.rend-cb{float:left; width:84px; margin-right:23px; height:83px; background:url(img/rend_calendar_bg.png) 100% 0 no-repeat; padding:5px;}
+.rend-cb .title{white-space:nowrap; text-overflow:ellipsis; overflow:hidden; font:bold 12px Arial; color:#ffffff; text-shadow:1px 1px 1px #0a395f; text-align:center;}
+.rend-cb .inner{padding:5px 8px;}
+.rend-cb .dm{font:bold 12px Arial; color:#9f0000;}
+.rend-cb .dd{font:bold 30px Arial; color:#333333; text-align:right;}
+.rend-cb .dd > img{margin-right:8px;}
+.rend-cb.weekend,.rend-cb.today{background-position:0 0;}
+.rend-cb.weekend .title,.rend-cb.today .title{text-shadow:1px 1px 1px #923b12;}
+
+.add-brdpic{position:absolute; bottom:15px; left:0; text-align:center; color:#fff; font:bold 12px Arial; width:100%;}
