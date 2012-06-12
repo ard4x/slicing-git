@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+
 html,body {margin:0;padding:0;}
 body {font-family: arial, sans-serif; font-size:12px; text-align:left; color:#010101;}
 img {border: none;}
@@ -2541,3 +2543,14 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .rend-cb.weekend .title,.rend-cb.today .title{text-shadow:1px 1px 1px #923b12;}
 
 .add-brdpic{position:absolute; bottom:15px; left:0; text-align:center; color:#fff; font:bold 12px Arial; width:100%;}
+
+/*error pages*/
+.error-content{background-color:#f0f0f0;}
+.mMode .error-content,.mMode{background-color:#075ca2;}
+.mLock .error-content,.mLock{background-color:#ffffff;}
+.error-content > .inner{width:950px; margin:0 auto; padding:40px 0; color:#333; font-size:16px;}
+.error-content .inner .title{color:#075ca2; font:bold 60px 'PT Sans'; text-transform:uppercase;}
+.mMode .error-content .inner .title{color:#fff;}
+.mMode .error-content .inner .content{background-color:#fff; width:340px; padding:20px; border-radius:10px; margin:10% 0 0 10%; position:relative;}
+.mMode .error-content .inner .content .thame-img{background:url(img/mMode-img.png) 0 0 no-repeat; width:401px; height:401px; position:absolute; right:-70%; bottom:-80%; z-index:1;}
+.mLock .error-content .inner .content {background:url(img/mLock-img.png) 0 0 no-repeat; width:200px; height:206px; z-index:1; padding:310px 20px 0; font:normal 30px 'PT Sans'; color:#fff;}
