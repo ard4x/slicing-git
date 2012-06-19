@@ -2555,26 +2555,29 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .mMode .error-content .inner .content .thame-img{background:url(img/mMode-img.png) 0 0 no-repeat; width:401px; height:401px; position:absolute; right:-70%; bottom:-80%; z-index:1;}
 .mLock .error-content .inner .content {background:url(img/mLock-img.png) 0 0 no-repeat; width:200px; height:206px; z-index:1; padding:310px 20px 0; font:normal 30px 'PT Sans'; color:#fff;}
 
-/*just PT sans*/
+/*just PT sans, MAIN-VIP template*/
 .pt{font-family:'PT Sans';}
 
 .db_color{color:#075ca2;}
+.radio-select-box .popular{position:absolute; right:10px; top:10px; height:100%;}
+.radio-select-box .popular > img{height:70%;}
 .radio-select-box.mini{width:414px; height:91px; background-image:url(img/radio-select-box-mini-bg.png);  cursor:pointer; position:relative; zoom:1;}
+.radio-select-box.mini.preview{width:459px; height:91px; background-image:url(img/radio-select-box-mini-preview-bg.png);  cursor:pointer; position:relative; zoom:1;}
 .radio-select-box.mini .label { height: 91px;}
 .radio-select-box.mini .label input[type="radio"]{ margin-top: 40px;}
 
 .payment-tab{width:504px; padding-top:60px; padding-bottom:12px;position:relative; zoom:1;}
-.payment-tab>.inner{background:url(img/payment-tab-repeat.png) 0 0 repeat-y;  padding:20px 20px 10px 20px;}
+.payment-tab>.inner{background:url(img/payment-tab-repeat.png) 0 0 repeat-y;  padding:20px 20px 10px 20px; height:292px;}
 .payment-tab>.top{background:url(img/payment-tab-top.png) 0 0 no-repeat; height:12px; position:absolute; z-index:-1; top:48px; left:0; width:100%;}
 .payment-tab>.bottom{background:url(img/payment-tab-bottom.png) 0 0 no-repeat; height:12px; position:absolute; bottom:0; left:0; width:100%;}
 .payment-tab>.tmenu{position:absolute; top:0; left:0; width:100%;}
-.payment-tab>.tmenu li{height:50px; background-image:url(img/payment-tab-bg.png); width:114px; float:left; margin-right:10px;}
+.payment-tab>.tmenu li{height:50px; background-image:url(img/payment-tab-bg.png); background-position:100% 0; width:114px; float:left; margin-right:10px;}
 .payment-tab>.tmenu li > a{height:50px; display:block; text-align:center;}
-.payment-tab>.tmenu li.active{height:50px; background-position:100% 0; width:114px;}
+.payment-tab>.tmenu li.active{height:50px; background-position:0 0; width:114px;}
 
 .vq_prof_set .tb-indent td{padding: 6px 0;}
 
-.yg-vip-info {border-collapse:collapse; width:100%;  border-radius:8px 8px 0 0; overflow: hidden; border-bottom:1px solid #075ca2;}
+.yg-vip-info {border-collapse:collapse; width:100%;  border-radius:8px 8px 0 0; overflow: hidden; border-bottom:1px solid #075ca2; margin-bottom: 15px;}
 .yg-vip-info  tr:not(.first):not(.last):nth-child(2n+1) td{background-color:#e8e8eb;}
 .yg-vip-info  tr:not(.first):not(.last) td{background-color:#fff;}
 .yg-vip-info  td{font:16px Arial; color:#333333; padding:10px 15px; border-color:#075ca2; border-style:solid; border-width:1px 0 1px 1px;}
