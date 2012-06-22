@@ -2587,3 +2587,11 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .yg-vip-info .first > td{background-color:#075ca2; text-align:left; font:bold 18px 'PT Sans'; color:#d6ebfd; padding:10px 15px;}
 .yg-vip-info .first > td+td{border:solid #075ca2; border-width:0 1px 0 1px;}
 .yg-vip-info .first > td+td,.yg-vip-info .first > td+td+td{background-color:#004b89; text-align:center; font:bold 18px 'PT Sans'; color:#fff; padding:10px 0;}
+
+/*photo_view_page2(new)*/
+.found_usr_rblock{float:right; width:50%;}
+.found_usr_rblock >div{padding-left:90px;}
+.found_usr_rblock >div  img{ width:100%;}
+.found_usr_rblock .photo-rate{position:absolute; left:0; top:20%;}
+.found_usr_rblock .photo-rate span{background:url(img/rblock_rate.png) 0 0 no-repeat; text-shadow:1px 1px 1px rgba(255, 255, 255, 0.77); color:#F8C237; width:68px; height:63px; font:bold 21px/68px Arial;}
+.
