@@ -2422,7 +2422,7 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 /*popups-vip*/
 .list-2cells{width:49%; display:inline-block; *display:inline; position:relative; *zoom:1; vertical-align:top;}
 .list-2cells img{position:absolute; left:0; top:5px;}
-.list-2cells .inner{padding:5px 10px 0 50px!important;}
+.list-2cells .inner{padding:5px 10px 10px 50px!important;}
 
 /*register_page2*/
 .rtit3{padding:10px; background-color:#e7e6e1;}
@@ -2594,4 +2594,83 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .found_usr_rblock >div  img{ width:100%;}
 .found_usr_rblock .photo-rate{position:absolute; left:0; top:20%;}
 .found_usr_rblock .photo-rate span{background:url(img/rblock_rate.png) 0 0 no-repeat; text-shadow:1px 1px 1px rgba(255, 255, 255, 0.77); color:#F8C237; width:68px; height:63px; font:bold 21px/68px Arial;}
-.
+
+/*Vip price new box*/
+.priceGroup-lg{margin-left:-10px; position:relative; left:10px; zoom:1;}
+.vipBox {position:relative; z-index:2; background:#fff; border:1px solid #c4c7ca; float:left; width:230px; margin-right:8px; box-shadow:1px 1px 3px #ced4de; text-align:center; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; overflow:hidden;}
+.vipBox .tContent{padding:0px 0px 10px; min-height:160px;}
+.vipBox .mp_vip{background:url(img/mpopular.png) 0 0 no-repeat; width:89px; height:89px; z-index:-1px; position:absolute; top:0; right:0;}
+.vipBox .tContent p{ border-top:1px solid #b1b4b7; padding:10px 0; color:#232c35;}
+.vipBox .tTitle{color:#4b545d; padding:5px 20px; text-align:left; font:bold 26px 'PT Sans'; text-shadow:0 1px 0 #fff; border-radius:4px 4px 0 0; -moz-border-radius:4px 4px 0 0; -webkit-border-radius:4px 4px 0 0;}
+.price_free{font:bold 24px/71px Arial; color:#5e6874;}
+.price_pm{position:relative; padding-left:55px; display:block; width:90px; margin:0 auto; text-align:left; font-size:16px; color:#363c43;}
+.price_lt{font-size:16px; color:#363c43;}
+.price_lt>b{font-size:22px;}
+.price_pm >span{position:absolute; right:95px; top:0; font:bold 48px/100% Arial; height:100%;}
+    .vipBox .tTitle{
+        background-image: linear-gradient(bottom, rgb(195,197,203) 0%, rgb(220,224,232) 100%);
+        background-image: -o-linear-gradient(bottom, rgb(195,197,203) 0%, rgb(220,224,232) 100%);
+        background-image: -moz-linear-gradient(bottom, rgb(195,197,203) 0%, rgb(220,224,232) 100%);
+        background-image: -webkit-linear-gradient(bottom, rgb(195,197,203) 0%, rgb(220,224,232) 100%);
+        background-image: -ms-linear-gradient(bottom, rgb(195,197,203) 0%, rgb(220,224,232) 100%);
+        background-color:rgb(195,197,203);
+        background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0, rgb(195,197,203)),
+            color-stop(1, rgb(220,224,232))
+        );
+   }
+    .vipBox .tTitle.v2{
+        background-image: linear-gradient(bottom, rgb(190,109,82) 0%, rgb(234,153,127) 100%);
+        background-image: -o-linear-gradient(bottom, rgb(190,109,82) 0%, rgb(234,153,127) 100%);
+        background-image: -moz-linear-gradient(bottom, rgb(190,109,82) 0%, rgb(234,153,127) 100%);
+        background-image: -webkit-linear-gradient(bottom, rgb(190,109,82) 0%, rgb(234,153,127) 100%);
+        background-image: -ms-linear-gradient(bottom, rgb(190,109,82) 0%, rgb(234,153,127) 100%);
+        background-color:rgb(190,109,82);
+        background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0, rgb(190,109,82)),
+            color-stop(1, rgb(234,153,127))
+        );
+        color:#5e372a;
+        text-shadow:0 1px 0 #eec5b6;
+   }
+    .vipBox .tTitle.v3{
+        background-image: linear-gradient(bottom, rgb(219,194,92) 0%, rgb(236,218,145) 100%);
+        background-image: -o-linear-gradient(bottom, rgb(219,194,92) 0%, rgb(236,218,145) 100%);
+        background-image: -moz-linear-gradient(bottom, rgb(219,194,92) 0%, rgb(236,218,145) 100%);
+        background-image: -webkit-linear-gradient(bottom, rgb(219,194,92) 0%, rgb(236,218,145) 100%);
+        background-image: -ms-linear-gradient(bottom, rgb(219,194,92) 0%, rgb(236,218,145) 100%);
+        background-color:rgb(219,194,92);
+        background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0, rgb(219,194,92)),
+            color-stop(1, rgb(236,218,145))
+        );
+        color:#5a4c20;
+        text-shadow:0 1px 0 #f5eaba;
+   }
+    .vipBox .tTitle.v4{
+        background-image: linear-gradient(bottom, rgb(114,159,191) 0%, rgb(153,199,231) 100%);
+        background-image: -o-linear-gradient(bottom, rgb(114,159,191) 0%, rgb(153,199,231) 100%);
+        background-image: -moz-linear-gradient(bottom, rgb(114,159,191) 0%, rgb(153,199,231) 100%);
+        background-image: -webkit-linear-gradient(bottom, rgb(114,159,191) 0%, rgb(153,199,231) 100%);
+        background-image: -ms-linear-gradient(bottom, rgb(114,159,191) 0%, rgb(153,199,231) 100%);
+        background-color: rgb(114,159,191);
+        background-image: -webkit-gradient(
+            linear,
+            left bottom,
+            left top,
+            color-stop(0, rgb(114,159,191)),
+            color-stop(1, rgb(153,199,231))
+        ); 
+        color:#486c85; 
+        text-shadow:0 1px 0 #c5dded;
+   }
+   .viphelp{background:#ecf4fb; padding:80px 20px 20px; width:80%; margin:0 auto; zoom:1; position:relative; margin-bottom:-70px; z-index:-1; top:-70px; text-align:center; font:16px Arial; color:#333333;}

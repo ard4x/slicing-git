@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Yangutu</title>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" href="style(next).css" type="text/css" id="" />
+    
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+        
+			var bcontent = $('.hr-c > div'),
+			    btab = $('.hr-tab > a'),
+                cbox = bcontent.length,
+                bbox = btab.length;
+                
+            console.log(bbox + ' ' + cbox);
+            if (cbox == bbox){
+                i = 0; k = 0;
+                bcontent.each(function(){
+                    i++; $(this).addClass('s'+i);
+                });
+                btab.each(function(){
+                    k++; $(this).addClass('s'+k);
+                });
+            } else {
+                return console.error('It\'s not the correct parameters.');
+            }
+            btab.bind('click',function(e){
+                e.preventDefault();
+                bcontent.hide();
+                btab.removeClass('active');
+                $(this).addClass('active');
+                var sclass = $(this).attr('class');
+                reg = /s\d/;
+                rgclass = sclass.match(reg);
+                $('.hr-c > div.'+rgclass).show();
+            });
+            
+            $('.hr-tab > a').eq(0).click();
+        });
+	</script>
+	<style>
+        .confirm-tab .hr-t .hr-c > div{width:560px;}
+        .hr-t .hr-tab > a{background-color:#fff; position:relative; font:12px Arial; z-index:9; zoom:1;display:block; float:left;padding:10px; text-decoration:none; border:1px solid transparent;}
+        .hr-t .hr-tab > a.active{ border:solid #c6c6c6; border-width:1px 1px 0 1px; font:14px Arial; top:1px; border-radius:5px 5px 0 0; -webkit-border-radius:5px 5px 0 0; -moz-border-radius:5px 5px 0 0;}
+        .hr-t .hr-c{clear:left;}
+        .hr-t .hr-c > div{display:none; padding:15px; border:1px solid #c6c6c6;}
+	</style>
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="ie7.css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="ie8.css" />
+	<![endif]-->
+</head>
+<body>
+
+	<div class="confirm-tab">
+        <div class="hr-t">
+            <div class="hr-tab">
+                <a href="">Gmail</a>
+                <a href="">AOL</a>
+                <a href="">Hotmail/MSN Live</a>
+                <a href="">Yahoo</a>
+            </div>
+            <div class="hr-c">
+                <div><iframe width="560" height="315" src="http://www.youtube.com/embed/05tA7QnRlao" frameborder="0" allowfullscreen></iframe></div>
+                <div><iframe width="560" height="315" src="http://www.youtube.com/embed/AsPQ8m92BK4" frameborder="0" allowfullscreen></iframe></div>
+                <div><iframe width="560" height="315" src="http://www.youtube.com/embed/XXfb8e14NJE" frameborder="0" allowfullscreen></iframe></div>
+                <div><iframe width="560" height="315" src="http://www.youtube.com/embed/lFYSiOt2f4M" frameborder="0" allowfullscreen></iframe></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
