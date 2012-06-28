@@ -37,7 +37,7 @@ p {padding: 0 0 10px 0; margin:0;}
 .blue,.blue:hover{color:#489bef;}
 .nobg{background:transparent!important;}
 
-.width50p{width:50%;}
+.width50p,.flWidth50{width:50%;}
 .th_select{background-color:#E8F4FF;}
 .importtop .th_select{background-color:transparent!important;}
 

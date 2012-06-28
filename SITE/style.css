@@ -34,7 +34,7 @@ p {padding: 0 0 10px 0; margin:0;}
 .blue,.blue:hover{color:#436187;}
 .deepBlue {color:#426086;}
 
-.width50p{width:50%;}
+.width50p,.flWidth50{width:50%;}
 .th_select{background-color:#E8F4FF;}
 .importtop .th_select{background-color:transparent!important;}
 
@@ -2253,3 +2253,10 @@ a.new_event:hover{text-decoration:none;}
 .brdpic.rubber img{margin:0 0 0 5px; padding:0; width:116px; display:block;}
 .brdpic-top{background: url(img/126x166rt.png) 0 0 no-repeat; height:4px;}
 .brdpic-bot{background: url(img/126x166rb.png) 0 0 no-repeat; height:6px;}
+
+/**/
+.birdpic_stat{position:absolute; top:0; right:4px;}
+.vm_usrcard{float:left; width:40%; padding:3px 0;}
+.vm_social{float:left; width:60%;}
+.vm_social >div,.vm_usrcard{text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.vm_social >div{background:url(img/vm_social_bg.png) 0 50% no-repeat; height:46px; padding:15px 10px 0 40px;}
