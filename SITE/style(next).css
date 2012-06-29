@@ -2475,6 +2475,11 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .fixWidth815 .c_mid4 textarea{width:505px!important;}
 .tb_addfav{background:url(img/travel/tb_favorit.png) 0 50% no-repeat; padding:10px 0 10px 30px; position:relative; left:20px; top:10px;}
 .tb_style .rtit{background:url(img/travel/tb_rtit.png) 0 0 repeat-x; font:bold 12px Arial; color:#fff;}
+.tb_style.no_style .rtit{background:#fffce2; font:bold 12px Arial; color:#333333;}
+
+.no_style .tb_rateinfo{background-color:#fff; border:solid #cccccc; border-width:1px 0; border-radius:0px; -moz-border-radius:0px; -webkit-border-radius:0px; -khtml-border-radius:0px;}
+.no_style .tb_rateinfo .tb_ratebx{background:transparent; color:#333333;}
+.no_style .tb_rateinfo .tb_ratebx .title{color:#b4b4b4; text-shadow: 0 0 0 transparent; font-weight:normal;}
 
 .tb_rateinfo{background-color:#fff; border:1px solid #fdaa59; padding:3px; *padding-bottom:0; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; -khtml-border-radius:8px;}
 .tb_rateinfo .tb_ratebx{background:url(img/travel/tb_ratebx.png) 0 0 repeat-x; float:left; height:64px; width:125px; font:bold 30px Arial; color:#fff; text-align:center; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; -khtml-border-radius:8px;}
@@ -2482,8 +2487,11 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .tb_rateinfo .tb_ratebox{width:23%; float:left; margin:0 3px; text-align:center; color:#666666; font-size:11px;}
 
 .tb_contenthr{margin:10px 0; border-top:1px solid #FDAA59;}
+.no_style .tb_contenthr{border-color:#ecf4fb;}
 .tb_contenthr div{border-bottom:1px solid #fff;}
+
 .tb_whitebx{background-color:#fff; border:1px solid #fdaa59; padding:10px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; -khtml-border-radius:4px;}
+.no_style .tb_whitebx{background-color:#ecf4fb; border:none;}
 
 .tb_usrcard{padding-left:65px; position:relative; min-height:80px;}
 .tb_usrcard .brdpic8{position:absolute; left:0; top:0;}
