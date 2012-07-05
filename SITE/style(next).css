@@ -2690,3 +2690,10 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
         text-shadow:0 1px 0 #c5dded;
    }
    .viphelp{background:#ecf4fb; padding:80px 20px 20px; width:80%; margin:0 auto; zoom:1; position:relative; margin-bottom:-70px; z-index:-1; top:-70px; text-align:center; font:16px Arial; color:#333333;}
+   
+
+/**/
+.table-viewstat{width:100%; border-collapse:collapse;}
+.table-viewstat tr > td{padding:10px; text-align:center; font-size:14px;}
+.table-viewstat tr:nth-child(odd){background:#e7eff5;}
+.table-viewstat tr.odd td{background-color:#e7eff5;}
