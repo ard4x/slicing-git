@@ -1,0 +1,376 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Yangutu</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="style(next).css" type="text/css" id="" />
+	<link rel="stylesheet" href="buttons.css" type="text/css" id="" />
+	<link rel="stylesheet" href="popups.css" type="text/css" id="" />
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript">
+        /*script to view*/
+        $(function(){
+            $('.main_menu > li,.user_menu ul > li,.nf-tab > a,.nfvc-options').bind('click',function(){
+                $('.main_menu > li,.user_menu ul > li,.nf-tab > a,.nfvc-options-block').removeClass('active');
+                $(this).not('.nfvc-options').addClass('active');
+                $(this).next('.nfvc-options-block').addClass('active');
+                return false;
+            })
+            
+            
+            function stsStyle(){ 
+                var obj = $('.select_menu'),
+                    objElement = obj.find('.sts > li'),
+                    count =  objElement.length,
+                    w = obj.width() / count;
+                objElement.css({'width': w+'px'})
+            }
+            stsStyle();
+            
+            function cleftSrcoll(){
+                var $document = $(document),
+                    $element = $('.leftside'),
+                    className = 'scrolled';
+                    
+                if($.browser.msie){ var $document = $(window); } /*ИЕ не работает с document.scroll*/
+                
+                $document.scroll(function() {
+                  if ($document.scrollTop() >= 50) { 
+                    $element.addClass(className);
+                  } else {
+                    $element.removeClass(className);
+                  }
+                });
+            };
+            cleftSrcoll();
+            
+        })
+        
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_inn">
+            <a href="#"><img src="./img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>	
+            <ul class="main_actmenu">
+                <li><a href=""><span class="v1">Messages</span><i class="hrg">1</i></a></li>
+                <li><a href=""><span class="v2">Signals</span><i class="hrg">99</i></a></li>
+            </ul>
+            <ul class="main_menu">
+                <li><a href="">People</a></li>
+                <li><a href="">Games</a></li>
+                <li>
+                    <a href="">Videobox</a>
+                    <div style="width:300px;">
+                        <div class="inner">
+                            <ul class="left">
+                                <li><a href="http://yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Adventures">Adventures</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cars">Cars</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Celebrities">Celebrities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Children">Children</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cities">Cities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Crazy">Crazy &amp; Extreme</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Dating+%26+Relationships">Dating Relationships</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Family">Family</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Fashion">Fashion</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Funny">Funny &amp; Cute</a></li>
+                            </ul>
+                            <ul class="right">
+                                <li><a href="http://yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Adventures">Adventures</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cars">Cars</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Celebrities">Celebrities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Children">Children</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cities">Cities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Crazy">Crazy &amp; Extreme</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Dating+%26+Relationships">Dating &amp; Relationships</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Family">Family</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Fashion">Fashion</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Funny">Funny &amp; Cute</a></li>
+                            </ul>
+                            <div class="clr2"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Talks</a>
+                    <div>
+                        <div class="inner">
+                            <ul>
+                                <li><a href="">Daily Talks</a></li>
+                                <li><a href="">Hot discussions</a></li>
+                                <li><a href="">Corporate blog</a></li>
+                                <li><a href="">Polls</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">Questions</a></li>
+            </ul>
+            <div class="user_menu">
+                <div>
+                    <ul>
+                        <li>
+                            <a class="todo" href="" title="Accaunt Settings"><i></i></a>
+                            <div>
+                                <div class="inner">
+                                    <ul>
+                                        <li><a href="">Пригласить друзей</a></li>
+                                        <li><a href="">Деньги за друзей</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <ul>
+                                        <li><a href="">Email уведомления</a></li>
+                                        <li><a href="">Платежи</a></li>
+                                        <li><a href="">Заблокированные пользователи</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <ul>
+                                        <li><a href="">Yangutu iPhone</a></li>
+                                        <li><a href="">Yangutu Android</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <a href="">Выход</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="tuse">
+                                <a href="" title="Julia's profile"><img src="./img/36x36pic.png" alt="" /></a>
+                                <a href="" title="Julia's profile" class="fs3 pt"><b>Julia</b></a>
+                                <a href="" title="Add more coins">1 819 coins</a>
+                            </span>
+                            <div class="clr2"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clr2"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content_inn">
+            <div class="c_left4">
+                <div class="leftside">
+                    <div class="nf-pic-preview">
+                        <a href=""><img src="./img/50x50pic.png" alt="" /> <span>Lola Lova<br/>Aramova</span></a>
+                        <div class="clr2"></div>
+                    </div>
+                    <div class="nf-navi">
+                        <ul>
+                            <h4>Feeds</h4>
+                                <li><a href=""><i class="spr-i1"></i>Все новости</a></li>
+                                <li><a href=""><i class="spr-i2"></i>Новости друзей</a></li>
+                                <li><a href=""><i class="spr-i3"></i>Новости избранных</a></li>
+                            <h4>Games</h4>
+                                <li><a href=""><i class="spr-i4"></i>Face-to-face</a></li>
+                                <li><a href=""><i class="spr-i5"></i>TOP-100</a></li>
+                                <li><a href=""><i class="spr-i6"></i>Word Rider</a></li>
+                                <li><a href=""><i class="spr-i7"></i>Block Rider</a></li>
+                            <h4>Tests</h4>
+                                <li><a href=""><i class="spr-i8"></i>SMF</a></li>
+                            <h4>Relations</h4>
+                                <li><a href=""><i class="spr-i9"></i>Гости</a></li>
+                                <li><a href=""><i class="spr-i10"></i>Избранные</a></li>
+                                <li><a href=""><i class="spr-i11"></i>Кто добавил меня</a></li>
+                                <li><a href=""><i class="spr-i12"></i>Мой фейсбук круг</a></li>
+                                <li><a href=""><i class="spr-i13"></i>Скрытые</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="c_mid4">
+                <div class="nf-tab">
+                    <a class="active" href=""><span>Вопросы</span></a>
+                    <a href=""><span>Статус</span></a>
+                    <a href=""><span>Фото</span></a>
+                    <div class="clr2"></div>
+                </div>
+                <div class="helpbx c8 c-round indentTop10">
+                    <h2>How does skiing make you feel?</h2>
+                    <textarea class="no-resize flWidth99" /></textarea>
+                    <div class="indentTop10">
+                        <ul class="left">
+                            <li><label class="fs9 gray"><input type="checkbox" /> Share on Facebook</label></li>
+                            <li><label class="fs9 gray"><input type="checkbox" /> Share on Twitter</label></li>
+                        </ul>
+                        <div class="right">
+                            <a class="btn btn-select indentRight10" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth50">Skip</span></span></span></a>
+                            <a class="btn btn-blue small" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth50">Answer</span></span></span></a>
+                        </div>
+                        <div class="clr2"></div>
+                    </div>	
+                </div>
+                <div class="nf-tab indentTop10">
+                    <a class="active" href=""><span>Вопросы</span></a>
+                    <a href=""><span>Статус</span></a>
+                    <a href=""><span>Фото</span></a>
+                    <div class="clr2"></div>
+                </div>
+                <div class="helpbx c8 c-round indentTop10">
+                    <h2>You have a one-week vokation. Where do you go?</h2>
+                    <ul>
+                        <li><label><input type="radio" /> Wining, dining and dancing in the city.</label></li>
+                        <li><label><input type="radio" /> Skiing in the mountains.</label></li>
+                        <li><label><input type="radio" /> Toes in the sand, on the beach.</label></li>
+                    </ul>
+                    <div class="indentLeft25 indentTop10">
+                        <a href="">Explain your choice</a>
+                    </div>	
+                </div>	
+                <div class="nf-tab indentTop10">
+                    <a class="active" href=""><span>Вопросы</span></a>
+                    <a href=""><span>Статус</span></a>
+                    <a href=""><span>Фото</span></a>
+                    <div class="clr2"></div>
+                </div>
+                <div class="helpbx c8 c-round indentTop10">
+                    <h2>You have a one-week vokation. Where do you go?</h2>
+                    <ul>
+                        <li><label><input type="radio" /> Wining, dining and dancing in the city.</label></li>
+                        <li><label><input type="radio" /> Skiing in the mountains.</label></li>
+                        <li><label><input type="radio" /> Toes in the sand, on the beach.</label></li>
+                    </ul>
+                    <div class="indentLeft25 indentTop10">
+                        <a href="">Explain your choice</a>
+                    </div>	
+                    <div class="indentTop10">
+                        <ul class="left">
+                            <li><label class="fs9 gray"><input type="checkbox" /> Share on Facebook</label></li>
+                            <li><label class="fs9 gray"><input type="checkbox" /> Share on Twitter</label></li>
+                        </ul>
+                        <div class="right">
+                            <a class="btn btn-select indentRight10" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth50">Skip</span></span></span></a>
+                            <a class="btn btn-blue small" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth50">Answer</span></span></span></a>
+                        </div>
+                        <div class="clr2"></div>
+                    </div>		
+                </div>	
+                <div class="nf-tab indentTop10">
+                    <a href=""><span>Вопросы</span></a>
+                    <a href=""><span>Статус</span></a>
+                    <a class="active" href=""><span>Фото</span></a>
+                    <div class="clr2"></div>
+                </div>
+                <div class="helpbx c8 c-round indentTop10">
+                    <h2>Upload photo</h2>
+                    <p>All photos must comply with our photo <a href="">requirements</a>.</p>
+                    <div class="select_menu">
+                        <ul class="sts">
+                            <li class="first select"><a href=""><span>From your drive</span></a></li>
+                            <li><a href=""><span>From web cam</span></a></li>
+                            <li><a href=""><span>From Facebook</span></a></li>
+                            <li class="last"><a href=""><span>From Instagram</span></a></li>
+                        </ul>
+                        <div class="clr2"></div>
+                    </div>
+                    <div class="indentTop10">
+                        <div class="left indentTop15 indentRight10">
+                            <a class="btn btn-blue small" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Choose files to upload</span></span></span></a>
+                        </div>
+                        <div class="flWidth50 left">
+                            <div class="hlpbox">
+                                <div class="content">
+                                    <b class="fs1">Tips</b><br/>
+                                    Hold down the Control key to choose more than one file at a time.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clr2"></div>
+                    </div>
+                    <div class="indentTop10">
+                        <p><b class="fs2">Загрузка не работает?</b></p>
+                        <p>Попробуйте <a href="">Обычную загрузку</a>. Вы можете добавить до 100 фото.<br/>
+                        Мы поддерживаем картинки форматов JPG, PNG и GIF<br/> Максимально допустимый размер файла 10 MB.</p>
+                    </div>		
+                </div>
+                <div class="nf-tab indentTop10">
+                    <a href=""><span>Вопросы</span></a>
+                    <a class="active" href=""><span>Статус</span></a>
+                    <a href=""><span>Фото</span></a>
+                    <div class="clr2"></div>
+                </div>
+                <div class="helpbx c8 c-round indentTop10">
+                    <h2>What's on your mind?</h2>
+                    <input type="text" class="flWidth99" />
+                </div>	
+                <div class="nf-tab indentTop10">
+                    <a href=""><span>Вопросы</span></a>
+                    <a class="active" href=""><span>Статус</span></a>
+                    <a href=""><span>Фото</span></a>
+                    <div class="clr2"></div>
+                </div>
+                <div class="helpbx c8 c-round indentTop10">
+                    <h2>What's on your mind?</h2>
+                    <textarea class="no-resize flWidth99" /></textarea>
+                    <div class="indentTop10">
+                        <ul class="left">
+                            <li><label class="fs9 gray"><input type="checkbox" /> Share on Facebook</label></li>
+                            <li><label class="fs9 gray"><input type="checkbox" /> Share on Twitter</label></li>
+                        </ul>
+                        <div class="right">
+                            <a class="btn btn-blue small" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Обновить</span></span></span></a>
+                        </div>
+                        <div class="clr2"></div>
+                    </div>	
+                </div>	
+            </div>				
+            <div class="c_right">
+                <div>
+                    <img src="./img/pbanner.png" alt="" />
+                </div>		
+            </div>
+            <div class="clr2"></div>
+        </div>
+    </div>
+    
+    <div class="social_rate">
+        <img src="./img/social-links.png" alt="" />
+    </div>
+    
+    <div class="footer">
+        <div class="footer_inn">
+            <ul>
+                <li><a href="/page/about">About us</a></li>
+                <li><a href="/help">FAQ</a></li>
+                <li><a href="http://blog.yangutu.com/">Our blog</a></li>
+                <li><a href="/feedback">Contact us</a></li>
+            </ul>
+            <ul>
+                <li><a href="/page/policy">Privacy</a></li>
+                <li><a href="/page/terms">Terms of use</a></li>
+            </ul>
+            <ul>			
+                <li><a href="/page/scams">Scam warning</a></li>
+                <li><a href="/page/safety">Safety Tips</a></li>
+            </ul>
+            <ul>
+                <li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+                <li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+                <li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="/dating/all">People Directory</a></li>
+            </ul>
+            <div class="right">
+                <font color="black">© 2010-2011 Yangutu Inc. All rights reserved</font><br>
+                <span>Yangutu (swahili) - My one and only.</span>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+</body>
+</html>
