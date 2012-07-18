@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="style(next).css" type="text/css" id="" />
 	<link rel="stylesheet" href="buttons.css" type="text/css" id="" />
 	<link rel="stylesheet" href="popups.css" type="text/css" id="" />
+	<link rel="stylesheet" href="custom.css" type="text/css" id="" /> <!-- СТИЛИ КОТОРЫЕ УЖЕ ЕСТЬ НА ПРОДЕ // НЕОБХОДИМО ЗАМЕНИТЬ!!!!!-->
 	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
 	<script type="text/javascript">
         /*script to view*/
@@ -18,11 +19,15 @@
             })
             
             function stsStyle(){ 
-                var obj = $('.select_menu'),
-                    objElement = obj.find('.sts > li'),
-                    count =  objElement.length,
-                    w = obj.width() / count;
-                objElement.css({'width': w+'px'})
+                $('.select_menu').each(function(){
+                    var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),                    
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                    objElement.css({'width': w+'px'})
+                    console.log(obj.width())
+                
+                });
             }
             stsStyle();
             

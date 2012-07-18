@@ -1,0 +1,963 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Yangutu</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="style(next).css" type="text/css" id="" />
+	<link rel="stylesheet" href="buttons.css" type="text/css" id="" />
+	<link rel="stylesheet" href="popups.css" type="text/css" id="" />
+	<link rel="stylesheet" href="custom.css" type="text/css" id="" /> <!-- СТИЛИ КОТОРЫЕ УЖЕ ЕСТЬ НА ПРОДЕ // НЕОБХОДИМО ЗАМЕНИТЬ!!!!!-->
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript">
+        /*script to view*/
+        $(function(){
+            $('.main_menu > li,.user_menu ul > li,.nf-tab > a,.nfvc-options').bind('click',function(){
+                $('.main_menu > li,.user_menu ul > li,.nf-tab > a,.nfvc-options-block').removeClass('active');
+                $(this).not('.nfvc-options').addClass('active');
+                $(this).next('.nfvc-options-block').addClass('active');
+                return false;
+            })
+            
+            
+            function stsStyle(){ 
+                $('.select_menu').each(function(){
+                    var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),                    
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                    objElement.css({'width': w+'px'})
+                    console.log(obj.width())
+                
+                });
+            }
+            stsStyle();
+            
+            function cleftSrcoll(){
+                var $document = $(document),
+                    $element = $('.leftside'),
+                    className = 'scrolled';
+                    
+                if($.browser.msie){ var $document = $(window); } /*ИЕ не работает с document.scroll*/
+                
+                $document.scroll(function() {
+                  if ($document.scrollTop() >= 50) { 
+                    $element.addClass(className);
+                  } else {
+                    $element.removeClass(className);
+                  }
+                });
+            };
+            cleftSrcoll();
+            
+        })
+        
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_inn">
+            <a href="#"><img src="./img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>	
+            <ul class="main_actmenu">
+                <li><a href=""><span class="v1">Messages</span><i class="hrg">1</i></a></li>
+                <li><a href=""><span class="v2">Signals</span><i class="hrg">99</i></a></li>
+            </ul>
+            <ul class="main_menu">
+                <li><a href="">People</a></li>
+                <li><a href="">Games</a></li>
+                <li>
+                    <a href="">Videobox</a>
+                    <div style="width:300px;">
+                        <div class="inner">
+                            <ul class="left">
+                                <li><a href="http://yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Adventures">Adventures</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cars">Cars</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Celebrities">Celebrities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Children">Children</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cities">Cities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Crazy">Crazy &amp; Extreme</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Dating+%26+Relationships">Dating Relationships</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Family">Family</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Fashion">Fashion</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Funny">Funny &amp; Cute</a></li>
+                            </ul>
+                            <ul class="right">
+                                <li><a href="http://yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Adventures">Adventures</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cars">Cars</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Celebrities">Celebrities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Children">Children</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cities">Cities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Crazy">Crazy &amp; Extreme</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Dating+%26+Relationships">Dating &amp; Relationships</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Family">Family</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Fashion">Fashion</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Funny">Funny &amp; Cute</a></li>
+                            </ul>
+                            <div class="clr2"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Talks</a>
+                    <div>
+                        <div class="inner">
+                            <ul>
+                                <li><a href="">Daily Talks</a></li>
+                                <li><a href="">Hot discussions</a></li>
+                                <li><a href="">Corporate blog</a></li>
+                                <li><a href="">Polls</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">Questions</a></li>
+            </ul>
+            <div class="user_menu">
+                <div>
+                    <ul>
+                        <li>
+                            <a class="todo" href="" title="Accaunt Settings"><i></i></a>
+                            <div>
+                                <div class="inner">
+                                    <ul>
+                                        <li><a href="">Пригласить друзей</a></li>
+                                        <li><a href="">Деньги за друзей</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <ul>
+                                        <li><a href="">Email уведомления</a></li>
+                                        <li><a href="">Платежи</a></li>
+                                        <li><a href="">Заблокированные пользователи</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <ul>
+                                        <li><a href="">Yangutu iPhone</a></li>
+                                        <li><a href="">Yangutu Android</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <a href="">Выход</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="tuse">
+                                <a href="" title="Julia's profile"><img src="./img/36x36pic.png" alt="" /></a>
+                                <a href="" title="Julia's profile" class="fs3 pt"><b>Julia</b></a>
+                                <a href="" title="Add more coins">1 819 coins</a>
+                            </span>
+                            <div class="clr2"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clr2"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content_inn">
+            <div class="c_left4">
+                <div class="proftopmes">
+                    <div id="matchPref"><span class="ellipsis">Wants to meet with a man,</span> <span class="seekingAge">18-25 years old</span></div>
+                </div>
+                <div class="prelative">
+                    <div class="rate " data-href="/photo/slideshow/?userId=1046585&amp;photoId=5066394"><span id="photo-rating-value"><b>0.00</b></span></div>
+                    <a href="">
+                        <span class="zoom-in"></span>
+                        <img class="thumb-style" src="./img/image13.png" alt="" />
+                    </a>
+                </div>
+                <div class="usr-profthumb">
+                    <a href=""><img class="thumb-style" src="./img/image14.png" alt="" /></a>
+                    <a href=""><img class="thumb-style" src="./img/image14.png" alt="" /></a>
+                    <a href="" class="more-photos">Add more photos</a>
+                    <div class="clr2"></div>
+                </div>
+                <div class="indentTop10 tright"><a href="">View all photos</a></div>
+                <div class="indentTop10">
+                    <div class="wtit">Interests</div>
+                    <div class="wtit_box int_list">
+                        <a href=""><img src="./img/image15.png" alt="" /></a>
+                        <a href=""><img src="./img/image15.png" alt="" /></a>
+                        <a href=""><img src="./img/image15.png" alt="" /></a>
+                        <a href=""><img src="./img/image15.png" alt="" /></a>
+                        <a href=""><img src="./img/image15.png" alt="" /></a>
+                        <a href=""><img src="./img/image15.png" alt="" /></a>
+                        <a href=""><img src="./img/image15.png" alt="" /></a>
+                        <a href=""><img src="./img/image15.png" alt="" /></a>
+                    </div>
+                    <div class="tright fs9"><a href="">View all interests</a></div>
+                </div>
+                <div class="indentTop10">
+                    <div class="wtit">Common interests</div>
+                    <div class="wtit_box int_list">
+                        <a href=""><img src="./img/image16.png" alt="" /></a>
+                        <a href=""><img src="./img/image16.png" alt="" /></a>
+                        <a href=""><img src="./img/image16.png" alt="" /></a>
+                        <a href=""><img src="./img/image16.png" alt="" /></a>
+                        <a href=""><img src="./img/image16.png" alt="" /></a>
+                    </div>
+                </div>
+                <div class="indentTop10">
+                    <div class="wtit">Gifts</div>
+                    <div class="wtit_box gift_list">
+                        <a href=""><img src="./img/gift/vgift_11.jpg" alt="" /></a>
+                        <a href=""><img src="./img/gift/vgift_37.jpg" alt="" /></a>
+                        <a href=""><img src="./img/gift/vgift_84.jpg" alt="" /></a>
+                    </div>
+                    <div class="tright fs9"><a href="">View all gifts</a></div>
+                </div>
+                <div class="hr"><div></div></div>
+                <div class="tcenter"><a href="">Report this person</a></div>
+            </div>
+            
+            <div class="c_mid4">
+                <div class="prelative">
+                    <div class="fs5 tbold">
+                        Kelly, 23                    
+                        <a href="#" class="birthdayCongratulate"><img alt="" src="./img/birthday_ico.png" class="birth_ico" /></a>
+                        <img alt="" src="./img/online.png" class="online-bulb" />
+                    </div>
+                    <div class="select_menu small profile_in">
+                        <ul class="right">
+                            <li class="first">
+                                <a href=""><span>◄</span></a>
+                            </li>
+                            <li class="last">
+                                <a href=""><span class="ygi-man">Next ►</span></a>
+                            </li>
+                        </ul>
+                        <div class="clr2"></div>
+                    </div>
+                </div>
+                <div class="prof_loc"><span class="loc-sub-city">Bowling Green, </span><span class="loc-sub-city">Kentucky, </span><span class="loc-sub-country">United States</span><br> (5034 miles)</div>
+                <div class="subnav2 indentTop10">
+                    <ul class="links">
+                        <li><input type="button" class="button_blue small fixWidth65" value="Wink" /></li>
+                        <li><input type="button" class="button_blue small fixWidth135" value="Send message" /></li>
+                        <li><input type="button" class="button_blue small fixWidth135" value="Ask a Question" /></li>
+                        <li><input type="button" class="button_blue small fixWidth145" value="Add to Favorites" /></li>
+                    </ul>
+                    <div class="clr2"></div>
+                </div>
+                <div class="tright"><a href="" class="nf-sort">More options <i></i></a></div>
+                <h1>About myself</h1>
+                <div class="nf-profile-about">
+                    <ul>
+                        <li>Relationship status</li>
+                        <li>Married before</li>
+                        <li>Have kids</li>
+                        <li>Wants to get married soon</li>
+                        <li>Ethnicity</li>
+                    </ul>
+                    <ul>
+                        <li>Single</li>
+                        <li>Never married</li>
+                        <li>No</li>
+                        <li>Disagree</li>
+                        <li>White / Caucasian</li>
+                    </ul>
+                    <div class="clr2"></div>
+                </div>
+                <div class="fs2 indentTop5"><a href="">Смотреть всю анкету</a></div>
+                <div class="helpbx c8 c-round indentTop10">
+                    <input type="text" class="message-type" />
+                    <input type="button" class="button_blue small fixWidth145" value="Send message" />
+                    <div class="clr2"></div>
+                </div>	
+                <div class="sm_outside">
+                    <div class="select_menu">
+                        <ul class="sts">
+                            <li class="first"><a href="news-feed-profile.html"><span>Лента</span></a></li>
+                            <li class="select"><a href="news-feed-profile-aboutme.html"><span>Обо мне</span></a></li>
+                            <li><a href="news-feed-profile-questions.html"><span>Вопросы</span></a></li>
+                            <li><a href="news-feed-profile-photo(albums).html"><span>Фото</span></a></li>
+                            <li><a href=""><span>Попутчик</span></a></li>
+                            <li class="last"><a href=""><span>Гид</span></a></li>
+                        </ul>
+                        <div class="clr2"></div>
+                        <a class="btn btn-select other" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt"><i>Other</i></span></span></span></a>
+                    </div>             
+                </div>  
+
+                
+                <div class="indentTop15">
+                    <div id="about-info-div">
+                        <div class="rtit">
+                            <a id="edit-basic-link" class="tnormal edit-link" href="">Edit</a>
+                            About me
+                        </div>
+                        <div class="proflist saved-list">
+                            <div class="profileGroupLegend"><span class="legend">Interested In&nbsp;</span></div>
+                            <div class="profileGroupContent">
+                                <div class="Contentlist">
+                                    <div class="label">I'am</div>
+                                    <div class="description">Man or Woman</div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Looking for</div>
+                                    <div class="description">Woman,&nbsp;18+</div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">For</div>
+                                    <div class="description">Flirt, Long-term Relationships, Marriage</div>
+                                </div>
+                                <div class="clr2"></div>					
+                            </div>    
+                        </div>
+                        <div class="proflist saved-list">
+                            <div class="profileGroupLegend"><span class="legend">Details</span></div>
+                            <div class="profileGroupContent">
+                                <div class="Contentlist">
+                                    <div class="label">Character</div>
+                                    <div class="description">Активный, амбициозный, интеллигентный, любящий, аккуратный, счастливый, везучий, харизматичный, предупредительный, умный, честный, энергичный, веселый</div>
+                                </div>
+                                <div class="clr2"></div>					
+                            </div>    
+                        </div>
+                    </div>
+                    
+                    <div id="basic-info-div">
+                        <div class="rtit">
+                            <a id="edit-basic-link" class="tnormal edit-link" href="">Edit</a>
+                            <div class="rtitrs indentRight10"> 
+                                <div class="per_cont" style="width:73px"><div class="per" style="width: 50%"></div></div> 50% <span>filled</span> 
+                            </div>
+                            Personal information
+                        </div>
+                        <div class="proflist saved-list">
+                            <div class="profileGroupLegend"></div>
+                            <div class="profileGroupContent">
+                                <div class="Contentlist">
+                                    <div class="label">Current city</div>
+                                    <div class="description"><span class="loc-sub-city">Minsk, </span><span class="loc-sub-country">Belarus</span></div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Birth Date</div>
+                                    <div class="description">Feb 10, 1989</div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Astrological sign</div>
+                                    <div class="description">Aquarius</div>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="profileGroupLegend"><span class="legend">Relationship status&nbsp;</span></div>
+                            <div class="profileGroupContent">
+                                <div class="Contentlist">
+                                    <div class="label">Relationship status</div>
+                                    <div class="description">Single</div>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="profileGroupLegend"><span class="legend">Appearance&nbsp;</span></div>
+                            <div class="profileGroupContent">
+                                <div class="Contentlist">
+                                    <div class="label">Ethnicity</div>
+                                    <div class="description">Other</div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Height</div>
+                                    <div class="description">180 cm</div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Body type</div>
+                                    <div class="description">Average</div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Hair color</div>
+                                    <div class="description">Light brown</div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Eye color</div>
+                                    <div class="description">Blue-gray</div>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="profileGroupLegend"><span class="legend">Living&nbsp;</span></div>
+                            <div class="profileGroupContent">
+                                <div class="Contentlist">
+                                    <div class="label">Living situation</div>
+                                    <div class="description">Alone</div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Kids at home</div>
+                                    <div class="description">no</div>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="profileGroupLegend"><span class="legend">Education &amp; Occupation&nbsp;</span></div>
+                            <div class="profileGroupContent">
+                                <div class="Contentlist">
+                                    <div class="label">Education</div>
+                                    <div class="description">College degree</div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Occupation</div>
+                                    <div class="description">Artistic/musical/writer</div>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="profileGroupLegend"><span class="legend">Preferences&nbsp;</span></div>
+                            <div class="profileGroupContent">
+                                <div class="label">Smokes</div>
+                                <div class="description">Never</div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="profileGroupLegend"><span class="legend">Yangutu membership&nbsp;</span></div>
+                            <div class="profileGroupContent">
+                                <div class="Contentlist">
+                                    <div class="label">Member since</div>
+                                    <div class="description">Jan 17, 2011</div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Was here</div>
+                                    <div class="description">Online now</div>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="more-info-div">
+                        <div class="rtit"><a href="/profile/edit-more-about-me" id="edit-more-link" class="tnormal edit-link">Edit</a> Interests and Favorites </div>
+                        <div class="proflist saved-list">
+                            <div class="profileGroupLegend"><span class="legend">Freetime&nbsp;</span></div>
+                            <div class="profileGroupContent">
+                                <div class="Contentlist">
+                                    <div class="label">Activities</div>
+                                    <div class="description">Verf </div>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="words-info-div">
+                        <div class="rtit"><a href="/profile/edit-about" id="edit-words-link" class="tnormal edit-link">Edit</a> In my own words </div>
+                        <div class="proflist saved-list"> Stand out of the crowd - tell the world what you are all about.</div>
+                    </div>
+                    
+                    <div id="edit-ice-answers-div">
+                        <div class="rtit prelative">Icebreakers answers</div>
+                        <div class="proflist saved-list">I have not answered any icebreakers yet.</div>
+                    </div>
+                    
+                    <div id="soul-test-div">
+                        <div class="rtit">Soulmate Finder Test Results        &nbsp;<a href="/test/?step=1" class="tnormal user-barrier">Start test again</a></div>
+                        <div class="proflist saved-list">   
+                            <div class="profileGroupLegend"><span class="legend">Temperament compatibility&nbsp;</span></div>
+                            <div class="profileGroupContent">
+                                <div class="Contentlist">
+                                    <div class="label">Temperament type</div>
+                                    <div class="description">
+                                        <div>
+                                            Sanguine / Phlegmatic person
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').next().slideDown('normal').prev().find('span').hide(); $('html,body').animate({scrollTop: $(this).offset().top+$(window).height()/3}, 'slow');return false;">Explain</a>
+                                            </span>&nbsp;
+                                        </div>
+                                        <div style="display:none">
+                                            You are a balanced person. You life is regular and stable. You don’t feel easy in situations which require quick switch and high speed of response, because you need some time to adapt to new conditions and make a decision. Perhaps for this reason some people consider you indecisive. However, people usually get on well with you quite easily – all your actions are usually logical and consistent. You feel fine in company of other people as well as in the situation when you have to stay alone for a while.
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').slideUp('normal', function() {$(this).prev().find('span').show();}); return false;"><br>Show less</a>
+                                            </span><div>&nbsp;</div>                      
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="profileGroupLegend"><span class="legend">Some Text&nbsp;</span></div>
+                            <div class="profileGroupContent">
+                                <div class="Contentlist">
+                                    <div class="label">Lability/Rigidity</div>
+                                    <div class="description">
+                                        <div>
+                                            High rigidity
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').next().slideDown('normal').prev().find('span').hide(); $('html,body').animate({scrollTop: $(this).offset().top+$(window).height()/3}, 'slow');return false;">Explain</a>
+                                            </span>&nbsp;
+                                        </div>
+                                        <div style="display:none">
+                                            You are a calm, balanced and emotionally stable person. In unexpected and stress situations you keep an equal mind easily. However sometimes it’s difficult for you to make a decision and act in the situation which requires responsiveness and quick reaction. To make a decision you need some time to think over and plan everything in quiet atmosphere.
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').slideUp('normal', function() {$(this).prev().find('span').show();}); return false;"><br>Show less</a>
+                                            </span><div>&nbsp;</div>                      
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="profileGroupLegend"><span class="legend">Character compatibility&nbsp;</span></div>
+                            <div class="profileGroupContent">
+                                <div class="Contentlist">
+                                    <div class="label">Interpersonal relationships</div>
+                                    <div class="description">
+                                        <div>
+                                        Subordinate type prevailing
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').next().slideDown('normal').prev().find('span').hide(); $('html,body').animate({scrollTop: $(this).offset().top+$(window).height()/3}, 'slow');return false;">Explain</a>
+                                            </span>&nbsp;
+                                        </div>
+                                        <div style="display:none">You possess certain masterfulness and wish to always have your own way. In most cases you make decisions at one's sole discretion, opinion different from yours doesn’t interest you too much. From your partner you expect absolute subjection and obedience, because it’s important for you that everything is your own way. Your intentions may be good, but don’t forget, that full understanding can be achieved only through dialogue, when people are able to listen to and understand the partner’s point of view.
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').slideUp('normal', function() {$(this).prev().find('span').show();}); return false;"><br>Show less</a>
+                                            </span><div>&nbsp;</div>                      
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="profileGroupLegend"><span class="legend">Role expectations&nbsp;</span></div>
+                            <div class="profileGroupContent">
+                                <div class="Contentlist">
+                                    <div class="label">Intimate-sexual</div>
+                                    <div class="description">
+                                        <div>
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').next().slideDown('normal').prev().find('span').hide(); $('html,body').animate({scrollTop: $(this).offset().top+$(window).height()/3}, 'slow');return false;">Explain</a>
+                                            </span>&nbsp;
+                                        </div>
+                                        <div style="display:none">You pay much attention to sexual harmony in conjugal relationship. Intimate relations are, on your opinion, one of the most important components of successful marriage. It’s very important for you that your spouse is sexual appealing and capable, that your sexual life is full and rich, that your partner has subtle sense and understanding of your needs and tries to realize them
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').slideUp('normal', function() {$(this).prev().find('span').show();}); return false;"><br>Show less</a>
+                                            </span><div>&nbsp;</div>                      
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Personal identification</div>
+                                    <div class="description">
+                                        <div>
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').next().slideDown('normal').prev().find('span').hide(); $('html,body').animate({scrollTop: $(this).offset().top+$(window).height()/3}, 'slow');return false;">Explain</a>
+                                            </span>&nbsp;
+                                        </div>
+                                        <div style="display:none">From your partner you expect respect and understanding your personality, attention to your hobbies and interests, coordination of value system and views. You consider necessary for your partner to coordinate with you his/her  plans about joint recreation, holidays or other important dates. For successful family union, in your opinion, it’s critical that your spouse shares his/her  worries and woes with you and, in his/her  turn, is attentive to your personal feelings.
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').slideUp('normal', function() {$(this).prev().find('span').show();}); return false;"><br>Show less</a>
+                                            </span><div>&nbsp;</div>                      
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Domestic-household</div>
+                                    <div class="description">
+                                        <div>
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').next().slideDown('normal').prev().find('span').hide(); $('html,body').animate({scrollTop: $(this).offset().top+$(window).height()/3}, 'slow');return false;">Explain</a>
+                                            </span>&nbsp;
+                                        </div>
+                                        <div style="display:none">You think that your spouse should actively participate in solving domestic problems of the family. You set big hopes on partner’s household skills. As, in your opinion, family union can become successful only if the spouse not only attaches great importance to household management of the family, but is also able to be a manager of the house himself/herself.
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').slideUp('normal', function() {$(this).prev().find('span').show();}); return false;"><br>Show less</a>
+                                            </span><div>&nbsp;</div>                      
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Parent-educational</div>
+                                    <div class="description">
+                                        <div>
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').next().slideDown('normal').prev().find('span').hide(); $('html,body').animate({scrollTop: $(this).offset().top+$(window).height()/3}, 'slow');return false;">Explain</a>
+                                            </span>&nbsp;
+                                        </div>
+                                        <div style="display:none">You’d like your partner not to be able to imagine family without giving birth to children. It’s very important for you that he/she not only wants to have children, but also wants to participate in their upbringing himself/herself, plays and deals with them as much as necessary. You’d like your chosen one to believe that only those families can become real and strong, in which children’s voices sound.
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').slideUp('normal', function() {$(this).prev().find('span').show();}); return false;"><br>Show less</a>
+                                            </span><div>&nbsp;</div>                      
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Professional activity, career</div>
+                                    <div class="description">
+                                        <div>
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').next().slideDown('normal').prev().find('span').hide(); $('html,body').animate({scrollTop: $(this).offset().top+$(window).height()/3}, 'slow');return false;">Explain</a>
+                                            </span>&nbsp;
+                                        </div>
+                                        <div style="display:none">It is important for you that your spouse’s interests aren’t limited to the family. You expect your partner to have a successful career, high professional performance, acceptance of colleagues and business partners. Non-family interests, such as profession, career or active social and political activity, in your opinion, is extremely important for stability in family.
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').slideUp('normal', function() {$(this).prev().find('span').show();}); return false;"><br>Show less</a>
+                                            </span><div>&nbsp;</div>                      
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Emotional-psychotherapeutic</div>
+                                    <div class="description">
+                                        <div>
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').next().slideDown('normal').prev().find('span').hide(); $('html,body').animate({scrollTop: $(this).offset().top+$(window).height()/3}, 'slow');return false;">Explain</a>
+                                            </span>&nbsp;
+                                        </div>
+                                        <div style="display:none">When choosing a spouse you want him/her  to become support and cover for your weak points. You want him/her  not only to listen, but also to comfort, support, reassure you if necessary. You expect the spouse to take a leading role upon himself/herself in the context of creating good psychic atmosphere in family, where every member would feel comfortable.
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').slideUp('normal', function() {$(this).prev().find('span').show();}); return false;"><br>Show less</a>
+                                            </span><div>&nbsp;</div>                      
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Visual appeal</div>
+                                    <div class="description">
+                                        <div>
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').next().slideDown('normal').prev().find('span').hide(); $('html,body').animate({scrollTop: $(this).offset().top+$(window).height()/3}, 'slow');return false;">Explain</a>
+                                            </span>&nbsp;
+                                        </div>
+                                        <div style="display:none">In your opinion, people can be characterized by not only their psychological qualities, but also purely external factors – physical attractiveness, ability to dress well, desire for looking after themselves and keeping fit. They are qualities you’d like to find in your prospective spouse. Untidy appearance, sloppy manner, bad taste – it would be difficult for you to put up with these qualities.
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').slideUp('normal', function() {$(this).prev().find('span').show();}); return false;"><br>Show less</a>
+                                            </span><div>&nbsp;</div>                      
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="profileGroupLegend"><span class="legend">Role claims&nbsp;</span></div>
+                            <div class="profileGroupContent">
+                                <div class="Contentlist">
+                                    <div class="label">Intimate-sexual</div>
+                                    <div class="description">
+                                        <div>
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').next().slideDown('normal').prev().find('span').hide(); $('html,body').animate({scrollTop: $(this).offset().top+$(window).height()/3}, 'slow');return false;">Explain</a>
+                                            </span>&nbsp;
+                                        </div>
+                                        <div style="display:none">You believe that harmony in intimate relationship depends on both partners, including your own involvement and attention to partner’s needs. In turn you are ready to show resourcefulness and even ingenuity to meet your partner’s expectations, because you are sure that happy marriage is impossible without full-fledged sexual life.
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').slideUp('normal', function() {$(this).prev().find('span').show();}); return false;"><br>Show less</a>
+                                            </span><div>&nbsp;</div>                      
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Personal identification</div>
+                                    <div class="description">
+                                        <div>
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').next().slideDown('normal').prev().find('span').hide(); $('html,body').animate({scrollTop: $(this).offset().top+$(window).height()/3}, 'slow');return false;">Explain</a>
+                                            </span>&nbsp;
+                                        </div>
+                                        <div style="display:none">You are ready to be respectful and understanding to your future spouse’s hobbies, share his/her  interests where possible, discuss everything important and significant to him. Your own plans you are going to correct according to those of your spouse, try to adjust to him, for example, to spend holidays and days-off together in a way that would suit you both. You are ready to go deep into all problems of your spouse, support him, give useful advices if he/she asks you.
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').slideUp('normal', function() {$(this).prev().find('span').show();}); return false;"><br>Show less</a>
+                                            </span><div>&nbsp;</div>                      
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Domestic-household</div>
+                                    <div class="description">
+                                        <div>
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').next().slideDown('normal').prev().find('span').hide(); $('html,body').animate({scrollTop: $(this).offset().top+$(window).height()/3}, 'slow');return false;">Explain</a>
+                                            </span>&nbsp;
+                                        </div>
+                                        <div style="display:none">You are ready to take upon yourself making a big part of the decisions about domestic and household issues in your future family. In your opinion it’s you who has to pay maximum attention and energy to arrangement of your home. You can hardly imagine that there could appear domestic problems which you wouldn’t be able to cope with, because as your main duty you see maintenance of the order, being real manager at your future family home.
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').slideUp('normal', function() {$(this).prev().find('span').show();}); return false;"><br>Show less</a>
+                                            </span><div>&nbsp;</div>                      
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Parent-educational</div>
+                                    <div class="description">
+                                        <div>
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').next().slideDown('normal').prev().find('span').hide(); $('html,body').animate({scrollTop: $(this).offset().top+$(window).height()/3}, 'slow');return false;">Explain</a>
+                                            </span>&nbsp;
+                                        </div>
+                                        <div style="display:none">You love children and want to become an ideal parent. All related to children evokes only positive emotions in you. Even some not very pleasant moments, such as nappy change or child’s crying, can’t affect your feelings and intentions to give birth to one (or several) children within marriage.
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').slideUp('normal', function() {$(this).prev().find('span').show();}); return false;"><br>Show less</a>
+                                            </span><div>&nbsp;</div>                      
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Professional activity, career</div>
+                                    <div class="description">
+                                        <div>
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').next().slideDown('normal').prev().find('span').hide(); $('html,body').animate({scrollTop: $(this).offset().top+$(window).height()/3}, 'slow');return false;">Explain</a>
+                                            </span>&nbsp;
+                                        </div>
+                                        <div style="display:none">Happy marriage and career, in your opinion, are quite compatible and complementary things. You are rather ambitious person and not going to give up realization of your professional abilities even in case of creating a family. You are planning to direct efforts and time to career development and social life not less than you do now.
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').slideUp('normal', function() {$(this).prev().find('span').show();}); return false;"><br>Show less</a>
+                                            </span><div>&nbsp;</div>                      
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Emotional-psychotherapeutic</div>
+                                    <div class="description">
+                                        <div>
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').next().slideDown('normal').prev().find('span').hide(); $('html,body').animate({scrollTop: $(this).offset().top+$(window).height()/3}, 'slow');return false;">Explain</a>
+                                            </span>&nbsp;
+                                        </div>
+                                        <div style="display:none">You consider harmony of family union to be a result of advertence of the partners to problems and feelings of each other. You are ready to give support and encouragement to your spouse not only in good times, but also in bad, to accept the partner with all his/her  merits and demerits. You are going to not just listen, but also be sympathetic about everything that happens in your spouse’s life. Creating warm and joyful atmosphere of absolute acceptance and complete mutual understanding in family you regard as your personal duty.
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').slideUp('normal', function() {$(this).prev().find('span').show();}); return false;"><br>Show less</a>
+                                            </span><div>&nbsp;</div>                      
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Visual appeal</div>
+                                    <div class="description">
+                                        <div>
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').next().slideDown('normal').prev().find('span').hide(); $('html,body').animate({scrollTop: $(this).offset().top+$(window).height()/3}, 'slow');return false;">Explain</a>
+                                            </span>&nbsp;
+                                        </div>
+                                        <div style="display:none">You pay much attention to your appearance and try to maintain your look up to the mark. You give rather much time and efforts to look impeccably, keep your figure, thoroughly choose your wardrobe, aspire to have your clothes up-to-date and stylish. You try to keep up with new brands and fashion trends. Bad taste or carelessness in clothes, untidy look you consider absolutely unacceptable for you in any circumstances.
+                                            <span>
+                                                <a href="#" onclick="$(this).closest('div').slideUp('normal', function() {$(this).prev().find('span').show();}); return false;"><br>Show less</a>
+                                            </span><div>&nbsp;</div>                      
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="video-id">
+                        <div class="rtit"> <a class="tnormal edit-link" href="">Edit</a> Video</div>
+                        <div class="proflist saved-list">
+                            <div class="profileGroupLegend"><span class="legend left">Yangutu Viral Video&nbsp;</span> <span class="legend-link right"><a href="">Show all</a> 152</span><div class="clr2"></div></div>
+                            <div class="profileGroupContent">
+                                <div class="profile_vidbox">
+                                    <div class="vidbox_small">
+                                        <div class="vidpreview">
+                                            <a class="ygPopup" href="">
+                                                <input type="button" class="button_blue mini unlike" value="unlike" />
+                                                <img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="vidbox_small">
+                                        <div class="vidpreview">
+                                            <a class="ygPopup" href="">
+                                                <input type="button" class="button_blue mini unlike" value="unlike" />
+                                                <img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="vidbox_small">
+                                        <div class="vidpreview">
+                                            <a class="ygPopup" href="">
+                                                <input type="button" class="button_blue mini unlike" value="unlike" />
+                                                <img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="vidbox_small">
+                                        <div class="vidpreview">
+                                            <a class="ygPopup" href="">
+                                                <input type="button" class="button_blue mini unlike" value="unlike" />
+                                                <img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="vidbox_small">
+                                        <div class="vidpreview">
+                                            <a class="ygPopup" href="">
+                                                <input type="button" class="button_blue mini unlike" value="unlike" />
+                                                <img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="vidbox_small">
+                                        <div class="vidpreview">
+                                            <a class="ygPopup" href="">
+                                                <input type="button" class="button_blue mini unlike" value="unlike" />
+                                                <img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="clr2"></div>
+                                </div>
+                            </div>
+                            <div class="profileGroupLegend"><span class="legend left">YouTube Favorites&nbsp;</span><span class="legend-link right"><a href="">Show all</a> 44</span><div class="clr2"></div></div>
+                            <div class="profileGroupContent">
+                                <div class="profile_vidbox">
+                                    <div class="vidbox_small">
+                                        <div class="vidpreview">
+                                            <a class="ygPopup" href="">
+                                                <input type="button" class="button_blue mini unlike" value="unlike" />
+                                                <img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="vidbox_small">
+                                        <div class="vidpreview">
+                                            <a class="ygPopup" href="">
+                                                <input type="button" class="button_blue mini unlike" value="unlike" />
+                                                <img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="vidbox_small">
+                                        <div class="vidpreview">
+                                            <a class="ygPopup" href="">
+                                                <input type="button" class="button_blue mini unlike" value="unlike" />
+                                                <img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="vidbox_small">
+                                        <div class="vidpreview">
+                                            <a class="ygPopup" href="">
+                                                <input type="button" class="button_blue mini unlike" value="unlike" />
+                                                <img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="vidbox_small">
+                                        <div class="vidpreview">
+                                            <a class="ygPopup" href="">
+                                                <input type="button" class="button_blue mini unlike" value="unlike" />
+                                                <img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="vidbox_small">
+                                        <div class="vidpreview">
+                                            <a class="ygPopup" href="">
+                                                <input type="button" class="button_blue mini unlike" value="unlike" />
+                                                <img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="clr2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="photo-id">
+                        <div class="rtit"><a class="tnormal edit-link" href="">Edit</a> Photos </div>
+                        <div class="proflist saved-list">
+                            <div class="profileGroupLegend"><span class="legend left">My album&nbsp;</span> <span class="legend-link right"><a href="">Show all</a> 12</span><div class="clr2"></div></div>
+                            <div class="profileGroupContent">
+                                <div class="profile_vidbox">
+                                    <div class="vidbox_small">
+                                        <div class="vidpreview">
+                                            <a class="ygPopup" href="">
+                                                <img width="100%" title="" alt="" src="./img/photo_preview.jpg" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="vidbox_small">
+                                        <div class="vidpreview">
+                                            <a class="ygPopup" href="">
+                                                <img width="100%" title="" alt="" src="./img/photo_preview.jpg" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="vidbox_small">
+                                        <div class="vidpreview">
+                                            <a class="ygPopup" href="">
+                                                <img width="100%" title="" alt="" src="./img/photo_preview.jpg" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="vidbox_small">
+                                        <div class="vidpreview">
+                                            <a class="ygPopup" href="">
+                                                <img width="100%" title="" alt="" src="./img/photo_preview.jpg" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="vidbox_small">
+                                        <div class="vidpreview">
+                                            <a class="ygPopup" href="">
+                                                <img width="100%" title="" alt="" src="./img/photo_preview.jpg" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="vidbox_small">
+                                        <div class="vidpreview">
+                                            <a class="ygPopup" href="">
+                                                <img width="100%" title="" alt="" src="./img/photo_preview.jpg" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="clr2"></div>
+                                </div>
+                                <div class="indentTop10">
+                                    <input type="button" class="button_orange small" value="More photos" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>				
+            <div class="c_right">
+                <div>
+                    <img src="./img/pbanner.png" alt="" />
+                </div>		
+            </div>
+            <div class="clr2"></div>
+        </div>
+    </div>
+    
+    <div class="social_rate">
+        <img src="./img/social-links.png" alt="" />
+    </div>
+    
+    <div class="footer">
+        <div class="footer_inn">
+            <ul>
+                <li><a href="/page/about">About us</a></li>
+                <li><a href="/help">FAQ</a></li>
+                <li><a href="http://blog.yangutu.com/">Our blog</a></li>
+                <li><a href="/feedback">Contact us</a></li>
+            </ul>
+            <ul>
+                <li><a href="/page/policy">Privacy</a></li>
+                <li><a href="/page/terms">Terms of use</a></li>
+            </ul>
+            <ul>			
+                <li><a href="/page/scams">Scam warning</a></li>
+                <li><a href="/page/safety">Safety Tips</a></li>
+            </ul>
+            <ul>
+                <li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+                <li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+                <li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="/dating/all">People Directory</a></li>
+            </ul>
+            <div class="right">
+                <font color="black">© 2010-2011 Yangutu Inc. All rights reserved</font><br>
+                <span>Yangutu (swahili) - My one and only.</span>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+</body>
+</html>

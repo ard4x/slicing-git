@@ -2253,7 +2253,7 @@ a.dotted{text-decoration:none; border-bottom:1px dashed;} /*THIS STYLE IS CHANGE
 .brdpic-infobox .arrow{position:absolute; bottom:-12px; left:15px;}
 
 /*birthday ico profile*/
-.birth_ico{position:absolute; right:-35px; top:0;}
+/*.birth_ico{position:absolute; right:-35px; top:0;}*/
 
 /*gift.html photo three*/
 .usr-photo-profile-three{margin-left:-1px;}
@@ -2695,22 +2695,7 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .table-viewstat tr:nth-child(odd){background:#e7eff5;}
 .table-viewstat tr.odd td{background-color:#e7eff5;}
 
-/*news-feed*/
-    /*стили нуждающиеся в чистке*/
-    body{background-color:#ECF4FB;} /*add*/
-    .footer{border-color:#fff;} /*add*/
-    .header{background:#075ca2; height:50px; box-shadow:0 2px 5px #c6cdd3; -webkit-box-shadow:0 2px 5px #c6cdd3; -moz-box-shadow:0 2px 5px #c6cdd3; -khtml-box-shadow:0 2px 5px #c6cdd3;} /*change*/
-    .header .logo{margin:12px 20px 0 0;}
-    .content,.footer{background-color:transparent;} /*change*/
-    .content_inn{background:url(img/content_inn_bg.png) 0 0 repeat; padding-left:10px; padding-right:10px; margin-bottom:10px; box-shadow:0 1px 5px #c6cdd3; border:solid #c6cdd3; border-width:0 1px 1px;} /*add*/
-    .social_rate {padding: 5px 0 10px; width: 950px; border-top: 0px solid transparent;/*change*/ text-align: center;}
-    h1,h2,h3,h4{font-family:'PT Sans', Arial;}/*change*/
-    .no-resize{resize:none;}/*add*/
-    .helpbx{display:block;}/*add*/
-    .c_left4{*height:1px; min-height:1px;}
-    .helpbx.c8{background-color:#ecf4fb;}/*add*/
-    .c-round{boder-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; -khtml-border-radius:5px;}/*add*/
-    .attention{border:1px solid red!important;}/*change*/
+/*news-feed*/    
     
 .hrg{background-image: linear-gradient(bottom, rgb(168,11,11) 0%, rgb(238,77,85) 53%); background-image: -moz-linear-gradient(bottom, rgb(168,11,11) 0%, rgb(238,77,85) 53%); background-image: -webkit-linear-gradient(bottom, rgb(168,11,11) 0%, rgb(238,77,85) 53%); background-color:#cf2e32;}
 .main_actmenu li{float:left; margin:8px 5px 0 0; position:relative;}
@@ -2803,14 +2788,15 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .nfvc-options-block .liked:hover{text-decoration:none;}
 .nfvc-options-block .liked{color:#999999; cursor:default;}
 .nfvc-options-block .liked i{background:url(img/spr-upd.png) -10px -360px; display:inline-block; height:15px; width:15px;}
+.nfvc-options-block ul li{margin:0; padding:0;}
 .nfvc-options-block ul li a{font-size:14px Arial; display:block;}
-.nfvc-options-block .hr{border-bottom:1px solid #eee; padding-top:10px; margin-bottom:10px;}
+.nfvc-options-block .hr,.c_left4 .hr{border-bottom:1px solid #eee; padding-top:10px; margin-bottom:10px;}
 a:hover.nfvc-options>i,.nf-view-content.hover .nfvc-options>i,.nf-view-content:hover .nfvc-options>i{background-position:100% 0;}
 .nf-profile-changes > ul{float:left; min-width:1px; max-width:45%; font:11px/15px Arial; color:#999;}
 .nf-profile-changes ul+ul{font:12px/15px Arial; color:#333;}
 .nf-profile-changes ul>li{white-space:nowrap; text-overflow:ellipsis; overflow:hidden; padding-right:10px; margin-bottom:5px;}
 
-.thumb-style{padding:2px; border:1px solid #dfdfdf; box-shadow:0 1px 1px #9f9f9f; -webkit-box-shadow:0 1px 1px #9f9f9f; -moz-box-shadow:0 1px 1px #9f9f9f;}
+.thumb-style{background-color:#fff; padding:2px; border:1px solid #dfdfdf; box-shadow:0 1px 1px #9f9f9f; -webkit-box-shadow:0 1px 1px #9f9f9f; -moz-box-shadow:0 1px 1px #9f9f9f;}
 .sts li{text-align:center;}
 .leftside.scrolled{position:fixed; top:10px;}
 
@@ -2828,3 +2814,34 @@ a:hover.nfvc-options>i,.nf-view-content.hover .nfvc-options>i,.nf-view-content:h
 
 .hlpbox { padding-left:7px; background: url(img/hlp_arrow.png) 0 50% no-repeat; max-width:100%;}
 .hlpbox .content {min-height: 20px; padding: 10px; color: #666; font: 11px Arial; background-color: white; border-radius: 8px; -moz-border-radius: 8px; -webkit-border-radius: 8px; -khtml-border-radius: 8px;}
+
+/*profile news feed*/
+.usr-profthumb{margin-top: 5px; position: relative; left: 2px; margin-left: -3px;}
+.usr-profthumb > a{display:inline-block; margin:0 1px; width:72px; vertical-align:top;}
+.usr-profthumb .more-photos{background:url(img/more-photos.png) 0 0 no-repeat; margin-top:1px; height:90px; text-indent:-9999px;}
+
+.gift_list{background-color:#fff;}
+.int_list{margin-top: 5px; margin-bottom:0px; position: relative; left: 3px; margin-left: -3px;}
+.int_list > a{display:inline-block; margin:2px; width:50px;}
+
+.nf-profile-about > ul{float:left; min-width:1px; max-width:45%; font:12px/17px Arial; color:#999;}
+.nf-profile-about ul+ul{font:14px/17px Arial; color:#333;}
+.nf-profile-about ul>li{white-space:nowrap; text-overflow:ellipsis; overflow:hidden; padding-right:20px; margin-bottom:5px;}
+.message-type{height: 30px!important; font:16px/30px Arial; display: inline-block; float: left; margin-right: 10px;}
+.c_mid4 .helpbx .message-type{width:308px;}
+
+.sm_outside{padding-right:30px; margin-top:15px; position:relative; zoom:1;}
+.sm_outside .btn-select.other{position:absolute; top:0; right:0;}
+.sm_outside .btn-select.other i {background: url(img/spr-upd.png) 100% -21px no-repeat; width: 10px; height: 5px; display: block; text-indent: -9999px; margin-top:12px;}
+.sm_outside a:hover.btn-select.other i {background-position:100% 0;}
+
+.subnav2 input[type="button"]{display:inline; zoom:1;}
+.c_left4 .wtit{margin-top:20px; background:#eee; font-family:'PT Sans'; font-size:18px; font-weight:bold; border-radius:4px 4px 0 0; -moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; -khtml-border-radius: 4px 4px 0 0;}
+
+.album-list{position:relative; margin-left:-10px; left:10px; zoom:1; border-bottom:1px solid #eee; padding-bottom:10px;}
+.album-shown{border-bottom:1px solid #eee; padding-bottom:10px;}
+.album-shown > a{display:inline-block; vertical-align:top; margin:10px 15px;}
+.album-pr{display:inline-block; *display:inline; zoom:1; vertical-align:top; width:150px; margin:0 10px 10px 0;}
+.album-pr .album-main{background:url(img/allbum-preview-bg.png) 0 0 no-repeat; padding:14px 0 0 14px; margin-bottom:5px;}
+.album-pr .opt{color:#999; border-top:1px solid #eee; padding-top:3px; position:relative; padding-right:10px;}
+.album-pr .opt>a:hover i,.album-pr:hover .opt>a i,.album-pr.hover .opt>a i{background-position:100% 0;}

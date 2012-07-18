@@ -1,6 +1,6 @@
 /*Стили которые уже есть на проде*/
-div.profileGroupLegend span.legend { background-color: white; font-weight: bold; white-space: nowrap;}
-div.profileGroupLegend span.legend-link { background-color: white; white-space: nowrap; padding:0 5px;}
+div.profileGroupLegend span.legend { background-color: white; color:#333333; font-weight: bold; font-family:'PT Sans'; font-size:18px; white-space: nowrap;}/*change*/
+div.profileGroupLegend span.legend-link { background-color: white; white-space: nowrap; padding:0 5px; margin-top:5px;}/*change*/
 div.profileGroupContent div.label, label.optional, label.required {color: #666; white-space: nowrap;}
 .saved-list div.profileGroupContent .description {margin-left: 163px;text-align: justify;word-wrap: break-word;}
 .unsaved-list div.profileGroupLegend span.legend {background-color: #F6F6F7;}
@@ -11,9 +11,43 @@ div.profileGroupContent div.label, label.optional, label.required {color: #666; 
 #about-info-div #profile-edit-form .labelRight {padding:2px 10px 0 20px; float:left;}
 #about-info-div div.profileGroupContent textarea {display: inline-block; width: 343px!important;padding: 0;margin: 0;}
 #basic-info-div div.languageLevels div.newListSelected {float: right; margin-right: 0; width: 120px;display: inline-block;}
-div.profileGroupLegend {background: url('img/1x1xAAAAAA.png') 50% 50% repeat-x; padding: 10px 0 5px;}
+div.profileGroupLegend { border-bottom:1px solid #eee; padding: 10px 0 0; margin-bottom:5px;}/*change*/
 
 /*added*/
 div.profileGroupContent .Contentlist {padding: 3px 0; zoom:1;}
 div.profileGroupContent #pets_custom {width:340px!important;}
 .fixWidth340{width:340px!important;}
+.fixWidth600{width:600px!important;}
+
+.ellipsis{white-space: nowrap; text-overflow: ellipsis; display: block; overflow: hidden;}
+
+/*change to news-feed*/
+.rtit {background-color:#ecf4fb; font-weight: bold; font-family:'PT Sans'; font-size:18px; padding:5px 10px; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; -khtml-border-radius:6px;}
+.rtit>a,.edit-link{font: 14px Arial;}
+.edit-link{float:right; margin-top:5px; padding-left:25px;}
+.rtitrs{font:12px Arial; margin-top:5px;}
+.profile_vidbox {zoom:1;}
+.profile_vidbox .vidbox_small{float:left;}
+
+.yangutu_popap .hr{border-color:#eee; margin-top:15px; padding-bottom:15px;}
+.yangutu_popap .lookingbx{background:#ecf4fb; border:none;}
+.lookingbx .hr{border-color:#fff; border-top:1px solid #fff; border-bottom:none; margin:15px 0 0 0; padding:0 0 15px;}
+
+    /*стили нуждающиеся в чистке*/
+    a{color:#3b5998;}
+    body{background-color:#ECF4FB;} /*add*/
+    .footer{border-color:#fff;} /*add*/
+    .header{background:#075ca2; height:50px; box-shadow:0 2px 5px #c6cdd3; -webkit-box-shadow:0 2px 5px #c6cdd3; -moz-box-shadow:0 2px 5px #c6cdd3; -khtml-box-shadow:0 2px 5px #c6cdd3;} /*change*/
+    .header .logo{margin:12px 20px 0 0;}
+    .content,.footer{background-color:transparent;} /*change*/
+    .content_inn{background:url(img/content_inn_bg.png) 0 0 repeat; padding-left:10px; padding-right:10px; margin-bottom:10px; box-shadow:0 1px 5px #c6cdd3; border:solid #c6cdd3; border-width:0 1px 1px;} /*add*/
+    .social_rate {padding: 5px 0 10px; width: 950px; border-top: 0px solid transparent;/*change*/ text-align: center;}
+    h1,h2,h3,h4{font-family:'PT Sans', Arial;}/*change*/
+    .no-resize{resize:none;}/*add*/
+    .helpbx{display:block;}/*add*/
+    .c_left4{min-height:1px;}
+    .helpbx.c8{background-color:#ecf4fb;}/*add*/
+    .c-round{boder-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; -khtml-border-radius:5px;}/*add*/
+    .attention{border:1px solid red!important;}/*change*/
+    .rate {position: absolute; left: 3px; top: 3px; background: url(img/opacity.png) 0 0 repeat; color: white; padding: 4px 10px; font-size: 14px;}/*change*/
+    .fixWidth135 {width: 135px;}

@@ -85,7 +85,7 @@ input[type="submit"]:focus, input[type="button"]:focus   { outline : none;}
 .button_green.disabled.mini,.button_blue.disabled.mini,.button_black.disabled.mini,.button_red.disabled.mini,.button_orange.disabled.mini,.button_pink.disabled.mini{background-position: 0 -5126px; cursor:default; color:#fff; text-shadow:0 1px 1px #292929;}
 
 .button_blue.large,.button_green.large,.button_black.large,.button_pink.large,.button_red.large,.button_orange.large{height:44px; font:bold 18px/13px Arial;}
-.button_blue.small,.button_ftf.small,.button_green.small,.button_black.small,.button_pink.small,.button_red.small,.button_orange.small{height:35px; font:bold 14px/13px Arial;}
+.button_blue.small,.button_ftf.small,.button_green.small,.button_black.small,.button_pink.small,.button_red.small,.button_orange.small{height:35px; font:bold 14px/16px Arial;}
 .button_blue.mini,.button_ftf.mini,.button_green.mini,.button_black.mini,.button_pink.mini,.button_red.mini,.button_orange.mini{height:28px; font:bold 12px/14px Arial;}
 
 .button-loading {position:relative;}
