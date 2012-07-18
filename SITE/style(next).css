@@ -2454,7 +2454,7 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .tb_logotype h3{color:#fff; text-shadow:1px 1px 3px #597f9a; padding-top:95px;}
 .tb_piclist {margin-left:-15px; position:relative; left:15px; zoom:1;}
 .tb_piclist .brdpic6{margin:5px 15px 5px 0;}
-.tb_info{position:relative; padding-left:120px; min-height:30px;}
+.tb_info{position:relative; padding-left:40%; min-height:30px;}
 .tb_info.t_done, .tb_info.t_done .img{color:#b7b7b7;}
 .tb_info .collect{background:url(img/travel/tb_done.png) 0 0 no-repeat; padding-left:20px; color:#999; *display:inline;}
 .tb_info img,.tb_info .img{position:absolute; left:0; top:0; max-width:100px; *width:100px; max-height:90px; font:bold 22px Arial;}
@@ -2841,6 +2841,8 @@ a:hover.nfvc-options>i,.nf-view-content.hover .nfvc-options>i,.nf-view-content:h
 .album-list{position:relative; margin-left:-10px; left:10px; zoom:1; border-bottom:1px solid #eee; padding-bottom:10px;}
 .album-shown{border-bottom:1px solid #eee; padding-bottom:10px;}
 .album-shown > a{display:inline-block; vertical-align:top; margin:10px 15px;}
+.album-photo-edit > .ap-photo{float:left; width:122px; margin:10px 15px;}
+.album-photo-edit > .ap-photo textarea{resize:none; width:118px; height:47px;}
 .album-pr{display:inline-block; *display:inline; zoom:1; vertical-align:top; width:150px; margin:0 10px 10px 0;}
 .album-pr .album-main{background:url(img/allbum-preview-bg.png) 0 0 no-repeat; padding:14px 0 0 14px; margin-bottom:5px;}
 .album-pr .opt{color:#999; border-top:1px solid #eee; padding-top:3px; position:relative; padding-right:10px;}

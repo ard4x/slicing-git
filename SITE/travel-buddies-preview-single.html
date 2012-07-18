@@ -5,6 +5,7 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" href="style(next).css" type="text/css" id="" />
 	<link rel="stylesheet" href="buttons.css" type="text/css" id="" />
+	<link rel="stylesheet" href="custom.css" type="text/css" id="" /> <!-- СТИЛИ КОТОРЫЕ УЖЕ ЕСТЬ НА ПРОДЕ // НЕОБХОДИМО ЗАМЕНИТЬ!!!!!-->
 	
 	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
     <script src="js/jquery.stylish-select.js" type="text/javascript"></script>
@@ -20,6 +21,50 @@
                 });
             });
 	</script>
+	<script type="text/javascript">
+        /*script to view*/
+        $(function(){
+            $('.main_menu > li,.user_menu ul > li,.nf-tab > a,.nfvc-options').bind('click',function(){
+                $('.main_menu > li,.user_menu ul > li,.nf-tab > a,.nfvc-options-block').removeClass('active');
+                $(this).not('.nfvc-options').addClass('active');
+                $(this).next('.nfvc-options-block').addClass('active');
+                return false;
+            })
+            
+            
+            function stsStyle(){ 
+                $('.select_menu').each(function(){
+                    var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),                    
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                    objElement.css({'width': w+'px'})
+                    console.log(obj.width())
+                
+                });
+            }
+            stsStyle();
+            
+            function cleftSrcoll(){
+                var $document = $(document),
+                    $element = $('.leftside'),
+                    className = 'scrolled';
+                    
+                if($.browser.msie){ var $document = $(window); } /*ИЕ не работает с document.scroll*/
+                
+                $document.scroll(function() {
+                  if ($document.scrollTop() >= 50) { 
+                    $element.addClass(className);
+                  } else {
+                    $element.removeClass(className);
+                  }
+                });
+            };
+            cleftSrcoll();
+            
+        })
+        
+    </script>
 	<!--[if IE 7]>
 		<link rel="stylesheet" type="text/css" href="ie7.css" />
 	<![endif]-->
@@ -29,34 +74,114 @@
 </head>
 <body>
 
-	<div class="header">
-		<div class="header_inn">
-			<div class="top_navigation">
-				<ul class="left">
-					<li><a href="">Messages</a><span class="new_event">2</span></li>
-					<li><a href="">Signals</a><span class="new_event">45</span></li>
-					<li><a href="">Soulmates</a><span class="new_event">167</span></li>
-				</ul>
-				<ul class="right">
-					<li class="coints">1450 Coins <a href="#">Add</a></li>
-					<li class="profile"><a href="#">Profile </a></li>
-					<li class="account"><a href="#">Account Settings</a></li>
-				</ul>
-				<div class="clear"></div>
-			</div>
-			<div class="bot_navigation">
-				<a href="#"><img src="./img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>	
-				<ul class="main_menu">
-					<li><a href="">Home</a></li>
-					<li><a href="">Matches</a></li>
-					<li><a href="">TOP-100</a></li>
-					<li><a href="">Apps and Games</a></li>
-					<li><a href="">Blogs</a></li>
-				</ul>
-				<div class="clr2"></div>
-			</div>
-		</div>
-	</div>
+    <div class="header">
+        <div class="header_inn">
+            <a href="#"><img src="./img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>	
+            <ul class="main_actmenu">
+                <li><a href=""><span class="v1">Messages</span><i class="hrg">1</i></a></li>
+                <li><a href=""><span class="v2">Signals</span><i class="hrg">99</i></a></li>
+            </ul>
+            <ul class="main_menu">
+                <li><a href="">People</a></li>
+                <li><a href="">Games</a></li>
+                <li>
+                    <a href="">Videobox</a>
+                    <div style="width:300px;">
+                        <div class="inner">
+                            <ul class="left">
+                                <li><a href="http://yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Adventures">Adventures</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cars">Cars</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Celebrities">Celebrities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Children">Children</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cities">Cities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Crazy">Crazy &amp; Extreme</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Dating+%26+Relationships">Dating Relationships</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Family">Family</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Fashion">Fashion</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Funny">Funny &amp; Cute</a></li>
+                            </ul>
+                            <ul class="right">
+                                <li><a href="http://yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Adventures">Adventures</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cars">Cars</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Celebrities">Celebrities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Children">Children</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cities">Cities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Crazy">Crazy &amp; Extreme</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Dating+%26+Relationships">Dating &amp; Relationships</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Family">Family</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Fashion">Fashion</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Funny">Funny &amp; Cute</a></li>
+                            </ul>
+                            <div class="clr2"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Talks</a>
+                    <div>
+                        <div class="inner">
+                            <ul>
+                                <li><a href="">Daily Talks</a></li>
+                                <li><a href="">Hot discussions</a></li>
+                                <li><a href="">Corporate blog</a></li>
+                                <li><a href="">Polls</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">Questions</a></li>
+            </ul>
+            <div class="user_menu">
+                <div>
+                    <ul>
+                        <li>
+                            <a class="todo" href="" title="Accaunt Settings"><i></i></a>
+                            <div>
+                                <div class="inner">
+                                    <ul>
+                                        <li><a href="">Пригласить друзей</a></li>
+                                        <li><a href="">Деньги за друзей</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <ul>
+                                        <li><a href="">Email уведомления</a></li>
+                                        <li><a href="">Платежи</a></li>
+                                        <li><a href="">Заблокированные пользователи</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <ul>
+                                        <li><a href="">Yangutu iPhone</a></li>
+                                        <li><a href="">Yangutu Android</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <a href="">Выход</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="tuse">
+                                <a href="" title="Julia's profile"><img src="./img/36x36pic.png" alt="" /></a>
+                                <a href="" title="Julia's profile" class="fs3 pt"><b>Julia</b></a>
+                                <a href="" title="Add more coins">1 819 coins</a>
+                            </span>
+                            <div class="clr2"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clr2"></div>
+        </div>
+    </div>
 	
 	<div class="content">
 		<div class="content_inn">			
@@ -291,37 +416,42 @@
 		</div>
 	</div>
 	
-	<div class="footer">
-	  <div class="footer_inn">
-		<ul>
-			<li><a href="/page/about">About us</a></li>
-			<li><a href="/help">FAQ</a></li>
-			<li><a href="http://blog.yangutu.com/">Our blog</a></li>
-			<li><a href="/feedback">Contact us</a></li>
-		</ul>
-		<ul>
-			<li><a href="/page/policy">Privacy</a></li>
-			<li><a href="/page/terms">Terms of use</a></li>
-		</ul>
-		<ul>			
-			<li><a href="/page/scams">Scam warning</a></li>
-			<li><a href="/page/safety">Safety Tips</a></li>
-		</ul>
-		<ul>
-			<li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
-			<li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
-			<li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
-		
-		</ul>
-		<ul>
-		  <li><a href="/dating/all">People Directory</a></li>
-		</ul>
-		<div class="right">
-			<font color="black">&copy; 2010-2011 Yangutu Inc. All rights reserved</font><br>
-		  <span>Yangutu (swahili) - My one and only.</span>
-		</div>
-		 <div class="clear"></div>
-	  </div>
-</div>
+    <div class="social_rate">
+        <img src="./img/social-links.png" alt="" />
+    </div>
+    
+    <div class="footer">
+        <div class="footer_inn">
+            <ul>
+                <li><a href="/page/about">About us</a></li>
+                <li><a href="/help">FAQ</a></li>
+                <li><a href="http://blog.yangutu.com/">Our blog</a></li>
+                <li><a href="/feedback">Contact us</a></li>
+            </ul>
+            <ul>
+                <li><a href="/page/policy">Privacy</a></li>
+                <li><a href="/page/terms">Terms of use</a></li>
+            </ul>
+            <ul>			
+                <li><a href="/page/scams">Scam warning</a></li>
+                <li><a href="/page/safety">Safety Tips</a></li>
+            </ul>
+            <ul>
+                <li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+                <li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+                <li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="/dating/all">People Directory</a></li>
+            </ul>
+            <div class="right">
+                <font color="black">© 2010-2011 Yangutu Inc. All rights reserved</font><br>
+                <span>Yangutu (swahili) - My one and only.</span>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
 </body>
 </html>
