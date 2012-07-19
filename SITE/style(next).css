@@ -2478,10 +2478,13 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .travelers .tb_rateinfo .tb_ratebx{background:transparent; color:#333333;}
 .travelers .tb_rateinfo .tb_ratebx .title{color:#b4b4b4; text-shadow: 0 0 0 transparent; font-weight:normal;}
 
-.tb_rateinfo{background-color:#fff; border:1px solid #fdaa59; padding:3px; *padding-bottom:0; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; -khtml-border-radius:8px;}
-.tb_rateinfo .tb_ratebx{background:url(img/travel/tb_ratebx.png) 0 0 repeat-x; float:left; height:64px; width:125px; font:bold 30px Arial; color:#fff; text-align:center; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; -khtml-border-radius:8px;}
+.tb_rateinfo{background-color:#fff; position:relative; border:1px solid #fdaa59; padding:3px 3px 3px 125px; *padding-bottom:0; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; -khtml-border-radius:8px;}
+.tb_rateinfo .tb_ratebx{position:absolute; height:94%; left:3px; top:3px; background-image: linear-gradient(bottom, rgb(229,72,10) 0%, rgb(237,103,36) 50%, rgb(246,140,64) 100%); background-image: -moz-linear-gradient(bottom, rgb(229,72,10) 0%, rgb(237,103,36) 50%, rgb(246,140,64) 100%); background-image: -webkit-linear-gradient(bottom, rgb(229,72,10) 0%, rgb(237,103,36) 50%, rgb(246,140,64) 100%); background-color:#e95515; float:left; width:125px; font:bold 30px Arial; color:#fff; text-align:center; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; -khtml-border-radius:8px;}
 .tb_rateinfo .tb_ratebx .title{color:#762100; font:bold 14px Arial; text-shadow:1px 1px 1px #f9a371; padding-top:10px;}
-.tb_rateinfo .tb_ratebox{width:23%; float:left; margin:0 3px; text-align:center; color:#666666; font-size:11px;}
+.tb_rateinfo .tb_ratebox ul{display:block; margin:3px 0;}
+.tb_rateinfo .tb_ratebox ul li{width:32%; text-align:center; color:#666666; font-size:11px; display:inline-table; *float:left; vertical-align:middle;}
+.tb_rateinfo .tb_ratebox ul li a{margin:0 1px;}
+.tb_rateinfo .tb_title{position:absolute; height:94%; left:0; top:5px; width:125px;}
 
 .tb_contenthr{margin:10px 0; border-top:1px solid #FDAA59;}
 .travelers .tb_contenthr{border-color:#ecf4fb;}
