@@ -2510,6 +2510,9 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .c_mid4 .tb_form .tb_form_content .newText{width:315px!important;}
 .tb_form .tb_form_content .description .inner{padding-bottom:10px; position:relative; *height:auto!important;  zoom:1; overflow:visible;}
 .tb_form .tb_form_content .list {display: block; float: left; white-space: nowrap; width: 50%; text-overflow: ellipsis; overflow: hidden;}
+.tb_form .tb_form_content .list-inherit {display: block; float: left; width: 50%;}
+.tb_form .tb_form_content .list-inherit input{float:left;}
+.tb_form .tb_form_content .list-inherit span{padding-left:25px; display:block; margin-bottom:5px;}
 .tb_form .tb_form_content .newText {width:380px!important; min-height:150px;}
 .tb_infocheck {float:left; margin:15px 10px;}
 .tb_mark {float:left; padding-left:50px; background:url(img/travel/tb_mark_ico.png) 0 0 no-repeat; width:70%;}
