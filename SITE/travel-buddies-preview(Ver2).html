@@ -1,0 +1,694 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html class="vMode">
+<head>
+	<title>Yangutu</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="style(next).css" type="text/css" id="" />
+	<link rel="stylesheet" href="buttons.css" type="text/css" id="" />
+	<link rel="stylesheet" href="popups.css" type="text/css" id="" />
+	<link rel="stylesheet" href="custom.css" type="text/css" id="" /> <!-- СТИЛИ КОТОРЫЕ УЖЕ ЕСТЬ НА ПРОДЕ // НЕОБХОДИМО ЗАМЕНИТЬ!!!!!-->
+	
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <script src="js/jquery.stylish-select.js" type="text/javascript"></script>
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $('select.select').sSelect();
+            });
+	</script>
+	<script type="text/javascript">
+        /*script to view*/
+        $(function(){
+            $('.main_menu > li,.user_menu ul > li,.nf-tab > a,.nfvc-options').bind('click',function(){
+                $('.main_menu > li,.user_menu ul > li,.nf-tab > a,.nfvc-options-block').removeClass('active');
+                $(this).not('.nfvc-options').addClass('active');
+                $(this).next('.nfvc-options-block').addClass('active');
+                return false;
+            })
+            
+            
+            function stsStyle(){ 
+                $('.select_menu').each(function(){
+                    var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),                    
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                    objElement.css({'width': w+'px'})
+                    console.log(obj.width())
+                
+                });
+            }
+            stsStyle();
+            
+            function cleftSrcoll(){
+                var $document = $(document),
+                    $element = $('.leftside'),
+                    className = 'scrolled';
+                    
+                if($.browser.msie){ var $document = $(window); } /*ИЕ не работает с document.scroll*/
+                
+                $document.scroll(function() {
+                  if ($document.scrollTop() >= 50) { 
+                    $element.addClass(className);
+                  } else {
+                    $element.removeClass(className);
+                  }
+                });
+            };
+            cleftSrcoll();
+            
+        })
+        
+    </script>
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="ie7.css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="ie8.css" />
+	<![endif]-->
+</head>
+<body>
+    <div class="p-viewer">
+        <div style="position: absolute; top: 20px; left: 30px;" class="yangutu_popap fixWidth815 tb_style travelers">
+            <a class="popClose" href=""><img src="./img/close_ic.png" class="cls4" alt=""></a>
+            <div class="inner">
+                <div class="c_left4">
+                    <div class="prelative">
+                        <a href="">
+                            <span class="zoom-in"></span>
+                            <img class="thumb-style" src="./img/image13.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="indentTop10 tcenter">
+                        <a class="btn btn-green small" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth120">View profile</span></span></span></a>
+                    </div>
+                </div>
+                <div class="c_mid4">
+                    <div class="prelative left">
+                        <p class="fs5 tbold left"><span>Taras, 22 </span></p>
+                        <div class="clr2"></div>
+                        <p><span class="fs1 tnormal">Saint Petersburg, Russia</span></p>
+                    </div>
+                    <div class="clr2"></div>
+                    <div class="helpbx c1 inner15">
+                        <textarea class="newText flWidth99"></textarea>
+                        <div class="indentTop10 tright">
+                            <span class="left fs7">140</span>
+                            <input type="button" class="button_blue small fixWidth120" value="Send Message" />
+                        </div>
+                    </div>
+                    <div class="indentTop20">
+                        <div class="rtit">Гид</div>
+                        <div class="proflist">
+                            <div class="profileGroupContent">
+                                <div class="Contentlist">
+                                    <div class="label">Кого</div>
+                                    <div class="description">Женщину</div>
+                                    <div class="clr2"></div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Отдых</div>
+                                    <div class="description">Автобусный тур, на машине</div>
+                                    <div class="clr2"></div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Цель</div>
+                                    <div class="description">Флирт, знакомство для серьезных отношений</div>
+                                    <div class="clr2"></div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Страны и города</div>
+                                    <div class="description">Турция (Стамбул), Египет (Анкара), Тунис, Болгария, Россия (Москва, Питер, Орел)</div>
+                                    <div class="clr2"></div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Когда</div>
+                                    <div class="description">Середина марта</div>
+                                    <div class="clr2"></div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Обратите внимание</div>
+                                    <div class="description">Хочу поехать с приятным человеком по местам, где можно не только хорошо отдохнуть и провести время, но заработать.</div>
+                                    <div class="clr2"></div>
+                                </div>
+                                <div class="clr2"></div>					
+                            </div>    
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="clr2"></div>
+            </div>
+        </div>
+        
+        <div style="position: absolute; top: 550px; left: 30px;" class="yangutu_popap fixWidth635 rubber">
+            <a class="popClose" href=""><img src="./img/close_ic.png" class="cls4" alt=""></a>
+            <div class="helpbx c1 inner15">
+                <div class="tb_rateinfo">
+                    <div class="tb_title">
+                       <b>Оцените гида:</b>
+                    </div>
+                    <div class="tb_ratebox">
+                        <ul>
+                            <li>
+                                <a href=""><img src="./img/travel/tb_rate2_blue_select.png" alt="" /></a>
+                                <a href=""><img src="./img/travel/tb_rate2_blue_select.png" alt="" /></a>
+                                <a href=""><img src="./img/travel/tb_rate2_blue_select.png" alt="" /></a>
+                                <a href=""><img src="./img/travel/tb_rate2_blue_select.png" alt="" /></a>
+                                <a href=""><img src="./img/travel/tb_rate2_gray.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="./img/travel/tb_rate2_blue_select.png" alt="" /></a>
+                                <a href=""><img src="./img/travel/tb_rate2_blue_select.png" alt="" /></a>
+                                <a href=""><img src="./img/travel/tb_rate2_blue_select.png" alt="" /></a>
+                                <a href=""><img src="./img/travel/tb_rate2_blue_select.png" alt="" /></a>
+                                <a href=""><img src="./img/travel/tb_rate2_gray.png" alt="" /></a>
+                            </li>
+                            <li>
+                                <a href=""><img src="./img/travel/tb_rate2_blue_select.png" alt="" /></a>
+                                <a href=""><img src="./img/travel/tb_rate2_blue_select.png" alt="" /></a>
+                                <a href=""><img src="./img/travel/tb_rate2_blue_select.png" alt="" /></a>
+                                <a href=""><img src="./img/travel/tb_rate2_blue_select.png" alt="" /></a>
+                                <a href=""><img src="./img/travel/tb_rate2_gray.png" alt="" /></a>
+                            </li>
+                        </ul>
+                        <div class="clr2"></div>
+                        <ul>
+                            <li><span>знание<br/> страны</span></li>
+                            <li>соответствие<br/> цен услугам</li>
+                            <li>дружелюбность и<br/> коммуникабельность дружелюбность и<br/> коммуникабельность</li>
+                        </ul>
+                        <div class="clr2"></div>	
+                    </div>	
+                </div>
+                
+                <textarea class="newText flWidth99"></textarea>
+                <div class="indentTop10 tright">
+                    <span class="left fs7">140</span>
+                    <input type="button" class="button_blue small fixWidth120" value="Send Review" />
+                </div>
+            </div>
+        </div>
+        
+        <div style="position: absolute; top: 20px; right: 20px;" class="yangutu_popap fixWidth815 tb_style travelers">
+            <a class="popClose" href=""><img src="./img/close_ic.png" class="cls4" alt=""></a>
+            <div class="inner">
+                <div class="c_left4">
+                    <div class="prelative">
+                        <a href="">
+                            <span class="zoom-in"></span>
+                            <img class="thumb-style" src="./img/image13.png" alt="" />
+                        </a>
+                    </div>
+                    <div class="indentTop10 tcenter">
+                        <a class="btn btn-green small" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth120">View profile</span></span></span></a>
+                    </div>
+                </div>
+                <div class="c_mid4">
+                    <div class="prelative left">
+                        <p class="fs5 tbold left"><span>Taras, 22 </span></p>
+                        <div class="clr2"></div>
+                        <p><span class="fs1 tnormal">Saint Petersburg, Russia</span></p>
+                    </div>
+                    <div class="clr2"></div>
+                    <div class="helpbx c1 inner15">
+                        <textarea class="newText flWidth99"></textarea>
+                        <div class="indentTop10 tright">
+                            <span class="left fs7">140</span>
+                            <input type="button" class="button_blue small fixWidth120" value="Send Message" />
+                        </div>
+                    </div>
+                    <div class="indentTop20">
+                        <div class="rtit">Гид</div>
+                        <div class="proflist">
+                            <div class="profileGroupContent">
+                                <div class="Contentlist">
+                                    <div class="label">Кого</div>
+                                    <div class="description">Женщину</div>
+                                    <div class="clr2"></div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Отдых</div>
+                                    <div class="description">Автобусный тур, на машине</div>
+                                    <div class="clr2"></div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Цель</div>
+                                    <div class="description">Флирт, знакомство для серьезных отношений</div>
+                                    <div class="clr2"></div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Страны и города</div>
+                                    <div class="description">Турция (Стамбул), Египет (Анкара), Тунис, Болгария, Россия (Москва, Питер, Орел)</div>
+                                    <div class="clr2"></div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Когда</div>
+                                    <div class="description">Середина марта</div>
+                                    <div class="clr2"></div>
+                                </div>
+                                <div class="Contentlist">
+                                    <div class="label">Обратите внимание</div>
+                                    <div class="description">Хочу поехать с приятным человеком по местам, где можно не только хорошо отдохнуть и провести время, но заработать.</div>
+                                    <div class="clr2"></div>
+                                </div>
+                                <div class="clr2"></div>					
+                            </div>    
+                        </div>
+                        <div class="tb_rateinfo">
+                            <div class="tb_ratebx">
+                                <div class="title">Рейтинг</div>
+                                <div>4980</div>
+                            </div>
+                            <div class="tb_ratebox">
+                                <ul>
+                                    <li><span>знание<br/> страны</span></li>
+                                    <li>соответствие<br/> цен услугам</li>
+                                    <li>дружелюбность и<br/> коммуникабельность дружелюбность и<br/> коммуникабельность</li>
+                                </ul>
+                                <div class="clr2"></div>
+                                <ul>
+                                    <li>
+                                        <a href=""><img src="./img/travel/tb_rate1_blue_select.png" alt="" /></a>
+                                        <a href=""><img src="./img/travel/tb_rate1_blue_select.png" alt="" /></a>
+                                        <a href=""><img src="./img/travel/tb_rate1_blue_select.png" alt="" /></a>
+                                        <a href=""><img src="./img/travel/tb_rate1_blue_select.png" alt="" /></a>
+                                        <a href=""><img src="./img/travel/tb_rate1_blue.png" alt="" /></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><img src="./img/travel/tb_rate1_blue_select.png" alt="" /></a>
+                                        <a href=""><img src="./img/travel/tb_rate1_blue_select.png" alt="" /></a>
+                                        <a href=""><img src="./img/travel/tb_rate1_blue_select.png" alt="" /></a>
+                                        <a href=""><img src="./img/travel/tb_rate1_blue_select.png" alt="" /></a>
+                                        <a href=""><img src="./img/travel/tb_rate1_blue.png" alt="" /></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><img src="./img/travel/tb_rate1_blue_select.png" alt="" /></a>
+                                        <a href=""><img src="./img/travel/tb_rate1_blue_select.png" alt="" /></a>
+                                        <a href=""><img src="./img/travel/tb_rate1_blue_select.png" alt="" /></a>
+                                        <a href=""><img src="./img/travel/tb_rate1_blue_select.png" alt="" /></a>
+                                        <a href=""><img src="./img/travel/tb_rate1_blue.png" alt="" /></a>
+                                    </li>
+                                </ul>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="clr2"></div>
+                        </div>
+                    </div>
+                    <div class="indentTop20">
+                        <div class="rtit">Отзывы</div>
+                        <div class="proflist">
+                            <div class="profileGroupContent">
+                                нет отзывов				
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="indentTop10">
+                        <a class="btn btn-green small" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth120">Add review</span></span></span></a>
+                    </div>
+                </div>
+                <div class="clr2"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="header_inn">
+            <a href="#"><img src="./img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>	
+            <ul class="main_actmenu">
+                <li><a href=""><span class="v1">Messages</span><i class="hrg">1</i></a></li>
+                <li><a href=""><span class="v2">Signals</span><i class="hrg">99</i></a></li>
+            </ul>
+            <ul class="main_menu">
+                <li><a href="">People</a></li>
+                <li><a href="">Games</a></li>
+                <li>
+                    <a href="">Videobox</a>
+                    <div style="width:300px;">
+                        <div class="inner">
+                            <ul class="left">
+                                <li><a href="http://yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Adventures">Adventures</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cars">Cars</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Celebrities">Celebrities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Children">Children</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cities">Cities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Crazy">Crazy &amp; Extreme</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Dating+%26+Relationships">Dating Relationships</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Family">Family</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Fashion">Fashion</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Funny">Funny &amp; Cute</a></li>
+                            </ul>
+                            <ul class="right">
+                                <li><a href="http://yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Adventures">Adventures</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cars">Cars</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Celebrities">Celebrities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Children">Children</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cities">Cities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Crazy">Crazy &amp; Extreme</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Dating+%26+Relationships">Dating &amp; Relationships</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Family">Family</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Fashion">Fashion</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Funny">Funny &amp; Cute</a></li>
+                            </ul>
+                            <div class="clr2"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Talks</a>
+                    <div>
+                        <div class="inner">
+                            <ul>
+                                <li><a href="">Daily Talks</a></li>
+                                <li><a href="">Hot discussions</a></li>
+                                <li><a href="">Corporate blog</a></li>
+                                <li><a href="">Polls</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">Questions</a></li>
+            </ul>
+            <div class="user_menu">
+                <div>
+                    <ul>
+                        <li>
+                            <a class="todo" href="" title="Accaunt Settings"><i></i></a>
+                            <div>
+                                <div class="inner">
+                                    <ul>
+                                        <li><a href="">Пригласить друзей</a></li>
+                                        <li><a href="">Деньги за друзей</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <ul>
+                                        <li><a href="">Email уведомления</a></li>
+                                        <li><a href="">Платежи</a></li>
+                                        <li><a href="">Заблокированные пользователи</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <ul>
+                                        <li><a href="">Yangutu iPhone</a></li>
+                                        <li><a href="">Yangutu Android</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <a href="">Выход</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="tuse">
+                                <a href="" title="Julia's profile"><img src="./img/36x36pic.png" alt="" /></a>
+                                <a href="" title="Julia's profile" class="fs3 pt"><b>Julia</b></a>
+                                <a href="" title="Add more coins">1 819 coins</a>
+                            </span>
+                            <div class="clr2"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clr2"></div>
+        </div>
+    </div>
+	
+	<div class="content">
+		<div class="content_inn">			
+			<div class="c_left2">
+				<p class="left fs5 tbold indentRight20">Travel Buddies</p>
+                <div class="select_menu left">
+                    <ul>
+                        <li class="first select"><a href=""><span>Попутчики</span></a></li>
+                        <li class="last"><a href=""><span>Гиды</span></a></li>
+                    </ul>
+                    <div class="clr2"></div>
+                </div>
+                <div class="clr2"></div>
+				<div>
+					<div class="ver-faq">
+                        <div>
+                            <div class="fixWidth335 left">
+                                <select class="select">
+                                    <option value="" label="">Кого ищу</option>
+                                    <option value="" label="">selection</option>
+                                    <option value="" label="">selection</option>
+                                    <option value="" label="">selection</option>
+                                    <option value="" label="">selection</option>
+                                </select>
+                            </div>
+                            <div class="fixWidth335 right">
+                                <select class="select">
+                                    <option value="" label="">Вид отдыха</option>
+                                    <option value="" label="">selection</option>
+                                    <option value="" label="">selection</option>
+                                    <option value="" label="">selection</option>
+                                    <option value="" label="">selection</option>
+                                </select>
+                            </div>
+                            <div class="clr2"></div>
+                        </div>
+                        <div class="indentTop15">
+                            <div class="fixWidth335 left">
+                                <div class="fixWidth150 left">
+                                    <select class="select">
+                                        <option value="" label="">Куда планирую</option>
+                                        <option value="" label="">selection</option>
+                                        <option value="" label="">selection</option>
+                                        <option value="" label="">selection</option>
+                                        <option value="" label="">selection</option>
+                                    </select>
+                                </div>
+                                <div class="fixWidth150 right">
+                                    <select class="select">
+                                        <option value="" label="">Любой город</option>
+                                        <option value="" label="">selection</option>
+                                        <option value="" label="">selection</option>
+                                        <option value="" label="">selection</option>
+                                        <option value="" label="">selection</option>
+                                    </select>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="fixWidth335 right">
+                                <div class="fixWidth150 left">
+                                    <select class="select">
+                                        <option value="" label="">Когда планирую</option>
+                                        <option value="" label="">selection</option>
+                                        <option value="" label="">selection</option>
+                                        <option value="" label="">selection</option>
+                                        <option value="" label="">selection</option>
+                                    </select>
+                                </div>
+                                <div class="fixWidth170 right">
+                                    <div class="fixWidth80 left">
+                                        <select class="select">
+                                            <option value="" label="">Январь</option>
+                                            <option value="" label="">selection</option>
+                                            <option value="" label="">selection</option>
+                                            <option value="" label="">selection</option>
+                                            <option value="" label="">selection</option>
+                                        </select>
+                                    </div>
+                                    <div class="fixWidth80 right">
+                                        <select class="select">
+                                            <option value="" label="">В начале</option>
+                                            <option value="" label="">selection</option>
+                                            <option value="" label="">selection</option>
+                                            <option value="" label="">selection</option>
+                                            <option value="" label="">selection</option>
+                                        </select>
+                                    </div>
+                                    <div class="clr2"></div>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="clr2"></div>
+                        </div>
+                        <div class="indentTop20 tcenter">
+                            <a href="" class="btn btn-blue small"><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth120">Find people</span></span></span></a>
+                        </div>
+                    </div>
+                    <div class="indentTop20 piclist tb_style">
+                        <div class="inner">
+                            <div class="found_usr selected">
+                                <div class="brdpic">
+                                    <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/116x156pic.jpg" /></a>
+                                </div>
+                                <div class="usr_info">
+                                    <span class="fs3"><a href="" class="bold"><b>Yvonne</b></a>, 40 </span><br/>
+                                    <span class="gray fs1">Moate, Ireland</span>
+                                    <p class="indentTop10">Я одна, ищу парня, компанию девушек, большую компанию.</p>
+                                    <p>Россия, Украина, Турция, Египет</p>
+                                    <a href="" class="btn btn-orange mini"><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Связаться</span></span></span></a>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="found_usr selected">
+                                <div class="brdpic">
+                                    <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/116x156pic.jpg" /></a>
+                                </div>
+                                <div class="usr_info">
+                                    <span class="fs3"><a href="" class="bold"><b>Yvonne</b></a>, 40 </span><br/>
+                                    <span class="gray fs1">Moate, Ireland</span>
+                                    <p class="indentTop10">Я одна, ищу парня, компанию девушек, большую компанию.</p>
+                                    <p>Россия, Украина, Турция, Египет</p>
+                                    <a href="" class="btn btn-orange mini"><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Связаться</span></span></span></a>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="found_usr selected">
+                                <div class="brdpic">
+                                    <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/116x156pic.jpg" /></a>
+                                </div>
+                                <div class="usr_info">
+                                    <span class="fs3"><a href="" class="bold"><b>Yvonne</b></a>, 40 </span><br/>
+                                    <span class="gray fs1">Moate, Ireland</span>
+                                    <p class="indentTop10">Я одна, ищу парня, компанию девушек, большую компанию.</p>
+                                    <p>Россия, Украина, Турция, Египет</p>
+                                    <a href="" class="btn btn-orange mini"><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Связаться</span></span></span></a>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="found_usr">
+                                <div class="brdpic">
+                                    <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/116x156pic.jpg" /></a>
+                                </div>
+                                <div class="usr_info">
+                                    <span class="fs3"><a href="" class="bold"><b>Yvonne</b></a>, 40 </span><br/>
+                                    <span class="gray fs1">Moate, Ireland</span>
+                                    <p class="indentTop10">Я одна, ищу парня, компанию девушек, большую компанию.</p>
+                                    <p>Россия, Украина, Турция, Египет</p>
+                                    <a href="" class="btn btn-blue mini"><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Связаться</span></span></span></a>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="found_usr">
+                                <div class="brdpic">
+                                    <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/116x156pic.jpg" /></a>
+                                </div>
+                                <div class="usr_info">
+                                    <span class="fs3"><a href="" class="bold"><b>Yvonne</b></a>, 40 </span><br/>
+                                    <span class="gray fs1">Moate, Ireland</span>
+                                    <p class="indentTop10">Я одна, ищу парня, компанию девушек, большую компанию.</p>
+                                    <p>Россия, Украина, Турция, Египет</p>
+                                    <a href="" class="btn btn-blue mini"><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Связаться</span></span></span></a>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="found_usr selected">
+                                <div class="brdpic">
+                                    <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/116x156pic.jpg" /></a>
+                                </div>
+                                <div class="usr_info">
+                                    <span class="fs3"><a href="" class="bold"><b>Yvonne</b></a>, 40 </span><br/>
+                                    <span class="gray fs1">Moate, Ireland</span>
+                                    <p class="indentTop10">Я одна, ищу парня, компанию девушек, большую компанию.</p>
+                                    <p>Россия, Украина, Турция, Египет</p>
+                                    <a href="" class="btn btn-orange mini"><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Связаться</span></span></span></a>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="found_usr">
+                                <div class="brdpic">
+                                    <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/116x156pic.jpg" /></a>
+                                </div>
+                                <div class="usr_info">
+                                    <span class="fs3"><a href="" class="bold"><b>Yvonne</b></a>, 40 </span><br/>
+                                    <span class="gray fs1">Moate, Ireland</span>
+                                    <p class="indentTop10">Я одна, ищу парня, компанию девушек, большую компанию.</p>
+                                    <p>Россия, Украина, Турция, Египет</p>
+                                    <a href="" class="btn btn-blue mini"><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Связаться</span></span></span></a>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="found_usr">
+                                <div class="brdpic">
+                                    <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/116x156pic.jpg" /></a>
+                                </div>
+                                <div class="usr_info">
+                                    <span class="fs3"><a href="" class="bold"><b>Yvonne</b></a>, 40 </span><br/>
+                                    <span class="gray fs1">Moate, Ireland</span>
+                                    <p class="indentTop10">Я одна, ищу парня, компанию девушек, большую компанию.</p>
+                                    <p>Россия, Украина, Турция, Египет</p>
+                                    <a href="" class="btn btn-blue mini"><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Связаться</span></span></span></a>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="clr2"></div>
+                        </div>
+                    </div>
+					<div class="clr2"></div>
+				</div>
+			</div>
+            <div class="c_right">
+                <h2 class="dg_color">Популярные страны</h2>
+                <ul class="rlist">
+                    <li><a href="#">Турция</a></li>
+                    <li><a href="#">Мадагаскар</a></li>
+                    <li><a href="#">Тунис</a></li>
+                    <li><a href="#">Египет</a></li>
+                    <li><a href="#">Россия</a></li>
+                </ul>	
+                <h2 class="dg_color">Популярные города</h2>
+                <ul class="rlist">
+                    <li><a href="#">Минск</a></li>
+                    <li><a href="#">Кёльн</a></li>
+                    <li><a href="#">Смаргонь</a></li>
+                    <li><a href="#">Милан</a></li>
+                    <li><a href="#">Киев</a></li>
+                </ul>
+                <div class="indentTop10">
+                    <img src="./img/pbanner.png" alt="" />
+                </div>			
+            </div>
+			<div class="clr2"></div>
+		</div>
+	</div>
+	
+    <div class="social_rate">
+        <img src="./img/social-links.png" alt="" />
+    </div>
+    
+    <div class="footer">
+        <div class="footer_inn">
+            <ul>
+                <li><a href="/page/about">About us</a></li>
+                <li><a href="/help">FAQ</a></li>
+                <li><a href="http://blog.yangutu.com/">Our blog</a></li>
+                <li><a href="/feedback">Contact us</a></li>
+            </ul>
+            <ul>
+                <li><a href="/page/policy">Privacy</a></li>
+                <li><a href="/page/terms">Terms of use</a></li>
+            </ul>
+            <ul>			
+                <li><a href="/page/scams">Scam warning</a></li>
+                <li><a href="/page/safety">Safety Tips</a></li>
+            </ul>
+            <ul>
+                <li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+                <li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+                <li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="/dating/all">People Directory</a></li>
+            </ul>
+            <div class="right">
+                <font color="black">© 2010-2011 Yangutu Inc. All rights reserved</font><br>
+                <span>Yangutu (swahili) - My one and only.</span>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
