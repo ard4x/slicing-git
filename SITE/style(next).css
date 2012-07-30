@@ -2078,9 +2078,10 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 .profile-fill-bar .progress-line .progress-real-data{background:url(img/progress-line-right.png) 100% 50% no-repeat; height:13px;}
 
 .brdpic-finder {margin-left:-23px; position:relative; left:16px;  zoom:1;}
-.brdpic-finder .brdpic-result{margin-right:2px; float:left; padding:5px 5px 10px; position:relative;}
-.brdpic-finder .brdpic-result.result-info{position:absolute; bottom:10px; left:10px; white-space:nowrap; width:100%; overflow:hidden;}
+.brdpic-finder .brdpic-result{margin-right:2px; height: 151px; float:left; padding:5px 5px 10px; position:relative;}
+.brdpic-finder .brdpic-result .result-info{position:absolute; bottom:10px; left:10px; white-space:nowrap; width:100%; overflow:hidden;}
 .brdpic-finder .brdpic-result.hover{background-color:#eaf4f4;}
+.brdpic-finder .brdpic-result.hover .result-info{display:block!important;}
 
 .birth-previev{position:relative; padding:0 15px;}
 .birth-previev .previev-usr-info{font:18px/16px Arial; color:#808790;}
@@ -2466,7 +2467,7 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .piclist.tb_style.tb_guide .found_usr .tb_foundrate{zoom:1; *width:50px; *height:45px; z-index:999; text-align:center; color:#000; font:bold 26px Arial; padding:5px 10px; position:absolute; right:0; top:30px; border-radius:8px 0 0 8px; -moz-border-radius:8px 0 0 8px; -webkit-border-radius:8px 0 0 8px; -khtml-border-radius:8px 0 0 8px;}
 .piclist.tb_style.tb_guide .found_usr .tb_foundrate .title{font:bold 12px Arial; color:#999999;}
 .piclist.tb_style .found_usr.selected{background-color:#ecf4fb; border-color:#6ebeed; border-radius:8px; -moz-border-radius:8px; -webkit-border-radius:8px; -khtml-border-radius:8px;}
-.piclist.tb_style .found_usr{width:330px; margin:5px 10px 5px 0; border:4px solid transparent; background-color:transparent; zoom:1; *float:none; *display:inline;}
+.piclist.tb_style .found_usr{width:330px; margin:5px 10px 5px 0; border:4px solid transparent; zoom:1; *float:none; *display:inline;}
 
 .fixWidth815 .c_mid4{width:540px;}
 .fixWidth815 .c_mid4 textarea{width:505px!important;}
