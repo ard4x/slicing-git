@@ -2243,7 +2243,7 @@ p.vanilla,.vanilla-bg{padding:10px; background-color:#F6F5EB; color:#7F7E72;  ma
 
 
 /*forms new search matches*/
-.search-button-overflow{position:absolute; left:120px; top:-7px;}
+.search-button-overflow{position:absolute; bottom: -2px; right: -150px;}
 a.dotted{text-decoration:none; border-bottom:1px dashed;} /*THIS STYLE IS CHANGED -> .lookingbx a.dotted*/
 
 /*gift.html brdpic infobox*/
