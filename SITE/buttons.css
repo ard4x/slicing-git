@@ -375,10 +375,15 @@ input[type="button"].cl-right{border-radius:6px 0 0 6px; -webkit-border-radius:6
 .btn-ico.v4 .btn-txt{background-position:0 -124px;}
 .btn-ico.v5 .btn-txt{background-position:0 -168px;}
 .btn-ico.v6 .btn-txt{background-position:0 -210px;}
+.btn-ico.v7 .btn-txt{background-position:0 -242px; padding-left:40px;}
+.btn-ico.v7 .btn-txt::after{content:''; position:absolute; left:28px; top:2px; height:95%; width:1px;}
 
-.select_menu.small.profile_in {
-    padding: 0px;
-    position: absolute;
-    right: 0;
-    top: 10px;
-}
+    .btn-ico.btn-blue.v7 .btn-txt::after{background-color:#07487d;}
+    .btn-ico.btn-red.v7 .btn-txt::after{background-color:#630e0e;}
+    .btn-ico.btn-green.v7 .btn-txt::after{background-color:#295b0c;}
+    .btn-ico.btn-orange.v7 .btn-txt::after{background-color:#ad3507;}
+
+.select_menu.small.profile_in { padding: 0px; position: absolute; right: 0; top: 10px;}
+
+/*New export data buttons*/
+.btn.btn-ico{position:relative;}
