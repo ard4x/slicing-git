@@ -2619,11 +2619,23 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 
 /*Vip price new box*/
 .priceGroup-lg{margin-left:-10px; position:relative; left:10px; zoom:1;}
+
 .vipBox {position:relative; z-index:2; background:#fff; border:1px solid #c4c7ca; float:left; width:230px; margin-right:8px; box-shadow:1px 1px 3px #ced4de; text-align:center; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; overflow:hidden;}
 .vipBox .tContent{padding:0px 0px 10px; min-height:160px;}
 .vipBox .mp_vip{background:url(img/mpopular.png) 0 0 no-repeat; width:89px; height:89px; z-index:-1px; position:absolute; top:0; right:0;}
 .vipBox .tContent p{ border-top:1px solid #b1b4b7; padding:10px 0; color:#232c35;}
 .vipBox .tTitle{color:#4b545d; padding:5px 20px; text-align:left; font:bold 26px 'PT Sans'; text-shadow:0 1px 0 #fff; border-radius:4px 4px 0 0; -moz-border-radius:4px 4px 0 0; -webkit-border-radius:4px 4px 0 0;}
+
+.c_mid .vipBox {width:130px;}
+.c_mid .vipBox .tTitle {font-size:16px; padding:5px 10px;}
+.c_mid .price_pm {padding-left:45px; font-size:12px;}
+.c_mid .vipBox .tContent {min-height:130px;}
+.c_mid .price_pm > span {font: bold 26px/100% Arial;}
+.c_mid .price_lt > b{font-size:14px;}
+.c_mid .price_lt{font-size:12px;}
+.c_mid .price_free {font: bold 21px/54px Arial;}
+.c_mid .vipBox .mp_vip {background-image: url(img/mpopular_mid.png); width: 60px; height: 60px;}
+
 .price_free{font:bold 24px/71px Arial; color:#5e6874;}
 .price_pm{position:relative; padding-left:55px; display:block; width:90px; margin:0 auto; text-align:left; font-size:16px; color:#363c43;}
 .price_lt{font-size:16px; color:#363c43;}
