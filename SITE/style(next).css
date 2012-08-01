@@ -248,6 +248,7 @@ p {padding: 0 0 10px 0; margin:0;}
 
 .black {color:#000000 !important;}
 .gray {color:#808790 !important;}
+.white {color:#fff !important;}
 .lightgr {color:#9d9d9f !important;}
 .orange {color:#ffac2f !important;}
 .lightBlue a {color:#b6d9f7;}
@@ -517,6 +518,7 @@ a.loglink:hover span {border-bottom: none; color:#b6d9f7;}
 .inviteMF .numb2 {float: left; margin-right: 15px; margin-top: 10px; font-size: 16px; font-weight: bold;}
 
 .lookingbx {background-color:#ecf4fb; padding: 15px;}
+.lookingbx.wh {background-color:#fff; border-color:#e7e7e7;}
 .lookingbx .string {padding: 8px 15px;}
 .lookingbx input, .newListSelected {/* font-weight: bold; */}
 .lookingbx .titlebar .close {float: none !important;}
