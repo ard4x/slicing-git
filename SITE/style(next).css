@@ -2857,3 +2857,7 @@ a:hover.nfvc-options>i,.nf-view-content.hover .nfvc-options>i,.nf-view-content:h
 
 /*Screen prop. styles*/
 .screen-hidden{display:none!important;}
+
+.dwa-style{margin-left: 20px; position: absolute; z-index: 1; right: 0; top: 0; height: 100%; background-color:#e9eff5;}
+.dwa-style i{position:absolute; text-indent:-999px;  z-index:-1; left:-20px; top:0; width: 0px; height: 0px; border-top: 23px solid transparent; border-bottom: 23px solid transparent; border-right: 23px solid #e9eff5;}
+.dwa-style > .inner{padding:5px;}

@@ -375,7 +375,7 @@ input[type="button"].cl-right{border-radius:6px 0 0 6px; -webkit-border-radius:6
 .btn-ico.v4 .btn-txt{background-position:0 -124px;}
 .btn-ico.v5 .btn-txt{background-position:0 -168px;}
 .btn-ico.v6 .btn-txt{background-position:0 -210px;}
-.btn-ico.v7 .btn-txt{background-position:0 -242px; padding-left:40px;}
+.btn-ico.v7 .btn-txt{background-position:-2px -242px; padding-left:40px;}
 .btn-ico.v7 .btn-txt::after{content:''; position:absolute; left:28px; top:2px; height:95%; width:1px;}
 
     .btn-ico.btn-blue.v7 .btn-txt::after{background-color:#07487d;}
