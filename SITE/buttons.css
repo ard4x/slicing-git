@@ -364,7 +364,7 @@ input[type="button"].cl-right{border-radius:6px 0 0 6px; -webkit-border-radius:6
 
 /*NARROW*/
 .button_blue.narrow,.button_green.narrow,.button_black.narrow,.button_pink.narrow,.button_red.narrow,.button_orange.narrow,.btn-txt.narrow{font:bold 12px/13px Arial !important;}
-.button_blue,.button_green,.button_black,.button_pink,.button_red,.button_orange{-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;-o-user-select: none;user-select: none;}
+.button_blue,.button_green,.button_black,.button_pink,.button_red,.button_orange{-webkit-user-select: none; -khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;-o-user-select: none;user-select: none;}
 
 
 /*BUTTONS ICO*/
