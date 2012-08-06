@@ -2883,3 +2883,12 @@ a:hover.nfvc-options>i,.nf-view-content.hover .nfvc-options>i,.nf-view-content:h
 
 /*new styles for tb*/
 .tb_pro{background-image:url(img/guid_pro.png); width:45px; height:45px; position:absolute; top:-3px; right:-3px; text-indent:-9999px;}
+
+
+/*Travel new select box*/
+.travel-style .radio-select-box{width:475px; height:96px; background:url(img/travel/travel-select-box-bg.png) 0 0 no-repeat;}
+.travel-style .radio-select-box .description{padding-right:5px;}
+.travel-style .radio-select-box .label{height:93px;}
+.travel-style .radio-select-box .label input {margin-top: 40px;}
+.travel-style .radio-select-box.selected{background-position:0 -103px;}
+.travel-style .radio-select-box.offer.selected{background-position:0 100%;}
