@@ -362,27 +362,14 @@ a.loglink:hover span {border-bottom: none; color:#b6d9f7;}
     .bb_left {background: url(img/continue_blue_left.png) no-repeat;} 
     .bb_right {background: url(img/continue_blue_right.png) no-repeat;}
 	
-.blue_but{position:relative; left:-3px; overflow: hidden;}
-	.blue_but.big .contButBlue {background: url(img/continue_blueBig.png) repeat-x; padding:0 5px; margin:0 3px 0 3px; overflow:visible; width:auto; display:inline; text-shadow: 1px -2px 1px #283950; font:bold 24px Arial; color:#fff; height: 50px; cursor: pointer;} 
-    .blue_but.big .bb_left {background: url(img/continue_blueBig_left.png) no-repeat; font-size:0; padding:0; position:absolute; left:0px; top:-23px; display:block; width:3px; height:50px;} 
-    .blue_but.big .bb_right {background: url(img/continue_blueBig_right.png) no-repeat;  font-size:0; padding:0; position:absolute; right:3px; top:-23px; display:block;  width:3px; height:50px;} 
+.hr-line.gray {
+    border-color: #E2E2E2;
+}
+.hr-line {
+   border-top: 1px solid;
+    margin: 10px 0;
+}
 
-		@media screen and (-webkit-min-device-pixel-ratio:0) {
-			 .gb_left,.gb_right,.bb_left,.bb_right{top:-9px!important;}
-			 .blue_but.big .bb_left,.blue_but.big .bb_right{top:-21px!important;}
-			 .gb_left,.bb_left{left:0px!important;}
-			 .left .gb_right,.left .bb_right{right:0px!important;}
-		}
-		@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0){
-			  head~body .gb_left,.gb_right,.bb_left,.bb_right{top:0px!important;}
-			  head~body .blue_but.big .bb_left,.blue_but.big .bb_right{top:-3px!important;}
-			  head~body .gb_left,.bb_left{left:0px!important;}
-			  .gb_left,.gb_right,.bb_left,.bb_right{top:0px!important;}
-			  .gb_right,.bb_right{right:-3px!important;}
-			  .gb_left,.bb_left{left:0px!important;}
-			  .blue_but.big .bb_left{top:0px!important;}
-			  .blue_but.big .bb_right{top:0px!important;}
-		}
 
 .prvic{bottom: -5px; left: 45%; position: absolute;}		
 
@@ -2894,3 +2881,6 @@ a:hover.nfvc-options>i,.nf-view-content.hover .nfvc-options>i,.nf-view-content:h
 .travel-style .radio-select-box.offer.selected{background-position:0 100%;}
 .radio-select-box .price-color{color:#f68239;}
 .radio-select-box.offer .price-color{color:#63a925;}
+
+/*videobox.html*/
+.indentLeft60{margin-left:60px;}
