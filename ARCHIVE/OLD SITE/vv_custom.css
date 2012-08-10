@@ -1,0 +1,22 @@
+.subnav {overflow: visible; min-width: 10px;}
+.p_sch .search { margin-bottom: 0; padding-left: 2px; padding-right: 0px; background: none; width: 170px;}
+.search-button{background: url("/img/search.gif") no-repeat scroll 0 50% transparent; border: none; position: absolute; right: 2px; top: 2px; width:15px; height: 22px; cursor: pointer;}
+.search-button:focus{ border: none; text-decoration: none; outline: transparent none;}
+.bg-white {background: #ffffff;}
+.fn15 {font: normal 15px Arial;}
+.indentLeft20p { margin-left: 20%;}
+.indentRight20p { margin-right: 20%;}
+.stylish .SSContainerDivWrapper {top: 0px !important;}
+
+.vidlike-small {background: url("/img/vidlike.png") no-repeat scroll 0 50% transparent;color: #828282;font: 12px Arial;padding-left: 15px;}
+.vidbox_title {padding: 3px 5px 4px 0;}
+.vidbox_small {margin-top:15px;}
+.rss-link {background: url("/img/rss-feed-icon.gif") no-repeat scroll 0 50% transparent; font: bold 17px Arial; padding-left: 20px;}
+
+.hr-line.gray {border-color: #E2E2E2;}
+.hr-line {border-top: 1px solid;margin: 10px 0;}
+.gray {color: #808790 !important;}
+
+.block_reference {position: absolute; right: 0; top: 10px;}
+.tags_menu li.hot a {background: #f9cbcf;}
+.tags_menu li.hot a:hover {background:#4F6B8D;}

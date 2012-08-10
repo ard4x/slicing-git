@@ -1,0 +1,254 @@
+/* #more-info-div */
+/* YPROFILE CSS --> */
+div.profileGroupContent .Contentlist {
+    padding: 5px 0;
+    zoom:1;
+}
+
+.profileGroupContentEmpty {
+    display:none
+}
+
+#about-info-div #profile-edit-form .label, #more-info-div .unsaved-list .label {
+    width: 125px; 
+    display:inline-block
+}
+
+#about-info-div #profile-edit-form .labelLeft {
+    width: 125px;
+    display:inline-block
+}
+
+#about-info-div #profile-edit-form .labelRight {
+    padding-left:10px;
+    padding-right:10px;
+    width:50px;
+    display:inline-block
+}
+
+#about-info-div #profile-edit-form div.description {
+    margin-left: 130px;
+}
+
+#words-info-div .unsaved-list div.description {
+    margin-left:130px;
+}
+
+#basic-info-div  #userPersonalInformation div.description {
+    margin-left: 130px;
+}
+
+/* fbauto --> */
+#basic-info-div .fbauto, #more-info-div .fbauto {
+    padding:0;
+}
+
+#basic-info-div .fbauto .bit-input input, #more-info-div .fbauto .bit-input input {
+    width: 268px;
+}
+
+#basic-info-div .fbauto .bit-input, #more-info-div .fbauto .bit-input {
+    width: 99%;
+}
+
+#basic-info-div .t-h-w { cursor:pointer; padding-left: 25px;}
+
+#more-info-div .fbauto li {
+    overflow:visible;
+}
+
+#basic-info-div .fbauto .facebook-auto, #more-info-div .fbauto .facebook-auto {
+    width: 274px;
+    margin: 0 0 0 2px;
+}
+
+#basic-info-div .fbauto .label2, #more-info-div .fbauto .label2 {
+    width: 123px;
+    float: left;
+}
+/* fbauto <-- */
+
+#soul-test-div .prinfo {
+    padding:0;
+}
+
+#basic-info-div div.languageLevels div.newListSelected {
+    float:right;
+    margin-right:69px;
+    width:120px;
+    display:inline-block
+}
+
+#basic-info-div div.languageMoreSelector input[type="checkbox"] {
+    margin-right:4px;
+}
+
+#basic-info-div div.languageMoreSelector div.newListSelected {
+    width:120px;
+    display:inline-block
+}
+
+.profilePets .profileCheckboxEven, .profileDrinksPrefer .profileCheckboxEven,
+.profilePets .profileCheckboxOdd, .profileDrinksPrefer .profileCheckboxOdd {
+    float:left;
+    display:block;
+    width:50%;
+}
+
+div.profileGroupLegend {
+    background: url('/images/1x1xAAAAAA.png');
+    background-position: center;
+    background-repeat: repeat-x;
+}
+
+div.profileGroupLegend span.legend {
+    font-weight:bold;
+    white-space:nowrap;
+    background-color: white;
+}
+
+.unsaved-list div.profileGroupLegend span.legend {
+    background-color:#F6F6F7;
+}
+
+.saved-list div.profileGroupContent div.label {
+    width: 163px; 
+}
+
+.saved-list div.profileGroupContent .description {
+    margin-left:163px;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+#basic-info-div .languageName {
+    float:left;
+    width:70px   
+}
+
+body.lang-ru #basic-info-div .languageName {width:90px;}
+
+/* Support for languages render --> */
+.saved-list div.profileGroupContent .description ul {
+    font-size:11px;
+    margin-left:-6px;
+}
+.saved-list div.profileGroupContent .description ul .label {
+    width:90px;
+    display:inline-block;
+    float:left;
+}
+/* Support for languages render <-- */
+
+/* Support for userInterests render of Dictionary values --> */
+.saved-list div.profileGroupContent .description li {
+    display:inline;
+}
+/* Support for userInterests render of Dictionary values <-- */
+
+.saved-list div.profileGroupLegend {
+    margin-top:7px;
+}
+
+div.profileGroupContent div.label, label.optional, label.required {
+    color:#666666;
+}
+
+#about-info-div div.newListSelected {
+    width:120px;
+    display:inline-block;
+}
+
+#basic-info-div div.newListSelected {
+    width:275px;
+    display:inline-block;
+}
+
+#basic-info-div .profileSmokesDontLikeSmokers div.newListSelected{
+    width:150px;
+    display:inline-block;
+}
+
+#basic-info-div .profileSmokesDontLikeSmokers {
+    padding-top:14px;
+}
+
+#basic-info-div div.kidsa-item div.newListSelected {
+    width:123px !important;
+}
+
+#basic-info-div .profileSmokesDontLikeSmokers input[type="checkbox"] {
+    margin-left:20px;
+}
+
+#basic-info-div .birthDateSelectors div.newListSelected {
+    width:85px;
+    display:inline-block;
+}
+
+#basic-info-div .profileHeightWeightContainer div.newListSelected {
+    width:180px;
+    display:inline-block;
+}
+
+#basic-info-div .unsaved-list .label {
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+#about-info-div div.profileGroupContent select {
+    width:120px;
+    padding:0;
+    margin:0;
+}
+
+#about-info-div div.profileGroupContent textarea{
+    display:inline-block;
+    width:305px !important;
+    padding:0;
+    margin:0;
+}
+#about-info-div div.profileGroupContent input.multicheckbox {
+
+}
+
+/* YPROFILE CSS ABOUT ME ui.multiselect --> */
+#about-info-div div.profileGroupContent div.ui-multiselect {
+    width:300px !important;
+}
+#about-info-div div.profileGroupContent div.ui-multiselect div.available, #about-info-div div.profileGroupContent div.ui-multiselect  div.selected {
+    width:150px !important;
+}
+#about-info-div div.profileGroupContent div.ui-multiselect div.available ul.available .ui-element {
+    width:140px !important;
+}
+#about-info-div div.profileGroupContent div.ui-multiselect ul.connected-list {
+    width:149px !important;
+}
+#about-info-div div.profileGroupContent div.ui-multiselect div.actions input.search {
+    width:110px !important;
+}
+#about-info-div div.profileGroupContent div.ui-multiselect .ui-element {
+    width:145px !important;
+}
+/* YPROFILE CSS ABOUT ME ui.multiselect <-- */
+
+/* YPROFILE CSS <-- */
+
+.progressbar{width:100%; padding-top:2px; background:url(img/progressbar-bg.jpg) 0 0 repeat-x; margin:10px 0; position:relative;}
+.progress-line{background:url(img/progress-line-bg.jpg) 0 0 repeat-x; height:4px; position:relative;}
+.progress-control{background:url(img/progress-control-point-bg.jpg) 100% 0 no-repeat; position:absolute; height:7px; width:100%; top:-7px; left:0px;}
+.progress-control-point{width:25%; float:left; height:5px; background:url(img/progress-control-point-bg.jpg) 0 0 no-repeat; position: relative;}
+.progress-line-button{background:url(img/progress-line-button.png) 0 0 no-repeat; height:18px; width:13px; position:absolute; right:-7px; top:-5px; cursor:pointer;}
+.progress-line-button p{position:absolute; top:auto; bottom:100%; margin-bottom:3px; padding:0px; left:50%; z-index:99;}
+.progress-line-button p span{background-color:#eceff3; font-size:11px; color:#426087; border:1px solid #c0c8cd; padding:2px 5px;  visibility: visible; position:relative; right:auto; display:block; top:-3px; left:-50%; z-index:9999;}
+.progress-line-button p img{position:absolute; bottom:-5px; left:50%; margin-left:-4px; z-index:101;}
+
+.aged .newListSelected{width:110px;}
+body.lang-ru .aged .newListSelected{width:130px;}
+
+.lookingbx label {font-weight:normal!important;}
+.lookingbx label input{margin-left:0px;}
+
+.progress-control-point-city {position: absolute; top: 22px;right: 0;font-size: 12px;}
+.progress-control-point-city-top100 {position: absolute; top: 22px;left: 0;font-size: 12px;}

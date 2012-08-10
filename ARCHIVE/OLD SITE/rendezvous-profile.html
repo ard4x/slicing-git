@@ -1,0 +1,230 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Yangutu</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="style(next).css" type="text/css" id="" />
+	<link rel="stylesheet" href="buttons.css" type="text/css" id="" />
+	<link rel="stylesheet" href="popups.css" type="text/css" id="" />
+	<link rel="stylesheet" href="custom.css" type="text/css" id="" />
+	
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <script src="js/jquery.stylish-select.js" type="text/javascript"></script>
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $('select.select').sSelect();
+                
+                var ieFixCount =0;
+                $('.selectedTxt').bind('click',function(){
+                    ieFixCount++;
+                    $(this).closest('.inner').css({'z-index': ieFixCount + 1});
+                    $(this).closest('.description').css({'z-index': ieFixCount + 1});
+                });
+            });
+	</script>
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="ie7.css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="ie8.css" />
+	<![endif]-->
+</head>
+<body>
+	<div class="header">
+		<div class="header_inn">
+			<div class="top_navigation">
+				<ul class="left">
+					<li><a href="">Messages</a><span class="new_event">2</span></li>
+					<li><a href="">Signals</a><span class="new_event">45</span></li>
+					<li><a href="">Soulmates</a><span class="new_event">167</span></li>
+				</ul>
+				<ul class="right">
+					<li class="coints">1450 Coins <a href="#">Add</a></li>
+					<li class="profile"><a href="#">Profile </a></li>
+					<li class="account"><a href="#">Account Settings</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<div class="bot_navigation">
+				<a href="#"><img src="./img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>	
+				<ul class="main_menu">
+					<li><a href="">Home</a></li>
+					<li><a href="">Matches</a></li>
+					<li><a href="">TOP-100</a></li>
+					<li><a href="">Apps and Games</a></li>
+					<li><a href="">Blogs</a></li>
+				</ul>
+				<div class="clr2"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="content">
+		<div class="content_inn">			
+			<div class="c_left4">
+                <div>
+                   <div class="my_brdpic_top"></div>
+                    <div class="my_brdpic4">
+                        <a href=""><span class="zoom-in"></span><img src="./img/216x286pic.jpg" alt="" /></a>
+                    </div>
+                    <div class="my_brdpic_bottom"></div>
+                </div>
+                <div class="indentTop5">
+                    <div class="brdpic2 left"><a href=""><img src="img/56x76pic.jpg" alt="" /></a></div>
+                    <div class="brdpic2 indentLeft15 left"><a href=""><img src="img/56x76pic.jpg" alt="" /></a></div>
+                    <div class="brdpic2 right"><a href=""><img src="img/56x76pic.jpg" alt="" /></a></div>
+                    <div class="clr2"></div>
+                </div>
+                <div class="indentTop5">
+                    <a href="">Посмотреть все</a>
+                </div>
+            </div>
+            <div class="c_mid4">
+                <div class="prelative">
+                    <p class="fs5 tbold left"><span>Taras, 22 </span></p>
+                    <a href="" class="tb_addfav">Add to favorites</a>
+                    <div class="clr2"></div>
+                    <p><span class="fs1 tnormal">Saint Petersburg, Russia</span></p>
+                    <div class="select_menu small profile_in">
+                        <ul class="left">
+                            <li class="first"><a href=""><span>&#9668;</span></a></li>
+                            <li class="last select"><a href=""><span class="ygi-man">Next &#9658;</span></a></li>
+                        </ul>
+                        <div class="clr2"></div>
+                    </div>
+                </div>
+                <div class="clr2"></div>
+                <div class="indentTop10">
+                    <div class="select_menu">
+                        <ul class="left">
+                            <li class="first"><a href=""><span>О себе</span></a></li>
+                            <li><a href=""><span>Гид</span></a></li>
+                            <li><a href=""><span>Путешественник</span></a></li>
+                            <li><a href=""><span>Геймер</span></a></li>
+                            <li class="last select"><a href=""><span>Свидания</span></a></li>
+                        </ul>
+                        <div class="clr2"></div>
+                    </div>
+                </div>
+                <div class="indentTop20">
+                    <div class="ver-faq indentTop10">
+                       <div class="tb_form">
+                        <div class="tb_form_content">
+                            <div class="label">Регион</div>
+                            <div class="description">
+                                <input type="text" class="text indentRight10" />
+                                <a href="">Выбрать из списка</a>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="clr2"></div>
+                        </div>
+                        <div class="tb_form_content">
+                            <div class="label">Когда</div>
+                            <div class="description">
+                                <div class="left flWidth50">
+                                    <div><label for="id1"><input type="checkbox" name="" id="id1" value=""> 30 марта, пт.</label></div>
+                                    <div><label for="id2"><input type="checkbox" name="" id="id2" value=""> 31 марта, сб.</label></div>
+                                    <div><label for="id3"><input type="checkbox" name="" id="id3" value=""> 1 апреля, вс.</label></div>
+                                    <div><label for="id4"><input type="checkbox" name="" id="id4" value=""> 2 апреля, пн.</label></div>
+                                    <div><label for="id5"><input type="checkbox" name="" id="id5" value=""> 3 апреля, вт.</label></div>
+                                    <div><label for="id6"><input type="checkbox" name="" id="id6" value=""> 4 апреля, ср.</label></div>
+                                    <div><label for="id7"><input type="checkbox" name="" id="id7" value=""> 5 апреля, чт.</label></div>
+                                    <div class="clr2"></div>
+                                </div>
+                                <div class="left flWidth50">
+                                    <div class="indentBottom5">
+                                        <label><span class="left indentTop5"> c </span> <span class="right"><input type="text" class="text fixWidth90" /> <button class="button_blue mini"><img src="./img/calendar_button_ico.png" alt="" /></button></span></label>
+                                        <div class="clr2"></div>
+                                    </div>
+                                    <div  class="indentBottom5">
+                                        <label><span class="left indentTop5"> по </span> <span class="right"><input type="text" class="text fixWidth90" /> <button class="button_blue mini"><img src="./img/calendar_button_ico.png" alt="" /></button></span></label>
+                                        <div class="clr2"></div>
+                                    </div>
+                                    <div><label for="id8"><input type="radio" name="" id="id8" value=""> Ближайшая неделя</label></div>
+                                    <div><label for="id9"><input type="radio" name="" id="id9" value=""> Ближайший месяц</label></div>
+                                    <div><label for="id10"><input type="radio" name="" id="id10" value=""> Все равно</label></div>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="clr2"></div>
+                        </div>
+                        <div class="tb_form_content">
+                            <div class="label">Чтобы</div>
+                            <div class="description">
+                                <label for="id_1" class="list" title="погулять"><input type="checkbox" name="" id="id_1" value=""> погулять</label>
+                                <label for="id_2" class="list" title="выехать на природу"><input type="checkbox" name="" id="id_2" value=""> выехать на природу</label>
+                                <label for="id_3" class="list" title="сходить в клуб"><input type="checkbox" name="" id="id_3" value=""> сходить в клуб</label>
+                                <label for="id_4" class="list" title="заняться сексом"><input type="checkbox" name="" id="id_4" value=""> заняться сексом</label>
+                                <label for="id_5" class="list" title="пойти в кино"><input type="checkbox" name="" id="id_5" value=""> пойти в кино</label>
+                                <label for="id_6" class="list" title="заняться спортом"><input type="checkbox" name="" id="id_6" value=""> заняться спортом</label>
+                                <label for="id_7" class="list" title="пойти на концерт, на выставку"><input type="checkbox" name="" id="id_7" value=""> пойти на концерт, на выставку</label>
+                                <label for="id_8" class="list" title="поговорить по телефону"><input type="checkbox" name="" id="id_8" value=""> поговорить по телефону</label>
+                                <label for="id_9" class="list" title="пригласить в гости"><input type="checkbox" name="" id="id_9" value=""> пригласить в гости</label>
+                                <label for="id_10" class="list" title="заняться виртуальным сексом"><input type="checkbox" name="" id="id_10" value=""> заняться виртуальным сексом</label>
+                                <label for="id_11" class="list" title="позавтракать вместе"><input type="checkbox" name="" id="id_11" value=""> позавтракать вместе</label>
+                                <label for="id_12" class="list" title="выпить пива или покрепче"><input type="checkbox" name="" id="id_12" value=""> выпить пива или покрепче</label>
+                                <label for="id_13" class="list" title="пообедать вместе"><input type="checkbox" name="" id="id_13" value=""> пообедать вместе</label>
+                                <label for="id_14" class="list" title="выпить кофе / чаю"><input type="checkbox" name="" id="id_14" value=""> выпить кофе / чаю</label>
+                                <label for="id_15" class="list" title="поужинать вместе"><input type="checkbox" name="" id="id_15" value=""> поужинать вместе</label>
+                                <label for="id_16" class="list" title="сходить в театр"><input type="checkbox" name="" id="id_16" value=""> сходить в театр</label>
+                            </div>
+                            <div class="clr2"></div>
+                        </div>
+                        <div class="tb_form_content">
+                            <div class="label">Комментарий</div>
+                            <div class="description">
+                                <div class="inner">
+                                    <textarea class="newText flWidth99"></textarea>
+                                </div>
+                                <div class="inner">
+                                   <input type="button" class="button_blue small" value="Сохранить" />
+                                   <a href="">Не сохранять</a>
+                                </div>
+                            </div>
+                            <div class="clr2"></div>
+                        </div>
+                    </div>
+                    </div>
+                </div>   
+            </div>
+            <div class="c_right">
+                <img src="./img/pbanner.png" alt="" />
+            </div>
+			<div class="clr2"></div>
+		</div>
+	</div>
+	
+	<div class="footer">
+	  <div class="footer_inn">
+		<ul>
+			<li><a href="/page/about">About us</a></li>
+			<li><a href="/help">FAQ</a></li>
+			<li><a href="http://blog.yangutu.com/">Our blog</a></li>
+			<li><a href="/feedback">Contact us</a></li>
+		</ul>
+		<ul>
+			<li><a href="/page/policy">Privacy</a></li>
+			<li><a href="/page/terms">Terms of use</a></li>
+		</ul>
+		<ul>			
+			<li><a href="/page/scams">Scam warning</a></li>
+			<li><a href="/page/safety">Safety Tips</a></li>
+		</ul>
+		<ul>
+			<li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+			<li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+			<li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+		
+		</ul>
+		<ul>
+		  <li><a href="/dating/all">People Directory</a></li>
+		</ul>
+		<div class="right">
+			<font color="black">&copy; 2010-2011 Yangutu Inc. All rights reserved</font><br>
+		  <span>Yangutu (swahili) - My one and only.</span>
+		</div>
+		 <div class="clear"></div>
+	  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,899 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html class="screen-size">
+<head>
+	<title>Yangutu</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf8" />
+	
+	<link rel="stylesheet" href="style(next).css" type="text/css" id="" />
+	<link rel="stylesheet" href="forms.css" type="text/css" id="" />
+	<link rel="stylesheet" href="buttons.css" type="text/css" id="" />
+	<link rel="stylesheet" href="banners.css" type="text/css" id="" />
+	<link rel="stylesheet" href="custom.css" type="text/css" id="" /> <!-- СТИЛИ КОТОРЫЕ УЖЕ ЕСТЬ НА ПРОДЕ // НЕОБХОДИМО ЗАМЕНИТЬ!!!!!-->
+	<link rel="stylesheet" media="screen and (min-width: 1300px)" href="screen-above.css" /> <!-- СТИЛИ КОТОРЫЕ УЖЕ ЕСТЬ НА ПРОДЕ // НЕОБХОДИМО ЗАМЕНИТЬ!!!!!-->
+	
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <script src="js/jquery.stylish-select.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('select.select').sSelect();
+			$('.found_usr').hover(function(){$(this).addClass('hover');},function(){$(this).removeClass('hover');});
+		});
+	</script>
+	<script type="text/javascript">
+        /*script to view*/
+        $(function(){
+            $('.main_menu > li,.user_menu ul > li,.nf-tab > a,.nfvc-options').bind('click',function(){
+                $('.main_menu > li,.user_menu ul > li,.nf-tab > a,.nfvc-options-block').removeClass('active');
+                $(this).not('.nfvc-options').addClass('active');
+                $(this).next('.nfvc-options-block').addClass('active');
+                return false;
+            })
+            
+            function stsStyle(){ 
+                $('.select_menu').each(function(){
+                    var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),                    
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                    objElement.css({'width': w+'px'})
+                    console.log(obj.width())
+                
+                });
+            }
+            stsStyle();
+            
+            function cleftSrcoll(){
+                var $document = $(document),
+                    $element = $('.leftside'),
+                    className = 'scrolled';
+                    
+                if($.browser.msie){ var $document = $(window); } /*ИЕ не работает с document.scroll*/
+                
+                $document.scroll(function() {
+                  if ($document.scrollTop() >= 50) { 
+                    $element.addClass(className);
+                  } else {
+                    $element.removeClass(className);
+                  }
+                });
+            };
+            cleftSrcoll();
+        })
+    </script>
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="ie7.css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="ie8.css" />
+	<![endif]-->
+</head>
+<body>
+	
+    <div class="header">
+        <div class="header_inn">
+            <a href="#"><img src="./img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>	
+            <ul class="main_actmenu">
+                <li><a href=""><span class="v1">Messages</span><i class="hrg">1</i></a></li>
+                <li><a href=""><span class="v2">Signals</span><i class="hrg">99</i></a></li>
+            </ul>
+            <ul class="main_menu">
+                <li><a href="">People</a></li>
+                <li><a href="">Games</a></li>
+                <li>
+                    <a href="">Videobox</a>
+                    <div style="width:300px;">
+                        <div class="inner">
+                            <ul class="left">
+                                <li><a href="http://yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Adventures">Adventures</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cars">Cars</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Celebrities">Celebrities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Children">Children</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cities">Cities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Crazy">Crazy &amp; Extreme</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Dating+%26+Relationships">Dating Relationships</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Family">Family</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Fashion">Fashion</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Funny">Funny &amp; Cute</a></li>
+                            </ul>
+                            <ul class="right">
+                                <li><a href="http://yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Adventures">Adventures</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cars">Cars</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Celebrities">Celebrities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Children">Children</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cities">Cities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Crazy">Crazy &amp; Extreme</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Dating+%26+Relationships">Dating &amp; Relationships</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Family">Family</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Fashion">Fashion</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Funny">Funny &amp; Cute</a></li>
+                            </ul>
+                            <div class="clr2"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Talks</a>
+                    <div>
+                        <div class="inner">
+                            <ul>
+                                <li><a href="">Daily Talks</a></li>
+                                <li><a href="">Hot discussions</a></li>
+                                <li><a href="">Corporate blog</a></li>
+                                <li><a href="">Polls</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">Questions</a></li>
+            </ul>
+            <div class="user_menu">
+                <div>
+                    <ul>
+                        <li>
+                            <a class="todo" href="" title="Accaunt Settings"><i></i></a>
+                            <div>
+                                <div class="inner">
+                                    <ul>
+                                        <li><a href="">Пригласить друзей</a></li>
+                                        <li><a href="">Деньги за друзей</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <ul>
+                                        <li><a href="">Email уведомления</a></li>
+                                        <li><a href="">Платежи</a></li>
+                                        <li><a href="">Заблокированные пользователи</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <ul>
+                                        <li><a href="">Yangutu iPhone</a></li>
+                                        <li><a href="">Yangutu Android</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <a href="">Выход</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="tuse">
+                                <a href="" title="Julia's profile"><img src="./img/36x36pic.png" alt="" /></a>
+                                <a href="" title="Julia's profile" class="fs3 pt"><b>Julia</b></a>
+                                <a href="" title="Add more coins">1 819 coins</a>
+                            </span>
+                            <div class="clr2"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clr2"></div>
+        </div>
+    </div>
+	
+	<div class="content">
+		<div class="content_inn">
+			<div class="c_left2">
+                <h1>Singles</h1>
+				<!-- <div class="lookingbx">
+					<div class="content_menu_bottom">
+						<div class="inner">
+							<div class="progressbar">
+								<div class="progress-control">
+									<div class="progress-control-point"></div>									
+									<div class="progress-control-point"></div>									
+									<div class="progress-control-point"></div>									
+									<div class="progress-control-point"></div>									
+								</div>
+								<div class="progress-line" style="width:40%;"><div class="progress-line-button"><p><span><img src="./img/progress-line-arrow.png" alt="" title="" /><nobr>Within 15 miles</nobr></span></p></div></div>
+							</div>
+							<div>
+								<p class="left"><span>Minsk</span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Select from the list</a></p>
+								<p class="right"><span>Belarus</span></p>
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+							<div class="left indentRight20">
+								<p><b>Looking for a</b>  <label class="indentLeft10"><input type="radio" /> Woman</label>  <label class="indentLeft10"><input type="radio" /> Man</label> <b class="indentLeft20">Aged</b></p>
+							</div>
+							<div class="aged left">
+								<select class="select">
+									<option>any aged</option>
+									<option>19</option>
+									<option>..</option>
+									<option>99</option>
+								</select>
+							</div>
+							<div class="right">
+								<input type="button" value="Find people" class="button_blue small fixWidth120" />
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					<div class="tcenter indentTop10">
+						<a class="dotted" id="s-more" href="">Advansed search</a>
+					</div>
+				</div>
+				
+				<div class="banner_vtop blue indentTop20">
+					<div class="inner prelative">
+						<div class="f2f_banner_arrow"></div>
+						<div class="f2f_banner_ico up">
+							<p class="title fs3">Хочешь что бы тебя увидело больше людей?</p>
+							<p>Купи «Stand Up» + Выше рейтинг <br/>
+							и будь выше в поиске. + Экономия времени</p>
+						</div>
+						<a href="" id="bannerClose"><img alt="" class="cls4" src="img/close_ic.png"></a>
+						<input type="button" class="button_blue large fixWidth120 indentTop20" value="Купить" />
+					</div>
+				</div> -->
+				
+				<div class="lookingbx no-resize p-left">
+					<div class="content_menu_bottom">
+						<div class="inner">
+							<div class="progressbar">
+								<div class="progress-control">
+									<div class="progress-control-point"></div>									
+									<div class="progress-control-point"></div>									
+									<div class="progress-control-point"></div>									
+									<div class="progress-control-point"></div>									
+								</div>
+								<div class="progress-line" style="width:40%;"><div class="progress-line-button"><p><span><img src="./img/progress-line-arrow.png" alt="" title="" /><nobr>Within 15 miles</nobr></span></p></div></div>
+							</div>
+							<div>
+								<p class="left"><span>Minsk</span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Select from the list</a></p>
+								<p class="right"><span>Belarus</span></p>
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+							<div class="left indentRight20">
+								<p><b>Looking for a</b>  <label class="indentLeft10"><input type="radio" /> Woman</label>  <label class="indentLeft10"><input type="radio" /> Man</label> <b class="indentLeft20">Aged</b></p>
+							</div>
+							<div class="aged left">
+								<select class="select">
+									<option>any aged</option>
+									<option>19</option>
+									<option>..</option>
+									<option>99</option>
+								</select>
+							</div>
+							<div class="right">
+								<input type="button" value="Find people" class="button_blue small fixWidth120" />
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+					<div class="hr"><div></div></div>
+					
+					<div class="selection">
+						<a class="popClose" href=""><img src="img/close_ic.png" class="cls4" alt="" /></a>
+						<select class="select">
+							<option value="" label="">Select 1st criterion</option>
+							<option value="" label="">selection</option>
+							<option value="" label="">selection</option>
+							<option value="" label="">selection</option>
+							<option value="" label="">selection</option>
+						</select>
+						<div class="inner"><p>Choose a search criterion from 
+							the drop down menu.</p></div>
+					</div>
+					<div class="selection">
+						<a class="popClose" href=""><img src="img/close_ic.png" class="cls4" alt="" /></a>
+						<select class="select">
+							<option value="" label="">Select 2d criterion</option>
+							<option value="" label="">selection</option>
+							<option value="" label="">selection</option>
+							<option value="" label="">selection</option>
+							<option value="" label="">selection</option>
+						</select>
+						<div class="inner"><p>Choose a search criterion from 
+							the drop down menu.</p></div>
+					</div>
+					<div class="selection">
+						<a class="popClose" href=""><img src="img/close_ic.png" class="cls4" alt="" /></a>
+						<select class="select">
+							<option value="" label="">Select 3d criterion</option>
+							<option value="" label="">selection</option>
+							<option value="" label="">selection</option>
+							<option value="" label="">selection</option>
+							<option value="" label="">selection</option>
+						</select>
+						<div class="inner"><p>Choose a search criterion from 
+							the drop down menu.</p></div>
+					</div>
+					
+					<div class="clear"></div>
+					<div class="tcenter indentTop10">
+						<a class="dotted" id="s-more" href="">Advansed search</a>
+					</div>
+				</div>
+                <div class="lookingbx fixWidth320 right screen-hidden">
+                    <h2>Some title</h2>
+                    <p>Some text</p>
+                </div>
+				<div class="clr2"></div>
+				<!-- <div class="lookingbx indentTop10">
+					<div class="content_menu_bottom">
+						<div class="inner">
+							<div class="progressbar">
+								<div class="progress-control">
+									<div class="progress-control-point"></div>									
+									<div class="progress-control-point"></div>									
+									<div class="progress-control-point"></div>									
+									<div class="progress-control-point"></div>									
+								</div>
+								<div class="progress-line" style="width:40%;"><div class="progress-line-button"><p><span><img src="./img/progress-line-arrow.png" alt="" title="" /><nobr>Within 15 miles</nobr></span></p></div></div>
+							</div>
+							<div>
+								<p class="left"><span>Minsk</span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Select from the list</a></p>
+								<p class="right"><span>Belarus</span></p>
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+							<div class="left indentRight20">
+								<p><b>Looking for a</b>  <label class="indentLeft10"><input type="radio" /> Woman</label>  <label class="indentLeft10"><input type="radio" /> Man</label> <b class="indentLeft20">Aged</b></p>
+							</div>
+							<div class="aged left">
+								<select class="select">
+									<option>any aged</option>
+									<option>19</option>
+									<option>..</option>
+									<option>99</option>
+								</select>
+							</div>
+							<div class="right">
+								<input type="button" value="Find people" class="button_blue small fixWidth120" />
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+					
+					<div class="hr"><div></div></div>
+					<div class="selection">
+						<a class="popClose" href=""><img src="img/close_ic.png" class="cls4" alt="" /></a>
+						<select class="select">
+							<option value="" label="">Height</option>
+							<option value="" label="">selection</option>
+							<option value="" label="">selection</option>
+							<option value="" label="">selection</option>
+							<option value="" label="">selection</option>
+						</select>
+						<div class="inner">
+							<p><label><input type="radio" name="1"/> <span>Wants to meet with a man, 25-65</span></label></p>
+							<p><label><input type="radio" name="1"/> Blue</label></p>
+							<p><label><input type="radio" name="1"/> Blue-gray</label></p>
+							<p><label><input type="radio" name="1"/> Brown</label></p>
+							<p><label><input type="radio" name="1"/> Green</label></p>
+							<p><label><input type="radio" name="1"/> Green-gray</label></p>
+							<p><label><input type="radio" name="1"/> Hazel</label></p>
+							<div class="closeSelection">	
+								<a href="">Delete</a>
+							</div>
+						</div>
+					</div>
+					<div class="selection">
+						<a class="popClose" href=""><img src="img/close_ic.png" class="cls4" alt="" /></a>
+						<select class="select">
+							<option value="" label="">Eye color</option>
+							<option value="" label="">selection</option>
+							<option value="" label="">selection</option>
+							<option value="" label="">selection</option>
+							<option value="" label="">selection</option>
+						</select>
+						<div class="inner">
+							<p><label><input type="radio" name="3"/> Black</label></p>
+							<p><label><input type="radio" name="3"/> Blue</label></p>
+							<p><label><input type="radio" name="3"/> Blue-gray</label></p>
+							<p><label><input type="radio" name="3"/> Brown</label></p>
+							<p><label><input type="radio" name="3"/> Green</label></p>
+							<p><label><input type="radio" name="3"/> Green-gray</label></p>
+							<p><label><input type="radio" name="3"/> Hazel</label></p>
+							<div class="closeSelection">	
+								<a href="">Delete</a>
+							</div>
+						</div>
+					</div>
+					<div class="selection">
+						<a class="popClose" href=""><img src="img/close_ic.png" class="cls4" alt="" /></a>
+						<select class="select">
+							<option value="" label="">Eye color</option>
+							<option value="" label="">selection</option>
+							<option value="" label="">selection</option>
+							<option value="" label="">selection</option>
+							<option value="" label="">selection</option>
+						</select>
+						<div class="inner">
+							<p><label><input type="radio" name="3"/> Black</label></p>
+							<p><label><input type="radio" name="3"/> Blue</label></p>
+							<p><label><input type="radio" name="3"/> Blue-gray</label></p>
+							<p><label><input type="radio" name="3"/> Brown</label></p>
+							<p><label><input type="radio" name="3"/> Green</label></p>
+							<p><label><input type="radio" name="3"/> Green-gray</label></p>
+							<p><label><input type="radio" name="3"/> Hazel</label></p>
+							<div class="closeSelection">	
+								<a href="">Delete</a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="clear"></div>
+					<div class="tcenter indentTop10">
+						<a class="dotted" id="s-more" href="">Advansed search</a>
+					</div>
+				</div> -->
+				
+				<!-- <div class="fs5 tbold indentTop20">We've got off the trail...</div>
+				<div class="mbox">
+					<div class="paginator left innerTop10">
+						<ul>
+							<li class="prev"><a href="#">Next</a></li>
+						</ul>
+					</div>
+					<div class="indentLeft65">
+						<b>You've gone too far...</b><br/>
+						Try and change your search parameters,<br/>
+						and we you will find an appropriate person even sooner than it may seem.
+					</div>
+				</div>
+				<div class="fs5 tbold indentTop20">We found 1000+ matches for you</div>
+				<div class="lookingbx tcenter">
+					<a href="">New 79 women</a>
+				</div>
+				<div class="clear"></div> -->
+				
+                
+                <div id="ygReplacmentArea">
+                    <div class="piclist">
+                        <div class="inner">
+                        
+                            <div class="found_usr first-place">
+                                <div class="brdpic"><img src="https://yangutu-s5.s3.amazonaws.com/85/75/bc/116x156_5022857.jpg?1331116895" alt="" />    </div>
+                                <div class="usr_info">
+                                    <div class="indentTop5"><span class="fs3">Get to<br> the 1st position in search results!</span></div>
+                                    <div class="indentTop20">
+                                        <input type="button" class="button_orange mini fixWidth90 ygPopup" fid="5" data-selector="#rise-up-popup" data-action="rise-up-popup" data-coins-page="1" value="Start now" alt="" />
+                                    </div>
+                                </div>
+                                <a href="#" class="pup ygPopup" data-selector="#rise-up-popup" data-action="rise-up-popup">
+                                    <img src="./img/pup.png" alt="" />
+                                </a>
+                            </div>
+
+                            <div id="rel_id_1047071" class="search_list_item vip_usr  found_usr">
+                                <input type="hidden" class="user_id" value="1047071" alt="" />
+                                <div class="brdpic">
+                                    <a href="/payments/vip" class="birdpic_vip"><img src="./img/birdpic_vip.png" class=" go_vip" rel="no-resize" alt="" /></a>
+                                    <a href="/2441517601" title="" class=" sfx" style="display: block; overflow: hidden; width: 116px; height: 160px; margin: 0px 0px 0px 5px; "><img src="https://yangutu-s7.s3.amazonaws.com/ab/c6/a4/116x156_5067041.jpeg?1342683789" style="position: relative; " alt="" /></a>
+                                </div>
+                                <div class="usr_info  isOn">
+                                    <span class="fs3"><a href="/2441517601" class="bold "><b>Pearl</b></a>, 35</span>
+                                    <img class="online-bulb" src="./img/onlinepsmile.png" alt="" />
+                                    <div class="user-location"><span class="loc-sub-city">New York City, </span><span class="loc-sub-country">United States</span></div>
+                                    <div class="indentTop5"><span class="ellipsis">Wants to meet with a woman,</span> <span class="seekingAge">18-25 years old</span></div>
+                                    <div class="indentTop5">
+                                        <span class="gray fs9">Interested in:</span><br>
+                                        <span class="ellipsis">Flirt, Long-term Relationships, Marriage</span>
+                                    </div>
+                                    <div class="indentTop10">
+                                        <a class="btn btn-blue mini" href="/2441517601"><span class="btn-lc"><span class="btn-m"><span class="btn-txt">View profile</span></span></span></a>
+                                        <a class="add-fav " href="/favorites/add/userId/1047071">Add to favorites</a>
+                                        <p class="indentTop10 rem-fav-container hidden"><a class="rem-fav" href="/favorites/remove/userId/1047071">Remove from favorites</a></p>                                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="rel_id_1047071" class="search_list_item vip_usr  found_usr">
+                                <input type="hidden" class="user_id" value="1047071" alt="" />
+                                <div class="brdpic">
+                                    <a href="/payments/vip" class="birdpic_vip"><img src="./img/birdpic_vip.png" class=" go_vip" rel="no-resize" alt="" /></a>
+                                    <a href="/2441517601" title="" class=" sfx" style="display: block; overflow: hidden; width: 116px; height: 160px; margin: 0px 0px 0px 5px; "><img src="https://yangutu-s7.s3.amazonaws.com/ab/c6/a4/116x156_5067041.jpeg?1342683789" style="position: relative; " alt="" /></a>
+                                </div>
+                                <div class="usr_info  isOn">
+                                    <span class="fs3"><a href="/2441517601" class="bold "><b>Pearl</b></a>, 35</span>
+                                    <img class="online-bulb" src="./img/onlinepsmile.png" alt="" />
+                                    <div class="user-location"><span class="loc-sub-city">New York City, </span><span class="loc-sub-country">United States</span></div>
+                                    <div class="indentTop5"><span class="ellipsis">Wants to meet with a woman,</span> <span class="seekingAge">18-25 years old</span></div>
+                                    <div class="indentTop5">
+                                        <span class="gray fs9">Interested in:</span><br>
+                                        <span class="ellipsis">Flirt, Long-term Relationships, Marriage</span>
+                                    </div>
+                                    <div class="indentTop10">
+                                        <a class="btn btn-blue mini" href="/2441517601"><span class="btn-lc"><span class="btn-m"><span class="btn-txt">View profile</span></span></span></a>
+                                        <a class="add-fav " href="/favorites/add/userId/1047071">Add to favorites</a>
+                                        <p class="indentTop10 rem-fav-container hidden"><a class="rem-fav" href="/favorites/remove/userId/1047071">Remove from favorites</a></p>                                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="rel_id_1047071" class="search_list_item vip_usr  found_usr">
+                                <input type="hidden" class="user_id" value="1047071" alt="" />
+                                <div class="brdpic">
+                                    <a href="/payments/vip" class="birdpic_vip"><img src="./img/birdpic_vip.png" class=" go_vip" rel="no-resize" alt="" /></a>
+                                    <a href="/2441517601" title="" class=" sfx" style="display: block; overflow: hidden; width: 116px; height: 160px; margin: 0px 0px 0px 5px; "><img src="https://yangutu-s7.s3.amazonaws.com/ab/c6/a4/116x156_5067041.jpeg?1342683789" style="position: relative; " alt="" /></a>
+                                </div>
+                                <div class="usr_info  isOn">
+                                    <span class="fs3"><a href="/2441517601" class="bold "><b>Pearl</b></a>, 35</span>
+                                    <img class="online-bulb" src="./img/onlinepsmile.png" alt="" />
+                                    <div class="user-location"><span class="loc-sub-city">New York City, </span><span class="loc-sub-country">United States</span></div>
+                                    <div class="indentTop5"><span class="ellipsis">Wants to meet with a woman,</span> <span class="seekingAge">18-25 years old</span></div>
+                                    <div class="indentTop5">
+                                        <span class="gray fs9">Interested in:</span><br>
+                                        <span class="ellipsis">Flirt, Long-term Relationships, Marriage</span>
+                                    </div>
+                                    <div class="indentTop10">
+                                        <a class="btn btn-blue mini" href="/2441517601"><span class="btn-lc"><span class="btn-m"><span class="btn-txt">View profile</span></span></span></a>
+                                        <a class="add-fav " href="/favorites/add/userId/1047071">Add to favorites</a>
+                                        <p class="indentTop10 rem-fav-container hidden"><a class="rem-fav" href="/favorites/remove/userId/1047071">Remove from favorites</a></p>                                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="rel_id_1047071" class="search_list_item vip_usr  found_usr">
+                                <input type="hidden" class="user_id" value="1047071" alt="" />
+                                <div class="brdpic">
+                                    <a href="/payments/vip" class="birdpic_vip"><img src="./img/birdpic_vip.png" class=" go_vip" rel="no-resize" alt="" /></a>
+                                    <a href="/2441517601" title="" class=" sfx" style="display: block; overflow: hidden; width: 116px; height: 160px; margin: 0px 0px 0px 5px; "><img src="https://yangutu-s7.s3.amazonaws.com/ab/c6/a4/116x156_5067041.jpeg?1342683789" style="position: relative; " alt="" /></a>
+                                </div>
+                                <div class="usr_info  isOn">
+                                    <span class="fs3"><a href="/2441517601" class="bold "><b>Pearl</b></a>, 35</span>
+                                    <img class="online-bulb" src="./img/onlinepsmile.png" alt="" />
+                                    <div class="user-location"><span class="loc-sub-city">New York City, </span><span class="loc-sub-country">United States</span></div>
+                                    <div class="indentTop5"><span class="ellipsis">Wants to meet with a woman,</span> <span class="seekingAge">18-25 years old</span></div>
+                                    <div class="indentTop5">
+                                        <span class="gray fs9">Interested in:</span><br>
+                                        <span class="ellipsis">Flirt, Long-term Relationships, Marriage</span>
+                                    </div>
+                                    <div class="indentTop10">
+                                        <a class="btn btn-blue mini" href="/2441517601"><span class="btn-lc"><span class="btn-m"><span class="btn-txt">View profile</span></span></span></a>
+                                        <a class="add-fav " href="/favorites/add/userId/1047071">Add to favorites</a>
+                                        <p class="indentTop10 rem-fav-container hidden"><a class="rem-fav" href="/favorites/remove/userId/1047071">Remove from favorites</a></p>                                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="rel_id_1047071" class="search_list_item vip_usr  found_usr">
+                                <input type="hidden" class="user_id" value="1047071" alt="" />
+                                <div class="brdpic">
+                                    <a href="/payments/vip" class="birdpic_vip"><img src="./img/birdpic_vip.png" class=" go_vip" rel="no-resize" alt="" /></a>
+                                    <a href="/2441517601" title="" class=" sfx" style="display: block; overflow: hidden; width: 116px; height: 160px; margin: 0px 0px 0px 5px; "><img src="https://yangutu-s7.s3.amazonaws.com/ab/c6/a4/116x156_5067041.jpeg?1342683789" style="position: relative; " alt="" /></a>
+                                </div>
+                                <div class="usr_info  isOn">
+                                    <span class="fs3"><a href="/2441517601" class="bold "><b>Pearl</b></a>, 35</span>
+                                    <img class="online-bulb" src="./img/onlinepsmile.png" alt="" />
+                                    <div class="user-location"><span class="loc-sub-city">New York City, </span><span class="loc-sub-country">United States</span></div>
+                                    <div class="indentTop5"><span class="ellipsis">Wants to meet with a woman,</span> <span class="seekingAge">18-25 years old</span></div>
+                                    <div class="indentTop5">
+                                        <span class="gray fs9">Interested in:</span><br>
+                                        <span class="ellipsis">Flirt, Long-term Relationships, Marriage</span>
+                                    </div>
+                                    <div class="indentTop10">
+                                        <a class="btn btn-blue mini" href="/2441517601"><span class="btn-lc"><span class="btn-m"><span class="btn-txt">View profile</span></span></span></a>
+                                        <a class="add-fav " href="/favorites/add/userId/1047071">Add to favorites</a>
+                                        <p class="indentTop10 rem-fav-container hidden"><a class="rem-fav" href="/favorites/remove/userId/1047071">Remove from favorites</a></p>                                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="rel_id_1047071" class="search_list_item vip_usr  found_usr">
+                                <input type="hidden" class="user_id" value="1047071" alt="" />
+                                <div class="brdpic">
+                                    <a href="/payments/vip" class="birdpic_vip"><img src="./img/birdpic_vip.png" class=" go_vip" rel="no-resize" alt="" /></a>
+                                    <a href="/2441517601" title="" class=" sfx" style="display: block; overflow: hidden; width: 116px; height: 160px; margin: 0px 0px 0px 5px; "><img src="https://yangutu-s7.s3.amazonaws.com/ab/c6/a4/116x156_5067041.jpeg?1342683789" style="position: relative; " alt="" /></a>
+                                </div>
+                                <div class="usr_info  isOn">
+                                    <span class="fs3"><a href="/2441517601" class="bold "><b>Pearl</b></a>, 35</span>
+                                    <img class="online-bulb" src="./img/onlinepsmile.png" alt="" />
+                                    <div class="user-location"><span class="loc-sub-city">New York City, </span><span class="loc-sub-country">United States</span></div>
+                                    <div class="indentTop5"><span class="ellipsis">Wants to meet with a woman,</span> <span class="seekingAge">18-25 years old</span></div>
+                                    <div class="indentTop5">
+                                        <span class="gray fs9">Interested in:</span><br>
+                                        <span class="ellipsis">Flirt, Long-term Relationships, Marriage</span>
+                                    </div>
+                                    <div class="indentTop10">
+                                        <a class="btn btn-blue mini" href="/2441517601"><span class="btn-lc"><span class="btn-m"><span class="btn-txt">View profile</span></span></span></a>
+                                        <a class="add-fav " href="/favorites/add/userId/1047071">Add to favorites</a>
+                                        <p class="indentTop10 rem-fav-container hidden"><a class="rem-fav" href="/favorites/remove/userId/1047071">Remove from favorites</a></p>                                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="rel_id_1047071" class="search_list_item vip_usr  found_usr">
+                                <input type="hidden" class="user_id" value="1047071" alt="" />
+                                <div class="brdpic">
+                                    <a href="/payments/vip" class="birdpic_vip"><img src="./img/birdpic_vip.png" class=" go_vip" rel="no-resize" alt="" /></a>
+                                    <a href="/2441517601" title="" class=" sfx" style="display: block; overflow: hidden; width: 116px; height: 160px; margin: 0px 0px 0px 5px; "><img src="https://yangutu-s7.s3.amazonaws.com/ab/c6/a4/116x156_5067041.jpeg?1342683789" style="position: relative; " alt="" /></a>
+                                </div>
+                                <div class="usr_info  isOn">
+                                    <span class="fs3"><a href="/2441517601" class="bold "><b>Pearl</b></a>, 35</span>
+                                    <img class="online-bulb" src="./img/onlinepsmile.png" alt="" />
+                                    <div class="user-location"><span class="loc-sub-city">New York City, </span><span class="loc-sub-country">United States</span></div>
+                                    <div class="indentTop5"><span class="ellipsis">Wants to meet with a woman,</span> <span class="seekingAge">18-25 years old</span></div>
+                                    <div class="indentTop5">
+                                        <span class="gray fs9">Interested in:</span><br>
+                                        <span class="ellipsis">Flirt, Long-term Relationships, Marriage</span>
+                                    </div>
+                                    <div class="indentTop10">
+                                        <a class="btn btn-blue mini" href="/2441517601"><span class="btn-lc"><span class="btn-m"><span class="btn-txt">View profile</span></span></span></a>
+                                        <a class="add-fav " href="/favorites/add/userId/1047071">Add to favorites</a>
+                                        <p class="indentTop10 rem-fav-container hidden"><a class="rem-fav" href="/favorites/remove/userId/1047071">Remove from favorites</a></p>                                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="rel_id_1047071" class="search_list_item vip_usr  found_usr">
+                                <input type="hidden" class="user_id" value="1047071" alt="" />
+                                <div class="brdpic">
+                                    <a href="/payments/vip" class="birdpic_vip"><img src="./img/birdpic_vip.png" class=" go_vip" rel="no-resize" alt="" /></a>
+                                    <a href="/2441517601" title="" class=" sfx" style="display: block; overflow: hidden; width: 116px; height: 160px; margin: 0px 0px 0px 5px; "><img src="https://yangutu-s7.s3.amazonaws.com/ab/c6/a4/116x156_5067041.jpeg?1342683789" style="position: relative; " alt="" /></a>
+                                </div>
+                                <div class="usr_info  isOn">
+                                    <span class="fs3"><a href="/2441517601" class="bold "><b>Pearl</b></a>, 35</span>
+                                    <img class="online-bulb" src="./img/onlinepsmile.png" alt="" />
+                                    <div class="user-location"><span class="loc-sub-city">New York City, </span><span class="loc-sub-country">United States</span></div>
+                                    <div class="indentTop5"><span class="ellipsis">Wants to meet with a woman,</span> <span class="seekingAge">18-25 years old</span></div>
+                                    <div class="indentTop5">
+                                        <span class="gray fs9">Interested in:</span><br>
+                                        <span class="ellipsis">Flirt, Long-term Relationships, Marriage</span>
+                                    </div>
+                                    <div class="indentTop10">
+                                        <a class="btn btn-blue mini" href="/2441517601"><span class="btn-lc"><span class="btn-m"><span class="btn-txt">View profile</span></span></span></a>
+                                        <a class="add-fav " href="/favorites/add/userId/1047071">Add to favorites</a>
+                                        <p class="indentTop10 rem-fav-container hidden"><a class="rem-fav" href="/favorites/remove/userId/1047071">Remove from favorites</a></p>                                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="rel_id_1047071" class="search_list_item vip_usr  found_usr">
+                                <input type="hidden" class="user_id" value="1047071" alt="" />
+                                <div class="brdpic">
+                                    <a href="/payments/vip" class="birdpic_vip"><img src="./img/birdpic_vip.png" class=" go_vip" rel="no-resize" alt="" /></a>
+                                    <a href="/2441517601" title="" class=" sfx" style="display: block; overflow: hidden; width: 116px; height: 160px; margin: 0px 0px 0px 5px; "><img src="https://yangutu-s7.s3.amazonaws.com/ab/c6/a4/116x156_5067041.jpeg?1342683789" style="position: relative; " alt="" /></a>
+                                </div>
+                                <div class="usr_info  isOn">
+                                    <span class="fs3"><a href="/2441517601" class="bold "><b>Pearl</b></a>, 35</span>
+                                    <img class="online-bulb" src="./img/onlinepsmile.png" alt="" />
+                                    <div class="user-location"><span class="loc-sub-city">New York City, </span><span class="loc-sub-country">United States</span></div>
+                                    <div class="indentTop5"><span class="ellipsis">Wants to meet with a woman,</span> <span class="seekingAge">18-25 years old</span></div>
+                                    <div class="indentTop5">
+                                        <span class="gray fs9">Interested in:</span><br>
+                                        <span class="ellipsis">Flirt, Long-term Relationships, Marriage</span>
+                                    </div>
+                                    <div class="indentTop10">
+                                        <a class="btn btn-blue mini" href="/2441517601"><span class="btn-lc"><span class="btn-m"><span class="btn-txt">View profile</span></span></span></a>
+                                        <a class="add-fav " href="/favorites/add/userId/1047071">Add to favorites</a>
+                                        <p class="indentTop10 rem-fav-container hidden"><a class="rem-fav" href="/favorites/remove/userId/1047071">Remove from favorites</a></p>                                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="rel_id_1047071" class="search_list_item vip_usr  found_usr">
+                                <input type="hidden" class="user_id" value="1047071" alt="" />
+                                <div class="brdpic">
+                                    <a href="/payments/vip" class="birdpic_vip"><img src="./img/birdpic_vip.png" class=" go_vip" rel="no-resize" alt="" /></a>
+                                    <a href="/2441517601" title="" class=" sfx" style="display: block; overflow: hidden; width: 116px; height: 160px; margin: 0px 0px 0px 5px; "><img src="https://yangutu-s7.s3.amazonaws.com/ab/c6/a4/116x156_5067041.jpeg?1342683789" style="position: relative; " alt="" /></a>
+                                </div>
+                                <div class="usr_info  isOn">
+                                    <span class="fs3"><a href="/2441517601" class="bold "><b>Pearl</b></a>, 35</span>
+                                    <img class="online-bulb" src="./img/onlinepsmile.png" alt="" />
+                                    <div class="user-location"><span class="loc-sub-city">New York City, </span><span class="loc-sub-country">United States</span></div>
+                                    <div class="indentTop5"><span class="ellipsis">Wants to meet with a woman,</span> <span class="seekingAge">18-25 years old</span></div>
+                                    <div class="indentTop5">
+                                        <span class="gray fs9">Interested in:</span><br>
+                                        <span class="ellipsis">Flirt, Long-term Relationships, Marriage</span>
+                                    </div>
+                                    <div class="indentTop10">
+                                        <a class="btn btn-blue mini" href="/2441517601"><span class="btn-lc"><span class="btn-m"><span class="btn-txt">View profile</span></span></span></a>
+                                        <a class="add-fav " href="/favorites/add/userId/1047071">Add to favorites</a>
+                                        <p class="indentTop10 rem-fav-container hidden"><a class="rem-fav" href="/favorites/remove/userId/1047071">Remove from favorites</a></p>                                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="rel_id_1047071" class="search_list_item vip_usr  found_usr">
+                                <input type="hidden" class="user_id" value="1047071" alt="" />
+                                <div class="brdpic">
+                                    <a href="/payments/vip" class="birdpic_vip"><img src="./img/birdpic_vip.png" class=" go_vip" rel="no-resize" alt="" /></a>
+                                    <a href="/2441517601" title="" class=" sfx" style="display: block; overflow: hidden; width: 116px; height: 160px; margin: 0px 0px 0px 5px; "><img src="https://yangutu-s7.s3.amazonaws.com/ab/c6/a4/116x156_5067041.jpeg?1342683789" style="position: relative; " alt="" /></a>
+                                </div>
+                                <div class="usr_info  isOn">
+                                    <span class="fs3"><a href="/2441517601" class="bold "><b>Pearl</b></a>, 35</span>
+                                    <img class="online-bulb" src="./img/onlinepsmile.png" alt="" />
+                                    <div class="user-location"><span class="loc-sub-city">New York City, </span><span class="loc-sub-country">United States</span></div>
+                                    <div class="indentTop5"><span class="ellipsis">Wants to meet with a woman,</span> <span class="seekingAge">18-25 years old</span></div>
+                                    <div class="indentTop5">
+                                        <span class="gray fs9">Interested in:</span><br>
+                                        <span class="ellipsis">Flirt, Long-term Relationships, Marriage</span>
+                                    </div>
+                                    <div class="indentTop10">
+                                        <a class="btn btn-blue mini" href="/2441517601"><span class="btn-lc"><span class="btn-m"><span class="btn-txt">View profile</span></span></span></a>
+                                        <a class="add-fav " href="/favorites/add/userId/1047071">Add to favorites</a>
+                                        <p class="indentTop10 rem-fav-container hidden"><a class="rem-fav" href="/favorites/remove/userId/1047071">Remove from favorites</a></p>                                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="rel_id_1047071" class="search_list_item vip_usr  found_usr">
+                                <input type="hidden" class="user_id" value="1047071" alt="" />
+                                <div class="brdpic">
+                                    <a href="/payments/vip" class="birdpic_vip"><img src="./img/birdpic_vip.png" class=" go_vip" rel="no-resize" alt="" /></a>
+                                    <a href="/2441517601" title="" class=" sfx" style="display: block; overflow: hidden; width: 116px; height: 160px; margin: 0px 0px 0px 5px; "><img src="https://yangutu-s7.s3.amazonaws.com/ab/c6/a4/116x156_5067041.jpeg?1342683789" style="position: relative; " alt="" /></a>
+                                </div>
+                                <div class="usr_info  isOn">
+                                    <span class="fs3"><a href="/2441517601" class="bold "><b>Pearl</b></a>, 35</span>
+                                    <img class="online-bulb" src="./img/onlinepsmile.png" alt="" />
+                                    <div class="user-location"><span class="loc-sub-city">New York City, </span><span class="loc-sub-country">United States</span></div>
+                                    <div class="indentTop5"><span class="ellipsis">Wants to meet with a woman,</span> <span class="seekingAge">18-25 years old</span></div>
+                                    <div class="indentTop5">
+                                        <span class="gray fs9">Interested in:</span><br>
+                                        <span class="ellipsis">Flirt, Long-term Relationships, Marriage</span>
+                                    </div>
+                                    <div class="indentTop10">
+                                        <a class="btn btn-blue mini" href="/2441517601"><span class="btn-lc"><span class="btn-m"><span class="btn-txt">View profile</span></span></span></a>
+                                        <a class="add-fav " href="/favorites/add/userId/1047071">Add to favorites</a>
+                                        <p class="indentTop10 rem-fav-container hidden"><a class="rem-fav" href="/favorites/remove/userId/1047071">Remove from favorites</a></p>                                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="rel_id_1047071" class="search_list_item vip_usr  found_usr">
+                                <input type="hidden" class="user_id" value="1047071" alt="" />
+                                <div class="brdpic">
+                                    <a href="/payments/vip" class="birdpic_vip"><img src="./img/birdpic_vip.png" class=" go_vip" rel="no-resize" alt="" /></a>
+                                    <a href="/2441517601" title="" class=" sfx" style="display: block; overflow: hidden; width: 116px; height: 160px; margin: 0px 0px 0px 5px; "><img src="https://yangutu-s7.s3.amazonaws.com/ab/c6/a4/116x156_5067041.jpeg?1342683789" style="position: relative; " alt="" /></a>
+                                </div>
+                                <div class="usr_info  isOn">
+                                    <span class="fs3"><a href="/2441517601" class="bold "><b>Pearl</b></a>, 35</span>
+                                    <img class="online-bulb" src="./img/onlinepsmile.png" alt="" />
+                                    <div class="user-location"><span class="loc-sub-city">New York City, </span><span class="loc-sub-country">United States</span></div>
+                                    <div class="indentTop5"><span class="ellipsis">Wants to meet with a woman,</span> <span class="seekingAge">18-25 years old</span></div>
+                                    <div class="indentTop5">
+                                        <span class="gray fs9">Interested in:</span><br>
+                                        <span class="ellipsis">Flirt, Long-term Relationships, Marriage</span>
+                                    </div>
+                                    <div class="indentTop10">
+                                        <a class="btn btn-blue mini" href="/2441517601"><span class="btn-lc"><span class="btn-m"><span class="btn-txt">View profile</span></span></span></a>
+                                        <a class="add-fav " href="/favorites/add/userId/1047071">Add to favorites</a>
+                                        <p class="indentTop10 rem-fav-container hidden"><a class="rem-fav" href="/favorites/remove/userId/1047071">Remove from favorites</a></p>                                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="clr2"></div>
+                    <div class="indentTop20">
+                        <div class="paginator-style">
+                            <input type="hidden" id="paginator-pages-count" value="27" alt="" />
+                            <input type="hidden" id="paginator-per-page-count" value="11" alt="" />
+                            <ul class="left">
+                                <li class="prev disable"><a href="javascript:void()"><span>Prev</span></a></li>
+                                <li class="pages act"><a href="#"><span>1</span></a></li>                              <li class="pages"><a href="?sex=female&amp;age=1&amp;age_from=18&amp;age_to=99&amp;filter=all&amp;cityId=6130&amp;location[city]=Minsk&amp;location[country]=Belarus&amp;location[r]=all&amp;&amp;city_name=Minsk&amp;loc=all&amp;loc_country=BY&amp;page=2"><span>2</span></a></li>
+                                <li class="pages"><a href="?sex=female&amp;age=1&amp;age_from=18&amp;age_to=99&amp;filter=all&amp;cityId=6130&amp;location[city]=Minsk&amp;location[country]=Belarus&amp;location[r]=all&amp;&amp;city_name=Minsk&amp;loc=all&amp;loc_country=BY&amp;page=3"><span>3</span></a></li>
+                                <li class="pages"><a href="?sex=female&amp;age=1&amp;age_from=18&amp;age_to=99&amp;filter=all&amp;cityId=6130&amp;location[city]=Minsk&amp;location[country]=Belarus&amp;location[r]=all&amp;&amp;city_name=Minsk&amp;loc=all&amp;loc_country=BY&amp;page=4"><span>4</span></a></li>
+                                <li class="pages"><a href="?sex=female&amp;age=1&amp;age_from=18&amp;age_to=99&amp;filter=all&amp;cityId=6130&amp;location[city]=Minsk&amp;location[country]=Belarus&amp;location[r]=all&amp;&amp;city_name=Minsk&amp;loc=all&amp;loc_country=BY&amp;page=5"><span>5</span></a></li>
+                                <li class="pages"><a href="?sex=female&amp;age=1&amp;age_from=18&amp;age_to=99&amp;filter=all&amp;cityId=6130&amp;location[city]=Minsk&amp;location[country]=Belarus&amp;location[r]=all&amp;&amp;city_name=Minsk&amp;loc=all&amp;loc_country=BY&amp;page=6"><span>6</span></a></li>
+                                <li class="pages"><a href="?sex=female&amp;age=1&amp;age_from=18&amp;age_to=99&amp;filter=all&amp;cityId=6130&amp;location[city]=Minsk&amp;location[country]=Belarus&amp;location[r]=all&amp;&amp;city_name=Minsk&amp;loc=all&amp;loc_country=BY&amp;page=7"><span>7</span></a></li>
+                                <li class="pages"><a href="?sex=female&amp;age=1&amp;age_from=18&amp;age_to=99&amp;filter=all&amp;cityId=6130&amp;location[city]=Minsk&amp;location[country]=Belarus&amp;location[r]=all&amp;&amp;city_name=Minsk&amp;loc=all&amp;loc_country=BY&amp;page=8"><span>8</span></a></li>
+                                <li class="pages"><a href="?sex=female&amp;age=1&amp;age_from=18&amp;age_to=99&amp;filter=all&amp;cityId=6130&amp;location[city]=Minsk&amp;location[country]=Belarus&amp;location[r]=all&amp;&amp;city_name=Minsk&amp;loc=all&amp;loc_country=BY&amp;page=9"><span>9</span></a></li>
+                                <li class="pages"><a href="?sex=female&amp;age=1&amp;age_from=18&amp;age_to=99&amp;filter=all&amp;cityId=6130&amp;location[city]=Minsk&amp;location[country]=Belarus&amp;location[r]=all&amp;&amp;city_name=Minsk&amp;loc=all&amp;loc_country=BY&amp;page=10"><span>10</span></a></li>
+                                <li class="next paginator-next-link"><a href="?sex=female&amp;age=1&amp;age_from=18&amp;age_to=99&amp;filter=all&amp;cityId=6130&amp;location[city]=Minsk&amp;location[country]=Belarus&amp;location[r]=all&amp;&amp;city_name=Minsk&amp;loc=all&amp;loc_country=BY&amp;page=2"><span>Next</span></a><input class="paginator-next" type="hidden" alt="" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clr2"></div>
+                </div>
+                
+                <!-- 
+				<div class="mbox2 indentTop10">
+					<input type="button" class="button_blue large right indentTop10" value="Show more people" />
+					<div class="show_pl">Simplify your search criteria to see more people in search results</div>
+					<div class="clr2"></div>
+				</div>
+				<div class="clr2"></div>
+				<div class="paginator left">
+					<ul>
+						<li class="prev"><a href="#">Prev</a></li>
+						<li class="act"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">...</a></li>
+						<li><a href="#">10</a></li>
+						<li><a href="#">11</a></li>
+						<li><a href="#">12</a></li>
+						<li><a href="#">13</a></li>
+						<li><a href="#">Next</a></li>
+					</ul>
+				</div>
+				<p class="pagination_search">We found 1544 people.</p>
+				<div class="clear"></div> -->
+			</div>
+			<div class="c_right">
+				<div class="wtit">Quicklinks</div>
+				<ul class="rlist">
+					<li><a href="#" class="rnum wbg">+2</a> <a href="#" class="rlab">Soulmates</a></li>
+					<li><a href="#" class="rnum">&nbsp;</a> <a href="#">Matches</a></li>
+					<li><span class="rnum">3</span> <a href="#">Favorites</a></li>
+					<li><span class="rnum">5</span> <a href="#">Visitors</a></li>
+					<li><a href="#" class="rnum wbg">+7</a> <a href="#">Blocked</a></li>
+					<li><span class="rnum">3</span> <a href="#">Closed</a></li>
+					<li><span class="rnum">12</span> <a href="#">Notifications</a></li>
+				</ul>
+				<div class="wtit">Get connected</div>
+				<ul class="rlist">
+					<li><a href="#">Invite people</a></li>
+					<li><a href="#">Track your invites</a></li>
+					<li><a href="#">Try Yangutu mobile</a></li>
+				</ul>
+				
+				<div class="bannerbx bg2 indentTop10">
+					<div class="inner"> 
+						<img src="img/banners-new/banner_putmehere_ico.png" alt=""/>
+						<p class="fs2"><b>Put me here</b></p>
+						<p>Stay in the spotlight.<br>
+							Put your<br>
+							photo into our feed.</p>
+						<input class="button_green large flWidth100" type="button" value="Buy Now" />
+					</div>
+				</div>
+				<div class="bannerbx bg3 indentTop10">
+					<div class="inner"> 
+						<img src="img/banners-new/banner_unlimmess_ico.png" alt=""/>
+						<p class="fs2"><b>Unlimited messages</b></p>
+						<p>Stay in the spotlight.<br> Put your photo into our<br> feed.</p>
+						<input class="button_green large flWidth100" type="button" value="Buy Now" />
+					</div>
+				</div>
+			</div>
+			
+			<div class="clr2"></div>
+		</div>
+	</div>
+	
+    <div class="social_rate">
+        <img src="./img/social-links.png" alt="" />
+    </div>
+    
+    <div class="footer">
+        <div class="footer_inn">
+            <ul>
+                <li><a href="/page/about">About us</a></li>
+                <li><a href="/help">FAQ</a></li>
+                <li><a href="http://blog.yangutu.com/">Our blog</a></li>
+                <li><a href="/feedback">Contact us</a></li>
+            </ul>
+            <ul>
+                <li><a href="/page/policy">Privacy</a></li>
+                <li><a href="/page/terms">Terms of use</a></li>
+            </ul>
+            <ul>			
+                <li><a href="/page/scams">Scam warning</a></li>
+                <li><a href="/page/safety">Safety Tips</a></li>
+            </ul>
+            <ul>
+                <li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+                <li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+                <li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="/dating/all">People Directory</a></li>
+            </ul>
+            <div class="right">
+                <font color="black">© 2010-2011 Yangutu Inc. All rights reserved</font><br>
+                <span>Yangutu (swahili) - My one and only.</span>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

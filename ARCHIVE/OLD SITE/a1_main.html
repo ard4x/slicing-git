@@ -1,0 +1,438 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Yangutu</title>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" href="style(next).css" type="text/css" id="" />
+	<link rel="stylesheet" href="buttons.css" type="text/css" id="" />
+	<link rel="stylesheet" href="popups.css" type="text/css" id="" />
+	<link rel="stylesheet" href="rendez.css" type="text/css" id="" />
+	<link rel="stylesheet" href="custom.css" type="text/css" id="" /> <!-- СТИЛИ КОТОРЫЕ УЖЕ ЕСТЬ НА ПРОДЕ // НЕОБХОДИМО ЗАМЕНИТЬ!!!!!-->
+	
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <script src="js/jquery.stylish-select.js" type="text/javascript"></script>
+    <script type="text/javascript">
+		$(function(){
+			$('.pro').hover(function(){$(this).toggleClass('hover');})
+            
+            function rendMousePos(e) {
+            
+                e = e || window.event
+                if (e.pageX == null && e.clientX != null ) {
+                    var html = document.documentElement
+                    var body = document.body
+                    e.pageX = e.clientX + (html && html.scrollLeft || body && body.scrollLeft || 0) - (html.clientLeft || 0)
+                    e.pageY = e.clientY + (html && html.scrollTop || body && body.scrollTop || 0) - (html.clientTop || 0)
+                }
+                var t = e.target || e.srcElement,
+                    tUsr = $(t).data('type'),
+                    winHalf = $(window).width()/2,
+                    pUsr = $('#rendez-usr-viewer'),
+                    xPosRight = pUsr.width();
+                    console.log(tUsr);
+                                    
+                if(tUsr == 'x-ren'){
+                    $(t).closest('a').one('click', function(){ return false; })                    
+                    if(e.pageX < winHalf){
+                        pUsr.css({
+                            'top': e.pageY,
+                            'left': e.pageX
+                        });
+                    } else {
+                        pUsr.css({
+                            'top': e.pageY,
+                            'left': e.pageX - xPosRight
+                        });
+                    } 
+                    pUsr['show'](0);
+                }
+            }
+            
+            document.onmousedown = rendMousePos;
+		});
+        
+	</script>
+
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="ie7.css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="ie8.css" />
+	<![endif]-->
+</head>
+<body>
+    <div id="rendez-usr-viewer" style="position: absolute;" class="yangutu_popap fixWidth360 rubber ng hidden">
+		<a class="popClose" href=""><img src="./img/close_ic.png" class="cls4" alt=""></a>
+		<div class="yp_top"><div class="rubber_top_right"></div></div>
+		<div class="yp_content_left">
+			<div class="yp_content_right">
+				<div class="whitebg">
+					<div class="interest-usr-search">
+						<div class="piclist">
+							<div class="found_usr">
+								<div class="brdpic">
+									<a href="" class="user-card-tooltip" rel="" title=""><img src="http://yangutu-s8.s3.amazonaws.com/af/9b/6f/116x156_4986754.JPG" /></a>
+								</div>
+								<div class="usr_info">
+									<span class="fs3"><a href="" class="bold"><b>Yvonne</b></a>, 40 </span><br/>
+									<span class="gray fs1">Moate, Ireland</span><br/>
+									<span>Wants to meet with a man</span><br/>
+									<p class="indentTop10">Intested In:<br/>
+									BMW, MAC, oil, love, MTZ, apps </p>
+									<div>
+										<input type="button" class="button_blue mini" value="View profile" /><p class="indentTop10"><a href="" class="fs1">Add to favorites</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="clr2"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="yp_bot"><div class="rubber_bot_right"></div></div>
+	</div>
+    
+    <div class="header">
+        <div class="header_inn">
+            <a href="#"><img src="./img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>	
+            <ul class="main_menu">
+                <li><a href="">People</a></li>
+                <li><a href="">Games</a></li>
+                <li>
+                    <a href="">Videobox</a>
+                    <div style="width:300px;">
+                        <div class="inner">
+                            <ul class="left">
+                                <li><a href="http://yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Adventures">Adventures</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cars">Cars</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Celebrities">Celebrities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Children">Children</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cities">Cities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Crazy">Crazy &amp; Extreme</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Dating+%26+Relationships">Dating Relationships</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Family">Family</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Fashion">Fashion</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Funny">Funny &amp; Cute</a></li>
+                            </ul>
+                            <ul class="right">
+                                <li><a href="http://yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Adventures">Adventures</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cars">Cars</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Celebrities">Celebrities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Children">Children</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cities">Cities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Crazy">Crazy &amp; Extreme</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Dating+%26+Relationships">Dating &amp; Relationships</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Family">Family</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Fashion">Fashion</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Funny">Funny &amp; Cute</a></li>
+                            </ul>
+                            <div class="clr2"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Talks</a>
+                    <div>
+                        <div class="inner">
+                            <ul>
+                                <li><a href="">Daily Talks</a></li>
+                                <li><a href="">Hot discussions</a></li>
+                                <li><a href="">Corporate blog</a></li>
+                                <li><a href="">Polls</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">Questions</a></li>
+            </ul>
+            <div class="right innerTop15">
+                <a class="indentRight10 white" href="#">Sign In</a>
+                <span class="blue">|</span>
+                <a class="indentLeft10 white" href="#">Join</a>
+            </div>
+            <div class="clr2"></div>
+        </div>
+    </div>
+	<div class="rendez_block">
+		<div class="inner">
+			<div class="ya_main_title">&nbsp;</div>
+			<p class="fs3 tcenter ver">
+                Meet new people, make friends, chat, flirt, socialize and play dating games. Find your perfect matches and travel buddies, as well as people who share your hobbies, interests and activities!<br>
+                Join our rapidly growing community!
+            </p>
+			<div class="lookingbx wh mauto fixWidth485 indentTop20">
+				<input type="button" class="rendez_startbut_facebook left indentRight20" />
+                <div class="indentTop10">We don’t post anything on the wall,<br/>so your registration will be kept a secret.</div>
+                <div class="clr2"></div>
+			</div>
+			<!-- <div class="indentTop20 tcenter">
+				<input type="button" class="rendez_startbut" />
+				<span class="spec_or">
+					<input type="button" class="rendez_startbut_facebook" />
+				</span>
+				<span class="spec_or">
+					<input type="button" class="rendez_startbut_google" />
+				</span>
+			</div>
+			<div class="indentTop20">
+				<p class="tcenter">Meet new friends, flirt, socialize, receive gifts and play dating games,<br/>
+					find your perfect matches and soulmates, travel partners or holiday companions,<br/>
+					people who share your hobbies and interests!</p>
+			</div> -->
+			<div class="clr2"></div>
+		</div>
+	</div>
+	<div class="content" style="background-color:#fff;">
+		<div class="content_inn2">		
+				<div class="yangutu_proposal_list">
+					<a href="" class="pro">
+						<div class="yangutu_proposal_block">
+							<div class="v-2"></div>
+							<p class="tbold fs16">Criteria-based search</p>
+							<p class="gray">
+								If real love is one soul inhabited in two bodies; why not try look for a soulmate right now with the help of our originally developed psychological test?
+							</p>
+						</div>
+					</a>
+					<a href="" class="pro">
+						<div class="yangutu_proposal_block">
+							<div class="v-3"></div>
+							<p class="tbold fs16">Science-based matching</p>
+							<p class="gray">
+								If real love is one soul inhabited in two bodies; why not try look for a soulmate right now with the help of our originally developed psychological test?
+							</p>
+						</div> 
+					</a> 
+					<a href="" class="pro">
+						<div class="yangutu_proposal_block">
+							<div class="v-4"></div>
+							<p class="tbold fs16">Facebook Dating</p>
+							<p class="gray">
+								Due to this innovative service meeting new people among the friends of your friends has never been easier.
+							</p>
+						</div>
+					</a>
+					<a href="" class="pro">
+						<div class="yangutu_proposal_block">
+							<div class="v-1"></div>
+							<p class="tbold fs16">Speed dating</p>
+							<p class="gray">
+								Don’t miss a chance to invite a person you like on a date playing this exciting speed dating game.
+							</p>
+						</div> 
+					</a> 
+					
+					
+					<!--<div class="yangutu_proposal_block">
+						<img src="./img/proposal_5.png" alt="" />
+						<p class="tbold fs16">Acquaintances with Facebook friends’ friends</p>
+						<p class="gray">
+							Nulla interdum. Duis fringilla turpis eget lectus. Nam augue. Vivamus consequat, urna convallis mattis porttitor, tortor ante sollicitudin turpis egestas. 
+						</p>
+					</div> -->
+					<a href="" class="pro">
+						<div class="yangutu_proposal_block">
+							<div class="v-6"></div>
+							<p class="tbold fs16">TOP-100 rating</p>
+							<p class="gray">
+								Think your photo is the best? Long for attention and approval? Vote for your favorite photos, share your likes and choose the most attractive people with Top 100.
+							</p>
+						</div>
+					</a>
+					<a href="" class="pro">
+						<div class="yangutu_proposal_block">
+							<div class="v-7"></div>
+							<p class="tbold fs16">Couple compatibility test</p>
+							<p class="gray">
+								Want to find out if you are psychologically, mentally, spiritually compatible with your partner? Just pass the compatibility test and blow all your doubts away.
+							</p>
+						</div>
+					</a>
+					<!--<div class="yangutu_proposal_block">
+						<img src="./img/proposal_8.png" alt="" />
+						<p class="tbold fs16">Измерь и увеличь свой рейтинг на Facebook</p>
+						<p class="gray">
+							Nulla interdum. Duis fringilla turpis eget lectus. Nam augue. Vivamus consequat, urna convallis mattis porttitor, tortor ante sollicitudin turpis, egestas faucibus. 
+						</p>
+					</div>-->
+					<a href="" class="pro">
+						<div class="yangutu_proposal_block">
+							<div class="v-9"></div>
+							<p class="tbold fs16">Viral Video</p>
+							<p class="gray">
+								Plunge into the world of exciting videos with the Viral Video service. Here all the Yangutu users can view the latest and most interesting video clips. Why surf the Internet searching for something that we have already collected on our website? Just watch, comment and discuss everything you’ve seen with other users.
+							</p>
+						</div>
+					</a>
+					
+					<a href="" class="pro">
+						<div class="yangutu_proposal_block">
+							<div class="v-10"></div>
+							<p class="tbold fs16">Language practice</p>
+							<p class="gray">
+								Learning a foreign language is not an easy thing. This service will allow you to find like-minded users longing for knowledge and turn your studying routine into an exciting process.
+							</p>
+						</div>
+					</a>
+					<div class="clr2"></div>
+				</div>
+				<h2>Новые пользователи</h2>
+				<div class="rendez_looking indentTop20">
+					<div class="looking_usr">
+						<div class="renpic">
+							<div class="inner">
+								<a href=""><img src="photo/famale/img_1.jpg" alt="" data-type="x-ren" /></a>
+							</div>
+						</div>
+						<div class="clear"></div>
+						<p class="fs2 bold"><a href="">Anna</a>, 30<br/> <span class="gray fs1">Kazan,Russia</span></p>
+					</div>
+					<div class="looking_usr">
+						<div class="renpic">
+							<div class="inner">
+								<a href=""><img src="photo/famale/img_2.jpg" alt="" data-type="x-ren"  /></a>
+							</div>
+						</div>
+						<div class="clear"></div>
+						<p class="fs2 bold"><a href="">Anna</a>, 30<br/> <span class="gray fs1">Kazan,Russia</span></p>
+					</div>
+					<div class="looking_usr">
+						<div class="renpic">
+							<div class="inner">
+								<a href=""><img src="photo/famale/img_3.jpg" alt="" data-type="x-ren"  /></a>
+							</div>
+						</div>
+						<div class="clear"></div>
+						<p class="fs2 bold"><a href="">Anna</a>, 30<br/> <span class="gray fs1">Kazan,Russia</span></p>
+					</div>
+					<div class="looking_usr">
+						<div class="renpic">
+							<div class="inner">
+								<a href=""><img src="photo/famale/img_4.jpg" alt="" data-type="x-ren"  /></a>
+							</div>
+						</div>
+						<div class="clear"></div>
+						<p class="fs2 bold"><a href="">Anna</a>, 30<br/> <span class="gray fs1">Kazan,Russia</span></p>
+					</div>
+					<div class="looking_usr">
+						<div class="renpic">
+							<div class="inner">
+							<a href=""><img src="photo/famale/img_5.jpg" alt="" data-type="x-ren"  /></a>
+							</div>
+						</div>
+						<div class="clear"></div>
+						<p class="fs2 bold"><a href="">Anna</a>, 30<br/> <span class="gray fs1">Kazan,Russia</span></p>
+					</div>
+					<div class="looking_usr">
+						<div class="renpic">
+							<div class="inner">
+								<a href=""><img src="photo/famale/img_6.jpg" alt="" data-type="x-ren"  /></a>
+							</div>
+						</div>
+						<div class="clear"></div>
+						<p class="fs2 bold"><a href="">Anna</a>, 30<br/> <span class="gray fs1">Kazan,Russia</span></p>
+					</div>
+					<div class="looking_usr">
+						<div class="renpic">
+							<div class="inner">
+								<a href=""><img src="photo/famale/img_7.jpg" alt="" data-type="x-ren"  /></a>
+							</div>
+						</div>
+						<div class="clear"></div>
+						<p class="fs2 bold"><a href="">Anna</a>, 30<br/> <span class="gray fs1">Kazan,Russia</span></p>
+					</div>
+					<div class="looking_usr">
+						<div class="renpic">
+							<div class="inner">
+								<a href=""><img src="photo/famale/img_3.jpg" alt="" data-type="x-ren"  /></a>
+							</div>
+						</div>
+						<div class="clear"></div>
+						<p class="fs2 bold"><a href="">Anna</a>, 30<br/> <span class="gray fs1">Kazan,Russia</span></p>
+					</div>
+					<div class="looking_usr">
+						<div class="renpic">
+							<div class="inner">
+								<a href=""><img src="photo/famale/img_2.jpg" data-type="x-ren"  alt="" /></a>
+							</div>
+						</div>
+						<div class="clear"></div>
+						<p class="fs2 bold"><a href="">Anna</a>, 30<br/> <span class="gray fs1">Kazan,Russia</span></p>
+					</div>
+					<div class="clr2"></div>
+					<div class="prev"><a href=""><img src="./img/rend_looking_prev.png" alt="" title="" /></a></div>
+					<div class="next"><a href=""><img src="./img/rend_looking_next.png" alt="" title="" /></a></div>
+				</div>
+				<div class="indentTop30">
+					<div class="mobile-theme-block">
+						<div class="mobile-theme-preview">
+							<img src="./img/mobile-theme-preview-main.jpg" alt="" />
+						</div>
+						<h1>Yangutu mobile app</h1>
+						<p class="fs2 gray">From a practical point of view, metropolitan underground railway is one of those crucial inventions whose hypothetical non-existence, it would be safe to say without exaggeration, would make city life unbearable.</p> 
+						<p class="fs2 gray">The spaces born alongside the development of the prominent infrastructure, however, have an impact that far transcends their utilitarian importance and are also marked by great ambiguity.</p> 
+						<div class="indentTop20">
+							<a href=""><img src="./img/app_android_button.jpg" alt="" /></a>
+							<a href="" class="indentLeft10"><img src="./img/app_apple_button.jpg" alt="" /></a>
+						</div>
+					</div>
+				</div>
+				<div class="indentTop20">
+					<h1 class="tcenter">Присоединяйтесь к нам, сообществу счастливых людей!</h1>
+					<h2 class="tcenter">Almost <span class="blue">1,948,020</span> people from all over the world have already!</h2>
+					<div class="indentTop20 tcenter">
+						<input type="button" class="rendez_startbut" />
+						<span class="spec_or">
+						<input type="button" class="rendez_startbut_facebook" />
+						</span>
+					</div>
+					<div class="clr2"></div>
+				</div>
+			<div class="clr2"></div>
+		</div>
+	</div>
+	<div class="footer">
+	  <div class="footer_inn">
+		<ul>
+			<li><a href="/page/about">About us</a></li>
+			<li><a href="/help">FAQ</a></li>
+			<li><a href="http://blog.yangutu.com/">Our blog</a></li>
+			<li><a href="/feedback">Contact us</a></li>
+		</ul>
+		<ul>
+			<li><a href="/page/policy">Privacy</a></li>
+			<li><a href="/page/terms">Terms of use</a></li>
+		</ul>
+		<ul>			
+			<li><a href="/page/scams">Scam warning</a></li>
+			<li><a href="/page/safety">Safety Tips</a></li>
+		</ul>
+		<ul>
+			<li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+			<li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+			<li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+		
+		</ul>
+		<ul>
+		  <li><a href="/dating/all">People Directory</a></li>
+		</ul>
+		<div class="right">
+			<font color="black">&copy; 2010-2011 Yangutu Inc. All rights reserved</font><br>
+		  <span>Yangutu (swahili) - My one and only.</span>
+		</div>
+		 <div class="clear"></div>
+	  </div>
+</div>
+</body>
+</html>

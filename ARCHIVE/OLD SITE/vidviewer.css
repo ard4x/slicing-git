@@ -1,0 +1,42 @@
+#close{position:absolute; top:15px; right:15px;}
+.vid-viewer{background:url(img/opacity.png) 0 0 repeat; position:absolute; top:0; width:100%; z-index:888;}
+.videobox table{width:100%; border-collapse:collapse;}
+.videobox .inner{padding:20px;}
+.videobox .vidbox_small.previous{padding:0 20px 0 0;}
+.videobox .vidbox_small.next{padding:0 0 0 20px;}
+.videobox .vid-comment{background:#fff;}
+.videobox .vid-comment textarea{width:490px!important;}
+.videobox .vid-comment-position textarea{width:415px!important;}
+.videobox .vanilla{background:#f0efe1;}
+.videobox .title{color:#fff; font:bold 15px Arial;}
+.videobox .vid-views { position:relative; color:#828282; font:13px Arial; margin-top:10px; padding-right:50%;}
+.videobox .vid-views > span{padding-top:5px; padding-bottom:5px;}
+.videobox .vidlike{position:relative; top:0px; margin-left:10px; border-left:1px solid #525252; padding-left:30px; background-position:10px 50%;}
+.videobox .social >div{display:inline-block; *float:left;}
+
+.videobox .social{position:absolute; top:0px; right:0px;}
+.social .fb-like span{display:block;}
+
+.vidbox-preview{height:347px; overflow:hidden; background:url(img/default-videos.jpg) 50% 100px no-repeat;}
+.vidbox-preview .inner{padding-top:170px; color:#fff; text-align:center;}
+.vidbox-preview .title{font:bold 48px Arial;}
+
+.vidbox-preview .mobile-act-buttons{position:absolute; bottom:20px; right:20px;}
+
+.videobox .vid-views .addthis_toolbox span {padding-top:0px; padding-bottom:0px;}
+.addthis_toolbox {display: inline-block; width: 65px;}
+.twitter-share-button {width: 85px !important;}
+.google-plus-one div {width: 70px !important;}
+
+.videobox .central-block{width:468px; padding: 0 61px;}
+
+.vm_box{background:#ecf4fb;}
+.vm_box .birdpic_stat{position:absolute; top:0; right:4px;}
+.vm_usrcard{padding:3px 0;}
+.vm_usrcard,.vm_social{float:left;}
+.vm_social >div,.vm_usrcard{text-overflow:ellipsis; white-space:nowrap; overflow:hidden;}
+.vm_social >div{background:url(img/vm_social_bg.png) 0 50% no-repeat; height:46px; padding:15px 10px 0 40px;}
+
+.vid_content{padding-top:20px; font:14px/18px Arial;}
+.vidbox_mini{margin-right:5px; width:110px; display:inline-block; vertical-align: top; zoom:1; *display:inline;}
+.vidbox_mini .vidbox_title{font-size:12px;}

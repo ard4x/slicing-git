@@ -1,0 +1,1125 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Yangutu</title>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<link rel="stylesheet" href="style(next).css" type="text/css" id="" />
+	<link rel="stylesheet" href="buttons.css" type="text/css" id="" />
+	<link rel="stylesheet" href="banners.css" type="text/css" id="" />
+	<link rel="stylesheet" href="popups.css" type="text/css" id="" />
+	<link rel="stylesheet" href="custom.css" type="text/css" id="" /> <!-- СТИЛИ КОТОРЫЕ УЖЕ ЕСТЬ НА ПРОДЕ // НЕОБХОДИМО ЗАМЕНИТЬ!!!!!-->
+	<link rel="stylesheet" href="flags.css" type="text/css" id="" />
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+
+	<script type="text/javascript">
+        /*script to view*/
+        $(function(){
+            $('.main_menu > li,.user_menu ul > li,.nf-tab > a,.nfvc-options').bind('click',function(){
+                $('.main_menu > li,.user_menu ul > li,.nf-tab > a,.nfvc-options-block').removeClass('active');
+                $(this).not('.nfvc-options').addClass('active');
+                $(this).next('.nfvc-options-block').addClass('active');
+                return false;
+            })
+            
+            
+            function stsStyle(){ 
+                $('.select_menu').each(function(){
+                    var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),                    
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                    objElement.css({'width': w+'px'})
+                    console.log(obj.width())
+                
+                });
+            }
+            stsStyle();
+            
+            function cleftSrcoll(){
+                var $document = $(document),
+                    $element = $('.leftside'),
+                    className = 'scrolled';
+                    
+                if($.browser.msie){ var $document = $(window); } /*ИЕ не работает с document.scroll*/
+                
+                $document.scroll(function() {
+                  if ($document.scrollTop() >= 50) { 
+                    $element.addClass(className);
+                  } else {
+                    $element.removeClass(className);
+                  }
+                });
+            };
+            cleftSrcoll();
+            
+        })
+        
+    </script>
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="ie7.css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="ie8.css" />
+	<![endif]-->
+	
+	
+	<style>
+		#themeSelect{position:fixed; top:5px; right:100px; z-index:9999;} 
+	</style>
+	<script type="text/javascript"> /*this scrit just for looking the style*/
+		$(function(){
+			$('#themeSelect').change(function () {
+				  $("body").attr('class', ' ');
+				  var opt = "";
+				  $("#themeSelect option:selected").each(function () {
+						opt += $(this).text() + " ";
+					  });
+				  $("body").addClass('pattern '+ opt);
+				})
+				.trigger('change');
+		})
+	</script>
+	<script type="text/javascript">
+		$(function(){
+		
+			var indents = 20, 
+				posY,
+				elements = $('.left-scroll-bar,.right-scroll-bar');
+			
+			function profileNavButtons(el1, el2, posY){
+				var funy = el1,
+					funx = el2;
+				elements.height(funy);
+				elements.width(funx);		
+				elements.css({ top : posY});		
+			}
+			function profileNavButtonsCord(){
+				var	winHeight = $(window).height(),
+					conWidth = $('.content_inn').width(),
+					winWidth = $(window).width(),
+					docHeight = $(document).height(),
+					scTop = $('.header').height(),
+					scBot = $('.footer').height(),
+					scBotIndent = docHeight - $('.footer').height(),
+					el2 = (( winWidth - conWidth) / 2) - indents;
+				
+				var scTopIndent = $(window).scrollTop() + winHeight;
+				
+				if ($(window).scrollTop() > scTop ){
+				var	el1 = winHeight - indents,
+					posY = 10 + 'px';
+					profileNavButtons(el1, el2 , posY);
+				} if ($(window).scrollTop() < scTop ){
+				var	el1 = (winHeight - scTop) - indents,
+					posY = 80 + 'px';
+					profileNavButtons(el1, el2 , posY);
+				} if (scTopIndent > scBotIndent ){
+				var	el1 = (winHeight - scBot) - indents,
+					posY = 10 + 'px';
+					profileNavButtons(el1, el2 , posY);
+				}
+			}
+			profileNavButtonsCord();
+			$(window).scroll(profileNavButtonsCord);
+			$(window).resize(profileNavButtonsCord);
+			
+		});
+	</script>
+</head>
+
+<body class="pattern theme-1">
+	<select id="themeSelect">
+		<option>theme-1</option>
+		<option>theme-2</option>
+		<option>theme-3</option>
+		<option>theme-4</option>
+		<option>theme-5</option>
+		<option>theme-6</option>
+		<option>theme-7</option>
+		<option>theme-8</option>
+		<option>theme-9</option>
+		<option>theme-10</option>
+	</select>
+	
+	<div class="left-scroll-bar">
+		<a href=""><span>&#9668; Prev </span></a>
+	</div>
+	<div class="right-scroll-bar">
+		<a href=""><span>Next &#9658;</span></a>
+	</div>
+    <div class="header">
+        <div class="header_inn">
+            <a href="#"><img src="./img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>	
+            <ul class="main_actmenu">
+                <li><a href=""><span class="v1">Messages</span><i class="hrg">1</i></a></li>
+                <li><a href=""><span class="v2">Signals</span><i class="hrg">99</i></a></li>
+            </ul>
+            <ul class="main_menu">
+                <li><a href="">People</a></li>
+                <li><a href="">Games</a></li>
+                <li>
+                    <a href="">Videobox</a>
+                    <div style="width:300px;">
+                        <div class="inner">
+                            <ul class="left">
+                                <li><a href="http://yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Adventures">Adventures</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cars">Cars</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Celebrities">Celebrities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Children">Children</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cities">Cities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Crazy">Crazy &amp; Extreme</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Dating+%26+Relationships">Dating Relationships</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Family">Family</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Fashion">Fashion</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Funny">Funny &amp; Cute</a></li>
+                            </ul>
+                            <ul class="right">
+                                <li><a href="http://yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Adventures">Adventures</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cars">Cars</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Celebrities">Celebrities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Children">Children</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cities">Cities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Crazy">Crazy &amp; Extreme</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Dating+%26+Relationships">Dating &amp; Relationships</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Family">Family</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Fashion">Fashion</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Funny">Funny &amp; Cute</a></li>
+                            </ul>
+                            <div class="clr2"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Talks</a>
+                    <div>
+                        <div class="inner">
+                            <ul>
+                                <li><a href="">Daily Talks</a></li>
+                                <li><a href="">Hot discussions</a></li>
+                                <li><a href="">Corporate blog</a></li>
+                                <li><a href="">Polls</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">Questions</a></li>
+            </ul>
+            <div class="user_menu">
+                <div>
+                    <ul>
+                        <li>
+                            <a class="todo" href="" title="Accaunt Settings"><i></i></a>
+                            <div>
+                                <div class="inner">
+                                    <ul>
+                                        <li><a href="">Пригласить друзей</a></li>
+                                        <li><a href="">Деньги за друзей</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <ul>
+                                        <li><a href="">Email уведомления</a></li>
+                                        <li><a href="">Платежи</a></li>
+                                        <li><a href="">Заблокированные пользователи</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <ul>
+                                        <li><a href="">Yangutu iPhone</a></li>
+                                        <li><a href="">Yangutu Android</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <a href="">Выход</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="tuse">
+                                <a href="" title="Julia's profile"><img src="./img/36x36pic.png" alt="" /></a>
+                                <a href="" title="Julia's profile" class="fs3 pt"><b>Julia</b></a>
+                                <a href="" title="Add more coins">1 819 coins</a>
+                            </span>
+                            <div class="clr2"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clr2"></div>
+        </div>
+    </div>
+
+<div class="content">
+			<div class="content_inn">
+
+				
+		<div class="c_left4">
+			
+			<div class="proftopmes">
+			<div id="matchPref">Wants to meet a woman, 18-99</div>
+							<a href="#" onclick="$('.lookingbx').slideDown();return false;">Edit</a>
+					</div>
+	 
+	 
+			<div class="my_brdpic_top"></div>
+			<div class="my_brdpic4">
+				<a class="playSlideshow" href=""><span class="zoom-in"></span><img src="./img/216x286pic.jpg" alt="" /></a>
+				<div class="profile-photo-info"><div class="inner"><div class="leftTxt"><b>89090</b> votes<br/>in <b>TOP-100</b></div><input type="button" class="button_green mini right" value="Vote for here" /><div class="clr2"></div></div></div>
+				<div class="present-gift larger"><a href=""><img src="./img/black-square.png" /></a></div>
+			</div>
+			<div class="my_brdpic_bottom"></div>
+			<div>
+				<p>886 votes in Top-100</p>
+				<a class="btn btn-blue mini" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Vote for him</span></span></span></a>
+			</div>
+			<div class="usr-photo-profile-three">
+				<div class="photopic sl1">
+					<a href=""><img src="./img/photosl1.jpg" width="140" height="89" /></a> <!-- This img crop -->
+				</div>
+				<div class="photopic sl2">
+					<a href=""><img src="./img/pix.png" class="photosl_add"  width="65" height="89" /></a> <!-- This img crop -->
+				</div>
+				<div class="photopic sl3">
+					<a href=""><img src="./img/photosl3.jpg"  width="65" height="89" /></a> <!-- This img crop -->
+				</div>
+				<div class="photopic sl4">
+					<a href=""><img src="./img/pix.png" class="photosl_add"  width="140" height="89" /></a> <!-- This img crop -->
+				</div>
+				<div class="photopic sl5">
+					<a href=""><img src="./img/photosl5.jpg" width="65" height="65" /></a> <!-- This img crop -->
+				</div>
+				<div class="photopic sl5">
+					<a href=""><img src="./img/photosl6.jpg" width="65" height="65" /></a> <!-- This img crop -->
+				</div>
+				<div class="photopic sl5">
+					<a href=""><img src="./img/photosl7.jpg" width="65" height="65" /></a> <!-- This img crop -->
+				</div>
+				<div class="clr2"></div>
+			</div>
+			<div class="usr-photo-profile-three">
+				<div class="photopic sl1">
+					<a href=""><img src="./img/pix.png" class="photosl_add" width="140" height="89" /></a> <!-- This img crop -->
+				</div>
+				<div class="photopic sl2">
+					<a href=""><img src="./img/photosl2.jpg"  width="65" height="89" /></a> <!-- This img crop -->
+				</div>
+				<div class="photopic sl3">
+					<a href=""><img src="./img/photosl3.jpg"  width="65" height="89" /></a> <!-- This img crop -->
+				</div>
+				<div class="photopic sl4">
+					<a href=""><img src="./img/photosl4.jpg"  width="140" height="89" /></a> <!-- This img crop -->
+				</div>
+				<div class="photopic sl5">
+					<a href=""><img src="./img/pix.png" class="photosl_add" width="65" height="65" /></a> <!-- This img crop -->
+				</div>
+				<div class="photopic sl5">
+					<a href=""><img src="./img/photosl6.jpg" width="65" height="65" /></a> <!-- This img crop -->
+				</div>
+				<div class="photopic sl5">
+					<a href=""><img src="./img/photosl7.jpg" width="65" height="65" /></a> <!-- This img crop -->
+				</div>
+				<div class="clr2"></div>
+			</div>
+			<ul class="linkslist indentTop20">
+				<li class="tbold">
+											<a href="/profile/photos/385560">
+										View all photos</a>
+						<a href="#" class="pluscount">1</a>
+					
+				</li>
+			</ul>
+			
+			<div class="profile_usr_view">
+				<a href="">66 profile</a> visitors this month.
+			</div>
+			
+			<div class="infobox indentTop10">
+				<div class="vipinfo">
+					<p class="tbold">Yangutu VIP</p>
+					<p>???????? ??????? VIP?????????</p>
+				</div>
+				<input type="button" class="button_blue small flWidth100 indentTop10" value="?????? ?????????" />
+			</div>
+			
+			<div class="lookingbx indentTop10">
+				<p class="tcenter"><b>You are on the 2 345 place in search results</b><br/><span class="fs9">Today your profile was not viewed</span></p>
+				<input type="button" class="button_blue large flWidth100 indentTop10" value="Rise up to the top" />
+			</div>
+			
+			<div class="indentTop10">
+				<div class="wtit">Interests</div>
+				<div class="wtit_box">
+					<div class="brdpic8 left"><a href=""><img src="./img/46x46pic.jpg" alt=""></a></div>
+					<div class="brdpic8 left"><a href=""><img src="./img/46x46pic.jpg" alt=""></a></div>
+					<div class="brdpic8 left">
+						<a href=""><img src="./img/46x46pic.jpg" alt=""></a>
+						<div class="brdpic-infobox">
+							<div class="arrow"><img src="./img/brdpic-info-arrow.png" alt="" /></div>
+							<div class="inner">
+								<div class="left">
+									<img src="./img/image8.jpg" alt="" />
+								</div>
+								<div class="brdpic-infobox-content">
+									<div><b>Kreativ</b><br/><a href="">Interested 256</a></div>
+									<div class="indentTop5">
+										<a href=""><img src="./img/28x28pic.jpg" alt="" /></a>
+										<a href=""><img src="./img/28x28pic.jpg" alt="" /></a>
+										<a href=""><img src="./img/28x28pic.jpg" alt="" /></a>
+										<a href=""><img src="./img/28x28pic.jpg" alt="" /></a>
+									</div>
+								</div>
+								<div class="clr2"></div>
+							</div>
+						</div>
+					</div>
+					<div class="brdpic8 left"><a href=""><img src="./img/46x46pic.jpg" alt=""></a></div>
+					<div class="brdpic8 left"><a href=""><img src="./img/46x46pic.jpg" alt=""></a></div>
+					<div class="brdpic8 left"><a href=""><img src="./img/46x46pic.jpg" alt=""></a></div>
+					<div class="brdpic8 left"><a href=""><img src="./img/46x46pic.jpg" alt=""></a></div>
+					<div class="brdpic8 left"><a href=""><img src="./img/46x46pic.jpg" alt=""></a></div>
+					<div class="clr2"></div>
+					<div class="fs9 blue indentTop10">Some text</div>
+				</div>
+			</div>
+		</div>
+		<div class="c_mid4">
+			<div class="prelative">
+				<h1>Taras, 22 </h1>
+				<div class="paginator profile_in">
+					<ul>
+						<li class="prev"><a href="#">&larr; Prev Profile</a></li>
+						<li><a href="#">Next Profile &rarr;</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="prelative">
+				<h1>Taras, 22 </h1>
+				<div class="paginator profile_in">
+					<ul>
+						<li><a href="#">&larr; Prev Profile</a></li>
+						<li><a href="#">Next Profile &rarr;</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="prelative">
+				<h1><span class="prelative">Taras, 22 <img class="birth_ico" src="./img/birthday_ico.png" alt="This user has birthday today" title="This user has birthday today" /></span> </h1>
+				<div class="paginator profile_in">
+					<ul>
+						<li><a href="#">&larr; Prev Profile</a></li>
+						<li class="prev"><a href="#">Next Profile &rarr;</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="prof_loc">
+				<span class="loc-sub-city" title="Minsk">Minsk, </span>
+				<span class="loc-sub-country" title="Belarus">Belarus</span>
+			</div>
+			<div class="subnav2 indentTop10">
+				 <ul class="links">
+
+					<li><input type="button" data-action="wink" class="button_blue small user-barrier" href="/profile/wink/userId/983373" value="Wink" alt=""></li>
+
+					<li><input type="button" href="#" class="button_blue small user-barrier" data-action="icebreaker" value="Send Icebreaker" alt=""></li>
+					<li><input type="button" title="" data-href="#" class="button_orange small user-barrier" data-action="send-gift" value="Send Gift"></li>
+					<!-- <li class="hidden"><input type="button" href="/chat/dialog/983373" id="chat-now" data-action="chat" class="button_blue small user-barrier" value="Send message"></li>
+					 -->
+					 <li class="add-fav"><input type="button" class="button_blue small" href="/favorites/add/userId/983373" value="Add to favorites" alt=""></li>
+					<li style="display:none" class="rem-fav"><input type="button" class="button_blue small" href="/favorites/remove/userId/983373" value="Remove from favorites"></li>
+
+					<li class="orbx">
+						<div class="prelative">
+							<div>
+								<input type="button" class="button_blue small orr" value="or">
+								<div class="orborderlistfull" style="display: none">
+								<div class="inn">
+									<ul id="profile_ull">
+										<li><a href="/face-to-face/index/user/35364156">Meet her</a></li>
+										<li><a href="/payments/vip/popup?feature=hide" class="ygPopup">Hide</a></li>
+									</ul>
+								</div>
+								<div class="bot"></div>
+								</div>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+					<div class="clr2"></div>
+			</div>
+			<div class="profile-infoblock prelative">
+				<a class="btn btn-blue btn-ico v7 left" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Export data from Facebook</span></span></span></a> 
+                <div class="dwa-style fixWidth200"><div class="inner"><i>arrow</i>The fastest way to fill in the profile information. </div></div>
+				<div class="clear"></div>
+			</div>
+			
+			<div class="profile-infoblock indentTop10">
+				<div class="ask-profile-form1">
+					<input type="button" class="button_blue large right fixWidth120" value="Ask" />
+					<span class="">Want to know him/her better?<br/> Ask him/her to fill in his/her profile.</span>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			
+			<div class="profile-infoblock indentTop10">
+				<div class="ask-profile-form2">
+					<span>He/she has received a message that you asked him/her to fill in his/her profile.</span>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div>
+
+		<div class="gifts">
+			<ul>
+				<li><a href=""><img src="img/gift_add.jpg" alt="" title="" /></a></li>
+				<li><a href=""><img src="img/gift_rainbow.jpg" alt="" title="" /></a></li>
+				<li><a href=""><img src="img/gift_smile.jpg" alt="" title="" /></a></li>
+				<li><a href=""><img src="img/gift_cup.jpg" alt="" title="" /></a></li>
+				<li><a href=""><img src="img/gift_bug.jpg" alt="" title="" /></a></li>
+				<li class="more"><a href="">More</a></li>
+			</ul>
+			<div class="clr2"></div>
+		</div>
+		<div class="gifts tcenter">
+			<div class="fixWidth240 left">
+				<p><img src="./img/yangutu-vip-sticker.png" alt="" /></p>
+				<a class="btn btn-red" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Сделать подарок</span></span></span></a>
+			</div>
+			<div class="fixWidth240 left">
+				<p><img src="./img/yangutu-vip-vip.png" alt="" /></p>
+				<a class="btn btn-red" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Подарить ВИП</span></span></span></a>
+			</div>
+			<div class="clr2"></div>
+		</div>
+		<div id="about-info-div">
+			<div class="rtit">Icebreakers</div>
+			<ul class="proflist saved-list">
+					<div style="padding: 0pt 5px;"><a href="">Elena</a> send <a href="">new icebreakers to me</a></div>
+			</ul>
+		</div>
+		<div id="video-id">
+			<div class="rtit">Video <a class="tnormal" href="">Edit</a></div>
+			<div class="proflist saved-list">
+				<div class="profileGroupLegend"><span class="legend left">Yangutu Viral Video&nbsp;</span> <span class="legend-link right"><a href="">Show all</a> 152</span><div class="clr2"></div></div>
+				<div class="profile_vidbox">
+					<div class="vidbox_small">
+						<div class="vidpreview">
+							<a class="ygPopup" href="">
+								<input type="button" class="button_blue small unlike" value="unlike" />
+								<img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+							</a>
+						</div>
+					</div>
+					<div class="vidbox_small">
+						<div class="vidpreview">
+							<a class="ygPopup" href="">
+								<input type="button" class="button_blue small unlike" value="unlike" />
+								<img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+							</a>
+						</div>
+					</div>
+					<div class="vidbox_small">
+						<div class="vidpreview">
+							<a class="ygPopup" href="">
+								<input type="button" class="button_blue small unlike" value="unlike" />
+								<img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+							</a>
+						</div>
+					</div>
+					<div class="vidbox_small">
+						<div class="vidpreview">
+							<a class="ygPopup" href="">
+								<input type="button" class="button_blue small unlike" value="unlike" />
+								<img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+							</a>
+						</div>
+					</div>
+					<div class="vidbox_small">
+						<div class="vidpreview">
+							<a class="ygPopup" href="">
+								<input type="button" class="button_blue small unlike" value="unlike" />
+								<img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+							</a>
+						</div>
+					</div>
+					<div class="vidbox_small">
+						<div class="vidpreview">
+							<a class="ygPopup" href="">
+								<input type="button" class="button_blue small unlike" value="unlike" />
+								<img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="profileGroupLegend"><span class="legend left">YouTube Favorites&nbsp;</span><span class="legend-link right"><a href="">Show all</a> 44</span><div class="clr2"></div></div>
+				<div class="profile_vidbox">
+					<div class="vidbox_small">
+						<div class="vidpreview">
+							<a class="ygPopup" href="">
+								<input type="button" class="button_blue small unlike" value="unlike" />
+								<img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+							</a>
+						</div>
+					</div>
+					<div class="vidbox_small">
+						<div class="vidpreview">
+							<a class="ygPopup" href="">
+								<input type="button" class="button_blue small unlike" value="unlike" />
+								<img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+							</a>
+						</div>
+					</div>
+					<div class="vidbox_small">
+						<div class="vidpreview">
+							<a class="ygPopup" href="">
+								<input type="button" class="button_blue small unlike" value="unlike" />
+								<img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+							</a>
+						</div>
+					</div>
+					<div class="vidbox_small">
+						<div class="vidpreview">
+							<a class="ygPopup" href="">
+								<input type="button" class="button_blue small unlike" value="unlike" />
+								<img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+							</a>
+						</div>
+					</div>
+					<div class="vidbox_small">
+						<div class="vidpreview">
+							<a class="ygPopup" href="">
+								<input type="button" class="button_blue small unlike" value="unlike" />
+								<img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+							</a>
+						</div>
+					</div>
+					<div class="vidbox_small">
+						<div class="vidpreview">
+							<a class="ygPopup" href="">
+								<input type="button" class="button_blue small unlike" value="unlike" />
+								<img width="100%" title="" alt="" src="./img/video_preview.jpg" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="about-info-div">
+		<div class="rtit">About me <a id="edit-about-link" class="tnormal" href="/profile/edit-about-me">Edit</a></div>
+			<ul class="proflist saved-list">
+					<div style="padding: 0pt 5px; color: rgb(103, 103, 103);">Describe yourself in a few words.</div>
+			</ul>
+		</div>
+
+		<div id="basic-info-div">
+		<div class="rtit">
+							<div class="rtitrs"> <div class="per_cont" style="width: 73px;"><div class="per" style="width: 0%;"></div></div> 0% <span>filled</span> </div>                        				Personal information <a id="edit-basic-link" class="tnormal" href="/profile/edit">Edit</a></div>
+			<ul class="proflist saved-list">
+					<li>
+				<div class="label">
+					Current city:
+				</div>
+				<div class="description">
+					<span class="loc-sub-city" title="Minsk">Minsk, </span><span class="loc-sub-country" title="Belarus">Belarus</span>                                </div>
+			</li>
+
+																							</ul>
+		</div>
+
+		<div id="more-info-div">
+		<div class="rtit">Hobbies and Pastimes <a href="/profile/edit-more-about-me" id="edit-more-link" class="tnormal">Edit</a><a style="margin-left: 10px; display: none; cursor: pointer;" id="get-from-fb">Get from Facebook</a><span style="margin-left: 10px;" id="fb-spinner"></span></div>
+			<div class="prinfo saved-list">Share your views and interests.</div>
+		</div>
+		 
+			<div id="words-info-div">
+				<div class="rtit">In my own words <a href="/profile/edit-about" id="edit-words-link" class="tnormal">Edit</a></div>
+				<div class="prinfo saved-list">Stand out of the crowd - tell the world what you are all about. </div>
+			</div>
+			<div id="id">
+				<div class="rtit prelative">Languages <a href="" id="edit" class="tnormal">Edit</a> <span class="icebreak-answer-span"><a href="">3</a> answers</span></div>
+				<div class="prinfo saved-list">
+					<ul class="proflist saved-list">
+						<li>
+							<div class="label"><span ><img alt="Russian" src="./img/blank.gif" class="flags flag-ru"> Russian</span></div>
+							<div class="description">
+								<span class="lang_knowledge lk1">Native</span>                     
+							</div>
+						</li>
+						<li>
+							<div class="label"><span ><img alt="Russian" src="./img/blank.gif" class="flags flag-in"> English</span></div>
+							<div class="description">
+								<span class="lang_knowledge lk2">Fluent</span>                     
+							</div>
+						</li>
+						<li>
+							<div class="label"><span ><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</span></div>
+							<div class="description">
+								<span class="lang_knowledge lk3">Begginer</span>                     
+							</div>
+						</li>
+						<li>
+							<div class="label"><span ><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</span></div>
+							<div class="description">
+								<span class="lang_knowledge lk4">Begginer</span>                     
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="language-info-div">
+				<div class="rtit">Languages <a href="" class="tnormal">Edit</a></div>
+				<div class="prinfo saved-list">Enter Languages you know and languages you are studding or want to know. Find companions in <a href="">Languages search</a> and improve you level. <a href="">Edit languages</a></div>
+			</div>
+			<div id="language-info-div">
+				<div class="rtit">Languages</div>
+				<div class="predbx  unsaved-list">
+					<ul class="lang_edit">
+						<li>
+							<div class="lang_control">
+								<span class="count">1.</span>
+								<div class="newListSelected" style="position: static;">
+									<div class="selectedTxt"><img alt="Russian" src="./img/blank.gif" class="flags flag-ru"> Russian</div>
+								</div>
+							</div>
+							<div class="lang_level">
+								<span class="level">level</span>
+								<div class="newListSelected" style="position: static;">
+									<div class="selectedTxt"><span class="lang_knowledge lk1">Native</span></div>
+								</div>
+								<a href="" class="langClose"><img alt="" src="./img/close_ic.png" /></a>
+							</div>
+							<div class="clr2"></div>
+						</li>
+						<li>
+							<div class="lang_control">
+								<span class="count">2.</span>
+								<div class="newListSelected" style="position: static;">
+									<div class="selectedTxt"><img alt="Russian" src="./img/blank.gif" class="flags flag-ru"> Russian</div>
+								</div>
+							</div>
+							<div class="lang_level">
+								<span class="level">level</span>
+								<div class="newListSelected" style="position: static;">
+									<div class="selectedTxt"><span class="lang_knowledge lk1">Native</span></div>
+								</div>
+								<a href="" class="langClose"><img alt="" src="./img/close_ic.png" /></a>
+							</div>
+							<div class="clr2"></div>
+						</li>
+						<li>
+							<div class="lang_control">
+								<span class="count">3.</span>
+								<div class="newListSelected" style="position: relative;">
+									<div class="selectedTxt"><img alt="Russian" src="./img/blank.gif" class="flags flag-ru"> Russian</div>
+									<div style="visibility: visible; top: 0px; height: 150px; width:100%!important; left: 0pt; position:absolute; display: block;" class="SSContainerDivWrapper">
+										<ul class="newList" style="height: 150px;">
+											<li><a href="" class="hiLite"><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+											<li><a href=""><img alt="Russian" src="./img/blank.gif" class="flags flag-fr"> French</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="lang_level">
+								<span class="level">level</span>
+								<div class="newListSelected" style="position: static;">
+									<div class="selectedTxt"><span class="lang_knowledge lk1">Native</span></div>
+									<div style="visibility: visible; top: 0px; height: 150px; width:100%!important; left: 0pt; position:absolute; display: block;" class="SSContainerDivWrapper">
+										<ul class="newList" style="height: 150px;">
+											<li><a href="" class="hiLite"><span class="lang_knowledge lk1">Native</span></a></li>
+											<li><a href=""><span class="lang_knowledge lk2">Native</span></a></li>
+											<li><a href=""><span class="lang_knowledge lk3">Native</span></a></li>
+											<li><a href=""><span class="lang_knowledge lk4">Native</span></a></li>
+										</ul>
+									</div>
+								</div>
+								<a href="" class="langClose"><img alt="" src="./img/close_ic.png" /></a>
+							</div>
+							<div class="clr2"></div>
+						</li>
+					</ul>
+					<div class="clr2"></div>
+					<div class="indentTop10">
+						<a href="" class="indentLeft15">Add language</a>
+					</div>
+				</div>
+			</div>
+		 </div>
+
+
+				
+			  <div class="c_right">
+				
+				<div class="lookingbx indentTop10">
+					<p class="tcenter"><b>Выбери обои<br/>для своего профиля.</b></p>
+					<div>
+						<div class="brdpic8 left"><a href=""><img alt="" src="./img/pattern/pattern_06_tn.png"></a></div>
+						<div class="brdpic8 left"><a href=""><img alt="" src="./img/pattern/pattern_01_tn.png"></a></div>
+						<div class="brdpic8 left"><a href=""><img alt="" src="./img/pattern/pattern_02_tn.png"></a></div>
+						<div class="brdpic8 left"><a href=""><img alt="" src="./img/pattern/pattern_03_tn.jpg"></a></div>
+						<div class="brdpic8 left"><a href=""><img alt="" src="./img/pattern/pattern_04_tn.png"></a></div>
+						<div class="brdpic8 left"><a href=""><img alt="" src="./img/pattern/pattern_05_tn.png"></a></div>
+						<div class="clr2"></div>
+					</div>
+					<div class="indentTop10">
+						<input type="button" value="Смотреть больше" href="" class="button_green small flWidth100" />
+					</div>
+				</div>
+				<div class="lookingbx_shadow"></div>
+				<div class="lookingbx indentTop10">
+					<p class="tcenter"><b>You are in the 6 085 place in search results</b></p>
+					<div>
+						<div class="brdpic8 left">
+						<div class="present-gift small"><a href=""><img src="./img/black-square.png" width="25px" alt="" /></a></div><a href=""><img alt="" src="./img/46x46pic.jpg"></a></div>
+						<div class="brdpic8 left"><a href=""><img alt="" src="./img/46x46pic.jpg"></a></div>
+						<div class="brdpic8 left"><a href=""><img alt="" src="./img/46x46pic.jpg"></a></div>
+						<div class="brdpic8 left"><a href=""><img alt="" src="./img/46x46pic.jpg"></a></div>
+						<div class="brdpic8 left"><a href=""><img alt="" src="./img/46x46pic.jpg"></a></div>
+						<div class="brdpic8 left"><a href=""><img alt="" src="./img/46x46pic.jpg"></a></div>
+						<div class="clr2"></div>
+					</div>
+					<p class="indentTop10 tcenter">Today your profile<br/> was viewied by <a href="">333 people</a></p>
+					<div>
+						<input type="button" value="Rise up to the top" href="" class="button_green small flWidth100" />
+					</div>
+				</div>
+				<div class="lookingbx_shadow"></div>
+				<div class="lookingbx indentTop10">
+					<p class="tcenter"><b>You are on the 2 345 place in search results</b><br/><span class="fs9">Today your profile was not viewed</span></p>
+					<input type="button" class="button_blue large flWidth100 indentTop10" value="Rise up to the top" />
+				</div>
+				<div class="lookingbx_shadow"></div>
+				
+				<div class="lookingbx indentTop10">
+					<div class="left"><img src="img/rise-to-the-top2.png" alt="" /></div>
+					<div class="left fixWidth120">
+						<div class="indentLeft10">
+							<b>You are currently</b><br/><span class="">in place <a href="" class="blue understyle"><b>19, 057</b></a>,</span><br/><span class="">with <a href="" class="blue understyle"><b>1</b></a> visitor today.</span>
+							<div class="indentTop10"><a href="" class="blue understyle"><b>Rise up to the top</b></a></div>
+						</div>
+					</div>
+					<div class="clr2"></div>
+				</div>
+				<div class="lookingbx_shadow"></div>
+				
+				<div class="lookingbx indentTop10">
+					<p class="tcenter"><b>You are on the 1 place<br/>in search results</b><br/><span class="fs9">Today your profile was viewed by <a href="">33 visitors</a></span></p>
+					<input type="button" class="button_blue large flWidth100 indentTop10" value="Rise up to the top" />
+				</div>
+				<div class="lookingbx_shadow"></div>
+				
+				<div class="indentTop10">
+					<input type="button" class="button_blue small flWidth99" value="Back to the previous page" />
+				</div>
+						
+				<div class="wtit indentTop10">Quicklinks</div>    
+				<ul class="rlist">
+					<li id="menu_soulmates"><span class="rnum ">5</span> <a href="/soulmates" class="rlab">Soulmates</a></li>
+					<li id="menu_search"><span class="rnum "></span> <a href="/search" class="rlab">Matches</a></li>
+					<li id="menu_favorites"><span class="rnum ">24</span> <a href="/favorites" class="rlab">Favorites</a></li>
+					<li id="menu_visitors"><span class="rnum ">6</span> <a href="/visitors" class="rlab">Visitors</a></li>
+					<li id="menu_blocked"><span class="rnum "></span> <a href="/profile/blocked" class="rlab">Blocked</a></li>
+					<li id="menu_closed"><span class="rnum "></span> <a href="/profile/closed" class="rlab">Closed</a></li>
+					<li id="menu_notifications"><span class="rnum "></span> <a href="/notifications" class="rlab">Notifications</a></li>
+				</ul>    
+			   
+				
+				<div class="wtit">Get connected</div>
+				<ul class="rlist">
+					 <li><span class="rnum "></span> <a href="/invite" class="rlab">Invite people</a></li>
+					 <li><span class="rnum "></span> <a href="/invite/history" class="rlab">Track your invites</a></li>
+				</ul>
+				
+				
+				<div class="wtit">My Facebook Friends</div>
+				<div>
+					<div class="indentTop10">
+						<div class="brdpic8 left"><a href=""><img alt="" src="./img/46x46pic.jpg" /></a></div>
+						<div class="indentLeft65"><p><a href=""><b>Marysia</b></a></p><a class="btn btn-blue mini" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth65">Invite</span></span></span></a></div>
+						<div class="clr2"></div>
+					 </div>
+					<div class="indentTop10">
+						<div class="brdpic8 left"><a href=""><img alt="" src="./img/46x46pic.jpg" /></a></div>
+						<div class="indentLeft65"><p><a href=""><b>Tolik nah</b></a></p><a class="btn btn-blue mini" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth65">Invite</span></span></span></a></div>
+						<div class="clr2"></div>
+					 </div>
+					<div class="indentTop10">
+						<div class="brdpic8 left"><a href=""><img alt="" src="./img/46x46pic.jpg" /></a></div>
+						<div class="indentLeft65"><p><a href=""><b>Marysia</b></a></p><a class="btn btn-blue mini" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth65">Invite</span></span></span></a></div>
+						<div class="clr2"></div>
+					 </div>
+				 </div>
+				 
+				<div class="wtit">Your profile address</div>
+				<div class="profaddress">
+					<input readonly="readonly" class="input2 sf width180 indentTop10" value="http://yangutu.com/597083568" type="text">
+					<div class="clr2 indentBottom5"></div>
+					 <a href="/profile/custom-url">Customize</a>
+				 </div>
+				
+				<div class="prof-block-usrlist indentTop10">
+					<div class="tcenter">
+						<span class="gtr"><span>online now</span></span>
+					</div>
+					<div class="brdpic indentTop10">
+						<a href=""><img src="./img/116x156pic.jpg" alt="" /></a>
+						<div class="present-gift larger"><a href=""><img src="./img/black-square.png"  width="50px" alt="" /></a></div>
+					</div>
+					<p class="fs2 indentTop10 tcenter">Want to talk to him?</p>
+					<div class="indentTop10 tcenter"><input type="button" class="button_green small" value="Talk to him" /> <input type="button" class="button_blue small" value="Show more" /></div>
+				</div>
+				<div class="lookingbx_shadow"></div>
+				
+				<div class="clr2"></div>
+			</div>
+			<div class="clr2"></div>
+			<h2>Relevant People</h2>
+			<div class="rendez_looking indentTop20">
+				<div class="looking_usr">
+					<div class="renpic">
+						<div class="inner">
+							<a href=""><img src="photo/famale/img_1.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<p class="fs2 bold"><a href="">Anna</a>, 30<br/> <span class="gray fs1">Kazan,Russia</span></p>
+				</div>
+				<div class="looking_usr">
+					<div class="renpic">
+						<div class="inner">
+							<a href=""><img src="photo/famale/img_2.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<p class="fs2 bold"><a href="">Anna</a>, 30<br/> <span class="gray fs1">Kazan,Russia</span></p>
+				</div>
+				<div class="looking_usr">
+					<div class="renpic">
+						<div class="inner">
+							<a href=""><img src="photo/famale/img_3.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<p class="fs2 bold"><a href="">Anna</a>, 30<br/> <span class="gray fs1">Kazan,Russia</span></p>
+				</div>
+				<div class="looking_usr">
+					<div class="renpic">
+						<div class="inner">
+							<a href=""><img src="photo/famale/img_4.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<p class="fs2 bold"><a href="">Anna</a>, 30<br/> <span class="gray fs1">Kazan,Russia</span></p>
+				</div>
+				<div class="looking_usr">
+					<div class="renpic">
+						<div class="inner">
+						<a href=""><img src="photo/famale/img_5.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<p class="fs2 bold"><a href="">Anna</a>, 30<br/> <span class="gray fs1">Kazan,Russia</span></p>
+				</div>
+				<div class="looking_usr">
+					<div class="renpic">
+						<div class="inner">
+							<a href=""><img src="photo/famale/img_6.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<p class="fs2 bold"><a href="">Anna</a>, 30<br/> <span class="gray fs1">Kazan,Russia</span></p>
+				</div>
+				<div class="looking_usr">
+					<div class="renpic">
+						<div class="inner">
+							<a href=""><img src="photo/famale/img_7.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<p class="fs2 bold"><a href="">Anna</a>, 30<br/> <span class="gray fs1">Kazan,Russia</span></p>
+				</div>
+				<div class="looking_usr">
+					<div class="renpic">
+						<div class="inner">
+							<a href=""><img src="photo/famale/img_3.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<p class="fs2 bold"><a href="">Anna</a>, 30<br/> <span class="gray fs1">Kazan,Russia</span></p>
+				</div>
+				<div class="looking_usr">
+					<div class="renpic">
+						<div class="inner">
+							<a href=""><img src="photo/famale/img_2.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<p class="fs2 bold"><a href="">Anna</a>, 30<br/> <span class="gray fs1">Kazan,Russia</span></p>
+				</div>
+				<div class="clr2"></div>
+				<div class="prev"><a href=""><img src="./img/rend_looking_prev.png" alt="" title="" /></a></div>
+				<div class="next"><a href=""><img src="./img/rend_looking_next.png" alt="" title="" /></a></div>
+			</div>
+			<div class="lookingbx indentTop20">
+				<div class="looking_usr">
+					<div class="renpic">
+						<div class="inner">
+							<a href=""><img src="photo/famale/img_1.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="looking_usr">
+					<div class="renpic">
+						<div class="inner">
+							<a href=""><img src="photo/famale/img_2.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="looking_usr">
+					<div class="renpic">
+						<div class="inner">
+							<a href=""><img src="photo/famale/img_3.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="looking_usr">
+					<div class="renpic">
+						<div class="inner">
+							<a href=""><img src="photo/famale/img_4.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="looking_usr">
+					<div class="renpic">
+						<div class="inner">
+						<a href=""><img src="photo/famale/img_5.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="fixWidth385 right">
+					<p class="fs2 tright"><b>These people know you. Do you know them?</b></p>
+					<div class="tright"><input type="button" class="button_green large fixWidth120" value="Check out" /></div>
+				</div>
+				<div class="clr2"></div>
+			</div>
+			<div class="lookingbx indentTop20">
+				<div class="looking_usr">
+					<div class="renpic">
+						<div class="inner">
+							<a href=""><img src="photo/famale/img_1.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="looking_usr">
+					<div class="renpic">
+						<div class="inner">
+							<a href=""><img src="photo/famale/img_2.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="looking_usr">
+					<div class="renpic">
+						<div class="inner">
+							<a href=""><img src="photo/famale/img_3.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="looking_usr">
+					<div class="renpic">
+						<div class="inner">
+							<a href=""><img src="photo/famale/img_4.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="looking_usr">
+					<div class="renpic">
+						<div class="inner">
+						<a href=""><img src="photo/famale/img_5.jpg" alt="" /></a>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="fixWidth385 right">
+					<p class="fs2 tright"><b>These people have become VIP. Join them right now!</b></p>
+					<div class="tright"><input type="button" class="button_green large" value="Upgrade to VIP" /></div>
+				</div>
+				<div class="clr2"></div>
+			</div>
+</div>
+<div class="clr2"></div>
+
+<div class="footer">
+  <div class="footer_inn">
+	<ul>
+		<li><a href="/page/about">About us</a></li>
+		<li><a href="/help">FAQ</a></li>
+		<li><a href="http://blog.yangutu.com/">Our blog</a></li>
+		<li><a href="/feedback">Contact us</a></li>
+	</ul>
+	<ul>
+		<li><a href="/page/policy">Privacy</a></li>
+		<li><a href="/page/terms">Terms of use</a></li>
+	</ul>
+	<ul>			
+		<li><a href="/page/scams">Scam warning</a></li>
+		<li><a href="/page/safety">Safety Tips</a></li>
+	</ul>
+	<ul>
+		<li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+		<li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+		<li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+	
+	</ul>
+	<ul>
+	  <li><a href="/dating/all">People Directory</a></li>
+	</ul>
+    <div class="right">
+        <font color="black">© 2010-2011 Yangutu Inc. All rights reserved</font><br>
+      <span>Yangutu (swahili) - My one and only.</span>
+    </div>
+	 <div class="clear"></div>
+  </div>
+</div>
+</body>
+</html>

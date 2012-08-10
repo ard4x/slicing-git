@@ -1,0 +1,385 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Yangutu</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="style(next).css" type="text/css" id="" />
+	<link rel="stylesheet" href="buttons.css" type="text/css" id="" />
+	<link rel="stylesheet" href="popups.css" type="text/css" id="" />
+	<link rel="stylesheet" href="custom.css" type="text/css" id="" />
+	<link rel="stylesheet" href="vv_custom.css" type="text/css" id="" />
+	<link rel="stylesheet" href="vidviewer.css" type="text/css" id="" />
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript">
+        /*script to view*/
+        $(function(){
+            $('.main_menu > li,.user_menu ul > li,.nf-tab > a,.nfvc-options').bind('click',function(){
+                $('.main_menu > li,.user_menu ul > li,.nf-tab > a,.nfvc-options-block').removeClass('active');
+                $(this).not('.nfvc-options').addClass('active');
+                $(this).next('.nfvc-options-block').addClass('active');
+                return false;
+            })
+            
+            function stsStyle(){ 
+                $('.select_menu').each(function(){
+                    var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),                    
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                    objElement.css({'width': w+'px'})
+                    console.log(obj.width())
+                
+                });
+            }
+            stsStyle();
+            
+            function cleftSrcoll(){
+                var $document = $(document),
+                    $element = $('.leftside'),
+                    className = 'scrolled';
+                    
+                if($.browser.msie){ var $document = $(window); } /*ИЕ не работает с document.scroll*/
+                
+                $document.scroll(function() {
+                  if ($document.scrollTop() >= 50) { 
+                    $element.addClass(className);
+                  } else {
+                    $element.removeClass(className);
+                  }
+                });
+            };
+            cleftSrcoll();
+        })
+    </script>
+</head>
+
+<body>
+	<div class="header">
+		<div class="header_inn">
+			<div class="top_navigation">
+				<ul class="left">
+					<li><a href="">Messages</a><span class="new_event">2</span></li>
+					<li><a href="">Signals</a><span class="new_event">45</span></li>
+					<li><a href="">Soulmates</a><span class="new_event">167</span></li>
+				</ul>
+				<ul class="right">
+					<li class="coints">1450 Coins <a href="#">Add</a></li>
+					<li class="profile"><a href="#">Profile </a></li>
+					<li class="account"><a href="#">Account Settings</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<div class="bot_navigation">
+				<a href="#"><img src="./img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>	
+				<ul class="main_menu">
+					<li><a href="">Home</a></li>
+					<li><a href="">Matches</a></li>
+					<li><a href="">TOP-100</a></li>
+					<li><a href="">Apps and Games</a></li>
+					<li><a href="">Blogs</a></li>
+				</ul>
+				<div class="clr2"></div>
+			</div>
+		</div>
+	</div>
+
+    <div class="content">
+        <div class="content_inn">
+            <div class="c_left2">
+                <div class="breadcrumbs">
+                    <a href="">Videobox</a>►
+                    <a href="">Sports</a>►
+                    <span>Fire Tennis - The Slow Mo Guys</span>
+                </div>
+            <div class="hr-line gray clr2"></div>
+            </div>
+            <div class="c_left4">
+                <p class="gray fs2">Categories</p>
+                <ul class="tags_menu fs2">
+                    <li class="active"><a href="/video/tag/all" class="search-filter" key="tag" value="0">All</a></li>
+                                <li class=""><a href="/video/?openJoin=true" data-selector="#registrationPopup" class="ygPopup">My Favorites</a></li>
+                            </ul>
+                <div class="hr-line gray"></div>
+                <p class="gray fs2">Popular Categories</p>
+                <ul class="tags_menu">
+                    <li class=""><a href="http://yangutu.com/video/tag/Accidents" class="search-filter" key="tag" value="20">Accidents &amp; Fails</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Adventures" class="search-filter" key="tag" value="21">Adventures</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Animals+%26+Birds" class="search-filter" key="tag" value="44">Animals, Birds, Fish</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Art+%26+Animation" class="search-filter" key="tag" value="22">Art &amp; Animation</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Cars" class="search-filter" key="tag" value="23">Cars</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Celebrities" class="search-filter" key="tag" value="25">Celebrities</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Children" class="search-filter" key="tag" value="26">Children</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Cities" class="search-filter" key="tag" value="46">Cities</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Cool+commercials" class="search-filter" key="tag" value="27">Cool commercials</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Crazy" class="search-filter" key="tag" value="47">Crazy &amp; Extreme</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Dating+%26+Relationships" class="search-filter" key="tag" value="41">Dating &amp; Relationships</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Entertainment" class="search-filter" key="tag" value="28">Entertainment</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Family" class="search-filter" key="tag" value="29">Family</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Fashion" class="search-filter" key="tag" value="54">Fashion</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Funny" class="search-filter" key="tag" value="30">Funny &amp; Cute</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Hobbies%2C+Records%2C+Cranks" class="search-filter" key="tag" value="49">Hobbies, Stunts, Records</a></li>
+                    <li class="hot"><a href="/video/?openJoin=true" class="ygPopup" data-selector="#registrationPopup">Hot girls</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Satire+%26+Parody" class="search-filter" key="tag" value="52">Humor</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Misc" class="search-filter" key="tag" value="56">Miscellaneous</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Movies+%26+Trailers" class="search-filter" key="tag" value="42">Movies &amp; Trailers</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Music+%26+Dance" class="search-filter" key="tag" value="32">Music &amp; Dance</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Nature" class="search-filter" key="tag" value="43">Nature</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/News+%26+Events" class="search-filter" key="tag" value="33">News &amp; Opinions</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/People+%26+Stories" class="search-filter" key="tag" value="34">People</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Pets" class="search-filter" key="tag" value="45">Pets</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Science+%26+Tech" class="search-filter" key="tag" value="37">Science &amp; Tech</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Sports" class="search-filter" key="tag" value="38">Sports</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Travel+%26+Outdoors" class="search-filter" key="tag" value="39">Travel &amp; Outdoors</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Lifehack+tips+%26+advice" class="search-filter" key="tag" value="57">Useful Tips</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Wheels+%26+Wings" class="search-filter" key="tag" value="40">Wheels &amp; Wings</a></li>
+                    <li class=""><a href="http://yangutu.com/video/tag/Yangutu+Editor%27s+Choice" class="search-filter" key="tag" value="773">Yangutu Editor's Choice</a></li>
+                </ul>
+            </div>
+            <div class="c_mid4">
+                <h2>Fire Tennis - The Slow Mo Guys</h2>
+                <div class="indentTop20">
+                    <div class="videobox">
+                        <div id="vid-viewer-container">
+                            <img src="./img/image-videobox.png" alt="" />
+                        </div>
+                        <div class="vid-views">
+                            <span>133,878 views</span>
+                            <span class="vidlike">9,329</span>
+                            <a href="" class="indentLeft10">Like</a>
+                            <div class="social"><img src="./img/social_video_wh.png" alt="" title="" /></div>
+                        </div>
+                        <div class="vm_box indentTop20">
+                           <div class="vm_usrcard flWidth50">
+                               <div class="brdpic2wrapper">
+                                   <div class="brdpic8">
+                                        <a href="" class="birdpic_stat"><img src="./img/stat_fb.png" alt=""></a>
+                                        <a href=""><img src="./img/46x46pic.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="userblock prelative">
+                                    <div class="indentTop10">
+                                        <span class="fs2"><b>Anaksha Fassin</b></span><br><a href="">Social is On</a>
+                                    </div>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="vm_social flWidth50">
+                                <div>
+                                    You 're watching @troubledte and Travic Psaasdas <br>
+                                    <span class="fs9 gray">Remove from timeline - Uninstall SocialYangutu</span>
+                                </div>
+                            </div>
+                            <div class="clr2"></div>
+                        </div>
+                        <div class="vid_content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque orci 
+                            turpis, sagittis ac ultricies id, consequat suscipit enim. Proin varius nunc id 
+                            eros lobortis egestas.
+                        </div>
+                        <div class="hr-line gray"></div>
+                        <p><a href="">Freerunning</a>, <a href="">India</a>, <a href="">Travel</a></p>
+                        <div class="helpbx c8">
+                            <p class="tbold fs2">Related video:</p>
+                            <div>
+                                <div class="vidbox_mini indentTop0">     
+                                    <div class="vidpreview"><a href="" class="show_video"><img src="http://yangutu-video4.s3.amazonaws.com/68/59/170x112_d_13294.jpeg" alt="" width="110" height="74" /></a></div>
+                                    <p class="vidbox_title"><a href="" class="show_video">Dating tips - How to end the first date</a></p>
+                                    <p class="vidbox_info">Views: <span>2,133</span></p>
+                                </div>
+                                <div class="vidbox_mini indentTop0">
+                                    <div class="vidpreview"><a href="" class="show_video"><img src="http://yangutu-video0.s3.amazonaws.com/ff/70/170x112_d_13290.jpeg" alt="" width="110" height="74" /></a></div>
+                                    <p class="vidbox_title"><a href="" class="show_video">Dating tips - How to end the first date</a></p>
+                                    <p class="vidbox_info">Views: <span>2,133</span></p>
+                                </div>
+                                <div class="vidbox_mini indentTop0">    
+                                    <div class="vidpreview"><a href="" class="show_video"><img src="http://yangutu-video3.s3.amazonaws.com/0e/93/170x112_d_13298.jpeg" alt="" width="110" height="74" /></a></div>
+                                    <p class="vidbox_title"><a href="" class="show_video">Dating tips - How to end the first date</a></p>
+                                    <p class="vidbox_info">Views: <span>2,133</span></p>
+                                </div>
+                                <div class="vidbox_mini indentTop0">    
+                                    <div class="vidpreview"><a href="" class="show_video"><img src="http://yangutu-video2.s3.amazonaws.com/2a/ca/170x112_d_9352.jpeg" alt="" width="110" height="74" /></a></div>
+                                    <p class="vidbox_title"><a href="" class="show_video">Dating tips - How to end the first date</a></p>
+                                    <p class="vidbox_info">Views: <span>2,133</span></p>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                        </div>		
+                        <div class="vid-comment-position indentTop20">
+                    
+
+    <div id="comment-container-comments">
+                        <div class="photo_comment_usr ">
+    <div class="brdpic2wrapper">
+        <div class="brdpic8">
+            <a href="/832470696"><img src="https://yangutu-s7.s3.amazonaws.com/e6/9a/af/46x46_5016000.jpg?1330767038"></a>        </div>
+    </div>
+    <div class="userblock prelative">
+        <span class="fs3">
+            <a class="bold user-vcard-tooltip" rel="/profile/user-card/id/1013641/t/vcard" href="/832470696">Carmen</a>, 27                                </span><br>
+        <span class="gray">6 hours ago</span><br>
+        <p class="indentTop10">like they said, just let it go, be glad ﻿ he doestn talk to you, it would be way to awkward</p>
+                <a class="report-comment" data-comment="9995" data-type="video" href="#">Report</a>
+            </div>
+    <div class="clr2"></div>
+</div>                        <div class="photo_comment_usr ">
+    <div class="brdpic2wrapper">
+        <div class="brdpic8">
+            <a href="/76672836"><img src="https://yangutu-s9.s3.amazonaws.com/95/76/41/46x46_5015998.jpg?1330767037"></a>        </div>
+    </div>
+    <div class="userblock prelative">
+        <span class="fs3">
+            <a class="bold user-vcard-tooltip" rel="/profile/user-card/id/1013640/t/vcard" href="/76672836">Illy</a>, 23                                </span><br>
+        <span class="gray">6 hours ago</span><br>
+        <p class="indentTop10">My bf dumped me by telling my friend to tell me and then he avoided me after. We﻿ dint even talk and it's horrible</p>
+                <a class="report-comment" data-comment="9999" data-type="video" href="#">Report</a>
+            </div>
+    <div class="clr2"></div>
+</div>                        <div class="photo_comment_usr ">
+    <div class="brdpic2wrapper">
+        <div class="brdpic8">
+            <a href="/2949243467"><img src="https://yangutu-s2.s3.amazonaws.com/b1/f6/66/46x46_5015911.jpg?1330766975"></a>        </div>
+    </div>
+    <div class="userblock prelative">
+        <span class="fs3">
+            <a class="bold user-vcard-tooltip" rel="/profile/user-card/id/1013574/t/vcard" href="/2949243467" title="">Davis</a>, 36                                </span><br>
+        <span class="gray">6 hours ago</span><br>
+        <p class="indentTop10">Yesterday I broke﻿ up with my gf, because she cheated to me with my best friend. She didn't know that I know...and i become the bad side :X :X :X</p>
+                <a class="report-comment" data-comment="10003" data-type="video" href="#">Report</a>
+            </div>
+    <div class="clr2"></div>
+</div>                        <div class="photo_comment_usr dnone">
+    <div class="brdpic2wrapper">
+        <div class="brdpic8">
+            <a href="/2960862697"><img src="https://yangutu-s0.s3.amazonaws.com/42/cb/3c/46x46_5015910.jpg?1330766976"></a>        </div>
+    </div>
+    <div class="userblock prelative">
+        <span class="fs3">
+            <a class="bold user-vcard-tooltip" rel="/profile/user-card/id/1013573/t/vcard" href="/2960862697">David Linderman</a>, 36                                </span><br>
+        <span class="gray">5 hours ago</span><br>
+        <p class="indentTop10">i will never break up with my girlfriend i love her and if﻿ she dies i will stab myself to see her</p>
+                <a class="report-comment" data-comment="10007" data-type="video" href="#">Report</a>
+            </div>
+    <div class="clr2"></div>
+</div>                        <div class="photo_comment_usr dnone">
+    <div class="brdpic2wrapper">
+        <div class="brdpic8">
+            <a href="/3940706007"><img src="https://yangutu-s7.s3.amazonaws.com/44/5a/a3/46x46_5015899.jpg?1330766974"></a>        </div>
+    </div>
+    <div class="userblock prelative">
+        <span class="fs3">
+            <a class="bold user-vcard-tooltip" rel="/profile/user-card/id/1013562/t/vcard" href="/3940706007">Allian Kent</a>, 36                                </span><br>
+        <span class="gray">5 hours ago</span><br>
+        <p class="indentTop10">I love how they just start﻿ laughing ad start making no sense after a while.</p>
+                <a class="report-comment" data-comment="10011" data-type="video" href="#">Report</a>
+            </div>
+    <div class="clr2"></div>
+</div>                        <div class="photo_comment_usr dnone">
+    <div class="brdpic2wrapper">
+        <div class="brdpic8">
+            <a href="/1425552224"><img src="https://yangutu-s7.s3.amazonaws.com/dc/cd/1a/46x46_5015989.jpg?1330767036"></a>        </div>
+    </div>
+    <div class="userblock prelative">
+        <span class="fs3">
+            <a class="bold user-vcard-tooltip" rel="/profile/user-card/id/1013635/t/vcard" href="/1425552224">Siddique</a>, 32                                </span><br>
+        <span class="gray">5 hours ago</span><br>
+        <p class="indentTop10">can you make a video about geting a lost love who you accidently broke here heart to love you﻿ again.</p>
+                <a class="report-comment" data-comment="10015" data-type="video" href="#">Report</a>
+            </div>
+    <div class="clr2"></div>
+</div>                        <div class="photo_comment_usr dnone">
+    <div class="brdpic2wrapper">
+        <div class="brdpic8">
+            <a href="/2216372150"><img src="https://yangutu-s8.s3.amazonaws.com/42/c3/d7/46x46_5015991.jpg?1330767036"></a>        </div>
+    </div>
+    <div class="userblock prelative">
+        <span class="fs3">
+            <a class="bold user-vcard-tooltip" rel="/profile/user-card/id/1013636/t/vcard" href="/2216372150">Sweety</a>, 32                                </span><br>
+        <span class="gray">5 hours ago</span><br>
+        <p class="indentTop10">my boyfriend broke up with me after saying he loved me, watched my sit and cry then had a go at my bestfriend when she was trying to tell him﻿ that I don't want to be really good friends :'-(</p>
+                <a class="report-comment" data-comment="10018" data-type="video" href="#">Report</a>
+            </div>
+    <div class="clr2"></div>
+</div>                        <div class="photo_comment_usr dnone">
+    <div class="brdpic2wrapper">
+        <div class="brdpic8">
+            <a href="/205504108"><img src="https://yangutu-s1.s3.amazonaws.com/18/54/fc/46x46_5016202.jpg?1330767078"></a>        </div>
+    </div>
+    <div class="userblock prelative">
+        <span class="fs3">
+            <a class="bold user-vcard-tooltip" rel="/profile/user-card/id/1013570/t/vcard" href="/205504108">Craig</a>, 36                                </span><br>
+        <span class="gray">5 hours ago</span><br>
+        <p class="indentTop10">How are you suppose to﻿ tell her that you realy dont like her like you wanna dump her after three day should you lie or what? Do a video about that!</p>
+                <a class="report-comment" data-comment="10020" data-type="video" href="#">Report</a>
+            </div>
+    <div class="clr2"></div>
+</div>                <p><a href="#" id="show-all-comments">Show all</a></p>    
+</div>
+                            <span class="fs3 bold">Your comment</span>
+                            <div class="indentTop10">
+                                <div class="brdpic2wrapper"><div class="brdpic8"><img src="https://yangutu-s5.s3.amazonaws.com/85/75/bc/46x46_5022857.jpg?1331116895"></div></div>
+                                <div class="userblock prelative" id="comment-container-write">
+                                    <input type="hidden" id="comment-type" value="video">
+                                    <input type="hidden" id="comment-contentId" value="13319">
+                                    <textarea id="comment-text" style="margin-top: 0px; margin-bottom: 0px; height: 80px; "></textarea>
+                                    <div class="indentTop10">
+                                        <input data-action="comment" type="button" value="Write Comment" class="button_blue disabled large  comment-button-capt" id="comment-write" data-type="video">
+                                                        <span class="indentLeft20">
+                                                                <a href="#" data-href="/vva/unsubscribe-comments/video/13319" id="comments-unsubscribe" style="display:none;">Unsubscribe from new comments signals</a>
+                                            <span id="comments-subscribe" style=""><input type="checkbox" name="subscribe" value="1" id="subscribe" checked="yes"> <label for="subscribe">Subscribe to comments</label></span>
+                                        </span>
+                                                    </div>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>		
+            </div>				
+            <div class="c_right">
+                <div>
+                    <img src="./img/pbanner.png" alt="" />
+                </div>		
+            </div>
+            <div class="clr2"></div>
+        </div>
+    </div>
+    
+    <div class="social_rate">
+        <img src="./img/social-links.png" alt="" />
+    </div>
+    
+    <div class="footer">
+        <div class="footer_inn">
+            <ul>
+                <li><a href="/page/about">About us</a></li>
+                <li><a href="/help">FAQ</a></li>
+                <li><a href="http://blog.yangutu.com/">Our blog</a></li>
+                <li><a href="/feedback">Contact us</a></li>
+            </ul>
+            <ul>
+                <li><a href="/page/policy">Privacy</a></li>
+                <li><a href="/page/terms">Terms of use</a></li>
+            </ul>
+            <ul>			
+                <li><a href="/page/scams">Scam warning</a></li>
+                <li><a href="/page/safety">Safety Tips</a></li>
+            </ul>
+            <ul>
+                <li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+                <li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+                <li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="/dating/all">People Directory</a></li>
+            </ul>
+            <div class="right">
+                <font color="black">© 2010-2011 Yangutu Inc. All rights reserved</font><br>
+                <span>Yangutu (swahili) - My one and only.</span>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+</body>
+</html>

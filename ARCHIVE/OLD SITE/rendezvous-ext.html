@@ -1,0 +1,483 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Yangutu</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="style(next).css" type="text/css" id="" />
+	<link rel="stylesheet" href="buttons.css" type="text/css" id="" />
+	<link rel="stylesheet" href="popups.css" type="text/css" id="" />
+	
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <script src="js/jquery.stylish-select.js" type="text/javascript"></script>
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $('select.select').sSelect();
+            });
+	</script>
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="ie7.css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="ie8.css" />
+	<![endif]-->
+</head>
+<body>
+
+    <script type="text/javascript">
+		$(function(){
+            
+            function rendMousePos(e) {
+            
+                e = e || window.event
+                if (e.pageX == null && e.clientX != null ) {
+                    var html = document.documentElement
+                    var body = document.body
+                    e.pageX = e.clientX + (html && html.scrollLeft || body && body.scrollLeft || 0) - (html.clientLeft || 0)
+                    e.pageY = e.clientY + (html && html.scrollTop || body && body.scrollTop || 0) - (html.clientTop || 0)
+                }
+                var t = e.target || e.srcElement,
+                    tUsr = $(t).data('type'),
+                    winHalf = $(window).width()/2,
+                    pUsr = $('#rendez-usr-viewer'),
+                    xPosRight = pUsr.width();
+                    console.log(tUsr);
+                                 
+                if(tUsr == 'x-ren'){
+                    $(t).closest('a').one('click', function(){ return false; })                    
+                    if(e.pageX < winHalf){
+                        pUsr.css({
+                            'top': e.pageY,
+                            'left': e.pageX
+                        });
+                    } else {
+                        pUsr.css({
+                            'top': e.pageY,
+                            'left': e.pageX - xPosRight
+                        });
+                    } 
+                    pUsr['show'](0);
+                }
+            }
+            
+            document.onmousedown = rendMousePos;
+		});
+        
+	</script>
+    
+    <div id="rendez-usr-viewer" style="position: absolute;" class="popup rubber ng hidden">
+		<a class="popClose" href=""><img src="./img/close_ic.png" class="cls4" alt=""></a>
+		<div class="yp_top"><div class="rubber_top_right"></div></div>
+		<div class="yp_content_left">
+			<div class="yp_content_right">
+                <div class="whitebg inner15">
+                    <div class="indentRight10">
+                        <span class="fs3"><a href="" class="bold"><b>Yvonne</b></a>, 40 </span><br/>
+                        <span class="gray fs1">Moate, Ireland</span>
+                        <div class="indentTop10">
+                            <p><a href="">Let's go together</a></p>
+                            <a href="">Send message</a>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+		<div class="yp_bot"><div class="rubber_bot_right"></div></div>
+	</div>
+
+	<div class="header">
+		<div class="header_inn">
+			<div class="top_navigation">
+				<ul class="left">
+					<li class="fs2">
+                        1,480,409 <span class="fs1 gray">людей уже здесь!</span>
+                        7,514 <span class="fs1 gray">сейчас на сайте!</span>
+                    </li>
+				</ul>
+				<ul class="right">
+                    <li class="fs2" id="lang-sel">
+                        <a href="#">Русский</a>
+                        <img src="./img/orarr.gif" align="absmiddle" alt="" />
+                    </li>
+                    <li class="blue">|</li>
+                    <li class="fs2">
+                        <a href="/login/" data-selector="#loginPopup" class="ygPopup" id="signInLink">Войти</a>
+                    </li>
+                    <li class="blue">|</li>
+                    <li class="fs2">
+                        <a href="/?openJoin=true" data-selector="#registrationPopup" class="ygPopup" id="joinLink">Регистрация</a>
+                    </li>
+                </ul>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="content">
+		<div class="content_inn">
+            <div class="rb_logotype">
+                <h3>Назначайте свидания на yangutu.com</h3>
+                <div class="indentTop20">
+                    <a href="" class="btn btn-orange large"><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Зарегистрироваться</span></span></span></a>
+                </div>
+            </div>
+            
+            <div class="ver-faq indentTop20">
+                <div class="rend-calendar">
+                    <div class="rend-cb today">
+                        <p class="title">Сегодня</p>
+                        <div class="inner">
+                            <div class="dm">Апрель</div>
+                            <div class="dd">18</div>
+                        </div>
+                    </div>
+                    <div class="rend-cb">
+                        <p class="title">Завтра</p>
+                        <div class="inner">
+                            <div class="dm">Апрель</div>
+                            <div class="dd">19</div>
+                        </div>
+                    </div>
+                    <div class="rend-cb">
+                        <p class="title">Послезавтра</p>
+                        <div class="inner">
+                            <div class="dm">Апрель</div>
+                            <div class="dd">20</div>
+                        </div>
+                    </div>
+                    <div class="rend-cb">
+                        <p class="title">Через 2 дня</p>
+                        <div class="inner">
+                            <div class="dm">Апрель</div>
+                            <div class="dd">21</div>
+                        </div>
+                    </div>
+                    <div class="rend-cb">
+                        <p class="title">Через 3 дня</p>
+                        <div class="inner">
+                            <div class="dm">Апрель</div>
+                            <div class="dd"><img src="./img/rend_calendar_selected.png" alt="" />22</div>
+                        </div>
+                    </div>
+                    <div class="rend-cb">
+                        <p class="title">Через 4 дня</p>
+                        <div class="inner">
+                            <div class="dm">Апрель</div>
+                            <div class="dd">23</div>
+                        </div>
+                    </div>
+                    <div class="rend-cb">
+                        <p class="title">Через 5 дней</p>
+                        <div class="inner">
+                            <div class="dm">Апрель</div>
+                            <div class="dd">24</div>
+                        </div>
+                    </div>
+                    <div class="rend-cb">
+                        <p class="title">Календарь</p>
+                        <div class="inner">
+                            <a href=""><img src="./img/rend_calendar.png" alt="" title="" /></a>
+                        </div>
+                    </div>
+                    <div class="clr2"></div>
+                </div>
+            </div>
+            
+            
+            <div class="indentTop10">
+                <p class="fs4 tbold dg_color">Ищут компанию <span class="fs2 indentLeft20"><a href="">1879 человек</a></span></p>
+                <div>
+                    <div class="brdpic6 left">
+                        <a href="" title=""><img src="./img/add_bp6.png" alt="" /><span class="add-brdpic">Add<br/>yourself</span></a>
+                    </div>
+                    <div class="brdpic6 left">
+                        <a href="" title=""><img src="./img/85x124pic.jpg" alt="" /></a>
+                    </div>
+                    <div class="brdpic6 left">
+                        <a href="" title=""><img src="./img/85x124pic.jpg" alt="" /></a>
+                    </div>
+                    <div class="brdpic6 left">
+                        <a href="" title=""><img src="./img/85x124pic.jpg" alt="" /></a>
+                    </div>
+                    <div class="brdpic6 left">
+                        <a href="" title=""><img src="./img/85x124pic.jpg" alt="" /></a>
+                    </div>
+                    <div class="brdpic6 left">
+                        <a href="" title=""><img src="./img/85x124pic.jpg" alt="" /></a>
+                    </div>
+                    <div class="brdpic6 left">
+                        <a href="" title=""><img src="./img/85x124pic.jpg" alt="" /></a>
+                    </div>
+                    <div class="brdpic6 left">
+                        <a href="" title=""><img src="./img/85x124pic.jpg" alt="" /></a>
+                    </div>
+                    <div class="brdpic6 left">
+                        <a href="" title=""><img src="./img/85x124pic.jpg" alt="" /></a>
+                    </div>
+                    <div class="brdpic6 left">
+                        <a href="" title=""><img src="./img/85x124pic.jpg" alt="" /></a>
+                    </div>
+                </div>
+                <div class="clr2"></div>
+            </div>
+            <div class="indentTop20">
+                <div class="c_left2">
+                
+                    <div class="helpbx c4 inner15">
+                        <p class="fs4 tbold dg_color">Свидание в кафе <span class="fs2 indentLeft20"><a href="">1879 человек</a></span></p>
+                        <div>
+                            <div class="fixWidth230 left tcenter">
+                                <img src="./img/rend_bigico_01.png" alt="" />
+                                <div class="indentTop10">
+                                    <a class="btn btn-green large" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Позавтракать</span></span></span></a>
+                                </div> 
+                            </div> 
+                            <div class="fixWidth230 left tcenter">
+                                <img src="./img/rend_bigico_02.png" alt="" />
+                                <div class="indentTop10">
+                                    <a class="btn btn-green large" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Пообедать</span></span></span></a>
+                                </div> 
+                            </div> 
+                            <div class="fixWidth230 left tcenter">
+                                <img src="./img/rend_bigico_03.png" alt="" />
+                                <div class="indentTop10">
+                                    <a class="btn btn-green large" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Поужинать</span></span></span></a>
+                                </div> 
+                            </div> 
+                            <div class="clr2"></div>
+                        </div>
+                    </div>
+                    <div class="indentTop20">
+                        <div class="select_menu right">
+                            <ul>
+                                <li class="first select"><a href=""><span>Features</span></a></li>
+                                <li class="last"><a href=""><span>Popular</span></a></li>
+                            </ul>
+                            <div class="clr2"></div>
+                        </div>
+                        <p class="fs4 tbold dg_color">Идеи свиданий <span class="fs2 indentLeft20"><a href="">1 525 идей</a></span></p>
+                        <div class="clr2"></div>
+                    </div>
+                    
+                    <div class="indentTop20"><a href="" class="fs16 tbold">Попить кофе</a></div>
+                    <div class="indentTop10">
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/brdpic8_rend.png" /></a>
+                        </div>
+                        <div class="rend_rb">
+                            <div>Нравится <a href="">152 пользователям</a></div>
+                            <input type="button" class="button_blue small flWidth99 indentTop5" value="Мне нравится" />
+                        </div>
+                        <div class="clr2"></div>
+                    </div>
+                    <div class="indentTop20"><a href="" class="fs16 tbold">Попить кофе в маленьком уютном кафе</a></div>
+                    <div class="indentTop10">
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="rend_rb">
+                            <div>Нравится <a href="">152 пользователям</a></div>
+                            <input type="button" class="button_blue small flWidth99 indentTop5" value="Мне нравится" />
+                        </div>
+                        <div class="clr2"></div>
+                    </div>
+                    <div class="indentTop20"><a href="" class="fs16 tbold">Отдохнуть на природе большой шумной компанией</a></div>
+                    <div class="indentTop10">
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="rend_rb">
+                            <div>Нравится <a href="">152 пользователям</a></div>
+                            <input type="button" class="button_blue small flWidth99 indentTop5" value="Мне нравится" />
+                        </div>
+                        <div class="clr2"></div>
+                    </div>				
+                    <div class="indentTop20"><a href="" class="fs16 tbold">Попить кофе</a></div>
+                    <div class="indentTop10">
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="rend_rb">
+                            <div>Нравится <a href="">152 пользователям</a></div>
+                            <input type="button" class="button_blue small flWidth99 indentTop5" value="Мне нравится" />
+                        </div>
+                        <div class="clr2"></div>
+                    </div>		
+                    <div class="indentTop20"><a href="" class="fs16 tbold">Попить кофе</a></div>
+                    <div class="indentTop10">
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="brdpic8 left">
+                            <a href="" class="user-card-tooltip" rel="" title=""><img src="./img/46x46pic.jpg" data-type="x-ren" /></a>
+                        </div>
+                        <div class="rend_rb">
+                            <div>Нравится <a href="">152 пользователям</a></div>
+                            <input type="button" class="button_blue small flWidth99 indentTop5" value="Мне нравится" />
+                        </div>
+                        <div class="clr2"></div>
+                    </div>
+                    <div class="paginator-style indentTop30">
+                        <ul class="left indentTop5">
+                            <li class="prev disable"><a href=""><span>Prev</span></a></li>
+                            <li class="pages act"><a href=""><span>1</span></a></li>
+                            <li class="pages"><a href=""><span>2</span></a></li>
+                            <li class="pages"><a href=""><span>3</span></a></li>
+                            <li class="pages"><a href=""><span>4</span></a></li>
+                            <li class="pages"><a href=""><span>5</span></a></li>
+                            <li class="pages"><a href=""><span>6</span></a></li>
+                            <li class="pages"><a href=""><span>7</span></a></li>
+                            <li class="pages"><a href=""><span>8</span></a></li>
+                            <li class="pages"><a href=""><span>9</span></a></li>
+                            <li class="pages"><a href=""><span>10</span></a></li>
+                            <li class="next paginator-next-link"><a href="?page=2"><span>Next</span></a></li>
+                        </ul>
+                        <div class="rend_rb">
+                            <input type="button" class="button_orange small flWidth99" value="Предложить идею" />
+                        </div>
+                        <div class="clr2"></div>
+                    </div>
+                </div>
+                <div class="c_right">
+                    <div class="helpbx c7 inner15">
+                        <h2>Активный отдых</h2>
+                        <div class="fs2"><a href="">231 232 человек</a></div>
+                    </div>
+                    <ul class="rlist">
+                        <li><a href="#">Аквапарки</a></li>
+                        <li><a href="#">Бильярд</a></li>
+                        <li><a href="#">Боулинг</a></li>
+                        <li><a href="#">Каток</a></li>
+                        <li><a href="#">Лыжи</a></li>
+                        <li><a href="#">Велопробег</a></li>
+                        <li><a href="#">Картинг</a></li>
+                    </ul>
+                    <div class="indentTop10">
+                        <img src="./img/pbanner.png" alt="" />
+                    </div>			
+                </div>
+                <div class="clr2"></div>
+            </div>
+		</div>
+	</div>
+	
+	<div class="footer">
+	  <div class="footer_inn">
+		<ul>
+			<li><a href="/page/about">About us</a></li>
+			<li><a href="/help">FAQ</a></li>
+			<li><a href="http://blog.yangutu.com/">Our blog</a></li>
+			<li><a href="/feedback">Contact us</a></li>
+		</ul>
+		<ul>
+			<li><a href="/page/policy">Privacy</a></li>
+			<li><a href="/page/terms">Terms of use</a></li>
+		</ul>
+		<ul>			
+			<li><a href="/page/scams">Scam warning</a></li>
+			<li><a href="/page/safety">Safety Tips</a></li>
+		</ul>
+		<ul>
+			<li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+			<li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+			<li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+		
+		</ul>
+		<ul>
+		  <li><a href="/dating/all">People Directory</a></li>
+		</ul>
+		<div class="right">
+			<font color="black">&copy; 2010-2011 Yangutu Inc. All rights reserved</font><br>
+		  <span>Yangutu (swahili) - My one and only.</span>
+		</div>
+		 <div class="clear"></div>
+	  </div>
+</div>
+</body>
+</html>
