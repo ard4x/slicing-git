@@ -2884,3 +2884,6 @@ a:hover.nfvc-options>i,.nf-view-content.hover .nfvc-options>i,.nf-view-content:h
 
 /*videobox.html*/
 .indentLeft60{margin-left:60px;}
+
+/*services.html 13.08.2012*/
+.services-preview.isOwned img{opacity:0.3; cursor:default;}
