@@ -1,9 +1,8 @@
 
 .usr_choise{width:610px; margin:0 auto;}
 .usr_answer_block{margin-top:28px;}
-.brdpic5 .bic_up_name{width:225px;}
 .brdpic .bic_up_name{width:164px;}
-.bic_up_name{background:url(img/bic_up_name_repeat.jpg) 0 0 repeat-x; left:5px; height:28px; text-align:center; position:absolute; top:4px; color:#fff;}
+.bic_up_name{background:url(img/bic_up_name_repeat.jpg) 0 0 repeat-x; height:28px; text-align:center; position:absolute; top:0; color:#fff;}
 .bic_up_name_bot{background:url(img/bic_up_name_bot.png) 0 0 no-repeat; height:5px; width:9px; position:absolute; bottom:-4px; left:49%;}
 .bic_up_name a{color:#fff; font:14px helvetica; line-height:26px;}
 .bic_up_name a:hover{color:#fff;}
@@ -45,12 +44,16 @@
 .score_box div.upscore span,.upscore-txt{font:bold 10px Arial; color:#009900; padding-left:10px; background:url(img/upscore.png) 0 50% no-repeat; margin-left:3px;}
 .score_box div.downscore span,.downscore-txt{font:bold 10px Arial; color:#cc0000; padding-left:10px; background:url(img/downscore.png) 0 50% no-repeat; margin-left:3px;}
 
-.compare_photolist_viewer .brdpic { margin-bottom: 3px; text-align: center; float: left; margin: 35px 25px 0 0; position: relative; height:245px;}
+.compare_photolist_viewer{position:relative; left:30px; margin-left:-30px; zoom:1;}
+.compare_photolist_viewer .brdpic {background:transparent; text-align: center; width:164px; float: left; margin: 35px 24px 0 0; position: relative; padding-top:28px;}
+.compare_photolist_viewer.v2 .brdpic {padding-top:0; width: 122px; margin:35px 30px 0 0; height:250px;}
+.compare_photolist_viewer .brdpic a img{width:158px; padding:2px; border:1px solid #e2e2e2;}
+.compare_photolist_viewer.v2 .brdpic a img{width:116px; padding:2px; border:1px solid #e2e2e2;}
 .compare_photolist_viewer .brdpic.last{margin-right:0;}
-.compare_photolist_viewer .brdpic .cpv_pic_info {top: -19px;}
-.cpv_pic_info {position: absolute; padding:0 5px;}
+.compare_photolist_viewer .brdpic .cpv_pic_info {top: -25px;}
+.cpv_pic_info {position: absolute; padding:0 5px; box-sizing: border-box;}
 .brdpic .cpv_pic_info {position: absolute; width:100%;}
-.vip_stat{background:url(img/crown.png) 0 0 no-repeat; padding:0 0 3px 23px; font-size:11px; top:8px; left:63px; position:absolute;}
+.vip_stat{background:url(img/crown.png) 0 0 no-repeat; padding:0 0 3px 23px;  margin-left: -33px; left: 50%; font-size:11px; top:8px; position:absolute;}
 .cpv_pic_info .country_rate {margin-top: 7px;}
 
 .leader_list_usr {margin: 25px 100px 15px 0; position: relative;}
@@ -58,7 +61,7 @@
 .leader_list_usr .lsTd { position: absolute; right: -100px; text-align: right; top: 0; width: 100px;}
 .leader_list_usr .ava { width: 65px; height:85px; position:relative;}
 .leader_list_usr .score_counter span{color:#426087; font:bold 21px Arial; position:relative;}
-.leader_list_usr .vip_stat{top:28px; left:-4px;}
+.leader_list_usr .vip_stat{top:28px; left:33px;}
 
 .usr_choise_rate_block{background-color:#f0f9e2; margin-bottom:5px; position:relative;}
 .usr_choise_rate_block .inner{padding:5px 15px 5px 15px;}
@@ -84,8 +87,6 @@ a:hover.voted-bx {background-color:#ff9111; text-decoration:none;}
 
 .brdpic .ptools{width:105px;}
 .brdpic .ptools a{color:#fff;}
-
-.country_rate{border-collapse:collapse; width:100%;}
 
 .game-points{background:url(img/usr-points-bg.png) 0 0 no-repeat; width:104px; height:40px; margin:0 auto; padding-top: 4px; color:#fff; position:absolute; bottom:-20px; left:50%; margin-left:-52px;}
 
