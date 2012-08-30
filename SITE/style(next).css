@@ -2646,7 +2646,7 @@ ul.newList{ border:1px solid #ccc;}
 .radio-select-box.mini .label input[type="radio"]{ margin-top: 40px;}
 
 .payment-tab{width:504px; padding-top:60px; padding-bottom:12px;position:relative; zoom:1;}
-.payment-tab>.inner{background:url(img/payment-tab-repeat.png) 0 0 repeat-y;  padding:20px 20px 10px 20px; height:292px;}
+.payment-tab>.inner{background:url(img/payment-tab-repeat.png) 0 0 repeat-y;  padding:20px 20px 10px 20px; min-height:292px;}
 .payment-tab>.top{background:url(img/payment-tab-top.png) 0 0 no-repeat; height:12px; position:absolute; z-index:-1; top:48px; left:0; width:100%;}
 .payment-tab>.bottom{background:url(img/payment-tab-bottom.png) 0 0 no-repeat; height:12px; position:absolute; bottom:0; left:0; width:100%;}
 .payment-tab>.tmenu{position:absolute; top:0; left:0; width:100%;}

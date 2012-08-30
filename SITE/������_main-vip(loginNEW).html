@@ -1,0 +1,566 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Yangutu</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="style(next).css" type="text/css" id="" />
+	<link rel="stylesheet" href="buttons.css" type="text/css" id="" />
+	<link rel="stylesheet" href="payments.css" type="text/css" id="" />
+	<link rel="stylesheet" href="custom.css" type="text/css" id="" /> <!-- СТИЛИ КОТОРЫЕ УЖЕ ЕСТЬ НА ПРОДЕ // НЕОБХОДИМО ЗАМЕНИТЬ!!!!!-->
+	
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <script src="js/jquery.stylish-select.js" type="text/javascript"></script>
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $('select.select').sSelect();
+                
+                var ieFixCount =0;
+                $('.selectedTxt').bind('click',function(){
+                    ieFixCount++;
+                    $(this).closest('.inner').css({'z-index': ieFixCount + 1});
+                    $(this).closest('.description').css({'z-index': ieFixCount + 1});
+                });
+            });
+	</script>
+	<script type="text/javascript">
+        /*script to view*/
+        $(function(){
+            $('.main_menu > li,.user_menu ul > li,.nf-tab > a,.nfvc-options').bind('click',function(){
+                $('.main_menu > li,.user_menu ul > li,.nf-tab > a,.nfvc-options-block').removeClass('active');
+                $(this).not('.nfvc-options').addClass('active');
+                $(this).next('.nfvc-options-block').addClass('active');
+                return false;
+            })
+            
+            
+            function stsStyle(){ 
+                $('.select_menu').each(function(){
+                    var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),                    
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                    objElement.css({'width': w+'px'})
+                    console.log(obj.width())
+                
+                });
+            }
+            stsStyle();
+            
+            function cleftSrcoll(){
+                var $document = $(document),
+                    $element = $('.leftside'),
+                    className = 'scrolled';
+                    
+                if($.browser.msie){ var $document = $(window); } /*ИЕ не работает с document.scroll*/
+                
+                $document.scroll(function() {
+                  if ($document.scrollTop() >= 50) { 
+                    $element.addClass(className);
+                  } else {
+                    $element.removeClass(className);
+                  }
+                });
+            };
+            cleftSrcoll();
+            
+        })
+        
+    </script>
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="ie7.css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="ie8.css" />
+	<![endif]-->
+</head>
+<body>
+
+    <div class="header">
+        <div class="header_inn">
+            <a href="#"><img src="./img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>	
+            <ul class="main_actmenu">
+                <li><a href=""><span class="v1">Messages</span><i class="hrg">1</i></a></li>
+                <li><a href=""><span class="v2">Signals</span><i class="hrg">99</i></a></li>
+            </ul>
+            <ul class="main_menu">
+                <li><a href="">People</a></li>
+                <li><a href="">Games</a></li>
+                <li>
+                    <a href="">Videobox</a>
+                    <div style="width:300px;">
+                        <div class="inner">
+                            <ul class="left">
+                                <li><a href="http://yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Adventures">Adventures</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cars">Cars</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Celebrities">Celebrities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Children">Children</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cities">Cities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Crazy">Crazy &amp; Extreme</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Dating+%26+Relationships">Dating Relationships</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Family">Family</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Fashion">Fashion</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Funny">Funny &amp; Cute</a></li>
+                            </ul>
+                            <ul class="right">
+                                <li><a href="http://yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Adventures">Adventures</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cars">Cars</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Celebrities">Celebrities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Children">Children</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cities">Cities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Crazy">Crazy &amp; Extreme</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Dating+%26+Relationships">Dating &amp; Relationships</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Family">Family</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Fashion">Fashion</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Funny">Funny &amp; Cute</a></li>
+                            </ul>
+                            <div class="clr2"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Talks</a>
+                    <div>
+                        <div class="inner">
+                            <ul>
+                                <li><a href="">Daily Talks</a></li>
+                                <li><a href="">Hot discussions</a></li>
+                                <li><a href="">Corporate blog</a></li>
+                                <li><a href="">Polls</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">Questions</a></li>
+            </ul>
+            <div class="user_menu">
+                <div>
+                    <ul>
+                        <li>
+                            <a class="todo" href="" title="Accaunt Settings"><i></i></a>
+                            <div>
+                                <div class="inner">
+                                    <ul>
+                                        <li><a href="">Пригласить друзей</a></li>
+                                        <li><a href="">Деньги за друзей</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <ul>
+                                        <li><a href="">Email уведомления</a></li>
+                                        <li><a href="">Платежи</a></li>
+                                        <li><a href="">Заблокированные пользователи</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <ul>
+                                        <li><a href="">Yangutu iPhone</a></li>
+                                        <li><a href="">Yangutu Android</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <a href="">Выход</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="tuse">
+                                <a href="" title="Julia's profile"><img src="./img/36x36pic.png" alt="" /></a>
+                                <a href="" title="Julia's profile" class="fs3 pt"><b>Julia</b></a>
+                                <a href="" title="Add more coins">1 819 coins</a>
+                            </span>
+                            <div class="clr2"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clr2"></div>
+        </div>
+    </div>
+	<div class="content">
+		<div class="content_inn">	
+			<div class="hor-fag">
+				<div class="inner">	
+					<div class="left indentRight20">
+						<div class="brdpic6">
+                            <a href=""><img src="./img/85x124pic.jpg"></a>
+                        </div>
+					</div>
+                    <div>
+                        <p class="gray fs5 pt"><span class="db_color"> UPGRADE TO MESSAGE</span>  BIGLOUIE34!</p>
+                        <p class="fs16">As a regular user you can send up to 10 messages a day, no more than 2 messages to 1 contact. Today you have already sent 2 messages to this person.</p>
+                        <p class="fs16">Don't wate untill tomorrow - get unlimited messages right now! Upgrade to Yangutu VIP!</p>
+                    </div>
+					<div class="clr2"></div>
+				</div>
+			</div>
+			<div class="main-vip">	
+				<div class="indentTop20">
+					<div class="left">
+						<p class="pt fs3"><b>Select Your Yangutu VIP Subscription Plan</b></p>
+						<div>
+							<div class="radio-select-box mini">
+								<div class="label">
+									<input type="radio" name="1" />
+								</div>
+								<div class="fixWidth120 left tcenter">
+                                    <div class="indentTop20">
+                                        <div class="dg_color fs24"><b>$11.00</b></div><div class="fs1">per month</div>
+                                    </div>
+                                </div>
+								<div class="fixWidth230 left indentLeft15">
+                                    <div class="description">
+                                        <div class="indentTop20">
+                                            <div class="dg_color fs16"><b>1 year. <span class="or_color">Save 57%</span></b></div><div class="fs1">one easy $132.00 payment</div>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+						<div class="indentTop10">
+							<div class="radio-select-box mini selected">
+								<div class="label">
+									<input type="radio" name="1" selected />
+								</div>
+								<div class="fixWidth120 left tcenter">
+                                    <div class="indentTop20">
+                                        <div class="dg_color fs24"><b>$14.00</b></div><div class="fs1">per month</div>
+                                    </div>
+                                </div>
+								<div class="fixWidth230 left indentLeft15">
+                                    <div class="description">
+                                        <div class="indentTop20">
+                                            <div class="dg_color fs16"><b>6 month. <span class="or_color">Save 46%</span></b></div><div class="fs1">one easy $84.00 payment</div>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+						<div class="indentTop10">
+							<div class="radio-select-box mini">
+								<div class="label">
+									<input type="radio" name="1" />
+								</div>
+								<div class="fixWidth120 left tcenter">
+                                    <div class="indentTop20">
+                                        <div class="dg_color fs24"><b>$17.00</b></div><div class="fs1">per month</div>
+                                    </div>
+                                </div>
+								<div class="fixWidth230 left indentLeft15">
+                                    <div class="description">
+                                        <div class="indentTop20">
+                                            <div class="dg_color fs16"><b>3 month. <span class="or_color">Save 35%</span></b></div><div class="fs1">one easy $51.00 payment</div>
+                                        </div>
+                                    </div>
+								</div>
+                                <div class="popular"><img src="./img/popular-plan.png" title="" alt=""></div>
+							</div>
+						</div>
+						<div class="indentTop10">
+							<div class="radio-select-box mini">
+								<div class="label">
+									<input type="radio" name="1" />
+								</div>
+								<div class="fixWidth120 left tcenter">
+                                    <div class="indentTop20">
+                                        <div class="dg_color fs24"><b>$26.00</b></div><div class="fs1">per month</div>
+                                    </div>
+                                </div>
+								<div class="fixWidth230 left indentLeft15">
+                                    <div class="description">
+                                        <div class="indentTop20">
+                                            <div class="dg_color fs16"><b>1 month</b></div><div class="fs1">one easy $26.00 payment</div>
+                                        </div>
+                                    </div>
+								</div>
+							</div>
+						</div>
+					</div>
+                    
+                    <div class="right">
+						<p class="pt fs3"><b>Payment Information</b></p>
+                        <div class="payment-tab">
+                            <div class="top"></div>
+                            <div class="tmenu">
+                                <ul>
+                                    <li class="active"><a href=""><img class="indentTop10" src="./img/p_master_ico.gif" alt="" title="" /></a></li>
+                                    <li><a href=""><img class="indentTop10" src="./img/p_paypal_ico.gif" alt="" title=""></a></li>
+                                </ul>
+                            </div>
+                            <div class="inner">
+                                <div class="vq_prof_set">
+                                    <div class="tbold fs3">Credit Card Info</div>
+                                    <table class="tb-indent indentTop10">
+                                        <tr>
+                                            <td class="first-cell"><span>Card type:</span></td>
+                                            <td>
+                                                <div class="left fixWidth120 indentRight10">
+                                                    <select class="select">
+                                                        <option>Visa</option>
+                                                        <option>Master Card</option>
+                                                        <option>Master Card</option>
+                                                        <option>Master Card</option>
+                                                        <option>Master Card</option>
+                                                    </select>
+                                                </div>
+                                                <div class="fixWidth65 left indentRight10">
+                                                    <a href=""><img src="./img/type_visa.gif" alt="Visa" title="Visa" /></a>
+                                                    <a href=""><img src="./img/type_master.gif" alt="MasterCard" title="Master Card" /></a>
+                                                </div>
+                                                <div class="clr2"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="first-cell"><span>Card number:</span></td>
+                                            <td>
+                                                <input type="text"  class="input fixWidth230 indentRight10" />
+                                                <div class="clr2"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="first-cell"><span>Name on card:</span></td>
+                                            <td>
+                                                <input type="text"  class="input fixWidth230" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="first-cell"><span>Security code:</span></td>
+                                            <td>
+                                                <input type="text"  class="input fixWidth120 left indentRight10" />
+                                                <div class="fixWidth65 left">
+                                                    <div class="helper_top inh left indentRight10 indentTop5">
+                                                      <div class="ya_mbx_help">
+                                                        <div class="ya_mbx3_top"></div>
+                                                            <div class="ya_mbx_mid3">
+                                                                <div class="inn">
+                                                                    <div class="ya_usr_view">
+                                                                        <p class="descr">This is the identifier of the 3 digits printed on the signature strip on the back of the card.</p>
+                                                                        <div class="clr2"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="ya_mbx_bot3"> &nbsp; </div>
+                                                      </div>
+                                                    </div>
+                                                    <a href=""><img src="./img/type_help.gif" alt="Visa" title="Visa" /></a> 
+                                                </div>
+                                                <span class="fs9 gray">The last 3 digits displayed on the back of your credit card.</span>
+                                                <div class="clr2"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="first-cell"><span>Expiration Date:</span></td>
+                                            <td>
+                                                <div class="day">
+                                                    <select class="select">
+                                                        <option>01</option>
+                                                        <option>02</option>
+                                                        <option>..</option>
+                                                        <option>31</option>
+                                                    </select>
+                                                </div>
+                                                <div class="year">
+                                                    <select class="select">
+                                                        <option>2011</option>
+                                                        <option>2010</option>
+                                                        <option>..</option>
+                                                        <option>1900</option>
+                                                    </select>
+                                                </div>
+                                                <div class="clr2"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <p class="gray fs9 tcenter">Сумма $51 будет снята с вашего счета PayPal. <a href="">Условия</a></p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <iframe src="./iframe/payment_billing.html" width="463" height="240" align="left" frameborder="no" scrolling="no" allowtransparency seamless>
+                                                    Your browser does not support iframes!
+                                                </iframe>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href=""><img src="./img/RapidSSL_SEAL-90x50.gif" alt="" /></a>
+                                            </td>
+                                            <td class="tright">
+                                                <a class="btn btn-green small" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Подтвердить и Оплатить</span></span></span></a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="bottom"></div>
+                        </div>
+                    </div>
+                    <div class="clr2"></div>
+				</div>
+			</div>
+			
+			<div class="indentTop20">
+                <p class="tcenter pt fs24"><b>As a VIP user you can:</b></p>
+                <div class="indentTop10">
+                    <div class="list-2cells">
+                        <img src="./img/vip/vip_popup_ico15.png" alt="" />
+                        <div class="inner">
+                            <p class="fs3">Use Soulmate Finder to find mutual matches</p>
+                        </div>
+                    </div>
+                    <div class="list-2cells">
+                        <img src="./img/vip/vip_popup_ico11.png" alt="" />
+                        <div class="inner">
+                            <p class="fs3">Be invisible</p>
+                        </div>
+                    </div>
+                    <div class="list-2cells">
+                        <img src="./img/vip/vip_popup_ico10.png" alt="" />
+                        <div class="inner">
+                            <p class="fs3">Use advanced search to find matches</p>
+                        </div>
+                    </div>
+                    <div class="list-2cells">
+                        <img src="./img/vip/vip_popup_ico16.png" alt="" />
+                        <div class="inner">
+                            <p class="fs3">Highlight your profile</p>
+                        </div>
+                    </div>
+                    <div class="list-2cells">
+                        <img src="./img/vip/vip_popup_ico2.png" alt="" />
+                        <div class="inner">
+                            <p class="fs3">Customize your profile</p>
+                        </div>
+                    </div>
+                    <div class="list-2cells">
+                        <img src="./img/vip/vip_popup_ico4.png" alt="" />
+                        <div class="inner">
+                            <p class="fs3">Hide members from search results</p>
+                        </div>
+                    </div>
+                    <div class="list-2cells">
+                        <img src="./img/vip/vip_popup_ico8.png" alt="" />
+                        <div class="inner">
+                            <p class="fs3">Find out who added you to Favourites</p>
+                        </div>
+                    </div>
+                    <div class="list-2cells">
+                        <img src="./img/vip/vip_popup_ico17.png" alt="" />
+                        <div class="inner">
+                            <p class="fs3">Upload unlimited photos</p>
+                        </div>
+                    </div>
+                    <div class="clr2"></div>
+                </div>
+            </div>
+			<div class="hor-fag indentTop20">
+				<div class="inner">
+                    <div class="flWidth50 left">
+                        <div class="innerRight20">
+                            <div class="pt fs24"><b>Testimonials</b></div>
+                            <div class="indentTop20">
+                                <div class="left">
+                                    <div class="brdpic8">
+                                        <a href="" rel="" title=""><img src="./img/46x46pic.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="indentLeft65">
+                                    <p><b><a href="">Юра</a>, 22</b><br/><span class="fs9 gray">written on 2012-06-25</span></p>
+                                    <p>Не привык тратить деньги на виртуальные услуги, но здесь сделал исключение и не пожалел.</p>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="indentTop20">
+                                <div class="left">
+                                    <div class="brdpic8">
+                                        <a href="" rel="" title=""><img src="./img/46x46pic.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="indentLeft65">
+                                    <p><b><a href="">Вадим</a>, 30</b><br/><span class="fs9 gray">written on 2012-06-25</span></p>
+                                    <p>Сколько ни регистрировался на сайтах знакомств, везде одни спаммеры и скамеры. Здесь порадовало то,что все профили тщательно модерируются. А за качественный сервис и заплатить не жалко.</p>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                            <div class="indentTop20">
+                                <div class="left">
+                                    <div class="brdpic8">
+                                        <a href="" rel="" title=""><img src="./img/46x46pic.jpg"></a>
+                                    </div>
+                                </div>
+                                <div class="indentLeft65">
+                                    <p><b><a href="">Лариса</a>, 52</b><br/><span class="fs9 gray">written on 2012-06-25</span></p>
+                                    <p>Меня заинтересовал тест по подбору идеального партнера. Но он входит только в подписку ВИП, поэтому решила ее купить. Оказалось, тут еще много других полезных сервисов. Вобщем, деньги потратила не зря</p>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flWidth50 right">
+                        <div class="innerLeft20">
+                            <div class="pt fs24"><b>Yangutu FAQ</b></div>
+                            <div class="indentTop20">
+                                <p><b>What if I have any payment issues?</b><br/></p>
+                                If you have any problems related to payments or financial transactions, you are always welcome to contact our Support team who are always ready to provide the assistance you need. Send us your request to support@yangutu.com, or use our standard application form via “<a href="">Contact Us</a>” link.
+                            </div>
+                            <div class="indentTop20">
+                                <p><b>Can I terminate my VIP subscription?</b></p>
+                                VIP subscription can be terminated only after the subscription period expires.
+                            </div>
+                            <div class="indentTop20">
+                                <p><b>What if I have any payment issues?</b><br/></p>
+                                If you have any problems related to payments or financial transactions, you are always welcome to contact our Support team who are always ready to provide the assistance you need. Send us your request to support@yangutu.com, or use our standard application form via “<a href="">Contact Us</a>” link.
+                            </div>
+                            <div class="indentTop20">
+                                <p><b>Can I terminate my VIP subscription?</b></p>
+                                VIP subscription can be terminated only after the subscription period expires.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clr2"></div>
+                </div>
+            </div>
+		</div>
+	</div>
+	
+	<div class="footer">
+	  <div class="footer_inn">
+		<ul>
+			<li><a href="/page/about">About us</a></li>
+			<li><a href="/help">FAQ</a></li>
+			<li><a href="http://blog.yangutu.com/">Our blog</a></li>
+			<li><a href="/feedback">Contact us</a></li>
+		</ul>
+		<ul>
+			<li><a href="/page/policy">Privacy</a></li>
+			<li><a href="/page/terms">Terms of use</a></li>
+		</ul>
+		<ul>			
+			<li><a href="/page/scams">Scam warning</a></li>
+			<li><a href="/page/safety">Safety Tips</a></li>
+		</ul>
+		<ul>
+			<li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+			<li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+			<li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+		
+		</ul>
+		<ul>
+		  <li><a href="/dating/all">People Directory</a></li>
+		</ul>
+		<div class="right">
+			<font color="black">&copy; 2010-2011 Yangutu Inc. All rights reserved</font><br>
+		  <span>Yangutu (swahili) - My one and only.</span>
+		</div>
+		 <div class="clear"></div>
+	  </div>
+</div>
+</body>
+</html>
