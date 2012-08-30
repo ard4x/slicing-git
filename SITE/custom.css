@@ -36,7 +36,6 @@ div.profileGroupContent #pets_custom {width:340px!important;}
 .lookingbx .hr{border-color:#fff; border-top:1px solid #fff; border-bottom:none; margin:15px 0 0 0; padding:0 0 15px;}
 
     /*стили нуждающиеся в чистке*/
-    a{color:#3b5998;}
     body{background-color:#ECF4FB;} /*add*/
     .footer{border-color:#fff;} /*add*/
     .header{background:#075ca2; height:50px; box-shadow:0 2px 5px #c6cdd3; -webkit-box-shadow:0 2px 5px #c6cdd3; -moz-box-shadow:0 2px 5px #c6cdd3; -khtml-box-shadow:0 2px 5px #c6cdd3;} /*change*/
