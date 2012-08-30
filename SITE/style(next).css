@@ -658,7 +658,7 @@ textarea{padding:1px 2px 2px; font-size:14px; background-color:#fff;  border-top
 .piclist5 .last {margin-right: 0px;}
 .bfontdescr {font-size: 21px; font-weight: bold; padding: 5px 0 10px;}
 .bfontdescr span {font-size: 18px; font-weight: normal !important;}
-.brdpic {background: url(img/126x166bg.png) no-repeat; width: 126px; height: 166px; margin-bottom: 3px; text-align:center;}
+.brdpic {background: url(img/126x166bg.png) no-repeat; width: 126px; height: 166px; text-align:center;}
 .brdpic img {margin: 4px 0 0 0;}
 
 .prof_loc{width:60%;}
@@ -2323,7 +2323,7 @@ body.lang-ru .top-offer{background:url(img/top-offer-rus.png) 0 0 no-repeat;}
 .found_usr.first-place,.found_usr.first-place.hover{background-color:#F7F2D5;}
 
 /*top-100 styles*/
-.helpbx.c5{background-color:#ffffcc;}
+.helpbx.c5{background-color:#fffce2;}
 .helpbx.c6{background-color:#ffb263;}
 
 .myrate-inline {width:110px; margin:0 auto;}
@@ -2474,7 +2474,7 @@ ul.newList{ border:1px solid #ccc;}
     
     .rvc-box{border:1px solid #f0ecce; position:relative; background-color:#fff; border-radius:4px; -webkit-border-radius:4px; -moz-border-radius:4px; margin:10px 0 0; padding:8px; font:italic 10px Arial; color:#333333;}
     .rvc-box >div[class^='rvc-arrow-']{background:url(img/rvc_arrow.png) 0 0 no-repeat; position:absolute;}
-    .rvc-box >.rvc-arrow-top{left:20%; top:-9px; width:16px; height:9px; text-indent:-9999px;}
+    .rvc-box >.rvc-arrow-top{left:10%; top:-9px; width:16px; height:9px; text-indent:-9999px;}
     
     .tb_form{width:415px;}
     .tb_form_adds{width:520px;}
@@ -2520,7 +2520,7 @@ ul.newList{ border:1px solid #ccc;}
 
 .piclist.tb_view {margin:0 0 0 -30px; left:30px; position:relative; zoom:1;}
 .piclist.tb_view .found_usr.hover,.piclist.tb_view .found_usr:hover{background-color:#ecf4fb;}
-.piclist.tb_view .found_usr {width:333px; border: 1px solid transparent; margin:0 18px 18px 0;}
+.piclist.tb_view .found_usr {width:340px; border: 1px solid transparent; margin:0 12px 12px 0; padding:8px;}
 .piclist.tb_view .found_usr.rise_up{border-color:#C4D9EC;}
 .piclist.tb_view .found_usr .usr_info{width:185px;}
 
