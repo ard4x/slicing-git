@@ -2433,12 +2433,14 @@ a:hover .zoom-in{background:url(img/zoom-preview.png) 0 0 no-repeat; position:ab
 .dg_color{color:#575757;}
 .or_color{color:#f48239;}
 .gr_color{color:#007700;}
+.indentTop3{margin-top:3px;}
 .dr_color{color:#770000;}
 .indentLeft15{margin-left:15px;}
 .flWidth50{width:50%;}
 .flWidth45{width:45%;}
 .fixWidth80{width:80px;}
 .fixWidth335{width:335px;}
+.fixWidth175{width:175px;}
 .fixWidth183{width:183px;}
 .fixWidth340{width:340px;}
 .fixWidth410{width:410px;}
