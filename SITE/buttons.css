@@ -388,3 +388,5 @@ input[type="button"].cl-right{border-radius:6px 0 0 6px; -webkit-border-radius:6
 
 /*New export data buttons*/
 .btn.btn-ico{position:relative;}
+
+.btn.in-block{display:block;}

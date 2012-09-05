@@ -1,0 +1,447 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Yangutu</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="style(next).css" type="text/css" id="" />
+	<link rel="stylesheet" href="buttons.css" type="text/css" id="" />
+	<link rel="stylesheet" href="custom.css" type="text/css" id="" /> <!-- СТИЛИ КОТОРЫЕ УЖЕ ЕСТЬ НА ПРОДЕ // НЕОБХОДИМО ЗАМЕНИТЬ!!!!!-->
+	
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <script src="js/jquery.stylish-select.js" type="text/javascript"></script>
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $('select.select').sSelect();
+                
+                var ieFixCount =0;
+                $('.selectedTxt').bind('click',function(){
+                    ieFixCount++;
+                    $(this).closest('.inner').css({'z-index': ieFixCount + 1});
+                    $(this).closest('.description').css({'z-index': ieFixCount + 1});
+                });
+            });
+	</script>
+	<script type="text/javascript">
+        /*script to view*/
+        $(function(){
+            $('.main_menu > li,.user_menu ul > li,.nf-tab > a,.nfvc-options').bind('click',function(){
+                $('.main_menu > li,.user_menu ul > li,.nf-tab > a,.nfvc-options-block').removeClass('active');
+                $(this).not('.nfvc-options').addClass('active');
+                $(this).next('.nfvc-options-block').addClass('active');
+                return false;
+            })
+            
+            
+            function stsStyle(){ 
+                $('.select_menu').each(function(){
+                    var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),                    
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                    objElement.css({'width': w+'px'})
+                    console.log(obj.width())
+                
+                });
+            }
+            stsStyle();
+            
+            function cleftSrcoll(){
+                var $document = $(document),
+                    $element = $('.leftside'),
+                    className = 'scrolled';
+                    
+                if($.browser.msie){ var $document = $(window); } /*ИЕ не работает с document.scroll*/
+                
+                $document.scroll(function() {
+                  if ($document.scrollTop() >= 50) { 
+                    $element.addClass(className);
+                  } else {
+                    $element.removeClass(className);
+                  }
+                });
+            };
+            cleftSrcoll();
+            
+        })
+        
+    </script>
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="ie7.css" />
+	<![endif]-->
+	<!--[if IE 8]>
+		<link rel="stylesheet" type="text/css" href="ie8.css" />
+	<![endif]-->
+</head>
+<body>
+
+    <div class="header">
+        <div class="header_inn">
+            <a href="#"><img src="./img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>	
+            <ul class="main_actmenu">
+                <li><a href=""><span class="v1">Messages</span><i class="hrg">1</i></a></li>
+                <li><a href=""><span class="v2">Signals</span><i class="hrg">99</i></a></li>
+            </ul>
+            <ul class="main_menu">
+                <li><a href="">People</a></li>
+                <li><a href="">Games</a></li>
+                <li>
+                    <a href="">Videobox</a>
+                    <div style="width:300px;">
+                        <div class="inner">
+                            <ul class="left">
+                                <li><a href="http://yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Adventures">Adventures</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cars">Cars</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Celebrities">Celebrities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Children">Children</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cities">Cities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Crazy">Crazy &amp; Extreme</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Dating+%26+Relationships">Dating Relationships</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Family">Family</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Fashion">Fashion</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Funny">Funny &amp; Cute</a></li>
+                            </ul>
+                            <ul class="right">
+                                <li><a href="http://yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Adventures">Adventures</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cars">Cars</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Celebrities">Celebrities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Children">Children</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cities">Cities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Crazy">Crazy &amp; Extreme</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Dating+%26+Relationships">Dating &amp; Relationships</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Family">Family</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Fashion">Fashion</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Funny">Funny &amp; Cute</a></li>
+                            </ul>
+                            <div class="clr2"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Talks</a>
+                    <div>
+                        <div class="inner">
+                            <ul>
+                                <li><a href="">Daily Talks</a></li>
+                                <li><a href="">Hot discussions</a></li>
+                                <li><a href="">Corporate blog</a></li>
+                                <li><a href="">Polls</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">Questions</a></li>
+            </ul>
+            <div class="user_menu">
+                <div>
+                    <ul>
+                        <li>
+                            <a class="todo" href="" title="Accaunt Settings"><i></i></a>
+                            <div>
+                                <div class="inner">
+                                    <ul>
+                                        <li><a href="">Пригласить друзей</a></li>
+                                        <li><a href="">Деньги за друзей</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <ul>
+                                        <li><a href="">Email уведомления</a></li>
+                                        <li><a href="">Платежи</a></li>
+                                        <li><a href="">Заблокированные пользователи</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <ul>
+                                        <li><a href="">Yangutu iPhone</a></li>
+                                        <li><a href="">Yangutu Android</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <a href="">Выход</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="tuse">
+                                <a href="" title="Julia's profile"><img src="./img/36x36pic.png" alt="" /></a>
+                                <a href="" title="Julia's profile" class="fs3 pt"><b>Julia</b></a>
+                                <a href="" title="Add more coins">1 819 coins</a>
+                            </span>
+                            <div class="clr2"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clr2"></div>
+        </div>
+    </div>
+	
+	<div class="content">
+		<div class="content_inn">
+            <p class="fs5 pt">Congrats, you've done it! Welcome on board!</p>
+            <div class="indentTop5">
+                <div class="fixWidth225 left">
+                    <div class="barrier_upload">
+                        <a href=""><img src="./img/barrier_upload.png" alt="" width="220px" /></a>
+                        <div class="inner"><a class="btn btn-blue in-block" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Add your photo</span></span></span></a></div>
+                    </div>
+                    <div class="barrier_upload">
+                        <a href=""><img src="./img/image21.png" alt="" width="220px" /></a>
+                    </div>
+                    <div class="indentTop15"><a class="btn btn-blue in-block" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Change the photo</span></span></span></a></div>
+                </div>
+                <div class="barrier_content">
+                    <div class="lookingbx">
+                        <p class="fs24 pt tbold">Now please tell others about yourself</p>
+                        <div class="fixWidth540">
+                            <div class="proflist">
+                                <span class="form-validation"></span>
+                                <div class="label">Ethnicity:</div>
+                                <div class="description">
+                                    <div class="left fixWidth200">
+                                        <select class="select" name="bodyType">
+                                            <option selected="selected" value="">select</option>
+                                            <option value="38">A few extra pounds</option>
+                                            <option value="37">Average</option>
+                                            <option value="40">Muscular</option>
+                                            <option value="41">Overweight</option>
+                                            <option value="36">Slim</option>
+                                        </select>
+                                    </div>
+                                    <div class="right fixWidth200">
+                                        <select class="select" name="bodyType">
+                                            <option selected="selected" value="">select</option>
+                                            <option value="38">A few extra pounds</option>
+                                            <option value="37">Average</option>
+                                            <option value="40">Muscular</option>
+                                            <option value="41">Overweight</option>
+                                            <option value="36">Slim</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="proflist">
+                                <span class="form-validation false"></span>
+                                <div class="label">Relationship status:</div>
+                                <div class="description">
+                                    <select class="select" name="bodyType">
+                                        <option selected="selected" value="">select</option>
+                                        <option value="38">A few extra pounds</option>
+                                        <option value="37">Average</option>
+                                        <option value="40">Muscular</option>
+                                        <option value="41">Overweight</option>
+                                        <option value="36">Slim</option>
+                                    </select>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="proflist">
+                                <span class="form-validation false"></span>
+                                <div class="label">Education:</div>
+                                <div class="description">
+                                    <select class="select" name="bodyType">
+                                        <option selected="selected" value="">select</option>
+                                        <option value="38">A few extra pounds</option>
+                                        <option value="37">Average</option>
+                                        <option value="40">Muscular</option>
+                                        <option value="41">Overweight</option>
+                                        <option value="36">Slim</option>
+                                    </select>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="proflist">
+                                <span class="form-validation false"></span>
+                                <div class="label">Ethnicity:</div>
+                                <div class="description">
+                                    <select class="select" name="bodyType">
+                                        <option selected="selected" value="">select</option>
+                                        <option value="38">A few extra pounds</option>
+                                        <option value="37">Average</option>
+                                        <option value="40">Muscular</option>
+                                        <option value="41">Overweight</option>
+                                        <option value="36">Slim</option>
+                                    </select>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="proflist">
+                                <span class="form-validation false"></span>
+                                <div class="label">Occupation:</div>
+                                <div class="description">
+                                    <select class="select" name="bodyType">
+                                        <option selected="selected" value="">select</option>
+                                        <option value="38">A few extra pounds</option>
+                                        <option value="37">Average</option>
+                                        <option value="40">Muscular</option>
+                                        <option value="41">Overweight</option>
+                                        <option value="36">Slim</option>
+                                    </select>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="proflist">
+                                <span class="form-validation"></span>
+                                <div class="label">Living situation:</div>
+                                <div class="description">
+                                    <select class="select" name="bodyType">
+                                        <option selected="selected" value="">select</option>
+                                        <option value="38">A few extra pounds</option>
+                                        <option value="37">Average</option>
+                                        <option value="40">Muscular</option>
+                                        <option value="41">Overweight</option>
+                                        <option value="36">Slim</option>
+                                    </select>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="proflist">
+                                <span class="form-validation false"></span>
+                                <div class="label">Have kids:</div>
+                                <div class="description">
+                                     <label for=""><input type="radio" value="" name="" id="">  Yes</label>
+                                     <label class="indentLeft20" for=""><input type="radio" value="" name="" id="">  No</label>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="proflist">
+                                <span class="form-validation false"></span>
+                                <div class="label">Smokes:</div>
+                                <div class="description">
+                                    <select class="select" name="bodyType">
+                                        <option selected="selected" value="">select</option>
+                                        <option value="38">A few extra pounds</option>
+                                        <option value="37">Average</option>
+                                        <option value="40">Muscular</option>
+                                        <option value="41">Overweight</option>
+                                        <option value="36">Slim</option>
+                                    </select>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="proflist">
+                                <span class="form-validation false"></span>
+                                <div class="label">Height:</div>
+                                <div class="description">
+                                    <div class="fixWidth200 left indentRight10">
+                                        <select class="select" name="bodyType">
+                                            <option selected="selected" value="">select</option>
+                                            <option value="38">A few extra pounds</option>
+                                            <option value="37">Average</option>
+                                            <option value="40">Muscular</option>
+                                            <option value="41">Overweight</option>
+                                            <option value="36">Slim</option>
+                                        </select>
+                                    </div>
+                                    <a href="" class="dotted nobg">Centimeters</a>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="proflist">
+                                <span class="form-validation false"></span>
+                                <div class="label">Eye color:</div>
+                                <div class="description">
+                                    <select class="select" name="bodyType">
+                                        <option selected="selected" value="">select</option>
+                                        <option value="38">A few extra pounds</option>
+                                        <option value="37">Average</option>
+                                        <option value="40">Muscular</option>
+                                        <option value="41">Overweight</option>
+                                        <option value="36">Slim</option>
+                                    </select>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="proflist">
+                                <span class="form-validation false"></span>
+                                <div class="label">Hair color:</div>
+                                <div class="description">
+                                    <select class="select" name="bodyType">
+                                        <option selected="selected" value="">select</option>
+                                        <option value="38">A few extra pounds</option>
+                                        <option value="37">Average</option>
+                                        <option value="40">Muscular</option>
+                                        <option value="41">Overweight</option>
+                                        <option value="36">Slim</option>
+                                    </select>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="proflist">
+                                <span class="form-validation false"></span>
+                                <div class="label">Body type:</div>
+                                <div class="description">
+                                    <select class="select" name="bodyType">
+                                        <option selected="selected" value="">select</option>
+                                        <option value="38">A few extra pounds</option>
+                                        <option value="37">Average</option>
+                                        <option value="40">Muscular</option>
+                                        <option value="41">Overweight</option>
+                                        <option value="36">Slim</option>
+                                    </select>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="proflist">
+                                <div class="label">&nbsp;</div>
+                                <div class="description indentTop10">
+                                    <input type="button" value="Save and Continue" class="button_blue small indentRight10">
+                                    <a class="cancel" href="#">Complete profile later</a>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+	</div>
+	
+    <div class="social_rate">
+        <img src="./img/social-links.png" alt="" />
+    </div>
+    
+    <div class="footer">
+        <div class="footer_inn">
+            <ul>
+                <li><a href="/page/about">About us</a></li>
+                <li><a href="/help">FAQ</a></li>
+                <li><a href="http://blog.yangutu.com/">Our blog</a></li>
+                <li><a href="/feedback">Contact us</a></li>
+            </ul>
+            <ul>
+                <li><a href="/page/policy">Privacy</a></li>
+                <li><a href="/page/terms">Terms of use</a></li>
+            </ul>
+            <ul>			
+                <li><a href="/page/scams">Scam warning</a></li>
+                <li><a href="/page/safety">Safety Tips</a></li>
+            </ul>
+            <ul>
+                <li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+                <li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+                <li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="/dating/all">People Directory</a></li>
+            </ul>
+            <div class="right">
+                <font color="black">© 2010-2011 Yangutu Inc. All rights reserved</font><br>
+                <span>Yangutu (swahili) - My one and only.</span>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+</html>

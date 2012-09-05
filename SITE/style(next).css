@@ -2961,3 +2961,15 @@ a:hover.nfvc-options>i,.nf-view-content.hover .nfvc-options>i,.nf-view-content:h
 
 /*services.html 13.08.2012*/
 .services-preview.isOwned img{opacity:0.3; cursor:default;}
+
+/*barrier*/
+.indentLeft225{margin-left:225px;}
+.indentLeft240{margin-left:240px;}
+.fixWidth540{width:540px;}
+.barrier_upload{padding:2px; border:1px solid #dfdfdf;}
+.barrier_upload img{font-size:100%; display:block;}
+.barrier_upload>.inner{background-color:#ecf4fb; padding:9px;}
+
+.barrier_content{float:left; margin-left:20px; width:700px;}
+.barrier_content .proflist{margin:0; padding:7px 0;}
+.barrier_content .proflist .label{font-size:14px; margin-top:3px;}
