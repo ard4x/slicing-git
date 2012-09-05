@@ -2,20 +2,26 @@
 <html>
 <head>
 	<title>Yangutu</title>
-	<meta http-equiv="content-type" content="text/html; charset=utf8" />
-	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<link rel="stylesheet" href="style(next).css" type="text/css" id="" />
-	<link rel="stylesheet" href="blog.css" type="text/css" id="" />
-	<link rel="stylesheet" href="forms.css" type="text/css" id="" />
 	<link rel="stylesheet" href="buttons.css" type="text/css" id="" />
-	<link rel="stylesheet" href="banners.css" type="text/css" id="" />
-	<link rel="stylesheet" href="flags.css" type="text/css" id="" />
+	<link rel="stylesheet" href="forms.css" type="text/css" id="" />
+	<link rel="stylesheet" href="custom.css" type="text/css" id="" /> <!-- СТИЛИ КОТОРЫЕ УЖЕ ЕСТЬ НА ПРОДЕ // НЕОБХОДИМО ЗАМЕНИТЬ!!!!!-->
 	
 	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
     <script src="js/jquery.stylish-select.js" type="text/javascript"></script>
-	<style>
-		#themeSelect{position:fixed; top:5px; right:100px; z-index:9999;} 
-	</style>
+    <script type="text/javascript">
+            $(document).ready(function(){
+                $('select.select').sSelect();
+                
+                var ieFixCount =0;
+                $('.selectedTxt').bind('click',function(){
+                    ieFixCount++;
+                    $(this).closest('.inner').css({'z-index': ieFixCount + 1});
+                    $(this).closest('.description').css({'z-index': ieFixCount + 1});
+                });
+            });
+	</script>
 	<script type="text/javascript"> /*this scrit just for looking the style*/
 		$(function(){
 			$('#themeSelect').change(function () {
@@ -76,11 +82,49 @@
 		});
 	</script>
 	<script type="text/javascript">
-		$(document).ready(function(){
-			$('select.select').sSelect();
-			$('.found_usr').hover(function(){$(this).addClass('hover');},function(){$(this).removeClass('hover');});
-		});
-	</script>
+        /*script to view*/
+        $(function(){
+            $('.main_menu > li,.user_menu ul > li,.nf-tab > a,.nfvc-options').bind('click',function(){
+                $('.main_menu > li,.user_menu ul > li,.nf-tab > a,.nfvc-options-block').removeClass('active');
+                $(this).not('.nfvc-options').addClass('active');
+                $(this).next('.nfvc-options-block').addClass('active');
+                return false;
+            })
+            
+            
+            function stsStyle(){ 
+                $('.select_menu').each(function(){
+                    var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),                    
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                    objElement.css({'width': w+'px'})
+                    console.log(obj.width())
+                
+                });
+            }
+            stsStyle();
+            
+            function cleftSrcoll(){
+                var $document = $(document),
+                    $element = $('.leftside'),
+                    className = 'scrolled';
+                    
+                if($.browser.msie){ var $document = $(window); } /*ИЕ не работает с document.scroll*/
+                
+                $document.scroll(function() {
+                  if ($document.scrollTop() >= 50) { 
+                    $element.addClass(className);
+                  } else {
+                    $element.removeClass(className);
+                  }
+                });
+            };
+            cleftSrcoll();
+            
+        })
+        
+    </script>
 	<!--[if IE 7]>
 		<link rel="stylesheet" type="text/css" href="ie7.css" />
 	<![endif]-->
@@ -88,7 +132,8 @@
 		<link rel="stylesheet" type="text/css" href="ie8.css" />
 	<![endif]-->
 </head>
-<body class="pattern theme-1">
+ <body>
+<!--<body class="pattern theme-1">
 	<select id="themeSelect">
 		<option>theme-1</option>
 		<option>theme-2</option>
@@ -100,76 +145,484 @@
 		<option>theme-8</option>
 		<option>theme-9</option>
 		<option>theme-10</option>
-	</select>
-	<!--<div class="sticker"><a href="" class="close" title="close">&nbsp;</a><img src="./img/sticker-v1.png" alt="" title="" /><a class="stick-area" href="">&nbsp;</a></div> -->
-	<div class="header">
-		<div class="header_inn">
-			<div class="top_navigation">
-				<ul class="left">
-					<li><a href="">Messages</a><span class="new_event">2</span></li>
-					<li><a href="">Signals</a><span class="new_event">45</span></li>
-					<li><a href="">Soulmates</a><span class="new_event">167</span></li>
-				</ul>
-				<ul class="right">
-					<li class="coints">1450 Coins <a href="#">Add</a></li>
-					<li class="profile"><a href="#">Profile </a></li>
-					<li class="account"><a href="#">Account Settings</a></li>
-				</ul>
-				<div class="clear"></div>
-			</div>
-			<div class="bot_navigation">
-				<a href="#"><img src="./img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>	
-				<ul class="main_menu">
-					<li><a href="">Home</a></li>
-					<li class="active"><a href="">Matches</a></li>
-					<li><a href="">TOP-100</a></li>
-					<li><a href="">Apps and Games</a></li>
-					<li><a href="">Blogs</a></li>
-				</ul>
-				<div class="clr2"></div>
-			</div>
-		</div>
-	</div>
-	
+	</select> -->
+
+    <div class="header">
+        <div class="header_inn">
+            <a href="#"><img src="./img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>	
+            <ul class="main_actmenu">
+                <li><a href=""><span class="v1">Messages</span><i class="hrg">1</i></a></li>
+                <li><a href=""><span class="v2">Signals</span><i class="hrg">99</i></a></li>
+            </ul>
+            <ul class="main_menu">
+                <li><a href="">People</a></li>
+                <li><a href="">Games</a></li>
+                <li>
+                    <a href="">Videobox</a>
+                    <div style="width:300px;">
+                        <div class="inner">
+                            <ul class="left">
+                                <li><a href="http://yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Adventures">Adventures</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cars">Cars</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Celebrities">Celebrities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Children">Children</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cities">Cities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Crazy">Crazy &amp; Extreme</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Dating+%26+Relationships">Dating Relationships</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Family">Family</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Fashion">Fashion</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Funny">Funny &amp; Cute</a></li>
+                            </ul>
+                            <ul class="right">
+                                <li><a href="http://yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Adventures">Adventures</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cars">Cars</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Celebrities">Celebrities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Children">Children</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cities">Cities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Crazy">Crazy &amp; Extreme</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Dating+%26+Relationships">Dating &amp; Relationships</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Family">Family</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Fashion">Fashion</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Funny">Funny &amp; Cute</a></li>
+                            </ul>
+                            <div class="clr2"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Talks</a>
+                    <div>
+                        <div class="inner">
+                            <ul>
+                                <li><a href="">Daily Talks</a></li>
+                                <li><a href="">Hot discussions</a></li>
+                                <li><a href="">Corporate blog</a></li>
+                                <li><a href="">Polls</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">Questions</a></li>
+            </ul>
+            <div class="user_menu">
+                <div>
+                    <ul>
+                        <li>
+                            <a class="todo" href="" title="Accaunt Settings"><i></i></a>
+                            <div>
+                                <div class="inner">
+                                    <ul>
+                                        <li><a href="">Пригласить друзей</a></li>
+                                        <li><a href="">Деньги за друзей</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <ul>
+                                        <li><a href="">Email уведомления</a></li>
+                                        <li><a href="">Платежи</a></li>
+                                        <li><a href="">Заблокированные пользователи</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <ul>
+                                        <li><a href="">Yangutu iPhone</a></li>
+                                        <li><a href="">Yangutu Android</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <a href="">Выход</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="tuse">
+                                <a href="" title="Julia's profile"><img src="./img/36x36pic.png" alt="" /></a>
+                                <a href="" title="Julia's profile" class="fs3 pt"><b>Julia</b></a>
+                                <a href="" title="Add more coins">1 819 coins</a>
+                            </span>
+                            <div class="clr2"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clr2"></div>
+        </div>
+    </div>
+   
 <div class="content">
-	<div class="content_sl">
-		<div class="content_sr">
-			<div class="content_inn">
+        <div class="content_inn">
 			
-			<div class="prelative">
-				<div class="photo_tape_preview" style="left:408px; top:-25px;">
-					<a href=""><img src="./img/46x46pic.jpg" width="100" height="100" title="" alt="photo" /></a>
-				</div>
+			<div class="prelative indentTop5">
 				<div class="photo_tape">
 					<a class="put_me left" href="">
 						<span>&nbsp;</span>
 					</a>
 					<div class="photo_tape_grad"></div>
 					<div class="photo_tape_img">
-						<a href=""><img src="./img/46x46pic.jpg" title="" alt="photo" /></a>
-						<a href=""><img src="./img/46x46pic2.jpg" title="" alt="photo" /></a>
-						<a href=""><img src="./img/46x46pic.jpg" title="" alt="photo" /></a>
-						<a href=""><img src="./img/46x46pic2.jpg" title="" alt="photo" /></a>
-						<a href=""><img src="./img/46x46pic.jpg" title="" alt="photo" /></a>
-						<a href=""><img src="./img/46x46pic2.jpg" title="" alt="photo" /></a>
-						<a href=""><img src="./img/46x46pic.jpg" title="" alt="photo" /></a>
-						<a href=""><img src="./img/46x46pic2.jpg" title="" alt="photo" /></a>
-						<a href=""><img src="./img/46x46pic.jpg" title="" alt="photo" /></a>
-						<a href=""><img src="./img/46x46pic2.jpg" title="" alt="photo" /></a>
-						<a href=""><img src="./img/46x46pic.jpg" title="" alt="photo" /></a>
-						<a href=""><img src="./img/46x46pic2.jpg" title="" alt="photo" /></a>
-						<a href=""><img src="./img/46x46pic.jpg" title="" alt="photo" /></a>
-						<a href=""><img src="./img/46x46pic2.jpg" title="" alt="photo" /></a>
-						<a href=""><img src="./img/46x46pic2.jpg" title="" alt="photo" /></a>
-						<a href=""><img src="./img/46x46pic.jpg" title="" alt="photo" /></a>
-						<a href=""><img src="./img/46x46pic2.jpg" title="" alt="photo" /></a>
-						<a href=""><img src="./img/46x46pic2.jpg" title="" alt="photo" /></a>
+						<a href=""><img src="./img/50x50pic.png" title="" alt="photo" /></a>
+						<a href=""><img src="./img/50x50pic.png" title="" alt="photo" /></a>
+						<a href=""><img src="./img/50x50pic.png" title="" alt="photo" /></a>
+						<a href=""><img src="./img/50x50pic.png" title="" alt="photo" /></a>
+						<a href=""><img src="./img/50x50pic.png" title="" alt="photo" /></a>
+						<a href=""><img src="./img/50x50pic.png" title="" alt="photo" /></a>
+						<a href=""><img src="./img/50x50pic.png" title="" alt="photo" /></a>
+						<a href=""><img src="./img/50x50pic.png" title="" alt="photo" /></a>
+						<a href=""><img src="./img/50x50pic.png" title="" alt="photo" /></a>
+						<a href=""><img src="./img/50x50pic.png" title="" alt="photo" /></a>
+						<a href=""><img src="./img/50x50pic.png" title="" alt="photo" /></a>
+						<a href=""><img src="./img/50x50pic.png" title="" alt="photo" /></a>
+						<a href=""><img src="./img/50x50pic.png" title="" alt="photo" /></a>
+						<a href=""><img src="./img/50x50pic.png" title="" alt="photo" /></a>
+						<a href=""><img src="./img/50x50pic.png" title="" alt="photo" /></a>
 						<div class="clear"></div>
 					</div>
 				</div>
 			</div>
-			<div class="main-dash-blok">
-				<h1>My dashboard</h1>
+            <div class="indentTop15">
+                <div class="mbox attention">
+                    <img class="left indentRight10" src="./img/upload_banner_ico.png" alt="" />
+                    <div class="left fixWidth635 tcenter">
+                        <p class="fs3 pt tbold">Let women know you better.<br/> Who knows, maybe one of them will really fall in love with you?</p>
+                        <div class="fs2"><a href="">Upload your pictures right now!</a></div>
+                    </div>
+                    <a class="btn btn-green large right indentTop5" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Upload photos</span></span></span></a>
+                    <div class="clr2"></div>
+                </div>
+            </div>
+            <h1>My dashboard</h1>
+            <div>
+                <div class="c_left2">
+                    <p class="fs24 tbold pt dblue">New singles</p>
+                    <div class="lookingbx">
+                        <div class="content_menu_bottom">
+                            <div class="inner">
+                                <div class="progressbar">
+                                    <div class="progress-control c-top">
+                                        <div class="progress-control-point"></div>									
+                                        <div class="progress-control-point"></div>									
+                                        <div class="progress-control-point"><span class="progress-control-point-city">United States</span></div>									
+                                        <div class="progress-control-point"><span class="progress-control-point-city">World</span></div>									
+                                    </div>
+                                    <div class="progress-line" style="width:40%;"><div class="progress-line-button"><p><span><img src="./img/progress-line-arrow.png" alt="" title="" /><nobr>Within 15 miles</nobr></span></p></div></div>
+                                </div>                        
+                                        
+                                <div class="indentTop30">
+                                    <div class="fixWidth200 left">
+                                        <div class="indentTop10">
+                                            <select class="select">
+                                                <option value="" label="">selection</option>
+                                                <option value="" label="">selection</option>
+                                                <option value="" label="">selection</option>
+                                                <option value="" label="">selection</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                            
+                                    <div class="fixWidth200 left indentLeft15">
+                                        <div class="indentTop10">
+                                            <select class="select">
+                                                <option value="" label="">selection</option>
+                                                <option value="" label="">selection</option>
+                                                <option value="" label="">selection</option>
+                                                <option value="" label="">selection</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="fixWidth120 indentLeft15 left">
+                                        <div class="prelative">
+                                            <div class="indentTop10">
+                                                <select class="select">
+                                                    <option value="" label="">selection</option>
+                                                    <option value="" label="">selection</option>
+                                                    <option value="" label="">selection</option>
+                                                    <option value="" label="">selection</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="btn btn-blue small right" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Find people</span></span></span></a>
+                                    <div class="clr2"></div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="indentTop30">
+                        <div class="dboard_user_thumb">
+                            <div>
+                                <div class="dboard_user_thumb_item">
+                                    <a href=""><img src="./img/116x156pic.jpg" alt="" class="thumb-style" /></a>
+                                    <div class="indentTop10">
+                                        <div class="fs16 tbold"><a href="">Angelina</a>, 29</div>
+                                        <div class="indentTop5 gray">Armavir,<br/>Armenia</div>
+                                    </div>
+                                </div>
+                                <div class="dboard_user_thumb_item">
+                                    <a href=""><img src="./img/116x156pic.jpg" alt="" class="thumb-style" /></a>
+                                    <div class="indentTop10">
+                                        <div class="fs16 tbold"><a href="">Angelina</a>, 29</div>
+                                        <div class="indentTop5 gray">Armavir,<br/>Armenia</div>
+                                    </div>
+                                </div>
+                                <div class="dboard_user_thumb_item">
+                                    <a href=""><img src="./img/116x156pic.jpg" alt="" class="thumb-style" /></a>
+                                    <div class="indentTop10">
+                                        <div class="fs16 tbold"><a href="">Angelina</a>, 29</div>
+                                        <div class="indentTop5 gray">Armavir,<br/>Armenia</div>
+                                    </div>
+                                </div>
+                                <div class="dboard_user_thumb_item">
+                                    <a href=""><img src="./img/116x156pic.jpg" alt="" class="thumb-style" /></a>
+                                    <div class="indentTop10">
+                                        <div class="fs16 tbold"><a href="">Angelina</a>, 29</div>
+                                        <div class="indentTop5 gray">Armavir,<br/>Armenia</div>
+                                    </div>
+                                </div>
+                                <div class="dboard_user_thumb_item">
+                                    <a href=""><img src="./img/116x156pic.jpg" alt="" class="thumb-style" /></a>
+                                    <div class="indentTop10">
+                                        <div class="fs16 tbold"><a href="">Angelina</a>, 29</div>
+                                        <div class="indentTop5 gray">Armavir,<br/>Armenia</div>
+                                    </div>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <div class="c_right">
+                    <div class="inf_block">
+                        <div class="title">Invite your friends via Facebook<div class="barrow"></div></div>
+                        <p class="tcenter">get 10 coins for 1 invite</p>
+                        <div class="inf_listview">
+                            <p class="tright"><a href="">refresh</a></p>
+                            <div>
+                                <div class="inf_listview_item">
+                                    <div class="inf_close"><a href=""><i>Close</i></a></div>
+                                    <img src="./img/50x50pic.png" alt="" class="left"/>
+                                    <div class="indentLeft60">
+                                        <div class="tbold">Jeff<br/>Garlin</div>
+                                        <div class="indentTop5"><a href="">Invite friend</a></div>
+                                    </div>
+                                    <div class="clr2"></div>
+                                </div>
+                                <div class="inf_listview_item">
+                                    <div class="inf_close"><a href=""><i>Close</i></a></div>
+                                    <img src="./img/50x50pic.png" alt="" class="left"/>
+                                    <div class="indentLeft60">
+                                        <div class="tbold">Elissa<br/>Knight</div>
+                                        <div class="indentTop5"><a href="">Invite friend</a></div>
+                                    </div>
+                                    <div class="clr2"></div>
+                                </div>
+                                <div class="inf_listview_item">
+                                    <div class="inf_close"><a href=""><i>Close</i></a></div>
+                                    <img src="./img/50x50pic.png" alt="" class="left"/>
+                                    <div class="indentLeft60">
+                                        <div class="tbold">John<br/>Ratzenberger</div>
+                                        <div class="indentTop5"><a href="">Invite friend</a></div>
+                                    </div>
+                                    <div class="clr2"></div>
+                                </div>
+                                <div class="indentTop10 tright">
+                                    <a href="">view more friends</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inf_social indentTop10">
+                            or invite via <a href=""><i>Google plus</i></a><a href="" class="v2"><i>Mail</i></a><a href="" class="v3"><i>Tweetter</i></a><a href="" class="v4"><i>Yahoo</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clr2"></div>
+            </div>
+            <div class="dboard_hr indentTop10">
+                <div class="fs24 pt"><a href="" class="tbold">Best Videos in Videobox</a> for today, August 27</div>
+				<div class="line-cinema indentTop3">
+					<div class="line-cinema-bottom">
+						<div class="inner">
+							<div class="vidbox_small">
+								<div class="vidbox_info"><span class="vidlike left">894</span> <span class="right">Dec 3</span> <div class="clr2"></div></div>
+								<div class="vidpreview">
+									<img src="./img/video_preview.jpg" alt="" title="" width="100%"/>
+								</div>
+								<p class="vidbox_title"><a href="">Katty and Luis in the park</a></p>
+								<p class="vidbox_info">1,412,855 views <a class="video_comment_link" href="">Comments: 164</a></p>
+							</div>
+							<div class="vidbox_small">
+								<div class="vidbox_info"><span class="vidlike left">894</span> <span class="right">Dec 3</span> <div class="clr2"></div></div>
+								<div class="vidpreview">
+									<img src="./img/video_preview.jpg" alt="" title="" width="100%"/>
+								</div>
+								<p class="vidbox_title"><a href="">Katty and Luis in the park</a></p>
+								<p class="vidbox_info">1,412,855 views <a class="video_comment_link" href="">Comments: 164</a></p>
+							</div>
+							<div class="vidbox_small">
+								<div class="vidbox_info"><span class="vidlike left">894</span> <span class="right">Dec 3</span> <div class="clr2"></div></div>
+								<div class="vidpreview">
+									<img src="./img/video_preview.jpg" alt="" title="" width="100%"/>
+								</div>
+								<p class="vidbox_title"><a href="">Katty and Luis in the park</a></p>
+								<p class="vidbox_info">1,412,855 views <a class="video_comment_link" href="">Comments: 164</a></p>
+							</div>
+							<div class="vidbox_small">
+								<div class="vidbox_info"><span class="vidlike left">894</span> <span class="right">Dec 3</span> <div class="clr2"></div></div>
+								<div class="vidpreview">
+									<img src="./img/video_preview.jpg" alt="" title="" width="100%"/>
+								</div>
+								<p class="vidbox_title"><a href="">Katty and Luis in the park</a></p>
+								<p class="vidbox_info">1,412,855 views <a class="video_comment_link" href="">Comments: 164</a></p>
+							</div>
+							<div class="vidbox_small">
+								<div class="vidbox_info"><span class="vidlike left">894</span> <span class="right">Dec 3</span> <div class="clr2"></div></div>
+								<div class="vidpreview">
+									<img src="./img/video_preview.jpg" alt="" title="" width="100%"/>
+								</div>
+								<p class="vidbox_title"><a href="">Katty and Luis in the park</a></p>
+								<p class="vidbox_info">1,412,855 views <a class="video_comment_link" href="">Comments: 164</a></p>
+							</div>
+							<div class="clr2"></div>
+						</div>
+					</div>
+				</div>
+            </div>
+            <div class="dboard_hr">                
+                <div class="fs24 pt"><a href="" class="tbold">More Yangutu sevices</a></div>
+				<div class="indentTop10">
+					<div class="fixWidth300 left">
+						<div class="helpbx c8 fixHeight300">
+							<div class="tcenter fs4 pt"><a href=""><b>Face to Face Game</b></a></div>
+							<div class="tcenter indentTop10">
+								<a href=""><img src="./img/image24.png" alt="" class="thumb-style" /></a>
+							</div>
+                            <div class="usr_choise tcenter indentTop15">
+                                <a class="btn btn-red cl-right" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth50">No</span></span></span></a>
+                                <a class="btn btn-ftf" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt">Maybe</span></span></span></a>
+                                <a class="btn btn-green cl-left" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth50">Yes</span></span></span></a>
+                            </div>
+						</div>
+					</div>
+					<div class="fixWidth300 left indentBoth25">
+                        <a href=""><img src="./img/image25.png" alt="" /></a>
+					</div>
+					<div class="fixWidth300 left">
+						<div class="helpbx c2 fixHeight300">
+							<p class="prelative"><a href="" class="fs4 pt"><b>Soulmate Finder</b></a><span class="step gray">Step 21 of 75</span></p>
+							<div>
+								<div class="fs2">Are you sometimes so tense that your nerves feel like a string?</div>
+								<p class="gray indentTop5"><label><input type="radio" /> Yes</label> <label class="indentLeft10"><input type="radio" /> No</label></p>
+							</div>
+							<div>
+								<div class="fs2">Are you sometimes so tense that your nerves feel like a string?</div>
+								<p class="gray indentTop5"><label><input type="radio" /> Yes</label> <label class="indentLeft10"><input type="radio" /> No</label></p>
+							</div>
+							<div>
+								<div class="fs2">Do your friends think that you are lively, witty, and somebody they will never be bored with?</div>
+								<p class="gray indentTop5"><label><input type="radio" /> Yes</label> <label class="indentLeft10"><input type="radio" /> No</label></p>
+							</div>
+							<div class="tcenter">
+								<a class="btn btn-blue" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth120">Continue</span></span></span></a>
+							</div>
+						</div>
+					</div>
+					<div class="clr2"></div>
+				</div>
+            </div>
+            <div class="dboard_hr">
+                <div class="fs24 pt"><a href="" class="tbold">Travel Buddies News</a> New traveller ads</div>
+				<div class="indentTop10">
+                    <div class="c_left2">
+                        <div class="piclist tb_view">
+                            <div class="inner">
+                                <div class="search_list_item found_usr">
+                                    <input type="hidden" class="user_id" value="1047071" alt="" />
+                                    <div class="brdpic">
+                                        <a href="/payments/vip" class="birdpic_vip"><img src="./img/birdpic_vip.png" class=" go_vip" rel="no-resize" alt="" /></a>
+                                        <a href="/2441517601" title="" class=" sfx" style="display: block; overflow: hidden; width: 116px; height: 160px; margin: 0px 0px 0px 5px; "><img src="https://yangutu-s7.s3.amazonaws.com/ab/c6/a4/116x156_5067041.jpeg?1342683789" style="position: relative; " alt="" /></a>
+                                    </div>
+                                    <div class="usr_info  isOn">
+                                        <span class="fs3"><a href="/2441517601" class="bold "><b>Pearl</b></a>, 35</span>
+                                        <div class="user-location gray"><span class="ellipsis"><span class="loc-sub-city">New York City, </span><span class="loc-sub-country">United States</span></span></div>
+                                        <div class="indentTop5"><span class="ellipsis">I am alone, looking for a guy.</span></div>
+                                        <div class="indentTop5"><span class="gray">Want to find a travel mate to go to: </span></div>
+                                        <div>
+                                            <span class="dr_color">Santiago de Cuba, Philadelphia, Schwarzenberg, Stradford, Andorra-la-Vella</span>
+                                        </div>
+                                        <div class="indentTop5"><span class="gray">Time for travelling: </span><br/><span class="gr_color">Sept 12 - Sept. 14</span></div>
+                                    </div>
+                                </div>
+                                <div class="search_list_item found_usr rise_up">
+                                    <input type="hidden" class="user_id" value="1047071" alt="" />
+                                    <div class="brdpic">
+                                        <a href="/payments/vip" class="birdpic_vip"><img src="./img/birdpic_vip.png" class=" go_vip" rel="no-resize" alt="" /></a>
+                                        <a href="/2441517601" title="" class=" sfx" style="display: block; overflow: hidden; width: 116px; height: 160px; margin: 0px 0px 0px 5px; "><img src="https://yangutu-s7.s3.amazonaws.com/ab/c6/a4/116x156_5067041.jpeg?1342683789" style="position: relative; " alt="" /></a>
+                                    </div>
+                                    <div class="usr_info  isOn">
+                                        <span class="fs3"><a href="/2441517601" class="bold "><b>Pearl</b></a>, 35</span>
+                                        <img class="online-bulb" src="./img/onlinepsmile.png" alt="" />
+                                        <div class="user-location gray"><span class="ellipsis"><span class="loc-sub-city">New York City, </span><span class="loc-sub-country">United States</span></span></div>
+                                        <div class="indentTop5"><span class="ellipsis">I am alone, looking for a guy.</span></div>
+                                        <div class="indentTop5"><span class="gray">Want to find a travel mate to go to: </span></div>
+                                        <div>
+                                            <span class="dr_color">Santiago de Cuba, Philadelphia, Schwarzenberg, Stradford, Andorra-la-Vella</span>
+                                        </div>
+                                        <div class="indentTop5"><span class="gray">Time for travelling: </span><br/><span class="gr_color">Sept 12 - Sept. 14</span></div>
+                                    </div>
+                                </div>
+                                <div class="search_list_item found_usr">
+                                    <input type="hidden" class="user_id" value="1047071" alt="" />
+                                    <div class="brdpic">
+                                        <a href="/payments/vip" class="birdpic_vip"><img src="./img/birdpic_vip.png" class=" go_vip" rel="no-resize" alt="" /></a>
+                                        <a href="/2441517601" title="" class=" sfx" style="display: block; overflow: hidden; width: 116px; height: 160px; margin: 0px 0px 0px 5px; "><img src="https://yangutu-s7.s3.amazonaws.com/ab/c6/a4/116x156_5067041.jpeg?1342683789" style="position: relative; " alt="" /></a>
+                                    </div>
+                                    <div class="usr_info  isOn">
+                                        <span class="fs3"><a href="/2441517601" class="bold "><b>Pearl</b></a>, 35</span>
+                                        <img class="online-bulb" src="./img/onlinepsmile.png" alt="" />
+                                        <div class="user-location gray"><span class="ellipsis"><span class="loc-sub-city">New York City, </span><span class="loc-sub-country">United States</span></span></div>
+                                        <div class="indentTop5"><span class="ellipsis">I am alone, looking for a guy.</span></div>
+                                        <div class="indentTop5"><span class="gray">Want to find a travel mate to go to: </span></div>
+                                        <div>
+                                            <span class="dr_color">Santiago de Cuba, Philadelphia, Schwarzenberg, Stradford, Andorra-la-Vella</span>
+                                        </div>
+                                        <div class="indentTop5"><span class="gray">Time for travelling: </span><br/><span class="gr_color">Sept 12 - Sept. 14</span></div>
+                                    </div>
+                                </div>
+                                <div class="search_list_item found_usr">
+                                    <input type="hidden" class="user_id" value="1047071" alt="" />
+                                    <div class="brdpic">
+                                        <a href="/payments/vip" class="birdpic_vip"><img src="./img/birdpic_vip.png" class=" go_vip" rel="no-resize" alt="" /></a>
+                                        <a href="/2441517601" title="" class=" sfx" style="display: block; overflow: hidden; width: 116px; height: 160px; margin: 0px 0px 0px 5px; "><img src="https://yangutu-s7.s3.amazonaws.com/ab/c6/a4/116x156_5067041.jpeg?1342683789" style="position: relative; " alt="" /></a>
+                                    </div>
+                                    <div class="usr_info  isOn">
+                                        <span class="fs3"><a href="/2441517601" class="bold "><b>Pearl</b></a>, 35</span>
+                                        <div class="user-location gray"><span class="ellipsis"><span class="loc-sub-city">New York City, </span><span class="loc-sub-country">United States</span></span></div>
+                                        <div class="indentTop5"><span class="ellipsis">I am alone, looking for a guy.</span></div>
+                                        <div class="indentTop5"><span class="gray">Want to find a travel mate to go to: </span></div>
+                                        <div>
+                                            <span class="dr_color">Santiago de Cuba, Philadelphia, Schwarzenberg, Stradford, Andorra-la-Vella</span>
+                                        </div>
+                                        <div class="indentTop5"><span class="gray">Time for travelling: </span><br/><span class="gr_color">Sept 12 - Sept. 14</span></div>
+                                    </div>
+                                </div>
+                                <div class="clr2"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c_right">
+                        <img src="./img/image23.png" alt="" title="" width="100%"/>
+                    </div>
+                    <div class="clr2"></div>
+                </div>
+            </div>
+            <div class="clr2"></div>
+			<!-- <div class="main-dash-blok">
 				<div class="lookingbx">
 					<p class="fs3"><b>Заработай <span class="req">1000 коинсов</span></b></p>
 					<div class="usr-progress-line">
@@ -207,20 +660,9 @@
 					</div>
 					<div class="clr2"></div>
 				</div>
-			</div>
-			<div class="main-dash-blok">
 				<h1>My dashboard</h1>
-				<div class="mbox attention">
-					<img class="left indentRight10" src="./img/upload_banner_ico.png" alt="" />
-					<div class="left fixWidth635 tcenter">
-						<p class="fs3">Не лишайте мужчин возможности узнать о Вас больше.<br/> Может, интерес одного из мужчин станет началом большого чувства?</p>
-						<p class="fs1"><a href="">Загрузи свое фото!</a></p>
-					</div>
-					<input type="button" value="Загрузить фото" class="button_green large right " />
-					<div class="clr2"></div>
-				</div>
-			</div>
-			<div class="main-dash-blok">
+			</div> -->
+			<!-- <div class="main-dash-blok">
 				<div class="left-side">
 					<div class="left">
 						<h1>My dashboard</h1>
@@ -242,8 +684,8 @@
 					</div>
 				</div>
 				<div class="clr2"></div>
-			</div>
-			<div class="main-dash-blok prelative">
+			</div> -->
+			<!-- <div class="main-dash-blok prelative">
 				<a href="" class="main-dash-close"><img src="./img/main-dash-close.gif" alt="" /> Close</a>
 				<div class="left-side">
 					<div>
@@ -478,8 +920,8 @@
 					</div>
 				</div>
 				<div class="clr2"></div>
-			</div>
-			<div class="main-dash-blok">
+			</div> -->
+			<!-- <div class="main-dash-blok">
 				<div class="left-side">
 					<div class="left">
 						<div class="brdpic">
@@ -512,7 +954,7 @@
 					</div>
 				</div>
 				<div class="clr2"></div>
-			</div>
+			</div> 
 			<div class="main-dash-blok">
 				<div class="left-side">
 					<div class="indentTop15">
@@ -909,7 +1351,7 @@
 									<img src="./img/video_preview.jpg" alt="" title="" width="100%"/>
 								</div>
 								<p class="vidbox_title"><a href="">Katty and Luis in the park</a></p>
-								<p class="vidbox_info">1,412,855 views <a class="video_comment_link" href="">Comments (164)</a></p>
+								<p class="vidbox_info">1,412,855 views <a class="video_comment_link" href="">Comments : 164</a></p>
 							</div>
 							<div class="vidbox_small">
 								<div class="vidbox_info"><span class="vidlike left">894</span> <span class="right">Dec 3</span> <div class="clr2"></div></div>
@@ -917,7 +1359,7 @@
 									<img src="./img/video_preview.jpg" alt="" title="" width="100%"/>
 								</div>
 								<p class="vidbox_title"><a href="">Katty and Luis in the park</a></p>
-								<p class="vidbox_info">1,412,855 views <a class="video_comment_link" href="">Comments (164)</a></p>
+								<p class="vidbox_info">1,412,855 views <a class="video_comment_link" href="">Comments : 164</a></p>
 							</div>
 							<div class="vidbox_small">
 								<div class="vidbox_info"><span class="vidlike left">894</span> <span class="right">Dec 3</span> <div class="clr2"></div></div>
@@ -925,7 +1367,7 @@
 									<img src="./img/video_preview.jpg" alt="" title="" width="100%"/>
 								</div>
 								<p class="vidbox_title"><a href="">Katty and Luis in the park</a></p>
-								<p class="vidbox_info">1,412,855 views <a class="video_comment_link" href="">Comments (164)</a></p>
+								<p class="vidbox_info">1,412,855 views <a class="video_comment_link" href="">Comments : 164</a></p>
 							</div>
 							<div class="vidbox_small">
 								<div class="vidbox_info"><span class="vidlike left">894</span> <span class="right">Dec 3</span> <div class="clr2"></div></div>
@@ -933,7 +1375,7 @@
 									<img src="./img/video_preview.jpg" alt="" title="" width="100%"/>
 								</div>
 								<p class="vidbox_title"><a href="">Katty and Luis in the park</a></p>
-								<p class="vidbox_info">1,412,855 views <a class="video_comment_link" href="">Comments (164)</a></p>
+								<p class="vidbox_info">1,412,855 views <a class="video_comment_link" href="">Comments : 164</a></p>
 							</div>
 							<div class="vidbox_small">
 								<div class="vidbox_info"><span class="vidlike left">894</span> <span class="right">Dec 3</span> <div class="clr2"></div></div>
@@ -941,7 +1383,7 @@
 									<img src="./img/video_preview.jpg" alt="" title="" width="100%"/>
 								</div>
 								<p class="vidbox_title"><a href="">Katty and Luis in the park</a></p>
-								<p class="vidbox_info">1,412,855 views <a class="video_comment_link" href="">Comments (164)</a></p>
+								<p class="vidbox_info">1,412,855 views <a class="video_comment_link" href="">Comments : 164</a></p>
 							</div>
 							<div class="clr2"></div>
 						</div>
@@ -1055,112 +1497,63 @@
 					<div class="clr2"></div>
 				</div>
 				<div class="clr2"></div>
-			</div>
+			</div>-->
 			
-			<div class="main-dash-blok">
-				<div class="left-side">
-					<div>
-						<p><a href="" class="fs24"><b>Blogs</b></a></p>
-						<div class="clr2"></div>
-					</div>
-					<div class="clr2"></div>
-					<div class="indentTop10">
-						<div class="blog_article">
-							<div class="renpic left">
-								<div class="inner">
-								<a href=""><img src="photo/famale/img_5.jpg" alt="" /></a>
-								</div>
-							</div>
-							<div class="article_descript">
-								<p class="art_title"><a href="">Magma sheep forehead - current national target</a></p>
-								<p class="art_context">
-									Laminar flow ubyvayusche replaced by crystalline quartz, forming the border with the West-Karelian show peculiar system of grabens. Laminar flow lowers the benthos, which, however, did not destroy the preglacial drainage system pereuglublennuyu ancient valleys ... <a href="" class="more">Read more</a> &#8594;
-								</p>
-								<div class="special_info">
-									<div class="left"><a href="">news<span>.</span>com</a><span class="gray indentLeft10">jun 22, 2011</span><a class="indentLeft10" href="">Comment (232)</a></div>
-									<div class="post_like right"><a href="" class="i_like"></a><span class="like_ressult true"> 123 </span><a href="" class="dont_like"></a></div>
-									<div class="clr2"></div>
-								</div>
-							</div>
-							<div class="clr2"></div>
-						</div>
-						<div class="hr"><div></div></div>
-						<div class="blog_article">
-							<div class="renpic left">
-								<div class="inner">
-								<a href=""><img src="photo/famale/img_5.jpg" alt="" /></a>
-								</div>
-							</div>
-							<div class="article_descript">
-								<p class="art_title"><a href="">Magma sheep forehead - current national target</a></p>
-								<p class="art_context">
-									Laminar flow ubyvayusche replaced by crystalline quartz, forming the border with the West-Karelian show peculiar system of grabens. Laminar flow lowers the benthos, which, however, did not destroy the preglacial drainage system pereuglublennuyu ancient valleys ... <a href="" class="more">Read more</a> &#8594;
-								</p>
-								<div class="special_info">
-									<div class="left"><a href="">news<span>.</span>com</a><span class="gray indentLeft10">jun 22, 2011</span><a class="indentLeft10" href="">Comment (232)</a></div>
-									<div class="post_like right"><a href="" class="i_like"></a><span class="like_ressult true"> 123 </span><a href="" class="dont_like"></a></div>
-									<div class="clr2"></div>
-								</div>
-							</div>
-							<div class="clr2"></div>
-						</div>
-						<div class="hr"><div></div></div>
-						<div class="blog_article">
-							<div class="renpic left">
-								<div class="inner">
-								<a href=""><img src="photo/famale/img_5.jpg" alt="" /></a>
-								</div>
-							</div>
-							<div class="article_descript">
-								<p class="art_title"><a href="">Magma sheep forehead - current national target</a></p>
-								<p class="art_context">
-									Laminar flow ubyvayusche replaced by crystalline quartz, forming the border with the West-Karelian show peculiar system of grabens. Laminar flow lowers the benthos, which, however, did not destroy the preglacial drainage system pereuglublennuyu ancient valleys ... <a href="" class="more">Read more</a> &#8594;
-								</p>
-								<div class="special_info">
-									<div class="left"><a href="">news<span>.</span>com</a><span class="gray indentLeft10">jun 22, 2011</span><a class="indentLeft10" href="">Comment (232)</a></div>
-									<div class="post_like right"><a href="" class="i_like"></a><span class="like_ressult true"> 123 </span><a href="" class="dont_like"></a></div>
-									<div class="clr2"></div>
-								</div>
-							</div>
-							<div class="clr2"></div>
-						</div>
-						<div class="hr"><div></div></div>
-						<div class="blog_article">
-							<div class="renpic left">
-								<div class="inner">
-								<a href=""><img src="photo/famale/img_5.jpg" alt="" /></a>
-								</div>
-							</div>
-							<div class="article_descript">
-								<p class="art_title"><a href="">Magma sheep forehead - current national target</a></p>
-								<p class="art_context">
-									Laminar flow ubyvayusche replaced by crystalline quartz, forming the border with the West-Karelian show peculiar system of grabens. Laminar flow lowers the benthos, which, however, did not destroy the preglacial drainage system pereuglublennuyu ancient valleys ... <a href="" class="more">Read more</a> &#8594;
-								</p>
-								<div class="special_info">
-									<div class="left"><a href="">news<span>.</span>com</a><span class="gray indentLeft10">jun 22, 2011</span><a class="indentLeft10" href="">Comment (232)</a></div>
-									<div class="post_like right"><a href="" class="i_like"></a><span class="like_ressult true"> 123 </span><a href="" class="dont_like"></a></div>
-									<div class="clr2"></div>
-								</div>
-							</div>
-							<div class="clr2"></div>
-						</div>
-						<div class="clr2"></div>
-					</div>
-				</div>
-				<div class="right-side">
-					<p class="fs24">Categories</p>
-					<ul class="rlist">
-						<li><a href="#">All Topics Dating</a></li>
-						<li><a href="#">Relationship</a></li>
-						<li><a href="#">Useful Tips</a></li>
-						<li><a href="#">Only for Men</a></li>
-						<li><a href="#">Only for Women</a></li>
-						<li><a href="#">Celebrities</a></li>
-					</ul>
-				</div>
-				<div class="clr2"></div>
+			<div>
+                <div class="fs24 pt"><a href="" class="tbold">Yangutu blog</a> Most interesting articles</div>
+                <div class="indentTop10">
+                    <div class="left">
+                        <img src="./img/image26.png" alt="" />
+                    </div>
+                    <div class="indentLeft220">
+                        <p class="fs2 tbold"><a href="">What Did You Learn from Your Past Relationships?</a></p>
+                        <div class="fs2">Sometimes our previous relationship experience is not as sweet as we’d like it to be. But even unsuccessful 
+                            relationships may be beneficial if they teach us something. Sad experience is also an experience; the thing is just 
+                            to find out how to apply it in your future life. Trying to ignore it may lead us...
+                        </div>
+                        <a href="">Read more</a>
+                        <div class="indentTop15">
+                            <span class="gray">Aug 27, 2012</span>   |   <a href="">Polls</a>   |   <a href="">Comments (11)</a>
+                        </div>
+                    </div>
+                    <div class="clr2"></div>
+                </div>
+                <div class="indentTop10">
+                    <div class="left">
+                        <img src="./img/image27.png" alt="" />
+                    </div>
+                    <div class="indentLeft220">
+                        <p class="fs2 tbold"><a href="">What Did You Learn from Your Past Relationships?</a></p>
+                        <div class="fs2">Sometimes our previous relationship experience is not as sweet as we’d like it to be. But even unsuccessful 
+                            relationships may be beneficial if they teach us something. Sad experience is also an experience; the thing is just 
+                            to find out how to apply it in your future life. Trying to ignore it may lead us...
+                        </div>
+                        <a href="">Read more</a>
+                        <div class="indentTop15">
+                            <span class="gray">Aug 27, 2012</span>   |   <a href="">Polls</a>   |   <a href="">Comments (11)</a>
+                        </div>
+                    </div>
+                    <div class="clr2"></div>
+                </div>
+                <div class="indentTop10">
+                    <div class="left">
+                        <img src="./img/image28.png" alt="" />
+                    </div>
+                    <div class="indentLeft220">
+                        <p class="fs2 tbold"><a href="">What Did You Learn from Your Past Relationships?</a></p>
+                        <div class="fs2">Sometimes our previous relationship experience is not as sweet as we’d like it to be. But even unsuccessful 
+                            relationships may be beneficial if they teach us something. Sad experience is also an experience; the thing is just 
+                            to find out how to apply it in your future life. Trying to ignore it may lead us...
+                        </div>
+                        <a href="">Read more</a>
+                        <div class="indentTop15">
+                            <span class="gray">Aug 27, 2012</span>   |   <a href="">Polls</a>   |   <a href="">Comments (11)</a>
+                        </div>
+                    </div>
+                    <div class="clr2"></div>
+                </div>
 			</div>
-			
+			<!-- 
 			<div class="main-dash-blok">
 				<div class="app-title s3">Friends</div>
 				<div>
@@ -1181,12 +1574,14 @@
 				<p class="fs3"><b>Have a lot of friends and acquaintances?</b><br/><span class="fs2">Tell them about yangutu.com and make money!</span></p>
 				<div class="indentTop20"><a class="btn btn-green" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth120">Learn More</span></span></span></a></div>
 			</div>
-			
-			</div>
-		</div>
+			 -->
 	</div>
 </div>
 	
+    <div class="social_rate">
+        <img src="./img/social-links.png" alt="" />
+    </div>
+    
 	<div class="footer">
 	  <div class="footer_inn">
 		<ul>

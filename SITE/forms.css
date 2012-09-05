@@ -12,3 +12,7 @@
 
 .lookingbx label {font-weight:normal!important;}
 .lookingbx label input{margin-left:0px;}
+
+/*upd*/
+.progress-control.c-top .progress-control-point {z-index:1;}
+.progress-control.c-top .progress-control-point-city {font-size: 11px; right: 3px; z-index:-1px; color:#859DBD;}

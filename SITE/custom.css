@@ -49,6 +49,6 @@ div.profileGroupContent #pets_custom {width:340px!important;}
     .c_left4{min-height:1px;}
     .helpbx.c8{background-color:#ecf4fb;}/*add*/
     .c-round{boder-radius:5px; -webkit-border-radius:5px; -moz-border-radius:5px; -khtml-border-radius:5px;}/*add*/
-    .attention{border:1px solid red!important;}/*change*/
+    .attention{border:1px solid #f0ecce!important;}/*change*/
     .rate {position: absolute; left: 3px; top: 3px; background: url(img/opacity.png) 0 0 repeat; color: white; padding: 4px 10px; font-size: 14px;}/*change*/
     .fixWidth135 {width: 135px;}
