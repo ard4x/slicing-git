@@ -40,6 +40,7 @@
 .vMode body{overflow:hidden; margin-right:15px;}
 .vMode .p-viewer{overflow-x:auto; overflow-y:scroll; position:fixed; height:100%; width:100%; z-index:100001; background: url(img/opacity.png) 0 0 repeat;}
 .vMode .p-viewer{position: absolute; top: 0; width: 100%; z-index: 888;}
+.vMode .header{z-index: 889; position:relative; box-shadow:0 2px 5px #484848;}
 
 /*mailerform*/
 .yangutu_popap.mailerform {width:610px;}

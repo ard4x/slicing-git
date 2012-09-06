@@ -378,6 +378,7 @@ input[type="button"].cl-right{border-radius:6px 0 0 6px; -webkit-border-radius:6
 .btn-ico.v7 .btn-txt{background-position:-2px -242px; padding-left:40px;}
 .btn-ico.v7 .btn-txt::after{content:''; position:absolute; left:28px; top:2px; height:31px; width:1px;}
 .large.btn-ico.v7 .btn-txt::after{height:40px;}
+.large.btn-ico.v7 .btn-txt{background-position:-2px -300px;}
 
     .btn-ico.btn-blue.v7 .btn-txt::after{background-color:#07487d;}
     .btn-ico.btn-red.v7 .btn-txt::after{background-color:#630e0e;}
