@@ -1,0 +1,373 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Yangutu</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="style(next).css" type="text/css" id="" />
+	<link rel="stylesheet" href="forms.css" type="text/css" id="" />
+	<link rel="stylesheet" href="buttons.css" type="text/css" id="" />
+	<link rel="stylesheet" href="popups.css" type="text/css" id="" />
+	<link rel="stylesheet" href="custom.css" type="text/css" id="" /> <!-- СТИЛИ КОТОРЫЕ УЖЕ ЕСТЬ НА ПРОДЕ // НЕОБХОДИМО ЗАМЕНИТЬ!!!!!-->
+
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <script src="js/jquery.stylish-select.js" type="text/javascript"></script>
+    
+	<script type="text/javascript">
+        /*script to view*/
+        $(function(){
+            
+            
+                $('select.select').sSelect();
+        
+        
+            $('.main_menu > li,.user_menu ul > li,.nf-tab > a,.nfvc-options').bind('click',function(){
+                $('.main_menu > li,.user_menu ul > li,.nf-tab > a,.nfvc-options-block').removeClass('active');
+                $(this).not('.nfvc-options').addClass('active');
+                $(this).next('.nfvc-options-block').addClass('active');
+                return false;
+            })
+            
+            function stsStyle(){ 
+                $('.select_menu').each(function(){
+                    var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),                    
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                    objElement.css({'width': w+'px'})
+                    console.log(obj.width())
+                
+                });
+            }
+            stsStyle();
+            
+            function cleftSrcoll(){
+                var $document = $(document),
+                    $element = $('.leftside'),
+                    className = 'scrolled';
+                    
+                if($.browser.msie){ var $document = $(window); } /*ИЕ не работает с document.scroll*/
+                
+                $document.scroll(function() {
+                  if ($document.scrollTop() >= 50) { 
+                    $element.addClass(className);
+                  } else {
+                    $element.removeClass(className);
+                  }
+                });
+            };
+            cleftSrcoll();
+        })
+    </script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header_inn">
+            <a href="#"><img src="./img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>	
+            <ul class="main_actmenu">
+                <li><a href=""><span class="v1">Messages</span><i class="hrg">1</i></a></li>
+                <li><a href=""><span class="v2">Signals</span><i class="hrg">99</i></a></li>
+            </ul>
+            <ul class="main_menu">
+                <li><a href="">People</a></li>
+                <li><a href="">Games</a></li>
+                <li>
+                    <a href="">Videobox</a>
+                    <div style="width:300px;">
+                        <div class="inner">
+                            <ul class="left">
+                                <li><a href="http://yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Adventures">Adventures</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cars">Cars</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Celebrities">Celebrities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Children">Children</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cities">Cities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Crazy">Crazy &amp; Extreme</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Dating+%26+Relationships">Dating Relationships</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Family">Family</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Fashion">Fashion</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Funny">Funny &amp; Cute</a></li>
+                            </ul>
+                            <ul class="right">
+                                <li><a href="http://yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Adventures">Adventures</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cars">Cars</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Celebrities">Celebrities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Children">Children</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cities">Cities</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Crazy">Crazy &amp; Extreme</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Dating+%26+Relationships">Dating &amp; Relationships</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Family">Family</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Fashion">Fashion</a></li>
+                                <li><a href="http://yangutu.com/video/tag/Funny">Funny &amp; Cute</a></li>
+                            </ul>
+                            <div class="clr2"></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="">Talks</a>
+                    <div>
+                        <div class="inner">
+                            <ul>
+                                <li><a href="">Daily Talks</a></li>
+                                <li><a href="">Hot discussions</a></li>
+                                <li><a href="">Corporate blog</a></li>
+                                <li><a href="">Polls</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">Questions</a></li>
+            </ul>
+            <div class="user_menu">
+                <div>
+                    <ul>
+                        <li>
+                            <a class="todo" href="" title="Accaunt Settings"><i></i></a>
+                            <div>
+                                <div class="inner">
+                                    <ul>
+                                        <li><a href="">Пригласить друзей</a></li>
+                                        <li><a href="">Деньги за друзей</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <ul>
+                                        <li><a href="">Email уведомления</a></li>
+                                        <li><a href="">Платежи</a></li>
+                                        <li><a href="">Заблокированные пользователи</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <ul>
+                                        <li><a href="">Yangutu iPhone</a></li>
+                                        <li><a href="">Yangutu Android</a></li>
+                                    </ul>
+                                    <div class="hr"><div></div></div>
+                                    <a href="">Выход</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="tuse">
+                                <a href="" title="Julia's profile"><img src="./img/36x36pic.png" alt="" /></a>
+                                <a href="" title="Julia's profile" class="fs3 pt"><b>Julia</b></a>
+                                <a href="" title="Add more coins">1 819 coins</a>
+                            </span>
+                            <div class="clr2"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clr2"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content_inn">
+            <p class="pt fs3 tbold">Face-to-Face</p>
+			<div class="c_left2">    
+                <div class="select_menu">
+                    <ul class="sts">
+                        <li class="select first"><a href="f2f.html"><span>Play Face-to-Face</span></a></li>
+                        <li><a href="f2f-want.html"><span>Want to meet me</span></a></li>
+                        <li><a href="f2f-i-want.html"><span>I want to meet</span></a></li>
+                        <li class="last"><a href="f2f-mutual.html"><span>Mutual attractions</span></a></li>
+                    </ul>
+                    <div class="clr2"></div>
+                </div>  
+                <div class="indentTop20">
+                    <div class="mbox prelative"><div class="inf_close"><a href=""><i>Close</i></a></div>
+                        Face-to-Face is a great option for online speeddating. Simply define the basic criteria - age, gender, region and distance - and 
+                        here you go. Now it's all up to you to decide - is it a good score for a date? If you answer "yes" or "maybe" we will notify the user 
+                        you choose. You will also be notified whenever somebody answers "yes" or "maybe" to your photo.
+                    </div>
+                </div>
+				<div class="lookingbx indentTop20">
+					<div class="content_menu_bottom">
+						<div class="inner">
+							<div class="progressbar">
+								<div class="progress-control">
+									<div class="progress-control-point"></div>									
+									<div class="progress-control-point"></div>									
+									<div class="progress-control-point"></div>									
+									<div class="progress-control-point"></div>									
+								</div>
+								<div class="progress-line" style="width:40%;"><div class="progress-line-button"><p><span><img src="./img/progress-line-arrow.png" alt="" title="" /><nobr>Within 15 miles</nobr></span></p></div></div>
+							</div>
+							<div>
+								<p class="left"><span>Minsk</span>&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Select from the list</a></p>
+								<p class="right"><span>Belarus</span></p>
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+							<div class="left indentRight20">
+								<p><b>Looking for a</b>  <label class="indentLeft10"><input type="radio" /> Woman</label>  <label class="indentLeft10"><input type="radio" /> Man</label> <b class="indentLeft20">Aged</b></p>
+							</div>
+							<div class="aged left">
+								<select class="select">
+									<option>any aged</option>
+									<option>19</option>
+									<option>..</option>
+									<option>99</option>
+								</select>
+							</div>
+							<div class="right">
+								<input type="button" value="Find people" class="button_blue small fixWidth120" />
+							</div>
+							<div class="clear"></div>
+						</div>
+					</div>
+				</div>
+                <div class="indentTop20">
+                    <p class="fs24 tbold tcenter">Want to meet her?</p>
+                    <div class="prelative">
+                        <div class="ftf-section-prev">
+                            <div>
+                                <a href=""><img src="./img/image33.png" class="thumb-style" width="260px" height="345px" alt="" /></a>
+                            </div>
+                            <div class="indentTop5 tright fs9">
+                                <a href="">Report this photo</a>
+                            </div>
+                            <div class="ftf-bb">
+                                <div class="fs3 tbold"><a href="">Marina</a>, 27 <span class="gray fs1 tnormal">Minsk, Belarus</span></div>
+                                <div class="fs1 indentTop5">Wants to meet with a man, 36-45 </div>
+                                <div class="indentTop5 fs1">
+                                    <span class="left gray">Interested In:</span>
+                                    <div class="indentLeft100">Flirt, Long-term Relationships,	Marriage</div>
+                                    <div class="clr2"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <b class="fs1 tbold">Her photo</b>
+                                <div class="indentTop5 ftf-cb-thumb min-effect">
+                                    <a href=""><img src="./img/image32.png" class="thumb-style" alt="" /></a>
+                                    <a href=""><img src="./img/image32.png" class="thumb-style" alt="" /></a>
+                                    <a href=""><img src="./img/image32.png" class="thumb-style" alt="" /></a>
+                                    <a href=""><img src="./img/image32.png" class="thumb-style" alt="" /></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ftf-section-next">
+                            <div>
+                                <a href=""><img src="./img/image13.png" class="thumb-style" width="260px" height="345px" alt="" /></a>
+                            </div>
+                            <div class="indentTop5 tright fs9">
+                                <a href="">Report this photo</a>
+                            </div>
+                            <div class="ftf-bb">
+                                <div class="fs3 tbold"><a href="">Marina</a>, 27 <span class="gray fs1 tnormal">Minsk, Belarus</span></div>
+                                <div class="fs1 indentTop5">Wants to meet with a man, 36-45 </div>
+                                <div class="indentTop5 fs1">
+                                    <span class="left gray">Interested In:</span>
+                                    <div class="indentLeft100">Flirt, Long-term Relationships,	Marriage</div>
+                                    <div class="clr2"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <b class="fs1 tbold">Her photo</b>
+                                <div class="indentTop5 ftf-cb-thumb min-effect">
+                                    <a href=""><img src="./img/image32.png" class="thumb-style" alt="" /></a>
+                                    <a href=""><img src="./img/image32.png" class="thumb-style" alt="" /></a>
+                                    <a href=""><img src="./img/image32.png" class="thumb-style" alt="" /></a>
+                                    <a href=""><img src="./img/image32.png" class="thumb-style" alt="" /></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ftf-play-opacity"></div>
+                        <div class="ftf-section">
+                            <div class="ftf-cb">
+                                <a class="btn btn-green cl-right" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth80">Yes</span></span></span></a>
+                                <a class="btn btn-ftf" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth80">Maybe</span></span></span></a>
+                                <a class="btn btn-red cl-left" href=""><span class="btn-lc"><span class="btn-m"><span class="btn-txt fixWidth80">No</span></span></span></a>
+                            </div>
+                            <div class="indentTop15">
+                                <a href=""><img src="./img/image30.png" class="thumb-style" width="326px" alt="" /></a>
+                            </div>
+                            <div class="indentTop5 tright">
+                                <a href="">Report this photo</a>
+                            </div>
+                            <div class="ftf-bb">
+                                <div class="fs24 tbold"><a href="">Marina</a>, 27 <span class="gray fs2 tnormal">Minsk, Belarus</span></div>
+                                <div class="fs2 indentTop5">Wants to meet with a man, 36-45 </div>
+                                <div class="indentTop10 fs2">
+                                    <span class="left gray">Interested In:</span>
+                                    <div class="indentLeft100">Flirt, Long-term Relationships,	Marriage</div>
+                                    <div class="clr2"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <b class="fs2 tbold">Her photo</b>
+                                <div class="indentTop10 ftf-cb-thumb">
+                                    <a href=""><img src="./img/image31.png" class="thumb-style" alt="" /></a>
+                                    <a href=""><img src="./img/image31.png" class="thumb-style" alt="" /></a>
+                                    <a href=""><img src="./img/image31.png" class="thumb-style" alt="" /></a>
+                                    <a href=""><img src="./img/image31.png" class="thumb-style" alt="" /></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+            <div class="c_right">
+                <div>
+                    <img src="./img/pbanner.png" alt="" />
+                </div>	
+                <div class="indentTop10">
+                    <img src="./img/pbanner.png" alt="" />
+                </div>	
+                <div class="indentTop10">
+                    <img src="./img/pbanner.png" alt="" />
+                </div>			
+            </div>
+			
+			<div class="clr2"></div>
+		</div>
+	</div>
+	
+    <div class="social_rate">
+        <img src="./img/social-links.png" alt="" />
+    </div>
+    
+    <div class="footer">
+        <div class="footer_inn">
+            <ul>
+                <li><a href="/page/about">About us</a></li>
+                <li><a href="/help">FAQ</a></li>
+                <li><a href="http://blog.yangutu.com/">Our blog</a></li>
+                <li><a href="/feedback">Contact us</a></li>
+            </ul>
+            <ul>
+                <li><a href="/page/policy">Privacy</a></li>
+                <li><a href="/page/terms">Terms of use</a></li>
+            </ul>
+            <ul>			
+                <li><a href="/page/scams">Scam warning</a></li>
+                <li><a href="/page/safety">Safety Tips</a></li>
+            </ul>
+            <ul>
+                <li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+                <li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+                <li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+
+            </ul>
+            <ul>
+                <li><a href="/dating/all">People Directory</a></li>
+            </ul>
+            <div class="right">
+                <font color="black">© 2010-2011 Yangutu Inc. All rights reserved</font><br>
+                <span>Yangutu (swahili) - My one and only.</span>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    
+</body>
+</html>

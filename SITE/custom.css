@@ -42,7 +42,7 @@ div.profileGroupContent #pets_custom {width:340px!important;}
     .header .logo{margin:12px 20px 0 0;}
     .content,.footer{background-color:transparent;} /*change*/
     .content_inn{background:url(img/content_inn_bg.png) 0 0 repeat; padding-left:10px; padding-right:10px; margin-bottom:10px; box-shadow:0 1px 5px #c6cdd3; border:solid #c6cdd3; border-width:0 1px 1px;} /*add*/
-    .social_rate {padding: 5px 0 10px; width: 950px; border-top: 0px solid transparent;/*change*/ text-align: center;}
+    .social_rate {padding: 5px 0 10px; width: 950px; margin:0 auto; border-top: 0px solid transparent;/*change*/ text-align: center;}
     h1,h2,h3,h4{font-family:'PT Sans', Arial;}/*change*/
     .no-resize{resize:none;}/*add*/
     .helpbx{display:block;}/*add*/

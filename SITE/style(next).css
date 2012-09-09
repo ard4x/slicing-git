@@ -573,7 +573,7 @@ textarea{padding:1px 2px 2px; font-size:14px; background-color:#fff;  border-top
 .uspopinn2 .links li {float: none; margin: 0 0 4px 0; padding: 0px; -moz-box-shadow: none !important; -webkit-box-shadow: none !important; -khtml-box-shadow: none !important; box-shadow: none !important; background: none !important;}
 .uspopbot2 {background: url(img/uspopbot2.png) bottom no-repeat; height: 5px;}
 
-.mbox {background-color:#f6f5eb; font-size: 14px; line-height: 18px; margin-bottom: 10px; padding: 20px 20px 15px 20px;}
+.mbox {background-color:#fffce2; font-size: 12px; line-height: 14px; padding: 15px 20px 15px 10px; border:1px solid #f0ecce;}
 .mbox2,.profile_first_block {background-color:#f6f5eb; font-size: 12px; line-height: 16px; margin-top: 0px; padding: 15px; position: relative; zoom:1; overflow:visible;}
 .mbox3 {background-color:#ecf4fb; font-size: 12px; line-height: 16px; margin-top: 0px; padding: 15px; position: relative; zoom:1; overflow:visible;}
 .mbox_bot {background:url(img/mbarr.gif) center top #ffffff no-repeat; height: 23px; margin-bottom: 10px;}
@@ -2973,9 +2973,9 @@ a:hover.nfvc-options>i,.nf-view-content.hover .nfvc-options>i,.nf-view-content:h
 .inf_block .inf_listview{padding:10px; background-color:#fff;}
 .inf_block .inf_listview .inf_listview_item{padding:10px 0; position:relative; border-bottom:1px solid #cccccc;}
 .inf_block .inf_listview > div{ border-top:1px solid #cccccc; }
-.inf_block .inf_listview .inf_close{position:absolute; right:5px; top:5px;}
-.inf_block .inf_listview .inf_close > a i{display: block; width: 9px; height: 9px; background: url(img/spr-upd.png) 100% -102px no-repeat; text-indent: -9999px; font-size: 0;}
-.inf_block .inf_listview .inf_close > a:hover i{background-position:100% -125px;}
+.inf_close{position:absolute; right:5px; top:5px;}
+.inf_close > a i{display: block; width: 9px; height: 9px; background: url(img/spr-upd.png) 100% -102px no-repeat; text-indent: -9999px; font-size: 0;}
+.inf_close > a:hover i{background-position:100% -125px;}
 
 .inf_block .inf_social a > i{display: inline-block; width: 16px; height: 16px; background-image: url(img/inf_spr.png); text-indent: -9999px; font-size: 0; vertical-align:middle; margin:0 4px;}
 .inf_block .inf_social a.v2 > i{background-position:-26px 50%;}
@@ -3040,3 +3040,19 @@ a:hover.nfvc-options>i,.nf-view-content.hover .nfvc-options>i,.nf-view-content:h
 .mspec-info{margin-top:10px; padding-top:10px; border-top:1px solid #ccc; color:#444; text-align:center;}
 
 .msb-ico{background:url(img/spr-upd.png) 100% 100% no-repeat; width:36px; height:36px; position:absolute; left:0; top:0;}
+
+/*ftf*/
+.ftf-section{position:relative; z-index:2; padding:15px; width:330px; margin:0 auto; background-color:#ecf4fb; border-left:1px solid #dfdfdf; border-right:1px solid #d6dade; border-bottom:1px solid #9f9f9f; border-radius:5px; -webkit-border-radius:5px; -webkit-border-radius:5px; box-shadow:1px 1px 1px #d6dade;}
+.ftf-bb{padding:10px 0; border-top:1px solid #ccc; border-bottom:1px solid #ccc; margin:10px 0;}
+.ftf-cb-thumb {position:relative; left:20px; margin-left:-20px;}
+.ftf-cb-thumb >a{display:inline-block; *display:inline; zoom:1; margin-right:11px;}
+.ftf-cb-thumb.min-effect >a{margin-right:7px;}
+.ftf-play-opacity{position:absolute; left:0; top:0; right:0; bottom:0; z-index:1; background:#fff; opacity:0.6;}
+.ftf-section-prev,.ftf-section-next{position:absolute; top:110px; z-index:-1; width:268px;}
+.ftf-section-prev{left:15px;}
+.ftf-section-next{right:10px;}
+
+.l-label{font:bold 18px 'PT Sans'; color:#333; padding:5px 8px; background-color:#eee;}
+.piclist .found_usr.ch_box .usr_info{width:170px;}
+.ch_box .ch_label{width:20px; float:left; margin-top:5px;}
+.ch_box .ch_label>input{margin:0;}
