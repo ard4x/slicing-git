@@ -1,0 +1,786 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Yangutu</title>
+        <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+        <link rel="stylesheet" href="chat.css" type="text/css" id="" />
+        <link rel="stylesheet" href="style.css" type="text/css" id="" />
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/chat.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $(window).resize(setChatHeight);
+                setChatHeight();
+                
+                $('.chbotbut li a').live('click',function(){
+                    $('.chbotbut li a').removeClass('active');
+                    $(this).addClass('active');
+                    var tabId =  $(this).attr('id');
+                    if(tabId == 'inbox-tab'){
+                        $('#contacts').hide(); $('#inbox').show();
+                    }else if(tabId == 'contacts-tab'){
+                        $('#contacts').show(); $('#inbox').hide();
+                    }
+                    return false;
+                });
+                
+            });
+        </script>
+
+        <!--[if IE 7]>
+            <link rel="stylesheet" type="text/css" href="ie7.css" />
+        <![endif]-->
+        <!--[if IE 8]>
+            <link rel="stylesheet" type="text/css" href="ie8.css" />
+        <![endif]-->
+    </head>
+    <body id="chat_body">
+
+    
+    <table cellpadding="0" cellspacing="0" class="chattbl" height="100%">
+	<col width="240">
+	<col width="">
+    <tr>
+		<td id="left-panel">
+		<ul class="chbotbut" style="">
+			<li><a id="inbox-tab" href="#inbox" class="">
+			<span>Conversations</span></a></li>
+			<li><a id="contacts-tab" href="#contacts" class="active"><span>All contacts</span></a></li>
+		</ul>
+
+		<div class="prelative scrh_cht" style=""><input type="text" id="quicksearch" class="input2 searchf placeholder" value="Quick search people" style=""> <a id="schClose" class="hidden" href="#"><img src="/img/close_ic.png" class="cls4" alt=""></a></div>
+
+
+		<div class="ch_userlstbx prelative" id="contacts" style="height: 221px; display: block; ">
+		<table cellpadding="0" cellspacing="0" class="ch_userlist">
+            <col width="43">
+			<col width="140">
+			<col width="">
+            <tr>
+				<td class="chatarr_dwn" id="f-soulmates" colspan="3"><a href="#">Soulmates (10)</a></td>
+			</tr>
+        </table>
+		<table cellpadding="0" cellspacing="0" class="ch_userlist contactslist" id="soulmates" style="">
+            <col width="43">
+			<col width="140">
+			<col width="">
+            <tr class="chat_conversation_contact inactive chbg2" rel="353231" style="">
+                <td class="first">
+                    <div class="brdpic7"><a href="#"><img src="https://yangutu-s8.s3.amazonaws.com/45/68/b6/46x46_4858934.jpg?1308578135" data-original="https://yangutu-s8.s3.amazonaws.com/45/68/b6/46x46_4858934.jpg?1308578135" width="28" height="28" style="display: inline; "></a></div>
+                </td>
+                <td><a class="name" href="#">Alekta</a>, 30</td>
+                <td class="sum"></td>
+            </tr>
+            <tr class="chat_conversation_contact inactive" rel="1016627" style="">
+                <td class="first">
+                    <div class="brdpic7"><a href="#"><img src="https://yangutu-s9.s3.amazonaws.com/98/64/80/46x46_5025165.jpg?1331280031" data-original="https://yangutu-s9.s3.amazonaws.com/98/64/80/46x46_5025165.jpg?1331280031" width="28" height="28" style="display: inline; "></a></div>
+                </td>
+	<td><a class="name" href="#">Aliona</a>, 43</td>
+	<td class="sum">&nbsp;</td>
+</tr><tr class="chat_conversation_contact inactive" rel="982528" style="">
+	<td class="first"><div class="brdpic7">
+			<a href="#"><img src="https://yangutu-s3.s3.amazonaws.com/62/8c/f0/46x46_4836214.jpg?1298881966" data-original="https://yangutu-s3.s3.amazonaws.com/62/8c/f0/46x46_4836214.jpg?1298881966" width="28" height="28" style="display: inline; "></a></div>
+	</td>
+	<td><a class="name" href="#">Bettyneva</a>, 25</td>
+	<td class="sum"></td>
+</tr><tr class="chat_conversation_contact inactive" rel="1018377" style="">
+	<td class="first"><div class="brdpic7">
+			<a href="#"><img src="https://yangutu-s0.s3.amazonaws.com/60/d1/11/46x46_5028526.jpg?1331445810" data-original="https://yangutu-s0.s3.amazonaws.com/60/d1/11/46x46_5028526.jpg?1331445810" width="28" height="28" style="display: inline; "></a></div>
+	</td>
+	<td><a class="name" href="#">Deanna</a>, 29</td>
+	<td class="sum"></td>
+</tr><tr class="chat_conversation_contact " rel="1007247" style="">
+	<td class="first"><div class="brdpic7">
+			<a href="#"><img src="https://yangutu-s0.s3.amazonaws.com/dd/7e/a3/46x46_4993607.JPG?1330533342" data-original="https://yangutu-s0.s3.amazonaws.com/dd/7e/a3/46x46_4993607.JPG?1330533342" width="28" height="28" style="display: inline; "></a></div>
+	</td>
+	<td><a class="name" href="#">Gala</a>, 43</td>
+	<td class="sum">&nbsp;</td>
+</tr><tr class="chat_conversation_contact inactive" rel="1025797" style="">
+	<td class="first"><div class="brdpic7">
+			<a href="#"><img src="https://yangutu-s6.s3.amazonaws.com/38/62/7a/46x46_5041491.jpg?1335855258" data-original="https://yangutu-s6.s3.amazonaws.com/38/62/7a/46x46_5041491.jpg?1335855258" width="28" height="28" style="display: inline; "></a></div>
+	</td>
+	<td><a class="name" href="#">Kate</a>, 28</td>
+	<td class="sum">&nbsp;</td>
+</tr><tr class="chat_conversation_contact inactive" rel="637672" style="">
+	<td class="first"><div class="brdpic7">
+			<a href="#"><img src="https://yangutu-s7.s3.amazonaws.com/b0/ef/b6/46x46_1585228.jpg?1296727653" data-original="https://yangutu-s7.s3.amazonaws.com/b0/ef/b6/46x46_1585228.jpg?1296727653" width="28" height="28" style="display: inline; "></a></div>
+	</td>
+	<td><a class="name" href="#">Mila</a>, 39</td>
+	<td class="sum">&nbsp;</td>
+</tr><tr class="chat_conversation_contact inactive" rel="982484" style="">
+	<td class="first"><div class="brdpic7">
+			<a href="#"><img src="https://yangutu-s5.s3.amazonaws.com/e3/20/04/46x46_4836012.jpg?1298276438" data-original="https://yangutu-s5.s3.amazonaws.com/e3/20/04/46x46_4836012.jpg?1298276438" width="28" height="28" style="display: inline; "></a></div>
+	</td>
+	<td><a class="name" href="#">Sasha</a>, 24</td>
+	<td class="sum">&nbsp;</td>
+</tr><tr class="chat_conversation_contact " rel="982446" style="">
+	<td class="first"><div class="brdpic7">
+			<a href="#"><img src="https://yangutu-s4.s3.amazonaws.com/db/8b/9e/46x46_4835613.JPG?1297760236" data-original="https://yangutu-s4.s3.amazonaws.com/db/8b/9e/46x46_4835613.JPG?1297760236" width="28" height="28" style="display: inline; "></a></div>
+	</td>
+	<td><a class="name" href="#">Verdell</a>, 68</td>
+	<td class="sum">&nbsp;</td>
+</tr><tr class="chat_conversation_contact inactive" rel="360564" style="">
+	<td class="first"><div class="brdpic7">
+			<a href="#"><img src="https://yangutu-s2.s3.amazonaws.com/77/1b/91/46x46_5055797.jpeg?1338278807" data-original="https://yangutu-s2.s3.amazonaws.com/77/1b/91/46x46_5055797.jpeg?1338278807" width="28" height="28" style="display: inline; "></a></div>
+	</td>
+	<td><a class="name" href="#">????</a>, 28</td>
+	<td class="sum">&nbsp;</td>
+</tr>		</tbody></table>
+		<table cellpadding="0" cellspacing="0" class="ch_userlist">
+			<colgroup><col width="43">
+			<col width="140">
+			<col width="">
+			</colgroup><tbody><tr>
+				<td class="chatarr_dwn" id="f-favorites" colspan="3"><a href="#">Favorites (6)</a></td>
+			</tr>
+		</tbody></table>
+		<table cellpadding="0" cellspacing="0" class="ch_userlist contactslist" id="favorites" style="">
+			<colgroup><col width="43">
+			<col width="140">
+			<col width="">
+			</colgroup><tbody><tr class="chat_conversation_contact inactive" rel="353231" style="">
+	<td class="first"><div class="brdpic7">
+			<a href="#"><img src="https://yangutu-s8.s3.amazonaws.com/45/68/b6/46x46_4858934.jpg?1308578135" data-original="https://yangutu-s8.s3.amazonaws.com/45/68/b6/46x46_4858934.jpg?1308578135" width="28" height="28" style="display: inline; "></a></div>
+	</td>
+	<td><a class="name" href="#">Alekta</a>, 30</td>
+	<td class="sum">&nbsp;</td>
+</tr><tr class="chat_conversation_contact inactive" rel="1003747" style="">
+	<td class="first"><div class="brdpic7">
+			<a href="#"><img src="https://yangutu-s2.s3.amazonaws.com/f1/1c/9d/46x46_5020731.jpg?1331034138" data-original="https://yangutu-s2.s3.amazonaws.com/f1/1c/9d/46x46_5020731.jpg?1331034138" width="28" height="28" style="display: inline; "></a></div>
+	</td>
+	<td><a class="name" href="#">Alenka</a>, 27</td>
+	<td class="sum">&nbsp;</td>
+</tr><tr class="chat_conversation_contact inactive" rel="360368" style="">
+	<td class="first"><div class="brdpic7">
+	<span class="vip"><img title="" alt="" src="/img/vip.png"></span>		<a href="#"><img src="https://yangutu-s9.s3.amazonaws.com/eb/20/73/46x46_4992337.jpg?1341214597" data-original="https://yangutu-s9.s3.amazonaws.com/eb/20/73/46x46_4992337.jpg?1341214597" width="28" height="28" style="display: inline; "></a></div>
+	</td>
+	<td><a class="name" href="#">Rina</a>, 29</td>
+	<td class="sum">&nbsp;</td>
+</tr><tr class="chat_conversation_contact inactive" rel="360563" style="">
+	<td class="first"><div class="brdpic7">
+			<a href="#"><img src="https://yangutu-s3.s3.amazonaws.com/34/70/88/46x46_158443.jpg?1329493868" data-original="https://yangutu-s3.s3.amazonaws.com/34/70/88/46x46_158443.jpg?1329493868" width="28" height="28" style="display: inline; "></a></div>
+	</td>
+	<td><a class="name" href="#">Svetlana</a>, 19</td>
+	<td class="sum">&nbsp;</td>
+</tr><tr class="chat_conversation_contact inactive" rel="360754" style="">
+	<td class="first"><div class="brdpic7">
+			<a href="#"><img src="https://yangutu-s7.s3.amazonaws.com/1a/34/e2/46x46_158676.jpg?1329494017" data-original="https://yangutu-s7.s3.amazonaws.com/1a/34/e2/46x46_158676.jpg?1329494017" width="28" height="28" style="display: inline; "></a></div>
+	</td>
+	<td><a class="name" href="#">Tania</a>, 32</td>
+	<td class="sum">&nbsp;</td>
+</tr><tr class="chat_conversation_contact inactive" rel="353066" style="">
+	<td class="first"><div class="brdpic7">
+			<a href="#"><img src="https://yangutu-s2.s3.amazonaws.com/6d/85/39/46x46_4839375.jpg?1303133281" data-original="https://yangutu-s2.s3.amazonaws.com/6d/85/39/46x46_4839375.jpg?1303133281" width="28" height="28" style="display: inline; "></a></div>
+	</td>
+	<td><a class="name" href="#">Anna</a>, 26</td>
+	<td class="sum">&nbsp;</td>
+</tr>		</tbody></table>
+		<table cellpadding="0" cellspacing="0" class="ch_userlist">
+			<colgroup><col width="43">
+			<col width="140">
+			<col width="">
+			</colgroup><tbody><tr>
+				<td class="chatarr" id="f-others" colspan="3"><a href="#">Others</a></td>
+			</tr>
+			</tbody></table><table cellpadding="0" cellspacing="0" class="ch_userlist hidden contactslist" id="others" style="display: none; ">
+				<colgroup><col width="43">
+				<col width="140">
+				<col width="">
+							</colgroup></table>
+			</div>
+
+			<div class="ch_userlstbx hidden prelative" id="inbox" style="height: 221px; display: none; ">
+                <table cellpadding="0" cellspacing="0" class="ch_userlist contactslist">
+                    <colgroup><col width="43">
+                    <col width="140">
+                    <col width="">
+                                                                                                    </colgroup><tbody><tr>
+                        <td class="first" colspan="3">
+                                                            No more conversations                                                    </td>
+                    </tr>
+                </tbody></table>
+			</div>
+
+			</td>
+			<td rowspan="2" class="vmiddle ch_start" id="no-chat" style="display: none; ">
+				To start a conversation <br>
+				click a match<br>
+				in your singles list			</td>
+			<td rowspan="2" class="" id="chat-window" style="display: table-cell; ">
+			<table cellpadding="0" cellspacing="0" class="chatrighttbl" id="">
+				<tbody><tr>
+					<td id="messages" data-userid="0"><table cellpadding="0" cellspacing="0" class="chatrighttbl" rel="353231" deleted="" id="chat-messages-353231">
+<tbody><tr>
+    <td class="chatrighttbltoptd">
+        <div class="chatrighttbltop">
+
+            <div class="brdpic8"><a href="/alekta" target="_blank"><img src="https://yangutu-s8.s3.amazonaws.com/45/68/b6/46x46_4858934.jpg?1308578135" width="48" height="48"></a></div>
+            <p class="uname" rel="353231">
+                <a href="/alekta" target="_blank" rel="353231">Alekta</a>,
+                &nbsp;30                                    <img alt="online" title="Online" src="/img/online.png" class="online-bulb hidden" style="margin-bottom: 4px;">
+                                <br>
+                                <span class="chatLoc gray"><span class="loc-sub-city" title="Ma'ili">Ma'ili</span>, <span class="loc-sub-city" title="Hawaii">Hawaii</span>, <span class="loc-sub-country" title="United States">United States</span></span><br><span class="chatLoc"><span>Alekta wants to meet with a man,</span> <span class="seekingAge">18+</span>
+</span>
+            </p>
+            <div class="clr2"></div>
+            <div class="lsTd">
+                <ul class="horlist">
+                                        <li><a href="/payments/features/add-gift/user/353231" class="ygPopup gift-options" data-options="{callbackOpen: &quot;giftFunctions&quot;}">Send Gift</a></li>
+                </ul>
+                <div class="orborder2">
+                    <a href="#">or <img src="/img/orarr.gif" alt=""></a>
+                        <div class="orborderlistfull" style="left:-116px;display:none;">
+                         <div class="inn">
+                            <ul id="profile_ull">
+                                <li><a class="icebreaker" target="_blank" rel="/icebreaker/main-ask-form/353231">Send Icebreaker</a></li>
+                                <li><a class="fav-contact" href="/favorites/remove/userId/353231">Remove from favorites</a></li>
+                            </ul>
+                           </div>
+                           <div class="bot"></div>
+                        </div>
+                    </div>
+                </div>
+                                <a href="/spam/abuse-report" class="report_abuse hidden" id="report_abuse2" userid="353231" username="Alekta, 30">Report this person</a>
+            </div>
+        
+    </td>
+</tr>
+<tr>
+    <td class="messagestd" id="find_scroll">
+        <div class="messagesbx" id="scroll" style="height: 66px; ">
+
+                                        <div class="timeline">
+                            <div class="paginator-style left innerTop0 indentLeft5 hidden">
+    <input type="hidden" id="paginator-pages-count" value="1">
+    <input type="hidden" id="paginator-per-page-count" value="50">
+    <ul class="left">
+        
+                    <li class="prev">
+                <a href="javascript:void(0)"><span>Next</span></a>
+            </li>
+        
+                                    <li class="pages act">
+                    <a href="javascript:void(0)"><span>1</span></a>
+                </li>
+                    
+                    <li class="prev">
+                <a href="javascript:void(0)"><span>Prev</span></a>
+            </li>
+        
+    </ul>
+</div>
+<div class="clr2"></div>
+                        </div>
+						<ul class="chat-messages">
+                            <li class="timeline">
+    <img src="/img/timeic1.gif" class="indentRight5" alt="">
+    <span class="gray tbold">18.02.2011</span>
+</li>
+<li class="user1" data-rel="12532" data-sender="385560" data-msgdate="18.02.2011" data-msgtime="1298032323">
+    <div class="time">
+        <span>
+            14:32        </span>
+    </div>
+<div class="mess">
+	<table class="messContruct">
+		<tbody><tr>
+			<td class="first">
+									<span>
+						You					</span>
+							</td>
+			<td>
+				 ????? ?????!)			</td>
+		</tr>
+	</tbody></table>
+</div>
+</li>
+<li class="timeline">
+    <img src="/img/timeic1.gif" class="indentRight5" alt="">
+    <span class="gray tbold">20.06.2011</span>
+</li>
+<li class="user2" data-rel="101035" data-sender="353231" data-msgdate="20.06.2011" data-msgtime="1308570286">
+    <div class="time">
+        <span>
+            13:44        </span>
+    </div>
+<div class="mess">
+	<table class="messContruct">
+		<tbody><tr>
+			<td class="first">
+									<span>
+						Alekta					</span>
+							</td>
+			<td>
+				  hi!			</td>
+		</tr>
+	</tbody></table>
+</div>
+</li>
+<li class="user2" data-rel="101037" data-sender="353231" data-msgdate="20.06.2011" data-msgtime="1308570366">
+    <div class="time">
+        <span>
+            13:46        </span>
+    </div>
+<div class="mess">
+	<table class="messContruct">
+		<tbody><tr>
+			<td class="first">
+							</td>
+			<td>
+				  hello			</td>
+		</tr>
+	</tbody></table>
+</div>
+</li>
+<li class="timeline">
+    <img src="/img/timeic1.gif" class="indentRight5" alt="">
+    <span class="gray tbold">14.05.2012</span>
+</li>
+<li class="user1" data-rel="220222" data-sender="385560" data-msgdate="14.05.2012" data-msgtime="1336988351">
+    <div class="time">
+        <span>
+            11:39        </span>
+    </div>
+<div class="mess">
+	<table class="messContruct">
+		<tbody><tr>
+			<td class="first">
+									<span>
+						You					</span>
+							</td>
+			<td>
+				 ??????			</td>
+		</tr>
+	</tbody></table>
+</div>
+</li>
+<li class="user1" data-rel="220223" data-sender="385560" data-msgdate="14.05.2012" data-msgtime="1336988361">
+<div class="mess">
+	<table class="messContruct">
+		<tbody><tr>
+			<td class="first">
+							</td>
+			<td>
+				 ??? ?????			</td>
+		</tr>
+	</tbody></table>
+</div>
+</li>
+<li class="user1" data-rel="220224" data-sender="385560" data-msgdate="14.05.2012" data-msgtime="1336988364">
+<div class="mess">
+	<table class="messContruct">
+		<tbody><tr>
+			<td class="first">
+							</td>
+			<td>
+				 ? ???			</td>
+		</tr>
+	</tbody></table>
+</div>
+</li>
+<li class="user1" data-rel="220237" data-sender="385560" data-msgdate="14.05.2012" data-msgtime="1336988816">
+    <div class="time">
+        <span>
+            11:46        </span>
+    </div>
+<div class="mess">
+	<table class="messContruct">
+		<tbody><tr>
+			<td class="first">
+							</td>
+			<td>
+				 ntcn			</td>
+		</tr>
+	</tbody></table>
+</div>
+</li>
+<li class="user1" data-rel="220240" data-sender="385560" data-msgdate="14.05.2012" data-msgtime="1336988840">
+    <div class="time">
+        <span>
+            11:47        </span>
+    </div>
+<div class="mess">
+	<table class="messContruct">
+		<tbody><tr>
+			<td class="first">
+							</td>
+			<td>
+				 ????			</td>
+		</tr>
+	</tbody></table>
+</div>
+</li>
+                        </ul>
+
+                    </div>
+                    
+    </td>
+</tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" class="chatrighttbl" rel="1018377" deleted="" id="chat-messages-1018377" style="display: none; ">
+<tbody><tr>
+    <td class="chatrighttbltoptd">
+        <div class="chatrighttbltop">
+
+            <div class="brdpic8"><a href="/3633453130" target="_blank"><img src="https://yangutu-s0.s3.amazonaws.com/60/d1/11/46x46_5028526.jpg?1331445810" width="48" height="48"></a></div>
+            <p class="uname" rel="1018377">
+                <a href="/3633453130" target="_blank" rel="1018377">Deanna</a>,
+                &nbsp;29                                    <img alt="online" title="Online" src="/img/online.png" class="online-bulb hidden" style="margin-bottom: 4px;">
+                                <br>
+                                <span class="chatLoc gray"><span class="loc-sub-city" title="Zenica">Zenica</span>, <span class="loc-sub-country" title="Bosnia and Herzegovina">Bosnia And Herzegovina</span></span><br><span class="chatLoc"><span>Deanna wants to meet with a man,</span> <span class="seekingAge">26-35</span>
+</span>
+            </p>
+            <div class="clr2"></div>
+            <div class="lsTd">
+                <ul class="horlist">
+                                        <li><a href="/payments/features/add-gift/user/1018377" class="ygPopup gift-options" data-options="{callbackOpen: &quot;giftFunctions&quot;}">Send Gift</a></li>
+                </ul>
+                <div class="orborder2">
+                    <a href="#">or <img src="/img/orarr.gif" alt=""></a>
+                        <div class="orborderlistfull" style="left:-116px;display:none;">
+                         <div class="inn">
+                            <ul id="profile_ull">
+                                <li><a class="icebreaker" target="_blank" rel="/icebreaker/main-ask-form/1018377">Send Icebreaker</a></li>
+                                <li><a class="fav-contact" href="/favorites/add/userId/1018377">Add to favorites</a></li>
+                            </ul>
+                           </div>
+                           <div class="bot"></div>
+                        </div>
+                    </div>
+                </div>
+                                <a href="/spam/abuse-report" class="report_abuse hidden" id="report_abuse2" userid="1018377" username="Deanna, 29">Report this person</a>
+            </div>
+        
+    </td>
+</tr>
+<tr>
+    <td class="messagestd" id="find_scroll">
+        <div class="messagesbx" id="scroll" style="height: 247px; ">
+
+                
+                        <div class="chMess tcenter">
+                            <p class="chMess_title">Writing your first message for <br></p>
+                            <p>
+                                Your never get a second chance to make a first impression.<br>
+                                <a href="/payments/features/add-gift/user/1018377" id="add-gift">Send a gift</a> to impress your new contact. <br>
+                                Or simply write something interesting and exciting.<br>
+                            </p>
+                        </div>
+					<ul class="chat-messages"></ul>
+                    
+    </div></td>
+</tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" class="chatrighttbl" rel="982528" deleted="" id="chat-messages-982528" style="display: none; ">
+<tbody><tr>
+    <td class="chatrighttbltoptd">
+        <div class="chatrighttbltop">
+
+            <div class="brdpic8"><a href="/999660479" target="_blank"><img src="https://yangutu-s3.s3.amazonaws.com/62/8c/f0/46x46_4836214.jpg?1298881966" width="48" height="48"></a></div>
+            <p class="uname" rel="982528">
+                <a href="/999660479" target="_blank" rel="982528">Bettyneva</a>,
+                &nbsp;25                                    <img alt="online" title="Online" src="/img/online.png" class="online-bulb hidden" style="margin-bottom: 4px;">
+                                <br>
+                                <span class="chatLoc gray"><span class="loc-sub-city" title="Francavilla in Sinni">Francavilla In Sinni</span>, <span class="loc-sub-country" title="Italy">Italy</span></span><br><span class="chatLoc"><span>Bettyneva wants to meet with a man,</span> <span class="seekingAge">46-55</span>
+</span>
+            </p>
+            <div class="clr2"></div>
+            <div class="lsTd">
+                <ul class="horlist">
+                                        <li><a href="/payments/features/add-gift/user/982528" class="ygPopup gift-options" data-options="{callbackOpen: &quot;giftFunctions&quot;}">Send Gift</a></li>
+                </ul>
+                <div class="orborder2">
+                    <a href="#">or <img src="/img/orarr.gif" alt=""></a>
+                        <div class="orborderlistfull" style="left:-116px;display:none;">
+                         <div class="inn">
+                            <ul id="profile_ull">
+                                <li><a class="icebreaker" target="_blank" rel="/icebreaker/main-ask-form/982528">Send Icebreaker</a></li>
+                                <li><a class="fav-contact" href="/favorites/add/userId/982528">Add to favorites</a></li>
+                            </ul>
+                           </div>
+                           <div class="bot"></div>
+                        </div>
+                    </div>
+                </div>
+                                <a href="/spam/abuse-report" class="report_abuse hidden" id="report_abuse2" userid="982528" username="Bettyneva, 25">Report this person</a>
+            </div>
+        
+    </td>
+</tr>
+<tr>
+    <td class="messagestd" id="find_scroll">
+        <div class="messagesbx" id="scroll" style="height: 247px; ">
+
+                
+                        <div class="chMess tcenter">
+                            <p class="chMess_title">Writing your first message for <br></p>
+                            <p>
+                                Your never get a second chance to make a first impression.<br>
+                                <a href="/payments/features/add-gift/user/982528" id="add-gift">Send a gift</a> to impress your new contact. <br>
+                                Or simply write something interesting and exciting.<br>
+                            </p>
+                        </div>
+					<ul class="chat-messages"></ul>
+                    
+    </div></td>
+</tr>
+</tbody></table>
+<table cellpadding="0" cellspacing="0" class="chatrighttbl" rel="940918" deleted="" id="chat-messages-940918" style="display: none; ">
+<tbody><tr>
+    <td class="chatrighttbltoptd">
+        <div class="chatrighttbltop">
+
+            <div class="brdpic8"><a href="/2994958922" target="_blank"><img src="https://yangutu-s0.s3.amazonaws.com/0f/73/30/46x46_4533390.jpg?1311158459" width="48" height="48"></a></div>
+            <p class="uname" rel="940918">
+                <a href="/2994958922" target="_blank" rel="940918">Zebrarose</a>,
+                &nbsp;31                                    <img alt="online" title="Online" src="/img/online.png" class="online-bulb hidden" style="margin-bottom: 4px;">
+                                <br>
+                                <span class="chatLoc gray"><span class="loc-sub-city" title="Sosnowiec">Sosnowiec</span>, <span class="loc-sub-country" title="Poland">Poland</span></span><br><span class="chatLoc"><span>Zebrarose wants to meet with a man,</span> <span class="seekingAge">25-65</span>
+</span>
+            </p>
+            <div class="clr2"></div>
+            <div class="lsTd">
+                <ul class="horlist">
+                                        <li><a href="/payments/features/add-gift/user/940918" class="ygPopup gift-options" data-options="{callbackOpen: &quot;giftFunctions&quot;}">Send Gift</a></li>
+                </ul>
+                <div class="orborder2">
+                    <a href="#">or <img src="/img/orarr.gif" alt=""></a>
+                        <div class="orborderlistfull" style="left:-116px;display:none;">
+                         <div class="inn">
+                            <ul id="profile_ull">
+                                <li><a class="icebreaker" target="_blank" rel="/icebreaker/main-ask-form/940918">Send Icebreaker</a></li>
+                                <li><a class="fav-contact" href="/favorites/add/userId/940918">Add to favorites</a></li>
+                            </ul>
+                           </div>
+                           <div class="bot"></div>
+                        </div>
+                    </div>
+                </div>
+                                <a href="/spam/abuse-report" class="report_abuse hidden" id="report_abuse2" userid="940918" username="Zebrarose, 31">Report this person</a>
+            </div>
+        
+    </td>
+</tr>
+<tr>
+    <td class="messagestd" id="find_scroll">
+        <div class="messagesbx" id="scroll" style="height: 247px; ">
+
+                
+                        <div class="chMess tcenter">
+                            <p class="chMess_title">Writing your first message for <br></p>
+                            <p>
+                                Your never get a second chance to make a first impression.<br>
+                                <a href="/payments/features/add-gift/user/940918" id="add-gift">Send a gift</a> to impress your new contact. <br>
+                                Or simply write something interesting and exciting.<br>
+                            </p>
+                        </div>
+					<ul class="chat-messages"></ul>
+                    
+    </div></td>
+</tr>
+</tbody></table>
+
+						</td>
+				</tr>
+				<tr>
+					<td class="chatrighttblsrchbg hidden" id="msg-finder" style="background-color:#fff;">
+					<table cellpadding="0" cellspacing="0" class="chsearch hidden" id="msg-table">
+						<colgroup><col width="">
+						<col width="70">
+						<col width="30">
+						</colgroup><tbody><tr>
+							<td class="innerRight20"><input type="text" class="input2 flWidth100" id="finder-query"></td>
+							<td><a href="#" id="finder-prev" class="indentRight10">Prev</a><a href="#" id="finder-next">Next</a></td>
+							<td class="tright"><a href="#" class="finder-toggle"><img src="/img/closeic4.gif" alt="close"></a></td>
+						</tr>
+					</tbody></table>
+					<table id="smiles-table" class="hidden chsearch no-sel">
+						<colgroup><col width="">
+						<col width="30">
+						</colgroup><tbody><tr>
+                            <td class="smiles-container">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/10.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/11.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/12.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/13.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/14.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/15.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/17.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/18.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/19.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/1.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/20.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/21.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/22.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/23.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/25.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/26.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/27.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/28.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/29.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/2.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/30.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/32.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/33.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/34.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/35.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/36.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/37.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/39.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/3.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/40.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/42.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/43.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/44.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/45.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/46.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/4.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/51.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/55.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/57.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/59.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/5.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/60.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/61.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/62.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/65.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/6.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/70.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/7.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/8.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/9.gif">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/paid/16.gif" class="vip-only no-sel">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/paid/24.gif" class="vip-only no-sel">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/paid/31.gif" class="vip-only no-sel">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/paid/38.gif" class="vip-only no-sel">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/paid/41.gif" class="vip-only no-sel">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/paid/47.gif" class="vip-only no-sel">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/paid/48.gif" class="vip-only no-sel">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/paid/49.gif" class="vip-only no-sel">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/paid/50.gif" class="vip-only no-sel">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/paid/52.gif" class="vip-only no-sel">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/paid/53.gif" class="vip-only no-sel">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/paid/54.gif" class="vip-only no-sel">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/paid/56.gif" class="vip-only no-sel">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/paid/58.gif" class="vip-only no-sel">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/paid/63.gif" class="vip-only no-sel">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/paid/64.gif" class="vip-only no-sel">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/paid/66.gif" class="vip-only no-sel">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/paid/67.gif" class="vip-only no-sel">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/paid/68.gif" class="vip-only no-sel">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/paid/69.gif" class="vip-only no-sel">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/paid/71.gif" class="vip-only no-sel">
+                                 
+                                   <img draggable="false" src="/img/blank.gif" data-original="/smiles/paid/72.gif" class="vip-only no-sel">
+                                							</td>
+							<td class="tright"><a href="#" class="smile-toggle"><img src="/img/closeic4.gif" alt="close"></a></td>
+						</tr>
+					</tbody></table>
+
+					</td>
+				</tr>
+
+				<tr>
+					<td class="chinputtd">
+					<div class="chinputmes">					<p class="left">Write a message:</p>
+					<p class="smiles-link right"><a id="select-smile" href="#"><span class="smile">Smiles</span></a></p>
+					<p class="help-contact right">Any problems with chat? <a href="/dating/feedback" target="_blank">Contact us</a></p>
+					<div class="clr2"></div>
+					</div>
+					<div class="chinputmesarea" id="texteditor">
+                        <textarea id="msgtxt" class="hidden"></textarea>
+                        <div id="chat_input_text" class="msgtxt" contenteditable="true"></div>
+                        <div class="left">
+                            <input type="submit" value="Send" class="button_green large indentTop10 indentRight10" id="reply">
+                            <span class="gray fs9" title="Ctrl-Enter or Shift-Enter for a new line">Use Enter to send a message</span>
+                        </div>
+                        <div class="ctIcos"><a href="#" id="find-message"><span class="find"></span></a>
+                                                            <span class="notactive hidden" style="float: right; margin-left: 8px;">Report spam</span>
+                                <a href="/spam/abuse-report" class="report_abuse" id="report_abuse" userid="353231" username="Alekta, 30">Report spam</a>
+                                                            <a id="block" href="/profile/block/blockId/353231">Block</a>
+                        </div>
+                        <div class="clr2"></div>
+					</div>
+					</td>
+				</tr>
+			</tbody></table>
+			
+			</td>
+			</tr>
+        </table>
+
+
+    </body>
+</html>
