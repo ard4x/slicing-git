@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Step 1 - состояние 1</title>
+<link rel="stylesheet" type="text/css" href="reset.css">
+
+<!--  Файлы для замены селектов, есть на сервере -->
+    <link rel="stylesheet" href="style(next).css" type="text/css" id="" />
+    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <script src="js/jquery.stylish-select.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+    </script>
+ <!--  ---------------------------------------- -->
+
+<link rel="stylesheet" type="text/css" href="steps.css">
+
+
+</head>
+<body>
+  
+  <div id="regSteps">
+  
+    <div id="header">
+        <h1>Congratulations! Registration is completed!</h1>
+        <h3>Tell a little bit about yourself to others</h3>
+        <ul class="progressBar">
+            <li class="active">1. Basic information</li>
+            <li>2. Interests</li>
+            <li class="last">3. In your own words</li>
+        </ul>
+    
+    </div><!-- /#header -->
+    
+    <div id="content">     
+        <div class="leftSide">
+            <div class="stepDescr">
+                <h2>Portray yourself</h2>
+                <p>Show what, in your opinion, 
+describes you in the best way.</p>
+            
+            </div><!-- /.stepDescr -->
+        
+        </div><!-- /.left -->
+        
+        <div id="regStep1" class="rightSide">
+            <div class="loadPhoto">
+                <div class="label">
+                    Upload photo:
+                </div>
+                <div class="content">
+                    <div class="photo">
+                        <img src="img/default.png">
+                        <div class="photoDescr off"> <!-- .off  - выключает описание фото -->
+                            <span> </span>
+                        </div>
+                    </div>
+                    
+                    <p>
+                    Members often filter out people without photos 
+when the search profiles. Don't let it happen to 
+you! Post a photo and attract more attention...
+                    </p>
+                    
+                    <a href="#" class="btn-m-7 btn-load"><span>Choose a file...</span></a>
+                
+                </div>
+                
+            
+            </div><!-- /.loadFoto -->
+             
+                <form action="#" name="form" id="form" class="form">
+                    <div class="formRow">
+                        <div class="label">Language:</div>
+                        <div class="content">
+                            <div class="fixWidth168 left">
+                                <select id="sel-1" class="sSelect">
+                                    <option selected="selected">Please select</option>
+                                    <option>Value 1</option>
+                                    <option>Value 2</option>
+                                    <option>Value 3</option>
+                                </select>
+                            </div>
+                            <div class="fixWidth168 right"> 
+                                <select id="sel-2" class="sSelect">
+                                    <option selected="selected">Your level</option>
+                                    <option>Value 1</option>
+                                    <option>Value 2</option>
+                                    <option>Value 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="errMsg hide">    <!-- пример Скрытия вывода ошибки -->
+                            Need to be filled
+                        </div>
+                    </div><!-- /.formRow -->
+                    
+                    <div class="formRow">
+                        <div class="label">Relationship status:</div>
+                        <div class="content">
+                            <div class="flWidth100 err">
+                                <select id="sel-3" class="sSelect">    <!-- пример вывода ошибки -->
+                                    <option selected="selected">Please select</option>
+                                    <option>Value 1</option>
+                                    <option>Value 2</option>
+                                    <option>Value 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="errMsg">              <!-- пример вывода ошибки -->
+                             Need to be filled
+                        </div>
+                    </div> <!-- /.formRow -->
+                    
+                    <div class="formRow">
+                        <div class="label">Age of partner:</div>
+                        <div class="content">
+                            <div class="fixWidth158 left">
+                                <select id="sel-4" class="sSelect">
+                                    <option selected="selected">From</option>
+                                    <option>Value 1</option>
+                                    <option>Value 2</option>
+                                    <option>Value 3</option>
+                                </select>
+                             </div>   
+                            <span class="div">-</span>
+                            <div class="fixWidth158 right">
+                                <select id="sel-5" class="sSelect">
+                                    <option selected="selected">To</option>
+                                    <option>Value 1</option>
+                                    <option>Value 2</option>
+                                    <option>Value 3</option>
+                                </select>
+                            </div>
+                            <div class="tips">
+                                Choose desired age of partner you are looking for
+                            </div>
+                        </div>
+                        <div class="errMsg">
+                        
+                        </div>
+                    </div> <!-- /.formRow -->
+                    
+                     <div class="formRow">
+                        <div class="label">Education:</div>
+                        <div class="content">
+                            <div class="flWidth100">
+                                <select id="sel-6" class="sSelect">
+                                    <option selected="selected">Select</option>
+                                    <option>Value 1</option>
+                                    <option>Value 2</option>
+                                    <option>Value 3</option>
+                                </select>
+                            </div>
+                        <div class="errMsg">
+                        
+                        </div>
+                    </div> <!-- /.formRow -->
+                    
+                     <div class="formRow">
+                        <div class="label">Ethnicity:</div>
+                        <div class="content">
+                            <div class="flWidth100">
+                                <select id="sel-7" class="sSelect">
+                                    <option selected="selected">Select</option>
+                                    <option>Value 1</option>
+                                    <option>Value 2</option>
+                                    <option>Value 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="errMsg">
+                        
+                        </div>
+                    </div> <!-- /.formRow -->
+                    
+                     <div class="formRow">
+                        <div class="label">Occupation:</div>
+                        <div class="content">
+                            <div class="flWidth100">
+                                <select id="sel-8" class="sSelect">
+                                    <option selected="selected">Select</option>
+                                    <option>Value 1</option>
+                                    <option>Value 2</option>
+                                    <option>Value 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="errMsg">
+                        
+                        </div>
+                    </div> <!-- /.formRow -->
+                    
+                     <div class="formRow">
+                        <div class="label">Religion:</div>
+                        <div class="content">
+                             <div class="flWidth100">                    
+                                <select id="sel-9" class="sSelect">
+                                    <option selected="selected">Select</option>
+                                    <option>Value 1</option>
+                                    <option>Value 2</option>
+                                    <option>Value 3</option>
+                                </select>
+                             </div>
+                        </div>
+                        <div class="errMsg">
+                        
+                        </div>
+                    </div> <!-- /.formRow -->
+                    
+                     <div class="formRow">
+                        <div class="label">Do you have kids:</div>
+                        <div class="content">
+                            <input type="radio" id="rad-1" name="kids">
+                            <label for="rad-1">Yes</label>
+                            <input type="radio" id="rad-2" name="kids">
+                            <label for="rad-2">No</label>
+                            
+                            <div id="more-kids" class="margT10">
+                                 <div class="fixWidth168 left">
+                                    <select id="sel-k1" class="sSelect">
+                                        <option selected="selected">Please select</option>
+                                        <option>Value 1</option>
+                                        <option>Value 2</option>
+                                        <option>Value 3</option>
+                                    </select>
+                                 </div> 
+                                 <div class="fixWidth168 right">   
+                                    <select id="sel-k2" class="sSelect">
+                                        <option selected="selected">Please select</option>
+                                        <option>Value 1</option>
+                                        <option>Value 2</option>
+                                        <option>Value 3</option>
+                                    </select>
+                                 </div>
+                                
+                                <div><a class="more" href="javascript:void(0);">more</a></div>
+                                
+                            </div> <!-- /#more-kids -->           
+                             <script>     
+                                $(document).ready(function(){
+                                    $("#more-kids").hide();
+                                    $("#rad-1").click(function(){ $("#more-kids").show();});
+                                    $("#rad-2").click(function(){$("#more-kids").hide(); });  
+                                });
+                             </script> 
+                        </div>
+                                                <!--  }-->
+                           
+                        <div class="errMsg">
+                        
+                        </div>
+                    </div> <!-- /.formRow -->
+                    
+                     <div class="formRow">
+                        <div class="label">Smokes:</div>
+                        <div class="content">
+                            <div class="flWidth100">
+                                <select id="sel-10" class="sSelect">
+                                    <option selected="selected">Select</option>
+                                    <option>Value 1</option>
+                                    <option>Value 2</option>
+                                    <option>Value 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="errMsg">
+                        
+                        </div>
+                    </div> <!-- /.formRow -->
+                    
+                     <div class="formRow">
+                        <div class="label">Height:</div>
+                        <div class="content">
+                            <div class="fixWidth168 left margR10">
+                                <select id="sel-11" class="sSelect">
+                                    <option selected="selected">Select</option>
+                                    <option>Value 1</option>
+                                    <option>Value 2</option>
+                                    <option>Value 3</option>
+                                </select>
+                            </div>
+                             <a href="javascript:void(0);" class="centim">Centimetres</a>
+                        </div>
+                        <div class="errMsg">
+                        
+                        </div>
+                    </div> <!-- /.formRow -->
+                    
+                     <div class="formRow">
+                        <div class="label">Eye color:</div>
+                        <div class="content">
+                            <div class="flWidth100">
+                                <select id="sel-12" class="sSelect">
+                                    <option selected="selected">Select</option>
+                                    <option>Value 1</option>
+                                    <option>Value 2</option>
+                                    <option>Value 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="errMsg">
+                        
+                        </div>
+                    </div> <!-- /.formRow -->
+                    
+                     <div class="formRow">
+                        <div class="label">Hair color:</div>
+                        <div class="content">
+                            <div class="flWidth100">    
+                                <select id="sel-13" class="sSelect">
+                                    <option selected="selected">Select</option>
+                                    <option>Value 1</option>
+                                    <option>Value 2</option>
+                                    <option>Value 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="errMsg">
+                        
+                        </div>
+                    </div> <!-- /.formRow -->
+                    
+                     <div class="formRow">
+                        <div class="label">Body type:</div>
+                        <div class="content">
+                            <div class="flWidth100">
+                                <select id="sel-14" class="sSelect">
+                                    <option selected="selected">Select</option>
+                                    <option>Value 1</option>
+                                    <option>Value 2</option>
+                                    <option>Value 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="errMsg">
+                        
+                        </div>
+                    </div> <!-- /.formRow -->
+                    
+                    <a class="btn-s-1 btn-cont"><span>Save and Continue</span></a>
+                  
+                </form>
+
+        </div><!-- /#regStep1 -->      
+    </div><!-- /#content -->
+      
+  </div><!-- /#regSteps -->
+</body>
+</html>
