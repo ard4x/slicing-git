@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Step 3</title>
+<link rel="stylesheet" type="text/css" href="reset.css">
+<!-- есть на сервере --> <link rel="stylesheet" href="style(next).css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="steps.css">
+
+</head>
+<body>
+  
+  <div id="regSteps">
+  
+    <div id="header">
+        <h1>Congratulations! Registration is completed!</h1>
+        <h3>Tell a little bit about yourself to others</h3>
+        <ul class="progressBar">
+            <li class="active">1. Basic information</li>
+            <li class="active">2. Interests</li>     
+            <li class="active last">3. In your own words</li>  <!-- Активный второй шаг -->
+        </ul>
+    
+    </div><!-- /#header -->
+    
+    <div id="content">     
+        <div class="leftSide">
+            <div class="stepDescr">    <!-- меняем описание и заголовок шага -->
+                <h2>In your own words</h2>
+                <p>
+                We want to inform you that your text 
+                must be approved by moderator. 
+                Don’t include any contact 
+                information. Information that doesn’t 
+                suit rules will be deleted.
+                </p>
+            
+            </div><!-- /.stepDescr -->
+        
+        </div><!-- /.left -->
+        
+        <div id="regStep3" class="rightSide">     <!-- id третьего шага -->
+            
+            <form>
+                <div class="formRow">
+                    <div class="label">
+                        Tell us about yourself:
+                    </div>
+                    <textarea class="err"> Describe a little bit yourself to create more full image of you
+                    </textarea>
+                    <div class="errMsg">
+                        At least 20 character should be written
+                    </div>   
+                </div>
+                
+                <div class="formRow">
+                    <div class="label">
+                        Describe the one you are looking for:
+                    </div>
+                    <textarea>Describe who are you looking for, his/her character, interests...
+                    </textarea>
+                    <div class="errMsg">
+                    
+                    </div>   
+                </div>
+                
+                  <div class="formRow">
+                    <div class="label">
+                        Tell us about your hobbys:
+                    </div>
+                    <textarea> Your hobbys tell a lot about you. Tell what do you like to do...
+                    </textarea>
+                    <div class="errMsg">
+                    
+                    </div>   
+                </div>
+                
+                <a href="javascript:void(0);" class="btn-s-1 btn-finish"><span>Finish</span></a>
+            </form>    
+            
+           
+        </div><!-- /#regStep3 -->      
+    </div><!-- /#content -->
+      
+  </div><!-- /#regSteps -->
+</body>
+</html>

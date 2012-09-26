@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+:focus {outline:none}
+
+
+/***********/
+
+#regSteps {width:950px; position: relative; margin: 0 auto;}
+#regSteps #header             {position:relative; width:100%;}
+#regSteps #header h1          {font: bold 30px 'PT Sans'; margin: 85px 0 20px 0;}
+#regSteps #header h3          {font: bold 14px Arial; margin-bottom: 18px;}
+#regSteps #header ul.progressBar    {position: relative; overflow: hidden; margin-bottom: 20px;}
+#regSteps #header .progressBar li   {font: bold 18px Arial; color: #cccccc; float:left; width: 310px; margin-right: 10px; border-top: 5px solid #cccccc; padding-top:10px;}
+#regSteps #header .progressBar li.last {margin-right:0;}
+#regSteps #header .progressBar li.active {font: bold 18px Arial; color: #436187; border-top: 5px solid #436187;}
+
+#regSteps #content            {position: relative; width:100%; font: 14px Arial; }
+#regSteps #content .leftSide      {width:225px; position: absolute; }
+#regSteps #content .rightSide      {margin-left: 242px; width: 490px}
+#regSteps #content .stepDescr     {font: 12px Arial; color:#333333; background-color: #ecf4fb; border-radius: 4px; width: 195px; padding: 15px; }
+#regSteps #content .stepDescr h2  {font: bold 24px 'PT Sans';  color:#000000; margin-top: 0}
+
+/* RegStep1 */
+#regStep1 .label {width: 135px; margin-right:5px; float: left;}
+#regStep1 .content {width: 350px; position: relative; display: inline-block;}
+#regStep1 .loadPhoto {position: relative; margin-bottom: 5px; } 
+#regStep1 .loadPhoto p {font: 12px Arial; color:#333333; margin-bottom: 15px;}
+#regStep1 .loadPhoto .photo {position: relative; width: 72px; height: 92px; margin-right: 10px; margin-bottom: 10px; float: left; background: url(img/photo_bg.png);}
+#regStep1 .loadPhoto .photo img {margin: 2px 3px;}
+#regStep1 .loadPhoto .photo .photoDescr {position: absolute; bottom: 4px; left: 3px; height: 30px; width: 66px; overflow: hidden; background: url(img/fill.png) repeat;}
+#regStep1 .loadPhoto .photo .photoDescr.off { display: none}
+#regStep1 .loadPhoto .photo .photoDescr span {font: 10px Arial; color:#ffffff; display: inline-block; margin-top: 10px; margin-left: 3px;}
+
+#regStep1 form {border-top: solid 1px #cccccc; padding-top: 15px; position: relative; margin-bottom: 40px;  }
+#regStep1 form .formRow {margin-bottom: 15px; position: relative;}
+#regStep1 form .formRow .tips {font: 10px Arial; color: #999999;}
+#regStep1 form .formRow .label {padding-top: 4px}
+#regStep1 form .formRow label {margin-right: 10px}
+#regStep1 span.div {font-size: 17px; text-align: center; margin-left: 14px;} 
+#regStep1 a {font: 14px Arial; color:#334a66;}
+#regStep1 a:hover {}
+#regStep1 a.more {font: 12px Arial;}
+#regStep1 a.centim {margin-top: 5px; display: inline-block;}
+#regStep1 .btn-cont {margin-top: 5px; padding: 0 25px;}
+#regStep2 .bnt-load {padding: 0 13px;} 
+
+/* RegStep2 */
+#regStep2 .step2Header input {width: 479px!important; font: 12px Arial; font-style: italic; color:#999999; padding-left: 7px!important; margin-bottom: 10px;}
+#regStep2 .selectedInt {font: 12px Arial; color: #333333; margin-bottom:10px; height: 21px;}
+#regStep2 .selectedInt span {display: inline-block; margin-top: 4px;}
+#regStep2 .selectedInt .cat_bnt {display: inline-block; height: 19px; border: solid 1px #cad8f3; border-radius: 4px; background-color: #dee7f8; margin-right: 10px; position: relative;}
+#regStep2 .selectedInt .cat_bnt em {content: ''; width: 7px; height: 7px; background: url(img/close.png) no-repeat; position: absolute; top: 6px; right: 10px; cursor: pointer;}
+#regStep2 .selectedInt .cat_bnt span {font-size: 12px; color:#436187; margin:  2px 28px 0 9px;}
+#regStep2 .countInt {font: 12px Arial; color:#666666; margin-bottom: 10px;}
+#regStep2 .countInt b {color: #333333; font-weight: bold;}
+#regStep2 .interests {position: relative; padding: 15px; border-radius: 4px; background-color: #ecf4fb; overflow: hidden;}
+#regStep2 .interests .categories { margin-top: 10px; width: 140px; float: left;}
+#regStep2 .interests .categories ul {width: 100%;}
+#regStep2 .interests .categories li {padding-left: 10px; height: 23px; font: 12px Arial; position: relative; margin-bottom: 1px;}
+#regStep2 .interests .categories li.active {background-color: #436187; border-top-left-radius: 4px; border-bottom-left-radius: 4px; font-weight: bold; color:#ffffff; }
+#regStep2 .interests .categories li.active:after {content: ""; width: 20px; height: 23px; background: url(img/cat_arr.png) no-repeat; position: absolute; top:0; right: -20px;}
+#regStep2 .interests .categories li span {width: 100%; display: inline-block; cursor: pointer; margin-top: 4px; }
+
+
+#regStep2 .interests .list {width: 275px; border: solid 1px #c4d9ec; padding: 9px 14px 14px 29px; background-color: #ffffff; border-radius: 4px; float:right}
+#regStep2 .interests .list li {height: 23px; margin-bottom: 1px; font-size: 12px;}
+#regStep2 .interests .list li a {display: inline-block; cursor: pointer; margin-top: 4px; }
+#regStep2 .interests .list .arrows {border-top: solid 1px #c4d9ec; margin-top: 8px; padding-top: 12px; font-size: 12px;}
+#regStep2 .interests .arrows i{display:inline-block; width:4px; height:7px; background:url(img/list-arr.png);}
+#regStep2 .interests .arrows .left i {background-position: 0 0; margin-right: 5px;}
+#regStep2 .interests .arrows .right i {background-position: 100% 0; margin-left: 5px;}
+#regStep2 .interests .arrows .left {float: left;} 
+#regStep2 .interests .arrows .right {float: right;}
+#regStep2 .interests .categories .arrows {width: 18px; margin-left: 10px;} 
+#regStep2 .bnt-next {margin: 20px 0 40px 190px; padding: 0 35px;}
+
+#regStep3 .btn-finish {margin: 0 0 40px 190px; padding: 0 25px;}
+#regStep3 form {width: 490px;}
+#regStep3 form .errMsg {top: 24px}
+#regStep3 .label {font: 14px Arial;  color: #000000; margin-bottom: 7px;}
+#regStep3 .formRow {margin-bottom: 20px; position: relative;}
+#regStep3 .formRow textarea {width: 484px; height: 95px; font: 12px Arial; font-style: italic; color:#999999; resize: none;}
+textarea.err, .err .newListSelected, .err .newList{border-color: #990000;}
+.errMsg {font: 14px Arial; color:#990000; background: 0 50%  url(img/err_arrow.png) no-repeat; padding-left: 15px; width: 150px; position: absolute;top:4px; right: -183px;}
+.hide       {display:none;}
+.margT5     {margin-top: 5px;}
+.margT10    {margin-top: 10px;}
+.margR10    {margin-right: 10px;}
+.fixWidth158{width: 158px}
+.fixWidth168{width: 168px}
+
+/* Standart buttons */
+a.btn-m-7   {display: inline-block; padding: 0 10px; border: solid 1px #cbcbcb; border-radius: 3px; background: 0 -116px url(img/btns.png) repeat-x; 
+            height: 22px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3; cursor: pointer}
+a.btn-m-7 span  {display: inline-block; font: bold 12px Arial !important; color: #525252;  text-shadow: #ffffff 0 1px 1px; margin-top: 3px}
+a.btn-m-7:hover {background-position: 0 -138px;}
+a.btn-m-7:active{background-position: 0 -160px; box-shadow: none; }
+
+     
+a.btn-s-1 {display: inline-block; padding: 0 10px; border: solid 1px #4a6c97;  border-top-color: #3a639a;  border-bottom-color: #334a67;
+            border-radius: 3px; background: url(img/btns.png) repeat-x; cursor: pointer;
+            height: 29px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3;}
+a.btn-s-1 span {display: inline-block; font: bold 14px Arial !important; color: #ffffff;  text-shadow: #364f6d 0 1px 2px; margin-top: 6px}
+a.btn-s-1:hover {background-position: 0 -29px; border-color: #5177a5; border-top-color: #3a639a;  border-bottom-color: #3f5d81; }
+a.btn-s-1:active {background-position: 0 -58px;  border-color: #486992; border-top-color: #2f4f7b;  border-bottom-color: #3f5d81; box-shadow: none; }
+
+a.btn-s-0 {display: inline-block; border: solid 1px #636363;  border-top-color: #47535d;  border-bottom-color: #4e4e4e;  background:0 -87px url(img/btns.png) repeat-x; 
+            cursor: pointer; border-radius: 3px; height: 29px; text-decoration: none;  cursor: default; padding: 0 10px;}
+a.btn-s-0 span {display: inline-block; font: bold 14px Arial !important; color: #ffffff;  text-shadow: #4c4c4c 0 1px 2px; margin-top: 6px}
+
+/* end Standart buttons */
+
