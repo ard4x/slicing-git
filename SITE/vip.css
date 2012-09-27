@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+
+div.topMessage {position: relative; width: 900px; background-color: #ecf4fb; border-radius: 4px; padding: 25px; margin-bottom: 20px;}
+div.topMessage .message {position: relative; top: -6px;}
+div.topMessage h1 {font: bold 36px 'PT Sans'; color:#436187;  margin: 0 0 0 0; text-transform: uppercase; }
+div.topMessage p {font: 16px Arial; color:#333333; margin: 10px 0 15px 0; padding: 0;}
+div.topMessage .topIcon {width: 145px; height: 145px; background: url(img/vip/upg_icon_top.png) no-repeat; float: left; margin-right: 40px;}
+div.v2 .topIcon {background-position: 0 -145px;}
+div.v3 .topIcon {background-position: 0 -290px;}
+div.v4 .topIcon {background-position: 0 -435px;}
+div.v5 .topIcon {background-position: 0 -580px;}
+div.v6 .topIcon {background-position: 0 -725px;}
+div.v7 .topIcon {background-position: 0 -870px;}
+div.v8 .topIcon {background-position: 0 -1015px;}
+div.vipPayment    {margin-bottom: 25px; position: relative; overflow: hidden;}
+div.vipPayment h2 {font: bold 24px 'PT Sans'; color:#333333; margin-top:0;}
+
+
+div.vipPayment .selectPlan {width: 465px; float:left;}
+div.vipPayment .selectPlan h2 {margin-bottom: 20px;}
+div.vipPayment .selectPlan p  {font:  14px Arial; margin-bottom: 19px;}
+div.vipPayment .selectPlan .label {position: relative; height: 86px; border: solid 1px #dde0e6; border-top-color: #f4f5f7; border-bottom-color: #bbc0ce; box-shadow: 0 2px 2px #dde0e6;
+                                    border-radius: 6px; margin-bottom: 13px; cursor: pointer;}
+div.vipPayment .selectPlan .label.last   {margin:2px}
+div.vipPayment .selectPlan .label label {height: 86px; width: 44px; float:left; margin-right: 20px;}
+div.vipPayment .selectPlan .label label em {display: block; width: 16px; height: 16px; background: url(img/radio16.png) no-repeat; margin: 35px 0 0 15px;}
+div.vipPayment .selectPlan .label.active label {border-top-left-radius: 6px; border-bottom-left-radius: 6px; background-color:#eda71e; }
+div.vipPayment .selectPlan .label.active label em {background: url(img/radio16ch.png) no-repeat;}
+div.vipPayment .selectPlan .label label input {margin-top: 35px; margin-left:15px; display: none}
+div.vipPayment .selectPlan .label .cost {font: 12px Arial; color:#525e76; width: 90px; float: left; margin-right: 10px; margin-top: 23px;}
+div.vipPayment .selectPlan .label .cost b {font: bold 24px Arial; color:#51575e;}
+div.vipPayment .selectPlan .label .cost div {padding-left: 9px; margin-top: -3px}
+div.vipPayment .selectPlan .label .mostPop {width: 66px; height: 64px; background: url(img/most-pop-plan.png) no-repeat; position: absolute; top: 11px; right: 13px;}
+div.vipPayment .selectPlan .label .description {font: 12px Arial; color:#525e76; margin-top: 30px;}
+div.vipPayment .selectPlan .label .description b {font: bold 16px Arial;}
+div.vipPayment .selectPlan .label .description span {font: bold 16px Arial; color:#ff9c5c;}
+div.vipPayment .selectPlan .label .description div {margin-top: -2px}  
+
+div.vipPayment .paymentInfo {position: relative; width: 465px; float:right;}
+div.vipPayment .paymentInfo .tabBlock {position: relative; height: 272px; border: solid 1px #dde0e6; border-top-color: #f4f5f7; border-bottom-color: #bbc0ce; padding: 20px;
+                                       border-radius: 9px; border-top-left-radius: 0; box-shadow: 0 2px 2px #dde0e6; margin-top: 73px;}
+div.vipPayment .paymentInfo .tabBlock .label {font: 12px Arial;}
+div.vipPayment .paymentInfo .tabBlock .tabs {position: absolute; top: -51px; left: -1px;}
+div.vipPayment .paymentInfo .tabBlock .tabs li {float: left; width: 110px; height: 50px; margin-right: 9px; border-top-left-radius: 9px; border-top-right-radius: 9px;
+                                                background-color: #e3e3e3; border-bottom: solid 1px #d3d4d6;}  
+div.vipPayment .paymentInfo .tabBlock .tabs li.active {border: solid 1px #dde0e6; border-top-color: #f4f5f7; border-bottom: none; background-color: #ffffff;}
+div.vipPayment .paymentInfo .tabBlock .tabs li a {display: block; width: 100%; height: 50px; }
+div.vipPayment .paymentInfo .tabBlock .tabs li span {display: block; width: 42px; position: relative; margin: 12px auto;}
+div.vipPayment .paymentInfo .tabBlock .tabs .firstTab a span {width: 41px; height: 31px; background: url(img/p_master_ico.gif) no-repeat; display: block;}
+div.vipPayment .paymentInfo .tabBlock .tabs .secondTab a span {width: 59px; height: 23px; background: url(img/p_paypal_ico.gif) no-repeat; display: block; margin-top: 15px;}
+div.vipPayment .paymentInfo .tabBlock a.visa {width: 29px; height: 21px; background: url(img/type_visa.gif) no-repeat; display: inline-block;}
+div.vipPayment .paymentInfo .tabBlock a.mc {width: 29px; height: 21px; background: url(img/type_master.gif) no-repeat; display: inline-block;}
+
+
+div.vipPayment .paymentInfo .tabBlock .firstTab table {width: 100%; border: none; border-collapse: collapse; border-spacing: 0; } 
+div.vipPayment .paymentInfo .tabBlock .firstTab td {padding-bottom: 13px; vertical-align: top;}
+div.vipPayment .paymentInfo .tabBlock .firstTab td.label {width: 125px; vertical-align: middle;}
+div.vipPayment .paymentInfo .tabBlock .firstTab input {width: 295px} 
+div.vipPayment .paymentInfo .tabBlock .firstTab .cardCode {width: 123px; margin-right: 13px; float: left;} 
+div.vipPayment .paymentInfo .tabBlock .firstTab .helper {background: url(img/help-icons.png) 0 0 no-repeat; width: 16px; height: 16px; cursor: pointer; display: inline-block; margin-right: 10px;}
+
+div.vipPayment .paymentInfo .tabBlock .firstTab .cardtype {width: 120px; margin-right: 13px; float: left;} 
+div.vipPayment .paymentInfo .tabBlock .firstTab .month {width: 58px; margin-right: 10px; display: inline-block;}  
+div.vipPayment .paymentInfo .tabBlock .firstTab .year {width: 58px; display: inline-block;}
+div.vipPayment .paymentInfo .tabBlock .firstTab .servInfo {font: 12px Arial; color: #999999; text-align: center;}
+div.vipPayment .paymentInfo .tabBlock .firstTab .rapidSSL {background: url(img/RapidSSL_SEAL-90x50.gif) no-repeat; width: 90px; height: 50px; display: block; position: absolute; bottom: 20px; left: 20px;}
+div.vipPayment .paymentInfo .tabBlock .firstTab .btn-next {float: right; margin-top: 25px; padding: 0 35px;}
+div.whatGet .g1, div.whatGet .g3, div.whatGet .g5 {float: left;}
+div.whatGet .g2, div.whatGet .g4, div.whatGet .g6 {float: right;}
+div.whatGet h2 {font: bold 30px 'PT Sans'; color:#333333; margin: 0 0 15px 0; text-align: center;}
+div.whatGet h3 {font: bold 24px 'PT Sans'; color:#436187; margin: 0 0 10px 0; line-height: 24px;}
+div.whatGet p {font: 14px Arial; color:#333333; width: 330px;}
+div.whatGet ul {overflow: hidden; margin-bottom: 30px;}
+div.whatGet li {padding: 15px; background-color: #ecf4fb; border-radius: 4px; margin-bottom: 10px; position: relative; height: 90px; width: 435px;}
+div.whatGet .icon {background: url(img/vip/upg_icon_small.png); width: 90px; height: 90px; float: right;}
+div.whatGet .g2 .icon {background-position: 0 -90px;}
+div.whatGet .g3 .icon {background-position: 0 -180px;} 
+div.whatGet .g4 .icon {background-position: 0 -270px;} 
+div.whatGet .g5 .icon {background-position: 0 -360px;} 
+div.whatGet .g6 .icon {background-position: 0 -450px;} 
+
+div.vipBottom {overflow: hidden;}                                                      
+div.vipBottom h2 {font: bold 24px 'PT Sans'; color:#333333; margin: 0 0 18px 0;}
+div.vipBottom .testimon {width: 450px; float: left; padding-right: 15px}
+div.vipBottom .testimon .user {margin-bottom: 20px; position: relative;}
+div.vipBottom .testimon .user .userpic {display: block; position: absolute; width: 50px; height: 50px; top: 3px;}
+div.vipBottom .testimon .user .userMsg {width: 395px; margin-left: 70px;}
+div.vipBottom .testimon .user .userMsg .username {font: bold 14px Arial; color:#333333;}
+div.vipBottom .testimon .user .userMsg .postdate {font: 10px Arial; color:#666666; margin-bottom: 7px;}
+div.vipBottom .testimon .user .userMsg .textMsg {font: 12px Arial;}
+
+div.vipBottom .faq {width: 450px; float: right; padding-right: 15px;}
+div.vipBottom .faq strong {font: bold 14px Arial; color:#333333; margin-bottom: 6px; display: inline-block;}
+div.vipBottom .faq p {font: 12px Arial; padding-bottom: 20px;}
+
+
+/* POPUP */
+div.popup {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url(img/opacity.png) repeat; z-index: 999;}
+div.popup .popupContent {width: 650px; height: 310px; border: solid 5px #ecf4fb; position: relative; margin: 150px auto 0 auto; background-color: #ffffff; padding: 25px 0 25px 30px;}
+div.popup .popupContent h1 {font: bold 24px 'PT Sans'; color:#333333; margin: 0;}
+div.popup .popupContent h3 {font: 12px Arial; color:#787878; margin: 0 0 25px 0;}
+div.popup .popupContent form {margin-bottom: 5px;}
+div.popup .popupContent .field {margin-bottom: 10px; width: 185px; margin-right: 25px; display: inline-block;}
+div.popup .popupContent .field .label {margin-bottom: 5px;}
+div.popup .popupContent .field input[type=text] {width:100%;}
+div.popup .popupContent .servInfo {font: 12px Arial; color: #999999; text-align: center; }
+div.popup .popupContent .rapidSSL {background: url(img/RapidSSL_SEAL-90x50.gif) no-repeat; width: 90px; height: 50px; display: block; position: absolute; bottom: 20px; left: 30px;}
+div.popup .popupContent .btn-conf {float:right; margin-top: 25px; margin-right: 33px; padding: 0 13px;}
+div.popup .popupContent .close {display:block; width: 9px; height: 9px; background: url(img/close_pop.png) no-repeat; position: absolute; top: 10px; right: 10px;}
+

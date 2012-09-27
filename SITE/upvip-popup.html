@@ -1,0 +1,546 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>Yangutu</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="style_curr.css" type="text/css" />
+    <link rel="stylesheet" href="btns.css" type="text/css" />       <!-- / Стили кнопок, обязательно -->
+    <link rel="stylesheet" href="vip.css" type="text/css" />         <!-- / Стили страницы ВИП, обязательно -->
+    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <script src="js/jquery.stylish-select.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+            //*<!-- Код для демонстрации выбора тарифа -->
+             $(".selectPlan .label").click(function() {
+                    $(".selectPlan .label").removeClass('active');
+                    $(this).addClass('active');
+                });
+            //*<!-- / Код для демонстрации выбора тарифа -->
+        });
+    </script>
+
+</head>
+<body>
+
+    <div class="header">
+        <div class="header_inn">
+            <div class="top_navigation">
+                <ul class="left">
+                    <li><a href="#">Messages</a><span class="new_event">2</span></li>
+                    <li><a href="#">Signals</a><span class="new_event">45</span></li>
+                    <li><a href="#">Soulmates</a><span class="new_event">167</span></li>
+                </ul>
+                <ul class="right">
+                    <li class="coints">1450 Coins <a href="#">Add</a></li>
+                    <li class="profile"><a href="#">Profile </a></li>
+                    <li class="account"><a href="#">Account Settings</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="bot_navigation">
+                <a href="#"><img src="img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>    
+                <ul class="main_menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Matches</a></li>
+                    <li><a href="#">TOP-100</a></li>
+                    <li><a href="#">Apps and Games</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+                <div class="clr2"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="content_inn">
+        
+<!-- начало страницы ВИП -->
+
+<div class="topMessage">
+    <div class="topIcon"></div>
+    <div class="message">
+        <h1>Upgrade your account!</h1>
+        
+        <p>
+            Get access to multiple features we′ve created to make Yangutu more effective and comfortable for users. Maximize your chances to find the very one and only you are looking for!
+        </p>
+        <p>
+            Upgrade your account now to get unlimited access to all Yangutu services (Advanced Search, Soulmate Finder, Invisible Mode, etc.)
+        </p>
+    </div><!-- /.message -->
+</div><!-- /.topMessage -->
+
+<div class="vipPayment">
+    <div class="selectPlan">
+        <h2>Select Your Subscription Plan!</h2>
+        <p>
+            We propose a wide range of subscriptions. You can choose the 
+            most suitable for you. Choose the most suitable subscription, 
+            economize more and enjoy Yangutu
+        </p>
+        
+
+        <div class="label active">
+            <label>
+                <input type="radio" name="rad-1">
+                <em></em>
+            </label>
+            <div class="cost">
+                <b>$14.00</b>
+                <div>per month</div>
+            </div>
+            <div class="description">
+                <b>6 month.</b><span> Save 46%</span>
+                <div>one easy $84.00 payment </div>
+            </div>
+        </div><!-- /.label -->
+        
+        <div class="label">
+            <label>
+                <input type="radio" name="rad-1">
+                <em></em>
+            </label>
+            <div class="cost">
+                <b>$17.00</b>
+                <div>per month</div>
+            </div>
+            <div class="description">
+                <b>3 month.</b><span> Save 35%</span>
+                <div>one easy $51.00 payment </div>
+            </div>
+            
+            <div class="mostPop"></div>
+        </div><!-- /.label -->
+        
+        <div class="label last">
+            <label>
+                <input type="radio" name="rad-1">
+                <em></em>
+            </label>
+            <div class="cost">
+                <b>$26.00</b>
+                <div>per month</div>
+            </div>
+            <div class="description">
+                <b>1 month.</b>
+                <div>one easy $26.00 payment </div>
+            </div>
+        </div><!-- /.label -->
+    
+    </div><!-- /.selectPlan -->
+    
+    <div class="paymentInfo">
+        <h2>Payment information</h2>
+        
+        <div class="tabBlock">
+            <ul class="tabs">
+                <li class="firstTab active"><a href="javascript:void(0);"><span></span></a></li>
+                <li class="secondTab"><a href="javascript:void(0);"><span></span></a></li>
+            </ul>
+            
+            <div class="tabContent firstTab">
+                <table>
+                    <tr>
+                        <td class="label">Card type:</td>
+                        <td class="fields">
+                            <div class="cardtype">
+                                <select class="sSelect">
+                                    <option>Visa</option>
+                                    <option>Master Card</option> 
+                                </select>
+                            </div>
+                            <a href="javascript:void(0);" class="visa" alt="Visa" title="Visa"></a>
+                            <a href="javascript:void(0);" class="mc"alt="MasterCard" title="Master Card"></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">Card number:</td>
+                        <td class="fields">
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">Cardholder name:</td>
+                        <td class="fields">
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">CVV/CVC2</td>
+                        <td class="fields">
+                            <input type="text" class="cardCode">
+                            <a class="helper"></a>
+                            <img src="img/type_help.gif" alt="Visa" title="Visa">
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">Expiration Date:</td>
+                        <td class="fields">
+                            <div class="month">
+                                <select name="card_month" id="card_month" class="sSelect">
+                                    <option value="1" label="01">01</option>
+                                    <option value="2" label="02">02</option>
+                                    <option value="3" label="03">03</option>
+                                    <option value="4" label="04">04</option>
+                                    <option value="5" label="05">05</option>
+                                    <option value="6" label="06">06</option>
+                                    <option value="7" label="07">07</option>
+                                    <option value="8" label="08">08</option>
+                                    <option value="9" label="09" selected="selected">09</option>
+                                    <option value="10" label="10">10</option>
+                                    <option value="11" label="11">11</option>
+                                    <option value="12" label="12">12</option>
+                                </select>
+                            </div>
+                            
+                            <div class="year">
+                                <select name="card_year" id="card_year" class="sSelect">
+                                    <option value="2012" label="2012">2012</option>
+                                    <option value="2013" label="2013">2013</option>
+                                    <option value="2014" label="2014">2014</option>
+                                    <option value="2015" label="2015">2015</option>
+                                    <option value="2016" label="2016">2016</option>
+                                    <option value="2017" label="2017">2017</option>
+                                    <option value="2018" label="2018">2018</option>
+                                    <option value="2019" label="2019">2019</option>
+                                    <option value="2020" label="2020">2020</option>
+                                    <option value="2021" label="2021">2021</option>
+                                    <option value="2022" label="2022">2022</option>
+                                </select>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div class="servInfo">
+                    Your credit card will be charged $71,97. <a href="#">Service conditions.</a>
+                </div>
+                <a class="rapidSSL"></a>
+                
+                <a href="javascript:void(0);" class="btn-s-2 btn-next"><span>Next</span></a>
+                                    
+            </div><!-- /.firstTab-->
+            
+            <div class="tabContent secondTab">
+            
+            </div><!-- /.secondTab-->
+            
+        </div>
+    
+    </div> <!-- /.paymentInfo -->
+
+</div><!-- /.vipPayment -->
+
+<div class="whatGet">
+    <h2>What you get!</h2>
+    <ul>
+        <li class="g1">
+            <div class="icon"></div>
+            <h3>Send unlimited messages</h3>
+            <p>
+                Break down all limits between you and others! Send as much messages as you want.
+            </p>
+            
+        </li>
+        
+        <li class="g2">
+            <div class="icon"></div>
+            <h3>Find out who added you to Favourites</h3>
+            <p>
+                Learn out who likes you. May be this feeling is mutual. Try to know
+            </p>          
+        </li>
+        
+        <li class="g3">
+            <div class="icon"></div>
+            <h3>Travel Buddies pack</h3>
+            <p>
+               Get unlimited communication and highlighted profile in search results in Travel Buddies.
+            </p>                      
+        </li>
+        
+        <li class="g4">
+            <div class="icon"></div>
+            <h3>Use Soulmate Finder to find mutual matches</h3>
+            <p>
+               Get access to Yangutu science-based test and its results.
+            </p>                    
+        </li>
+        
+        <li class="g5">
+            <div class="icon"></div>
+            <h3>Hide members from search results</h3>
+            <p>
+               Tired of the same faces? Hide them, make your life more unpredictable.
+            </p>                    
+        </li>
+        
+        <li class="g6">
+            <div class="icon"></div>
+            <h3>Be invisible</h3>
+            <p>
+                Hide from other users your navigation. Avoid reflecting as a "profile visitor" in other profiles.
+            </p>                    
+        </li>
+        
+    </ul>
+
+</div><!-- /.whatGet -->
+
+
+<div class="vipBottom">
+    
+    <div class="testimon">
+        <h2>Testimonials</h2>
+        
+        <div class="user">
+            <a href="#" class="userpic">
+                <img src="img/usr/user1.jpg" alt="">
+            </a>
+            <div class="userMsg">
+                <div class="username">
+                    <a href="#">Bryana</a>, 42
+                </div>
+                <div class="postdate">written on Jul 9, 2011</div>
+                <div class="textMsg">
+                    I've never thought I'll ever spend money on the Internet services. But 
+                    the desire to find someone made my buy the VIP subscription. And 
+                    you know what? I've already mat a very handsome guy here.
+                </div>
+            </div>   
+        </div><!-- /.user -->
+        
+        <div class="user">
+            <a href="#" class="userpic">
+                <img src="img/usr/user2.jpg" alt="">
+            </a>
+            <div class="userMsg">
+                <div class="username">
+                    <a href="#">Daniel</a>, 51
+                </div>
+                <div class="postdate">written on Jun 26, 2011</div>
+                <div class="textMsg">
+                    The most useful service for me here is the Soulmate Finder Test as I 
+                    do believe in the power of psychology. The test helped me find a nice 
+                    guy here and I'm already dreaming of meeting him offline.
+                </div>
+            </div>   
+        </div><!-- /.user -->
+        
+        <div class="user">
+            <a href="#" class="userpic">
+                <img src="img/usr/user3.jpg" alt="">
+            </a>
+            <div class="userMsg">
+                <div class="username">
+                    <a href="#">Gerard</a>, 41
+                </div>
+                <div class="postdate">written on Aug 12, 2011</div>
+                <div class="textMsg">
+                    I've purchase the VIP subscription and never regretted! Everything 
+                    I've ever wanted from a dating service is in one place. Really, it's very 
+                    convenient.
+                </div>
+            </div>   
+        </div><!-- /.user -->
+        
+        <div class="user">
+            <a href="#" class="userpic">
+                <img src="img/usr/user4.jpg" alt="">
+            </a>
+            <div class="userMsg">
+                <div class="username">
+                    <a href="#">Bryana</a>, 47
+                </div>
+                <div class="postdate">written on Jul 9, 2011</div>
+                <div class="textMsg">
+                   Yangutu VIP subscription breaks all limits and gives wide possibilities 
+                    to find the very one and only you're looking for!
+                </div>
+            </div>   
+        </div><!-- /.user -->
+        
+        <div class="user">
+            <a href="#" class="userpic">
+                <img src="img/usr/user5.jpg" alt="">
+            </a>
+            <div class="userMsg">
+                <div class="username">
+                    <a href="#">Daniel</a>, 41
+                </div>
+                <div class="postdate">written on Jun 9, 2011</div>
+                <div class="textMsg">
+                   Vip subscription has many fantastic features. But the service I like 
+                    even more is Travel Buddies  pack. It’s very useful if you want to find 
+                    travel mates and get in contact with them!
+                </div>
+            </div>   
+        </div><!-- /.user -->
+    
+    </div> <!-- /.testimon -->
+
+    <div class="faq">
+        <h2>Yangutu FAQ</h2>
+        
+        <strong>
+            How does Yangutu provide security for payments?
+        </strong>
+        <p>
+            The payment security on Yangutu is provided by certificates “Rapid SSL”. SSl is a protocol for enabling data encryption on the intranet and for helping web site users confirm the owner of the web site. Yangutu.com possesses Rapid SSL certificate so you can be sure that all payments that you realize on our site are secure.
+        </p>
+        
+        <strong>
+            What does “Unlimited communication in Travel Buddies” mean? 
+        </strong>   
+        <p> 
+            “Unlimited communication in Travel Buddies” means that all travellers profiles on Travel Buddies are available to you view. In ordinary mode the access to traveller profiles is restricted.
+        </p>
+        
+        <strong> 
+            What is PayPal?
+        </strong>   
+        <p> 
+            PayPal, owned by eBay, is a global online payment system. PayPal is a convenient, easy-to-use, and secure way for individuals and businesses to send and receive money online for goods, services, charitable donations, and so forth. It's also a full-service operation that provides front-end and back-end solutions to increase growth and revenue for merchants.
+        </p>
+        
+        <strong> 
+            Can I freeze my current VIP subscription?
+        </strong>   
+        <p> 
+            No, you can’t freeze your VIP subscription, you only can cancel it.
+        </p>
+        
+        <strong>
+            What is the key point of Yangutu VIP subscription?
+        </strong>    
+        <p>
+            VIP subscription allows to you to contact unlimited number of other users. With VIP subscription you get access to unlimited communication with people you like. Also, VIP subscription allows to you to enlarge search criteria to find more precisely the one you are looking for.
+        </p>
+        
+        <strong>
+            What advantages does the Invisible mode give? 
+        </strong>
+        <p>
+            Invisible mode allow to you hide your presence from other users, you won’t be shown in "People viewed my profile" on people's profiles.
+        </p>
+        
+        
+        <a href="#">Read more</a>
+    </div> <!-- /.faq -->
+    
+</div><!-- /.vipBottom -->
+
+
+    
+<!-- конец страницы ВИП --> 
+            <div class="clr2"></div>
+        </div>
+    </div>
+    
+    <div class="footer">
+      <div class="footer_inn">
+        <ul>
+            <li><a href="/page/about">About us</a></li>
+            <li><a href="/help">FAQ</a></li>
+            <li><a href="http://blog.yangutu.com/">Our blog</a></li>
+            <li><a href="/feedback">Contact us</a></li>
+        </ul>
+        <ul>
+            <li><a href="/page/policy">Privacy</a></li>
+            <li><a href="/page/terms">Terms of use</a></li>
+        </ul>
+        <ul>            
+            <li><a href="/page/scams">Scam warning</a></li>
+            <li><a href="/page/safety">Safety Tips</a></li>
+        </ul>
+        <ul>
+            <li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+            <li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+            <li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+        
+        </ul>
+        <ul>
+          <li><a href="/dating/all">People Directory</a></li>
+        </ul>
+        <div class="right">
+            <font color="black">&copy; 2010-2011 Yangutu Inc. All rights reserved</font><br>
+          <span>Yangutu (swahili) - My one and only.</span>
+        </div>
+         <div class="clear"></div>
+      </div>
+</div>
+
+<!-- POPUP -->
+<div class="popup">
+    <div class="popupContent">
+        <h1>Billing Information</h1>
+        <h3>This is the address to which credit card statements are sent.</h3>
+        
+        <form>
+            <div class="field">
+                <div class="label">First Name:</div>
+                <input type="text">
+            </div>
+            
+            <div class="field">
+                <div class="label">Last Name:</div>
+                <input type="text">
+            </div>
+            
+            <div class="field">
+                <div class="label">E-mail Address:</div>
+                <input type="text">
+            </div>
+            
+            <div class="field">
+                <div class="label">ZIP/Postal Code:</div>
+                <input type="text">
+            </div>
+            
+            <div class="field">
+                <div class="label">Country:</div>
+                <input type="text">
+            </div>
+            
+            <div class="field">
+                <div class="label">State/Province:</div>
+                <input type="text">
+            </div>
+            
+            <div class="field">
+                <div class="label">City/Town:</div>
+                <input type="text">
+            </div>
+            
+            <div class="field">
+                <div class="label">Street Address:</div>
+                <input type="text">
+            </div>
+            
+            <div class="field">
+                <div class="label">Phone:</div>
+                <input type="text">
+            </div>    
+            
+        </form>
+        <div class="servInfo">Your credit card will be charged $71,97. <a href="#">Service conditions</a>.</div>
+            
+        <a class="rapidSSL"></a>
+        
+        <a href="javascript:void(0);" class="btn-s-2 btn-conf"><span>Confirm and Pay</span></a>
+    
+        <a href="javascript:void(0);" class="close"></a>                              
+    </div>
+
+</div>
+
+
+
+
+<!-- / POPUP -->
+
+
+
+</body>
+</html>
