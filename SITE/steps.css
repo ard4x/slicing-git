@@ -37,6 +37,7 @@
 #regStep1 form .formRow label {margin-right: 10px}
 #regStep1 span.div {font-size: 17px; text-align: center; margin-left: 14px;} 
 #regStep1 a {font: 14px Arial; color:#334a66;}
+#regStep1 .newListSelected a{font-size: 12px;}
 #regStep1 a:hover {}
 #regStep1 a.more {font: 12px Arial;}
 #regStep1 a.centim {margin-top: 5px; display: inline-block;}
