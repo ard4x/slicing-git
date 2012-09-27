@@ -13,17 +13,17 @@
 #regSteps #header .progressBar li.last {margin-right:0;}
 #regSteps #header .progressBar li.active {font: bold 18px Arial; color: #436187; border-top: 5px solid #436187;}
 
-#regSteps #content            {position: relative; width:100%; font: 14px Arial; }
+#regSteps #content            {position: relative; width:100%;  }
 #regSteps #content .leftSide      {width:225px; position: absolute; }
 #regSteps #content .rightSide      {margin-left: 242px; width: 490px}
 #regSteps #content .stepDescr     {font: 12px Arial; color:#333333; background-color: #ecf4fb; border-radius: 4px; width: 195px; padding: 15px; }
 #regSteps #content .stepDescr h2  {font: bold 24px 'PT Sans';  color:#000000; margin-top: 0}
 
 /* RegStep1 */
-#regStep1 .label {width: 135px; margin-right:5px; float: left;}
+#regStep1 .label {width: 135px; margin-right:5px; float: left; font-size: 14px;}
 #regStep1 .content {width: 350px; position: relative; display: inline-block;}
 #regStep1 .loadPhoto {position: relative; margin-bottom: 5px; } 
-#regStep1 .loadPhoto p {font: 12px Arial; color:#333333; margin-bottom: 15px;}
+#regStep1 .loadPhoto p {font: 12px Arial; color:#333333; padding-bottom: 15px;}
 #regStep1 .loadPhoto .photo {position: relative; width: 72px; height: 92px; margin-right: 10px; margin-bottom: 10px; float: left; background: url(img/photo_bg.png);}
 #regStep1 .loadPhoto .photo img {margin: 2px 3px;}
 #regStep1 .loadPhoto .photo .photoDescr {position: absolute; bottom: 4px; left: 3px; height: 30px; width: 66px; overflow: hidden; background: url(img/fill.png) repeat;}
@@ -36,11 +36,11 @@
 #regStep1 form .formRow .label {padding-top: 4px}
 #regStep1 form .formRow label {margin-right: 10px}
 #regStep1 span.div {font-size: 17px; text-align: center; margin-left: 14px;} 
-#regStep1 a {font: 14px Arial; color:#334a66;}
+#regStep1 a {font: 12px Arial; color:#334a66;}   
 #regStep1 a:hover {}
-#regStep1 a.more {font: 12px Arial;}
+#regStep1 a.more {margin-left: 4px;}
 #regStep1 a.centim {margin-top: 5px; display: inline-block;}
-#regStep1 .btn-cont {margin-top: 5px; padding: 0 25px;}
+#regStep1 .btn-cont {margin-top: 5px; padding: 0 25px; margin-left: 140px;}
 #regStep2 .bnt-load {padding: 0 13px;} 
 
 /* RegStep2 */
@@ -79,8 +79,10 @@
 #regStep3 .label {font: 14px Arial;  color: #000000; margin-bottom: 7px;}
 #regStep3 .formRow {margin-bottom: 20px; position: relative;}
 #regStep3 .formRow textarea {width: 484px; height: 95px; font: 12px Arial; font-style: italic; color:#999999; resize: none;}
+
 textarea.err, .err .newListSelected, .err .newList{border-color: #990000;}
-.errMsg {font: 14px Arial; color:#990000; background: 0 50%  url(img/err_arrow.png) no-repeat; padding-left: 15px; width: 150px; position: absolute;top:4px; right: -183px;}
+.errMsg {font: 14px Arial; color:#990000; background: 0 4px  url(img/err_arrow.png) no-repeat; padding-left: 15px; width: 150px; position: absolute;top:4px; right: -183px;}
+#regStep3 .errMsg {width: 190px; right: -223px}
 .hide       {display:none;}
 .margT5     {margin-top: 5px;}
 .margT10    {margin-top: 10px;}
