@@ -12,7 +12,7 @@ div.v5 .topIcon {background-position: 0 -580px;}
 div.v6 .topIcon {background-position: 0 -725px;}
 div.v7 .topIcon {background-position: 0 -870px;}
 div.v8 .topIcon {background-position: 0 -1015px;}
-div.vipPayment    {margin-bottom: 25px; position: relative; overflow: hidden;}
+div.vipPayment    {margin-bottom: 25px; position: relative; }
 div.vipPayment h2 {font: bold 24px 'PT Sans'; color:#333333; margin-top:0;}
 
 
