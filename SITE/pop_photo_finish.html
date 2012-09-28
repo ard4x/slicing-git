@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+
+
+        <title>Popup Photo</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        
+        <!-- существующий на сервере стиль  -->
+        <link rel="stylesheet" type="text/css" href="style_curr.css">
+        
+        <!-- проверить наличие, заменить более новой версией -->
+        <link rel="stylesheet" type="text/css" href="btns.css"> 
+        
+        <!-- стиль данной задачи -->
+        <link rel="stylesheet" type="text/css" href="pop_photo.css">  
+    </head>
+
+    <body>
+    <!-- POPUP -->   
+        <div class="popup">
+            <div class="popupContent photoUpload finish">     <!-- Добавлен класс Finish --> 
+            
+                <h1>You've uploaded successfully the following photos</h1>
+                                
+                <ul class="photos">
+                    <li>
+                        <img src="img/user-116x156.jpg">           
+                    </li> 
+                    <li class="loaded">
+                        <img src="img/user2-116x156.jpg">           
+                    </li> 
+                    <li>
+                        <img src="img/user3-116x156.jpg">               
+                    </li>
+                    <li>
+                        <img src="img/user-116x156.jpg">           
+                    </li> 
+                    <li class="loaded">
+                        <img src="img/user2-116x156.jpg">           
+                    </li> 
+                    <li>
+                        <img src="img/user3-116x156.jpg">               
+                    </li>
+                    <li>
+                        <img src="img/user-116x156.jpg">           
+                    </li>             
+                </ul>
+                
+                <center>
+                    <a href="#" class="btn-s-1 btn-close"><span>Close</span> </a>
+                </center>
+                
+                <div class="bottom">
+                    <div class="tip">     <!-- изменен текст -->
+                        <h3>Some of your photos failed to upload?</h3>
+                        <p>
+                           Possibly they do not meet Yangutu requirements. For example, they may bee to little or too large.
+                        </p>
+                        <span>The file size limit is 10 MB.</span>
+                    </div>
+                   
+                </div> <!-- /.bottom -->
+                
+            
+            
+                <a href="javascript:void(0);" class="close"></a>
+            </div>  <!-- /. contentPopup -->
+        </div><!-- / POPUP -->
+    </body>
+</html>
+    
