@@ -18,14 +18,18 @@ div.popup .videoReg .loginBlock {position: absolute; bottom: 18px; left:19px;}
 div.popup .videoReg .loginBlock h2 {margin-bottom: 16px;}
 div.popup .videoReg .loginBlock p {margin: 0; padding: 0; font: 12px Arial; color: #000000;}
 
-div.popup .videoReg .rightBlock {width: 280px; float:right; }
+div.popup .videoReg .rightBlock {width: 280px; float:right; position: relative; }
 div.popup .videoReg .rightBlock h2 {margin-bottom: 13px;}
 div.popup .videoReg .rightBlock td {width: 205px}
 div.popup .videoReg .rightBlock td.label {font: 14px Arial; width: 73px; height: 29px;}
 div.popup .videoReg .rightBlock .day, div.popup .videoReg .rightBlock .month, div.popup .videoReg .rightBlock .year { width: 60px; float:left; margin-right: 10px;} 
 div.popup .videoReg .rightBlock .year {margin:0; width: 65px} 
 div.popup .videoReg .rightBlock table input {width:199px} 
-div.popup .videoReg .rightBlock p {padding: 0;}          
+div.popup .videoReg .rightBlock p {padding: 0;} 
+div.popup .videoReg .rightBlock .delim {position: absolute; height: 365px; width: 1px; background-color: #cccccc; left: -50px; top: 9px;}
+div.popup .videoReg .rightBlock .delim span {font: bold 18px Arial; color:#ffffff; display: block; height: 33px; width: 40px; text-align: center; 
+border: solid 10px #ffffff; border-radius: 30px; background-color: #cccccc;  padding-top: 7px; margin-left: -30px; margin-top: 150px;        }
+         
 div.popup .videoReg .btn-reg {width:278px; margin-bottom: 20px; margin-top: 13px;}
 
 div.popup .video18  {width: 440px; padding: 13px 14px 25px 14px; border: solid 5px #ecf4fb; position: relative; margin: 150px auto 0 auto; background-color: #ffffff; 
