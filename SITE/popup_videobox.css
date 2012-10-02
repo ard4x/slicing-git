@@ -1,0 +1,38 @@
+div.popup {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url(img/opacity.png) repeat; z-index: 999;}
+div.popup .popupContent .close {display:block; width: 9px; height: 9px; background: url(img/cross-9x9-lightBlue.png) no-repeat; position: absolute; top: 10px; right: 10px;}
+
+div.popup .videoReg {width: 660px; padding: 20px; border: solid 5px #ecf4fb; position: relative; margin: 150px auto 0 auto; background-color: #ffffff; 
+                                    overflow: hidden;}
+div.popup .videoReg .close {background-image: url(img/cross-9x9-lightBlue.png);}
+div.popup .videoReg h1 {margin: 0; font: bold 30px 'PT Sans'; color:#000000; margin-bottom: 11px;}
+div.popup .videoReg h2 {margin: 0; font: bold 24px 'PT Sans'; color:#424242; margin-bottom: 20px;}
+div.popup .videoReg .head {width: 100%; padding: 20px; padding-top: 10px; background-color: #ecf4fb; margin: -20px 0 14px -20px;}
+div.popup .videoReg .head p {font: 14px Arial; color: #424242; padding:0; margin:0;}
+div.popup .videoReg .leftBlock {width: 280px; float:left; position: relative;}
+div.popup .videoReg .leftBlock .fbBlock {margin-bottom: 75px;}
+div.popup .videoReg .leftBlock .fbBlock .fdDescr {display: block; font: 12px Arial; color:#666666; margin-left: 25px;}
+div.popup .videoReg .leftBlock .btn-fbconn {margin-bottom: 8px;}
+div.popup .videoReg .leftBlock .fdDescr {margin-bottom: 17px;}
+
+div.popup .videoReg .loginBlock {position: absolute; bottom: 18px; left:19px;}
+div.popup .videoReg .loginBlock h2 {margin-bottom: 16px;}
+div.popup .videoReg .loginBlock p {margin: 0; padding: 0; font: 12px Arial; color: #000000;}
+
+div.popup .videoReg .rightBlock {width: 280px; float:right; }
+div.popup .videoReg .rightBlock h2 {margin-bottom: 13px;}
+div.popup .videoReg .rightBlock td {width: 205px}
+div.popup .videoReg .rightBlock td.label {font: 14px Arial; width: 73px; height: 29px;}
+div.popup .videoReg .rightBlock .day, div.popup .videoReg .rightBlock .month, div.popup .videoReg .rightBlock .year { width: 60px; float:left; margin-right: 10px;} 
+div.popup .videoReg .rightBlock .year {margin:0; width: 65px} 
+div.popup .videoReg .rightBlock table input {width:199px} 
+div.popup .videoReg .rightBlock p {padding: 0;}          
+div.popup .videoReg .btn-reg {width:278px; margin-bottom: 20px; margin-top: 13px;}
+
+div.popup .video18  {width: 440px; padding: 13px 14px 25px 14px; border: solid 5px #ecf4fb; position: relative; margin: 150px auto 0 auto; background-color: #ffffff; 
+                                    overflow: hidden;}
+div.popup .video18 .btn-reg {width: 298px;}
+div.popup .video18 h1 {margin: 0; font: bold 24px 'PT Sans'; color:#424242; margin-bottom: 11px;}
+div.popup .video18 p {margin: 0; font: 14px Arial; color:#424242; margin-bottom: 18px; padding: 0;}
+div.popup .video18 .close_link {font-size: 14px; margin-left: 46px;}
+
+
