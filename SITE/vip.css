@@ -1,5 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
 
+.guestVip .btn-reg {width:178px; display: block; margin-top: 33px;}
+.guestVip .topIcon {width: 220px; float:left;}
+.guestVip h1 {font: bold 36px 'PT Sans'; color:#436187;  margin: 0 0 0 0; text-transform: uppercase; line-height: 36px; }
+.guestVip p {font: 16px Arial; color:#333333; margin: 10px 0 18px 0; padding: 0; line-height: 20px;}
+.guestVip {margin-top: 15px; margin-bottom: 30px;}
+.guestVip img {margin-top: 4px;}
+
 .hide {display: none}
 div.topMessage {position: relative; width: 900px; background-color: #ecf4fb; border-radius: 4px; padding: 25px; margin-bottom: 20px;}
 div.topMessage .message {position: relative; top: -6px;}
@@ -70,8 +77,8 @@ div.vipPayment .paymentInfo .tabBlock .firstTab .btn-next {float: right; margin-
 a.paypal {width: 150px; height: 52px; background: url(img/paypalbut.jpg) no-repeat; position: relative; margin: 20px auto; display: block;}
 div.vipPayment .paymentInfo .tabBlock .secondTab .servInfo {font: 12px Arial; color: #999999; text-align: center; margin-bottom: 20px;}
 
-div.whatGet .g1, div.whatGet .g3, div.whatGet .g5 {float: left;}
-div.whatGet .g2, div.whatGet .g4, div.whatGet .g6 {float: right;}
+div.whatGet .g1, div.whatGet .g3, div.whatGet .g5, div.whatGet .g7 {float: left;}
+div.whatGet .g2, div.whatGet .g4, div.whatGet .g6, div.whatGet .g8 {float: right;}
 div.whatGet h2 {font: bold 30px 'PT Sans'; color:#333333; margin: 0 0 15px 0; text-align: center;}
 div.whatGet h3 {font: bold 24px 'PT Sans'; color:#436187; margin: 0 0 10px 0; line-height: 24px;}
 div.whatGet p {font: 14px Arial; color:#333333; width: 330px;}
@@ -83,6 +90,9 @@ div.whatGet .g3 .icon {background-position: 0 -180px;}
 div.whatGet .g4 .icon {background-position: 0 -270px;} 
 div.whatGet .g5 .icon {background-position: 0 -360px;} 
 div.whatGet .g6 .icon {background-position: 0 -450px;} 
+div.whatGet .g7 .icon {background-position: 0 -540px;} 
+div.whatGet .g8 .icon {background-position: 0 -630px;} 
+
 
 div.vipBottom {overflow: hidden;}                                                      
 div.vipBottom h2 {font: bold 24px 'PT Sans'; color:#333333; margin: 0 0 18px 0;}
