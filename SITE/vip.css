@@ -41,9 +41,9 @@ div.vipPayment .selectPlan .label .cost b {font: bold 24px Arial; color:#51575e;
 div.vipPayment .selectPlan .label .cost div {padding-left: 9px; margin-top: -3px}
 div.vipPayment .selectPlan .label .mostPop {width: 66px; height: 64px; background: url(img/most-pop-plan.png) no-repeat; position: absolute; top: 11px; right: 13px;}
 div.vipPayment .selectPlan .label .description {font: 12px Arial; color:#525e76; margin-top: 30px;}
-div.vipPayment .selectPlan .label .description b {font: bold 16px Arial;}
+div.vipPayment .selectPlan .label .description b {font: bold 16px Arial; color:#333333;}
 div.vipPayment .selectPlan .label .description span {font: bold 16px Arial; color:#ff9c5c;}
-div.vipPayment .selectPlan .label .description div {margin-top: -2px}  
+div.vipPayment .selectPlan .label .description div {margin-top: -2px; COLOR:#525e76}  
 
 div.vipPayment .paymentInfo {position: relative; width: 465px; float:right;}
 div.vipPayment .paymentInfo .tabBlock {position: relative; height: 272px; border: solid 1px #dde0e6; border-top-color: #f4f5f7; border-bottom-color: #bbc0ce; padding: 20px;
