@@ -1,0 +1,137 @@
+/* Вынести в резет стилей обнуление margin и  padding  */
+
+/* Стандартные (Глобальные) элементы */
+.l-std__conent {float: left; margin-right: 17px; position: relative;}
+.b-std__header {font-family: 'PT Sans'; font-weight: bold; color: #333333; margin:0; margin-bottom: 15px;}
+.std__hidden {display: none;}
+.std__fs-mainH {font-size: 24px; line-height: 24px;}
+.std__2col-main {width: 733px;}
+.std__2col-side  {width: 200px;}
+.std__noMarg {margin: 0;}
+.std__noMargTop {margin-top:0;}
+.std__noMargRight {margin-right:0;}
+.std__noMargBottom {margin-bottom:0;}
+.std__noMargLeft {margin-left:0;}
+.std__fc_default {color:#010101;}
+.std__clear {clear: both;}
+.std__stopperWhite {background-color: #fff; opacity: 0.7; filter: alpha(opacity=70); position: absolute; width: 100%; z-index: 20; }
+.std__margLayout {margin: 0 0 17px 0;}
+.std__topContentPadding {padding-top: 20px;}
+
+
+/**** Блок выбора параметров поиска с ползунком *****.
+/* Looking Box */
+
+.b-lookBox {border-radius: 4px; background-color: #ecf4fb; width: 703px; padding: 15px; margin-bottom: 20px;}
+    .b-lookBox__locationField { }
+        .b-lookBox__progressbar {width: 100%; padding-top: 2px; background: url(http://yangutu.com/img/progressbar-bg.jpg) 0px 0px repeat-x; margin: 10px 0px; position: relative;}
+            .b-lookBox___progressControl {background: url(http://yangutu.com/img/progress-control-point-bg.jpg) 100% 0px no-repeat; position: absolute; height: 7px; width: 100%; top: -7px; left: 0px;}
+                .b-lookBox__progrControl_point {width: 16.666%; float: left; height: 5px; background: url(http://yangutu.com/img/progress-control-point-bg.jpg) 0px 0px no-repeat; position: relative;}
+                    .b-lookBox__progrControl_pointCity {display: inline; position: absolute; top: 22px; right: 0px; font-size: 12px;}
+            .b-lookBox___progressLine {width: 50%; background: url(http://yangutu.com/img/progress-line-bg.jpg) 0px 0px repeat-x; height: 4px; position: relative;}
+                .b-lookBox___progressLine_button {background: url(http://yangutu.com/img/progress-line-button.png) 0px 0px no-repeat; height: 18px; width: 13px; position: absolute; right: -7px; top: -5px; cursor: pointer;}
+                    .b-lookBox___progressLine_flag {display: inline; position: absolute; top: auto; bottom: 100%; margin-bottom: 3px; padding: 0px; left: 50%; z-index: 99;}
+                        .b-lookBox__progressLine_flag_inner{background-color: #ECEFF3; font-size: 11px; color: #426087; border: 1px solid #C0C8CD; border-image: initial; padding: 2px 5px; visibility: visible; position: relative; right: auto; display: block; top: -3px; left: -50%; z-index: 9999;}
+                            .b-lookBox__progressLine_flag_inner_img {position: absolute; bottom: -5px; left: 50%; margin-left: -4px; z-index: 101;}
+     .b-lookBox___progressbarLabel {display: block; overflow: hidden;}
+            .b-lookBox___locationSelect {display:imline-block; float: left;}
+            .b-lookBox___locationEnd  {display:imline-block; float: right;}
+     .b-lookBox__selectParams {display: inline-block; padding-top: 15px; margin-bottom: 5px}
+        .b-lookBox__selectParams_param {display: inline-block; margin-right: 35px;}
+            .b-lookBox__selectParam_label {display: inline-block; font-weight: bold; margin-right: 5px;}
+                .b-lookBox__selPar_radioLabel {font-weight: normal;}
+                .w-lookBox__selPar_select {display: inline-block; font-weight: normal; width: 105px;}
+                    .b-lookBox__selPar_radio {position: relative; top: 1px; margin-left: 3px;}
+    .b-lookBox__startButton {width: 100px; float: right; margin-top: 12px;}
+    
+ /***** CLASS **************
+ *** user *****************/
+.b-user__photoFrame {margin: 0 1px 8px 1px; display: block; padding: 2px; background-color: #ffffff; display: inline-block; 
+                     -moz-box-shadow: 0 1px 3px 0px #7D7D7D; -webkit-box-shadow: 0 1px 3px 0px #7D7D7D; box-shadow: 0 1px 3px 0px #7D7D7D; }
+    .b-user__photoFrame_photo {width:261px; height: 343px; display: block;}
+
+    
+   
+   
+    /******************/
+    
+/***** CLASS **************
+*** F2F *******************/
+.b-f2f {position: relative; }
+    .b-f2f__stopper{height: 800px;}
+    .b-f2f__header {margin-bottom: 15px; text-align: center;}
+    .b-f2f__user {display: block; position: relative; width: 267px; float: left; }
+        .b-f2f__report {font-size: 10px; display: block; margin-bottom: 6px; text-align: right;}
+        .b-f2f__user_info {border-top: solid 1px #d6d6d6; padding-top: 10px; }
+            .b-f2f__user_info_person {font-size: 19px; font-weight: bold; margin-bottom: 8px; }
+                .b-f2f__user_info_person_name {}
+                .b-f2f__user_info_person_age {}
+                .b-f2f__user_info_person_location {font-size: 11px; color: #666666; font-weight: normal;}
+            .b-f2f__user_info_wants {margin-bottom: 8px; font-size: 11px;}
+            .b-f2f__user_info_interests{font-size: 11px; margin-bottom: 10px;}
+                .b-f2f__user_info_interests_label {color:#666666; width: 85px; display: inline-block; float: left;}
+                .b-f2f__user_info_interests_list {display: inline-block; width: 180px;}
+                    .b-f2f__user_info_interests_item {}
+        .b-f2f__user_morePhoto {border-top: solid 1px #d6d6d6;}
+            .b-f2f__user_morePhoto_title {font-size: 11px; font-weight: bold; margin-top: 10px; margin-bottom: 10px; padding:0;}
+            .l-f2f__user_morePhoto_photoList {position: relative; }
+            /** child of USER **/
+            .b-f2f__user_morePhoto_photoFrame {padding: 1px 1px 2px 1px; margin: 0 12px 0 0;}  
+            .b-f2f__user_morePhoto_photoFrame:last-child{margin-right:0;}
+                   .b-f2f__user_morePhoto_photo {width: 53px; height: 64px;}
+                
+            /******************/
+        .b-f2f__user__previous {position: absolute; left: 0; top: 110px; }
+        .b-f2f__user__next {position: absolute; right: 0; top: 110px; }
+        .b-f2f__user__current {width: 333px; height: 800px; position: relative; margin-left: 185px; padding: 15px; background-color: #ecf4fb; 
+                                border-radius: 4px; -moz-box-shadow: 0 1px 3px 0px #7D7D7D; -webkit-box-shadow: 0 1px 3px 0px #7D7D7D; box-shadow: 0 1px 3px 0px #7D7D7D; 
+                                z-index: 100; }
+               /*** child ***/
+               .b-user__photoFrame_photo__current {width: 328px; height: 432px;}
+               .b-f2f__report__current {font-size: 12px; margin-bottom: 8px; text-align: right;}
+               .b-f2f__user_info_person__current {font-size: 24px;}
+                    .b-f2f__user_info_person_location__current  {font-size: 14px;}
+               .b-f2f__user_info_wants__current {font-size: 14px; margin-bottom: 10px;}
+               .b-f2f__user_info_interests__current{font-size: 14px;}
+                    .b-f2f__user_info_interests_label__current {width: 105px;}
+                    .b-f2f__user_info_interests_list__current {width: 225px;}
+               .b-f2f__user_morePhoto_title__current  {font-size: 14px;} 
+                    .b-f2f__user_morePhoto_photoFrame__current {padding: 2px; margin: 0 14px 0 0;}
+                    .b-f2f__user_morePhoto_photoFrame__current:last-child{margin-right:0;}                    
+                        .b-f2f__user_morePhoto_photo__current {width: 66px; height: 86px;}
+               /******************/
+        .b-f2f__user_buttons {margin-bottom: 17px;}
+            .b-f2f__user_button__left {width: 98px;} 
+            .b-f2f__user_button__middle {width: 123px;}
+            .b-f2f__user_button__right {width: 98px;}
+    .b-f2f__user__last_msg {font-size: 14px; line-height: 18px; color: #333; margin-top: 15px;}
+        .b-f2f__user__last_msgHead {margin-bottom: 23px;}
+        .b-f2f__user__last_msg  p{padding: 0;  margin-bottom: 22px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

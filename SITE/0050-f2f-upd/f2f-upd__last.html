@@ -1,0 +1,316 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <title>f2f - upd</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../btns.css" type="text/css">   <!-- Проверить наличие, заменить более новой версией, а так же файлы btns.png и button-icos.png, Версия указана в первой строке файла-->
+    <link rel="stylesheet" href="../yngtu_css.css" type="text/css"> <!-- Добавить на сервер, новая библиотека классов, будет использоваться в будущем -->
+    <!-- Костыли для ИE, можно добавить в уже существующие -->   
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="../yngtu_ie8.css" type="text/css">
+    <![endif]-->
+
+<!--  Файлы для замены селектов -->
+    
+    <script src="../js/jquery-1.4.4.min.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+        
+        function stsStyle(){ 
+                $('.select_menu').each(function(){
+                    var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),                    
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                    objElement.css({'width': w+'px'})
+                    console.log(obj.width())
+                
+                });
+            }
+            stsStyle();
+    </script>
+ <!--  ---------------------------------------- -->
+
+</head>
+<body>
+<!-- начало шаблонной шапки -->
+<div class="header">
+        <div class="header_inn">
+            <div class="top_navigation">
+                <ul class="left">
+                    <li><a href="#">Messages</a><span class="new_event">2</span></li>
+                    <li><a href="#">Signals</a><span class="new_event">45</span></li>
+                    <li><a href="#">Soulmates</a><span class="new_event">167</span></li>
+                </ul>
+                <ul class="right">
+                    <li class="coints">1450 Coins <a href="#">Add</a></li>
+                    <li class="profile"><a href="#">Profile </a></li>
+                    <li class="account"><a href="#">Account Settings</a></li>
+                </ul>
+                <div class="std__clear"></div>
+            </div>
+            <div class="bot_navigation">
+                <a href="#"><img src="../img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>    
+                <ul class="main_menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Matches</a></li>
+                    <li><a href="#">TOP-100</a></li>
+                    <li><a href="#">Apps and Games</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+                <div class="clr2"></div>
+            </div>
+        </div>
+    </div>
+   <!-- КОНЕЦ шаблонной шапки -->  
+    <div class="content">
+        <div class="content_inn std__topContentPadding">
+
+ 
+ <h1 class="b-std__header std__fs-mainH">Face-to-Face</h1>
+ 
+ <div class="l-std__conent std__2col-main">
+ 
+     <div class="b-btn__slider">
+       <a href="#" class="b-btn__slider_item b-btn__slider_item__first b-btn__slider_item__current">Play Face-to-Face</a>
+       <a href="#" class="b-btn__slider_item">Want to meet me
+            <span class="b-btn__slider_bubble">
+                <span class="b-btn__slider_bubble_number">88</span>
+            </span>
+       </a>
+       <a href="#" class="b-btn__slider_item">I want to meet</a>
+       <a href="#" class="b-btn__slider_item b-btn__slider_item__first">Mutual attractions
+            <span class="b-btn__slider_bubble">
+                <span class="b-btn__slider_bubble_number">88</span>
+            </span>
+       </a>
+    </div>
+    
+    <div class="b-lookBox">
+        <div class="b-lookBox__locationField">
+            <div class="b-lookBox__progressbar">
+                <div class="b-lookBox___progressControl">
+                	<div class="b-lookBox__progrControl_point"></div>
+                    <div class="b-lookBox__progrControl_point"></div>
+                    <div class="b-lookBox__progrControl_point"></div>
+                	<div class="b-lookBox__progrControl_point">
+                        <span class="b-lookBox__progrControl_pointCity">Belarus</span>
+                    </div>
+                    <div class="b-lookBox__progrControl_point"></div>
+                    <div class="b-lookBox__progrControl_point"></div>
+                </div><!-- b-lookBox___progressControl -->
+                <div class="b-lookBox___progressLine">
+                	<div class="b-lookBox___progressLine_button">
+                		<div class="b-lookBox___progressLine_flag">
+                            <div class="b-lookBox__progressLine_flag_inner">
+                                <img src="../img/progress-line-arrow.png" alt="" title="" class="b-lookBox__progressLine_flag_inner_img">
+                                <nobr>Within 60 miles</nobr>
+                            </div>
+                        </div>
+                	</div><!--b-lookBox___progressLine_button-->
+                </div><!-- b-lookBox___progressLine -->
+            </div><!-- b-lookBox__progressbar --> 
+            
+            <div class="b-lookBox___progressbarLabel">
+                <div class="b-lookBox___locationSelect">
+                    <a href="javascript:void(0);">Minsk</a>
+                </div>
+                <div class="b-lookBox___locationEnd">
+                    <span>World</span>
+                </div>  
+            </div><!-- b-lookBox___progressbarLabel --> 
+            
+        </div><!--/ .b-lookbox__locationField -->
+        <div class="b-lookBox__selectParams">
+        
+            <div  class="b-lookBox__selectParams_param">
+                <div class="b-lookBox__selectParam_label">Looking for a</div>
+                    <label class="b-lookBox__selPar_radioLabel"><input type="radio" name="lookBox__sex" class="b-lookBox__selPar_radio"/>Woman</label>
+                    <label class="b-lookBox__selPar_radioLabel"><input type="radio" name="lookBox__sex" class="b-lookBox__selPar_radio"/>Man</label>
+            </div>
+            
+            <div  class="b-lookBox__selectParams_param">
+                <div class="b-lookBox__selectParam_label">Aged</div>
+                    <div class="w-lookBox__selPar_select">
+                        <select class="sSelect">
+                            <option value="1">18-25</option>
+                            <option value="2">26-35</option>
+                            <option value="3">36-45</option>
+                            <option value="4">46-55</option>
+                        </select>
+                    </div>
+            </div>
+        </div>
+        
+        <a href="javascript:void(0);" class="btn-s-1 b-lookBox__startButton">
+            <span>Find people</span>
+        </a>
+       
+        
+    </div><!-- / .lookingbx -->
+    
+    <h2 class="b-std__header std__fs-mainH std__fc_default b-f2f__header">Want to meet her?</h2>
+    <div class="b-f2f">
+        <div class="std__stopperWhite b-f2f__stopper"></div>
+        <div class="b-f2f__user b-f2f__user__previous">
+            <div class="b-user__photoFrame">
+                <img src="../img/user-261x343.jpg" alt="" class="b-user__photoFrame_photo">
+            </div>
+            
+            <a class="b-f2f__report" href="#">Report this photo</a>
+            
+            <div class="b-f2f__user_info">
+                <div class="b-f2f__user_info_person">
+                    <a href="#" class="b-f2f__user_info_person_name">Marina</a>, 
+                    <span class="b-f2f__user_info_person_age">27</span>
+                    <span class="b-f2f__user_info_person_location">Minsk, Belarus</span>
+                </div><!-- b-f2f__user_info_person -->
+                
+                 <div class="b-f2f__user_info_wants">
+                    Wants to meet with a man, 36-45 
+                 </div>
+                 
+                 <div class="b-f2f__user_info_interests">
+                    <div class="b-f2f__user_info_interests_label">Interested In:</div>
+                    <div class="b-f2f__user_info_interests_list">
+                        <span class="b-f2f__user_info_interests_item">Flirt,</span>
+                        <span href="#" class="b-f2f__user_info_interests_item">Long-term Relationships,</span>
+                        <span href="#" class="b-f2f__user_info_interests_item">Marriage</span>
+                    </div>
+                   
+                    
+                 </div><!-- b-f2f__user_info_interests -->
+                 
+            </div><!-- b-f2f__user_info-->
+            
+            <div class="b-f2f__user_morePhoto">
+                <p class="b-f2f__user_morePhoto_title">Her photo</p>
+                
+                <div class="l-f2f__user_morePhoto_photoList">
+                    <div class="b-user__photoFrame b-f2f__user_morePhoto_photoFrame">
+                        <img src="../img/user-261x343.jpg" alt="" class="b-user__photoFrame_photo b-f2f__user_morePhoto_photo">
+                    </div>
+                    
+                    <div class="b-user__photoFrame b-f2f__user_morePhoto_photoFrame ">
+                        <img src="../img/user-261x343.jpg" alt="" class="b-user__photoFrame_photo b-f2f__user_morePhoto_photo">
+                    </div>
+                    
+                    <div class="b-user__photoFrame b-f2f__user_morePhoto_photoFrame">
+                        <img src="../img/user-261x343.jpg" alt="" class="b-user__photoFrame_photo b-f2f__user_morePhoto_photo">
+                    </div>
+                    
+                    <div class="b-user__photoFrame b-f2f__user_morePhoto_photoFrame">
+                        <img src="../img/user-261x343.jpg" alt="" class="b-user__photoFrame_photo b-f2f__user_morePhoto_photo">
+                    </div>
+                </div><!-- l-f2f__user_morePhoto_photoList -->
+            </div> 
+        </div><!-- b-f2f__user b-f2f__user__previous-->
+                
+       
+        <div class="b-f2f__user b-f2f__user__current b-f2f__user__last">
+             
+             <div class="b-btn__group b-f2f__user_buttons">
+                        <a href="javascript:void(0);" class="b-btn__group_unit btn__group_unit__left btn__group_unit__disabled b-f2f__user_button__left">
+                            Yes
+                        </a>
+                        <a href="javascript:void(0);" class="b-btn__group_unit btn__group_unit__middle btn__group_unit__disabled b-f2f__user_button__middle">
+                            Maybe
+                        </a>
+                        <a href="javascript:void(0);" class="b-btn__group_unit btn__group_unit__right btn__group_unit__disabled b-f2f__user_button__right">
+                            No
+                        </a>
+                     </div>
+                     
+            <div class="b-user__photoFrame">
+                <img src="../img/user-328x432-default.jpg" alt="" class="b-user__photoFrame_photo b-user__photoFrame_photo__current">
+            </div>
+            
+            <div class="b-f2f__user__last_msg">
+                <h3 class="b-std__header std__fs-mainH b-f2f__user__last_msgHead">We are awfully sorry!</h3>
+            
+                <p>Unfortunately, there are no more users that correspond to your search criteria.</p>
+                <p>Try to specify different criteria in a search form above to find someone else.</p>
+            </div>
+        </div><!-- b-f2f__user b-f2f__user__current-->
+        
+    </div><!-- /.b-f2f -->
+    
+                
+    
+ 
+ </div> <!-- /.l-std__conent-->
+ 
+ <div class="l-std__conent std__2col-side std__noMargRight ">
+    <div class="std__margLayout">
+        <img src="../img/banner-200x200-google.jpg" alt="">
+    </div>
+    
+    <div class="std__margLayout">
+        <img src="../img/banner-200x200-invite.jpg" alt="">
+    </div>
+
+ </div><!-- /.l-std__conent-->
+  
+ 
+ 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+
+
+
+
+
+<div class="clr2"></div>
+        </div>
+    </div>
+    <!-- НАЧАЛО шаблонного Футера -->
+    <div class="footer">
+      <div class="footer_inn">
+        <ul>
+            <li><a href="/page/about">About us</a></li>
+            <li><a href="/help">FAQ</a></li>
+            <li><a href="http://blog.yangutu.com/">Our blog</a></li>
+            <li><a href="/feedback">Contact us</a></li>
+        </ul>
+        <ul>
+            <li><a href="/page/policy">Privacy</a></li>
+            <li><a href="/page/terms">Terms of use</a></li>
+        </ul>
+        <ul>            
+            <li><a href="/page/scams">Scam warning</a></li>
+            <li><a href="/page/safety">Safety Tips</a></li>
+        </ul>
+        <ul>
+            <li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+            <li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+            <li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+        
+        </ul>
+        <ul>
+          <li><a href="/dating/all">People Directory</a></li>
+        </ul>
+        <div class="right">
+            <font color="black">&copy; 2010-2011 Yangutu Inc. All rights reserved</font><br>
+          <span>Yangutu (swahili) - My one and only.</span>
+        </div>
+         <div class="std__clear"></div>
+      </div>
+</div>
+</body>
+</html>
