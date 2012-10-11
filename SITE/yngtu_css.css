@@ -65,7 +65,7 @@
     .b-f2f__header {margin-bottom: 15px; text-align: center;}
     .b-f2f__user {display: block; position: relative; width: 267px; float: left; }
         .b-f2f__report {font-size: 10px; display: block; margin-bottom: 6px; text-align: right;}
-        .b-f2f__user_info {border-top: solid 1px #d6d6d6; padding-top: 10px; }
+        .b-f2f__user_info {padding-top: 10px; }
             .b-f2f__user_info_person {font-size: 19px; font-weight: bold; margin-bottom: 8px; }
                 .b-f2f__user_info_person_name {}
                 .b-f2f__user_info_person_age {}
