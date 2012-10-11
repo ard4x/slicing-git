@@ -17,7 +17,10 @@
 .std__stopperWhite {background-color: #fff; opacity: 0.7; filter: alpha(opacity=70); position: absolute; width: 100%; z-index: 20; }
 .std__margLayout {margin: 0 0 17px 0;}
 .std__topContentPadding {padding-top: 20px;}
-
+.w-std__frame  {display: inline-block; padding: 5px; background-color: #ffffff; -moz-box-shadow: 0 1px 3px 0px #7D7D7D; -webkit-box-shadow: 0 1px 3px 0px #7D7D7D; box-shadow: 0 1px 3px 0px #7D7D7D; }
+.b-std__popup {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url(img/opacity.png) repeat; z-index: 999;}
+    .std__popup_content {width: 650px; padding: 25px 0 25px 30px; border: solid 5px #ecf4fb; position: relative; margin: 150px auto 0 auto; background-color: #ffffff; padding: 25px 0 25px 30px;}
+    .std__popup_close {display:block; width: 9px; height: 9px; background: url(img/close_pop.png) no-repeat; position: absolute; top: 10px; right: 10px;}
 
 /**** Блок выбора параметров поиска с ползунком *****.
 /* Looking Box */
@@ -41,12 +44,12 @@
             .b-lookBox__selectParam_label {display: inline-block; font-weight: bold; margin-right: 5px;}
                 .b-lookBox__selPar_radioLabel {font-weight: normal;}
                 .w-lookBox__selPar_select {display: inline-block; font-weight: normal; width: 105px;}
-                    .b-lookBox__selPar_radio {position: relative; top: 1px; margin-left: 3px;}
+                    .b-lookBox__selPar_radio {position: relative; top: 2px; margin-left: 3px;}
     .b-lookBox__startButton {width: 100px; float: right; margin-top: 12px;}
     
  /***** CLASS **************
  *** user *****************/
-.b-user__photoFrame {margin: 0 1px 8px 1px; display: block; padding: 2px; background-color: #ffffff; display: inline-block; 
+.b-user__photoFrame {margin: 0 1px 8px 1px; padding: 2px; background-color: #ffffff; display: inline-block; 
                      -moz-box-shadow: 0 1px 3px 0px #7D7D7D; -webkit-box-shadow: 0 1px 3px 0px #7D7D7D; box-shadow: 0 1px 3px 0px #7D7D7D; }
     .b-user__photoFrame_photo {width:261px; height: 343px; display: block;}
 
@@ -104,13 +107,19 @@
             .b-f2f__user_button__left {width: 98px;} 
             .b-f2f__user_button__middle {width: 123px;}
             .b-f2f__user_button__right {width: 98px;}
-    .b-f2f__user__last_msg {font-size: 14px; line-height: 18px; color: #333; margin-top: 15px;}
-        .b-f2f__user__last_msgHead {margin-bottom: 23px;}
-        .b-f2f__user__last_msg  p{padding: 0;  margin-bottom: 22px;}
-
-
-
-
+    .b-f2f__noUsers_message {font-size: 14px; line-height: 18px; color: #333; margin-top: 15px;}
+        .b-f2f__noUsers_message_header {margin-bottom: 23px;}
+        .b-f2f__noUsers_message  p{padding: 0;  margin-bottom: 22px;}
+    
+    .b-f2f__noUsers { position: relative; width: 420px; margin: 60px 150px;}
+        .b-f2f__noUsers_content {background-color: #ecf4fb; padding: 30px 70px; display: block;}
+    
+    .b-f2f__popupInfo {width: 485px; padding: 20px 20px 70px 20px; overflow: hidden}
+        .b-f2f__popupInfo_header {margin-bottom: 20px;}
+        .b-f2f__popupInfo_illustr{display: inline-block; margin: 0 20px 20px 0; float: left;}
+        .b-f2f__popup_bottom {width: 100%; padding: 20px 0; background-color: #ecf4fb; position: absolute; bottom:0; left: 0; text-align: center;}
+            .b-f2f__popup_contBtn {width: 180px;}
+        .b-f2f__popupInfo p {font-size: 14px; color: #333; padding: 7px 0 13px 0; }
 
 
 
