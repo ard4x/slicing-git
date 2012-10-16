@@ -1,0 +1,12 @@
+/*** Виджеты ***/
+
+    /*** Виджет Want to talk ...? ***/
+
+    .wid__wtt {text-align: center;}
+        .wid__wtt_bubble {margin-bottom: 15px; background-color: #54823b;}
+        .wid__wtt_user_photoFrame{display: block; width: 116px; margin: 0 auto 14px auto;}
+            .wid__wtt_user_photo{width: 116px; height: 156px;}
+            .wid__wtt_title {font-size: 14px; font-weight: bold; color:#333333; margin-bottom: 15px; display: inline-block;}
+            .wid__wtt_btn{width: 78px;}
+                .wid__wtt_btnTalk {float:left; }
+                .wid__wtt_btnShow{float:right;}

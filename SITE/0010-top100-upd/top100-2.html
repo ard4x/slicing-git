@@ -1,0 +1,464 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <title>Top-100</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../btns.css" type="text/css">   <!-- Проверить наличие, заменить более новой версией, а так же файлы btns.png и button-icos.png, Версия указана в первой строке файла-->
+    <link rel="stylesheet" href="../yngtu_css.css" type="text/css"> <!-- Добавить на сервер, новая библиотека классов, будет использоваться в будущем -->
+    <!-- Костыли для ИE, можно добавить в уже существующие -->   
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="../yngtu_ie8.css" type="text/css">
+    <![endif]-->
+
+<!--  Файлы для замены селектов -->
+    
+    <script src="../js/jquery-1.4.4.min.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+        
+        function stsStyle(){ 
+                $('.select_menu').each(function(){
+                    var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),                    
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                    objElement.css({'width': w+'px'})
+                    console.log(obj.width())
+                
+                });
+            }
+            stsStyle();
+    </script>
+ <!--  ---------------------------------------- -->
+
+</head>
+<body>
+<!-- начало шаблонной шапки -->
+<div class="header">
+        <div class="header_inn">
+            <div class="top_navigation">
+                <ul class="left">
+                    <li><a href="#">Messages</a><span class="new_event">2</span></li>
+                    <li><a href="#">Signals</a><span class="new_event">45</span></li>
+                    <li><a href="#">Soulmates</a><span class="new_event">167</span></li>
+                </ul>
+                <ul class="right">
+                    <li class="coints">1450 Coins <a href="#">Add</a></li>
+                    <li class="profile"><a href="#">Profile </a></li>
+                    <li class="account"><a href="#">Account Settings</a></li>
+                </ul>
+                <div class="std__clear"></div>
+            </div>
+            <div class="bot_navigation">
+                <a href="#"><img src="../img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>    
+                <ul class="main_menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Matches</a></li>
+                    <li><a href="#">TOP-100</a></li>
+                    <li><a href="#">Apps and Games</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+                <div class="clr2"></div>
+            </div>
+        </div>
+    </div>
+   <!-- КОНЕЦ шаблонной шапки -->  
+    <div class="content">
+        <div class="content_inn std__topContentPadding b-top100">
+
+ 
+             <h1 class="b-std__header std__fs-mainH">TOP-100</h1>
+             
+             <div class="l-std__conent std__2col-main">
+                
+                <div class="b-top100__topMenu">
+                        
+                    <a class="btn-s-2 b-top100__topMenu_startBtn" href="javascript:void(0);"><span>Start game</span></a>
+                    <div class="b-btn__slider b-top100__topMenu_slideMenu">
+                       <a href="#" class="b-btn__slider_item b-btn__slider_item__first b-btn__slider_item__current">Leaders</a>
+                       <a href="#" class="b-btn__slider_item">My score </a>
+                       <a href="#" class="b-btn__slider_item">Voted for me</a>
+                       <a href="#" class="b-btn__slider_item b-btn__slider_item__last">I voted for</a>
+                    </div> <!-- b-btn__slider -->   
+                    <div class="std__clear"></div>
+                </div><!-- b-top100__topMenu -->
+                
+                <div class="b-lookBox">
+                    <div class="b-lookBox__locationField">
+                        <div class="b-lookBox__progressbar">
+                            <div class="b-lookBox___progressControl">
+                                <div class="b-lookBox__progrControl_point"></div>
+                                <div class="b-lookBox__progrControl_point"></div>
+                                <div class="b-lookBox__progrControl_point"></div>
+                                <div class="b-lookBox__progrControl_point">
+                                    <span class="b-lookBox__progrControl_pointCity">Belarus</span>
+                                </div>
+                                <div class="b-lookBox__progrControl_point"></div>
+                                <div class="b-lookBox__progrControl_point"></div>
+                            </div><!-- b-lookBox___progressControl -->
+                            <div class="b-lookBox___progressLine">
+                                <div class="b-lookBox___progressLine_button">
+                                    <div class="b-lookBox___progressLine_flag">
+                                        <div class="b-lookBox__progressLine_flag_inner">
+                                            <img src="../img/progress-line-arrow.png" alt="" title="" class="b-lookBox__progressLine_flag_inner_img">
+                                            <nobr>Within 60 miles</nobr>
+                                        </div>
+                                    </div>
+                                </div><!--b-lookBox___progressLine_button-->
+                            </div><!-- b-lookBox___progressLine -->
+                        </div><!-- b-lookBox__progressbar --> 
+                        
+                        <div class="b-lookBox___progressbarLabel">
+                            <div class="b-lookBox___locationSelect">
+                                <a href="javascript:void(0);">Minsk</a>
+                            </div>
+                            <div class="b-lookBox___locationEnd">
+                                <span>World</span>
+                            </div>  
+                        </div><!-- b-lookBox___progressbarLabel --> 
+                        
+                    </div><!--/ .b-lookbox__locationField -->
+                    <div class="b-lookBox__selectParams">
+                    
+                        <div  class="b-lookBox__selectParams_param">
+                            <div class="b-lookBox__selectParam_label">Sex</div>
+                                <label class="b-lookBox__selPar_radioLabel"><input type="radio" name="lookBox__sex" class="b-lookBox__selPar_radio"/>Woman</label>
+                                <label class="b-lookBox__selPar_radioLabel"><input type="radio" name="lookBox__sex" class="b-lookBox__selPar_radio"/>Man</label>
+                        </div>
+                        
+                        <div  class="b-lookBox__selectParams_param">
+                            <div class="b-lookBox__selectParam_label">Aged</div>
+                                <div class="w-lookBox__selPar_select">
+                                    <select class="sSelect">
+                                        <option value="1">18-25</option>
+                                        <option value="2">26-35</option>
+                                        <option value="3">36-45</option>
+                                        <option value="4">46-55</option>
+                                    </select>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <a href="javascript:void(0);" class="btn-s-1 b-lookBox__startButton b-top100__lookBox_showBtn">
+                        <span>Show people</span>
+                    </a>
+                   
+                    
+                </div><!-- / .lookingbx -->
+               <div class="b-top100__leaderBoard b-top100__leaderBoard__noWinners">
+                    <h2 class="b-std__header std__fs-mainH b-top100__leaderBoard_header">October's leaderboard</h2>
+                    
+                    
+                    <ul class="b-top100__leaderBoard_list">
+                        <li class="b-top100__leaderBoard_user">
+                            <div class="b-top100__leaderBoard_number">#1</div>
+                            <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                                <img src="../img/user2-116x156.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+                                <div class="b-top100__leaderBoard_user_givPoint"><a class="btn-m-3 b-top100__leaderBoard_user_givPointBtn" href="javascript:void(0);"><span>Give more points</span></a></div>
+                            </div>
+                            
+                            <div class="b-user__person b-top100__leaderBoard_user_person">
+                                <a href="#">Olga</a>, 35
+                            </div>
+                            <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                        </li><!-- /.b-top100__leaderBoard_user -->
+                        
+                        <li class="b-top100__leaderBoard_user">
+                            <div class="b-top100__leaderBoard_number">#1</div>
+                            <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                                <img src="../img/user2-116x156.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+                                <div class="b-top100__leaderBoard_user_givPoint"><a class="btn-m-3 b-top100__leaderBoard_user_givPointBtn" href="javascript:void(0);"><span>Give more points</span></a></div>
+                            </div>
+                            
+                            <div class="b-user__person b-top100__leaderBoard_user_person">
+                                <a href="#">Olga</a>, 35
+                            </div>
+                            <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                        </li><!-- /.b-top100__leaderBoard_user -->
+                        
+                        <li class="b-top100__leaderBoard_user">
+                            <div class="b-top100__leaderBoard_number">#1</div>
+                            <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                                <img src="../img/user2-116x156.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+                                <div class="b-top100__leaderBoard_user_givPoint"><a class="btn-m-3 b-top100__leaderBoard_user_givPointBtn" href="javascript:void(0);"><span>Give more points</span></a></div>
+                            </div>
+                            
+                            <div class="b-user__person b-top100__leaderBoard_user_person">
+                                <a href="#">Olga</a>, 35
+                            </div>
+                            <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                        </li><!-- /.b-top100__leaderBoard_user -->
+                        
+                        <li class="b-top100__leaderBoard_user">
+                            <div class="b-top100__leaderBoard_number">#1</div>
+                            <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                                <img src="../img/user2-116x156.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+                                <div class="b-top100__leaderBoard_user_givPoint"><a class="btn-m-3 b-top100__leaderBoard_user_givPointBtn" href="javascript:void(0);"><span>Give more points</span></a></div>
+                            </div>
+                            
+                            <div class="b-user__person b-top100__leaderBoard_user_person">
+                                <a href="#">Olga</a>, 35
+                            </div>
+                            <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                        </li><!-- /.b-top100__leaderBoard_user -->
+                        
+                        <li class="b-top100__leaderBoard_user">
+                            <div class="b-top100__leaderBoard_number">#1</div>
+                            <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                                <img src="../img/user2-116x156.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+                                <div class="b-top100__leaderBoard_user_givPoint"><a class="btn-m-3 b-top100__leaderBoard_user_givPointBtn" href="javascript:void(0);"><span>Give more points</span></a></div>
+                            </div>
+                            
+                            <div class="b-user__person b-top100__leaderBoard_user_person">
+                                <a href="#">Olga</a>, 35
+                            </div>
+                            <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                        </li><!-- /.b-top100__leaderBoard_user -->
+                        
+                        <li class="b-top100__leaderBoard_user">
+                            <div class="b-top100__leaderBoard_number">#1</div>
+                            <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                                <img src="../img/user2-116x156.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+                                <div class="b-top100__leaderBoard_user_givPoint"><a class="btn-m-3 b-top100__leaderBoard_user_givPointBtn" href="javascript:void(0);"><span>Give more points</span></a></div>
+                            </div>
+                            
+                            <div class="b-user__person b-top100__leaderBoard_user_person">
+                                <a href="#">Olga</a>, 35
+                            </div>
+                            <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                        </li><!-- /.b-top100__leaderBoard_user -->
+                        
+                        <li class="b-top100__leaderBoard_user">
+                            <div class="b-top100__leaderBoard_number">#1</div>
+                            <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                                <img src="../img/user2-116x156.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+                                <div class="b-top100__leaderBoard_user_givPoint"><a class="btn-m-3 b-top100__leaderBoard_user_givPointBtn" href="javascript:void(0);"><span>Give more points</span></a></div>
+                            </div>
+                            
+                            <div class="b-user__person b-top100__leaderBoard_user_person">
+                                <a href="#">Olga</a>, 35
+                            </div>
+                            <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                        </li><!-- /.b-top100__leaderBoard_user -->
+                        
+                        <li class="b-top100__leaderBoard_user">
+                            <div class="b-top100__leaderBoard_number">#1</div>
+                            <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                                <img src="../img/user2-116x156.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+                                <div class="b-top100__leaderBoard_user_givPoint"><a class="btn-m-3 b-top100__leaderBoard_user_givPointBtn" href="javascript:void(0);"><span>Give more points</span></a></div>
+                            </div>
+                            
+                            <div class="b-user__person b-top100__leaderBoard_user_person">
+                                <a href="#">Olga</a>, 35
+                            </div>
+                            <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                        </li><!-- /.b-top100__leaderBoard_user -->
+                        
+                        <li class="b-top100__leaderBoard_user">
+                            <div class="b-top100__leaderBoard_number">#1</div>
+                            <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                                <img src="../img/user2-116x156.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+                                <div class="b-top100__leaderBoard_user_givPoint"><a class="btn-m-3 b-top100__leaderBoard_user_givPointBtn" href="javascript:void(0);"><span>Give more points</span></a></div>
+                            </div>
+                            
+                            <div class="b-user__person b-top100__leaderBoard_user_person">
+                                <a href="#">Olga</a>, 35
+                            </div>
+                            <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                        </li><!-- /.b-top100__leaderBoard_user -->
+                        
+                        <li class="b-top100__leaderBoard_user">
+                            <div class="b-top100__leaderBoard_number">#1</div>
+                            <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                                <img src="../img/user2-116x156.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+                                <div class="b-top100__leaderBoard_user_givPoint"><a class="btn-m-3 b-top100__leaderBoard_user_givPointBtn" href="javascript:void(0);"><span>Give more points</span></a></div>
+                            </div>
+                            
+                            <div class="b-user__person b-top100__leaderBoard_user_person">
+                                <a href="#">Olga</a>, 35
+                            </div>
+                            <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                        </li><!-- /.b-top100__leaderBoard_user -->
+                        
+                        <li class="b-top100__leaderBoard_user">
+                            <div class="b-top100__leaderBoard_number">#1</div>
+                            <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                                <img src="../img/user2-116x156.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+                                <div class="b-top100__leaderBoard_user_givPoint"><a class="btn-m-3 b-top100__leaderBoard_user_givPointBtn" href="javascript:void(0);"><span>Give more points</span></a></div>
+                            </div>
+                            
+                            <div class="b-user__person b-top100__leaderBoard_user_person">
+                                <a href="#">Olga</a>, 35
+                            </div>
+                            <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                        </li><!-- /.b-top100__leaderBoard_user -->
+                        
+                        <li class="b-top100__leaderBoard_user">
+                            <div class="b-top100__leaderBoard_number">#1</div>
+                            <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                                <img src="../img/user2-116x156.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+                                <div class="b-top100__leaderBoard_user_givPoint"><a class="btn-m-3 b-top100__leaderBoard_user_givPointBtn" href="javascript:void(0);"><span>Give more points</span></a></div>
+                            </div>
+                            
+                            <div class="b-user__person b-top100__leaderBoard_user_person">
+                                <a href="#">Olga</a>, 35
+                            </div>
+                            <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                        </li><!-- /.b-top100__leaderBoard_user -->
+                        
+                        <li class="b-top100__leaderBoard_user">
+                            <div class="b-top100__leaderBoard_number">#1</div>
+                            <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                                <img src="../img/user2-116x156.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+                                <div class="b-top100__leaderBoard_user_givPoint"><a class="btn-m-3 b-top100__leaderBoard_user_givPointBtn" href="javascript:void(0);"><span>Give more points</span></a></div>
+                            </div>
+                            
+                            <div class="b-user__person b-top100__leaderBoard_user_person">
+                                <a href="#">Olga</a>, 35
+                            </div>
+                            <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                        </li><!-- /.b-top100__leaderBoard_user -->
+                        
+                        <li class="b-top100__leaderBoard_user">
+                            <div class="b-top100__leaderBoard_number">#1</div>
+                            <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                                <img src="../img/user2-116x156.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+                                <div class="b-top100__leaderBoard_user_givPoint"><a class="btn-m-3 b-top100__leaderBoard_user_givPointBtn" href="javascript:void(0);"><span>Give more points</span></a></div>
+                            </div>
+                            
+                            <div class="b-user__person b-top100__leaderBoard_user_person">
+                                <a href="#">Olga</a>, 35
+                            </div>
+                            <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                        </li><!-- /.b-top100__leaderBoard_user -->
+                        
+                        <li class="b-top100__leaderBoard_user">
+                            <div class="b-top100__leaderBoard_number">#1</div>
+                            <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                                <img src="../img/user2-116x156.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+                                <div class="b-top100__leaderBoard_user_givPoint"><a class="btn-m-3 b-top100__leaderBoard_user_givPointBtn" href="javascript:void(0);"><span>Give more points</span></a></div>
+                            </div>
+                            
+                            <div class="b-user__person b-top100__leaderBoard_user_person">
+                                <a href="#">Olga</a>, 35
+                            </div>
+                            <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                        </li><!-- /.b-top100__leaderBoard_user -->
+                        
+                        <li class="b-top100__leaderBoard_list_last"></li>
+                        
+                   </ul> <!-- /.b-top100__leaderBoard_list -->
+                   
+                    
+                </div><!-- /.b-top100__leaderBoard -->
+                <div class="btn__paging">
+                    <a href="javascript:void(0);" class="btn__paging-item btn__paging-item__disabled btn__paging-prew">Prew</a>
+                    <a href="javascript:void(0);" class="btn__paging-item btn__paging-item__current btn__paging-page">1</a>
+                    <a href="javascript:void(0);" class="btn__paging-item btn__paging-page">2</a>
+                    <a href="javascript:void(0);" class="btn__paging-item btn__paging-page">3</a>
+                    <a href="javascript:void(0);" class="btn__paging-item btn__paging-next">next</a>
+                </div>   
+                                          
+             
+             </div> <!-- /.l-std__conent-->
+             
+             <div class="l-std__conent std__2col-side std__noMargRight ">
+                <div class="b-top100__widget_youIn std__layer_blue std__margLayout">
+                    <h3 class="b-std__header std__fs-smallH b-top100__widget_youIn_header">You in Top-100</h3>
+                    <div class="b-user__photoFrame b-top100__widget_youIn_user_photoFrame">
+                        <img src="../img/user2-116x156.jpg" alt="" class="b-user__photoFrame_photo b-top100__widget_youIn_user_photo">
+                        <div class="b-top100__widget_youIn_points">
+                            <span class="top100__widget_youIn_pointsItem">
+                                <span class="top100__widget_youIn_pointsItem_Count">356</span> <br> points</span>
+                        </div>
+                    </div>
+                    <div class="b-top100__widget_youIn_place">
+                        <div class="b-top100__widget_youIn_place_item">
+                            <span class="b-top100__widget_youIn_place_name">France</span>
+                            <span class="b-top100__widget_youIn_place_count b-top100__widget_youIn_place_countDown">
+                                -26
+                            </span>
+                            <span class="b-top100__widget_youIn_place_number">52</span>
+                                 
+                        </div>
+                         <div class="b-top100__widget_youIn_place_item">
+                            <span class="b-top100__widget_youIn_place_name">World</span>
+                            <span class="b-top100__widget_youIn_place_count b-top100__widget_youIn_place_countUp">
+                                
+                                945
+                            </span>    
+                            <span class="b-top100__widget_youIn_place_number">55654</span>                            
+                        </div>
+                    
+                    </div><!-- b-top100__widget_youIn_place -->
+                    <a href="javascript:void(0);" class="btn-s-1 b-top100__widget_youIn_btn"><span>More details</span></a>
+                    
+                    
+                </div><!-- /.b-top100__widget_youIn -->
+                
+                <div class="wid__wtt std__layer_yellow std__margLayout">
+                    <span class="std__buble_long_green wid__wtt_bubble">online now</span>
+                    
+                    <div class="b-user__photoFrame wid__wtt_user_photoFrame">
+                        <img src="../img/user2-116x156.jpg" alt="" class="b-user__photoFrame_photo wid__wtt_user_photo">
+                    </div>
+                    <span class="wid__wtt_title">Want to talk to her?</span>
+                    
+                    <a href="" class="btn-m-2 wid__wtt_btn wid__wtt_btnTalk">
+                        <span>Talk to her</span>
+                    </a>
+                    <a href="" class="btn-m-1 wid__wtt_btn wid__wtt_btnShow">
+                        <span>Show more</span>
+                    </a>
+                    <div class="std__clear"></div>
+                </div><!-- WTT widget -->
+                
+                <div class="std__margLayout">
+                    <img src="../img/banner-200x200-invite.jpg" alt="">
+                </div>
+
+             </div><!-- /.l-std__conent-->
+              
+            <div class="clr2"></div>
+        </div><!-- /.content_inn -->
+    </div><!-- /.content -->
+    
+      <!-- НАЧАЛО шаблонного Футера -->
+    <div class="footer">
+      <div class="footer_inn">
+        <ul>
+            <li><a href="/page/about">About us</a></li>
+            <li><a href="/help">FAQ</a></li>
+            <li><a href="http://blog.yangutu.com/">Our blog</a></li>
+            <li><a href="/feedback">Contact us</a></li>
+        </ul>
+        <ul>
+            <li><a href="/page/policy">Privacy</a></li>
+            <li><a href="/page/terms">Terms of use</a></li>
+        </ul>
+        <ul>            
+            <li><a href="/page/scams">Scam warning</a></li>
+            <li><a href="/page/safety">Safety Tips</a></li>
+        </ul>
+        <ul>
+            <li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+            <li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+            <li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+        
+        </ul>
+        <ul>
+          <li><a href="/dating/all">People Directory</a></li>
+        </ul>
+        <div class="right">
+            <font color="black">&copy; 2010-2011 Yangutu Inc. All rights reserved</font><br>
+          <span>Yangutu (swahili) - My one and only.</span>
+        </div>
+         <div class="std__clear"></div>
+      </div>
+</div>
+</body>
+</html>

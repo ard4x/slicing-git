@@ -1,10 +1,32 @@
-/* BUTTONS v.20121002
+/* BUTTONS v.20121011
 /* Grey Micro button */
 a.btn-m-7   {display: inline-block; border: solid 1px #cbcbcb; border-radius: 3px; background: 0 -116px url(img/btns.png) repeat-x; 
             height: 22px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3; cursor: pointer; text-align: center; position: relative; padding: 0;}
 a.btn-m-7 span  {display: inline-block; font: bold 12px Arial !important; color: #525252;  text-shadow: #ffffff 0 1px 1px; margin-top: 3px}
 a.btn-m-7:hover {background-position: 0 -138px;}
 a.btn-m-7:active{background-position: 0 -160px; box-shadow: none; }
+
+/* Orange micro button */
+a.btn-m-3   {display: inline-block; border: solid 1px #ca582e; border-top-color: #99573e; border-bottom-color: #963411; border-radius: 3px; background: 0 -880px url(img/btns.png) repeat-x; 
+            height: 22px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3; cursor: pointer; text-align: center; position: relative; padding: 0;}
+a.btn-m-3 span  {display: inline-block; font: bold 12px Arial !important; color: #fff;  text-shadow: #364f6d 0 1px 1px; margin-top: 3px}
+a.btn-m-3:hover {background-position: 0 -902px; border: solid 1px #d46842; border-top-color: #99573e; border-bottom-color: #a65134;}
+a.btn-m-3:active{background-position: 0 -924px; box-shadow: none; border: solid 1px #c75127; border-top-color: #8a3714; border-bottom-color: #a55133;}
+
+/* Green micro button */
+a.btn-m-2   {display: inline-block; border: solid 1px #64964a; border-top-color: #548d52; border-bottom-color: #41642e; border-radius: 3px; background: 0 -1034px url(img/btns.png) repeat-x; 
+            height: 22px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3; cursor: pointer; text-align: center; position: relative; padding: 0;}
+a.btn-m-2 span  {display: inline-block; font: bold 12px Arial !important; color: #fff;  text-shadow: #364f6d 0 1px 1px; margin-top: 3px}
+a.btn-m-2:hover {background-position: 0 -1056px; border: solid 1px #74a858; border-top-color: #548d52; border-bottom-color: #5b8444;}
+a.btn-m-2:active{background-position: 0 -1078px; box-shadow: none; border: solid 1px #619147; border-top-color: #3b6a35; border-bottom-color: #5a8344;}
+
+/* Blue micro button */
+a.btn-m-1   {display: inline-block; border: solid 1px #4a6c96; border-top-color: #3a639a; border-bottom-color: #334b67; border-radius: 3px; background: 0 -1100px url(img/btns.png) repeat-x; 
+            height: 22px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3; cursor: pointer; text-align: center; position: relative; padding: 0;}
+a.btn-m-1 span  {display: inline-block; font: bold 12px Arial !important; color: #fff;  text-shadow: #364f6d 0 1px 1px; margin-top: 3px}
+a.btn-m-1:hover {background-position: 0 -1122px; border: solid 1px #5177a5; border-top-color: #3a639a; border-bottom-color: #3f5d81;}
+a.btn-m-1:active{background-position: 0 -1144px; box-shadow: none; border: solid 1px #496b94; border-top-color: #2f4f7b; border-bottom-color: #3f5c81;}
+
 
 /* Blue small button */     
 a.btn-s-1 {display: inline-block; border: solid 1px #4a6c97;  border-top-color: #3a639a;  border-bottom-color: #334a67;
@@ -15,12 +37,12 @@ a.btn-s-1:hover {background-position: 0 -29px; border-color: #5177a5; border-top
 a.btn-s-1:active {background-position: 0 -58px;  border-color: #486992; border-top-color: #2f4f7b;  border-bottom-color: #3f5d81; box-shadow: none; }
 
 /* Green small button */     
-a.btn-s-2 {display: inline-block; border: solid 1px #4a6c97;  border-top-color: #3a639a;  border-bottom-color: #334a67;
+a.btn-s-2 {display: inline-block; border: solid 1px #64954a;  border-top-color: #548d52;  border-bottom-color: #40642d;
             border-radius: 3px; background: 0 -182px url(img/btns.png) repeat-x; cursor: pointer;
             height: 29px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3; text-align: center; position: relative; padding: 0;}
 a.btn-s-2 span {display: inline-block; font: bold 14px Arial !important; color: #ffffff;  text-shadow: #364f6d 0 1px 2px; margin-top: 6px}
-a.btn-s-2:hover {background-position: 0 -211px; border-color: #5177a5; border-top-color: #3a639a;  border-bottom-color: #3f5d81; }
-a.btn-s-2:active {background-position: 0 -240px;  border-color: #486992; border-top-color: #2f4f7b;  border-bottom-color: #3f5d81; box-shadow: none; }
+a.btn-s-2:hover {background-position: 0 -211px; border-color: #74a858; border-top-color: #548d52;  border-bottom-color: #5b8444; }
+a.btn-s-2:active {background-position: 0 -240px;  border-color: #64954a; border-top-color: #3b6a35;  border-bottom-color: #5b8344; box-shadow: none; }
 
 /* Inactive small button */
 a.btn-s-0 {display: inline-block; border: solid 1px #636363;  border-top-color: #47535d;  border-bottom-color: #4e4e4e;  background:0 -87px url(img/btns.png) repeat-x; 
@@ -37,6 +59,17 @@ a.btn-s-7 span   {position: relative; display: inline-block; font: bold 14px Ari
 a.btn-s-7 span:after {content:''; position: absolute; width: 1px; height: 29px; background-color: #334a67; top: -6px; left: 23px; } 
 a.btn-s-7:hover {background-position: 0 -29px; border-color: #5177a5; border-top-color: #3a639a;  border-bottom-color: #3f5d81; }
 a.btn-s-7:active {background-position: 0 -58px;  border-color: #486992; border-top-color: #2f4f7b;  border-bottom-color: #3f5d81; box-shadow: none; }
+
+/* Small Twitter button */
+a.btn-s-8 {display: inline-block; border: solid 1px #35abdf;  border-top-color: #33a2e3;  border-bottom-color: #1c749d;
+            border-radius: 3px; background: 0 -1166px url(img/btns.png) repeat-x; cursor: pointer;
+            height: 29px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3;}
+
+a.btn-s-8 span   {position: relative; display: inline-block; font: bold 14px Arial !important; color: #ffffff;  text-shadow: #364f6d 0 1px 2px; margin-top: 6px; padding-left: 33px; margin-right: 8px;
+                  background: url(img/button-icos.png) no-repeat;  background-position: -9px -346px;}
+a.btn-s-8 span:after {content:''; position: absolute; width: 1px; height: 29px; background-color: #1c749d; top: -6px; left: 23px; } 
+a.btn-s-8:hover {background-position: 0 -1195px; border-color: #47c2f3; border-top-color: #33a2e3;  border-bottom-color: #3897be; }
+a.btn-s-8:active {background-position: 0 -1224px;  border-color: #35a9dd; border-top-color: #197bbb;  border-bottom-color: #3797bd; box-shadow: none; }
 
 /* Green Average button */     
 a.btn-a-2 {display: inline-block; border: solid 1px #64954a;  border-top-color: #548d52;  border-bottom-color: #40642d;  
@@ -98,3 +131,16 @@ a.btn-a-6:active {background-position: 0 -464px;  border-color: #496a94; border-
     .b-btn__slider_item__last{border-top-right-radius: 4px; border-bottom-right-radius: 4px;}
         .b-btn__slider_bubble {display: block; border-radius: 11px; border: solid 1px #99373e; background-color: #c81e1e; width: 22px; height: 22px; position: absolute; top: -13px; right: 10px; text-align: center;}
             .b-btn__slider_bubble_number {font: 12px Arial; color: #fff; display: inline-block;  margin-top: 3px;}
+            
+/*** PAGINATION **/
+.btn__paging {}        
+    .btn__paging-item {display: inline-block; margin-right: 3px; height: 18px; padding-top: 4px; background: 0 -946px url(img/btns.png) repeat-x; border: solid 1px #cbcbcb; 
+                        border-radius: 3px; width: 23px; text-align: center; font: 12px Arial; color: #525252;  text-decoration: none; padding-top: 3px; cursor: pointer;}
+    .btn__paging-item:hover{background-position: 0 -968px; color: #525252;  text-decoration: none;}
+    .btn__paging-item:active{background-position: 0 -990px; color: #525252;  text-decoration: none;}
+    .btn__paging-item__current, .btn__paging-item__current:hover, .btn__paging-item__current:active {background-position: 0 -1012px; color:#fafafa; text-shadow: 0 1px 0 #454545; cursor: default; text-decoration: none;}
+    .btn__paging-item__disabled, .btn__paging-item__disabled:hover, .btn__paging-item__disabled:active{cursor: default; color: #CBCBCB; background-position: 0 -990px; text-decoration: none;}
+        .btn__paging-prew {padding-left: 7px; padding-right: 7px; width: auto; margin-right: 5px;}
+        .btn__paging-page {}
+        .btn__paging-next {padding-left: 7px; padding-right: 7px; width: auto; margin-left: 3px;}
+            

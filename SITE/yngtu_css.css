@@ -5,6 +5,7 @@
 .b-std__header {font-family: 'PT Sans'; font-weight: bold; color: #333333; margin:0; margin-bottom: 15px;}
 .std__hidden {display: none;}
 .std__fs-mainH {font-size: 24px; line-height: 24px;}
+.std__fs-smallH {font-size: 18px; line-height: 18px;}
 .std__2col-main {width: 733px;}
 .std__2col-side  {width: 200px;}
 .std__noMarg {margin: 0;}
@@ -15,13 +16,38 @@
 .std__fc_default {color:#010101;}
 .std__clear {clear: both;}
 .std__stopperWhite {background-color: #fff; opacity: 0.7; filter: alpha(opacity=70); position: absolute; width: 100%; z-index: 20; }
-.std__margLayout {margin: 0 0 17px 0;}
+.std__margLayout {margin: 0 0 20px 0;}
 .std__topContentPadding {padding-top: 20px;}
 .w-std__frame  {display: inline-block; padding: 5px; background-color: #ffffff; -moz-box-shadow: 0 1px 3px 0px #7D7D7D; -webkit-box-shadow: 0 1px 3px 0px #7D7D7D; box-shadow: 0 1px 3px 0px #7D7D7D; }
 .b-std__popup {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url(img/opacity.png) repeat; z-index: 999;}
     .std__popup_content {width: 650px; padding: 25px 0 25px 30px; border: solid 5px #ecf4fb; position: relative; margin: 150px auto 0 auto; background-color: #ffffff; padding: 25px 0 25px 30px;}
     .std__popup_close {display:block; width: 9px; height: 9px; background: url(img/close_pop.png) no-repeat; position: absolute; top: 10px; right: 10px;}
+.std__layer_blue {background-color: #ecf4fb; border-radius: 4px; padding: 15px;}
+.std__layer_yellow {background-color: #fffce2; border-radius: 4px; padding: 15px;}
 
+
+.std__buble_long_green {font-size: 12px; line-height: 12px; color: #ffffff; padding: 4px 10px 5px 10px; border-radius: 4px; display: inline-block;}
+
+ /***** CLASS *** оформление фото с рамкой ***********
+ *** user *****************/
+.b-user__photoFrame {margin: 0 1px 8px 1px; padding: 2px; background-color: #ffffff; display: inline-block; line-height: 0; position: relative;
+                     -moz-box-shadow: 0 1px 3px 0px #7D7D7D; -webkit-box-shadow: 0 1px 3px 0px #7D7D7D; box-shadow: 0 1px 3px 0px #7D7D7D; }
+    .b-user__photoFrame_photo {width:261px; height: 343px; display: block;}
+    .b-user__person {font-size: 18px; font-weight: bold; text-align: center;}
+    /******************/  
+    
+/*** Виджеты ***/
+
+    /*** Виджет Want to talk ...? ***/
+
+    .wid__wtt {text-align: center;}
+        .wid__wtt_bubble {margin-bottom: 15px; background-color: #54823b;}
+        .wid__wtt_user_photoFrame{display: block; width: 116px; margin: 0 auto 14px auto;}
+            .wid__wtt_user_photo{width: 116px; height: 156px;}
+            .wid__wtt_title {font-size: 14px; font-weight: bold; color:#333333; margin-bottom: 15px; display: inline-block;}
+            .wid__wtt_btn{width: 78px;}
+                .wid__wtt_btnTalk {float:left; }
+                .wid__wtt_btnShow{float:right;}
 /**** Блок выбора параметров поиска с ползунком *****.
 /* Looking Box */
 
@@ -47,16 +73,7 @@
                     .b-lookBox__selPar_radio {position: relative; top: 2px; margin-left: 3px;}
     .b-lookBox__startButton {width: 100px; float: right; margin-top: 12px;}
     
- /***** CLASS **************
- *** user *****************/
-.b-user__photoFrame {margin: 0 1px 8px 1px; padding: 2px; background-color: #ffffff; display: inline-block; 
-                     -moz-box-shadow: 0 1px 3px 0px #7D7D7D; -webkit-box-shadow: 0 1px 3px 0px #7D7D7D; box-shadow: 0 1px 3px 0px #7D7D7D; }
-    .b-user__photoFrame_photo {width:261px; height: 343px; display: block;}
 
-    
-   
-   
-    /******************/
     
 /***** CLASS **************
 *** F2F *******************/
@@ -122,10 +139,116 @@
         .b-f2f__popupInfo p {font-size: 14px; color: #333; padding: 7px 0 13px 0; }
 
 
-
-
-
-
+/************* ClaSS ********
+*** top100 *****************/
+.b-top100 p {font-size: 14px; color:#333333; margin-bottom: 10px;}
+.b-top100__topMenu {clear: both; display: block; margin-bottom: 20px;}
+    .b-top100__topMenu_startBtn {width: 140px; float: left;}
+    .b-top100__topMenu_slideMenu {width: 570px; float: right; margin: 0;}
+    .b-top100__lookBox_showBtn {width: 113px;}
+    
+    /*** WINNERS ***/
+    .b-top100__winners   {}
+        .b-top100__winners_sliderHeader {text-align: center; padding: 5px 0 7px 0; background-color: #eeeeee; border-top-right-radius: 4px; border-top-left-radius: 4px; }
+        .b-top100__winners_slider {position: relative; display: block; margin-bottom: 20px;}
+            .b-top100__winners_slider_arrow {display: block; position: absolute; top: 130px; width: 26px; height: 26px; background: url(img/top100.png) no-repeat;}
+                .b-top100__winners_slider_arrow_left   {left: 9px; background-position: 0 -42px;}
+                .b-top100__winners_slider_arrow_right {right: 9px; background-position: -26px -42px;}
+                .b-top100__winners_slider_arrow_left:hover {background-position: -52px -42px;}
+                .b-top100__winners_slider_arrow_right:hover {background-position: -78px -42px ;}
+                .b-top100__winners_slider_arrow_left:active {background-position: -104px -42px;}
+                .b-top100__winners_slider_arrow_right:active {background-position: -130px -42px ;}
+                .b-top100__winners_slider_container {width: 580px; height: 350px; position: relative; margin: 0 auto; overflow: hidden;}
+                        .b-top100__winners_slider_container_month {height: 350px;}
+                            .b-top100__winners_slider_container_month_item {display: block; width: 580px; height: 350px;  float: left; padding: 0; margin: 0;}
+                                .b-top100__winners_user {width: 122px; position: absolute; top: 17px; color:#333333; }
+                                    .b-top100__winners_user_place {font: bold 20px Arial; text-align: center; margin-bottom: 8px;}
+                                        .b-top100__winners_user_sup {font-size:12px;}
+                                    .b-top100__winners_user_photoFrame{margin-bottom: 6px;}
+                                        .b-top100__winners_user_photo {width: 116px; height: 156px;}
+                                    .b-top100__winners_user_person {margin-bottom: 2px;}
+                                    .b-top100__winners_user_points {font-size: 12px; text-align: center;}
+                                    
+                                    .b-top100__winners_user__second  {left: 0;}
+                                    .b-top100__winners_user__third    {right: 0;}
+                                    .b-top100__winners_user__first    {position: relative; margin: 0 auto; top:0; width: 226px;}
+                                        .b-top100__winners_user_place__first    {font: bold 24px/24px Arial; color: #ffffff; text-align: center;  z-index: 3; text-shadow: 0 -1px 0 #954428; height: 42px; width: 232px; position: absolute; top: 246px; left: -3px; background: url(img/top100.png) no-repeat; }
+                                            .b-top100__winners_user_sup__first{font-size:14px;}
+                                        .b-top100__winners_user_photoFrame__first {margin-bottom: 3px;}
+                                            .b-top100__winners_user_photo__first   {width: 220px; height: 290px;}
+                                        .b-top100__winners_user_person__first {margin-bottom: 3px; font-size: 24px;}
+                                        .b-top100__winners_user_points__first {font-size: 14px; text-align: center;}
+ 
+    /*** LEADERBOARD ***/
+    .b-top100__leaderBoard {padding:12px 15px 0 15px; border-radius: 4px; background-color: #ecf4fb; overflow: hidden; margin-bottom: 20px;}
+        .b-top100__leaderBoard_header {margin-bottom: 13px;}
+        .b-top100__leaderBoard_list{text-align: justify;}
+            .b-top100__leaderBoard_list_last{width: 100%; height: 0; visibility: hidden; display: inline-block;}
+            .b-top100__leaderBoard_user {width: 122px; display: inline-block; margin-bottom: 16px;}
+                .b-top100__leaderBoard_number {font: bold 14px Arial; color:#999999;margin-bottom: 7px;}
+                .b-top100__leaderBoard_user_photoFrame {margin-bottom: 6px;}
+                    .b-top100__leaderBoard_user_photo {width: 116px; height: 156px;}
+                    .b-top100__leaderBoard_user_givPoint {display: none; width: 116px; height: 34px; position: absolute; bottom: 2px; left: 2px; background: url(img/opacity-lite.png) repeat; z-index:5px; }
+                        .b-top100__leaderBoard_user_givPointBtn {width: 105px; margin: 5px 0 0 5px; box-shadow: 0 1px 2px #4E4E4E !important;}
+                    .b-top100__leaderBoard_user_photoFrame:hover>.b-top100__leaderBoard_user_givPoint {display: block;}
+                .b-top100__leaderBoard_user_person {font-size: 14px; margin-bottom: 1px; }
+                .b-top100__leaderBoard_user_points {font-size: 12px; color:#333333; text-align: center;}
+          
+         /** No WINNERS **/       
+        .b-top100__leaderBoard__noWinners{padding: 0; background: 0; text-align: justify; margin-bottom: 0;}
+            
+    
+     /** WIDGET **/
+    .b-top100__widget_youIn {}
+        .b-top100__widget_youIn_header{margin-bottom: 10px; text-align: center;}
+        .b-top100__widget_youIn_user_photoFrame{display: block; width: 116px; margin: 0 auto 11px auto;}
+            .b-top100__widget_youIn_user_photo{width: 116px; height: 156px;}
+            .b-top100__widget_youIn_points{text-align: center; width: 62px; height: 62px ; position: absolute;  bottom: 10px; right: -31px; background: -232px 0 url(img/top100.png) no-repeat;}
+                .top100__widget_youIn_pointsItem{font-size: 12px; font-weight:  bold; color: #ffffff; line-height: 14px; margin-top: 18px; display: inline-block; }
+                    .top100__widget_youIn_pointsItem_Count{font-size: 14px;}
+        .b-top100__widget_youIn_place{margin-bottom: 13px;}
+            .b-top100__widget_youIn_place_item{  }
+                .b-top100__widget_youIn_place_name{padding-left: 20px; font-size: 12px; color: #666666;}
+                .b-top100__widget_youIn_place_number{font-size: 12px; color: #333333; display: inline-block; text-align: right; margin-right: 10px; float: right;}
+                .b-top100__widget_youIn_place_count {font-size: 10px; width: 25px; padding-left: 7px; padding-right: 5px; display: inline-block; text-align: center; float: right; margin-right: 10px; position: relative;}
+                        .b-top100__widget_youIn_place_count::before{content: ''; width: 7px; height: 10px; top: 3px; left: 0; background: url(img/top100.png) no-repeat; display: none; position: absolute; }
+                   .b-top100__widget_youIn_place_countDown{color: #c41616; }
+                        .b-top100__widget_youIn_place_countDown::before{color: #c41616; background-position:-156px -61px; display: block; }
+                   .b-top100__widget_youIn_place_countUp {color: #54823b;}   
+                        .b-top100__widget_youIn_place_countUp::before{color: #c41616; background-position:-163px -57px; display: block; }
+        .b-top100__widget_youIn_btn{width: 166px;}
+        .b-top100__widget_youIn__notIn {margin-bottom:20px;}
+    
+    /*** Top-100 GAME ***/
+    .w-top100__game{}
+        .b-top100__game_header{text-align: center;}
+        .w-top100__game_field{width: 600px; height: 370px; position: relative; margin: 0 auto 20px auto;}
+            .b-top100__game_user{border-radius: 4px; padding: 15px; display: inline-block;}
+                .b-top100__game_user_photoFrame{}
+                    .b-top100__game_user_photo{width:220px; height: 290px;}
+                    .b-top100__leaderBoard_user_person{width: 220px; height: 28px; padding-top: 7px; position: absolute; bottom: 1px; left: 2px; background: url(img/opacity-lite.png) repeat; font: 18px Arial; color: #ffffff; text-align: center;}
+                .b-top100__game_user_thisOne{font: bold  18px  Arial; color:#333333; text-align: center; display: none;}
+                    .b-top100__game_plusOne{display: inline-block; width: 37px; height: 37px; background: -175px -42px url(img/top100.png) no-repeat; margin: 0 0 -13px 10px;}
+            .b-top100__game_user:hover{text-decoration: none; background-color: #ecf4fb; }
+            .b-top100__game_user:hover .b-top100__game_user_thisOne{display: block;}
+                .top100__game_user__first{float:left;}
+                .top100__game_user__second{float:right;}
+            .top100__game_center{width: 42px; margin: 0 auto; position: relative; padding-top: 140px; text-align: center;}
+                .b-top100__game_or {top: 140px; display: block; width: 42px; height: 42px; background-color: #cccccc; border-radius: 21px; color: #ffffff; text-align: center;}
+                    .b-top100__game_or_item{color: #ffffff; font: bold 18px Arial; display: block; padding-top: 8px;}
+                .top100__game_skipBtn {display: inline-block; margin-top: 150px; font-size: 14px;}
+        .b-top100__game_lastChoises {}
+            .top100__game_lastChoises_header{background-color: #eeeeee; height: 25px; padding-top: 5px; padding-left: 10px; border-top-left-radius: 4px; border-top-right-radius: 4px;}
+            .top100__game_lastChoises_list{height: 130px; overflow:hidden; margin-bottom: 20px;}
+                .top100__game_lastChoises_user{width: 70px; margin-left: 12px; float: left;}
+                    .top100__game_lastChoises_user:first-child{margin-left: 1px;}
+                    .top100__game_lastChoises_user_photo {width:66px; height: 86px;}
+                    .top100__game_lastChoises_user_voted{width:66px; height: 17px; padding-top:3px; font-size: 12px;}
+                    .top100__game_lastChoises_addBtn{width: 70px; margin-top: 2px;}
+                .top100__game_lastChoises_showAll{float:right; margin-right: 5px;}
+        .b-top100__game__noUsers{margin-bottom: 350px;}
+            
+            
 
 
 

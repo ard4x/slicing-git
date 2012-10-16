@@ -1,0 +1,62 @@
+/***** CLASS **************
+*** F2F *******************/
+.b-f2f {position: relative; }
+    .b-f2f__stopper{height: 800px;}
+    .b-f2f__header {margin-bottom: 15px; text-align: center;}
+    .b-f2f__user {display: block; position: relative; width: 267px; float: left; }
+        .b-f2f__report {font-size: 10px; display: block; margin-bottom: 6px; text-align: right;}
+        .b-f2f__user_info {padding-top: 10px; }
+            .b-f2f__user_info_person {font-size: 19px; font-weight: bold; margin-bottom: 8px; }
+                .b-f2f__user_info_person_name {}
+                .b-f2f__user_info_person_age {}
+                .b-f2f__user_info_person_location {font-size: 11px; color: #666666; font-weight: normal;}
+            .b-f2f__user_info_wants {margin-bottom: 8px; font-size: 11px;}
+            .b-f2f__user_info_interests{font-size: 11px; margin-bottom: 10px;}
+                .b-f2f__user_info_interests_label {color:#666666; width: 85px; display: inline-block; float: left;}
+                .b-f2f__user_info_interests_list {display: inline-block; width: 180px;}
+                    .b-f2f__user_info_interests_item {}
+        .b-f2f__user_morePhoto {border-top: solid 1px #d6d6d6;}
+            .b-f2f__user_morePhoto_title {font-size: 11px; font-weight: bold; margin-top: 10px; margin-bottom: 10px; padding:0;}
+            .l-f2f__user_morePhoto_photoList {position: relative; }
+            /** child of USER **/
+            .b-f2f__user_morePhoto_photoFrame {padding: 1px 1px 2px 1px; margin: 0 12px 0 0;}  
+            .b-f2f__user_morePhoto_photoFrame:last-child{margin-right:0;}
+                   .b-f2f__user_morePhoto_photo {width: 53px; height: 64px;}
+                
+            /******************/
+        .b-f2f__user__previous {position: absolute; left: 0; top: 110px; }
+        .b-f2f__user__next {position: absolute; right: 0; top: 110px; }
+        .b-f2f__user__current {width: 333px; height: 800px; position: relative; margin-left: 185px; padding: 15px; background-color: #ecf4fb; 
+                                border-radius: 4px; -moz-box-shadow: 0 1px 3px 0px #7D7D7D; -webkit-box-shadow: 0 1px 3px 0px #7D7D7D; box-shadow: 0 1px 3px 0px #7D7D7D; 
+                                z-index: 100; }
+               /*** child ***/
+               .b-user__photoFrame_photo__current {width: 328px; height: 432px;}
+               .b-f2f__report__current {font-size: 12px; margin-bottom: 8px; text-align: right;}
+               .b-f2f__user_info_person__current {font-size: 24px;}
+                    .b-f2f__user_info_person_location__current  {font-size: 14px;}
+               .b-f2f__user_info_wants__current {font-size: 14px; margin-bottom: 10px;}
+               .b-f2f__user_info_interests__current{font-size: 14px;}
+                    .b-f2f__user_info_interests_label__current {width: 105px;}
+                    .b-f2f__user_info_interests_list__current {width: 225px;}
+               .b-f2f__user_morePhoto_title__current  {font-size: 14px;} 
+                    .b-f2f__user_morePhoto_photoFrame__current {padding: 2px; margin: 0 14px 0 0;}
+                    .b-f2f__user_morePhoto_photoFrame__current:last-child{margin-right:0;}                    
+                        .b-f2f__user_morePhoto_photo__current {width: 66px; height: 86px;}
+               /******************/
+        .b-f2f__user_buttons {margin-bottom: 17px;}
+            .b-f2f__user_button__left {width: 98px;} 
+            .b-f2f__user_button__middle {width: 123px;}
+            .b-f2f__user_button__right {width: 98px;}
+    .b-f2f__noUsers_message {font-size: 14px; line-height: 18px; color: #333; margin-top: 15px;}
+        .b-f2f__noUsers_message_header {margin-bottom: 23px;}
+        .b-f2f__noUsers_message  p{padding: 0;  margin-bottom: 22px;}
+    
+    .b-f2f__noUsers { position: relative; width: 420px; margin: 60px 150px;}
+        .b-f2f__noUsers_content {background-color: #ecf4fb; padding: 30px 70px; display: block;}
+    
+    .b-f2f__popupInfo {width: 485px; padding: 20px 20px 70px 20px; overflow: hidden}
+        .b-f2f__popupInfo_header {margin-bottom: 20px;}
+        .b-f2f__popupInfo_illustr{display: inline-block; margin: 0 20px 20px 0; float: left;}
+        .b-f2f__popup_bottom {width: 100%; padding: 20px 0; background-color: #ecf4fb; position: absolute; bottom:0; left: 0; text-align: center;}
+            .b-f2f__popup_contBtn {width: 180px;}
+        .b-f2f__popupInfo p {font-size: 14px; color: #333; padding: 7px 0 13px 0; }

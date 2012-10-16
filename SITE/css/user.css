@@ -1,0 +1,7 @@
+ /***** CLASS *** оформление фото с рамкой ***********
+ *** user *****************/
+.b-user__photoFrame {margin: 0 1px 8px 1px; padding: 2px; background-color: #ffffff; display: inline-block; line-height: 0; position: relative;
+                     -moz-box-shadow: 0 1px 3px 0px #7D7D7D; -webkit-box-shadow: 0 1px 3px 0px #7D7D7D; box-shadow: 0 1px 3px 0px #7D7D7D; }
+    .b-user__photoFrame_photo {width:261px; height: 343px; display: block;}
+    .b-user__person {font-size: 18px; font-weight: bold; text-align: center;}
+    /******************/  

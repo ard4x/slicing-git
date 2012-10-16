@@ -1,0 +1,25 @@
+/**** Блок выбора параметров поиска с ползунком *****.
+/* Looking Box */
+
+.b-lookBox {border-radius: 4px; background-color: #ecf4fb; width: 703px; padding: 15px; margin-bottom: 20px;}
+    .b-lookBox__locationField { }
+        .b-lookBox__progressbar {width: 100%; padding-top: 2px; background: url(http://yangutu.com/img/progressbar-bg.jpg) 0px 0px repeat-x; margin: 10px 0px; position: relative;}
+            .b-lookBox___progressControl {background: url(http://yangutu.com/img/progress-control-point-bg.jpg) 100% 0px no-repeat; position: absolute; height: 7px; width: 100%; top: -7px; left: 0px;}
+                .b-lookBox__progrControl_point {width: 16.666%; float: left; height: 5px; background: url(http://yangutu.com/img/progress-control-point-bg.jpg) 0px 0px no-repeat; position: relative;}
+                    .b-lookBox__progrControl_pointCity {display: inline; position: absolute; top: 22px; right: 0px; font-size: 12px;}
+            .b-lookBox___progressLine {width: 50%; background: url(http://yangutu.com/img/progress-line-bg.jpg) 0px 0px repeat-x; height: 4px; position: relative;}
+                .b-lookBox___progressLine_button {background: url(http://yangutu.com/img/progress-line-button.png) 0px 0px no-repeat; height: 18px; width: 13px; position: absolute; right: -7px; top: -5px; cursor: pointer;}
+                    .b-lookBox___progressLine_flag {display: inline; position: absolute; top: auto; bottom: 100%; margin-bottom: 3px; padding: 0px; left: 50%; z-index: 99;}
+                        .b-lookBox__progressLine_flag_inner{background-color: #ECEFF3; font-size: 11px; color: #426087; border: 1px solid #C0C8CD; border-image: initial; padding: 2px 5px; visibility: visible; position: relative; right: auto; display: block; top: -3px; left: -50%; z-index: 9999;}
+                            .b-lookBox__progressLine_flag_inner_img {position: absolute; bottom: -5px; left: 50%; margin-left: -4px; z-index: 101;}
+     .b-lookBox___progressbarLabel {display: block; overflow: hidden;}
+            .b-lookBox___locationSelect {display:imline-block; float: left;}
+            .b-lookBox___locationEnd  {display:imline-block; float: right;}
+     .b-lookBox__selectParams {display: inline-block; padding-top: 15px; margin-bottom: 5px}
+        .b-lookBox__selectParams_param {display: inline-block; margin-right: 35px;}
+            .b-lookBox__selectParam_label {display: inline-block; font-weight: bold; margin-right: 5px;}
+                .b-lookBox__selPar_radioLabel {font-weight: normal;}
+                .w-lookBox__selPar_select {display: inline-block; font-weight: normal; width: 105px;}
+                    .b-lookBox__selPar_radio {position: relative; top: 2px; margin-left: 3px;}
+    .b-lookBox__startButton {width: 100px; float: right; margin-top: 12px;}
+    
