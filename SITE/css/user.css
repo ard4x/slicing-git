@@ -4,4 +4,5 @@
                      -moz-box-shadow: 0 1px 3px 0px #7D7D7D; -webkit-box-shadow: 0 1px 3px 0px #7D7D7D; box-shadow: 0 1px 3px 0px #7D7D7D; }
     .b-user__photoFrame_photo {width:261px; height: 343px; display: block;}
     .b-user__person {font-size: 18px; font-weight: bold; text-align: center;}
+    .b-user__imgOpaLayer {width:261px; height: 40px; padding-top: 10px; font-size: 12px; line-height:12px;text-align: center; position:absolute; bottom: 2px; left: 2px; color: #ffffff; background: url(../img/opacity-lite.png) repeat;}
     /******************/  

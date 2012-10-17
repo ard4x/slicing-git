@@ -1,9 +1,12 @@
 /* Стандартные (Глобальные) элементы */
 .l-std__conent {float: left; margin-right: 17px; position: relative;}
+    /** headers styles ***/
 .b-std__header {font-family: 'PT Sans'; font-weight: bold; color: #333333; margin:0; margin-bottom: 15px;}
-.std__hidden {display: none;}
 .std__fs-mainH {font-size: 24px; line-height: 24px;}
 .std__fs-smallH {font-size: 18px; line-height: 18px;}
+.std__fc_default {color:#010101;}
+    /*** end headers styles ***/
+
 .std__2col-main {width: 733px;}
 .std__2col-side  {width: 200px;}
 .std__noMarg {margin: 0;}
@@ -11,7 +14,7 @@
 .std__noMargRight {margin-right:0;}
 .std__noMargBottom {margin-bottom:0;}
 .std__noMargLeft {margin-left:0;}
-.std__fc_default {color:#010101;}
+.std__hidden {display: none;}
 .std__clear {clear: both;}
 .std__stopperWhite {background-color: #fff; opacity: 0.7; filter: alpha(opacity=70); position: absolute; width: 100%; z-index: 20; }
 .std__margLayout {margin: 0 0 20px 0;}
@@ -19,9 +22,15 @@
 .w-std__frame  {display: inline-block; padding: 5px; background-color: #ffffff; -moz-box-shadow: 0 1px 3px 0px #7D7D7D; -webkit-box-shadow: 0 1px 3px 0px #7D7D7D; box-shadow: 0 1px 3px 0px #7D7D7D; }
 .b-std__popup {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url(../img/opacity.png) repeat; z-index: 999;}
     .std__popup_content {width: 650px; padding: 25px 0 25px 30px; border: solid 5px #ecf4fb; position: relative; margin: 150px auto 0 auto; background-color: #ffffff; padding: 25px 0 25px 30px;}
-    .std__popup_close {display:block; width: 9px; height: 9px; background: url(../img/close_pop.png) no-repeat; position: absolute; top: 10px; right: 10px;}
+        .std__popup_bottom {width: 100%; background-color:#ecf4fb; position:absolute; bottom:0px; left:0px;}
+        .std__popup_close {display:block; width: 9px; height: 9px; background: url(../img/close_pop.png) no-repeat; position: absolute; top: 10px; right: 10px;}
 .std__layer_blue {background-color: #ecf4fb; border-radius: 4px; padding: 15px;}
 .std__layer_yellow {background-color: #fffce2; border-radius: 4px; padding: 15px;}
 
-
 .std__buble_long_green {font-size: 12px; line-height: 12px; color: #ffffff; padding: 4px 10px 5px 10px; border-radius: 4px; display: inline-block;}
+
+.std__or_horiz{text-align: center; height: 1px; background-color:#ccc; position: relative; margin: 22px 0;}
+    .std__or {position:absolute; top: -21px; display: inline-block; background-color:#ccc; border-radius: 21px; height: 42px; width:42px; text-align:center;}
+        .std__or_item{font-size:18px; line-height: 18px; font-weight:bold; color:#fff; padding-top: 11px; display: block;}
+        
+    

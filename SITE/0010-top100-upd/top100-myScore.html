@@ -3,14 +3,20 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" >
     <title>Top-100</title>
-    <link rel="stylesheet" href="../style_curr.css">
-    <link rel="stylesheet" href="../btns.css" type="text/css">   <!-- Проверить наличие, заменить более новой версией, а так же файлы btns.png и button-icos.png, Версия указана в первой строке файла-->
-    <link rel="stylesheet" href="../yngtu_css.css" type="text/css"> <!-- Добавить на сервер, новая библиотека классов, будет использоваться в будущем -->
+      <link rel="stylesheet" href="../style_curr.css"> <!-- Стили, существующие сейчас на сайте -->
+    
+    <link rel="stylesheet" href="../css/std.css"> <!-- Добавить на сервер, новая библиотека классов, будет использоваться в будущем -->
+    <link rel="stylesheet" href="../css/btns.css" type="text/css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/lookbox.css">
+    <link rel="stylesheet" href="../css/wid.css">
+    <link rel="stylesheet" href="../css/top100.css">
+    
     <!-- Костыли для ИE, можно добавить в уже существующие -->   
     <!--[if lt IE 9]>
-        <link rel="stylesheet" href="../yngtu_ie8.css" type="text/css">
+        <link rel="stylesheet" href="../css/user_ie8.css" type="text/css">
+        <link rel="stylesheet" href="../css/f2f_ie8.css" type="text/css">
     <![endif]-->
-
 <!--  Файлы для замены селектов -->
     
     <script src="../js/jquery-1.4.4.min.js"></script>
@@ -79,23 +85,113 @@
                         
                     <a class="btn-s-2 b-top100__topMenu_startBtn" href="javascript:void(0);"><span>Start game</span></a>
                     <div class="b-btn__slider b-top100__topMenu_slideMenu">
-                       <a href="#" class="b-btn__slider_item b-btn__slider_item__first b-btn__slider_item__current">Leaders</a>
-                       <a href="#" class="b-btn__slider_item">My score </a>
-                       <a href="#" class="b-btn__slider_item">Voted for me</a>
+                       <a href="#" class="b-btn__slider_item b-btn__slider_item__first">Leaders</a>
+                       <a href="#" class="b-btn__slider_item b-btn__slider_item__current">My score </a>
+                       <a href="#" class="b-btn__slider_item">Voted for me
+                           <span class="b-btn__slider_bubble">
+                               <span class="b-btn__slider_bubble_number">88</span>
+                           </span>
+                       </a>
                        <a href="#" class="b-btn__slider_item b-btn__slider_item__last">I voted for</a>
                     </div> <!-- b-btn__slider -->   
                     <div class="std__clear"></div>
                 </div><!-- b-top100__topMenu -->
                 
+                <div class="b-top100__rankBlock">
                 
-                    <h2 class="b-std__header std__fs-mainH b-top100__leaderBoard_header">We are sorry! </h2>
-                    <p>
-                        There are no photos in the category <b>"Women from Russia aged 26-35"</b> rated in October right now.
-                    </p>
-                    <p>
-                        You can try to review other categories by changing criteria in a form above.
-                    </p>
+                    <div class="b-top100__rankBlock_user">
+                            <div class="b-user__photoFrame b-top100__rankBlock_user_photoFrame">
+                                
+                                <img src="../img/user-261x343.jpg" alt="" class="b-user__photoFrame_photo  b-top100__rankBlock_user_photo">
+                               
+                            </div><!-- /.b-top100__rankBlock_user_photoFrame -->
+                            
+                            <a class="btn-s-1 b-top100__rankBlock_user_btn"><span>Change photo</span></a>
+                    </div><!--/.b-top100__rankBlock_user -->
                     
+                    <div class="b-top100__rankBlock_main">
+                        
+                        <h2 class="b-std__header std__fs-smallH b-top100__rankMain_header">Your current rank in September: #230</h2>
+                        
+                        <table class="b-top100__rankBlock_rankTable">
+                            <tr class="b-top100__rankBlock_rankTable_evenRow">
+                                <td></td>
+                                <td>Belarus</td>
+                                <td>World</td>
+                                <td>Points</td>
+                                <td>Rank</td>
+                            </tr>
+                            <tr>
+                                <td>September</td>
+                                <td>5654</td>
+                                <td>4544</td>
+                                <td>7787</td>
+                                <td>4545</td>
+                            </tr>
+                            <tr class="b-top100__rankBlock_rankTable_evenRow">
+                                <td>August</td>
+                                <td>1445</td>
+                                <td>564</td>
+                                <td>456</td>
+                                <td>54687</td>
+                            </tr>
+                            <tr>
+                                <td>July</td>
+                                <td>5464</td>
+                                <td>324</td>
+                                <td>86785</td>
+                                <td>564</td>
+                            </tr>
+                            <tr class="b-top100__rankBlock_rankTable_evenRow">
+                                <td>June</td>
+                                <td>53453</td>
+                                <td>34</td>
+                                <td>343</td>
+                                <td>4534</td>
+                            </tr>
+                            <tr>
+                                <td>May</td>
+                                <td>453</td>
+                                <td>5434</td>
+                                <td>453</td>
+                                <td>2755</td>
+                            </tr>
+                        </table>
+                        
+                    </div><!-- /.b-top100__rankBlock_main -->
+                    
+                    <div class="b-top100__rankBlock_right">
+                        <a class="btn-a-3 top100__rankBlock_voteBtn"><span>Vote for myself</span></a>
+                        <input type="text" class="btn-a-1 top100__rankBlock_userLink" value="http://yangutu.com/top100/user/137770">
+                        <a class="btn-s-7 top100__rankBlock_shareFace"><span>Share</span></a>
+                        <a class="btn-s-8 top100__rankBlock_shareTwit"><span>Share</span></a>
+                    
+                    </div><!-- /.b-top100__rankBlock_right -->
+                        
+                </div><!-- /.b-top100__rankBlock -->
+                
+               
+                
+                
+                
+                    <h2 class="b-std__header std__fs-smallH b-top100__leaderBoard_header">Tips how to get success in TOP-100 </h2>
+                    <ol>
+                        <li>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                         consequat.
+                        </li>
+                        <li>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                        consequat.
+                        </li>
+                        <li>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                        consequat.
+                        </li>
+                    </ol>
                
               
              </div> <!-- /.l-std__conent-->

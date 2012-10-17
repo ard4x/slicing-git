@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <title>Top-100</title>
+     <link rel="stylesheet" href="../style_curr.css"> <!-- Стили, существующие сейчас на сайте -->
+    
+    <link rel="stylesheet" href="../css/std.css"> <!-- Добавить на сервер, новая библиотека классов, будет использоваться в будущем -->
+    <link rel="stylesheet" href="../css/btns.css" type="text/css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/lookbox.css">
+    <link rel="stylesheet" href="../css/wid.css">
+    <link rel="stylesheet" href="../css/top100.css">
+    
+    <!-- Костыли для ИE, можно добавить в уже существующие -->   
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="../css/user_ie8.css" type="text/css">
+        <link rel="stylesheet" href="../css/f2f_ie8.css" type="text/css">
+    <![endif]-->   
+
+<!--  Файлы для замены селектов -->
+    
+    <script src="../js/jquery-1.4.4.min.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+        
+        function stsStyle(){ 
+                $('.select_menu').each(function(){
+                    var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),                    
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                    objElement.css({'width': w+'px'})
+                    console.log(obj.width())
+                
+                });
+            }
+            stsStyle();
+    </script>
+ <!--  ---------------------------------------- -->
+
+</head>
+<body>
+<!-- начало шаблонной шапки -->
+<div class="header">
+        <div class="header_inn">
+            <div class="top_navigation">
+                <ul class="left">
+                    <li><a href="#">Messages</a><span class="new_event">2</span></li>
+                    <li><a href="#">Signals</a><span class="new_event">45</span></li>
+                    <li><a href="#">Soulmates</a><span class="new_event">167</span></li>
+                </ul>
+                <ul class="right">
+                    <li class="coints">1450 Coins <a href="#">Add</a></li>
+                    <li class="profile"><a href="#">Profile </a></li>
+                    <li class="account"><a href="#">Account Settings</a></li>
+                </ul>
+                <div class="std__clear"></div>
+            </div>
+            <div class="bot_navigation">
+                <a href="#"><img src="../img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>    
+                <ul class="main_menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Matches</a></li>
+                    <li><a href="#">TOP-100</a></li>
+                    <li><a href="#">Apps and Games</a></li>
+                    <li><a href="#">Blogs</a></li>
+                </ul>
+                <div class="clr2"></div>
+            </div>
+        </div>
+    </div>
+   <!-- КОНЕЦ шаблонной шапки -->  
+    <div class="content">
+        <div class="content_inn std__topContentPadding b-top100">
+
+ 
+             <h1 class="b-std__header std__fs-mainH">TOP-100</h1>
+ 
+            <div class="clr2"></div>
+        </div><!-- /.content_inn -->
+    </div><!-- /.content -->
+    
+      <!-- НАЧАЛО шаблонного Футера -->
+    <div class="footer">
+      <div class="footer_inn">
+        <ul>
+            <li><a href="/page/about">About us</a></li>
+            <li><a href="/help">FAQ</a></li>
+            <li><a href="http://blog.yangutu.com/">Our blog</a></li>
+            <li><a href="/feedback">Contact us</a></li>
+        </ul>
+        <ul>
+            <li><a href="/page/policy">Privacy</a></li>
+            <li><a href="/page/terms">Terms of use</a></li>
+        </ul>
+        <ul>            
+            <li><a href="/page/scams">Scam warning</a></li>
+            <li><a href="/page/safety">Safety Tips</a></li>
+        </ul>
+        <ul>
+            <li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+            <li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+            <li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+        
+        </ul>
+        <ul>
+          <li><a href="/dating/all">People Directory</a></li>
+        </ul>
+        <div class="right">
+            <font color="black">&copy; 2010-2011 Yangutu Inc. All rights reserved</font><br>
+          <span>Yangutu (swahili) - My one and only.</span>
+        </div>
+         <div class="std__clear"></div>
+      </div>
+</div>
+
+
+/*** POPUP ***/
+.
+
+/*** end POPUP ***/
+<div class="b-std__popup b-top100">
+	<div class="std__popup_content top100__popup">
+        <h1 class="b-std__header std__fs-mainH std__fc_default">Welcome to TOP-100</h1>
+        
+        In this game we find the most popular users on Yangutu</p>
+        
+        <ul class="b-top100__popup_illustr">
+        	<li class="top100__popup_illustr_item">
+                <img src="../img/top100/ill-1.jpg" alt="">
+                <span class="b-top100__popup_illustr_title">Compare</span>
+            </li>
+        	<li class="top100__popup_illustr_item">
+                <img src="../img/top100/ill-2.jpg" alt="">
+                <span class="b-top100__popup_illustr_title">Vote</span>
+            </li>
+        	<li class="top100__popup_illustr_item">
+                <img src="../img/top100/ill-3.jpg" alt="">
+                <span class="b-top100__popup_illustr_title">Rise to top</span>
+            </li>
+            <li class="b-top100__leaderBoard_list_last"></li>
+        </ul>
+        
+        <p>To participate in TOP-100, just upload your photo. You can join game later in right side bar</p>
+        
+        <div class="std__popup_bottom top100__popup_bottom">
+            <a href="javascript:void(0);" class="btn-a-2 top100__popup_bottom_joinBtn"><span>Join TOP-100</span></a>
+            <a href="javascript:void(0);" class="top100__popup_bottom_later">later</a>
+        </div>
+		
+        <a href="javascript:void(0);" class="std__popup_close"></div>
+	</div><!-- top100__popup -->
+</div> <!-- b-std__popup --> 
+
+</body>
+</html>

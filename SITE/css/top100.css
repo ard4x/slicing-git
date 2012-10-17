@@ -1,6 +1,8 @@
 /************* ClaSS ********
 *** top100 *****************/
-.b-top100 p {font-size: 14px; color:#333333; margin-bottom: 10px;}
+.b-top100 p  {font-size: 14px; color:#333333; margin-bottom: 10px; padding: 0;}
+.b-top100 ol {padding-left: 20px; }
+.b-top100 ol li {font-size: 14px; color: #333333; margin-bottom: 20px;}
 .b-top100__topMenu {clear: both; display: block; margin-bottom: 20px;}
     .b-top100__topMenu_startBtn {width: 140px; float: left;}
     .b-top100__topMenu_slideMenu {width: 570px; float: right; margin: 0;}
@@ -85,7 +87,7 @@
             .b-top100__game_user{border-radius: 4px; padding: 15px; display: inline-block;}
                 .b-top100__game_user_photoFrame{}
                     .b-top100__game_user_photo{width:220px; height: 290px;}
-                    .b-top100__leaderBoard_user_person{width: 220px; height: 28px; padding-top: 7px; position: absolute; bottom: 1px; left: 2px; background: url(../img/opacity-lite.png) repeat; font: 18px Arial; color: #ffffff; text-align: center;}
+                    .b-top100__game_user_person{width: 220px; height: 28px; padding-top: 7px; position: absolute; bottom: 1px; left: 2px; background: url(../img/opacity-lite.png) repeat; font: 18px Arial; color: #ffffff; text-align: center;}
                 .b-top100__game_user_thisOne{font: bold  18px  Arial; color:#333333; text-align: center; display: none;}
                     .b-top100__game_plusOne{display: inline-block; width: 37px; height: 37px; background: -175px -42px url(../img/top100.png) no-repeat; margin: 0 0 -13px 10px;}
             .b-top100__game_user:hover{text-decoration: none; background-color: #ecf4fb; }
@@ -106,3 +108,58 @@
                     .top100__game_lastChoises_addBtn{width: 70px; margin-top: 2px;}
                 .top100__game_lastChoises_showAll{float:right; margin-right: 5px;}
         .b-top100__game__noUsers{margin-bottom: 350px;}
+        
+     /***  RANK block ***/
+     .b-top100__rankBlock{overflow:hidden; margin-bottom: 30px;}
+        .b-top100__rankBlock_user{width: 122px; margin-right:20px; float:left;}
+            .b-top100__rankBlock_user_photoFrame{margin-bottom:12px;}
+                .b-top100__rankBlock_user_photo{width:116px; height:156px;}
+                .b-top100__rankBlock_user_btn{width:120px;}
+        .b-top100__rankBlock_main{width: 350px; margin-right:20px; float:left;}
+            .b-top100__rankMain_header{}
+            .b-top100__rankBlock_rankTable{font-size: 12px; color: #333333; width: 350px; background-color: #dddddd; border-radius: 4px; border:none; border-collapse: collapse;}
+                .b-top100__rankBlock_rankTable tr:first-child{font-weight:bold;}
+                .b-top100__rankBlock_rankTable tr{height:31px;}
+                .b-top100__rankBlock_rankTable td{ padding: 0 10px;}
+                .b-top100__rankBlock_rankTable_evenRow{background-color:#eeeeee;}
+
+        .b-top100__rankBlock_right{width:220px; float:left; padding-top: 33px;}
+            .top100__rankBlock_voteBtn  {width:218px; margin-bottom:20px;}
+            .top100__rankBlock_userLink{width:214px; margin-bottom:20px!important; display: block;}
+            .top100__rankBlock_shareFace{width: 82px; margin-right: 10px;}
+            .top100__rankBlock_shareTwit{width: 82px;}
+    
+    /*** VOTED List **/
+    .b-top100__votedList{text-align: justify;}
+        .b-top100__votedList__last{width: 100%; height: 0; visibility: hidden; display: inline-block;}
+        .b-top100__votedList_user{margin-bottom: 20px; display: inline-block;}
+            .top100__votedList_photoFrame{margin-bottom: 10px;}
+                .top100__votedList_photo{width:116px; height:156px;}
+                .top100__votedList_opaLayer{height: 35px; width:116px; padding:0;}
+                    .top100__votedList_opaLayer_count{display:inline-block; padding-top: 13px;}
+                    .top100__votedList_opaLayer_btn{width: 105px; display:none!important;  margin-top: 5px; box-shadow: 0 1px 2px #4E4E4E !important;}
+                .top100__votedList_photoFrame:hover .top100__votedList_opaLayer_count{display:none;}
+                .top100__votedList_photoFrame:hover .top100__votedList_opaLayer_btn {display:inline-block !important;}
+            .top100__votedList_person{font-size: 14px;}
+            
+    /*** PopUp ***/
+    .top100__popup{width: 490px; padding: 20px 20px 95px;}
+        .top100__popup_loadPhoto{ padding: 15px 15px 0px; width:500px;}
+        .top100__popup_loadPhoto_uploadTitle{margin-bottom: 20px !important;}
+        .b-top100__popup_illustr{text-align: justify; margin-top: 18px; margin-bottom: 12px;}
+            .top100__popup_illustr_item{display: inline-block; text-align: center;}
+                .b-top100__popup_illustr_title{display: block; font-weight: bold; font-size: 14px; margin-top: 3px;}
+        .top100__popup_bottom{height: 85px; }    
+            .top100__popup_bottom_joinBtn{width: 180px; margin: 20px 45px 0 175px;}
+            .top100__popup_bottom_later{font-size: 14px;}
+        
+        .top100__popup_loadPhoto_or{margin: 42px 0 37px 0;}  
+            .top100__popup_loadPhoto_or .std__or {left: 225px}
+        .top100__popup_loadPhoto_chosenTitle{margin-bottom: 10px;}
+        .b-top100__popup_loadedPhotoList{text-align: justify;}
+            .top100__popup_loadedPhoto{display: inline-block; margin-bottom: 0;}
+            .top100__popup_loadedPhoto_photo {width: 116px; height: 156px;}
+        
+        .top100__popup_loadPhoto_chooseBtn{width: 100px; margin-right: 8px;}
+        .top100__popup_loadPhoto_uploadBtn{width: 80px; float: right;}
+        
