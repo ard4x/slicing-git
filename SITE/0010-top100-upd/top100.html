@@ -18,30 +18,70 @@
         <link rel="stylesheet" href="../css/f2f_ie8.css" type="text/css">
     <![endif]-->
 
-<!--  Файлы для замены селектов -->
+<script src="http://code.jquery.com/jquery.min.js"></script>    
+    <!-- Плагин шаблонов -->
+    <script src="../js/jquery.tmpl.min.js"></script>
+    <!-- Скрипт слайдера -->
+    <script src="../js/top100-slider.js"></script>
+    <!-- Данные для слайдера (JSON) -->
+    <script src="month-data.js" type="text/javascript"></script>
     
-    <script src="../js/jquery-1.4.4.min.js"></script>
-    <script src="../js/jquery.stylish-select.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            $('.sSelect').sSelect();
-        });
+    <!-- Шаблон для слайдера -->
+    <script id="sliderMonthItem" type="text/x-jquery-tmpl">
+        <li class="b-top100__winners_slider_container_month_item" data-id="sliderItem">
         
-        function stsStyle(){ 
-                $('.select_menu').each(function(){
-                    var objElement = $(this).find('.sts > li'),
-                        obj = objElement.closest('.select_menu'),                    
-                        count =  objElement.length,
-                        w = obj.width() / count;
-                    objElement.css({'width': w+'px'})
-                    console.log(obj.width())
-                
-                });
-            }
-            stsStyle();
+            <div class="b-top100__winners_user b-top100__winners_user__second">
+                <div class="b-top100__winners_user_place">2<sup class="b-top100__winners_user_sup">nd</sup> place</div>
+                <div class="b-user__photoFrame b-top100__winners_user_photoFrame">
+                    <img src="${secondPlace.photo}" alt="" class="b-user__photoFrame_photo b-top100__winners_user_photo">
+                </div>
+                <div class="b-user__person b-top100__winners_user_person">
+                    <a href="${secondPlace.link}">${secondPlace.name}</a>, ${secondPlace.age}
+                </div>
+                <div class="b-top100__winners_user_points">${secondPlace.points} points</div>
+            </div>
+            
+            <div class="b-top100__winners_user b-top100__winners_user__first">
+                <div class="b-top100__winners_user_place__first">1<sup class="b-top100__winners_user_sup">st</sup> place</div>
+                <div class="b-user__photoFrame b-top100__winners_user_photoFrame__first">
+                    <img src="${firstPlace.photo}" alt="" class="b-user__photoFrame_photo b-top100__winners_user_photo__first">
+                </div>
+                <div class="b-user__person b-top100__winners_user_person__first">
+                    <a href="${firstPlace.link}">${firstPlace.name}</a>, ${firstPlace.age}
+                </div>
+                <div class="b-top100__winners_user_points__first">${firstPlace.points} points</div>
+            </div>
+            
+            <div class="b-top100__winners_user b-top100__winners_user__third">
+                <div class="b-top100__winners_user_place">3<sup class="b-top100__winners_user_sup">rd</sup> place</div>
+                <div class="b-user__photoFrame b-top100__winners_user_photoFrame">
+                    <img src="${thirdPlace.photo}" alt="" class="b-user__photoFrame_photo b-top100__winners_user_photo">
+                </div>
+                <div class="b-user__person b-top100__winners_user_person">
+                    <a href="${thirdPlace.link}">${thirdPlace.name}</a>, ${thirdPlace.age}
+                </div>
+                <div class="b-top100__winners_user_points">${thirdPlace.points} points</div>
+            </div>
+        
+        </li>
+     </script>
+     <!-- конец шаблона -->
+     
+     
+     <!-- /*** подключение шаблона ***/ -->
+     <script type="text/javascript">
+        $(function () {
+            $('#sliderMonthItem').tmpl(dataItems).appendTo('#sliderMonth');
+            
+        });
     </script>
- <!--  ---------------------------------------- -->
-
+    
+    <!-- /*** включаем слайдер ***/ -->
+    <script type="text/javascript">
+    $(document).ready(function(){
+        monthSlider(winnersSlider);    
+    });
+    </script>
 </head>
 <body>
 <!-- начало шаблонной шапки -->
@@ -159,62 +199,19 @@
                 
                 <div class="b-top100__winners">
                     <h2 class="b-std__header std__fs-mainH">Winners</h2>
-                    
-                    <h3 class="b-std__header std__fs-smallH b-top100__winners_sliderHeader">September, 2012</h3>
-                   
-                    <div class="b-top100__winners_slider">
-                    
-                        <div class="b-top100__winners_slider_container">
+                    <div class="b-top100__winners_slider" id="winnersSlider">
+                        <h3 class="b-std__header std__fs-smallH b-top100__winners_sliderHeader" data-id="sliderHeader">September, 2012</h3>
+                        <div class="b-top100__winners_slider_container" data-id="sliderFrame">
                             
-                            <ul class="b-top100__winners_slider_container_month">
-                                <li class="b-top100__winners_slider_container_month_item">
-                                
-                                    <div class="b-top100__winners_user b-top100__winners_user__second">
-                                        <div class="b-top100__winners_user_place">2<sup class="b-top100__winners_user_sup">nd</sup> place</div>
-                                        <div class="b-user__photoFrame b-top100__winners_user_photoFrame">
-                                            <img src="../img/user-116x156.jpg" alt="" class="b-user__photoFrame_photo b-top100__winners_user_photo">
-                                        </div>
-                                        <div class="b-user__person b-top100__winners_user_person">
-                                            <a href="#">Inga</a>, 32
-                                        </div>
-                                        <div class="b-top100__winners_user_points">10357 points</div>
-                                    </div>
-                                    
-                                    <div class="b-top100__winners_user b-top100__winners_user__first">
-                                        <div class="b-top100__winners_user_place__first">1<sup class="b-top100__winners_user_sup">st</sup> place</div>
-                                        <div class="b-user__photoFrame b-top100__winners_user_photoFrame__first">
-                                            <img src="../img/user2-116x156.jpg" alt="" class="b-user__photoFrame_photo b-top100__winners_user_photo__first">
-                                        </div>
-                                        <div class="b-user__person b-top100__winners_user_person__first">
-                                            <a href="#">Olga</a>, 35
-                                        </div>
-                                        <div class="b-top100__winners_user_points__first">128032 points</div>
-                                    </div>
-                                    
-                                    <div class="b-top100__winners_user b-top100__winners_user__third">
-                                        <div class="b-top100__winners_user_place">3<sup class="b-top100__winners_user_sup">rd</sup> place</div>
-                                        <div class="b-user__photoFrame b-top100__winners_user_photoFrame">
-                                            <img src="../img/user3-116x156.jpg" alt="" class="b-user__photoFrame_photo b-top100__winners_user_photo">
-                                        </div>
-                                        <div class="b-user__person b-top100__winners_user_person">
-                                            <a href="#">Inga</a>, 32
-                                        </div>
-                                        <div class="b-top100__winners_user_points">10357 points</div>
-                                    </div>
-                                    
-                                
-                                
-                                </li>
-                            
-                            
+                            <ul class="b-top100__winners_slider_container_month" data-id="sliderContainer" id="sliderMonth">
+                             
                             </ul>
-                            
-                        
+                          
                         </div><!-- /.b-top100__winners_slider_container -->
                         
-                        <a href="#" class="b-top100__winners_slider_arrow b-top100__winners_slider_arrow_left"></a>
+                        <a class="b-top100__winners_slider_arrow b-top100__winners_slider_arrow_left" data-id="arrPrev"></a>
                         
-                        <a href="#" class="b-top100__winners_slider_arrow b-top100__winners_slider_arrow_right"></a>
+                        <a class="b-top100__winners_slider_arrow b-top100__winners_slider_arrow_right" data-id="arrNext"></a>
                     </div><!-- / .b-top100__winners_slider -->
                 
                 </div><!-- /.b-top100__winners -->
