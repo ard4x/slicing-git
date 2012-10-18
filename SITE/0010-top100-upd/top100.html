@@ -82,6 +82,29 @@
         monthSlider(winnersSlider);    
     });
     </script>
+    
+<!--  Файлы для замены селектов -->
+    
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+        
+        function stsStyle(){ 
+                $('.select_menu').each(function(){
+                    var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),                    
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                    objElement.css({'width': w+'px'})
+                    console.log(obj.width())
+                
+                });
+            }
+            stsStyle();
+    </script>
+ <!--  ---------------------------------------- -->
 </head>
 <body>
 <!-- начало шаблонной шапки -->
