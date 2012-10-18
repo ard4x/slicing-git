@@ -47,12 +47,13 @@
             .b-f2f__user_button__left {width: 98px;} 
             .b-f2f__user_button__middle {width: 123px;}
             .b-f2f__user_button__right {width: 98px;}
-    .b-f2f__noUsers_message {font-size: 14px; line-height: 18px; color: #333; margin-top: 15px;}
-        .b-f2f__noUsers_message_header {margin-bottom: 23px;}
-        .b-f2f__noUsers_message  p{padding: 0;  margin-bottom: 22px;}
+    
     
     .b-f2f__noUsers { position: relative; width: 420px; margin: 60px 150px;}
         .b-f2f__noUsers_content {background-color: #ecf4fb; padding: 30px 70px; display: block;}
+            .b-f2f__noUsers_message {font-size: 14px; line-height: 18px; color: #333; margin-top: 15px;}
+            .b-f2f__noUsers_message_header {margin-bottom: 23px;}
+            .b-f2f__noUsers_message  p{padding: 0;  margin-bottom: 22px;}
     
     .b-f2f__popupInfo {width: 485px; padding: 20px 20px 70px 20px; overflow: hidden}
         .b-f2f__popupInfo_header {margin-bottom: 20px;}

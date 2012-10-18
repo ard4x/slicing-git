@@ -38,7 +38,7 @@
                                     .b-top100__winners_user_photoFrame__first {margin-bottom: 3px;}
                                         .b-top100__winners_user_photo__first   {width: 220px; height: 290px;}
                                     .b-top100__winners_user_person__first {margin-bottom: 3px; font-size: 24px;}
-                                    .b-top100__winners_user_points__first {font-size: 14px; text-align: center;}
+                                    .b-top100__winners_user_points__first {font-size: 14px; text-align: center; font-weight: bold;}
  
     /*** LEADERBOARD ***/
     .b-top100__leaderBoard {padding:12px 15px 0 15px; border-radius: 4px; background-color: #ecf4fb; overflow: hidden; margin-bottom: 20px;}

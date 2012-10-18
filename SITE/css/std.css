@@ -20,6 +20,11 @@
 .std__margLayout {margin: 0 0 20px 0;}
 .std__topContentPadding {padding-top: 20px;}
 .w-std__frame  {display: inline-block; padding: 5px; background-color: #ffffff; -moz-box-shadow: 0 1px 3px 0px #7D7D7D; -webkit-box-shadow: 0 1px 3px 0px #7D7D7D; box-shadow: 0 1px 3px 0px #7D7D7D; }
+    .std__frame_sorry { position: relative; width: 420px; margin: 60px 150px;}
+        .std__frame_sorry_content {background-color: #ecf4fb; padding: 30px 70px; display: block;}
+            .std__frame_sorry_message {font-size: 14px; line-height: 18px; color: #333; margin-top: 15px;}
+            .std__frame_sorry_message_header {margin-bottom: 23px;}
+            .std__frame_sorry_message  p{padding: 0;  margin-bottom: 22px;}
 .b-std__popup {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url(../img/opacity.png) repeat; z-index: 999;}
     .std__popup_content {width: 650px; padding: 25px 0 25px 30px; border: solid 5px #ecf4fb; position: relative; margin: 150px auto 0 auto; background-color: #ffffff; padding: 25px 0 25px 30px;}
         .std__popup_bottom {width: 100%; background-color:#ecf4fb; position:absolute; bottom:0px; left:0px;}
