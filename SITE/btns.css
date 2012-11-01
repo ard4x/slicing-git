@@ -1,27 +1,27 @@
 /* BUTTONS v.20121011
 /* Grey Micro button */
-a.btn-m-7   {display: inline-block; border: solid 1px #cbcbcb; border-radius: 3px; background: 0 -116px url(img/btns.png) repeat-x; 
+a.btn-m-7   {display: inline-block; border: solid 1px #cbcbcb; border-radius: 3px; background: 0 -116px url(../img/btns.png) repeat-x; 
             height: 22px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3; cursor: pointer; text-align: center; position: relative; padding: 0;}
 a.btn-m-7 span  {display: inline-block; font: bold 12px Arial !important; color: #525252;  text-shadow: #ffffff 0 1px 1px; margin-top: 3px}
 a.btn-m-7:hover {background-position: 0 -138px;}
 a.btn-m-7:active{background-position: 0 -160px; box-shadow: none; }
 
 /* Orange micro button */
-a.btn-m-3   {display: inline-block; border: solid 1px #ca582e; border-top-color: #99573e; border-bottom-color: #963411; border-radius: 3px; background: 0 -880px url(img/btns.png) repeat-x; 
+a.btn-m-3   {display: inline-block; border: solid 1px #ca582e; border-top-color: #99573e; border-bottom-color: #963411; border-radius: 3px; background: 0 -880px url(../img/btns.png) repeat-x; 
             height: 22px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3; cursor: pointer; text-align: center; position: relative; padding: 0;}
 a.btn-m-3 span  {display: inline-block; font: bold 12px Arial !important; color: #fff;  text-shadow: #364f6d 0 1px 1px; margin-top: 3px}
 a.btn-m-3:hover {background-position: 0 -902px; border: solid 1px #d46842; border-top-color: #99573e; border-bottom-color: #a65134;}
 a.btn-m-3:active{background-position: 0 -924px; box-shadow: none; border: solid 1px #c75127; border-top-color: #8a3714; border-bottom-color: #a55133;}
 
 /* Green micro button */
-a.btn-m-2   {display: inline-block; border: solid 1px #64964a; border-top-color: #548d52; border-bottom-color: #41642e; border-radius: 3px; background: 0 -1034px url(img/btns.png) repeat-x; 
+a.btn-m-2   {display: inline-block; border: solid 1px #64964a; border-top-color: #548d52; border-bottom-color: #41642e; border-radius: 3px; background: 0 -1034px url(../img/btns.png) repeat-x; 
             height: 22px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3; cursor: pointer; text-align: center; position: relative; padding: 0;}
 a.btn-m-2 span  {display: inline-block; font: bold 12px Arial !important; color: #fff;  text-shadow: #364f6d 0 1px 1px; margin-top: 3px}
 a.btn-m-2:hover {background-position: 0 -1056px; border: solid 1px #74a858; border-top-color: #548d52; border-bottom-color: #5b8444;}
 a.btn-m-2:active{background-position: 0 -1078px; box-shadow: none; border: solid 1px #619147; border-top-color: #3b6a35; border-bottom-color: #5a8344;}
 
 /* Blue micro button */
-a.btn-m-1   {display: inline-block; border: solid 1px #4a6c96; border-top-color: #3a639a; border-bottom-color: #334b67; border-radius: 3px; background: 0 -1100px url(img/btns.png) repeat-x; 
+a.btn-m-1   {display: inline-block; border: solid 1px #4a6c96; border-top-color: #3a639a; border-bottom-color: #334b67; border-radius: 3px; background: 0 -1100px url(../img/btns.png) repeat-x; 
             height: 22px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3; cursor: pointer; text-align: center; position: relative; padding: 0;}
 a.btn-m-1 span  {display: inline-block; font: bold 12px Arial !important; color: #fff;  text-shadow: #364f6d 0 1px 1px; margin-top: 3px}
 a.btn-m-1:hover {background-position: 0 -1122px; border: solid 1px #5177a5; border-top-color: #3a639a; border-bottom-color: #3f5d81;}
@@ -30,53 +30,59 @@ a.btn-m-1:active{background-position: 0 -1144px; box-shadow: none; border: solid
 
 /* Blue small button */     
 a.btn-s-1 {display: inline-block; border: solid 1px #4a6c97;  border-top-color: #3a639a;  border-bottom-color: #334a67;
-            border-radius: 3px; background: 0 0 url(img/btns.png) repeat-x; cursor: pointer;
+            border-radius: 3px; background: 0 0 url(../img/btns.png) repeat-x; cursor: pointer;
             height: 29px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3; text-align: center; position: relative; padding: 0;}
 a.btn-s-1 span {display: inline-block; font: bold 14px Arial !important; color: #ffffff;  text-shadow: #364f6d 0 1px 2px; margin-top: 6px}
 a.btn-s-1:hover {background-position: 0 -29px; border-color: #5177a5; border-top-color: #3a639a;  border-bottom-color: #3f5d81; }
 a.btn-s-1:active {background-position: 0 -58px;  border-color: #486992; border-top-color: #2f4f7b;  border-bottom-color: #3f5d81; box-shadow: none; }
     /* or button */
-    .btn-s-1_or{}
-    .btn-s-1_or .orArr {width: 9px; height: 6px; background: url(img/button-icos.png) no-repeat 0 -361px;}
+    .btn-s-1_or{position: relative; display: inline-block;}
+    .btn-s-1_or .btn-s-1{width: 47px;}
+        .btn-s-1_or .btn-s-1 .orArr {margin-left: 7px; width: 9px; height: 6px; background: url(../img/button-icos.png) no-repeat 0 -361px;}
+    .btn-s-1_or .or_dropDown {width: 120px; display: none; background: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.5); padding:5px 0; position: absolute; z-index: 10; top: 25px;}
+        .btn-s-1_or .or_dropDown li {list-style: none; margin: 0; padding:0; display: block; width: 100%;}
+        .btn-s-1_or .or_dropDown li a{padding: 4px 0 4px 15px; display: block; font: 12px Arial; color:#4F6B8D; text-decoration: none;}
+        .btn-s-1_or .or_dropDown li a:hover{background-color:#ecf4fb; text-decoration: none;}
+        .btn-s-1_or li.or_dropDown-top {width: 21px; height: 10px; position: absolute; top: -10px; left: 25px; background: url(../img/button-icos.png) no-repeat 0 -367px;}
 
 /* Green small button */     
 a.btn-s-2 {display: inline-block; border: solid 1px #64954a;  border-top-color: #548d52;  border-bottom-color: #40642d;
-            border-radius: 3px; background: 0 -182px url(img/btns.png) repeat-x; cursor: pointer;
+            border-radius: 3px; background: 0 -182px url(../img/btns.png) repeat-x; cursor: pointer;
             height: 29px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3; text-align: center; position: relative; padding: 0;}
 a.btn-s-2 span {display: inline-block; font: bold 14px Arial !important; color: #ffffff;  text-shadow: #364f6d 0 1px 2px; margin-top: 6px}
 a.btn-s-2:hover {background-position: 0 -211px; border-color: #74a858; border-top-color: #548d52;  border-bottom-color: #5b8444; }
 a.btn-s-2:active {background-position: 0 -240px;  border-color: #64954a; border-top-color: #3b6a35;  border-bottom-color: #5b8344; box-shadow: none; }
 
 /* Inactive small button */
-a.btn-s-0 {display: inline-block; border: solid 1px #636363;  border-top-color: #47535d;  border-bottom-color: #4e4e4e;  background:0 -87px url(img/btns.png) repeat-x; 
+a.btn-s-0 {display: inline-block; border: solid 1px #636363;  border-top-color: #47535d;  border-bottom-color: #4e4e4e;  background:0 -87px url(../img/btns.png) repeat-x; 
             cursor: pointer; border-radius: 3px; height: 29px; text-decoration: none;  cursor: default; text-align: center; position: relative; padding: 0; }
 a.btn-s-0 span {display: inline-block; font: bold 14px Arial !important; color: #ffffff;  text-shadow: #4c4c4c 0 1px 2px; margin-top: 6px}
 
 /* Small Facebook button */
 a.btn-s-7 {display: inline-block; border: solid 1px #4a6c97;  border-top-color: #3a639a;  border-bottom-color: #334a67;
-            border-radius: 3px; background: 0 0 url(img/btns.png) repeat-x; cursor: pointer;
+            border-radius: 3px; background: 0 0 url(../img/btns.png) repeat-x; cursor: pointer;
             height: 29px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3;}
 
 a.btn-s-7 span   {position: relative; display: inline-block; font: bold 14px Arial !important; color: #ffffff;  text-shadow: #364f6d 0 1px 2px; margin-top: 6px; padding-left: 33px; margin-right: 8px;
-                  background: url(img/button-icos.png) no-repeat;  background-position: -2px -250px;}
+                  background: url(../img/button-icos.png) no-repeat;  background-position: -2px -250px;}
 a.btn-s-7 span:after {content:''; position: absolute; width: 1px; height: 29px; background-color: #334a67; top: -6px; left: 23px; } 
 a.btn-s-7:hover {background-position: 0 -29px; border-color: #5177a5; border-top-color: #3a639a;  border-bottom-color: #3f5d81; }
 a.btn-s-7:active {background-position: 0 -58px;  border-color: #486992; border-top-color: #2f4f7b;  border-bottom-color: #3f5d81; box-shadow: none; }
 
 /* Small Twitter button */
 a.btn-s-8 {display: inline-block; border: solid 1px #35abdf;  border-top-color: #33a2e3;  border-bottom-color: #1c749d;
-            border-radius: 3px; background: 0 -1166px url(img/btns.png) repeat-x; cursor: pointer;
+            border-radius: 3px; background: 0 -1166px url(../img/btns.png) repeat-x; cursor: pointer;
             height: 29px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3;}
 
 a.btn-s-8 span   {position: relative; display: inline-block; font: bold 14px Arial !important; color: #ffffff;  text-shadow: #364f6d 0 1px 2px; margin-top: 6px; padding-left: 33px; margin-right: 8px;
-                  background: url(img/button-icos.png) no-repeat;  background-position: -9px -346px;}
+                  background: url(../img/button-icos.png) no-repeat;  background-position: -2px -281px;}
 a.btn-s-8 span:after {content:''; position: absolute; width: 1px; height: 29px; background-color: #1c749d; top: -6px; left: 23px; } 
 a.btn-s-8:hover {background-position: 0 -1195px; border-color: #47c2f3; border-top-color: #33a2e3;  border-bottom-color: #3897be; }
 a.btn-s-8:active {background-position: 0 -1224px;  border-color: #35a9dd; border-top-color: #197bbb;  border-bottom-color: #3797bd; box-shadow: none; }
 
 /* Green Average button */     
 a.btn-a-2 {display: inline-block; border: solid 1px #64954a;  border-top-color: #548d52;  border-bottom-color: #40642d;  
-            border-radius: 3px; background: 0 -269px url(img/btns.png) repeat-x; cursor: pointer;
+            border-radius: 3px; background: 0 -269px url(../img/btns.png) repeat-x; cursor: pointer;
             height: 39px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3; text-align: center; position: relative; padding: 0;}
 a.btn-a-2 span {display: inline-block; font: bold 18px Arial !important; color: #ffffff;  text-shadow: #364f6d 0 1px 2px; margin-top: 9px}
 a.btn-a-2:hover {background-position: 0 -308px; border-color: #74a858; border-top-color: #548d52;  border-bottom-color: #5b8444; }
@@ -84,26 +90,34 @@ a.btn-a-2:active {background-position: 0 -347px;  border-color: #64954a; border-
 
 /* Blue Average button */     
 a.btn-a-1 {display: inline-block; border: solid 1px #496a94;  border-top-color: #3a639a;  border-bottom-color: #334a67;  
-            border-radius: 3px; background: 0 -386px url(img/btns.png) repeat-x; cursor: pointer;
+            border-radius: 3px; background: 0 -386px url(../img/btns.png) repeat-x; cursor: pointer;
             height: 39px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3; text-align: center; position: relative; padding: 0;}
 a.btn-a-1 span {display: inline-block; font: bold 18px Arial !important; color: #ffffff;  text-shadow: #364f6d 0 1px 2px; margin-top: 9px}
 a.btn-a-1:hover {background-position: 0 -425px; border-color: #5177a5; border-top-color: #3a639a;  border-bottom-color: #3f5d81; }
 a.btn-a-1:active {background-position: 0 -464px;  border-color: #496a94; border-top-color: #2f4f7b;  border-bottom-color: #3f5d81; box-shadow: none; } 
 
+/* Orange Average button */     
+a.btn-a-3 {display: inline-block; border: solid 1px #c9562d;  border-top-color: #99573e;  border-bottom-color: #953411;  
+            border-radius: 3px; background: 0 -1253px url(../img/btns.png) repeat-x; cursor: pointer;
+            height: 39px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3; text-align: center; position: relative; padding: 0;}
+a.btn-a-3 span {display: inline-block; font: bold 18px Arial !important; color: #ffffff;  text-shadow: #a35033 0 1px 2px; margin-top: 9px}
+a.btn-a-3:hover {background-position: 0 -1292px; border-color: #d46842; border-top-color: #99573e;  border-bottom-color: #a65134; }
+a.btn-a-3:active {background-position: 0 -1331px;  border-color: #a65134; border-top-color: #8a3714;  border-bottom-color: #a65133; box-shadow: none; } 
+
 /* Big Facebook button */
 a.btn-a-6 {display: inline-block; border: solid 1px #4a6c97;  border-top-color: #3a639a;  border-bottom-color: #334a67; 
-            border-radius: 3px; background: 0 -386px url(img/btns.png) repeat-x; cursor: pointer;
+            border-radius: 3px; background: 0 -386px url(../img/btns.png) repeat-x; cursor: pointer;
             height: 39px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3;}
 
 a.btn-a-6 span   {position: relative; display: inline-block; font: bold 18px Arial !important; color: #ffffff;  text-shadow: #364f6d 0 1px 2px; margin-top: 9px; padding-left: 59px; margin-right: 14px;
-                  background: url(img/button-icos.png) no-repeat;  background-position: 17px -340px; }
+                  background: url(../img/button-icos.png) no-repeat;  background-position: 17px -340px; }
 a.btn-a-6 span:after {content:''; position: absolute; width: 1px; height: 39px; background-color: #334a67; top: -9px; left: 42px; } 
 a.btn-a-6:hover {background-position: 0 -425px; border-color: #5177a5; border-top-color: #3a639a;  border-bottom-color: #3f5d81; }
 a.btn-a-6:active {background-position: 0 -464px;  border-color: #496a94; border-top-color: #2f4f7b;  border-bottom-color: #3f5d81; box-shadow: none; }
 
 /** Buttons Group **/
 .b-btn__group {display: inline-block;}
-    .b-btn__group_unit  {display: block; border: solid 1px; background: url(img/btns.png) repeat-x; cursor: pointer;
+    .b-btn__group_unit  {display: block; border: solid 1px; background: url(../img/btns.png) repeat-x; cursor: pointer;
             height: 23px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3; text-align: center; padding: 0; float: left;
             font: bold 14px Arial !important; color: #ffffff;  text-shadow: #364f6d 0 1px 2px; padding-top: 6px;}
     .b-btn__group_unit:hover {color: #ffffff; text-decoration: none;}  
@@ -123,8 +137,8 @@ a.btn-a-6:active {background-position: 0 -464px;  border-color: #496a94; border-
     .btn__group_unit__disabled {border-color: #636363; border-top-color: #47535d; border-bottom-color: #4e4e4e; background-position: 0 -851px; box-shadow: none; cursor: default;}
         
 /** Button Slider **/
-.b-btn__slider {width: 100%; height: 29px; display: table; border: solid 1px #cbcbcb; border-radius: 4px; text-align: center; vertical-align: middle; margin-bottom: 20px;}
-    .b-btn__slider_item  {display: table-cell; width: 25%; vertical-align: middle; border-left: 1px solid #cbcbcb; background: 0 -764px url(img/btns.png) repeat-x;
+.b-btn__slider {width: 100%; height: 29px; display: table; border: solid 1px #cbcbcb; border-radius: 4px; text-align: center; vertical-align: middle; margin-bottom: 20px; position: relative;}
+    .b-btn__slider_item  {display: table-cell; width: 25%; vertical-align: middle; border-left: 1px solid #cbcbcb; background: 0 -764px url(../img/btns.png) repeat-x;
                         font: 14px Arial; color: #525252; text-decoration: none; position: relative; cursor: pointer;}
     .b-btn__slider_item:first-child {border-left: none; }
     .b-btn__slider_item:hover {background-position: 0 -793px; text-decoration: none; color: #525252; }
@@ -137,7 +151,7 @@ a.btn-a-6:active {background-position: 0 -464px;  border-color: #496a94; border-
             
 /*** PAGINATION **/
 .btn__paging {}        
-    .btn__paging-item {display: inline-block; margin-right: 3px; height: 18px; padding-top: 4px; background: 0 -946px url(img/btns.png) repeat-x; border: solid 1px #cbcbcb; 
+    .btn__paging-item {display: inline-block; margin-right: 3px; height: 18px; padding-top: 4px; background: 0 -946px url(../img/btns.png) repeat-x; border: solid 1px #cbcbcb; 
                         border-radius: 3px; width: 23px; text-align: center; font: 12px Arial; color: #525252;  text-decoration: none; padding-top: 3px; cursor: pointer;}
     .btn__paging-item:hover{background-position: 0 -968px; color: #525252;  text-decoration: none;}
     .btn__paging-item:active{background-position: 0 -990px; color: #525252;  text-decoration: none;}

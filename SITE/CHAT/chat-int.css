@@ -1,0 +1,51 @@
+.brdpic10 {background: url(img/72x92bg.png) no-repeat; width: 72px; height: 92px; position: relative;}
+.chatrighttbltop .uname {margin-top:2px;}
+.chatrighttbltop .brdpic10 {float: left; margin-right: 10px; }
+.chatrighttbltop img { margin:2px 0 0 3px!important;} 
+.chatrighttbltop .interests {font: 12px Arial; display: inline-block; margin-top: 7px; color: #666666;}
+.chatrighttbltop .interests .list {margin-left: 25px;}
+.chatrighttbltop .interests a {font-weight: normal; font-size: 14px;}
+
+.messagestd .interestsBlock {border: solid 1px #e3e3eb; border-bottom: none; padding: 10px; background-color: #ecf4fb; font: 14px Arial; color:#000000; position: relative;}
+.messagestd .interestsBlock .close {position: absolute; top: 10px; right: 10px; width: 9px; height: 9px; background: url(img/cross-9x9-blue.png) no-repeat;}
+
+
+a.bublBtn-more {font: 12px Arial;  display: inline-block; 
+                                    border-radius: 4px; padding: 2px 9px;  margin-left: 10px;     }
+a.bublBtn:hover,
+a.bublBtn-more:hover {text-decoration: none;}
+
+a.bublBtn, a.bublBtn-more {font: 12px Arial; color: #436187; display: inline-block; background-color: #dee7f8; border: solid 1px #cad8f3; 
+                            border-radius: 4px; padding: 2px 9px;  margin: 0 10px 10px 0;     }
+a.bublBtn-more {color: #ffffff; background-color: #436187; border: solid 1px #243c5e; margin: 0 0 10px 10px;}
+
+/* POPUP*/
+div.popup.addInterests {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url(img/opacity.png) repeat; z-index: 999;}
+div.popup.addInterests .popupContent {width: 450px; padding: 15px; position: relative; margin: 175px auto 0 auto; background-color: #ffffff;}
+div.popup.addInterests .popupContent .close {display:block; width: 9px; height: 9px; background: url(img/cross-9x9-lightBlue.png) no-repeat; position: absolute; top: 15px; right: 15px;}
+div.popup.addInterests .popupContent h1 {font: bold 18px 'PT Sans'; color: #000000; margin: 0 0 10px 0;}
+div.popup.addInterests .popupContent .selectedInterests {margin-bottom: 5px;}
+div.popup.addInterests .popupContent .selectedInterests .bublBtn em {width: 7px; height: 7px; background: url(img/cross-7x7-blue.png) no-repeat; margin-left: 11px; display: inline-block;}
+div.popup.addInterests .selectTable {background-color: #ecf4fb; overflow: hidden; width: 100%; padding: 15px; margin-left:-15px; margin-bottom: -15px;}
+div.popup.addInterests .selectTable .qSearch input {width: 439px; font: 12px Arial; font-style: italic; color:#999999; padding-left: 7px!important; margin-bottom: 10px;}
+
+div.popup.addInterests .interests {position: relative; overflow: hidden;}
+div.popup.addInterests .interests .categories { margin-top: 10px; width: 140px; float: left;}
+div.popup.addInterests .interests .categories ul {width: 100%;}
+div.popup.addInterests .interests .categories li {padding-left: 10px; height: 23px; font: 12px Arial; position: relative; margin-bottom: 1px;}
+div.popup.addInterests .interests .categories li.active {background-color: #436187; border-top-left-radius: 4px; border-bottom-left-radius: 4px; font-weight: bold; color:#ffffff; }
+div.popup.addInterests .interests .categories li.active:after {content: ""; width: 20px; height: 23px; background: url(img/cat_arr.png) no-repeat; position: absolute; top:0; right: -20px;}
+div.popup.addInterests .interests .categories li span {width: 100%; display: inline-block; cursor: pointer; margin-top: 4px; }
+
+
+div.popup.addInterests .interests .list {width: 265px; border: solid 1px #c4d9ec; padding: 9px 14px 14px 29px; background-color: #ffffff; border-radius: 4px; float:right}
+div.popup.addInterests .interests .list li {height: 23px; margin-bottom: 1px; font-size: 12px;}
+div.popup.addInterests .interests .list li a {display: inline-block; cursor: pointer; margin-top: 4px; }
+div.popup.addInterests .interests .list .arrows {border-top: solid 1px #c4d9ec; margin-top: 8px; padding-top: 12px; font-size: 12px;}
+div.popup.addInterests .interests .arrows i{display:inline-block; width:4px; height:7px; background:url(img/list-arr.png);}
+div.popup.addInterests .interests .arrows .left i {background-position: 0 0; margin-right: 5px;}
+div.popup.addInterests .interests .arrows .right i {background-position: 100% 0; margin-left: 5px;}
+div.popup.addInterests .interests .arrows .left {float: left;} 
+div.popup.addInterests.interests .arrows .right {float: right;}
+div.popup.addInterests .interests .categories .arrows {width: 18px; margin-left: 10px; margin-top: 5px;} 
+div.popup.addInterests .bnt-ok {margin: 15px 0 0 170px; padding: 0 40px;}

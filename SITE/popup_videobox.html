@@ -1,0 +1,253 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>POPUP</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="style_curr.css" type="text/css" />
+    <link rel="stylesheet" href="btns.css" type="text/css" />   <!-- Проверить наличие, заменить более новой версией, а так же файлы btns.png и button-icos.png, Версия указана в первой строке файла-->
+    <link rel="stylesheet" href="popup_videobox.css" type="text/css" />
+<!--  Файлы для замены селектов -->
+    
+    <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <script src="js/jquery.stylish-select.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+    </script>
+ <!--  ---------------------------------------- -->
+
+</head>
+<body>
+
+   
+<!-- POPUP -->
+<div class="popup">
+    <!-- окно c регистрацией -->
+    <div class="popupContent videoReg " >
+        <div class="head">
+            <h1>Oops, you have reached the limit :(</h1>
+            <p>
+                You have watched 3 videos today.  In order to watch videos without limits, we invite you to join Yangutu.<br> 
+                It takes no more than 1 minute.
+            </p>
+        </div><!-- /head -->
+        
+        <div class="leftBlock">
+        
+            <div class="fbBlock">
+                <h2>Already on Facebook?</h2>
+                <a href="javascript:void(0);" class="btn-a-6 btn-fbconn"><span>Connect with Facebook</span></a>
+                
+                <span class="fdDescr">No information will be posted on Facebook</span>
+                
+                <!-- Код фейсбука -->
+                <div class="fd_code">
+                        <img src="img/fb_example-image.png"><!-- Временная демо-картинка -->
+                </div>
+                <!-- / Код фейсбука -->
+                               
+            </div>
+            
+            
+        </div> <!-- /leftBlock -->
+        
+        <div class="loginBlock">
+                <h2>Log in here</h2>
+                <p><a href="#">Log in here</a> if you have already registered</p>
+       </div>
+        
+        <div class="rightBlock">
+            <h2>Create free profile</h2>
+            <form action="#">
+                <table>
+                    <tr>
+                        <td class="label">
+                            I'm a:
+                        </td>
+                        <td>
+                            <div class="width">
+                                <select id="sel-1" class="sSelect">
+                                    <option selected="selected">Please select</option>
+                                    <option>Value 1</option>
+                                    <option>Value 2</option>
+                                    <option>Value 3</option>
+                                </select>
+                            </div>
+                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            Name:
+                        </td>
+                        <td>
+                            <div class="width">
+                                <input type="text" placeholder="Enter your name or nickname">
+                            </div>
+                        
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="label">
+                            Birthday:
+                        </td>
+                        <td>
+                         <div class="day">
+                                <select class="sSelect">
+                                    <option value="1" label="01">01</option>
+                                    <option value="2" label="02">02</option>
+                                    <option value="3" label="03">03</option>
+                                    <option value="4" label="04">04</option>
+                                    <option value="5" label="05">05</option>
+                                    <option value="6" label="06">06</option>
+                                    <option value="7" label="07">07</option>
+                                    <option value="8" label="08">08</option>
+                                    <option value="9" label="09" selected="selected">09</option>
+                                    <option value="10" label="10">10</option>
+                                    <option value="11" label="11">11</option>
+                                    <option value="12" label="12">12</option>
+                                    <option value="13" label="13">13</option>
+                                    <option value="14" label="14">14</option>
+                                    <option value="15" label="15">15</option>
+                                    <option value="16" label="16">16</option>
+                                    <option value="17" label="17">17</option>
+                                    <option value="18" label="18">18</option>
+                                    <option value="19" label="19">19</option>
+                                    <option value="20" label="20">20</option>                       
+                                    <option value="21" label="21">21</option>
+                                    <option value="22" label="22">22</option>
+                                    <option value="23" label="23">23</option>
+                                    <option value="24" label="24">24</option>
+                                    <option value="25" label="25">25</option>
+                                    <option value="26" label="26">26</option>
+                                    <option value="27" label="27">27</option>
+                                    <option value="28" label="28">28</option>
+                                    <option value="29" label="29">29</option>
+                                    <option value="30" label="30">30</option>                   
+                                    <option value="31" label="31">31</option>  
+                                    
+                                </select>
+                            </div>
+                        <div class="month">
+                                <select class="sSelect">
+                                    <option value="1" label="01">01</option>
+                                    <option value="2" label="02">02</option>
+                                    <option value="3" label="03">03</option>
+                                    <option value="4" label="04">04</option>
+                                    <option value="5" label="05">05</option>
+                                    <option value="6" label="06">06</option>
+                                    <option value="7" label="07">07</option>
+                                    <option value="8" label="08">08</option>
+                                    <option value="9" label="09" selected="selected">09</option>
+                                    <option value="10" label="10">10</option>
+                                    <option value="11" label="11">11</option>
+                                    <option value="12" label="12">12</option>
+                                </select>
+                            </div>
+                            
+                            <div class="year">
+                                <select class="sSelect">
+                                    <option value="2012" label="2012">2012</option>
+                                    <option value="2013" label="2013">2013</option>
+                                    <option value="2014" label="2014">2014</option>
+                                    <option value="2015" label="2015">2015</option>
+                                    <option value="2016" label="2016">2016</option>
+                                    <option value="2017" label="2017">2017</option>
+                                    <option value="2018" label="2018">2018</option>
+                                    <option value="2019" label="2019">2019</option>
+                                    <option value="2020" label="2020">2020</option>
+                                    <option value="2021" label="2021">2021</option>
+                                    <option value="2022" label="2022">2022</option>
+                                </select>
+                            </div>
+                           
+                        
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="label">
+                            City:
+                        </td>
+                        <td>
+                            <div class="width">
+                                <input type="text" placeholder="Select your location">
+                            </div>
+                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                            E-mail:
+                        </td>
+                        <td>
+                            <div class="width">
+                                <input type="text" placeholder="Enter your e-mail address">
+                            </div>
+                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="label">
+                           Password:
+                        </td>
+                        <td>
+                            <div class="width">
+                                <input type="password" placeholder="Enter your password">
+                            </div>
+                        
+                        </td>
+                    </tr>
+                    
+                </table>
+            </form>
+            <a href="javascript:void(0);" class="btn-a-2 btn-reg"><span>Register now</span></a>
+            
+            <p>
+                By registering with Yangutu you accept our <a href="#">Terms of use</a> and confirm that you are 18 or older. We will 
+                never disclose your <a href="#">private information</a>.
+            </p>
+        
+            <div class="delim"><span>or</span></div>
+        </div> <!-- /rightBlock -->
+    
+    
+        <a href="javascript:void(0);" class="close"></a>                              
+    </div>
+    <!-- / окно c регистрацией -->
+    
+    
+    <!-- окно c 18+ -->
+    <div class="popupContent video18" style="display: none">
+        <h1>Attention!</h1>
+        
+        <p>
+            This content is for mature audience only.
+        </p>
+        <p>
+            If you’re under 18, please, close this dialog window and try other Yangutu services.
+        </p>
+        <p>
+            If you’re over 18 you can register and get unlimited access to the content.
+        </p>
+    
+        <a hreh="javascript:void(0);" class="btn-a-2 btn-reg"><span>Register and get full access</span></a>
+        
+        <a href="javascript:void(0);" class="close_link">Close</a>
+        
+        <a href="javascript:void(0);" class="close"></a>                              
+    </div>
+    <!-- / окно c 18+ -->
+</div>
+ 
+
+
+
+<!-- / POPUP -->
+
+
+
+</body>
+</html>
