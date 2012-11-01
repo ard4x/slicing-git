@@ -1,6 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
-:focus {outline:none}
-
 
 /***********/
 
@@ -19,9 +16,12 @@
 #regSteps #content .stepDescr     {font: 12px Arial; color:#333333; background-color: #ecf4fb; border-radius: 4px; width: 195px; padding: 15px; }
 #regSteps #content .stepDescr h2  {font: bold 24px 'PT Sans';  color:#000000; margin-top: 0}
 
+/******** EDITED  *** добавлены к некоторым стилям #required-info ********/
 /* RegStep1 */
-#regStep1 .label {width: 135px; margin-right:5px; float: left; font-size: 14px;}
-#regStep1 .content {width: 350px; position: relative; display: inline-block;}
+#regStep1 .label,
+#required-info .label{width: 135px; margin-right:5px; float: left; font-size: 14px;}
+#regStep1 .content,
+#required-info  .content {width: 350px; position: relative; display: inline-block;}
 #regStep1 .loadPhoto {position: relative; margin-bottom: 5px; } 
 #regStep1 .loadPhoto p {font: 12px Arial; color:#333333; padding-bottom: 15px;}
 #regStep1 .loadPhoto .photo {position: relative; width: 72px; height: 92px; margin-right: 10px; margin-bottom: 10px; float: left; background: url(img/photo_bg.png);}
@@ -30,21 +30,36 @@
 #regStep1 .loadPhoto .photo .photoDescr.off { display: none}
 #regStep1 .loadPhoto .photo .photoDescr span {font: 10px Arial; color:#ffffff; display: inline-block; margin-top: 10px; margin-left: 3px;}
 
-#regStep1 form {border-top: solid 1px #cccccc; padding-top: 15px; position: relative; margin-bottom: 40px;  }
-#regStep1 form .formRow {margin-bottom: 15px; position: relative;}
-#regStep1 form .formRow .tips {font: 10px Arial; color: #999999;}
-#regStep1 form .formRow .label {padding-top: 4px}
-#regStep1 form .formRow label {margin-right: 10px}
-#regStep1 span.div {font-size: 17px; text-align: center; margin-left: 14px;} 
-#regStep1 a {font: 12px Arial; color:#334a66;}   
-#regStep1 a:hover {}
-#regStep1 a.more {margin-left: 4px;}
-#regStep1 a.centim {margin-top: 5px; display: inline-block;}
+#regStep1 form,
+#required-info {border-top: solid 1px #cccccc; padding-top: 15px; position: relative; margin-bottom: 40px;  }
+#regStep1 form .formRow,
+#required-info .formRow{margin-bottom: 15px; position: relative;}
+#regStep1 form .formRow .tips,
+#required-info .formRow .tips{font: 10px Arial; color: #999999;}
+#regStep1 form .formRow .label,
+#required-info .formRow .label {padding-top: 4px}
+#regStep1 form .formRow label,
+#required-info .formRow label {margin-right: 10px}
+#regStep1 span.div ,
+#required-info  span.div{font-size: 17px; text-align: center; margin-left: 14px;} 
+#regStep1 a ,
+#required-info a{font: 12px Arial; color:#334a66;}   
+#regStep1 a:hover ,
+#required-info a:hover{}
+#regStep1 a.more,
+#required-info  a.more{margin-left: 4px;}
+#regStep1 a.centim,
+#required-info  a.centim{margin-top: 5px; display: inline-block;}
 #regStep1 .btn-cont {margin-top: 5px; padding: 0 25px; margin-left: 140px;}
 #regStep2 .bnt-load {padding: 0 13px;} 
 
+
 /* RegStep2 */
-#regStep2 .step2Header input {width: 479px!important; font: 12px Arial; font-style: italic; color:#999999; padding-left: 7px!important; margin-bottom: 10px;}
+
+#regStep2 .step2Header {margin-bottom: 10px; position: relative;} 
+#regStep2 .step2Header input {width: 479px!important; padding-left: 7px!important; }
+#regStep2 .step2Header input:-moz-placeholder { font-style: italic }
+#regStep2 .step2Header input::-webkit-input-placeholder { font-style: italic }
 #regStep2 .selectedInt {font: 12px Arial; color: #333333; margin-bottom:10px; height: 21px;}
 #regStep2 .selectedInt span {display: inline-block; margin-top: 4px;}
 #regStep2 .selectedInt .cat_bnt {display: inline-block; height: 19px; border: solid 1px #cad8f3; border-radius: 4px; background-color: #dee7f8; margin-right: 10px; position: relative;}
@@ -59,8 +74,12 @@
 #regStep2 .interests .categories li.active {background-color: #436187; border-top-left-radius: 4px; border-bottom-left-radius: 4px; font-weight: bold; color:#ffffff; }
 #regStep2 .interests .categories li.active:after {content: ""; width: 20px; height: 23px; background: url(img/cat_arr.png) no-repeat; position: absolute; top:0; right: -20px;}
 #regStep2 .interests .categories li span {width: 100%; display: inline-block; cursor: pointer; margin-top: 4px; }
-
-
+/** add display: none; to hide*/
+.stepInterests {position: absolute; top: 25px; width: 100%; margin: 0; padding: 0; overflow: auto; z-index: 700; background: #F6F6F7; font-size: 11px;} 
+    .stepInterests  li{margin: 0; list-style-type: none; border: 1px solid #CCC; border-width: 0 1px 1px; }
+    .stepInterests .interestItem{color: #333; text-decoration: none; font-weight: bold; display: block; padding: 10px;}
+        .stepInterests .interestItem:hover{background-color:#ECF4FB}
+/******** end EDITED  ***********/
 #regStep2 .interests .list {width: 275px; border: solid 1px #c4d9ec; padding: 9px 14px 14px 29px; background-color: #ffffff; border-radius: 4px; float:right}
 #regStep2 .interests .list li {height: 23px; margin-bottom: 1px; font-size: 12px;}
 #regStep2 .interests .list li a {display: inline-block; cursor: pointer; margin-top: 4px; }
@@ -90,24 +109,5 @@ textarea.err, .err .newListSelected, .err .newList{border-color: #990000;}
 .fixWidth158{width: 158px}
 .fixWidth168{width: 168px}
 
-/* Standart buttons */
-a.btn-m-7   {display: inline-block; padding: 0 10px; border: solid 1px #cbcbcb; border-radius: 3px; background: 0 -116px url(img/btns.png) repeat-x; 
-            height: 22px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3; cursor: pointer}
-a.btn-m-7 span  {display: inline-block; font: bold 12px Arial !important; color: #525252;  text-shadow: #ffffff 0 1px 1px; margin-top: 3px}
-a.btn-m-7:hover {background-position: 0 -138px;}
-a.btn-m-7:active{background-position: 0 -160px; box-shadow: none; }
 
-     
-a.btn-s-1 {display: inline-block; padding: 0 10px; border: solid 1px #4a6c97;  border-top-color: #3a639a;  border-bottom-color: #334a67;
-            border-radius: 3px; background: url(img/btns.png) repeat-x; cursor: pointer;
-            height: 29px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3;}
-a.btn-s-1 span {display: inline-block; font: bold 14px Arial !important; color: #ffffff;  text-shadow: #364f6d 0 1px 2px; margin-top: 6px}
-a.btn-s-1:hover {background-position: 0 -29px; border-color: #5177a5; border-top-color: #3a639a;  border-bottom-color: #3f5d81; }
-a.btn-s-1:active {background-position: 0 -58px;  border-color: #486992; border-top-color: #2f4f7b;  border-bottom-color: #3f5d81; box-shadow: none; }
-
-a.btn-s-0 {display: inline-block; border: solid 1px #636363;  border-top-color: #47535d;  border-bottom-color: #4e4e4e;  background:0 -87px url(img/btns.png) repeat-x; 
-            cursor: pointer; border-radius: 3px; height: 29px; text-decoration: none;  cursor: default; padding: 0 10px;}
-a.btn-s-0 span {display: inline-block; font: bold 14px Arial !important; color: #ffffff;  text-shadow: #4c4c4c 0 1px 2px; margin-top: 6px}
-
-/* end Standart buttons */
 
