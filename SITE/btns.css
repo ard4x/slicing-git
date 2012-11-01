@@ -35,6 +35,9 @@ a.btn-s-1 {display: inline-block; border: solid 1px #4a6c97;  border-top-color: 
 a.btn-s-1 span {display: inline-block; font: bold 14px Arial !important; color: #ffffff;  text-shadow: #364f6d 0 1px 2px; margin-top: 6px}
 a.btn-s-1:hover {background-position: 0 -29px; border-color: #5177a5; border-top-color: #3a639a;  border-bottom-color: #3f5d81; }
 a.btn-s-1:active {background-position: 0 -58px;  border-color: #486992; border-top-color: #2f4f7b;  border-bottom-color: #3f5d81; box-shadow: none; }
+    /* or button */
+    .btn-s-1_or{}
+    .btn-s-1_or .orArr {width: 9px; height: 6px; background: url(img/button-icos.png) no-repeat 0 -361px;}
 
 /* Green small button */     
 a.btn-s-2 {display: inline-block; border: solid 1px #64954a;  border-top-color: #548d52;  border-bottom-color: #40642d;
