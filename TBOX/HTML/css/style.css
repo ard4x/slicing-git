@@ -3,7 +3,7 @@
 .nav_top-first a{padding-top:4px!important; padding-bottom: 2px!important; color:#3A2626!important;}
     .nav_top-first .navbar-inner {min-height: 28px; border:0; box-sizing: border-box;}
     .nav_top-first  .nav > .active > a, .nav_top-first  .nav > .active > a:hover, .nav_top-first .nav > .active > a:focus {padding-bottom: 4px!important;}
-.nav_top-second {top: 28px; z-index: 0}
+.nav_top-second {top: 28px; z-index: 3}
 .nav_top-second a {top: 28px; z-index: 0; color:#ddd!important;}
 .nav_top-second .nav.pull-left  {margin-left:-15px;}
 .nav_top-second .nav .active a {
@@ -59,12 +59,22 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     }
     .timeSheet-tabs  .weekday {display: block; font-size: 18px; font-weight: bold; clear: both;}
     .timeSheet-tabs .tab-content{padding-bottom: 9px; border-bottom: 1px solid #aaa;}
-.timeSheet-tabs .btn.go { height: 20px; margin-top: -10px; margin-left: 15px;}
+.timeSheet-tabs .btn.go { height: 22px; padding-top: 3px; padding-bottom: 1px; vertical-align: top;}
 
 table.timeSheet-week select, 
 table.timeSheet-week textarea, 
 table.timeSheet-week input  {margin-bottom: 0;}  
     
+    .footer p {
+margin-bottom: 0;
+color: #555;
+}
+
+.footer {
+margin-top: 45px;
+padding: 35px 0 36px;
+border-top: 1px solid #E5E5E5;
+}
     
     
     
