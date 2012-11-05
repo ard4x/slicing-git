@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>-= Timesheet =-</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <!--link rel="shortcut icon" href="../assets/ico/favicon.ico"-->
+
+ </head>
+
+  <body cz-shortcut-listen="true">
+    <!-- Navigation -->
+        <!-- First navMenu -->
+        
+    <div class="navbar navbar-fixed-top nav_top-first">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">TBox</a>
+          <div class="nav-collapse collapse">
+                <ul class="nav pull-right">
+                
+                    <li class="dropdown">
+                        
+                        <a  class="dropdown-toggle" data-toggle="dropdown" href="#"> 
+                            <img src="http://i.imgur.com/Asf2J.jpg" class="img-avatar">
+                            Ivan Pupkin <b class="caret"></b>
+                        </a>
+                        
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                    
+                    </li>
+                    <li>
+                      <a href="my-info.html">
+                        My info
+                      </a>
+                    </li>
+                    
+                    </li>
+                    <li>
+                      <a href="#">
+                        Account settings
+                      </a>
+                    </li>
+                   
+                    </li>
+                    <li>
+                      <a href="#">
+                        Sign out
+                      </a>
+                    </li>
+              </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+        
+      </div>
+    </div><!-- nav-bar first -->
+        <!-- / first navMenu -->
+        
+        <!-- second navMenu -->
+    <div class="navbar navbar-inverse navbar-fixed-top nav_top-second">
+        <div class="navbar-inner">
+            <div class="container">
+                <ul class="nav pull-left">
+                    <li class="active">
+                        <a href="timesheet.html">
+                            Timesheet
+                        </a>
+                    </li>
+                    <li>
+                        <a href="my-reports.html">
+                            My Reports
+                        </a>
+                    </li>
+                    <li>
+                        <a href="planning.html">
+                            Planning
+                        </a>
+                    </li>
+                    <li>
+                        <a href="people.html">
+                            People
+                        </a>
+                    </li>
+                    </ul>
+                    <ul class="nav pull-right">
+                        <li>
+                            <a href="manage-company.html">
+                                Manage Company
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </div><!-- nav-bar second -->
+        <!-- end second navMenu -->
+<!-- end Navigation -->
+
+<!-- PAGE -->
+    
+    
+    </div>
+    <div class="container">  
+        <div class="navbar timeSheet-select">
+            <div class="navbar-inner">    
+                
+                 <form class="form-horizontal span6 pull-left">
+                    <fieldset>
+                         <div class="control-group">
+                            <label class="control-label" for="selectId">Time sheet for:</label>
+                            <div class="controls">
+                                <select id="selectId">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                                
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                
+                <ul class="nav pull-right">
+                    <li>
+                        <a href="#">
+                            Week by week timesheet
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        
+        <div class="row timeSheet-weekNav">
+            <div class="span12">
+                
+                <ul class="pager span12">
+                  <li class="previous">
+                    <a href="#">&larr; previous week</a>
+                  </li>
+                  
+                  <li class="span offset3" >
+                    <h3>October 08 - October 14, 2012 (week 41) 
+                        <a class="btn btn-small" href="#" id="weekDate" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+                            <i class="icon-calendar"></i>
+                        </a>
+                        </h3> 
+                  </li>
+                  
+                  <li class="next">
+                    <a href="#">next week &rarr;</a>
+                  </li>
+                </ul>
+              
+                
+                
+                
+            </div>
+                
+        </div>
+        <!-- Образец работы табов -->
+        <!--
+            <div class="tabbable" style="margin-bottom: 18px;">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#tab1" data-toggle="tab">Вкладка 1</a></li>
+              <li class=""><a href="#tab2" data-toggle="tab">Вкладка 2</a></li>
+              <li class=""><a href="#tab3" data-toggle="tab">Вкладка 3</a></li>
+            </ul>
+            <div class="tab-content" style="padding-bottom: 9px; border-bottom: 1px solid #ddd;">
+              <div class="tab-pane active" id="tab1">
+                <p>Я 1-я секция.</p>
+              </div>
+              <div class="tab-pane" id="tab2">
+                <p>Привет, я 2-я секция.</p>
+              </div>
+              <div class="tab-pane" id="tab3">
+                <p>Как дела? Это 3-я секция.</p>
+              </div>
+            </div>
+          </div>
+        -->
+        <div class="tabbable timeSheet-tabs">
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="#tab1" data-toggle="tab">
+                       <span class="pull-left">Oct 8</span>
+                       <span class="pull-right">0.00</span>
+                       <span class="weekday">Monday</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#tab2" data-toggle="tab">
+                       <span class="pull-left">Oct 9</span>
+                       <span class="pull-right">0.00</span>
+                       <span class="weekday">Tuesday</span>
+                    </a>
+                <li class="">
+                   <a href="#tab3" data-toggle="tab">
+                       <span class="pull-left">Oct 10</span>
+                       <span class="pull-right">0.00</span>
+                       <span class="weekday">Wednesday</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#tab4" data-toggle="tab">
+                       <span class="pull-left">Oct 11</span>
+                       <span class="pull-right">0.00</span>
+                       <span class="weekday">Thursday</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#tab5" data-toggle="tab">
+                       <span class="pull-left">Oct 12</span>
+                       <span class="pull-right">0.00</span>
+                       <span class="weekday">Friday</span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#tab6" data-toggle="tab">
+                       <span class="pull-left">Oct 13</span>
+                       <span class="pull-right">0.00</span>
+                       <span class="weekday">Saturday</span>
+                    </a>
+                </li>
+                <li class="last">
+                    <a href="#tab7" data-toggle="tab">
+                       <span class="pull-left">Oct 14</span>
+                       <span class="pull-right">0.00</span>
+                       <span class="weekday">Sunday</span>
+                    </a>
+                </li>
+            </ul><!-- /nav-tabs -->
+            <div class="tab-content" >
+                <div class="tab-pane active" id="tab1"> 
+                    <div class="row">
+                    	<div class="span3">Projects*</div>
+                    	<div class="span3">Tasks*</div>
+                    	<div class="span4">Description</div>
+                    	<div class="span1">Time</div>
+                    </div>
+                    
+                    <div class="row">
+                       
+                    	<div class="span">
+                            <select class="span3">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    	<div class="span">
+                            <select class="span3">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    	<div class="span">
+                            <input type="text" class="span4">
+                        
+                    	</div>
+                    	<div class="span2" >
+                            
+                            <input type="text" class="span1">
+                            <a class="btn btn-small go" href="#"><i class="icon-play"></i></a>
+                        </div>
+                    </div><!-- / row -->
+                    
+                    <div class="row">
+                       
+                    	<div class="span">
+                            <select class="span3">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    	<div class="span">
+                            <select class="span3">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    	<div class="span">
+                            <input type="text" class="span4">
+                        
+                    	</div>
+                    	<div class="span2" >
+                            
+                            <input type="text" class="span1">
+                            <a class="btn btn-small go" href="#"><i class="icon-play"></i></a>
+                        </div>
+                    </div><!-- / row -->
+                    
+                    <div class="row">
+                       
+                    	<div class="span">
+                            <select class="span3">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    	<div class="span">
+                            <select class="span3">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    	<div class="span">
+                            <input type="text" class="span4">
+                        
+                    	</div>
+                    	<div class="span2" >
+                            
+                            <input type="text" class="span1">
+                            <a class="btn btn-small go" href="#"><i class="icon-play"></i></a>
+                        </div>
+                    </div><!-- / row -->
+                    
+                    <div class="row">
+                       
+                    	<div class="span">
+                            <select class="span3">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    	<div class="span">
+                            <select class="span3">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    	<div class="span">
+                            <input type="text" class="span4">
+                        
+                    	</div>
+                    	<div class="span2" >
+                            
+                            <input type="text" class="span1">
+                            <a class="btn btn-small go" href="#"><i class="icon-play"></i></a>
+                        </div>
+                    </div><!-- / row -->
+                    
+                    <div class="row">
+                       
+                    	<div class="span">
+                            <select class="span3">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    	<div class="span">
+                            <select class="span3">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    	<div class="span">
+                            <input type="text" class="span4">
+                        
+                    	</div>
+                    	<div class="span2" >
+                            
+                            <input type="text" class="span1">
+                            <a class="btn btn-small go" href="#"><i class="icon-play"></i></a>
+                        </div>
+                    </div><!-- / row -->
+                    
+                    <div class="row">
+                       
+                    	<div class="span">
+                            <select class="span3">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    	<div class="span">
+                            <select class="span3">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    	<div class="span">
+                            <input type="text" class="span4">
+                        
+                    	</div>
+                    	<div class="span2" >
+                            
+                            <input type="text" class="span1">
+                            <a class="btn btn-small go" href="#"><i class="icon-play"></i></a>
+                        </div>
+                    </div><!-- / row -->
+                    
+                    <div class="row">
+                       
+                    	<div class="span">
+                            <select class="span3">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    	<div class="span">
+                            <select class="span3">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    	<div class="span">
+                            <input type="text" class="span4">
+                        
+                    	</div>
+                    	<div class="span2" >
+                            
+                            <input type="text" class="span1">
+                            <a class="btn btn-small go" href="#"><i class="icon-play"></i></a>
+                        </div>
+                    </div><!-- / row -->
+                    
+                    <div class="row">
+                       
+                    	<div class="span">
+                            <select class="span3">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    	<div class="span">
+                            <select class="span3">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    	<div class="span">
+                            <input type="text" class="span4">
+                        
+                    	</div>
+                    	<div class="span2" >
+                            
+                            <input type="text" class="span1">
+                            <a class="btn btn-small go" href="#"><i class="icon-play"></i></a>
+                        </div>
+                    </div><!-- / row -->
+                    
+                    <div class="row">
+                       
+                    	<div class="span">
+                            <select class="span3">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    	<div class="span">
+                            <select class="span3">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    	<div class="span">
+                            <input type="text" class="span4">
+                        
+                    	</div>
+                    	<div class="span2" >
+                            
+                            <input type="text" class="span1">
+                            <a class="btn btn-small go" href="#"><i class="icon-play"></i></a>
+                        </div>
+                    </div><!-- / row -->
+                    
+                    <div class="row">
+                       
+                    	<div class="span">
+                            <select class="span3">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    	<div class="span">
+                            <select class="span3">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    	<div class="span">
+                            <input type="text" class="span4">
+                        
+                    	</div>
+                    	<div class="span2" >
+                            
+                            <input type="text" class="span1">
+                            <a class="btn btn-small go" href="#"><i class="icon-play"></i></a>
+                        </div>
+                    </div><!-- / row -->
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+                <div class="tab-pane" id="tab2">
+                    <p>
+                    Привет, я 2-я секция.
+                    </p>
+                </div>
+                <div class="tab-pane" id="tab3">
+                    <p>
+                    Как дела? Это 3-я секция.
+                    </p>
+                </div>
+                <div class="tab-pane" id="tab4">
+                    <p>
+                    Как дела? Это 4я секция.
+                    </p>
+                </div>
+                <div class="tab-pane" id="tab5">
+                    <p>
+                    Как дела? Это 5я секция.
+                    </p>
+                </div>
+                <div class="tab-pane" id="tab6">
+                    <p>
+                    Как дела? Это 6-я секция.
+                    </p>
+                </div>
+                <div class="tab-pane" id="tab7">
+                    <p>
+                    Как дела? Это 7-я секция.
+                    </p>
+                </div>
+            </div><!-- /tab-content -->
+        </div><!-- /timeSheet-tabs -->
+                <div class="row pull-right">
+                        <div class="span">Total number of hours:</div>
+
+                        <div class="span2">0.00</div>
+                    </div>
+        
+      
+        
+
+       
+      
+      
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script>
+		$(function(){
+			window.prettyPrint && prettyPrint();
+			$('#weekDate').datepicker({
+				format: 'mm-dd-yyyy'
+			});
+			
+			/* example 
+			// script from http://www.eyecon.ro/bootstrap-datepicker/
+            
+			$('#weekDate').datepicker()
+				.on('changeDate', function(){
+                        // some func
+					}
+					$('#weekDate').datepicker('hide');
+				});
+			
+				
+                */
+		});
+	</script>
+
+  </body>
+
+</html>

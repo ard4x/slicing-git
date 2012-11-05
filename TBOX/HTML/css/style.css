@@ -1,0 +1,75 @@
+ body { padding-top: 90px; /* 100px= 40px+40px (2 nav-bars) + 20px to make the container go all the way to the bottom of the topbar */  }
+    body.guest {padding-top: 60px;}
+.nav_top-first a{padding-top:4px!important; padding-bottom: 2px!important; color:#3A2626!important;}
+    .nav_top-first .navbar-inner {min-height: 28px; border:0; box-sizing: border-box;}
+    .nav_top-first  .nav > .active > a, .nav_top-first  .nav > .active > a:hover, .nav_top-first .nav > .active > a:focus {padding-bottom: 4px!important;}
+.nav_top-second {top: 28px; z-index: 0}
+.nav_top-second a {top: 28px; z-index: 0; color:#ddd!important;}
+.nav_top-second .nav.pull-left  {margin-left:-15px;}
+.nav_top-second .nav .active a {
+background: rgb(35,35,35); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIzMjMyMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMwJSIgc3RvcC1jb2xvcj0iIzRmNGY0ZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijc1JSIgc3RvcC1jb2xvcj0iIzQ0NDQ0NCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxZTFlMWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(35,35,35,1) 0%, rgba(79,79,79,1) 30%, rgba(68,68,68,1) 75%, rgba(30,30,30,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(35,35,35,1)), color-stop(30%,rgba(79,79,79,1)), color-stop(75%,rgba(68,68,68,1)), color-stop(100%,rgba(30,30,30,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(35,35,35,1) 0%,rgba(79,79,79,1) 30%,rgba(68,68,68,1) 75%,rgba(30,30,30,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(35,35,35,1) 0%,rgba(79,79,79,1) 30%,rgba(68,68,68,1) 75%,rgba(30,30,30,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(35,35,35,1) 0%,rgba(79,79,79,1) 30%,rgba(68,68,68,1) 75%,rgba(30,30,30,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(35,35,35,1) 0%,rgba(79,79,79,1) 30%,rgba(68,68,68,1) 75%,rgba(30,30,30,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232323', endColorstr='#1e1e1e',GradientType=0 ); /* IE6-8 */
+
+
+}
+
+.nav_top-first .img-avatar {width: 16px; height: 16px; margin-top: -3px;}
+.img-avatar {
+height: 50px;
+width: 50px;
+padding: 2px;
+background-color: white;
+border: 1px solid #CCC;
+border: 1px solid rgba(0, 0, 0, 0.2);
+-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.label-right {display: inline-block; float: right; padding-top: 5px;}
+.timeSheet-select {}
+    .timeSheet-select form{margin: 5px 0;}
+    .timeSheet-select .control-group {margin: 0;}
+    .timeSheet-select .control-label { width:auto; margin-right: 20px;}
+    .timeSheet-select .controls {margin: 0;}
+    .timeSheet-select .navbar-inner {padding-left: 10px; padding-right: 0;}
+    
+.timeSheet-weekNav {position: relative;}
+    .timeSheet-weekNav  .pager .previous, .timeSheet-weekNav  .pager .next{position: absolute; margin-top: 15px;}
+    .timeSheet-weekNav  .pager .previous {left:15px;}
+    .timeSheet-weekNav  .pager .next {right:0px;}
+.timeSheet-tabs {}
+    .timeSheet-tabs  .nav-tabs {border-color:#aaa;}
+    .timeSheet-tabs  .nav-tabs > li{width: 13.5%; margin-right: 0.91666%;}
+    .timeSheet-tabs  .nav-tabs > li.last{margin-right: 0;}
+        .timeSheet-tabs .nav-tabs > li > a{border-color: #ddd #ddd #aaa; background-color: #f3f3f3}
+        .nav-tabs > li > a:hover {border-color: #eeeeee #eeeeee #aaa; background-color: #eaeaea;}
+    .timeSheet-tabs .nav-tabs > .active > a,
+    .nav-tabs > .active > a:hover {
+    background-color: #fff;
+      border: 1px solid #aaa;
+      border-bottom-color: transparent;
+    }
+    .timeSheet-tabs  .weekday {display: block; font-size: 18px; font-weight: bold; clear: both;}
+    .timeSheet-tabs .tab-content{padding-bottom: 9px; border-bottom: 1px solid #aaa;}
+.timeSheet-tabs .btn.go { height: 20px; margin-top: -10px; margin-left: 15px;}
+
+table.timeSheet-week select, 
+table.timeSheet-week textarea, 
+table.timeSheet-week input  {margin-bottom: 0;}  
+    
+    
+    
+    
+    
+    
+    
+    
+    
