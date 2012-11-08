@@ -160,4 +160,11 @@ a.btn-a-6:active {background-position: 0 -464px;  border-color: #496a94; border-
         .btn__paging-prew {padding-left: 7px; padding-right: 7px; width: auto; margin-right: 5px;}
         .btn__paging-page {}
         .btn__paging-next {padding-left: 7px; padding-right: 7px; width: auto; margin-left: 3px;}
+        
+/* Blue small-2 button */     
+.btn-s2-1 {display: table-cell; height: 25px; text-align: center; background: 0 -1370px url(../img/btns.png) repeat-x; color: white; font: bold 14px Arial; 
+vertical-align: middle; border: solid 1px #496A93; border-top-color: #3A639A; border-bottom-color: #334B67; border-radius: 4px; box-shadow: 0 1px 2px #B3B3B3; 
+cursor: pointer; text-shadow: #364F6D 0 1px 1px; text-decoration: none; }
+    .btn-s2-1:hover {background-position: 0 -1395px; border-color: #5177a5; border-top-color: #3a639a;  border-bottom-color: #3f5d81;}
+    .btn-s2-1:active {background-position: 0 -1420px;  border-color: #486992; border-top-color: #2f4f7b;  border-bottom-color: #3f5d81; box-shadow: none;}
             
