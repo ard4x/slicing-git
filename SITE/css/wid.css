@@ -1,4 +1,4 @@
-/*** Виджеты ***/
+/*** Виджеты wid.css***/
 
     /*** Виджет Want to talk ...? ***/
 
@@ -10,3 +10,35 @@
             .wid__wtt_btn{width: 78px;}
                 .wid__wtt_btnTalk {float:left; }
                 .wid__wtt_btnShow{float:right;}
+
+    /***** Daily Matches *****/
+.wid__matches {padding:  7px 9px 9px; border: 1px solid #cccccc; border-radius: 4px; width: 409px;  }
+    .wid__matches_user{}
+        .wid__matches_user_userPic{margin-right: 15px; float: left; margin-bottom: 0;}
+            .wid__matches_user_userPic_photo{width: 66px; height: 86px;}
+        .wid__matches_user_userInfo{}
+            .wid__matches_user_person{font-size: 18px; text-align: left; line-height: 18px; margin-bottom: 8px;}
+            .wid__matches_user_descript{}
+            .wid__matches_control{border-top: 1px solid #cccccc; margin-top: 11px; padding-top: 10px; }
+                .wid__matches_control_content{display: inline-block; margin-top: 3px; margin-left: 6px; }
+                .wid__matches_control_buttons{float: right; display: inline-block;}
+                    .wid__matches_control_buttons .matches_button{width: 58px; margin-left: 10px; margin-bottom: 2px;}
+
+
+    /***** Today Birthdays *****/
+
+.wid__bday {background-color: #ecf4fb; border-radius: 4px; width: 241px; padding: 8px 10px 10px; position: relative; }
+    .wid__bday_controls {width: 7px; height: 13px; position: absolute; top: 76px;}
+        .wid__bday_controls_left{left: 6px; background: -65px -16px url(../img/search/srch_sprt.png) no-repeat;}
+        .wid__bday_controls_right{right: 6px; background: -73px -16px url(../img/search/srch_sprt.png) no-repeat;}
+    .wid__bday_userHolder{}
+        .wid__bday_user{}
+            .wid__bday_user_userPic{margin: 0 15px 0 11px; float: left;}
+                .wid__bday_user_userPic_photo{width: 66px; height: 86px;}
+            .wid__bday_user_userInfo{width: 140px; float: left;}
+                .wid__bday_user_person{font-size: 18px; line-height: 18px; text-align: left; margin-bottom: 1px;}
+                .wid__bday_user_location{font-size: 11px;}
+                .wid__bday_user_options{padding-top: 6px;}
+
+    .wid__bday_button{margin-top: 7px; padding-top: 10px; border-top: 1px solid #dddddd; text-align: center; padding-bottom: 2px;}
+        .wid__bday_buttonSend{width: 118px;}
