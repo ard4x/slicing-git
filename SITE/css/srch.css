@@ -26,6 +26,7 @@
 
         .srch__searchBlock_fullForm{}
         .srch__searchBlock_shortForm{display: none;}
+            .srch__searchBlock_shortForm .srch__searchBlock_item .field{margin-bottom: 14px; }
 
 
 
