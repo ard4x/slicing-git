@@ -21,15 +21,17 @@
                 .srch__searchBlock_item .secondFieldZip {width: 59px; float: right; display: inline-block;}
                 .srch__searchBlock_item .centertFieldZip {text-align: center; display: inline-block; margin-left: 10px; padding-top: 5px;}
             .srch__searchBlock_buttonSubmit{width: 194px;}
-        .srch__searchBlock_getFullForm{display: block; background: 92px -34px url(../img/search/srch_sprt.png) no-repeat; height: 6px;}
+            
+        .srch__searchBlock_getFullForm{display: block; background: 92px -32px url(../img/search/srch_sprt.png) no-repeat; height: 6px; border-top: 1px solid #dddddd; padding-top: 5px;}
 
         .srch__searchBlock_fullForm{}
         .srch__searchBlock_shortForm{display: none;}
 
 
 
-    .srch__searchBlock-criteria{}
+    .srch__searchBlock-criteria{position: relative;}
         .srch__searchBlock-criteria h2{margin-bottom: 10px;}
+        .srch__searchBlock-criteria_refresh {display: block; width: 13px; height: 13px; background: -9px 0 url(../img/search/srch_sprt.png) no-repeat; position: absolute; top: 5px; right: 7px;}
         .srch__list.criteriaList{border-bottom: 1px solid #cccccc;}
             .srch__list_item{border-top: 1px solid #cccccc;}
                 .srch__list_item_label{display: block; font-size: 14px; color: #333333; width: 100%; padding: 6px 0 8px; text-decoration: none;}
