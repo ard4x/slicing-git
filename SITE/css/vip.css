@@ -1,0 +1,160 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic);
+body.payments {padding-top: 0;}
+.guestVip .btn-reg {width:178px; display: block; margin-top: 33px;}
+.guestVip .topIcon {width: 220px; float:left;}
+.guestVip h1 {font: bold 36px 'PT Sans'; color:#436187;  margin: 0 0 0 0; text-transform: uppercase; line-height: 36px; }
+.guestVip p {font: 16px Arial; color:#333333; margin: 10px 0 18px 0; padding: 0; line-height: 20px;}
+.guestVip {margin-top: 15px; margin-bottom: 30px;}
+.guestVip img {margin-top: 4px;}
+
+.hide {display: none}
+div.topMessage {position: relative; width: 900px; background-color: #ecf4fb; border-radius: 4px; padding: 25px; margin-bottom: 20px;}
+div.topMessage .message {position: relative; top: -6px;}
+div.topMessage h1 {font: bold 36px 'PT Sans'; color:#436187;  margin: 0 0 0 0; text-transform: uppercase; }
+div.topMessage p {font: 16px Arial; color:#333333; margin: 10px 0 15px 0; padding: 0;}
+div.topMessage .topIcon {width: 145px; height: 145px; background: url(../img/vip/upg_icon_top.png) no-repeat; float: left; margin-right: 40px;}
+div.v2 .topIcon {background-position: 0 -145px;}
+div.v3 .topIcon {background-position: 0 -290px;}
+div.v4 .topIcon {background-position: 0 -435px;}
+div.v5 .topIcon {background-position: 0 -580px;}
+div.v6 .topIcon {background-position: 0 -725px;}
+div.v7 .topIcon {background-position: 0 -870px;}
+div.v8 .topIcon {background-position: 0 -1015px;}
+div.v9 .topIcon {background-position: 0 -1160px;}
+div.v10 .topIcon {background-position: 0 -1305px;}
+div.vipPayment    {margin-bottom: 25px; position: relative; }
+div.vipPayment h2 {font: bold 24px 'PT Sans'; color:#333333; margin-top:0;}
+
+
+div.vipPayment .selectPlan {width: 465px; float:left;}
+div.vipPayment .selectPlan h2 {margin-bottom: 20px;}
+div.vipPayment .selectPlan p  {font:  14px Arial; margin-top: 19px; padding:0;}
+div.vipPayment .selectPlan .label {position: relative; height: 86px; border: solid 1px #dde0e6; border-top-color: #f4f5f7; border-bottom-color: #bbc0ce; box-shadow: 0 2px 2px #dde0e6;
+    border-radius: 6px; margin-bottom: 13px; cursor: pointer;}
+    div.vipPayment .selectPlan .label.currentPlan {height: 82px; border: solid 2px #eda71e;}
+    div.vipPayment .selectPlan .label.currentPlan label {height: 84px; width: 44px; float:left; margin-right: 20px;}    
+    div.vipPayment .selectPlan .label.currentPlan.active label {border-top-left-radius: 2px; border-bottom-left-radius: 4px;}
+    .label.currentPlan .currentPlanLabel {width: 105px; height: 82px; background: url(../img/vip/current-plan.png) no-repeat; position:absolute; top:0; right: -1px;}
+div.vipPayment .selectPlan .label.last   {margin:2px}
+div.vipPayment .selectPlan .label label {height: 86px; width: 44px; float:left; margin-right: 20px;}
+div.vipPayment .selectPlan .label label em {display: block; width: 16px; height: 16px; background: url(../img/radio16.png) no-repeat; margin: 35px 0 0 15px;}
+div.vipPayment .selectPlan .label.active label {border-top-left-radius: 6px; border-bottom-left-radius: 6px; background-color:#eda71e; }
+div.vipPayment .selectPlan .label.active label em {background: url(../img/radio16ch.png) no-repeat;}
+div.vipPayment .selectPlan .label label input {margin-top: 35px; margin-left:15px;}
+div.vipPayment .selectPlan .label .cost {font: 12px Arial; color:#525e76; width: 90px; float: left; margin-right: 10px; margin-top: 23px;}
+div.vipPayment .selectPlan .label .cost b {font: bold 24px Arial; color:#51575e;}
+div.vipPayment .selectPlan .label .cost div {padding-left: 9px; margin-top: -3px}
+div.vipPayment .selectPlan .label .mostPop {width: 66px; height: 64px; background: url(../img/most-pop-plan.png) no-repeat; position: absolute; top: 11px; right: 13px;}
+div.vipPayment .selectPlan .label .description {font: 12px Arial; color:#525e76; margin-top: 30px;}
+div.vipPayment .selectPlan .label .description b {font: bold 16px Arial; color:#333333;}
+div.vipPayment .selectPlan .label .description span {font: bold 16px Arial; color:#ff9c5c;}
+div.vipPayment .selectPlan .label .description div {margin-top: -2px; COLOR:#525e76}
+
+div.vipPayment .paymentInfo {position: relative; width: 465px; float:right;}
+div.tabContent {height: 285px;}
+div.vipPayment .paymentInfo .tabBlock {position: relative; /*height: 272px;*/ border: solid 1px #dde0e6; border-top-color: #f4f5f7; border-bottom-color: #bbc0ce; padding: 5px 20px 20px;
+    border-radius: 9px; border-top-left-radius: 0; box-shadow: 0 2px 2px #dde0e6; margin-top: 70px;}
+div.vipPayment .paymentInfo .tabBlock .label {font: 12px Arial;}
+div.vipPayment .paymentInfo .tabBlock .tabs {position: absolute; top: -51px; left: -1px;}
+div.vipPayment .paymentInfo .tabBlock .tabs li {float: left; width: 110px; height: 50px; margin-right: 9px; border-top-left-radius: 9px; border-top-right-radius: 9px;
+    background-color: #e3e3e3; border-bottom: solid 1px #d3d4d6;}
+div.vipPayment .paymentInfo .tabBlock .tabs li.active {border: solid 1px #dde0e6; border-top-color: #f4f5f7; border-bottom: none; background-color: #ffffff;}
+div.vipPayment .paymentInfo .tabBlock .tabs li a {display: block; width: 100%; height: 50px; }
+div.vipPayment .paymentInfo .tabBlock .tabs li span {display: block; width: 42px; position: relative; margin: 12px auto;}
+div.vipPayment .paymentInfo .tabBlock .tabs .firstTab a span {width: 41px; height: 31px; background: url(../img/p_master_ico.gif) no-repeat; display: block;}
+div.vipPayment .paymentInfo .tabBlock .tabs .secondTab a span {width: 59px; height: 23px; background: url(../img/p_paypal_ico.gif) no-repeat; display: block; margin-top: 15px;}
+.visa_icon_vip_iframe {width: 29px; height: 21px; background: url(../img/type_visa.gif) no-repeat; display: inline-block;}
+.mc_icon_vip_iframe {width: 29px; height: 21px; background: url(../img/type_master.gif) no-repeat; display: inline-block;}
+
+
+div.vipPayment .paymentInfo .tabBlock .firstTab table {width: 100%; border: none; border-collapse: collapse; border-spacing: 0; }
+div.vipPayment .paymentInfo .tabBlock .firstTab td {padding-bottom: 13px; vertical-align: top;}
+table.vip_iframe td {vertical-align: middle;}
+td.label_vip_iframe {width: 125px; vertical-align: middle;}
+input.vip_iframe {width: 295px}
+.cardCode_vip_iframe {width: 123px; margin-right: 13px; float: left;}
+.helper_vip_iframe {background: url(../img/help-icons.png) 0 0 no-repeat; width: 16px; height: 16px; cursor: pointer; display: inline-block; margin-right: 10px;}
+
+.cardtype_vip_iframe {width: 120px; margin-right: 13px; float: left;}
+.month_vip_iframe {width: 58px; margin-right: 10px; display: inline-block;}
+.year_vip_iframe {width: 58px; display: inline-block;}
+.country_vip_iframe {width: 240px; display: inline-block;}
+div.vipPayment .paymentInfo .tabBlock .firstTab .servInfo {font: 12px Arial; color: #999999; text-align: center;}
+.servInfo_vip_iframe {font: 12px Arial; color: #999999; text-align: center; margin-top: 10px;}
+.rapidSSL_vip_iframe {background: url(../img/RapidSSL_SEAL-90x50.gif) no-repeat; width: 90px; height: 50px; display: block; position: absolute; bottom: 0px; left: 0px;}
+.btn-next_vip_iframe {float: right; margin-top: 25px; padding: 0 35px!important;}
+.collapse_vip_iframe {float: right; margin-top: 35px; padding: 0 10px!important;}
+
+a.paypal {width: 150px; height: 52px; background: url(../img/paypalbut.jpg) no-repeat; position: relative; margin: 20px auto; display: block;}
+div.vipPayment .paymentInfo .tabBlock .secondTab .servInfo {font: 12px Arial; color: #999999; text-align: center; margin-bottom: 20px;}
+
+div.whatGet .g1, div.whatGet .g3, div.whatGet .g5, div.whatGet .g7 {float: left;}
+div.whatGet .g2, div.whatGet .g4, div.whatGet .g6, div.whatGet .g8 {float: right;}
+div.whatGet h2 {font: bold 30px 'PT Sans'; color:#333333; margin: 0 0 15px 0; text-align: center;}
+div.whatGet h3 {font: bold 24px 'PT Sans'; color:#436187; margin: 0 0 10px 0; line-height: 24px;}
+div.whatGet p {font: 14px Arial; color:#333333; width: 330px;}
+div.whatGet ul {overflow: hidden; margin-bottom: 30px;}
+div.whatGet li {padding: 15px; background-color: #ecf4fb; border-radius: 4px; margin-bottom: 10px; position: relative; height: 90px; width: 435px;}
+div.whatGet .icon {background: url(../img/vip/upg_icon_small.png); width: 90px; height: 90px; float: right;}
+div.whatGet .g2 .icon {background-position: 0 -90px;}
+div.whatGet .g3 .icon {background-position: 0 -180px;}
+div.whatGet .g4 .icon {background-position: 0 -270px;}
+div.whatGet .g5 .icon {background-position: 0 -360px;}
+div.whatGet .g6 .icon {background-position: 0 -450px;}
+div.whatGet .g7 .icon {background-position: 0 -540px;}
+div.whatGet .g8 .icon {background-position: 0 -630px;}
+
+
+div.vipBottom {overflow: hidden;}
+div.vipBottom h2 {font: bold 24px 'PT Sans'; color:#333333; margin: 0 0 18px 0;}
+div.vipBottom .testimon {width: 450px; float: left; padding-right: 15px}
+div.vipBottom .testimon .user {margin-bottom: 20px; position: relative;}
+div.vipBottom .testimon .user .userpic {display: block; position: absolute; width: 50px; height: 50px; top: 3px;}
+div.vipBottom .testimon .user .userMsg {width: 395px; margin-left: 70px;}
+div.vipBottom .testimon .user .userMsg .username {font: bold 14px Arial; color:#333333;}
+div.vipBottom .testimon .user .userMsg .postdate {font: 10px Arial; color:#666666; margin-bottom: 7px;}
+div.vipBottom .testimon .user .userMsg .textMsg {font: 12px Arial;}
+
+div.vipBottom .faq {width: 450px; float: right; padding-right: 15px;}
+div.vipBottom .faq strong {font: bold 14px Arial; color:#333333; margin-bottom: 6px; display: inline-block;}
+div.vipBottom .faq p {font: 12px Arial; padding-bottom: 20px;}
+
+.vip_iframe h1 {font: bold 18px 'PT Sans'; color:#333333; margin: 0;}
+.vip_iframe h3 {font: 12px Arial; color:#787878; margin: 0 0 5px 0;}
+table.vip_iframe {margin: 10px 0;}
+body.payments {padding-right: 80px;}
+
+.paym_bottom {position: absolute; bottom:0; left:0; width: 420px; height: 88px;}
+
+/* Congratulations */
+.vip__conrgat {position: relative; width: 910px; margin: 10px auto; }
+    .vip__conrgat_velcome{border-radius: 4px; background-color: #e8eff5; padding: 15px 20px 20px; margin-bottom: 27px;}
+        .vip__conrgat_velcome_head{margin: 0 0 15px; text-align: center;}
+            .vip__conrgat_velcome_head .vipIcon{width: 64px; height: 64px; display: inline-block; background: url(../img/vip/vip-ico64.png) no-repeat; margin-right: 18px;}
+            .vip__conrgat_velcome_head h1{font: bold 30px 'PT Sans'; color: #424242; margin: 0; padding: 0;}
+                .vip__conrgat_velcome_head h1 span {vertical-align: middle;}
+        .vip__conrgat_velcome_msg{background-color: #ffffff; border-radius: 3px; padding: 18px 20px 20px; color: #333333; font-size: 14px;}
+            .vip__conrgat_velcome_msg p{padding:0; line-height: 17px;}
+            .vip__conrgat_velcome_msg .msgDescript{padding: 0; font-size: 18px; font-weight: bold; margin-bottom: 10px; margin-top: 22px;}
+            .vip__conrgat_velcome_msg .btn-congrat{width: 103px; float: right; margin-top: -6px;}
+            
+    .vip__conrgat_content{}
+        .vip__conrgat_content_title{margin: 0 0 18px; padding: 0; text-align: center; font-size: 14px; color: #333333}
+            .vip__conrgat_content_title.big{font-size: 18px; font-weight: bold; }
+                .vip__conrgat_content_title.big span{width: 690px; display: inline-block;}
+        .specList{display: block; text-align: center;}
+            .specList .g {width: 280px; height: 48px; text-align: left; vertical-align: middle; display: inline-table; margin: 0 10px 20px 10px; text-align: left; color: #436187; font-size: 14px;}
+                .r{display: table-row;}
+                .specList .icon {display: table-cell;width: 48px; height: 48px; background: url(../img/vip/upg_icon_48.png) no-repeat;}
+                .specList .label {display: table-cell; padding-left: 20px; vertical-align: middle;}
+            .specList .g1 .icon{background-position: 0 -240px;}
+            .specList .g2 .icon{background-position: 0 0;}
+            .specList .g3 .icon{background-position: 0 -96px;}
+            .specList .g4 .icon{background-position: 0 -144px;}
+            .specList .g5 .icon{background-position: 0 -288px;}
+            .specList .g6 .icon{background-position: 0 -336px;}
+            .specList .g7 .icon{background-position: 0 -192px;}
+            .specList .g8 .icon{background-position: 0 -48px;}
+            
+            
+    

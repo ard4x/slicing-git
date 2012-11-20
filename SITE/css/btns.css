@@ -1,4 +1,6 @@
-/* BUTTONS v.20121113
+/* BUTTONS v.20121119
+/*  Related files - ../img/btns.png, ../img/button-icos.png */
+
 /* Grey Micro button */
 a.btn-m-7   {display: inline-block; border: solid 1px #cbcbcb; border-radius: 3px; background: 0 -116px url(../img/btns.png) repeat-x; 
             height: 22px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3; cursor: pointer; text-align: center; position: relative; padding: 0;}
@@ -59,6 +61,14 @@ a.btn-s-2 {display: inline-block; border: solid 1px #64954a;  border-top-color: 
 a.btn-s-2 span {display: inline-block; font: bold 14px Arial !important; color: #ffffff;  text-shadow: #364f6d 0 1px 2px; margin-top: 6px}
 a.btn-s-2:hover {background-position: 0 -211px; border-color: #74a858; border-top-color: #548d52;  border-bottom-color: #5b8444; }
 a.btn-s-2:active {background-position: 0 -240px;  border-color: #64954a; border-top-color: #3b6a35;  border-bottom-color: #5b8344; box-shadow: none; }
+
+/* Green small button */     
+a.btn-s-3 {display: inline-block; border: solid 1px #c9552b;  border-top-color: #99573e;  border-bottom-color: #953411;
+            border-radius: 3px; background: 0 -1511px url(../img/btns.png) repeat-x; cursor: pointer;
+            height: 29px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3; text-align: center; position: relative; padding: 0;}
+a.btn-s-3 span {display: inline-block; font: bold 14px Arial !important; color: #ffffff;  text-shadow: #364f6d 0 1px 2px; margin-top: 6px}
+a.btn-s-3:hover {background-position: 0 -1540px; border-color: #d46842; border-top-color: #99573e;  border-bottom-color: #a65134; }
+a.btn-s-3:active {background-position: 0 -1569px;  border-color: #c9562d; border-top-color: #8a3714;  border-bottom-color: #a65133; box-shadow: none; }
 
 /* Inactive small button */
 a.btn-s-0 {display: inline-block; border: solid 1px #636363;  border-top-color: #47535d;  border-bottom-color: #4e4e4e;  background:0 -87px url(../img/btns.png) repeat-x; 

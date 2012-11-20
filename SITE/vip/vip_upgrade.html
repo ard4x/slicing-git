@@ -1,0 +1,298 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Yangutu</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" href="../style_curr.css" type="text/css" /> <!-- Не заменять! Это демо-версия существующего на проде файла style.css -->
+	<link rel="stylesheet" href="../css/btns.css" type="text/css" />       <!-- / Стили кнопок, обязательно -->
+	<link rel="stylesheet" href="../css/vip.css" type="text/css" />         <!-- / Стили страницы ВИП, обязательно -->
+	<script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+    <script src="../js/jquery.stylish-select.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+            //*<!-- Код для демонстрации выбора тарифа -->
+             $(".selectPlan .label").click(function() {
+                    $(".selectPlan .label").removeClass('active');
+                    $(this).addClass('active');
+                });
+            //*<!-- / Код для демонстрации выбора тарифа -->
+        });
+    </script>
+
+</head>
+<body>
+
+	<div class="header">
+		<div class="header_inn">
+			<div class="top_navigation">
+				<ul class="left">
+					<li><a href="#">Messages</a><span class="new_event">2</span></li>
+					<li><a href="#">Signals</a><span class="new_event">45</span></li>
+					<li><a href="#">Soulmates</a><span class="new_event">167</span></li>
+				</ul>
+				<ul class="right">
+					<li class="coints">1450 Coins <a href="#">Add</a></li>
+					<li class="profile"><a href="#">Profile </a></li>
+					<li class="account"><a href="#">Account Settings</a></li>
+				</ul>
+				<div class="clear"></div>
+			</div>
+			<div class="bot_navigation">
+				<a href="#"><img src="../img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>	
+				<ul class="main_menu">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Matches</a></li>
+					<li><a href="#">TOP-100</a></li>
+					<li><a href="#">Apps and Games</a></li>
+					<li><a href="#">Blogs</a></li>
+				</ul>
+				<div class="clr2"></div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="content">
+		<div class="content_inn">
+		
+<!-- начало страницы ВИП -->
+
+<!-- deleted .topMessage block -->
+
+<div class="vipPayment">
+    <div class="selectPlan">
+        <h2>Select Your Subscription Plan!</h2>
+        
+        <div class="label">
+                <label for="fid-27">
+                <input type="radio" id="fid-27" name="fid" data-price="$77.94" value="27">
+            </label>
+            <div class="cost">
+                <b>$12.99</b>
+                <div>per month</div>
+            </div>
+            <div class="description">
+                <b>6 month.</b><span> Save 35%</span>
+                <div>one easy $77.94 payment</div>
+            </div>
+        </div><!-- /.label -->
+
+        <!-- added .currentPlan -->
+        <div class="label currentPlan active">
+                <label for="fid-26">
+                <input type="radio" id="fid-26" name="fid" data-price="$47.97" value="26" checked="checked">
+            </label>
+            <div class="cost">
+                <b>$15.99</b>
+                <div>per month</div>
+            </div>
+            <div class="description">
+                <b>3 month.</b><span> Save 20%</span>
+                <div>one easy $47.97 payment</div>
+                <!-- /. deleted div.mostPop  -->
+            </div>
+            <div class="currentPlanLabel"></div>
+        </div><!-- /.label -->
+
+        <div class="label">
+                <label for="fid-25">
+                <input type="radio" id="fid-25" name="fid" data-price="$19.99" value="25">
+            </label>
+            <div class="cost">
+                <b>$19.99</b>
+                <div>per month</div>
+            </div>
+            <div class="description">
+                <b>1 month</b>
+                <div>one easy $19.99 payment</div>
+            </div>
+        </div><!-- /.label -->
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.selectPlan .label').click(function() {
+                    $(this).children('label').children('input').trigger('click');
+                });
+
+                $('input[type=radio]').click(function(e){
+                    $(this).parents('.selectPlan').children('div.label').removeClass('active');
+                    $(this).closest('div.label').addClass('active');
+
+                                    $('#frm-fid,#group_options').val($(this).val());
+
+                        // trying to do so in frame
+                        try {
+                            var ifrm = document.getElementById('vip-cc-frame').contentWindow;
+                            if (ifrm) {
+                                ifrm.jQuery('#frm-fid,#group_options').val($(this).val());
+                                ifrm.jQuery('#charged-amount').text($(this).data('price'));
+                            }
+                        } catch (e) {};
+                    
+                    if (e.stopPropagation) {
+                        e.stopPropagation();
+                    } else {
+                        e.cancelBubble = true;
+                    }
+                });
+
+                    require(['yangutu/payments']);
+                    });
+        </script>    
+
+        <p>
+            <b>Take notice:</b> That subscription plans are not cumulative. It means that if you change your subscription plan, the current one will be canceled and a new plan will enter into force.
+        </p>
+    </div><!-- /.selectPlan -->
+    
+    <div class="paymentInfo">
+        <h2>Payment information</h2>
+        
+        <div class="tabBlock">
+            <ul class="tabs">
+                <li class="firstTab active"><a href="javascript:void(0);"><span></span></a></li>
+                <li class="secondTab"><a href="javascript:void(0);"><span></span></a></li>
+            </ul>
+            
+            <div class="tabContent firstTab">
+                <iframe src="http://dev8.yangutu.com/payment/form/pm/cc/fid/26/vip/1" id="vip-cc-frame" width="500" height="285" data-eheight="630" data-cheight="270" frameborder="no" scrolling="no" allowtransparency="" seamless=""></iframe>
+            </div><!-- /.firstTab-->
+            
+            <div class="tabContent secondTab hide">
+                <div class="servInfo">
+                    Your credit card will be charged $71,97. <a href="#">Service conditions.</a>
+                </div>
+
+                <p>
+                    After you click the button below you'll be redirected to PayPal login page.
+                </p> 
+                <p>
+                    When the authetification of your identity is successfully don, you can review your transaction and finish your payment. 
+                </p>
+                <p>
+                    In the end you'll get order confirmation
+                </p>
+                
+                <a class="paypal" href="#"></a>
+            
+            </div><!-- /.secondTab-->
+            
+        </div>
+    
+    </div> <!-- /.paymentInfo -->
+    <div class="clr2"></div>
+</div><!-- /.vipPayment -->
+
+<div class="whatGet">
+    <h2>As VIP user you can</h2>
+    <ul>
+        <li class="g1">
+            <div class="icon"></div>
+            <h3>Send unlimited messages</h3>
+            <p>
+                Break down all limits between you and others! Send as much messages as you want.
+            </p>
+            
+        </li>
+        
+        <li class="g2">
+            <div class="icon"></div>
+            <h3>Find out who added you to Favourites</h3>
+            <p>
+                Learn out who likes you. May be this feeling is mutual. Try to know
+            </p>          
+        </li>
+        
+        <li class="g3">
+            <div class="icon"></div>
+            <h3>Travel Buddies pack</h3>
+            <p>
+               Get unlimited communication and highlighted profile in search results in Travel Buddies.
+            </p>                      
+        </li>
+        
+        <li class="g4">
+            <div class="icon"></div>
+            <h3>Use Soulmate Finder to find mutual matches</h3>
+            <p>
+               Get access to Yangutu science-based test and its results.
+            </p>                    
+        </li>
+        
+        <li class="g5">
+            <div class="icon"></div>
+            <h3>Hide members from search results</h3>
+            <p>
+               Tired of the same faces? Hide them, make your life more unpredictable.
+            </p>                    
+        </li>
+        
+        <li class="g6">
+            <div class="icon"></div>
+            <h3>Be invisible</h3>
+            <p>
+                Hide from other users your navigation. Avoid reflecting as a "profile visitor" in other profiles.
+            </p>                    
+        </li>
+        
+        <li class="g7">
+            <div class="icon"></div>
+            <h3>Face-to-Face spy</h3>
+            <p>
+                View the profiles of the people who answered about you «Yes» or «May be» directly in the Face-to-Face game.
+            </p>                    
+        </li>
+        
+        <li class="g8">
+            <div class="icon"></div>
+            <h3>Customize your profile</h3>
+            <p>
+                Paint your profile! Make your page bright and memorable!
+            </p>                    
+        </li>
+        
+    </ul>
+
+</div><!-- /.whatGet -->
+
+
+<!-- конец страницы ВИП -->    
+			
+			<div class="clr2"></div>
+		</div>
+	</div>
+	
+	<div class="footer">
+	  <div class="footer_inn">
+		<ul>
+			<li><a href="/page/about">About us</a></li>
+			<li><a href="/help">FAQ</a></li>
+			<li><a href="http://blog.yangutu.com/">Our blog</a></li>
+			<li><a href="/feedback">Contact us</a></li>
+		</ul>
+		<ul>
+			<li><a href="/page/policy">Privacy</a></li>
+			<li><a href="/page/terms">Terms of use</a></li>
+		</ul>
+		<ul>			
+			<li><a href="/page/scams">Scam warning</a></li>
+			<li><a href="/page/safety">Safety Tips</a></li>
+		</ul>
+		<ul>
+			<li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+			<li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+			<li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+		
+		</ul>
+		<ul>
+		  <li><a href="/dating/all">People Directory</a></li>
+		</ul>
+		<div class="right">
+			<font color="black">&copy; 2010-2011 Yangutu Inc. All rights reserved</font><br>
+		  <span>Yangutu (swahili) - My one and only.</span>
+		</div>
+		 <div class="clear"></div>
+	  </div>
+</div>
+</body>
+</html>
