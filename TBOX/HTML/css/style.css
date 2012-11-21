@@ -59,22 +59,21 @@ box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     }
     .timeSheet-tabs  .weekday {display: block; font-size: 18px; font-weight: bold; clear: both;}
     .timeSheet-tabs .tab-content{padding-bottom: 9px; border-bottom: 1px solid #aaa;}
-.timeSheet-tabs .btn.go { height: 22px; padding-top: 3px; padding-bottom: 1px; vertical-align: top;}
+    .timeSheet-tabs .btn.go { height: 22px; padding-top: 3px; padding-bottom: 1px; vertical-align: top;}
 
 table.timeSheet-week select, 
 table.timeSheet-week textarea, 
 table.timeSheet-week input  {margin-bottom: 0;}  
-    
-    .footer p {
-margin-bottom: 0;
-color: #555;
-}
 
-.footer {
-margin-top: 45px;
-padding: 35px 0 36px;
-border-top: 1px solid #E5E5E5;
-}
+.footer {margin-top: 45px; padding: 35px 0 36px; border-top: 1px solid #E5E5E5;}
+    .footer p {margin-bottom: 0; color: #555;}
+.page-header.content2 {margin-top: 0; padding-top: 0; margin-bottom: 10px;}
+.project-item {margin-bottom: 20px; }
+    .project-item .description {}
+    .project-item .head {font-size: 18px; font-weight: bold;}
+        .project-item .head .btn-mini {position: relative; top: -2px;}
+        .project-item .head .btn-mini i {margin-top:0;}
+    .project-item .info {color: #999999; font-size: 12px;border-top: 1px solid #EEE; }
     
     
     
