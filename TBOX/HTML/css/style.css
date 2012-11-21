@@ -78,9 +78,18 @@ table.timeSheet-week input  {margin-bottom: 0;}
 .checkboxList {min-width: 420px;}
     .checkboxList>.checkbox:first-child{padding-top: 0px;}
  .checkboxList>.checkbox {width: 190px; margin-right: 20px; display: inline-block;}
-    
-    
-    
+ .cat-item {margin-bottom: 20px; border-bottom: 1px solid #EEE; padding-bottom:10px;}
+     .cat-item .description {font-size: 12px;}
+     .cat-item .head {font-size: 18px; font-weight: bold;}
+     .cat-item .head .btn-mini {position: relative; top: -2px;}
+     .cat-item .head .btn-mini i {margin-top:0;}
+     .cat-item .tasks {border-top: 1px solid #EEE;  margin-left: 20px;}
+        .taskList {margin: 10px 0; list-style: none;}
+            .taskList .task-item {position: relative; margin: 0; min-height: 24px; }
+                .task-item .task-buttons{display: none; top: -2px; position: relative;}
+                .taskList .task-item:hover .task-buttons{display:inline-block;}
+     .cat-item .well {display: none; padding-bottom: 9px;}
+        .cat-item .well .radio.inline {margin-right: 15px;}
     
     
     
