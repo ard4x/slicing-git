@@ -417,7 +417,7 @@
             var tForm = $(' .formTask', this);
 
 
-            $(tButton).click(function (){
+            $(tButton).click(function (event){
                 event.stopPropagation();
                 $(this).hide();
                 $(tForm).css('display', 'inline-block');
@@ -426,7 +426,7 @@
                 $(tButton).show();
                 $(tForm).hide();
             });
-            $(tForm).bind('click', function (){
+            $(tForm).bind('click', function (event){
                 event.stopPropagation();
             });
 
