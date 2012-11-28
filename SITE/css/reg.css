@@ -1,0 +1,29 @@
+/* registration *
+* reg.css
+*/
+
+.reg__form {width: 280px; position: relative; }
+    .reg__form_item {margin-bottom: 10px; position: relative;}
+        .reg__form_item label {display: inline-block; width: 74px; padding-top: 2px; float: left; font-size: 14px; font-family: Arial; }
+        .reg__form_item .description {display: inline-block; width: 205px}
+            .reg__form_item .description .day,
+            .reg__form_item .description .month,
+            .reg__form_item .description .year {display: block; margin-right: 8px; float:left;}
+                .reg__form_item .description .day {width: 49px;}
+                .reg__form_item .description .month {width: 85px;}
+                .reg__form_item .description .year {width: 55px; margin-right: 0;}
+
+    .reg__form_item.submitBox{padding-top: 10px; margin-bottom: 0;}
+        .submit_button {margin-bottom: 18px;}
+            .submit_button input{width: 100%;}
+        .submit_text {font-size: 12px; color: #333333;}
+
+
+
+
+.reg__form input[type=text], .reg__form input[type=password], .reg__form input[type=email], .reg__form .newListSelected {
+    box-sizing: border-box; width: 100%; height: 22px;
+}
+.mainPage .reg__form_item.submitBox {background: #ffffff; border-radius: 4px; padding: 10px; height: 90px;  box-sizing: content-box;}
+    .mainPage .submit_button {position: absolute; bottom: 10px; width: 260px; margin-bottom: 0px; }
+    .mainPage .submit_text {font-size: 11px;}

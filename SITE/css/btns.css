@@ -1,4 +1,4 @@
-/* BUTTONS v.20121119
+/* BUTTONS v.20121128
 /*  Related files - ../img/btns.png, ../img/button-icos.png */
 
 /* Grey Micro button */
@@ -50,7 +50,7 @@ a.btn-s-1:active {background-position: 0 -58px;  border-color: #486992; border-t
         .btn-s-1_or .btn-s-1 .orArr {margin-left: 7px; width: 9px; height: 6px; background: url(../img/button-icos.png) no-repeat 0 -345px;}
     .btn-s-1_or .or_dropDown {width: 120px; display: none; background: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.5); padding:5px 0; position: absolute; z-index: 10; top: 25px;}
         .btn-s-1_or .or_dropDown li {list-style: none; margin: 0; padding:0; display: block; width: 100%;}
-        .btn-s-1_or .or_dropDown li a{padding: 4px 0 4px 15px; display: block; font: 12px Arial; color:#4F6B8D; text-decoration: none;}
+        .btn-s-1_or .or_dropDown li a{padding: 4px 10px; display: block; font: 12px Arial; color:#4F6B8D; text-decoration: none;}
         .btn-s-1_or .or_dropDown li a:hover{background-color:#ecf4fb; text-decoration: none;}
         .btn-s-1_or li.or_dropDown-top {width: 21px; height: 10px; position: absolute; top: -10px; left: 25px; background: url(../img/button-icos.png) no-repeat 0 -354px;}
 
@@ -104,6 +104,14 @@ a.btn-a-2 {display: inline-block; border: solid 1px #64954a;  border-top-color: 
 a.btn-a-2 span {display: inline-block; font: bold 18px Arial !important; color: #ffffff;  text-shadow: #364f6d 0 1px 2px; margin-top: 9px}
 a.btn-a-2:hover {background-position: 0 -308px; border-color: #74a858; border-top-color: #548d52;  border-bottom-color: #5b8444; }
 a.btn-a-2:active {background-position: 0 -347px;  border-color: #64954a; border-top-color: #3b6a35;  border-bottom-color: #5b8344; box-shadow: none; }
+
+/* type = button */     
+input.btn-a-2 {display: inline-block; border: solid 1px #64954a;  border-top-color: #548d52;  border-bottom-color: #40642d;  
+            border-radius: 3px; background: 0 -269px url(../img/btns.png) repeat-x; cursor: pointer;
+            height: 41px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3; text-align: center; position: relative; padding: 0; margin: 0;
+            font: bold 18px Arial !important; color: #ffffff;  text-shadow: #364f6d 0 1px 2px; }
+input.btn-a-2:hover {background-position: 0 -308px; border-color: #74a858; border-top-color: #548d52;  border-bottom-color: #5b8444; }
+input.btn-a-2:active {background-position: 0 -347px;  border-color: #64954a; border-top-color: #3b6a35;  border-bottom-color: #5b8344; box-shadow: none; }
 
 /* Blue Average button */     
 a.btn-a-1 {display: inline-block; border: solid 1px #496a94;  border-top-color: #3a639a;  border-bottom-color: #334a67;  
@@ -172,6 +180,9 @@ a.btn-a-6:active {background-position: 0 -464px;  border-color: #496a94; border-
                         border-radius: 3px; width: 23px; text-align: center; font: 12px Arial; color: #525252;  text-decoration: none; padding-top: 3px; cursor: pointer;}
     .btn__paging-item:hover{background-position: 0 -968px; color: #525252;  text-decoration: none;}
     .btn__paging-item:active{background-position: 0 -990px; color: #525252;  text-decoration: none;}
+    .btn__paging-item a {color: #525252;  text-decoration: none;}
+    .btn__paging-item__current a {color:#fafafa;}
+    .btn__paging-item__disabled a {color: #CBCBCB;}
     .btn__paging-item__current, .btn__paging-item__current:hover, .btn__paging-item__current:active {background-position: 0 -1012px; color:#fafafa; text-shadow: 0 1px 0 #454545; cursor: default; text-decoration: none;}
     .btn__paging-item__disabled, .btn__paging-item__disabled:hover, .btn__paging-item__disabled:active{cursor: default; color: #CBCBCB; background-position: 0 -990px; text-decoration: none;}
         .btn__paging-prew {padding-left: 7px; padding-right: 7px; width: auto; margin-right: 5px;}
