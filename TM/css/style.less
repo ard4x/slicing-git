@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'bebas';
+  src: url('fonts/bebasneue-webfont.eot');
+  src: url('fonts/bebasneue-webfont.eot?#iefix') format('embedded-opentype'),
+  url('fonts/bebasneue-webfont.woff') format('woff'),
+  url('fonts/bebasneue-webfont.ttf') format('truetype'),
+  url('fonts/bebasneue-webfont.svg#bebas_neueregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/** Colors **/
+@blueColor: #007ccf;
+@orangeColor: #dc7903;
+
+/** Fonts **/
+@basicFontSize: 12px;
+@basicFontColor: #262a2d;
+@basicFontFamily: Arial;
+
+@headerFontSize: 30px;
+@headerFontFamily: bebas;
+
+.resetIndents {margin: 0; padding: 0;}
+/****************************
+** Set up TYPOGRAFY style **
+****************************/
+
+.typografy (@fontSize: @basicFontSize, @fontFamily: @basicFontFamily, @fontColor: @basicFontColor){
+  font-family: @fontFamily;
+  font-size: @fontSize;
+  color: @fontColor;
+  line-height: @fontSize + 2px;
+}
+
+body {.typografy;}
+
+a {
+  color: @blueColor;
+  text-decoration: none;
+    &:hover{
+      color: @orangeColor;
+      text-decoration: underline;
+    }
+}
+
+h1, h2 {
+  .typografy (@headerFontSize, @headerFontFamily, @blueColor);
+  border-bottom: 1px solid  @blueColor;
+  margin-bottom: 10px;
+
+  &.shiny {color: @orangeColor; border-bottom-color: @orangeColor;}
+}
+
+h3 {
+  .typografy (@basicFontSize + 2px, @basicFontFamily, #424242);
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+p {padding-top: 3px;}
+
+.section {
+  margin-bottom: 18px;
+}
+
+.listIndent {margin-top: 4px; margin-bottom: 4px;
+  li {margin-top: 2px}
+}
+ul {
+  padding: 0;
+  margin-left: 30px;
+  .listIndent;
+  list-style: disc outside;
+  li {
+    padding-left: 5px;
+  }
+
+  &.unlabel{list-style: none;}
+}
+
+ol {.listIndent; margin-left: 35px;}
+
+/******************
+**** Menus ********
+******************/
+
+.menu {
+  list-style: none;
+  font-size: @basicFontSize + 2px;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  .resetIndents;
+
+    li {
+        .resetIndents;
+        margin-right: 15px;
+        float: left;
+
+        &.current a, &.current {
+            color: #666666;
+            text-decoration: none;
+        }
+
+        &:before {
+            content: "•";
+            color: #cccccc;
+            margin-right: 15px;
+        }
+    }
+    // footer menu
+    &.foot_menu {
+        li {margin-right: 7px;
+            &:before { content:'|'; margin-right: 8px; color: #666666;}
+        }
+        & :first-child:before {display: none;}
+    }
+
+    & :first-child:before {display: none;}
+}
+
+/*************
+*** Blocks ***
+*************/
+
