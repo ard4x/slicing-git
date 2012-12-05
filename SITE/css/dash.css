@@ -1,0 +1,80 @@
+/* Userpic */
+.dash__user {display: block; overflow: hidden;}
+    .dash__user .user__name {vertical-align: top; margin-top: 18px; display: inline-block; font-size: 14px;}
+
+.dash__main .btn-s-3 {padding-left: 13px; padding-right: 13px;}
+.dash__hOptions {font: 12px/12px Arial; color: #999999; }
+        .dash__hOptions.right{ position: relative; top: 5px;}
+    a.dash__hOptions {color: #4F6B8D;}
+.dash__main_header {margin-bottom:17px;}
+    .dash__main_header .dash__hOptions{ margin-left: 10px; font-size: 14px;}
+
+/** Latests Widget **/
+.dash__latest {margin-top: 30px; overflow: hidden; padding: 10px 10px 0;}
+    .dash__latest .b-std__header {margin-bottom: 11px;}
+    .dash__signals {width: 303px;  float: left; }
+        .dash__signals .wid__userList {padding-right: 20px; border-right: 1px solid #cccccc;}
+        .dash__signals .b-std__header {padding-right: 20px;}
+    .dash__guests {width: 382px; float: left;}
+        .dash__guests .b-user__person {font-size: 16px; margin-bottom: 0; }
+        .dash__guests .wid__userList_item {padding-left: 20px; width: 171px; float: left;}
+        .dash__guests .b-std__header {padding-left: 20px;}
+/** top100 widget **/
+.dash__top100 {}
+    .dash__top100 .b-std__header{margin-bottom: 3px;}
+    .dash__top100_options {border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc; padding: 17px 0; margin-bottom: 8px;}
+        .dash__top100_options_item {margin-right: 10px; font-size: 14px; font-weight: bold; position: relative; top: -1px;}
+        .dash__top100_note {vertical-align: top; position: relative; font-size: 14px; color: #666666; font-weight: bold;}
+            .dash__top100_note .button {margin-left: 15px; top: -7px;}
+            .dash__top100_note .link {margin-left: 15px; font-weight: normal;}
+    .dash__top100 .b-top100__leaderBoard_user {width: 104px;    }
+        .dash__top100 .b-top100__leaderBoard_user_photo {width: 100px; height: 100px;}
+        .dash__top100 .b-top100__leaderBoard_user_points,
+        .dash__top100 .b-top100__leaderBoard_user_person {text-align: left;}
+
+/** Videobox widget **/
+.dash__video {padding-bottom: 0;}
+    .dash__video .b-std__header {margin-bottom: 8px;}
+.dash__videoList {text-align: justify;}
+    .dash__videoList_item {display: inline-block; width: 150px; font-size: 12px; text-align: left;}
+        .dash__videoList_item .views {font-size: 10px; text-align: right; color: #666666; margin-bottom: 3px;}
+        .dash__videoList_item .videoLink {margin-bottom: 7px; display: inline-block}
+                .dash__videoList_item .videoLink img {width: 150px; height: 100px;}
+            .dash__videoList_item img {margin-bottom: 3px;}
+        .dash__videoList_item .videoDescription {color: #333333;}
+
+/** Forum widget **/
+.dash__forum {}
+    .dash__forum .b-std__header {margin-bottom: 12px;}
+.dash__forumList {border-top:  1px solid #cccccc;}
+    .dash__forumList_item {border-bottom: 1px solid #cccccc; padding: 10px 0;}
+        .dash__forumList_item_header {margin: 0 0 10px;}
+            .dash__forumList_item_header .dash__hOptions {margin-left: 5px;}
+                .dash__forumList_item_header .dash__hOptions a {margin-left: 3px;}
+        .dash__forumList_item .user__pic {}
+        .dash__forumList_item .forumDescription {margin-left: 60px; font-size: 12px; line-height: 120%; margin-top: -2px}
+            .dash__forumList_item .userName {font-weight: bold;}
+                .dash__forumList_item  .subInfo { font-size: 10px; color: #999999; margin-top: 7px;}
+/** Travel widget **/
+.dash__travel {}
+    .dash__travel .dash__travel_header {margin-bottom: 10px;}
+    .dash__travel_img {float: left; width: 150px; height: 100px;}
+    .dash__travel_descript {margin-left: 170px; margin-top: -2px;}
+        .dash__travel p {}
+        .dash__travel .button {padding-right: 8px; padding-left: 8px;}
+        .dash__travel ._or {margin: 0 10px;}
+    .dash__travel_listHead { margin: 18px 0 9px;}
+    .dash__travelList {padding: 10px 10px 9px; background-color: #ffffff; text-align: justify; font-size: 1px;}
+        .dash__travelList .user__pic{margin: 0; float: none; display: inline-block;}
+
+/** FAQ widget **/
+.dash__faq {}
+    .dash__faq .b-std__header{margin-bottom: 11px;}
+    .dash__faq_list {border-top: 1px solid #cccccc; text-align: justify; padding-top: 8px;}
+        .dash__faq_item {display: inline-block; width: 220px; color: #333333; text-align: left; font-size: 12px;}
+            .dash__faq_item h4 {font: bold 14px/14px Arial; color: #999999; padding: 0; margin: 0; margin-bottom: 8px;}
+
+
+
+
+

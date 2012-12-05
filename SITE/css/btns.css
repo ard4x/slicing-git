@@ -62,13 +62,21 @@ a.btn-s-2 span {display: inline-block; font: bold 14px Arial !important; color: 
 a.btn-s-2:hover {background-position: 0 -211px; border-color: #74a858; border-top-color: #548d52;  border-bottom-color: #5b8444; }
 a.btn-s-2:active {background-position: 0 -240px;  border-color: #64954a; border-top-color: #3b6a35;  border-bottom-color: #5b8344; box-shadow: none; }
 
-/* Green small button */     
+/* orange small button */
 a.btn-s-3 {display: inline-block; border: solid 1px #c9552b;  border-top-color: #99573e;  border-bottom-color: #953411;
             border-radius: 3px; background: 0 -1511px url(../img/btns.png) repeat-x; cursor: pointer;
             height: 29px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3; text-align: center; position: relative; padding: 0;}
 a.btn-s-3 span {display: inline-block; font: bold 14px Arial !important; color: #ffffff;  text-shadow: #364f6d 0 1px 2px; margin-top: 6px}
 a.btn-s-3:hover {background-position: 0 -1540px; border-color: #d46842; border-top-color: #99573e;  border-bottom-color: #a65134; }
 a.btn-s-3:active {background-position: 0 -1569px;  border-color: #c9562d; border-top-color: #8a3714;  border-bottom-color: #a65133; box-shadow: none; }
+
+/* orange-2 small button */
+a.btn-s-3_2 {display: inline-block; border: solid 1px #c54229;  border-top-color: #994c3e;  border-bottom-color: #912511;
+    border-radius: 3px; background: 0 -1598px url(../img/btns.png) repeat-x; cursor: pointer;
+    height: 29px; text-decoration: none; box-shadow: 0 1px 2px #b3b3b3; text-align: center; position: relative; padding: 0 12px;}
+a.btn-s-3_2 span {display: inline-block; font: bold 14px Arial !important; color: #ffffff;  text-shadow: #364f6d 0 1px 2px; margin-top: 6px}
+a.btn-s-3_2:hover {background-position: 0 -1627px; border-color: #d45a42; border-top-color: #994c3e;  border-bottom-color: #a64734; }
+a.btn-s-3_2:active {background-position: 0 -1656px;  border-color: #c7452d; border-top-color: #862714;  border-bottom-color: #a64633; box-shadow: none; }
 
 /* Inactive small button */
 a.btn-s-0 {display: inline-block; border: solid 1px #636363;  border-top-color: #47535d;  border-bottom-color: #4e4e4e;  background:0 -87px url(../img/btns.png) repeat-x; 

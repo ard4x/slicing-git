@@ -1,0 +1,19 @@
+/* Travel Buddies travel.css*/
+.travel__search {background-color: #ecf4fb; padding: 13px 15px; border-radius: 4px; display: inline-block;}
+    .travel__search_item {vertical-align: top; display: inline-block; position: relative; margin-right: 7px; width: 130px;}
+            .travel__search_item .label {font-weight: bold; font-size: 12px; line-height: 12px; padding-bottom: 3px;}
+            .travel__search_item .select input{width: 274px;}
+        .travel__search .newListSelected {height: 20px; padding: 5px 2px 0px 3px;} 
+        .travel__search [type=text] {height: 22px;}
+        .travel__search_item.last {margin-right: 0!important;}
+        .travel__search_item.big {width: 280px;}
+        .travel__search_item.w2 {width: 150px;}
+        .travel__search_item.submit {width: 110px; vertical-align: bottom;}
+            .travel__search_item.submit a {width: 108px;}
+            
+.travel__search_widget {color: #333;}
+    .travel__search_widget h2 {color: #333; font: bold 24px/24px 'PT Sans'; margin: 0 0 20px;}
+    .travel__search_widget .travel__search_item {width: 170px; margin: 0 0 20px; display: block;}
+    .travel__search_widget .travel__search_item .select input{width: 164px;} 
+    .travel__search_widget .travel__search_item.last {margin-bottom: 0;}
+    .travel__search_widget .travel__search_item   .submit a {width: 168px;}

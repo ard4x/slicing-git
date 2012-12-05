@@ -4,6 +4,7 @@
 .b-std__header {font-family: 'PT Sans'; font-weight: bold; color: #333333; margin:0; margin-bottom: 15px;}
 .std__fs-mainH {font-size: 24px; line-height: 24px;}
 .std__fs-smallH {font-size: 18px; line-height: 18px;}
+.std__fs-miniH {font-size: 14px; line-height: 14px;}
 .std__fc_default {color:#010101;}
     /*** end headers styles ***/
 .std__2col-main {width: 733px;}
@@ -36,5 +37,10 @@
 .std__or_horiz{text-align: center; height: 1px; background-color:#ccc; position: relative; margin: 22px 0;}
     .std__or {position:absolute; top: -21px; display: inline-block; background-color:#ccc; border-radius: 21px; height: 42px; width:42px; text-align:center;}
         .std__or_item{font-size:18px; line-height: 18px; font-weight:bold; color:#fff; padding-top: 11px; display: block;}
-        
-    
+
+.std__block {display: block; margin-bottom: 30px;}
+.std__justify_helper {width: 100%; height: 0; visibility: hidden; display: inline-block;}
+
+.std__sideMenu {margin:0; padding: 0;}
+    .std__sideMenu .menuTitle{font: bold 16px/16px 'PT Sans'; color: #666666; margin-top: 20px; margin-bottom: 10px;}
+    .std__sideMenu .menuItem {margin-left: 10px; margin-bottom: 2px; font-size: 14px;}

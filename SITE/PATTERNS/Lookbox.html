@@ -1,0 +1,383 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>LookBox</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../css/lookbox_new.css">
+    <link rel="stylesheet" href="../css/btns.css">
+    <script src="../js/jquery.js"></script>
+    
+    
+   <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+        
+        function stsStyle(){ 
+                $('.select_menu').each(function(){
+                    var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),                    
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                    objElement.css({'width': w+'px'})
+                    console.log(obj.width())
+                
+                });
+            }
+            stsStyle();
+    </script> 
+</head>
+<body><div style="margin: 100px;">
+
+      <h2>People search</h2>
+    <div class="b-lookBox">
+        <div class="b-lookBox__locationField">
+            <div class="b-lookBox__progressbar">
+                <div class="b-lookBox__progressbar_left"></div>
+                <div class="b-lookBox__progressbar_right"></div>
+                <div class="b-lookBox__progressControl">
+                	<div class="b-lookBox__progrControl_point"></div>
+                    <div class="b-lookBox__progrControl_point"></div>
+                    <div class="b-lookBox__progrControl_point"></div>
+                	<div class="b-lookBox__progrControl_point">
+                        <span class="b-lookBox__progrControl_pointCity">Belarus</span>
+                    </div>
+                    <div class="b-lookBox__progrControl_point"></div>
+                    <div class="b-lookBox__progrControl_point"></div>
+                </div><!-- b-lookBox__progressControl -->
+                <div class="b-lookBox__progressLine">
+                	<div class="b-lookBox__progressLine_button">
+                		<div class="b-lookBox__progressLine_flag">
+                            <div class="b-lookBox__progressLine_flag_inner">
+                                <nobr>Within 60 miles</nobr>
+                            </div>
+                        </div>
+                	</div><!--b-lookBox__progressLine_button-->
+                </div><!-- b-lookBox__progressLine -->
+            </div><!-- b-lookBox__progressbar --> 
+            
+            <div class="b-lookBox__progressbarLabel">
+                <div class="b-lookBox__locationSelect">
+                    Minsk <a class="b-lookBox__locationSelect_city" href="javascript:void(0);">edit</a>
+                </div>
+                <div class="b-lookBox__locationEnd">
+                    <span>World</span>
+                </div>  
+            </div><!-- b-lookBox__progressbarLabel --> 
+            
+        </div><!--/ .b-lookbox__locationField -->
+        <div class="b-lookBox__devide"></div>
+        <div class="b-lookBox__selectParams">
+        
+            <div  class="b-lookBox__selectParams_param b-lookBox__selectParams_param__big">
+                <div class="b-lookBox__selectParam_label">I'm</div>
+                    <div class="w-lookBox__selPar_select">
+                        <select class="sSelect">
+                            <option value="1">18-25</option>
+                            <option value="2">26-35</option>
+                            <option value="3">36-45</option>
+                            <option value="4">46-55</option>
+                        </select>
+                    </div>
+            </div>
+            
+            <div  class="b-lookBox__selectParams_param b-lookBox__selectParams_param__big">
+                <div class="b-lookBox__selectParam_label">Interested in</div>
+                    <div class="w-lookBox__selPar_select">
+                        <select class="sSelect">
+                            <option value="1">18-25</option>
+                            <option value="2">26-35</option>
+                            <option value="3">36-45</option>
+                            <option value="4">46-55</option>
+                        </select>
+                    </div>
+            </div> 
+            
+            <div  class="b-lookBox__selectParams_param b-lookBox__selectParams_param__last">
+                <div class="b-lookBox__selectParam_label">Age</div>
+                    <div class="w-lookBox__selPar_select">
+                        <select class="sSelect">
+                            <option value="1">18-25</option>
+                            <option value="2">26-35</option>
+                            <option value="3">36-45</option>
+                            <option value="4">46-55</option>
+                        </select>
+                    </div>
+            </div>
+        </div><!-- / b-lookBox__selectParams-->
+        
+        <div class="b-lookBox__advansed">
+            <script type="text/javascript">
+                $(document).ready(function(){                 
+                    $("#lBoxAdv-content").hide();
+                    $("#lBoxAdv-header").toggle(
+                          function () {
+                            $("#lBoxAdv-arrow").addClass("active");
+                            $("#lBoxAdv-content").slideToggle("fast");
+                          },
+                          function () {
+                            $("#lBoxAdv-arrow").removeClass("active");
+                            $("#lBoxAdv-content").slideToggle("fast");
+                    });
+               });
+            </script>
+            <div class="b-lookBox__advansed_header" id="lBoxAdv-header">
+                    <div class="b-lookBox__advansed_header-arrow" id="lBoxAdv-arrow"></div>
+                    <span class="b-lookBox__advansed_header-label">Advanced search</span>
+            </div>
+            <div class="b-lookBox__advansed_content" id="lBoxAdv-content">
+                
+                <div  class="b-lookBox__selectParams_param b-lookBox__selectParams_param_medium">
+                    
+                    <div class="w-lookBox__selPar_select">
+                        <select class="sSelect">
+                            <option value="1">18-25</option>
+                            <option value="2">26-35</option>
+                            <option value="3">36-45</option>
+                            <option value="4">46-55</option>
+                        </select>
+                    </div>
+                    <div class="b-lookBox__selectParam_label_post">Choose a search criterion from the drop down menu.</div>
+                </div>
+                <div  class="b-lookBox__selectParams_param b-lookBox__selectParams_param_medium">
+                     <div class="w-lookBox__selPar_select">
+                        <select class="sSelect">
+                            <option value="1">18-25</option>
+                            <option value="2">26-35</option>
+                            <option value="3">36-45</option>
+                            <option value="4">46-55</option>
+                        </select>
+                    </div>
+                    <div class="b-lookBox__selectParam_label_post">Choose a search criterion from the drop down menu.</div>
+                </div>
+                <div  class="b-lookBox__selectParams_param b-lookBox__selectParams_param_medium b-lookBox__selectParams_param__last">
+                        <div class="w-lookBox__selPar_select">
+                            <select class="sSelect">
+                                <option value="1">18-25</option>
+                                <option value="2">26-35</option>
+                                <option value="3">36-45</option>
+                                <option value="4">46-55</option>
+                            </select>
+                        </div>
+                        <div class="b-lookBox__selectParam_label_post">Choose a search criterion from the drop down menu.</div>
+                </div>
+            
+            </div><!-- b-lookBox__advansed_content -->
+            <div class="b-lookBox__advansed_button">
+                <a href="javascript:void(0);" class="btn-s-1 b-lookBox__startButton b-lookBox__startButton-advansed">
+                    <span>Find people</span>
+                </a>
+            </div>
+            
+
+        </div><!-- b-lookBox__advansed -->
+           
+    </div><!-- / .lookingbx -->
+
+
+
+	
+    <h2>TOP-100</h2>
+    <div class="b-lookBox">
+        <div class="b-lookBox__locationField">
+            <div class="b-lookBox__progressbar">
+                <div class="b-lookBox__progressbar_left"></div>
+                <div class="b-lookBox__progressbar_right"></div>
+                <div class="b-lookBox__progressControl">
+                	<div class="b-lookBox__progrControl_point"></div>
+                    <div class="b-lookBox__progrControl_point"></div>
+                    <div class="b-lookBox__progrControl_point"></div>
+                	<div class="b-lookBox__progrControl_point">
+                        <span class="b-lookBox__progrControl_pointCity">Belarus</span>
+                    </div>
+                    <div class="b-lookBox__progrControl_point"></div>
+                    <div class="b-lookBox__progrControl_point"></div>
+                </div><!-- b-lookBox__progressControl -->
+                <div class="b-lookBox__progressLine">
+                	<div class="b-lookBox__progressLine_button">
+                		<div class="b-lookBox__progressLine_flag">
+                            <div class="b-lookBox__progressLine_flag_inner">
+                                <nobr>Within 60 miles</nobr>
+                            </div>
+                        </div>
+                	</div><!--b-lookBox__progressLine_button-->
+                </div><!-- b-lookBox__progressLine -->
+            </div><!-- b-lookBox__progressbar --> 
+            
+            <div class="b-lookBox__progressbarLabel">
+                <div class="b-lookBox__locationSelect">
+                    Minsk <a class="b-lookBox__locationSelect_city" href="javascript:void(0);">edit</a>
+                </div>
+                <div class="b-lookBox__locationEnd">
+                    <span>World</span>
+                </div>  
+            </div><!-- b-lookBox__progressbarLabel --> 
+            
+        </div><!--/ .b-lookbox__locationField -->
+        <div class="b-lookBox__devide"></div>
+        <div class="b-lookBox__selectParams">
+        
+            <div  class="b-lookBox__selectParams_param">
+                <div class="b-lookBox__selectParam_label">Sex</div>
+                    <label class="b-lookBox__selPar_radioLabel"><input type="radio" name="lookBox__sex" class="b-lookBox__selPar_radio"/>Woman</label>
+                    <label class="b-lookBox__selPar_radioLabel"><input type="radio" name="lookBox__sex" class="b-lookBox__selPar_radio"/>Man</label>
+            </div>
+            
+            <div  class="b-lookBox__selectParams_param">
+                <div class="b-lookBox__selectParam_label">Aged</div>
+                    <div class="w-lookBox__selPar_select">
+                        <select class="sSelect">
+                            <option value="1">18-25</option>
+                            <option value="2">26-35</option>
+                            <option value="3">36-45</option>
+                            <option value="4">46-55</option>
+                        </select>
+                    </div>
+            </div>
+        </div>
+        
+        <a href="javascript:void(0);" class="btn-s-1 b-lookBox__startButton">
+            <span>Find people</span>
+        </a>
+       
+        
+    </div><!-- / .lookingbx -->
+    
+    
+    
+        <h2>Face-to-Face</h2>
+    <div class="b-lookBox">
+        <div class="b-lookBox__locationField">
+            <div class="b-lookBox__progressbar">
+                <div class="b-lookBox__progressbar_left"></div>
+                <div class="b-lookBox__progressbar_right"></div>
+                <div class="b-lookBox__progressControl">
+                	<div class="b-lookBox__progrControl_point"></div>
+                    <div class="b-lookBox__progrControl_point"></div>
+                    <div class="b-lookBox__progrControl_point"></div>
+                	<div class="b-lookBox__progrControl_point">
+                        <span class="b-lookBox__progrControl_pointCity">Belarus</span>
+                    </div>
+                    <div class="b-lookBox__progrControl_point"></div>
+                    <div class="b-lookBox__progrControl_point"></div>
+                </div><!-- b-lookBox__progressControl -->
+                <div class="b-lookBox__progressLine">
+                	<div class="b-lookBox__progressLine_button">
+                		<div class="b-lookBox__progressLine_flag">
+                            <div class="b-lookBox__progressLine_flag_inner">
+                                <nobr>Within 60 miles</nobr>
+                            </div>
+                        </div>
+                	</div><!--b-lookBox__progressLine_button-->
+                </div><!-- b-lookBox__progressLine -->
+            </div><!-- b-lookBox__progressbar --> 
+            
+            <div class="b-lookBox__progressbarLabel">
+                <div class="b-lookBox__locationSelect">
+                    Minsk <a class="b-lookBox__locationSelect_city" href="javascript:void(0);">edit</a>
+                </div>
+                <div class="b-lookBox__locationEnd">
+                    <span>World</span>
+                </div>  
+            </div><!-- b-lookBox__progressbarLabel --> 
+            
+        </div><!--/ .b-lookbox__locationField -->
+        <div class="b-lookBox__devide"></div>
+        <div class="b-lookBox__selectParams">
+        
+            <div  class="b-lookBox__selectParams_param b-lookBox__selectParams_param__big">
+                <div class="b-lookBox__selectParam_label">I`m</div>
+                    <div class="w-lookBox__selPar_select">
+                        <select class="sSelect">
+                            <option value="1">Woman looking for a woman</option>
+                            <option value="2">Woman looking for a woman</option>
+                            <option value="3">Woman looking for a woman</option>
+                            <option value="4">Woman looking for a woman</option>
+                        </select>
+                    </div>
+            </div>
+            
+            <div  class="b-lookBox__selectParams_param">
+                <div class="b-lookBox__selectParam_label">Age</div>
+                    <div class="w-lookBox__selPar_select">
+                        <select class="sSelect">
+                            <option value="1">18-25</option>
+                            <option value="2">26-35</option>
+                            <option value="3">36-45</option>
+                            <option value="4">46-55</option>
+                        </select>
+                    </div>
+            </div>
+        </div>
+        
+        <a href="javascript:void(0);" class="btn-s-1 b-lookBox__startButton">
+            <span>Find people</span>
+        </a>
+       
+        
+    </div><!-- / .lookingbx -->
+    
+      <h2>Soulmate Finder</h2>
+    <div class="b-lookBox">
+        <div class="b-lookBox__locationField">
+            <div class="b-lookBox__progressbar">
+                <div class="b-lookBox__progressbar_left"></div>
+                <div class="b-lookBox__progressbar_right"></div>
+                <div class="b-lookBox__progressControl">
+                	<div class="b-lookBox__progrControl_point"></div>
+                    <div class="b-lookBox__progrControl_point"></div>
+                    <div class="b-lookBox__progrControl_point"></div>
+                	<div class="b-lookBox__progrControl_point">
+                        <span class="b-lookBox__progrControl_pointCity">Belarus</span>
+                    </div>
+                    <div class="b-lookBox__progrControl_point"></div>
+                    <div class="b-lookBox__progrControl_point"></div>
+                </div><!-- b-lookBox__progressControl -->
+                <div class="b-lookBox__progressLine">
+                	<div class="b-lookBox__progressLine_button">
+                		<div class="b-lookBox__progressLine_flag">
+                            <div class="b-lookBox__progressLine_flag_inner">
+                                <nobr>Within 60 miles</nobr>
+                            </div>
+                        </div>
+                	</div><!--b-lookBox__progressLine_button-->
+                </div><!-- b-lookBox__progressLine -->
+            </div><!-- b-lookBox__progressbar --> 
+            
+            <div class="b-lookBox__progressbarLabel">
+                <div class="b-lookBox__locationSelect">
+                    Minsk <a class="b-lookBox__locationSelect_city" href="javascript:void(0);">edit</a>
+                </div>
+                <div class="b-lookBox__locationEnd">
+                    <span>World</span>
+                </div>  
+            </div><!-- b-lookBox__progressbarLabel --> 
+            
+        </div><!--/ .b-lookbox__locationField -->
+        <div class="b-lookBox__devide"></div>
+        <div class="b-lookBox__selectParams">
+        
+            <div  class="b-lookBox__selectParams_param">
+                <div class="b-lookBox__selectParam_label">Age</div>
+                    <div class="w-lookBox__selPar_select">
+                        <select class="sSelect">
+                            <option value="1">18-25</option>
+                            <option value="2">26-35</option>
+                            <option value="3">36-45</option>
+                            <option value="4">46-55</option>
+                        </select>
+                    </div>
+            </div>
+        </div>
+        
+        <a href="javascript:void(0);" class="btn-s-1 b-lookBox__startButton">
+            <span>Find people</span>
+        </a>
+       
+        
+    </div><!-- / .lookingbx -->
+    
+</div></body>
+</html>

@@ -1,0 +1,48 @@
+/**** Блок выбора параметров поиска с ползунком *****.
+/* Looking Box */
+
+.b-lookBox {border-radius: 4px; background-color: #f1f1f1; width: 698px; padding: 22px 15px 8px 15px; margin-bottom: 20px; border: 1px solid #dddddd;}
+    .b-lookBox__locationField { width: 682px; margin-left: 9px;}
+        .b-lookBox__progressbar {width: 100%; background: url(../img/lookbox/lookbox.png) 0px -6px repeat-x; height: 14px; margin: 10px 0px 6px; position: relative;}
+            .b-lookBox__progressbar_left  {width: 9px; height: 14px; position: absolute; left:-9px; top: 0; background: url(../img/lookbox/lookbox.png) 0px -21px repeat-x;}
+            .b-lookBox__progressbar_right{width: 9px; height: 14px; position: absolute; right:-9px; top: 0; background: url(../img/lookbox/lookbox.png) 100% -21px repeat-x;}
+            .b-lookBox__progressControl {background: url(../img/lookbox/lookbox.png) 675px -75px no-repeat; position: absolute; height: 30px; width: 100%; top: -8px; left: 0px;}
+                .b-lookBox__progrControl_point {width: 16.666%; float: left; height: 30px; background: url(../img/lookbox/lookbox.png) 0px -75px no-repeat; position: relative;}
+                    .b-lookBox__progrControl_pointCity {display: inline; position: absolute; top: 31px; right: 0px; font-size: 12px;}
+            .b-lookBox__progressLine {width: 50%; background: url(../img/lookbox/lookbox.png) 0px 0px repeat-x; height: 6px; top: 4px; position: relative;}
+                .b-lookBox__progressLine_button {background: url(../img/lookbox/lookbox.png) 0px -35px no-repeat; height: 22px; width: 13px; position: absolute; right: -7px; top: -8px; cursor: pointer;}
+                    .b-lookBox__progressLine_flag {display: inline; position: absolute; top: auto; bottom: 100%; padding: 0px; left: 50%; z-index: 99;}
+                        .b-lookBox__progressLine_flag_inner{font-size: 10px; color: #666666; position: relative; padding-bottom: 4px; right: auto; display: block;  left: -50%; z-index: 99;}
+       .b-lookBox__progressbarLabel {display: block; overflow: hidden;}
+      
+            .b-lookBox__locationSelect {display:inline-block; float: left; padding-left: 3px;}
+                .b-lookBox__locationSelect_city {text-decoration: underline; padding-left: 6px;}
+            .b-lookBox__locationEnd  {display:inline-block; float: right; padding-right: 3px;}
+     .b-lookBox__devide{height: 1px; background-color:#dddddd; width: 728px; margin: 7px auto 7px -15px;}
+     .b-lookBox__selectParams {display: inline-block; margin-bottom: 4px}
+        .b-lookBox__selectParams_param {display: inline-block; margin-right: 20px; width: 140px;}
+            .b-lookBox__selectParams_param__big {width: 256px;}
+            .b-lookBox__selectParams_param_medium {width: 217px;}
+            .b-lookBox__selectParams_param__last{margin: 0;}
+            .b-lookBox__selectParam_label {display: block; font-weight: bold; margin-right: 5px; padding-bottom: 2px; padding-left: 2px;}
+                .b-lookBox__selPar_radioLabel {font-weight: normal; margin-right:  10px;}
+                .w-lookBox__selPar_select {display: inline-block; font-weight: normal; width: 100%;}
+                    .b-lookBox__selPar_radio {position: relative; top: 1px; margin-left: 3px;}
+            .b-lookBox__selectParam_label_post {font-size: 10px; color: #999;}
+   .b-lookBox__startButton {width: 130px; float: right; margin-top: 7px;}
+    
+    .b-lookBox__advansed {border-top: 1px solid #ddd; margin-top: 15px; position: relative;}
+        .b-lookBox__advansed_header {margin-top: -8px; position:relative; cursor: pointer;}
+            .b-lookBox__advansed_header-arrow {width: 9px; height: 9px; position: absolute; top: 2px; left: 0;background: url(../img/lookbox/lookbox.png) 0 -57px no-repeat;}
+            .b-lookBox__advansed_header-arrow.active {background-position: 0 -66px;}
+            .b-lookBox__advansed_header-label {display: inline; padding-left: 17px; padding-right: 10px; font-size: 12px; font-weight: bold; color:#666; background: #f1f1f1; }
+        
+        .b-lookBox__advansed_button {text-align: center}
+        .b-lookBox__startButton-advansed{margin: 0 auto; position: relative; float: none; margin: 7px auto;}
+        .b-lookBox__advansed_content {padding: 10px 0;}
+    
+/*********  Looking Box  ******************/
+ 
+ 
+ 
+ 
