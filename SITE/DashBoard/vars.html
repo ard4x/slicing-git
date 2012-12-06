@@ -1,0 +1,438 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/wid.css">
+    <link rel="stylesheet" href="../css/btns.css" type="text/css">   <!-- Проверить наличие, заменить более новой версией, а так же файлы btns.png и button-icos.png, Версия указана в первой строке файла-->
+    <link rel="stylesheet" href="../css/srch.css">
+    <link rel="stylesheet" href="../css/top100.css">
+    <link rel="stylesheet" href="../css/dash.css"><!-- новый файл стилей -->
+    <!-- Костыли для ИE, можно добавить в уже существующие -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../yngtu_ie8.css" type="text/css">
+    <![endif]-->
+
+    <!--  Файлы для замены селектов, уже присутствует на сервере, тут только для имитации -->
+
+    <script src="../js/jquery-1.4.4.min.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'});
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+    <!--  ---------------------------------------- -->
+
+</head>
+<body>
+<!-- начало шаблонной шапки -->
+<div class="header">
+    <div class="header_inn">
+        <div class="top_navigation">
+            <ul class="left">
+                <li><a href="#">Messages</a><span class="new_event">2</span></li>
+                <li><a href="#">Signals</a><span class="new_event">45</span></li>
+                <li><a href="#">Soulmates</a><span class="new_event">167</span></li>
+            </ul>
+            <ul class="right">
+                <li class="coints">1450 Coins <a href="#">Add</a></li>
+                <li class="profile"><a href="#">Profile </a></li>
+                <li class="account"><a href="#">Account Settings</a></li>
+            </ul>
+            <div class="std__clear"></div>
+        </div>
+        <div class="bot_navigation">
+            <a href="#"><img src="../img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>
+            <ul class="main_menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Matches</a></li>
+                <li><a href="#">TOP-100</a></li>
+                <li><a href="#">Apps and Games</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+            <div class="clr2"></div>
+        </div>
+    </div>
+</div>
+<!-- КОНЕЦ шаблонной шапки -->
+
+
+<div class="content">
+    <div class="srch" style="width: 707px;">
+
+
+
+        <!--на первом месте-->
+        <div class="std__block dash__top100">
+
+            <!-- кнопка "Increase your rating" заменена на ссылку "View all liders" -->
+
+            <h2 class="b-std__header std__fs-smallH">TOP-100 current rating in United States</h2>
+
+            <div class="dash__top100_options">
+                <span class="dash__top100_options_item">Men</span>  <a class="dash__top100_options_item" href="#">Women</a>
+
+                <span class="dash__top100_note right">
+                    7 days left until the end of the voting
+
+                    <a class="link" href="#">View all liders</a>
+                </span>
+            </div>
+
+            <div class="b-top100__leaderBoard_list">
+
+                <div class="b-top100__leaderBoard_user">
+                    <div class="b-top100__leaderBoard_number">#1</div>
+                    <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                        <img src="../img/usr/100x100-4.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+
+                    </div>
+
+                    <div class="b-user__person b-top100__leaderBoard_user_person">
+                        <a href="#">Paparatta</a>, 77
+                    </div>
+                    <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                </div>
+
+                <div class="b-top100__leaderBoard_user">
+                    <div class="b-top100__leaderBoard_number">#2</div>
+                    <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                        <img src="../img/usr/100x100.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+                        <span class="user__vipIcon"></span>
+                    </div>
+
+                    <div class="b-user__person b-top100__leaderBoard_user_person">
+                        <a href="#">Olga</a>, 35
+                    </div>
+                    <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                </div>
+
+                <div class="b-top100__leaderBoard_user">
+                    <div class="b-top100__leaderBoard_number">#3</div>
+                    <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                        <img src="../img/usr/100x100-2.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+
+                    </div>
+
+                    <div class="b-user__person b-top100__leaderBoard_user_person">
+                        <a href="#">Olga</a>, 35
+                    </div>
+                    <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                </div>
+
+                <div class="b-top100__leaderBoard_user">
+                    <div class="b-top100__leaderBoard_number">#4</div>
+                    <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                        <img src="../img/usr/100x100-3.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+
+                    </div>
+
+                    <div class="b-user__person b-top100__leaderBoard_user_person">
+                        <a href="#">Olga</a>, 35
+                    </div>
+                    <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                </div>
+
+                <div class="b-top100__leaderBoard_user">
+                    <div class="b-top100__leaderBoard_number">#5</div>
+                    <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                        <img src="../img/usr/100x100.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+                        <span class="user__vipIcon"></span>
+                    </div>
+
+                    <div class="b-user__person b-top100__leaderBoard_user_person">
+                        <a href="#">Olga</a>, 35
+                    </div>
+                    <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                </div>
+
+                <div class="b-top100__leaderBoard_user">
+                    <div class="b-top100__leaderBoard_number">#6</div>
+                    <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                        <img src="../img/usr/100x100-2.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+
+                    </div>
+
+                    <div class="b-user__person b-top100__leaderBoard_user_person">
+                        <a href="#">Olga</a>, 35
+                    </div>
+                    <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                </div>
+
+                <div class="std__justify_helper"></div>
+            </div><!-- /.b-top100__leaderBoard_list -->
+
+        </div><!-- /.dash__top100 -->
+
+        <!-- не входит в 6-ку лидеров -->
+        <div class="std__block dash__top100">
+            <h2 class="b-std__header std__fs-smallH">TOP-100 current rating in United States</h2>
+
+            <div class="dash__top100_options">
+                <span class="dash__top100_options_item">Men</span>  <a class="dash__top100_options_item" href="#">Women</a>
+
+                <span class="dash__top100_note right">
+                    7 days left until the end of the voting
+
+                    <a class="button btn-s-3_2"><span>Increase your rating</span></a>
+                </span>
+            </div>
+
+            <div class="b-top100__leaderBoard_list">
+                <div class="b-top100__leaderBoard_user">
+                    <div class="b-top100__leaderBoard_number">#1</div>
+                    <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                        <img src="../img/usr/100x100.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+                        <span class="user__vipIcon"></span>
+                    </div>
+
+                    <div class="b-user__person b-top100__leaderBoard_user_person">
+                        <a href="#">Olga</a>, 35
+                    </div>
+                    <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                </div>
+
+                <div class="b-top100__leaderBoard_user">
+                    <div class="b-top100__leaderBoard_number">#2</div>
+                    <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                        <img src="../img/usr/100x100-2.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+
+                    </div>
+
+                    <div class="b-user__person b-top100__leaderBoard_user_person">
+                        <a href="#">Olga</a>, 35
+                    </div>
+                    <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                </div>
+
+                <div class="b-top100__leaderBoard_user">
+                    <div class="b-top100__leaderBoard_number">#3</div>
+                    <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                        <img src="../img/usr/100x100-3.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+
+                    </div>
+
+                    <div class="b-user__person b-top100__leaderBoard_user_person">
+                        <a href="#">Olga</a>, 35
+                    </div>
+                    <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                </div>
+
+                <div class="b-top100__leaderBoard_user">
+                    <div class="b-top100__leaderBoard_number">#4</div>
+                    <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                        <img src="../img/usr/100x100.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+                        <span class="user__vipIcon"></span>
+                    </div>
+
+                    <div class="b-user__person b-top100__leaderBoard_user_person">
+                        <a href="#">Olga</a>, 35
+                    </div>
+                    <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                </div>
+
+                <div class="b-top100__leaderBoard_user">
+                    <div class="b-top100__leaderBoard_number">#5</div>
+                    <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                        <img src="../img/usr/100x100-2.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+
+                    </div>
+
+                    <div class="b-user__person b-top100__leaderBoard_user_person">
+                        <a href="#">Olga</a>, 35
+                    </div>
+                    <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                </div>
+
+                <!-- Добавляем класс dash__top100_currentUser -->
+                <div class="b-top100__leaderBoard_user dash__top100_currentUser">
+                    <div class="b-top100__leaderBoard_number">
+                        Your current rank <span class="dark">254</span>
+                    </div>
+                    <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                        <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+
+                    </div>
+
+                    <div class="b-top100__leaderBoard_user_points">
+                        <span class="dark">205</span> points
+                    </div>
+                </div>
+
+                <div class="std__justify_helper"></div>
+            </div><!-- /.b-top100__leaderBoard_list -->
+
+        </div><!-- /.dash__top100 -->
+
+        <!-- не участвует в топ-100 -->
+        <div class="std__block dash__top100">
+            <h2 class="b-std__header std__fs-smallH">TOP-100 current rating in United States</h2>
+
+            <div class="dash__top100_options">
+                <span class="dash__top100_options_item">Men</span>  <a class="dash__top100_options_item" href="#">Women</a>
+
+                <span class="dash__top100_note right">
+                    7 days left until the end of the voting
+
+                    <a class="button btn-s-3_2"><span>Increase your rating</span></a>
+                </span>
+            </div>
+
+            <div class="b-top100__leaderBoard_list">
+                <div class="b-top100__leaderBoard_user">
+                    <div class="b-top100__leaderBoard_number">#1</div>
+                    <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                        <img src="../img/usr/100x100.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+                        <span class="user__vipIcon"></span>
+                    </div>
+
+                    <div class="b-user__person b-top100__leaderBoard_user_person">
+                        <a href="#">Olga</a>, 35
+                    </div>
+                    <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                </div>
+
+                <div class="b-top100__leaderBoard_user">
+                    <div class="b-top100__leaderBoard_number">#2</div>
+                    <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                        <img src="../img/usr/100x100-2.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+
+                    </div>
+
+                    <div class="b-user__person b-top100__leaderBoard_user_person">
+                        <a href="#">Olga</a>, 35
+                    </div>
+                    <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                </div>
+
+                <div class="b-top100__leaderBoard_user">
+                    <div class="b-top100__leaderBoard_number">#3</div>
+                    <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                        <img src="../img/usr/100x100-3.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+
+                    </div>
+
+                    <div class="b-user__person b-top100__leaderBoard_user_person">
+                        <a href="#">Olga</a>, 35
+                    </div>
+                    <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                </div>
+
+                <div class="b-top100__leaderBoard_user">
+                    <div class="b-top100__leaderBoard_number">#4</div>
+                    <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                        <img src="../img/usr/100x100.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+                        <span class="user__vipIcon"></span>
+                    </div>
+
+                    <div class="b-user__person b-top100__leaderBoard_user_person">
+                        <a href="#">Olga</a>, 35
+                    </div>
+                    <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                </div>
+
+                <div class="b-top100__leaderBoard_user">
+                    <div class="b-top100__leaderBoard_number">#5</div>
+                    <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                        <img src="../img/usr/100x100-2.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+
+                    </div>
+
+                    <div class="b-user__person b-top100__leaderBoard_user_person">
+                        <a href="#">Olga</a>, 35
+                    </div>
+                    <div class="b-top100__leaderBoard_user_points">128032 points</div>
+                </div>
+
+                <!-- Добавляем класс dash__top100_currentUser -->
+                <div class="b-top100__leaderBoard_user dash__top100_currentUser">
+                    <div class="b-top100__leaderBoard_number">
+                        You don't take part  in <span class="dark-light">TOP-100</span>
+                    </div>
+                    <div class="b-user__photoFrame b-top100__leaderBoard_user_photoFrame">
+                        <img src="../img/usr/76x76-default.jpg" alt="" class="b-user__photoFrame_photo b-top100__leaderBoard_user_photo">
+
+                    </div>
+
+                    <div class="b-top100__leaderBoard_user_points">
+                        Become <span class="dark">№1</span>
+                    </div>
+                </div>
+
+                <div class="std__justify_helper"></div>
+            </div><!-- /.b-top100__leaderBoard_list -->
+
+        </div><!-- /.dash__top100 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</div><!-- /.content -->
+
+<!-- НАЧАЛО шаблонного Футера -->
+<div class="footer">
+    <div class="footer_inn">
+        <ul>
+            <li><a href="/page/about">About us</a></li>
+            <li><a href="/help">FAQ</a></li>
+            <li><a href="http://blog.yangutu.com/">Our blog</a></li>
+            <li><a href="/feedback">Contact us</a></li>
+        </ul>
+        <ul>
+            <li><a href="/page/policy">Privacy</a></li>
+            <li><a href="/page/terms">Terms of use</a></li>
+        </ul>
+        <ul>
+            <li><a href="/page/scams">Scam warning</a></li>
+            <li><a href="/page/safety">Safety Tips</a></li>
+        </ul>
+        <ul>
+            <li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+            <li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+            <li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+
+        </ul>
+        <ul>
+            <li><a href="/dating/all">People Directory</a></li>
+        </ul>
+        <div class="right">
+            <font color="black">&copy; 2010-2011 Yangutu Inc. All rights reserved</font><br>
+            <span>Yangutu (swahili) - My one and only.</span>
+        </div>
+        <div class="std__clear"></div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -22,16 +22,27 @@
 /** top100 widget **/
 .dash__top100 {}
     .dash__top100 .b-std__header{margin-bottom: 3px;}
-    .dash__top100_options {border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc; padding: 17px 0; margin-bottom: 8px;}
-        .dash__top100_options_item {margin-right: 10px; font-size: 14px; font-weight: bold; position: relative; top: -1px;}
+    .dash__top100_options {border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc; padding: 17px 0; margin-bottom: 7px;}
+        .dash__top100_options_item {margin-right: 10px; font-size: 14px; font-weight: bold; position: relative;}
         .dash__top100_note {vertical-align: top; position: relative; font-size: 14px; color: #666666; font-weight: bold;}
             .dash__top100_note .button {margin-left: 15px; top: -7px;}
             .dash__top100_note .link {margin-left: 15px; font-weight: normal;}
-    .dash__top100 .b-top100__leaderBoard_user {width: 104px;    }
+    .dash__top100 .b-top100__leaderBoard_user {width: 104px; vertical-align: top; margin-bottom: 0;}
         .dash__top100 .b-top100__leaderBoard_user_photo {width: 100px; height: 100px;}
         .dash__top100 .b-top100__leaderBoard_user_points,
         .dash__top100 .b-top100__leaderBoard_user_person {text-align: left;}
+        .dash__top100 .b-top100__leaderBoard_user_points {color: #666666; }
 
+.dash__top100_currentUser {position: relative; width: 102px!important; height: 164px; margin-left: 25px; background-color: #ecf4fb;
+                           text-align: center; border-bottom-right-radius: 4px; border-top-right-radius: 4px; top: 2px;}
+    .dash__top100_currentUser:before {content:''; width:0; height: 0; border: 82px solid transparent; border-right: 25px solid #ecf4fb; border-left: none;
+                                      position: absolute; left: -25px;}
+    .dash__top100_currentUser .b-top100__leaderBoard_number {font-size: 12px; padding: 10px 5px 2px; font-weight: normal; color: #666666;}
+    .dash__top100_currentUser .b-top100__leaderBoard_user_photo {width: 76px; height: 76px;}
+    .dash__top100_currentUser .dark {font-weight: bold; color: #333333;}
+    .dash__top100_currentUser .dark-light {font-weight: normal; color: #333333;}
+
+    .dash__top100_currentUser  .b-top100__leaderBoard_user_points {text-align: center;}
 /** Videobox widget **/
 .dash__video {padding-bottom: 0;}
     .dash__video .b-std__header {margin-bottom: 8px;}
