@@ -44,3 +44,5 @@
 .std__sideMenu {margin:0; padding: 0;}
     .std__sideMenu .menuTitle{font: bold 16px/16px 'PT Sans'; color: #666666; margin-top: 20px; margin-bottom: 10px;}
     .std__sideMenu .menuItem {margin-left: 10px; margin-bottom: 2px; font-size: 14px;}
+    
+.std__video_play {display: block; position: absolute; top: 32px; left: 57px; background: url(../img/video/play.png) no-repeat; width: 35px; height: 35px;}

@@ -49,7 +49,7 @@
 .dash__videoList {text-align: justify;}
     .dash__videoList_item {display: inline-block; width: 150px; font-size: 12px; text-align: left;}
         .dash__videoList_item .views {font-size: 10px; text-align: right; color: #666666; margin-bottom: 3px;}
-        .dash__videoList_item .videoLink {margin-bottom: 7px; display: inline-block}
+        .dash__videoList_item .videoLink {margin-bottom: 7px; display: inline-block; position: relative;}
                 .dash__videoList_item .videoLink img {width: 150px; height: 100px;}
             .dash__videoList_item img {margin-bottom: 3px;}
         .dash__videoList_item .videoDescription {color: #333333;}
