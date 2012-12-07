@@ -10,7 +10,7 @@
 }
 /** Colors **/
 @blueColor: #007ccf;
-@orangeColor: #dc7903;
+@orangeColor: #f03800;
 
 /** Fonts **/
 @basicFontSize: 12px;
@@ -21,6 +21,7 @@
 @headerFontFamily: bebas;
 
 .resetIndents {margin: 0; padding: 0;}
+
 /****************************
 ** Set up TYPOGRAFY style **
 ****************************/
@@ -43,12 +44,18 @@ a {
     }
 }
 
-h1, h2 {
+.slogan {
+  .typografy (60px, @headerFontFamily, #5d666d);
+  text-transform: uppercase;
+}
+
+h1, h2  {
   .typografy (@headerFontSize, @headerFontFamily, @blueColor);
   border-bottom: 1px solid  @blueColor;
   margin-bottom: 10px;
 
-  &.shiny {color: @orangeColor; border-bottom-color: @orangeColor;}
+    &.shiny {color: @orangeColor; border-bottom-color: @orangeColor;}
+    &.lazy {color: #254d67; border: none; margin-bottom: 15px;}
 }
 
 h3 {
@@ -64,18 +71,18 @@ p {padding-top: 3px;}
 }
 
 .listIndent {margin-top: 4px; margin-bottom: 4px;
-  li {margin-top: 2px}
+    li {margin-top: 2px}
 }
 ul {
   padding: 0;
   margin-left: 30px;
   .listIndent;
   list-style: disc outside;
-  li {
-    padding-left: 5px;
-  }
+    li {
+      padding-left: 5px;
+    }
 
-  &.unlabel{list-style: none;}
+    &.unlabel{list-style: none;}
 }
 
 ol {.listIndent; margin-left: 35px;}
@@ -122,4 +129,62 @@ ol {.listIndent; margin-left: 35px;}
 /*************
 *** Blocks ***
 *************/
+ /* Forms */
+.vertical-form {
+  width: 290px;
 
+    .form-item {
+      margin-bottom: 10px;
+      display: block;
+      .cell {
+        display: inline-block;
+        &.left  {text-align: left}
+        &.right {text-align: right}
+      }
+
+      input[type=text], input[type=email], input[type=password] {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 100%;
+        height: 34px;
+        .typografy (@basicFontSize + 2px, @basicFontFamily, @basicFontColor);
+        &:-moz-placeholder {color: #999999;}
+        &:-webkit-input-placeholder {color: #999999;}
+        line-height: 16px;
+        padding: 7px;
+        border: 1px solid #75b3dc;
+        border-radius: 2px;
+      }
+      .signIn {float: right;}
+
+      .forgot {color: #254d67; text-decoration: underline; display: inline-block; top: 4px; position: relative;
+        &:hover {text-decoration: none; }
+      }
+    }
+
+
+}
+/****************
+**** Buttons ****
+****************/
+.setBorderColor (@borderLeftRightColor, @borderTopColor, @borderBottomColor) {
+  border: 1px solid @borderLeftRightColor;
+  border-top-color: @borderTopColor;
+  border-bottom-color: @borderBottomColor;
+}
+.button {
+  @buttonHeight: 34px;
+  @buttonWidth: 116px;
+  padding: 0 20px;
+  height: @buttonHeight;
+  min-width: @buttonWidth;
+  text-align: center;
+  cursor: pointer;
+  background:#007dd1 url(../img/buttons.png) repeat-x;
+  .typografy(@basicFontSize + 4px, @basicFontFamily, #ffffff);
+  font-weight: bold;
+  text-shadow: 0px -1px 0 #0061a1;
+  box-sizing: border-box;
+  border-radius: 2px;
+  .setBorderColor (#007fd3, #80cdff, #002a47);
+}
