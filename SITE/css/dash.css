@@ -2,12 +2,12 @@
 .dash__user {display: block; overflow: hidden;}
     .dash__user .user__name {vertical-align: top; margin-top: 18px; display: inline-block; font-size: 14px;}
 
-.dash__main .btn-s-3 {padding-left: 13px; padding-right: 13px;}
 .dash__hOptions {font: 12px/12px Arial; color: #999999; }
         .dash__hOptions.right{ position: relative; top: 5px;}
     a.dash__hOptions {color: #4F6B8D;}
 .dash__main_header {margin-bottom:17px;}
     .dash__main_header .dash__hOptions{ margin-left: 10px; font-size: 14px;}
+    .dash__main_header .button { float: right; top: -6px;}
 
 /** Latests Widget **/
 .dash__latest {margin-top: 30px; overflow: hidden; padding: 10px 10px 0;}
