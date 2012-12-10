@@ -434,7 +434,7 @@ a.button.orange:hover {
     background: url(../img/clients.png) no-repeat;
 }
 .sysStats {
-    padding: 15px;
+    padding: 15px 15px 8px;
     background-color: #efefef;
     margin-bottom: 20px;
     margin-top: 20px;
