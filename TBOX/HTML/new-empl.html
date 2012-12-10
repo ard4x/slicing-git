@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>-= New Employee =-</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <!--link rel="shortcut icon" href="../assets/ico/favicon.ico"-->
+
+</head>
+
+<body cz-shortcut-listen="true">
+<!-- Navigation -->
+<!-- First navMenu -->
+<div class="navbar navbar-fixed-top nav_top-first">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+            <a class="brand" href="#">TBox</a>
+            <div class="nav-collapse collapse">
+                <ul class="nav pull-right">
+
+                    <li class="dropdown">
+
+                        <a  class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <img src="http://i.imgur.com/Asf2J.jpg" class="img-avatar">
+                            Ivan Pupkin <b class="caret"></b>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li class="nav-header">Nav header</li>
+                            <li><a href="#">Separated link</a></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+
+                    </li>
+                    <li>
+                        <a href="my-info.html">
+                            My info
+                        </a>
+                    </li>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            Account settings
+                        </a>
+                    </li>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            Sign out
+                        </a>
+                    </li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div>
+
+    </div>
+</div><!-- nav-bar first -->
+<!-- / first navMenu -->
+
+<!-- second navMenu -->
+<div class="navbar navbar-inverse navbar-fixed-top nav_top-second">
+    <div class="navbar-inner">
+        <div class="container">
+            <ul class="nav pull-left">
+                <li>
+                    <a href="timesheet.html">
+                        Timesheet
+                    </a>
+                </li>
+                <li>
+                    <a href="my-reports.html">
+                        My Reports
+                    </a>
+                </li>
+                <li>
+                    <a href="planning.html">
+                        Planning
+                    </a>
+                </li>
+                <li>
+                    <a href="people.html">
+                        People
+                    </a>
+                </li>
+            </ul>
+            <ul class="nav pull-right">
+                <li>
+                    <a href="manage-company.html">
+                        Manage Company
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div><!-- nav-bar second -->
+<!-- end second navMenu -->
+<!-- end Navigation -->
+
+<!-- PAGE -->
+<div class="container">
+<div class="page-header">
+    <h1>Add new employee</h1>
+</div>
+
+    <div class="row"><!-- page content -->
+        <div class="span offset2">
+            <form class="form-horizontal">
+
+                <div class="control-group">
+                    <label class="control-label">Email:</label>
+                    <div class="controls">
+                        <input type="email" class="span5">
+                        <span class="help-inline"></span>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">First Name:</label>
+                    <div class="controls">
+                        <input type="email" class="span5">
+                        <span class="help-inline"></span>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Last Name:</label>
+                    <div class="controls">
+                        <input type="email" class="span5">
+                        <span class="help-inline"></span>
+                    </div>
+                </div>
+
+                <div class="control-group newEmpl">
+                    <label class="control-label"> Birth Date:</label>
+                    <div class="controls">
+                        <select class="span2 month">
+                            <option>Month</option>
+                            <option>2</option>
+                            <option>33</option>
+                            <option>43</option>
+                            <option>54</option>
+                        </select>
+
+                        <select class="span2 day">
+                            <option>Day</option>
+                            <option>2</option>
+                            <option>33</option>
+                            <option>44</option>
+                            <option>55</option>
+                        </select>
+
+                        <select class="span2 Year">
+                            <option>Year</option>
+                            <option>1971</option>
+                            <option>1973</option>
+                            <option>1974</option>
+                            <option>1975</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Mobile phone:</label>
+                    <div class="controls">
+                        <input type="email" class="span5">
+                        <span class="help-inline"></span>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Skype:</label>
+                    <div class="controls">
+                        <input type="email" class="span5">
+                        <span class="help-inline"></span>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="control-group">
+                    <label class="control-label">Categories:</label>
+                    <div class="controls checkboxList">
+                        <div><a href="#" class="btn btn-link">All</a>|<a href="#" class="btn btn-link">None</a></div>
+                        <!-- checkboxes -->
+
+                        <label class="checkbox">
+                            <input name="optionsCheckboxList1" value="option1" type="checkbox">
+                            Category 1
+                        </label>
+
+                        <label class="checkbox" for="">
+                            <input name="optionsCheckboxList2" value="option2" type="checkbox">
+                            Category 2</label>
+                        <label class="checkbox" for="">
+                            <input name="optionsCheckboxList3" value="option3" type="checkbox">
+                            Category 3
+                        </label>
+
+                        <label class="checkbox" for="">
+                            <input name="optionsCheckboxList4" value="option4" type="checkbox">
+                            Category 4
+                        </label>
+
+                        <label class="checkbox" for="">
+                            <input name="optionsCheckboxList5" value="option5" type="checkbox">
+                            Category 5
+                        </label>
+
+                        <label class="checkbox" for="">
+                            <input name="optionsCheckboxList6" value="option6" type="checkbox">
+                            Category 6
+                        </label>
+
+                        <label class="checkbox" for="">
+                            <input name="optionsCheckboxList7" value="option7" type="checkbox">
+                            Category 7
+                        </label>
+
+                        <label class="checkbox" for="">
+                            <input name="optionsCheckboxList8" value="option8" type="checkbox">
+                            Category 8
+                        </label>
+
+                        <label class="checkbox" for="">
+                            <input name="optionsCheckboxList9" value="option9" type="checkbox">
+                            Category 9
+                        </label>
+
+                        <label class="checkbox" for="">
+                            <input name="optionsCheckboxList10" value="option10" type="checkbox">
+                            Category 10
+                        </label>
+
+                        <label class="checkbox" for="">
+                            <input name="optionsCheckboxList11" value="option11" type="checkbox">
+                            Category 11
+                        </label>
+
+
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label">Projects:</label>
+                    <div class="controls checkboxList">
+                        <div><a href="#" class="btn btn-link">All</a>|<a href="#" class="btn btn-link">None</a></div>
+                        <!-- checkboxes -->
+
+                        <label class="checkbox">
+                            <input name="optionsCheckboxList1" value="option1" type="checkbox">
+                            Project 1
+                        </label>
+
+                        <label class="checkbox" for="">
+                            <input name="optionsCheckboxList2" value="option2" type="checkbox">
+                            Project 2</label>
+                        <label class="checkbox" for="">
+                            <input name="optionsCheckboxList3" value="option3" type="checkbox">
+                            Project 3
+                        </label>
+
+                        <label class="checkbox" for="">
+                            <input name="optionsCheckboxList4" value="option4" type="checkbox">
+                            Project 4
+                        </label>
+
+                        <label class="checkbox" for="">
+                            <input name="optionsCheckboxList5" value="option5" type="checkbox">
+                            Project 5
+                        </label>
+
+                        <label class="checkbox" for="">
+                            <input name="optionsCheckboxList6" value="option6" type="checkbox">
+                            Project 6
+                        </label>
+
+                        <label class="checkbox" for="">
+                            <input name="optionsCheckboxList7" value="option7" type="checkbox">
+                            Project 7
+                        </label>
+
+                        <label class="checkbox" for="">
+                            <input name="optionsCheckboxList8" value="option8" type="checkbox">
+                            Project 8
+                        </label>
+
+                        <label class="checkbox" for="">
+                            <input name="optionsCheckboxList9" value="option9" type="checkbox">
+                            Project 9
+                        </label>
+
+                        <label class="checkbox" for="">
+                            <input name="optionsCheckboxList10" value="option10" type="checkbox">
+                            Project 10
+                        </label>
+
+                        <label class="checkbox" for="">
+                            <input name="optionsCheckboxList11" value="option11" type="checkbox">
+                            Project 11
+                        </label>
+
+
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <label class="control-label" for="permiss">Permissions:</label>
+                    <div class="controls">
+                        <select id="permiss">
+                            <option>Regular User</option>
+                            <option>Administrator</option>
+
+                        </select>
+                        <span class="help-inline">This person can track time</span>
+                    </div>
+                </div>
+
+                <div class="control-group">
+                    <div class="controls">
+                        <input class="btn btn-primary" type="submit" value="Create employee">
+
+                        <input class="btn btn-link" type="button" value="Cancel">
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div><!-- / page content -->
+
+</div> <!-- /container -->
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</body>
+
+</html>
