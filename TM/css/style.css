@@ -118,7 +118,9 @@ ol li {
 .menu {
     list-style: none;
     font-size: 12px;
-    position: relative;
+    position: absolute;
+    top: 0;
+    right: 0;
     overflow: hidden;
     display: block;
     margin: 0;
@@ -316,14 +318,10 @@ a.button.orange:hover {
 .top-head .statistic {
     color: #222222;
     display: inline-block;
-    width: 600px;
 }
 .top-head .statistic strong {
     color: #007ccf;
     font-weight: bold;
-}
-.top-head .menu {
-    float: right;
 }
 .sloganContainer {
     text-align: center;
@@ -467,12 +465,6 @@ a.button.orange:hover {
     font-size: 12px;
     color: #666666;
     line-height: 14px;
-}
-.footer .copy {
-    width: 600px;
-}
-.footer .menu {
-    float: right;
 }
 /** Unsorted **/
 .justify_helper {
