@@ -90,6 +90,22 @@ table.timeSheet-week input  {margin-bottom: 0;}
                 .taskList .task-item:hover .task-buttons{display:inline-block;}
      .cat-item .well {display: none; padding-bottom: 9px;}
         .cat-item .well .radio.inline {margin-right: 15px;}
+
+
+.people_opt {overflow: hidden; list-style: none; margin: 15px 0;}
+    .people_opt li {float: left; margin: 0; padding-top: 5px;}
+    .people_opt .delim {margin: 0 15px; font-size: 20px;}
+    .people_opt  label {float: left; margin-right: 10px}
+    .people_opt select {margin-top: -5px;}
+
+.emlpList {}
+.user {margin-bottom: 25px;}
+    .user_pic {float: left;}
+    .user_detail{margin-left: 66px;}
+        .user_name {font-size: 16px;}
+        .user_prof {font-size: 12px;}
+        .user_contacts {list-style: none; margin-left: 0;}
+
     
     
     
