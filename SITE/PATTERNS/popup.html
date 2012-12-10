@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Popup</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../css/btns.css">
+    <link rel="stylesheet" href="../css/pop.css">
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'})
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+</head>
+<body>
+
+<div class="pop__layer">
+
+    <div class="pop__window">
+        <!-- popup`s content -->
+
+        <!-- /.popup`s content -->
+        <a href="javascript:void(0);" class="pop__close"></a>
+    </div><!-- /.pop__window -->
+
+</div><!-- /.pop__layer -->
+
+
+
+</body>
+</html>

@@ -1,5 +1,5 @@
 /* Стандартные (Глобальные) элементы */
-.l-std__conent {float: left; margin-right: 17px; position: relative;}
+.l-std__content {float: left; margin-right: 17px; position: relative;}
     /** headers styles ***/
 .b-std__header {font-family: 'PT Sans'; font-weight: bold; color: #333333; margin:0; margin-bottom: 15px;}
 .std__fs-mainH {font-size: 24px; line-height: 24px;}
