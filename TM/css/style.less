@@ -103,7 +103,9 @@ ol {.listIndent; margin-left: 35px;}
 .menu {
   list-style: none;
   font-size: @basicFontSize;
-  position: relative;
+  position: absolute;
+  top: 0;
+  right: 0;
   overflow: hidden;
   display: block;
   .resetIndents;
@@ -273,11 +275,11 @@ ol {.listIndent; margin-left: 35px;}
   border-bottom: 1px solid #cccccc;
 
 
-  .statistic { color: #222222; display: inline-block; width: 600px;
+  .statistic { color: #222222; display: inline-block;
       strong { color: @blueColor; font-weight: bold; }
   }
 
-  .menu {float: right;}
+
 }
 
 .sloganContainer {
@@ -410,8 +412,8 @@ ol {.listIndent; margin-left: 35px;}
   margin-bottom: 0;
   .typografy (@basicFontSize, @basicFontFamily, #666666);
 
-    .copy {width: 600px;}
-    .menu {float: right;}
+    .copy {}
+
 }
 /** Unsorted **/
 .justify_helper { width: 100%;
