@@ -1,0 +1,305 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Barrier</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../css/btns.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/pop.css">
+    <link rel="stylesheet" href="../css/steps.css">
+    <link rel="stylesheet" href="../css/user.css">
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'})
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+</head>
+<body>
+
+<div class="pop__layer">
+
+<div class="pop__window pop__barrier">
+<!-- popup`s content-steps -->
+<h1 class="b-std__header std__fs-mainH">Fill in your profile and upload photo to continue</h1>
+
+<!-- To display errors add class "err" to needed fields and remove class "hide" from related .errMsg -->
+
+<div class="pop__barrier_photo">
+    <div class="b-user__photoFrame err"><!-- added class err -->
+        <img class="b-user__photoFrame_photo" src="../img/usr/116x156.jpg" alt="">
+    </div>
+
+    <a class="button btn-m-7" href="#"><span>Choose a file...</span></a>
+
+    <div class="errMsg">    <!-- пример Скрытия вывода ошибки -->
+        Photo is required
+    </div>
+
+</div><!-- /.pop__barrier_photo -->
+
+<div class="pop__barrier_formHolder">
+
+<form action="#" name="form" id="required-info" class="form">
+
+<div class="formRow">
+    <div class="label">Relationship status:</div>
+    <div class="content-steps">
+        <div class="flWidth100 err">
+            <select id="sel-3" class="sSelect">    <!-- пример вывода ошибки -->
+                <option selected="selected">Please select</option>
+                <option>Value 1</option>
+                <option>Value 2</option>
+                <option>Value 3</option>
+            </select>
+        </div>
+    </div>
+    <div class="errMsg">              <!-- пример вывода ошибки -->
+        Required field
+    </div>
+    <div class="okMsg hide"></div>
+</div> <!-- /.formRow -->
+
+<div class="formRow">
+    <div class="label">Age of partner:</div>
+    <div class="content-steps">
+        <div class="shortField err">
+            <select id="sel-4" class="sSelect">
+                <option selected="selected">From</option>
+                <option>Value 1</option>
+                <option>Value 2</option>
+                <option>Value 3</option>
+            </select>
+        </div>
+        <span class="div">&ndash;</span>
+        <div class="shortField err">
+            <select id="sel-5" class="sSelect">
+                <option selected="selected">To</option>
+                <option>Value 1</option>
+                <option>Value 2</option>
+                <option>Value 3</option>
+            </select>
+        </div>
+        <div class="tips">
+            Choose desired age of partner you are looking for
+        </div>
+    </div>
+    <div class="errMsg">
+        Required field
+    </div>
+    <div class="okMsg hide"></div>
+</div> <!-- /.formRow -->
+
+<div class="formRow">
+    <div class="label">Education:</div>
+    <div class="content-steps">
+        <div class="flWidth100 err">
+            <select id="sel-6" class="sSelect">
+                <option selected="selected">Select</option>
+                <option>Value 1</option>
+                <option>Value 2</option>
+                <option>Value 3</option>
+            </select>
+        </div>
+    </div>
+    <div class="errMsg">
+        Required field
+    </div>
+    <div class="okMsg hide"></div>
+</div> <!-- /.formRow -->
+
+<div class="formRow">
+    <div class="label">Ethnicity:</div>
+    <div class="content-steps err">
+        <div class="flWidth100">
+            <select id="sel-7" class="sSelect">
+                <option selected="selected">Select</option>
+                <option>Value 1</option>
+                <option>Value 2</option>
+                <option>Value 3</option>
+            </select>
+        </div>
+    </div>
+    <div class="errMsg">
+        Required field
+    </div>
+    <div class="okMsg hide"></div>
+</div> <!-- /.formRow -->
+
+<div class="formRow">
+    <div class="label">Occupation:</div>
+    <div class="content-steps">
+        <div class="flWidth100 err">
+            <select id="sel-8" class="sSelect">
+                <option selected="selected">Select</option>
+                <option>Value 1</option>
+                <option>Value 2</option>
+                <option>Value 3</option>
+            </select>
+        </div>
+    </div>
+    <div class="errMsg">
+        Required field
+    </div>
+    <div class="okMsg hide"></div>
+</div> <!-- /.formRow -->
+
+<div class="formRow">
+    <div class="label">Religion:</div>
+    <div class="content-steps">
+        <div class="flWidth100 err">
+            <select id="sel-9" class="sSelect">
+                <option selected="selected">Select</option>
+                <option>Value 1</option>
+                <option>Value 2</option>
+                <option>Value 3</option>
+            </select>
+        </div>
+    </div>
+    <div class="errMsg">
+        Required field
+    </div>
+    <div class="okMsg hide"></div>
+</div> <!-- /.formRow -->
+
+<div class="formRow">
+    <div class="label">Do you have kids:</div>
+    <div class="content-steps">
+        <input type="radio" id="rad-1" name="kids">
+        <label for="rad-1">Yes</label>
+        <input type="radio" id="rad-2" name="kids">
+        <label for="rad-2">No</label>
+    </div>
+
+    <div class="errMsg">
+        Required field
+    </div>
+    <div class="okMsg hide"></div>
+</div> <!-- /.formRow -->
+
+<div class="formRow">
+    <div class="label">Smokes:</div>
+    <div class="content-steps">
+        <div class="flWidth100 err">
+            <select id="sel-10" class="sSelect">
+                <option selected="selected">Select</option>
+                <option>Value 1</option>
+                <option>Value 2</option>
+                <option>Value 3</option>
+            </select>
+        </div>
+    </div>
+    <div class="errMsg">
+        Required field
+    </div>
+    <div class="okMsg hide"></div>
+</div> <!-- /.formRow -->
+
+<div class="formRow">
+    <div class="label">Height:</div>
+    <div class="content-steps">
+        <div class="shortField margR10 err">
+            <select id="sel-11" class="sSelect">
+                <option selected="selected">Select</option>
+                <option>Value 1</option>
+                <option>Value 2</option>
+                <option>Value 3</option>
+            </select>
+        </div>
+        <a href="javascript:void(0);" class="centim">Centimetres</a>
+    </div>
+    <div class="errMsg">
+        Required field
+    </div>
+    <div class="okMsg hide"></div>
+</div> <!-- /.formRow -->
+
+<div class="formRow">
+    <div class="label">Eye color:</div>
+    <div class="content-steps">
+        <div class="flWidth100 err">
+            <select id="sel-12" class="sSelect">
+                <option selected="selected">Select</option>
+                <option>Value 1</option>
+                <option>Value 2</option>
+                <option>Value 3</option>
+            </select>
+        </div>
+    </div>
+    <div class="errMsg">
+        Required field
+    </div>
+    <div class="okMsg hide"></div>
+</div> <!-- /.formRow -->
+
+<div class="formRow">
+    <div class="label">Hair color:</div>
+    <div class="content-steps">
+        <div class="flWidth100 err">
+            <select id="sel-13" class="sSelect">
+                <option selected="selected">Select</option>
+                <option>Value 1</option>
+                <option>Value 2</option>
+                <option>Value 3</option>
+            </select>
+        </div>
+    </div>
+    <div class="errMsg">
+        Required field
+    </div>
+    <div class="okMsg hide"></div>
+</div> <!-- /.formRow -->
+
+<div class="formRow">
+    <div class="label">Body type:</div>
+    <div class="content-steps err">
+        <div class="flWidth100">
+            <select id="sel-14" class="sSelect">
+                <option selected="selected">Select</option>
+                <option>Value 1</option>
+                <option>Value 2</option>
+                <option>Value 3</option>
+            </select>
+        </div>
+    </div>
+    <div class="errMsg">
+        Required field
+    </div>
+    <div class="okMsg hide"></div>
+</div> <!-- /.formRow -->
+
+<a class="btn-s-1 btn-cont"><span>Save and Continue</span></a>
+
+<a href="#" class="btn-skip">Skip it for now</a>
+
+</form>
+
+</div><!-- /.pop__barrier_formHolder -->
+
+
+<!-- /.popup`s content-steps -->
+<a href="javascript:void(0);" class="pop__close"></a>
+</div><!-- /.pop__window -->
+
+</div><!-- /.pop__layer -->
+
+
+
+</body>
+</html>

@@ -26,3 +26,17 @@
 
     .pop__dash .labe {font-size: 12px; color: #436187; display: inline-block; background-color: #dee7f8; border: 1px solid #cad8f3;
                       border-radius: 2px; padding: 2px 9px 4px 9px; margin-right: 6px;}
+
+/** Barrier popup **/
+
+.pop__barrier {width: 800px; padding: 15px;}
+    .pop__barrier .b-std__header {color: #444444; margin: 0; margin-bottom: 20px; margin-top: -3px; padding-bottom: 6px; border-bottom: 1px solid #cccccc;}
+    .pop__barrier_photo .errMsg {background: none; width: auto; position: relative; padding: 0; top: auto; right: auto;}
+
+    .pop__barrier_photo {width: 142px; float: left; text-align: center; position: relative;}
+        .pop__barrier_photo .button {width: 120px; margin-bottom: 10px;}
+    .pop__barrier_photo .b-user__photoFrame_photo {width: 116px; height: 156px;}
+    .pop__barrier_formHolder {margin-left: 160px;}
+    .pop__barrier .btn-cont {width: 165px; margin-left: 140px; margin-right: 40px;}
+    .b-user__photoFrame.err {background-color: #900;}
+
