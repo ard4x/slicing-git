@@ -181,21 +181,25 @@ a.btn-a-6:active {background-position: 0 -464px;  border-color: #496a94; border-
     .b-btn__slider_item__last{border-top-right-radius: 4px; border-bottom-right-radius: 4px;}
         .b-btn__slider_bubble {display: block; border-radius: 11px; border: solid 1px #99373e; background-color: #c81e1e; width: 22px; height: 22px; position: absolute; top: -13px; right: 10px; text-align: center;}
             .b-btn__slider_bubble_number {font: 12px Arial; color: #fff; display: inline-block;  margin-top: 3px;}
-            
+
 /*** PAGINATION **/
-.btn__paging {}        
-    .btn__paging-item {display: inline-block; margin-right: 3px; height: 18px; padding-top: 4px; background: 0 -946px url(../img/btns.png) repeat-x; border: solid 1px #cbcbcb; 
-                        border-radius: 3px; width: 23px; text-align: center; font: 12px Arial; color: #525252;  text-decoration: none; padding-top: 3px; cursor: pointer;}
+.btn__paging {font-size:0;}
+.btn__paging-item {display: inline-block; margin: 0!important; margin-right: 3px!important; height: 24px; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0; background: 0 -946px url(../img/btns.png) repeat-x; border: solid 1px #cbcbcb;
+    border-radius: 3px; width: 23px; text-align: center; font: 12px Arial !important; color: #525252;  text-decoration: none; cursor: pointer;}
     .btn__paging-item:hover{background-position: 0 -968px; color: #525252;  text-decoration: none;}
     .btn__paging-item:active{background-position: 0 -990px; color: #525252;  text-decoration: none;}
-    .btn__paging-item a {color: #525252;  text-decoration: none;}
-    .btn__paging-item__current a {color:#fafafa;}
-    .btn__paging-item__disabled a {color: #CBCBCB;}
-    .btn__paging-item__current, .btn__paging-item__current:hover, .btn__paging-item__current:active {background-position: 0 -1012px; color:#fafafa; text-shadow: 0 1px 0 #454545; cursor: default; text-decoration: none;}
-    .btn__paging-item__disabled, .btn__paging-item__disabled:hover, .btn__paging-item__disabled:active{cursor: default; color: #CBCBCB; background-position: 0 -990px; text-decoration: none;}
-        .btn__paging-prew {padding-left: 7px; padding-right: 7px; width: auto; margin-right: 5px;}
-        .btn__paging-page {}
-        .btn__paging-next {padding-left: 7px; padding-right: 7px; width: auto; margin-left: 3px; margin-right: 0;}
+    .btn__paging-item a {color: #525252 !important;  text-decoration: none; padding-top: 4px!important; display: inline-block; height: 22px; -moz-box-sizing: border-box; box-sizing: border-box; width: 100%;}
+    .btn__paging-item__current a {color:#fafafa !important;}
+    .btn__paging-item__disabled a {color: #CBCBCB !important;}
+    .btn__paging-item__current, .btn__paging-item__current:hover, .btn__paging-item__current:active, .btn__paging-item__current a {background-position: 0 -1012px; color:#fafafa; text-shadow: 0 1px 0 #454545; cursor: default; text-decoration: none;}
+    .btn__paging-item__disabled, .btn__paging-item__disabled:hover, .btn__paging-item__disabled:active, .btn__paging-item__disabled a{cursor: default; color: #CBCBCB; background-position: 0 -990px; text-decoration: none;}
+    .btn__paging-prew {padding-left: 7px!important; padding-right: 7px!important; width: auto; margin-right: 6px!important;}
+    .btn__paging-page {}
+    .btn__paging-next {padding-left: 7px!important; padding-right: 7px!important; width: auto; margin-left: 3px!important; margin-right: 0!important;}
+/* old style hack*/
+    li.btn__paging-item {float: none !important;}
+    li.btn__paging-item a {background: none !important;  text-shadow: none !important; display: inline-block;}
+    li.btn__paging-item a span {background: none !important; padding: 0 !important; display: inline; line-height: 12px!important;}
         
 /* Blue small-2 button */     
 .btn-s2-1 {display: table-cell; height: 25px; text-align: center; background: 0 -1370px url(../img/btns.png) repeat-x; color: white; font: bold 14px Arial; 
@@ -203,4 +207,17 @@ vertical-align: middle; border: solid 1px #496A93; border-top-color: #3A639A; bo
 cursor: pointer; text-shadow: #364F6D 0 1px 1px; text-decoration: none; }
     .btn-s2-1:hover {background-position: 0 -1395px; border-color: #5177a5; border-top-color: #3a639a;  border-bottom-color: #3f5d81;}
     .btn-s2-1:active {background-position: 0 -1420px;  border-color: #486992; border-top-color: #2f4f7b;  border-bottom-color: #3f5d81; box-shadow: none;}
-            
+
+/** Favorites button **/
+.btn-favorite {}
+    .favo-link, .favo-count {box-sizing: border-box; -moz-box-sizing: border-box; height: 20px; background: url(../img/btns.png) repeat-x; background-position: 0 -1685px; text-align: center; position: relative;
+            color: #525252; border: 1px solid #cbcbcb; border-radius: 2px; font: 11px Arial; text-decoration: none; padding: 0 13px; display: inline-block; padding-top: 2px; vertical-align: baseline;}
+    .favo-count {padding-left: 8px; padding-right: 8px; background: none; background-color: #ffffff; margin-left: 5px;}
+        .favo-count:before {content: ''; height: 4px; width: 4px; background-color: #ffffff; border: 1px solid #cbcbcb; display: block; border-top-color: transparent; border-right-color: transparent;
+            -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -webkit-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);
+            position: absolute; top: 6px; left: -3px; }
+    .favo-link:hover {color: #525252; text-decoration: none; background-position: 0 -1703px;}
+    .favo-link:active {color: #525252; text-decoration: none; background-position: 0 -1721px;}
+/** icons **/
+i.icon {background: url(../img/button-icos.png) no-repeat; display: inline-block;}
+i.icon.icon-eye{background-position: -13px -369px; width: 16px; height: 8px;}

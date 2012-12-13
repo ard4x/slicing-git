@@ -1,12 +1,12 @@
 .pop__layer {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url(../img/opacity.png) repeat; z-index: 999;}
-.pop__close {display:block; width: 9px; height: 9px; background: url(../img/close_pop.png) no-repeat; position: absolute; top: 10px; right: 10px;}
+.pop__close {display:block; width: 9px; height: 9px; background: url(../img/close_pop.png) no-repeat; position: absolute; top: 15px; right: 15px;}
 .pop__window {box-sizing: border-box; -moz-box-sizing: border-box; width: 600px; padding: 25px; border: solid 5px #ecf4fb;
               position: relative; margin: 150px auto 0 auto; background-color: #ffffff; overflow: hidden;}
 
 /** Dashboard popups **/
 
 .pop__dash {padding: 15px 15px 34px;}
-    .pop__dash .b-std__header {color: #444444; margin: 0; margin-top: -3px; padding-bottom: 6px; border-bottom: 1px solid #cccccc;}
+    .pop__dash .b-std__header {margin: 0; margin-top: -3px; padding-bottom: 6px; border-bottom: 1px solid #cccccc;}
     .pop__dash_message {margin: 18px 0 20px; font-size: 14px; color: #333333;}
         .pop__dash_message a {font-weight: bold; }
     .pop__dash .b-user__photoFrame {float: left;}
@@ -30,7 +30,7 @@
 /** Barrier popup **/
 
 .pop__barrier {width: 800px; padding: 15px;}
-    .pop__barrier .b-std__header {color: #444444; margin: 0; margin-bottom: 20px; margin-top: -3px; padding-bottom: 6px; border-bottom: 1px solid #cccccc;}
+    .pop__barrier .b-std__header {margin: 0; margin-bottom: 20px; margin-top: -3px; padding-bottom: 6px; border-bottom: 1px solid #cccccc;}
     .pop__barrier_photo .errMsg {background: none; width: auto; position: relative; padding: 0; top: auto; right: auto;}
 
     .pop__barrier_photo {width: 142px; float: left; text-align: center; position: relative;}
@@ -39,4 +39,21 @@
     .pop__barrier_formHolder {margin-left: 160px;}
     .pop__barrier .btn-cont {width: 165px; margin-left: 140px; margin-right: 40px;}
     .b-user__photoFrame.err {background-color: #900;}
+
+/** VideoBox popup **/
+.pop__video {width: 810px; height: 394px; padding: 15px;}
+    .pop__video>.b-std__header {margin: 0; margin-bottom: 10px; margin-top: -3px; padding-bottom: 6px; border-bottom: 1px solid #cccccc;}
+        .pop__video>.b-std__header .counter {font: 14px Arial; color: #999999; margin-left: 9px;}
+        .pop__video_bottom { position: absolute; bottom: 10px; height: 44px; width: 770px; border-top: 1px solid #cccccc; }
+            .pop__video_paging { top: 15px; right: 0; position: absolute;}
+    .pop__video_userList {margin-left: -10px; width: 780px; font-size: 0;}
+        .pop__video_userList_item {width: 185px; height: 82px; margin: 0 0 10px 10px; display: inline-block;}
+            .pop__video_userList_item .pop__video_userList_photo {width: 80px; float: left;}
+                .pop__video_userList_item .b-user__photoFrame_photo {width: 76px; height: 76px;}
+            .pop__video_userList_item .pop__video_userList_description {margin-left: 89px; padding-top: 1px;}
+                .pop__video_userList_item .b-user__person {text-align: left; font-size: 14px; margin-bottom: 3px;}
+                .pop__video_userList_item .user__location {text-align: left; font-size: 10px; }
+
+
+
 

@@ -1,0 +1,217 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>VideoBox</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../css/btns.css">
+    <link rel="stylesheet" href="../css/pop.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/video.css">
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'})
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+</head>
+<body>
+
+<h2>Favorites button & Views</h2>
+
+<span class="btn-favorite">
+    <a class="favo-link" href="#">Add to favorites</a><span class="favo-count">0</span>
+</span> <span class="video__views"><i class="icon icon-eye"></i>1,456</span>
+
+<h2>Tags</h2>
+<div class="video__tagList">
+    <a href="#" class="video__tag">Accidents</a> <a href="#" class="video__tag">Sharks</a>
+    <a href="#" class="video__tag">Accidents</a> <a href="#" class="video__tag">Sharks</a>
+    <a href="#" class="video__tag">Accidents</a> <a href="#" class="video__tag">Sharks</a>
+    <a href="#" class="video__tag">Accidents</a> <a href="#" class="video__tag">Sharks</a>
+</div><!-- /.video__tagList -->
+
+<div class="video__addedToFavo">
+    <h2 class="std__fs-smallH b-std__header">
+        Added video to favorites
+        <a class="video__addedToFavo_viewAll" href="#">View all</a>
+    </h2>
+
+    <ul class="video__addedUserList">
+        <li class="video__addedUserList_item">
+            <div class="video__addedUserList_user">
+                <div class="b-user__photoFrame">
+                    <img src="../img/usr/100x100.jpg" alt="" class="b-user__photoFrame_photo">
+                </div>
+
+                <div class="b-user__person">
+                    <a href="#">Olga</a>, 35
+                </div>
+
+                <div class="user__location">
+                    Saint Petersburg, <br>
+                    Russia
+                </div>
+            </div><!-- /.video__addedUserList_user -->
+        </li>
+
+        <li class="video__addedUserList_item">
+            <div class="video__addedUserList_user">
+                <div class="b-user__photoFrame">
+                    <img src="../img/usr/100x100.jpg" alt="" class="b-user__photoFrame_photo">
+                </div>
+
+                <div class="b-user__person">
+                    <a href="#">Olga</a>, 35
+                </div>
+
+                <div class="user__location">
+                    Saint Petersburg, <br>
+                    Russia
+                </div>
+            </div><!-- /.video__addedUserList_user -->
+        </li>
+
+        <li class="video__addedUserList_item">
+            <div class="video__addedUserList_user">
+                <div class="b-user__photoFrame">
+                    <img src="../img/usr/100x100.jpg" alt="" class="b-user__photoFrame_photo">
+                </div>
+
+                <div class="b-user__person">
+                    <a href="#">Olga</a>, 35
+                </div>
+
+                <div class="user__location">
+                    Saint Petersburg, <br>
+                    Russia
+                </div>
+            </div><!-- /.video__addedUserList_user -->
+        </li>
+
+        <li class="video__addedUserList_item">
+            <div class="video__addedUserList_user">
+                <div class="b-user__photoFrame">
+                    <img src="../img/usr/100x100.jpg" alt="" class="b-user__photoFrame_photo">
+                </div>
+
+                <div class="b-user__person">
+                    <a href="#">Olga</a>, 35
+                </div>
+
+                <div class="user__location">
+                    Saint Petersburg, <br>
+                    Russia
+                </div>
+            </div><!-- /.video__addedUserList_user -->
+        </li>
+
+        <li class="video__addedUserList_item">
+            <div class="video__addedUserList_user">
+                <div class="b-user__photoFrame">
+                    <img src="../img/usr/100x100.jpg" alt="" class="b-user__photoFrame_photo">
+                </div>
+
+                <div class="b-user__person">
+                    <a href="#">Olga</a>, 35
+                </div>
+
+                <div class="user__location">
+                    Saint Petersburg, <br>
+                    Russia
+                </div>
+            </div><!-- /.video__addedUserList_user -->
+        </li>
+
+        <li class="video__addedUserList_item">
+            <div class="video__addedUserList_user">
+                <div class="b-user__photoFrame">
+                    <img src="../img/usr/100x100.jpg" alt="" class="b-user__photoFrame_photo">
+                </div>
+
+                <div class="b-user__person">
+                    <a href="#">Olga</a>, 35
+                </div>
+
+                <div class="user__location">
+                    Saint Petersburg, <br>
+                    Russia
+                </div>
+            </div><!-- /.video__addedUserList_user -->
+        </li>
+
+        <li class="video__addedUserList_item">
+            <div class="video__addedUserList_user">
+                <div class="b-user__photoFrame">
+                    <img src="../img/usr/100x100.jpg" alt="" class="b-user__photoFrame_photo">
+                </div>
+
+                <div class="b-user__person">
+                    <a href="#">Olga</a>, 35
+                </div>
+
+                <div class="user__location">
+                    Saint Petersburg, <br>
+                    Russia
+                </div>
+            </div><!-- /.video__addedUserList_user -->
+        </li>
+
+        <li class="video__addedUserList_item">
+            <div class="video__addedUserList_user">
+                <div class="b-user__photoFrame">
+                    <img src="../img/usr/100x100.jpg" alt="" class="b-user__photoFrame_photo">
+                </div>
+
+                <div class="b-user__person">
+                    <a href="#">Olga</a>, 35
+                </div>
+
+                <div class="user__location">
+                    Saint Petersburg, <br>
+                    Russia
+                </div>
+            </div><!-- /.video__addedUserList_user -->
+        </li>
+
+        <li class="video__addedUserList_item">
+            <div class="video__addedUserList_user">
+                <div class="b-user__photoFrame">
+                    <img src="../img/usr/100x100.jpg" alt="" class="b-user__photoFrame_photo">
+                </div>
+
+                <div class="b-user__person">
+                    <a href="#">Olga</a>, 35
+                </div>
+
+                <div class="user__location">
+                    Saint Petersburg, <br>
+                    Russia
+                </div>
+            </div><!-- /.video__addedUserList_user -->
+        </li>
+
+        <li class="std__clear"></li>
+    </ul>
+
+
+
+</div><!-- /.video__tagList -->
+</body>
+</html>
