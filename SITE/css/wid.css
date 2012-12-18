@@ -49,3 +49,14 @@
         .wid__userList_item .b-user__person {font-size: 14px; text-align: left; display: inline-block; margin-bottom: 2px;}
         .wid__userList_item .user__location {font-size: 11px;}
         .wid__userList_item .user__descript {font-size: 12px;}
+
+    /**** After Video ****/
+.wid__videoAfter {box-sizing: border-box; -moz-box-sizing: border-box; background-color: #e7f0f5; width: 560px; height: 400px; padding: 5px;}
+    .wid__videoAfter .b-std__header{ margin: 13px 0 13px 15px;}
+    .wid__wideoAfter_list {background-color: #fff; padding: 19px 15px 17px;}
+        .wid__videoAfter .srch__userList_user{}
+        .wid__videoAfter .b-user__photoFrame_photo {width: 76px; height: 76px;}
+        .wid__videoAfter .b-user__person {font-size: 12px; text-align: left; margin-bottom: 3px;}
+        .wid__videoAfter .user__location {font-size: 10px; text-align: left; margin-bottom: 15px;}
+        .wid__videoAfter .user__options  {font-size: 10px; text-align: left; }
+        .wid__videoAfter .srch__userList_user {padding: 10px 9px 11px; width: 160px;}
