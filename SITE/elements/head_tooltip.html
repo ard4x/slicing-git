@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Tooltip
+    </title>
+    <link rel="stylesheet" href="../css/user.css" type="text/css" />
+
+    <script type="text/javascript" src="../js/jquery.js"></script>
+
+
+</head>
+<body>
+<script>
+
+
+    $('#orrBtn').live('click', function(){
+        $(this).children('.or_dropDown').slideDown('fast');
+        $(document).bind('click',
+                function (){$("#orrBtn").children(".or_dropDown").hide();}
+        );
+        return false;
+    });
+
+</script>
+
+<style>
+
+    .wid__dropDown {top: 25px;  position: absolute; width: 240px; background: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.5); padding:5px 0; z-index: 10; }
+        .wid__dropDown li {list-style: none; margin: 0; padding:0; display: block; width: 100%;}
+        .wid__dropDown li a{padding: 4px 15px; display: block; font: 12px Arial; color:#4F6B8D; text-decoration: none;}
+        .wid__dropDown li a:hover{background-color:#4F6B8D; color: #fff; text-decoration: none;}
+        .wid__dropDown .wid__dropDown-top {width: 21px; height: 10px; position: absolute; top: -10px; right: 25px; background: url(../img/button-icos.png) no-repeat 0 -354px;}
+        .wid__dropDown .delimit {border-bottom: solid 1px #DCE1E8; margin-bottom: 7px;  padding-bottom: 7px;}
+        .wid__dropDown .wid__dropDown-user {padding-top: 7px; padding-bottom: 15px; overflow: hidden}
+        .wid__dropDown .b-user__photoFrame {float: left; margin: 0 10px 0 15px;}
+        .wid__dropDown .b-user__person, .wid__dropDown .b-user__person a { background: none; padding: 0; color: #494949; text-decoration: none; font-size: 14px; font-weight: bold; display: inline;}
+        .wid__dropDown .b-user__person {display: block; text-align: left;}
+        .wid__dropDown .b-user__person a:hover {background: none; color:#494949; text-decoration: underline; }
+        .wid__dropDown .user__location {font-family: arial, sans-serif; font-size: 12px; color: #010101; }
+    .wid__dropDown.profile {top: 250px; width: 140px}
+</style>
+
+
+<ul class="wid__dropDown">
+    <li class="wid__dropDown-top"></li>
+    <li class="wid__dropDown-user">
+        <span class="b-user__photoFrame">
+            <img src="../img/usr/image1.jpg" alt="Somebody">
+        </span>
+        <span class="b-user__person">
+            <a href="#">Somebody</a>, 38
+        </span>
+        <span class="user__location">
+            Minsk, Belarus
+        </span>
+    </li>
+    <li>
+        <a href="#">
+            1111111
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            2222222
+        </a>
+    </li>
+    <li class="delimit"></li>
+    <li>
+        <a href="#">
+            3333333
+        </a>
+    </li>
+
+</ul>
+
+
+<br><br><br>
+
+<ul class="wid__dropDown profile">
+    <li class="wid__dropDown-top"></li>
+
+    <li>
+        <a href="#">
+            1111111
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            2222222
+        </a>
+    </li>
+    <li class="delimit"></li>
+    <li>
+        <a href="#">
+            3333333
+        </a>
+    </li>
+
+</ul>
+
+
+
+</body>
+</html>
