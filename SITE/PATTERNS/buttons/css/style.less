@@ -62,7 +62,7 @@
   text-align: center;
   &:hover {text-decoration: none; color: #fff;}
 // _ Text settings
-  padding: 7px 17px 0;
+  padding: 6px 17px 0;
   border: 1px solid;
   .buttonColors();
   .buttonBg();
@@ -298,9 +298,33 @@
       }
     }
 
+    &.big {
+      padding-left: 45px; padding-right: 9px;
+      i.icon {
+        background-position: 0 @btnBgPosY;
+        height: 39px;
+        width: 41px;
+      }
+    }
+
+
   }
   &.facebook {
     .iconedButton();
+  }
+
+  &.message {
+    .iconedButton(-260px);
+
+  }
+
+  &.wink {
+    .iconedButton(-299px);
+
+  }
+
+  &.gift {
+    .iconedButton(-338px);
 
   }
 
