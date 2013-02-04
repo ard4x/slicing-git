@@ -35,6 +35,12 @@
   &:hover{background-position: 0 (@btnBgPositionY - (@btnHeight - 2)); }
   &:active{background-position: 0 (@btnBgPositionY - (@btnHeight - 2) * 2); }
 
+  &.round{
+    border-radius: @btnHeight/2;
+    width: @btnHeight;
+    overflow: hidden;
+    padding: 0;
+  }
 }
 
 // /set background
@@ -124,6 +130,7 @@
     color: #525252;
     text-shadow: #fff 0 1px 2px;
     box-shadow: 0 1px 2px #b3b3b3;
+
   }
 
   &.disabled {
@@ -372,14 +379,12 @@
     }
   }
 
-
 }
 
 // FUNCTIONAL buttons
 
 .slider {
   width: 100%;
-  height: 29px;
   display: table;
   border: solid 1px #cbcbcb;
   border-radius: 4px;
@@ -389,8 +394,12 @@
   position: relative;
 
   .slider-item {
-
-    display: table-cell;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 29px;
+    padding: 7px;
     width: 25%;
     vertical-align: middle;
     border-left: 1px solid #cbcbcb;
@@ -404,6 +413,7 @@
     &:first-child {
       border-top-left-radius: 3px;
       border-bottom-left-radius: 3px;
+      border-left: none;
     }
 
     &:last-child {
@@ -446,6 +456,38 @@
       }
     }
   }
+}  // /.slider
 
+/** ICONS **/
+i.icon {
+  background: url(@btnIconImg) no-repeat;
+  display: inline-block;
+  &.icon-eye{
+    background-position: 0 -380px;
+    width: 16px; height: 8px;
+  }
 
+  &.icon-online{
+    background-position: 0 -390px;
+    width: 16px; height: 16px;
+  }
+
+  &.icon-offline{
+    background-position: -20px -390px;
+    width: 16px; height: 16px;
+  }
+
+  &.icon-attention{
+    background-position: -41px -391px;
+    width: 16px; height: 14px;
+  }
+
+  &.icon-arrow-left{
+    height: 0;
+    border-right: 5px solid #666666;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: none;
+  }
 }
+
