@@ -2,8 +2,8 @@
 ***
 *** Variables
 ********************/
-@btnIconImg: '../img/btns-icos.png';
-@btnBgImg:   '../img/btns.png';
+@btnIconImg: '../img/btns-icos.png'; // icons image
+@btnBgImg:   '../img/btns.png';  // Background image
 @btnHeight:  31px;
 // SET COLORS of button
 .buttonColors (@btnTopColor:#3a639a, @btnBgColor:#496b94, @btnBottomColor:#334b67,
@@ -117,10 +117,12 @@
   }
 
   &.lite-grey {
-    .buttonBg();
+    .buttonBg(@btnHeight, -2984px);
     .buttonColors(#cbcbcb, #cbcbcb, #cbcbcb,
                   #cbcbcb, #cbcbcb, #cbcbcb,
                   #cbcbcb, #cbcbcb, #cbcbcb);
+    color: #525252;
+    text-shadow: #fff 0 1px 2px;
     box-shadow: 0 1px 2px #b3b3b3;
   }
 
@@ -333,6 +335,24 @@
 
   }
 
+  &.favorite {
+    .iconedButton(@btnBgPosY:-195px);
+    padding-left: 38px;
+    i.icon {
+      width: 31px;
+    }
+
+    &.added {
+      .iconedButton(@btnBgPosY:-224px);
+      padding-left: 38px;
+      i.icon {
+        width: 31px;
+      }
+    }
+
+
+  }
+
   &.google {
     .iconedButton();
      &.large {
@@ -355,3 +375,59 @@
 
 }
 
+// FUNCTIONAL buttons
+
+.slider {
+  padding: 0;
+  border: solid 1px #cbcbcb;
+  border-left: none;
+  border-radius: 4px;
+  width: 100%;
+  height: 29px;
+  display: table;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 20px;
+  position: relative;
+  margin-left: 1px;
+
+  .slider-item {
+    border-left: solid 1px #cbcbcb;
+    position: relative;
+    display: table-cell;
+    width: 25%;
+    vertical-align: middle;
+    background: 0 -764px url(@btnBgImg) repeat-x;
+    font: 14px Arial;
+    color: #525252;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:first-child {
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+
+    &:hover {
+      background-position: 0 -793px;
+      text-decoration: none;
+      color: #525252;
+    }
+
+    &:active,
+    &.current {
+      background-position: 0 -822px;
+      font: 14px Arial;
+      color: #ffffff;
+      text-shadow: #364f6d 0 1px 1px;
+      cursor: default;
+    }
+  }
+
+
+}
