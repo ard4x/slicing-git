@@ -1091,10 +1091,8 @@ i.icon.icon-online {
     width: 16px;
     height: 16px;
 }
-i.icon.icon-offline {
+i.icon.icon-online.offline {
     background-position: -20px -390px;
-    width: 16px;
-    height: 16px;
 }
 i.icon.icon-attention {
     background-position: -41px -391px;

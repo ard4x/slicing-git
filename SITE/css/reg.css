@@ -27,3 +27,14 @@
 .mainPage .reg__form_item.submitBox {background: #ffffff; border-radius: 4px; padding: 10px; height: 90px;  box-sizing: content-box;}
     .mainPage .submit_button {position: absolute; bottom: 10px; width: 260px; margin-bottom: 0px; }
     .mainPage .submit_text {font-size: 11px;}
+
+.reg__page {padding-top: 20px;}
+    .reg__page .std__header {border-bottom: 1px solid #ccc; padding-bottom: 2px; }
+        .reg__page .std__fs-bigH {padding-bottom: 4px;}
+    .reg__confirm_msg {margin-top: 20px; margin-bottom: 15px; padding-top: 30px; padding-bottom: 30px; text-align: center; font-size: 16px; color: #333;}
+    .reg__confirm_description {color: #333; font-size: 14px; line-height: 18px;}
+        .reg__confirm_description  .gaudy {font-weight: bold; color: #bb0000;}
+        .reg__confirm_newEmail {margin-top: 15px; text-align: center; display: none}
+            .reg__confirm_newEmail .std__header {text-align: left;}
+            .reg__confirm_newEmail input[type=text] {width: 450px; margin-bottom: 10px;}
+            .reg__confirm_newEmail .reg__confirm_newEmail_button {width: 225px;}

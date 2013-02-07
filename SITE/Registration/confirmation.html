@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <title>Reg Confirm</title>
+    <link rel="stylesheet" href="../style_curr.css"><!-- тестовый файл, на проде не нужен -->
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/btns.css" type="text/css">
+    <link rel="stylesheet" href="../css/reg.css">
+
+    <!--  Файлы для замены селектов -->
+
+    <script src="../js/jquery-1.4.4.min.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'});
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+    <!--  ---------------------------------------- -->
+
+</head>
+<body>
+<!-- начало шаблонной шапки -->
+<div class="header">
+    <div class="header_inn">
+        <div class="top_navigation">
+            <ul class="left">
+                <li><a href="#">Messages</a><span class="new_event">2</span></li>
+                <li><a href="#">Signals</a><span class="new_event">45</span></li>
+                <li><a href="#">Soulmates</a><span class="new_event">167</span></li>
+            </ul>
+            <ul class="right">
+                <li class="coints">1450 Coins <a href="#">Add</a></li>
+                <li class="profile"><a href="#">Profile </a></li>
+                <li class="account"><a href="#">Account Settings</a></li>
+            </ul>
+            <div class="std__clear"></div>
+        </div>
+        <div class="bot_navigation">
+            <a href="#"><img src="../img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>
+            <ul class="main_menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Matches</a></li>
+                <li><a href="#">TOP-100</a></li>
+                <li><a href="#">Apps and Games</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+            <div class="clr2"></div>
+        </div>
+    </div>
+</div>
+<!-- КОНЕЦ шаблонной шапки -->
+
+
+<div class="content">
+    <div class="content_inn reg__page">
+
+        <h1 class="std__header std__fs-bigH">Thank you for registering on Yangutu</h1>
+
+        <div class="std__layer_blue reg__confirm_msg">
+            Check your e-mail '<strong>usd@mailforspam.com</strong>' to activate your account.
+        </div><!-- /.reg__confirm_msg -->
+
+        <h2 class="std__header std__fs-smallH">If you can't find the e-mail from Yangutu</h2>
+        <p class="reg__confirm_description">
+            a) Check the <span class="gaudy">Spam/Junk</span> folder; <br>
+            b) Can't find the e-mail in <strong>Spam/Junk</strong> folder, <strong><a href="#" id="show_resend">click here</a></strong> to change your e-mail address
+        </p>
+
+        <div id="resend" class="std__layer_grey-lite reg__confirm_newEmail">
+            <h2 class="std__header std__fs-smallH">Change your e-mail address</h2>
+
+            <form action="#">
+                <input class="std__input" type="text" placeholder="Enter new e-mail"> <br>
+                <a class="btn-s-1 reg__confirm_newEmail_button" href="#"><span>Resend activation e-mail</span></a>
+            </form>
+        </div><!-- /.reg__confirm_newEmail -->
+
+
+    </div><!-- /.reg__page -->
+</div><!-- /.content -->
+
+<!-- DEMO SCRIPT for hide/show email form -->
+<script type="text/javascript">
+    $("#show_resend").click(function(){
+        $("#resend").toggle();
+    });
+
+</script>
+
+
+<!-- НАЧАЛО шаблонного Футера -->
+<div class="footer">
+    <div class="footer_inn">
+        <ul>
+            <li><a href="/page/about">About us</a></li>
+            <li><a href="/help">FAQ</a></li>
+            <li><a href="http://blog.yangutu.com/">Our blog</a></li>
+            <li><a href="/feedback">Contact us</a></li>
+        </ul>
+        <ul>
+            <li><a href="/page/policy">Privacy</a></li>
+            <li><a href="/page/terms">Terms of use</a></li>
+        </ul>
+        <ul>
+            <li><a href="/page/scams">Scam warning</a></li>
+            <li><a href="/page/safety">Safety Tips</a></li>
+        </ul>
+        <ul>
+            <li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+            <li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+            <li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+
+        </ul>
+        <ul>
+            <li><a href="/dating/all">People Directory</a></li>
+        </ul>
+        <div class="right">
+            <font color="black">&copy; 2010-2011 Yangutu Inc. All rights reserved</font><br>
+            <span>Yangutu (swahili) - My one and only.</span>
+        </div>
+        <div class="std__clear"></div>
+    </div>
+</div>
+
+</body>
+</html>
