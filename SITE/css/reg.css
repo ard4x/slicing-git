@@ -28,6 +28,9 @@
     .mainPage .submit_button {position: absolute; bottom: 10px; width: 260px; margin-bottom: 0px; }
     .mainPage .submit_text {font-size: 11px;}
 
+.reg__pre-header {position: relative; top: 0; margin: 0; height: 37px;  background-color: #436187; width: 100%;}
+    .reg__pre-header_inner {position: relative; width: 960px; margin: 0 auto; padding-top: 4px;}
+
 .reg__page {padding-top: 20px;}
     .reg__page .std__header {border-bottom: 1px solid #ccc; padding-bottom: 2px; }
         .reg__page .std__fs-bigH {padding-bottom: 4px;}
