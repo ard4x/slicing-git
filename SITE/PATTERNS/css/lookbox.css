@@ -1,0 +1,62 @@
+/*** lookbox.css 
+**** Блок выбора параметров поиска с ползунком *****.
+/* Looking Box */
+
+form.search-filter-form .lookingbx,
+form#search-form .lookingbx {border-radius: 4px; background-color: #f1f1f1; width: 698px; padding: 22px 15px 8px 15px; margin-bottom: 20px; border: 1px solid #dddddd;}
+    .location_field { width: 682px; margin-left: 9px;}
+        .progressbar {padding: 0; width: 100%; background: url(../img/lookbox/lookbox.png) 0px -6px repeat-x; height: 14px; margin: 10px 0px 6px; position: relative;}
+            .progressbar_left{width: 9px; height: 14px; position: absolute; left:-9px; top: 0; background: url(../img/lookbox/lookbox.png) 0px -21px repeat-x;}
+            .progressbar_right{width: 9px; height: 14px; position: absolute; right:-9px; top: 0; background: url(../img/lookbox/lookbox.png) 100% -21px repeat-x;}
+            .progress-control {background: url(../img/lookbox/lookbox.png) 675px -75px no-repeat; position: absolute; height: 30px; width: 100%; top: -8px; left: 0px;}
+                .progress-control-point {width: 16.666%; float: left; height: 30px; background: url(../img/lookbox/lookbox.png) 0px -75px no-repeat; position: relative;}
+                    .progress-control-point-city {display: inline; position: absolute; top: 32px; right: -5px; font-size: 12px; width: 180px; text-align: right; }
+            .progress-line {width: 50%; background: url(../img/lookbox/lookbox.png) 0px 0px repeat-x; top: 4px; height: 6px; position: relative;}
+                .progress-line-button {background: url(../img/lookbox/lookbox.png) 0px -35px no-repeat; height: 22px; width: 13px; position: absolute; right: -10px; top: -8px; cursor: pointer;}
+                    .progress-line-button p {margin:0; display: inline; position: absolute; top: auto; bottom: 100%; padding: 0px; left: 50%; z-index: 99;}
+                        .progress-line-button p span{border: none; background: none; top: 0; font-size: 10px; color: #666666; position: relative; padding-bottom: 4px; right: auto; display: block;  left: -50%; z-index: 99;}
+       .b-lookBox__progressbarLabel {display: block; overflow: hidden; padding-top: 4px;}
+     
+            .b-lookBox__locationSelect {display:inline-block; float: left; padding-left: 3px;}
+                .b-lookBox__locationSelect_city {cursor: pointer; text-decoration: underline; padding-left: 6px;}
+            .b-lookBox__locationEnd  {display:inline-block; float: right; padding-right: 3px;}
+     .b-lookBox__devide{height: 1px; background-color:#dddddd; width: 728px; margin: 7px auto 7px -15px;}
+     .b-lookBox__selectParams {display: inline-block; margin-bottom: 4px}
+        .b-lookBox__selectParams_param {display: inline-block; margin-right: 20px; width: 140px; vertical-align: top;}
+            .b-lookBox__selectParams_param .def {display: inline-block; margin: 0 5px;}
+            .b-lookBox__selectParams_param .extended-field {margin: 10px 20px 0;}
+            .b-lookBox__selectParams_param__big {width: 256px;}
+            .b-lookBox__selectParams_param_medium {width: 217px;}
+            .b-lookBox__selectParams_param__last{margin: 0;}
+            .b-lookBox__selectParam_label {display: block; font-weight: bold; margin-right: 5px; padding-bottom: 2px; padding-left: 2px;}
+                .b-lookBox__selPar_radioLabel {font-weight: normal!important; margin-right:  10px;}
+                .w-lookBox__selPar_select {display: inline-block; font-weight: normal; width: 100%;}
+                    .w-lookBox__selPar_select.short {width: 50px;}
+                    .b-lookBox__selPar_radio {position: relative; top: 1px; margin-left: 3px;}
+            .b-lookBox__selectParam_label_post {font-size: 10px; color: #999;}
+                .b-lookBox__selectParam_label_post.search-criteria-tb {color:#010101;}
+   .b-lookBox__startButton {width: 130px; float: right; margin-top: 12px; }
+   [type=submit].b-lookBox__startButton  {width: 130px;}
+    
+    .b-lookBox__advansed {border-top: 1px solid #ddd; margin-top: 15px; position: relative;}
+        .b-lookBox__advansed_header {margin-top: -8px; position:relative; cursor: pointer;}
+            .b-lookBox__advansed_header-arrow {width: 9px; height: 9px; position: absolute; top: 2px; left: 0; background: url(../img/lookbox/lookbox.png) 0 -57px no-repeat;}
+                .b-lookBox__advansed_header-arrow.active {background-position: 0 -66px;}
+            .b-lookBox__advansed_header-label {display: inline; padding-left: 17px; padding-right: 10px; font-size: 12px; font-weight: bold; color:#666; background: #f1f1f1; }
+        
+        .b-lookBox__advansed_button {text-align: center; padding: 15px 0 7px;}
+            .b-lookBox__advansed_button [type=submit].b-lookBox__startButton  {width: 130px; float: none; margin: 0;}
+        .b-lookBox__startButton-advansed{margin: 0 auto; position: relative; float: none; margin: 7px auto;}
+        .b-lookBox__advansed_content {padding: 10px 0;}
+
+form .lookingbx.f2f_look .b-lookBox__selectParams {padding-top:0;}
+form .lookingbx.f2f_look .b-lookBox__selectParams_param label {font-weight: normal; margin-right: 10px;}
+#cityId-label{height: 0;}
+
+            
+    
+/*********  Looking Box  ******************/
+ 
+ 
+ 
+ 

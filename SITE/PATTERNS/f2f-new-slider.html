@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>LookBox</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="css/lookbox.css">
+    <link rel="stylesheet" href="../css/btns.css">
+
+    <script src="../js/jquery.js"></script>
+
+
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'})
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+</head>
+<body><div style="margin: 100px;">
+
+    <h2>New F2F</h2>
+    <form method="GET" enctype="application/x-www-form-urlencoded" action="/face-to-face/index/search" id="search-form">
+
+        <div class="lookingbx f2f_look">
+            <div class="location_field">
+
+
+                <div class="progressbar" id="locationccb046f22719fb0e83181c2e073253d6-progressbar" style="border:none; background-color: none;"><div class="progressbar_left"></div><div class="progressbar_right"></div><div class="progress-control"><div class="progress-control-point" style="width:16.666666666667%;" pointnum="0" val="city"></div><input type="radio" name="location[in]" value="city" label="New York City" style="display:none;"><div class="progress-control-point" style="width:16.666666666667%;" pointnum="1" val="1"></div><input type="radio" name="location[in]" value="1" label="Within 15 miles" style="display:none;"><div class="progress-control-point" style="width:16.666666666667%;" pointnum="2" val="2"></div><input type="radio" name="location[in]" value="2" label="Within 30 miles" style="display:none;"><div class="progress-control-point" style="width:16.666666666667%;" pointnum="3" val="4"></div><input type="radio" name="location[in]" value="4" label="Within 60 miles" style="display:none;"><div class="progress-control-point" style="width:16.666666666667%;" pointnum="4" val="8"><span class="progress-control-point-city">United States</span></div><input type="radio" name="location[in]" value="8" label="Within 120 miles" style="display:none;"><div class="progress-control-point" style="width:16.666666666667%;" pointnum="5" val="country"></div><input type="radio" name="location[in]" value="country" label="United States" style="display:none;"><input type="radio" name="location[in]" value="all" label="World" checked="checked" style="display:none;"><input type="hidden" name="location[r]" value="all"></div><div class="progress-line" style="width:99%;"><div class="progress-line-button ui-draggable"><p><span style="left: -25px"><nobr>World</nobr></span></p></div></div></div><div id="locationccb046f22719fb0e83181c2e073253d6-location" class="sliderUnicId b-lookBox__progressbarLabel" link="locationccb046f22719fb0e83181c2e073253d6"><div class="b-lookBox__locationSelect"><span class="location">New York City</span> <a class="b-lookBox__locationSelect_city" rel="/suggest/select-from-list" id="select-from-list" slider="on" style="display:inline !important;">edit</a></div><div class="b-lookBox__locationEnd"><span>World</span></div></div>            <script type="text/javascript">
+                $(document).ready(function () {
+                    sliderLocation('locationccb046f22719fb0e83181c2e073253d6', 16.666666666667, [{pointNum: 0, label: "New York City", value: "city"}, {pointNum: 1, label: "Within 15 miles", value: "1"}, {pointNum: 2, label: "Within 30 miles", value: "2"}, {pointNum: 3, label: "Within 60 miles", value: "4"}, {pointNum: 4, label: "Within 120 miles", value: "8"}, {pointNum: 5, label: "United States", value: "country"}, {pointNum: 6, label: "World", value: "all"}], 0);
+                });
+            </script>        <dt id="cityId-label">&nbsp;</dt>
+                <dd id="cityId-element">
+                    <input type="hidden" name="cityId" value="92846" id="cityId"></dd>
+            </div><!--/ .b-lookbox__locationField -->
+
+            <div class="b-lookBox__devide"></div><!-- @added  добавлен блок-->
+
+            <div class="b-lookBox__selectParams">
+
+                <div class="b-lookBox__selectParams_param">
+                    <div class="b-lookBox__selectParam_label">Sex</div><!-- @added  изменен текст поля с Looking for на Sex -->
+
+                    <label for="sex-female4male"><input type="radio" name="sex" id="sex-female4male" value="female4male" checked="checked" class="b-lookBox__selPar_radio">Woman</label> <label for="sex-male4female"><input type="radio" name="sex" id="sex-male4female" value="male4female" class="b-lookBox__selPar_radio">Man</label>
+                </div>
+
+                <div class="b-lookBox__selectParams_param">
+                    <div class="b-lookBox__selectParam_label">Aged</div>
+                    <div class="w-lookBox__selPar_select short"><!-- @added  вместо одного селекта, теперь два, к ним добавлен класс short, между ними добавлен  <div class="def">&ndash;</div> -->
+                        <select name="age" id="age" class="sSelect validate[required]">
+                            <option value="1" label="Any age">Any</option>
+                            <option value="2" label="18−25">18−25</option>
+                            <option value="3" label="26−35" selected="selected">26−35</option>
+                            <option value="4" label="36−45">36−45</option>
+                            <option value="5" label="46−55">46−55</option>
+                            <option value="6" label="56 and over">56 and over</option>
+                        </select>
+                    </div>
+                    <div class="def">&ndash;</div>
+                    <div class="w-lookBox__selPar_select short">
+                        <select name="age" id="age_to" class="sSelect validate[required]">
+                            <option value="1" label="Any age">Any</option>
+                            <option value="2" label="18−25">18−25</option>
+                            <option value="3" label="26−35" selected="selected">26−35</option>
+                            <option value="4" label="36−45">36−45</option>
+                            <option value="5" label="46−55">46−55</option>
+                            <option value="6" label="56 and over">56 and over</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+
+            <a class="btn-s-1 b-lookBox__startButton" href="" onclick="return (function(self, $){$(self).closest('form').submit();return false;})(this, jQuery);">
+                <span>Find people</span>
+            </a>
+
+        </div><!-- / .lookingbx -->
+
+    </form>
+    <!-- new f2f -->
+
+</div></body>
+</html>
