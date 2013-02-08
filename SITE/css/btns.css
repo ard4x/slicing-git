@@ -220,4 +220,6 @@ cursor: pointer; text-shadow: #364F6D 0 1px 1px; text-decoration: none; }
     .favo-link:active {color: #525252; text-decoration: none; background-position: 0 -1721px;}
 /** icons **/
 i.icon {background: url(../img/button-icos.png) no-repeat; display: inline-block;}
-i.icon.icon-eye{background-position: -13px -369px; width: 16px; height: 8px;}
+    i.icon.icon-eye {background-position: -13px -369px; width: 16px; height: 8px;}
+    i.icon.icon-eye-small {background-position: -16px -380px; width: 9px; height: 7px;}
+    i.icon.icon-heart-small {background-position: 0 -393px; width: 14px; height: 7px;}
