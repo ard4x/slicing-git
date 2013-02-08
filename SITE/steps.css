@@ -1,7 +1,7 @@
-
-/***********/
-
-#regSteps {width:950px; position: relative; margin: 0 auto;}
+/**** steps.css*******/
+.pre-header{position: relative; top: 0; margin: 0; height: 37px; background-color: #436187; width: 100%;}
+.pre-header_inner{position:relative; width:960px; margin:0 auto; padding-top: 4px;}
+#regSteps {width:950px; position: relative; margin-top: -65px;}
 #regSteps #header             {position:relative; width:100%;}
 #regSteps #header h1          {font: bold 30px 'PT Sans'; margin: 85px 0 20px 0;}
 #regSteps #header h3          {font: bold 14px Arial; margin-bottom: 18px;}
@@ -9,6 +9,7 @@
 #regSteps #header .progressBar li   {font: bold 18px Arial; color: #cccccc; float:left; width: 310px; margin-right: 10px; border-top: 5px solid #cccccc; padding-top:10px;}
 #regSteps #header .progressBar li.last {margin-right:0;}
 #regSteps #header .progressBar li.active {font: bold 18px Arial; color: #436187; border-top: 5px solid #436187;}
+#regSteps .btn-load {width: 105px; margin-top: 6px;}
 
 #regSteps #content            {position: relative; width:100%;  }
 #regSteps #content .leftSide      {width:225px; position: absolute; }
@@ -16,80 +17,69 @@
 #regSteps #content .stepDescr     {font: 12px Arial; color:#333333; background-color: #ecf4fb; border-radius: 4px; width: 195px; padding: 15px; }
 #regSteps #content .stepDescr h2  {font: bold 24px 'PT Sans';  color:#000000; margin-top: 0}
 
-/******** EDITED  *** добавлены к некоторым стилям #required-info ********/
 /* RegStep1 */
-#regStep1 .label,
-#required-info .label{width: 135px; margin-right:5px; float: left; font-size: 14px;}
-#regStep1 .content,
-#required-info  .content {width: 350px; position: relative; display: inline-block;}
-#regStep1 .loadPhoto {position: relative; margin-bottom: 5px; } 
+#regStep1 .label, #required-info .label {width: 135px; margin-right:5px; float: left; font-size: 14px;}
+#regStep1 .content-steps, #required-info  .content-steps  {width: 350px; display: inline-block;}
+#regStep1 .loadPhoto {position: relative; margin-bottom: 5px; }
 #regStep1 .loadPhoto p {font: 12px Arial; color:#333333; padding-bottom: 15px;}
-#regStep1 .loadPhoto .photo {position: relative; width: 72px; height: 92px; margin-right: 10px; margin-bottom: 10px; float: left; background: url(img/photo_bg.png);}
-#regStep1 .loadPhoto .photo img {margin: 2px 3px;}
-#regStep1 .loadPhoto .photo .photoDescr {position: absolute; bottom: 4px; left: 3px; height: 30px; width: 66px; overflow: hidden; background: url(img/fill.png) repeat;}
-#regStep1 .loadPhoto .photo .photoDescr.off { display: none}
-#regStep1 .loadPhoto .photo .photoDescr span {font: 10px Arial; color:#ffffff; display: inline-block; margin-top: 10px; margin-left: 3px;}
+#regStep1 .loadPhoto .step-photo {position: relative; width: 72px; height: 92px; margin-right: 10px; margin-bottom: 10px; float: left; background: url(/img/photo_bg.png);}
+#regStep1 .loadPhoto .step-photo img {margin: 2px 3px;}
+#regStep1 .loadPhoto .step-photo .photoDescr {position: absolute; bottom: 4px; left: 3px; height: 30px; width: 66px; overflow: hidden; background: url(/img/fill.png) repeat;}
+#regStep1 .loadPhoto .step-photo .photoDescr.off { display: none}
+#regStep1 .loadPhoto .step-photo .photoDescr span {font: 10px Arial; color:#ffffff; display: inline-block; margin-top: 10px; margin-left: 3px;}
 
-#regStep1 form,
-#required-info {border-top: solid 1px #cccccc; padding-top: 15px; position: relative; margin-bottom: 40px;  }
-#regStep1 form .formRow,
-#required-info .formRow{margin-bottom: 15px; position: relative;}
-#regStep1 form .formRow .tips,
-#required-info .formRow .tips{font: 10px Arial; color: #999999;}
-#regStep1 form .formRow .label,
-#required-info .formRow .label {padding-top: 4px}
-#regStep1 form .formRow label,
-#required-info .formRow label {margin-right: 10px}
-#regStep1 span.div ,
-#required-info  span.div{font-size: 17px; text-align: center; margin-left: 14px;} 
-#regStep1 a ,
-#required-info a{font: 12px Arial; color:#334a66;}   
-#regStep1 a:hover ,
-#required-info a:hover{}
-#regStep1 a.more,
-#required-info  a.more{margin-left: 4px;}
-#regStep1 a.centim,
-#required-info  a.centim{margin-top: 5px; display: inline-block;}
-#regStep1 .btn-cont {margin-top: 5px; padding: 0 25px; margin-left: 140px;}
-#regStep2 .bnt-load {padding: 0 13px;} 
-
+#regStep1 form {border-top: solid 1px #cccccc; padding-top: 15px; position: relative; margin-bottom: 40px;  }
+#regStep1 form .formRow, #required-info .formRow {margin-bottom: 15px; position: relative;}
+#regStep1 form .formRow .tips, #required-info .tips {font: 10px Arial; color: #999999;}
+#regStep1 form .formRow .label {padding-top: 4px}
+#regStep1 form .formRow label, #required-info .formRow label {margin-right: 10px}
+#regStep1 span.div, #required-info  span.div {font-size: 17px; text-align: center; margin: 5px;}
+#regStep1 a, #required-info a {font: 12px Arial; color:#334a66;}
+#regStep1 a:hover, #required-info a {}
+#regStep1 a.more, #required-info  a.more {margin-left: 4px;}
+#regStep1 a.centim, #required-info  a.centim {margin-top: 5px; display: inline-block; position: relative;}
+#regStep1 .btn-cont {margin-top: 5px; padding: 0 25px; margin-left: 140px; }
+.shortSelect{width: 106px; display: inline-block;}
 
 /* RegStep2 */
-
-#regStep2 .step2Header {margin-bottom: 10px; position: relative;} 
+#regStep2 .step2Header {margin-bottom: 10px; position: relative;}
 #regStep2 .step2Header input {width: 479px!important; padding-left: 7px!important; }
 #regStep2 .step2Header input:-moz-placeholder { font-style: italic }
 #regStep2 .step2Header input::-webkit-input-placeholder { font-style: italic }
-#regStep2 .selectedInt {font: 12px Arial; color: #333333; margin-bottom:10px; height: 21px;}
+
+#regStep2 .selectedInt {font: 12px Arial; color: #333333; margin-bottom:10px; height: auto;}
 #regStep2 .selectedInt span {display: inline-block; margin-top: 4px;}
-#regStep2 .selectedInt .cat_bnt {display: inline-block; height: 19px; border: solid 1px #cad8f3; border-radius: 4px; background-color: #dee7f8; margin-right: 10px; position: relative;}
-#regStep2 .selectedInt .cat_bnt em {content: ''; width: 7px; height: 7px; background: url(img/close.png) no-repeat; position: absolute; top: 6px; right: 10px; cursor: pointer;}
-#regStep2 .selectedInt .cat_bnt span {font-size: 12px; color:#436187; margin:  2px 28px 0 9px;}
+#regStep2 .selectedInt .cat_bnt {display: inline-block; height: auto; border: solid 1px #cad8f3; border-radius: 4px; background-color: #dee7f8; margin: 5px 10px 5px 0px; position: relative;}
+#regStep2 .selectedInt .cat_bnt em {content: ''; width: 7px; height: 7px; background: url(/img/close.png) no-repeat; position: absolute; top: 6px; right: 10px; cursor: pointer;}
+#regStep2 .selectedInt .cat_bnt em {content: ''; width: 7px; height: 7px; background: url(/img/close.png) no-repeat; position: absolute; top: 6px; right: 10px; cursor: pointer;}
+#regStep2 .selectedInt .cat_bnt span {font-size: 12px; color:#436187; margin: 2px 28px 2px 9px;}
+
 #regStep2 .countInt {font: 12px Arial; color:#666666; margin-bottom: 10px;}
 #regStep2 .countInt b {color: #333333; font-weight: bold;}
+
 #regStep2 .interests {position: relative; padding: 15px; border-radius: 4px; background-color: #ecf4fb; overflow: hidden;}
 #regStep2 .interests .categories { margin-top: 10px; width: 140px; float: left;}
 #regStep2 .interests .categories ul {width: 100%;}
 #regStep2 .interests .categories li {padding-left: 10px; height: 23px; font: 12px Arial; position: relative; margin-bottom: 1px;}
 #regStep2 .interests .categories li.active {background-color: #436187; border-top-left-radius: 4px; border-bottom-left-radius: 4px; font-weight: bold; color:#ffffff; }
-#regStep2 .interests .categories li.active:after {content: ""; width: 20px; height: 23px; background: url(img/cat_arr.png) no-repeat; position: absolute; top:0; right: -20px;}
+#regStep2 .interests .categories li.active:after {display: none; content: ""; width: 20px; height: 23px; background: url(/img/cat_arr.png) no-repeat; position: absolute; top:0; right: -20px;}
 #regStep2 .interests .categories li span {width: 100%; display: inline-block; cursor: pointer; margin-top: 4px; }
-/** add display: none; to hide*/
-.stepInterests {position: absolute; top: 25px; width: 100%; margin: 0; padding: 0; overflow: auto; z-index: 700; background: #F6F6F7; font-size: 11px;} 
-    .stepInterests  li{margin: 0; list-style-type: none; border: 1px solid #CCC; border-width: 0 1px 1px; }
-    .stepInterests .interestItem{color: #333; text-decoration: none; font-weight: bold; display: block; padding: 10px;}
-        .stepInterests .interestItem:hover{background-color:#ECF4FB}
-/******** end EDITED  ***********/
-#regStep2 .interests .list {width: 275px; border: solid 1px #c4d9ec; padding: 9px 14px 14px 29px; background-color: #ffffff; border-radius: 4px; float:right}
+
+.stepInterests {position: absolute; top: 25px; width: 100%; margin: 0; padding: 0; overflow: auto; z-index: 700; background: #F6F6F7; font-size: 11px;}
+.stepInterests  li{margin: 0; list-style-type: none; border: 1px solid #CCC; border-width: 0 1px 1px; }
+.stepInterests .interestItem{color: #333; text-decoration: none; font-weight: bold; display: block; padding: 10px;}
+.stepInterests .interestItem:hover{background-color:#ECF4FB}
+
+#regStep2 .interests .list {width: 275px; height: 323px; border: solid 1px #c4d9ec; padding: 9px 14px 14px 29px; background-color: #ffffff; border-radius: 4px; float:right}
 #regStep2 .interests .list li {height: 23px; margin-bottom: 1px; font-size: 12px;}
 #regStep2 .interests .list li a {display: inline-block; cursor: pointer; margin-top: 4px; }
 #regStep2 .interests .list .arrows {border-top: solid 1px #c4d9ec; margin-top: 8px; padding-top: 12px; font-size: 12px;}
-#regStep2 .interests .arrows i{display:inline-block; width:4px; height:7px; background:url(img/list-arr.png);}
+#regStep2 .interests .arrows i{display:inline-block; width:4px; height:7px; background:url(/img/list-arr.png);}
 #regStep2 .interests .arrows .left i {background-position: 0 0; margin-right: 5px;}
 #regStep2 .interests .arrows .right i {background-position: 100% 0; margin-left: 5px;}
-#regStep2 .interests .arrows .left {float: left;} 
+#regStep2 .interests .arrows .left {float: left;}
 #regStep2 .interests .arrows .right {float: right;}
-#regStep2 .interests .categories .arrows {width: 18px; margin-left: 10px;} 
+#regStep2 .interests .categories .arrows {width: 18px; margin-left: 10px;}
 #regStep2 .bnt-next {margin: 20px 0 40px 190px; padding: 0 35px;}
 
 #regStep3 .btn-finish {margin: 0 0 40px 190px; padding: 0 25px;}
@@ -97,10 +87,10 @@
 #regStep3 form .errMsg {top: 24px}
 #regStep3 .label {font: 14px Arial;  color: #000000; margin-bottom: 7px;}
 #regStep3 .formRow {margin-bottom: 20px; position: relative;}
-#regStep3 .formRow textarea {width: 484px; height: 95px; font: 12px Arial; font-style: italic; color:#999999; resize: none;}
+#regStep3 .formRow textarea {width: 484px; height: 95px; font: 12px Arial; font-style: italic; resize: none;}
 
 textarea.err, .err .newListSelected, .err .newList{border-color: #990000;}
-.errMsg {font: 14px Arial; color:#990000; background: 0 4px  url(img/err_arrow.png) no-repeat; padding-left: 15px; width: 150px; position: absolute;top:4px; right: -183px;}
+.errMsg {font: 14px Arial; color:#990000; background: 0 4px  url(/img/err_arrow.png) no-repeat; padding-left: 15px; width: 150px; position: absolute;top:4px; right: -183px;}
 #regStep3 .errMsg {width: 190px; right: -223px}
 .hide       {display:none;}
 .margT5     {margin-top: 5px;}
@@ -108,6 +98,3 @@ textarea.err, .err .newListSelected, .err .newList{border-color: #990000;}
 .margR10    {margin-right: 10px;}
 .fixWidth158{width: 158px}
 .fixWidth168{width: 168px}
-
-
-
