@@ -52,7 +52,9 @@ form#search-form .lookingbx {border-radius: 4px; background-color: #f1f1f1; widt
 form .lookingbx.f2f_look .b-lookBox__selectParams {padding-top:0;}
 form .lookingbx.f2f_look .b-lookBox__selectParams_param label {font-weight: normal; margin-right: 10px;}
 #cityId-label{height: 0;}
-
+.f2f__shortForm {display: none; top: -6px; position: relative; font-size: 14px;}
+    .f2f__shortForm_edit {float: right; font-size: 12px; padding-left: 18px; background: 0 -379px url(../../img/button-icos.png) no-repeat;}
+.f2f__fullForm {display: block;}
             
     
 /*********  Looking Box  ******************/

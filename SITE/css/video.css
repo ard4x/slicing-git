@@ -25,3 +25,8 @@
                     .video__addedUserList_item:hover .video__addedUserList_user .b-user__person {text-align: left; font-size: 14px; margin-bottom: 3px; display: inline-block}
                     .video__addedUserList_item:hover .video__addedUserList_user .user__location {text-align: left; font-size: 10px; display: inline-block}
 
+/* Single video page */
+
+.video__single_breadcrumbs {float: left; margin-top: 3px;}
+.video__single_srchField input[type=text]{float: right; width: 175px; margin-bottom: 10px;}
+
