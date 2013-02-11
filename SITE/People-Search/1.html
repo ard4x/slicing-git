@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/wid.css">
     <link rel="stylesheet" href="../css/btns.css" type="text/css">   <!-- Проверить наличие, заменить более новой версией, а так же файлы btns.png и button-icos.png, Версия указана в первой строке файла-->
     <link rel="stylesheet" href="../css/srch.css">
+    <link rel="stylesheet" href="../PATTERNS/css/lookbox.css"><!-- Файл стилей, измененный-->
     <!-- Костыли для ИE, можно добавить в уже существующие -->
     <!--[if lt IE 9]>
     <link rel="stylesheet" href="../yngtu_ie8.css" type="text/css">
@@ -210,6 +211,48 @@
                             </select>
                         </div>
                     </div><!-- /.srch__searchBlock_item -->
+
+                    <div class="srch__searchBlock_item">
+                        <div class="label">
+                           Radius:
+                        </div>
+
+                        <div class="field">
+                            <div class="location_field small">
+                                <div class="progressbar" style="border:none; background-color: none;">
+                                    <div class="progressbar_left"></div>
+                                    <div class="progressbar_right"></div>
+                                    <div class="progress-control">
+                                        <div class="progress-control-point" style="width:33.3333333333%;" pointnum="0" val="15 miles">
+                                            <span class="progress-control-point-city">30 miles</span>
+                                        </div>
+
+                                        <div class="progress-control-point" style="width:33.3333333333%;" pointnum="1" val="30 miles">
+                                            <span class="progress-control-point-city">60 miles</span>
+                                        </div>
+
+                                        <div class="progress-control-point" style="width:33.3333333333%;" pointnum="2" val="60 miles">
+                                        </div>
+
+                                    </div>
+                                    <div class="progress-line" style="width:96%;"><!-- Крайнее правое положение, крайнее левое = 0% -->
+                                        <div class="progress-line-button ui-draggable">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sliderUnicId b-lookBox__progressbarLabel">
+                                    <div class="b-lookBox__locationSelect">
+                                        <span class="location">15 miles</span>
+                                    </div>
+                                    <div class="b-lookBox__locationEnd"><span>120 miles</span></div>
+                                </div>
+
+                            </div><!-- /.location_field small -->
+                            <div class="std__clear"></div>
+                        </div><!-- /.field -->
+                    </div><!-- /.srch__searchBlock_item -->
+
                 </div><!-- /.srch__searchBlock_city -->
 
                 <div class="srch__searchBlock_zip">
