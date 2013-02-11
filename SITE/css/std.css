@@ -1,7 +1,8 @@
 /* Стандартные (Глобальные) элементы */
 .l-std__content {float: left; margin-right: 17px; position: relative;}
 /** headers styles ***/
-.b-std__header {font-family: 'PT Sans'; font-weight: bold; color: #333333; margin:0; margin-bottom: 15px;}
+.std__header, .b-std__header {font-family: 'PT Sans'; font-weight: bold; color: #333333; margin:0; margin-bottom: 15px;}
+.std__fs-bigH {font-size: 24px; line-height: 30px;}
 .std__fs-mainH {font-size: 24px; line-height: 24px;}
 .std__fs-smallH {font-size: 18px; line-height: 18px;}
 .std__fs-miniH {font-size: 14px; line-height: 14px;}
@@ -14,8 +15,9 @@
 .std__noMargRight {margin-right:0;}
 .std__noMargBottom {margin-bottom:0;}
 .std__noMargLeft {margin-left:0;}
-.std__hidden {display: none;}
+.std__hidden, .std__hide {display: none;}
 .std__clear {clear: both;}
+.std__right {float: right;}
 .std__stopperWhite {background-color: #fff; opacity: 0.7; filter: alpha(opacity=70); position: absolute; width: 100%; z-index: 20; }
 .std__margLayout {margin: 0 0 20px 0;}
 .std__topContentPadding {padding-top: 20px;}
@@ -31,6 +33,7 @@
 .std__popup_close {display:block; width: 9px; height: 9px; background: url(../img/close_pop.png) no-repeat; position: absolute; top: 10px; right: 10px;}
 .std__layer_blue {background-color: #ecf4fb; border-radius: 4px; padding: 15px;}
 .std__layer_yellow {background-color: #fffce2; border-radius: 4px; padding: 15px;}
+.std__layer_grey-lite {background-color: #f5f5f5; border-radius: 4px; padding: 15px;}
 
 .std__buble_long_green {font-size: 12px; line-height: 12px; color: #ffffff; padding: 4px 10px 5px 10px; border-radius: 4px; display: inline-block;}
 
@@ -46,3 +49,4 @@
 .std__sideMenu .menuItem {margin-left: 10px; margin-bottom: 2px; font-size: 14px;}
 
 .std__video_play {display: block; position: absolute; top: 32px; left: 57px; background: url(../img/video/play.png) no-repeat; width: 35px; height: 35px;}
+.std__input {height: 27px!important;}
