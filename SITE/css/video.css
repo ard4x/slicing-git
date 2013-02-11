@@ -29,11 +29,11 @@
     .video__list_item {display: inline-block; width: 130px; font-size: 12px; text-align: left; vertical-align: top;}
     .video__list_item .videoLink  {margin-bottom: 7px; display: inline-block; position: relative;}
     .video__list_item .videoLink img {width: 130px; height: 86px; margin-bottom: 3px;}
-.video__counts {color: #828282; font: normal 10px Arial; margin-bottom: 3px;}
+.video__counts {color: #828282; font: normal 10px Arial; margin-bottom: 3px; overflow: hidden;}
     .video__counts .icon {margin-right: 5px;}
 .video__block {margin-top: 19px;}
     .video__block .std__header {padding-bottom: 1px; border-bottom: 1px solid #ccc;}
-    .video__block_vertical {width: 130px; margin-left: 15px; margin-top: 13px;}
+    .video__block_vertical {margin-top: 0;}
         .video__block_vertical .video__list_item {margin-bottom: 5px;}
         .video__block_vertical .std__header {margin-bottom: 12px;}
 
