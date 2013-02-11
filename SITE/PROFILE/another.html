@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="../style_curr.css">
     <link rel="stylesheet" href="../css/std.css">
     <link rel="stylesheet" href="../css/user.css">
-    <link rel="stylesheet" href="../css/wid.css">
-    <link rel="stylesheet" href="../css/btns.css" type="text/css">   <!-- Проверить наличие, заменить более новой версией, а так же файлы btns.png и button-icos.png, Версия указана в первой строке файла-->
-    <link rel="stylesheet" href="../css/srch.css">
+    <link rel="stylesheet" href="../css/button.css" type="text/css">   <!-- Проверить наличие, заменить более новой версией, а так же файлы btns.png и button-icos.png, Версия указана в первой строке файла-->
+
     <!-- Костыли для ИE, можно добавить в уже существующие -->
     <!--[if lt IE 9]>
     <link rel="stylesheet" href="../yngtu_ie8.css" type="text/css">
@@ -97,11 +96,10 @@
 
     <div class="profile__container">
         <div class="profile__collLeft">
-            <div class="b-user__photoFrame profile__photoFrame">
-                <a href="#">
-                    <img class="b-user__photoFrame_photo  profile__photoFrame_photo" alt="" src="">
-                </a>
-            </div><!-- /.profile__photoFrame -->
+
+            <a href="#">
+                <img class="b-user__photoFrame_photo  profile__photoFrame_photo" alt="" src="../img/user-261x343.jpg">
+            </a><!-- /.profile__photoFrame -->
 
             <div class="profile__previews">
                 <a class="button add" href="#"> <i class="icon icon-plus"></i> <br> Please, upload more photos </a>
@@ -122,76 +120,97 @@
             </div>
 
             <div class="profile__info_block">
-                <h2 class="b-std__header std__fs-smallH">Basic information <span class="profile__info_more">ask for more info</span></h2>
+                <h2 class="b-std__header std__fs-smallH">Basic information <a class="profile__info_more"><i class="icon icon-attention"></i>ask for more info</a ></h2>
 
                 <div class="profile__info_list">
 
                     <div class="profile__info_list_row">
-                        <div class="profile__info_list_label"></div>
-                        <div class="profile__info_list_item"></div>
+                        <div class="profile__info_list_label">Relationship: </div>
+                        <div class="profile__info_list_item">Single</div>
                     </div><!-- /.profile__info_list_row -->
 
                     <div class="profile__info_list_row">
-                        <div class="profile__info_list_label"></div>
-                        <div class="profile__info_list_item"></div>
+                        <div class="profile__info_list_label">Have kids: </div>
+                        <div class="profile__info_list_item">No</div>
                     </div><!-- /.profile__info_list_row -->
 
                     <div class="profile__info_list_row">
-                        <div class="profile__info_list_label"></div>
-                        <div class="profile__info_list_item"></div>
+                        <div class="profile__info_list_label">Want kids: </div>
+                        <div class="profile__info_list_item">I'll tell you later</div>
                     </div><!-- /.profile__info_list_row -->
 
                     <div class="profile__info_list_row">
-                        <div class="profile__info_list_label"></div>
-                        <div class="profile__info_list_item"></div>
+                        <div class="profile__info_list_label">Ethnicity: </div>
+                        <div class="profile__info_list_item">White / Caucasian</div>
                     </div><!-- /.profile__info_list_row -->
 
                     <div class="profile__info_list_row">
-                        <div class="profile__info_list_label"></div>
-                        <div class="profile__info_list_item"></div>
+                        <div class="profile__info_list_label">Body type: </div>
+                        <div class="profile__info_list_item">Average</div>
                     </div><!-- /.profile__info_list_row -->
 
                     <div class="profile__info_list_row">
-                        <div class="profile__info_list_label"></div>
-                        <div class="profile__info_list_item"></div>
+                        <div class="profile__info_list_label">Height: </div>
+                        <div class="profile__info_list_item">173 cm</div>
                     </div><!-- /.profile__info_list_row -->
 
                     <div class="profile__info_list_row">
-                        <div class="profile__info_list_label"></div>
-                        <div class="profile__info_list_item"></div>
+                        <div class="profile__info_list_label">Faith:  </div>
+                        <div class="profile__info_list_item">I'll tell you later</div>
                     </div><!-- /.profile__info_list_row -->
 
                     <div class="profile__info_list_row">
-                        <div class="profile__info_list_label"></div>
-                        <div class="profile__info_list_item"></div>
+                        <div class="profile__info_list_label">Smoke:</div>
+                        <div class="profile__info_list_item">Never</div>
                     </div><!-- /.profile__info_list_row -->
 
                     <div class="profile__info_list_row">
-                        <div class="profile__info_list_label"></div>
-                        <div class="profile__info_list_item"></div>
+                        <div class="profile__info_list_label">Drink:</div>
+                        <div class="profile__info_list_item">I'll tell you later</div>
                     </div><!-- /.profile__info_list_row -->
 
                     <div class="profile__info_list_row">
-                        <div class="profile__info_list_label"></div>
-                        <div class="profile__info_list_item"></div>
+                        <div class="profile__info_list_label">Eye color:</div>
+                        <div class="profile__info_list_item">I'll tell you later</div>
                     </div><!-- /.profile__info_list_row -->
 
                     <div class="profile__info_list_row">
-                        <div class="profile__info_list_label"></div>
-                        <div class="profile__info_list_item"></div>
+                        <div class="profile__info_list_label">Hair color:	</div>
+                        <div class="profile__info_list_item">I'll tell you later</div>
                     </div><!-- /.profile__info_list_row -->
 
                 </div><!-- /.profile__info_list -->
 
 
-            </div>
+            </div><!-- /.profile__info_block -->
 
-        </div><!-- /.profile__collLeft -->
+            <div class="profile__message">
+                <h2 class="b-std__header std__fs-smallH">Quick message</h2>
+                <div class="profile__message__description">
+                    Ex. Good day to meet nice person
+                </div>
+                <textarea name="message" onfocus="if (this.value == this.defaultValue) this.value = '';" onblur="if (this.value == '') this.value = this.defaultValue;" >Write your message here
+                </textarea>
+                <input type="submit" class="button" value="Send">
+
+            </div><!-- /.profile__message -->
+
+
+        </div><!-- /.profile__collCenter -->
 
         <div class="profile__collRight">
+            <ul class="profile__buttons">
+                <li><a class="button big message red" href="#"><i class="icon"></i>Send message</a></li>
+                <li><a class="button big wink" href="#"><i class="icon"></i>Wink</a></li>
+                <li><a class="button big gift" href="#"><i class="icon"></i>Send gift</a></li>
+                <li><a href="#">Hide from search</a></li>
+                <li><a href="#">Block from contact</a></li>
+                <li><a href="#">Report this user</a></li>
 
+            </ul>
+            
 
-        </div><!-- /.profile__collLeft -->
+        </div><!-- /.profile__collRight -->
 
 
     </div><!-- /.profile__container -->
