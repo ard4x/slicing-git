@@ -1,0 +1,10 @@
+.profile {}
+.profile__collLeft  {display: inline-block; width: 280px; margin-right: 30px; }
+.profile__collCenter{display: inline-block; width: 390px; margin-right: 30px;}
+.profile__collRight {display: inline-block; width: 220px;}
+    .profile__block-head {}
+        .profile__userName .icon {}
+
+
+    .profile__block-basicInfo {}
+
