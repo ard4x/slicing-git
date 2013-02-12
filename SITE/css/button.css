@@ -1,3 +1,7 @@
+/********************
+***
+*** Variables
+********************/
 .button {
     background: url('../img/button/btns.png') repeat-x;
     display: inline-block;
@@ -1012,7 +1016,6 @@ input.button {
 .slider {
     width: 100%;
     display: table;
-    border: solid 1px #cbcbcb;
     border-radius: 4px;
     text-align: center;
     vertical-align: middle;
@@ -1020,6 +1023,8 @@ input.button {
     position: relative;
 }
 .slider .slider-item {
+    border: solid 1px #cbcbcb;
+    border-left: none;
     display: block;
     float: left;
     box-sizing: border-box;
@@ -1028,7 +1033,6 @@ input.button {
     padding: 7px;
     width: 25%;
     vertical-align: middle;
-    border-left: 1px solid #cbcbcb;
     background: 0 -764px url('../img/button/btns.png') repeat-x;
     font: 14px Arial;
     color: #525252;
@@ -1037,13 +1041,13 @@ input.button {
     cursor: pointer;
 }
 .slider .slider-item:first-child {
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    border-left: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-left: solid 1px #cbcbcb;
 }
 .slider .slider-item:last-child {
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 .slider .slider-item:hover {
     background-position: 0 -793px;

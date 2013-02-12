@@ -386,7 +386,6 @@
 .slider {
   width: 100%;
   display: table;
-  border-radius: 4px;
   text-align: center;
   vertical-align: middle;
   margin-bottom: 20px;
@@ -399,11 +398,11 @@
     float: left;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-    height: 29px;
+    height: 31px;
     padding: 7px;
     width: 25%;
     vertical-align: middle;
-    background: 0 -764px url(@btnBgImg) repeat-x;
+    background: #e6e6e6 0 -764px url(@btnBgImg) repeat-x;
     font: 14px Arial;
     color: #525252;
     text-decoration: none;
@@ -425,11 +424,13 @@
       background-position: 0 -793px;
       text-decoration: none;
       color: #525252;
+      background-color: #dedede;
     }
 
     &:active,
     &.current {
       background-position: 0 -822px;
+      background-color: #545454;
       font: 14px Arial;
       color: #ffffff;
       text-shadow: #364f6d 0 1px 1px;
