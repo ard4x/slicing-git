@@ -53,7 +53,8 @@ form .lookingbx.f2f_look .b-lookBox__selectParams {padding-top:0;}
 form .lookingbx.f2f_look .b-lookBox__selectParams_param label {font-weight: normal; margin-right: 10px;}
 #cityId-label{height: 0;}
 .f2f__shortForm {display: none; top: -6px; position: relative; font-size: 14px;}
-    .f2f__shortForm_edit {float: right; font-size: 12px; padding-left: 18px; background: 0 -379px url(../../img/button-icos.png) no-repeat;}
+    .f2f__shortForm_edit {float: right; font-size: 12px;}
+.f2f__shortForm_edit i {background: 0 -380px url(../../img/button-icos.png) no-repeat; display: inline-block; width: 12px; height: 12px; margin-right: 4px; bottom: -1px; position: relative; font-size: 0;}
 .f2f__fullForm {display: block;}
             
 .location_field.small {width: 178px;}

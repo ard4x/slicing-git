@@ -102,26 +102,42 @@
                 <img class="b-user__photoFrame_photo  profile__photoFrame_photo" alt="" src="../img/user-261x343.jpg">
             </a><!-- /.profile__photoFrame -->
 
-            <div class="profile__previews">
+            <div class="profile__previews std__layer_grey-lite">
                 <a class="button add" href="#"> <i class="icon icon-plus"></i> <br> Please, upload more photos </a>
             </div>
 
         </div><!-- /.profile__collLeft -->
 
         <div class="profile__collCenter">
-            <div class="profile__info_top">
+            <div class="profile__info_top active">
                 <a class="profile__likeButton" href="#"></a>
-                <div class="profile__info_city">
-                    San Francisco, California, United States
-                </div>
-                <div class="profile__info_seeking">
-                    seeking women 30-47
-                </div>
 
-            </div>
+                <div class="profile__info_top_info">
+                    <div class="profile__info_city">
+                        San Francisco, California, United States
+                    </div>
+                    <div class="profile__info_seeking">
+                        seeking women 30-47
+                    </div>
+                </div><!-- /.profile__info_top_info -->
+
+                <div class="profile__info_top_message">
+
+                    <textarea class="profile__message_area" name="message" onfocus="if (this.value == this.defaultValue) this.value = '';" onblur="if (this.value == '') this.value = this.defaultValue;" >Write your message here
+                    </textarea>
+                    <input type="submit" class="button small" value="Send">
+                    <a class="profile__top_message_close" href="#"></a>
+                </div><!-- /.profile__info_top_message -->
+
+            </div><!-- /.profile__info_top -->
 
             <div class="profile__info_block">
-                <h2 class="b-std__header std__fs-smallH">Basic information <a class="profile__info_more"><i class="icon icon-attention"></i>ask for more info</a ></h2>
+                <h2 class="b-std__header std__fs-smallH">Basic information
+                    <span class="profile__info_more">
+                        <a href="#"><i class="icon icon-attention"></i>ask for more info</a>
+                        <span>you have asked for more info</span>
+                    </span>
+                </h2>
 
                 <div class="profile__info_list">
 
@@ -185,28 +201,28 @@
 
             </div><!-- /.profile__info_block -->
 
-            <div class="profile__message">
+            <div class="profile__message std__layer_grey-lite">
                 <h2 class="b-std__header std__fs-smallH">Quick message</h2>
                 <div class="profile__message__description">
                     Ex. Good day to meet nice person
                 </div>
-                <textarea name="message" onfocus="if (this.value == this.defaultValue) this.value = '';" onblur="if (this.value == '') this.value = this.defaultValue;" >Write your message here
+                <textarea class="profile__message_area" name="message" onfocus="if (this.value == this.defaultValue) this.value = '';" onblur="if (this.value == '') this.value = this.defaultValue;" >Write your message here
                 </textarea>
-                <input type="submit" class="button" value="Send">
+                <input type="submit" class="button small" value="Send">
 
             </div><!-- /.profile__message -->
 
 
         </div><!-- /.profile__collCenter -->
 
-        <div class="profile__collRight">
-            <ul class="profile__buttons">
+        <div class="profile__collRight ">
+            <ul class="profile__buttons std__layer_grey-lite">
                 <li><a class="button big message red" href="#"><i class="icon"></i>Send message</a></li>
                 <li><a class="button big wink" href="#"><i class="icon"></i>Wink</a></li>
                 <li><a class="button big gift" href="#"><i class="icon"></i>Send gift</a></li>
-                <li><a href="#">Hide from search</a></li>
-                <li><a href="#">Block from contact</a></li>
-                <li><a href="#">Report this user</a></li>
+                <li><a class="link" href="#">Hide from search</a></li>
+                <li><a class="link" href="#">Block from contact</a></li>
+                <li><a class="link" href="#">Report this user</a></li>
             </ul>
 
         </div><!-- /.profile__collRight -->
@@ -214,7 +230,12 @@
     </div><!-- /.profile__container -->
 
     <div class="profile__info_block">
-        <h2 class="b-std__header std__fs-smallH">About her & who she's looking for <a class="profile__info_more"><i class="icon icon-attention"></i>ask for more info</a ></h2>
+        <h2 class="b-std__header std__fs-smallH">About her & who she's looking for
+            <span class="profile__info_more">
+                <a href="#"><i class="icon icon-attention"></i>ask for more info</a>
+                <span>you have asked for more info</span>
+            </span>
+        </h2>
 
         <p>
             I enjoy watching and playing sports, I am a Dodger and Clippers fan! I may present myself to be the woman who does not like to get dirty, but give me a ball and I'll rise to the occasion! If that means changing into b-ball shorts, a tank and hat, I'm game and I will give you a run for your money!!! My competetive nature will present itself and even if you lose I'll be a fair sport.
@@ -226,7 +247,12 @@
     </div><!-- /.profile__info_block -->
 
     <div class="profile__info_block">
-        <h2 class="b-std__header std__fs-smallH">About her & who she's looking for <a class="profile__info_more"><i class="icon icon-attention"></i>ask for more info</a ></h2>
+        <h2 class="b-std__header std__fs-smallH">My life style
+            <span class="profile__info_more">
+                <a href="#"><i class="icon icon-attention"></i>ask for more info</a>
+                <span>you have asked for more info</span>
+            </span>
+        </h2>
 
         <h3>Interests</h3>
 
@@ -234,17 +260,20 @@
 
             <div class="profile__info_list_row">
                 <div class="profile__info_list_label">Books: </div>
-                <div class="profile__info_list_item">Gardening/Landscaping, Movies/Videos, Museums and art, Music and concerts <span></span></div>
+                <div class="profile__info_list_item"><a href="#">Gardening/Landscaping</a>, <a href="#">Movies/Videos</a>, <a href="#">Museums and art</a>, <a href="#">Music and concerts</a>
+                    <a href="#" class="label">+26</a></div>
             </div><!-- /.profile__info_list_row -->
 
             <div class="profile__info_list_row">
                 <div class="profile__info_list_label">Food: </div>
-                <div class="profile__info_list_item">Coffee and conversation, Business networking, Cooking, Dining out, Fishing/Hunting</div>
+                <div class="profile__info_list_item"><a href="#">Coffee and conversation</a>, <a href="#">Business networking</a>, <a href="#">Cooking</a>, <a href="#">Dining out</a>, <a href="#">Fishing/Hunting</a>
+                    <a href="#" class="label">+26</a></div>
             </div><!-- /.profile__info_list_row -->
 
             <div class="profile__info_list_row">
                 <div class="profile__info_list_label">Movies: </div>
-                <div class="profile__info_list_item">Performing arts, Religion/Spiritual, Travel/Sightseeing, Volunteering, Watching sports</div>
+                <div class="profile__info_list_item"><a href="#">Performing arts</a>, <a href="#">Religion/Spiritual</a>, <a href="#">Travel/Sightseeing</a>, <a href="#">Volunteering</a>, <a href="#">Watching sports</a>
+                    <a href="#" class="label">+26</a></div>
             </div><!-- /.profile__info_list_row -->
 
         </div><!-- /.profile__info_list -->
@@ -265,12 +294,14 @@
 
     </div>
 
-    <div class="profile__info_block">
+    <div class="profile__info_block profile__block-3coll">
         <h2 class="b-std__header std__fs-smallH">
-            <span class="profile__about_coll-1">About</span>
-            <span class="profile__about_coll-2">Her</span>
-            <span class="profile__about_coll-3">Her partner</span>
-            <a class="profile__info_more"><i class="icon icon-attention"></i>ask for more info</a >
+            <span class="profile__about_coll-1">About</span><span class="profile__about_coll-2">Her</span><span class="profile__about_coll-3">Her partner</span>
+            <span class="profile__info_more">
+                <a href="#"><i class="icon icon-attention"></i>ask for more info</a>
+                <span>you have asked for more info</span>
+            </span>
+
         </h2>
 
         <h3>Appearance </h3>
@@ -354,7 +385,7 @@
 
             <div class="profile__info_list_row">
                 <div class="profile__info_list_label">Ethnicity: </div>
-                <div class="profile__info_list_item"></div>
+                <div class="profile__info_list_item">White / Caucasian</div>
                 <div class="profile__info_list_item-2">No preference</div>
             </div><!-- /.profile__info_list_row -->
 
@@ -380,10 +411,13 @@
 
     </div><!-- /.profile__info_block -->
 
-    <div class="profile__info_block">
+    <div class="profile__info_block profile__block-myWord">
         <h2 class="b-std__header std__fs-smallH">
             In my own words
-            <a class="profile__info_more"><i class="icon icon-attention"></i>ask for more info</a >
+            <span class="profile__info_more">
+                <a href="#"><i class="icon icon-attention"></i>ask for more info</a>
+                <span>you have asked for more info</span>
+            </span>
         </h2>
 
         <div class="profile__info_list">
@@ -421,10 +455,11 @@
 
     </div><!-- /.profile__info_block -->
 
-    <div class="profile__buttons">
+    <div class="profile__buttons profile__block-bottom">
         <a class="button big message red" href="#"><i class="icon"></i>Send message</a>
         <a class="button big wink" href="#"><i class="icon"></i>Wink</a>
         <a class="button big gift" href="#"><i class="icon"></i>Send gift</a>
+        <span class="std__justify_helper"></span>
     </div><!-- /.profile__buttons -->
 
 
