@@ -7,12 +7,55 @@
 <body>
 
 <style type="text/css">
-.photo-button {margin: 0 1px 8px 1px; padding: 2px; background-color: #ffffff; display: inline-block; line-height: 0; position: relative; box-sizing: border-box;
-              -moz-box-shadow: 0 1px 3px 0px #7D7D7D; -webkit-box-shadow: 0 1px 3px 0px #7D7D7D; box-shadow: 0 1px 3px 0px #7D7D7D; height: 80px; }
-    .photo-button .plus {}
+.photo-button {
+    margin: 0 1px 2px 1px; ; display: inline-block; line-height: 0; position: relative; box-sizing: border-box; box-shadow: 0 1px 3px 0px #7D7D7D;
+    text-align: center; width: 80px; height: 80px; border: 2px solid #fff; text-decoration: none; padding: 6px; color: #525252;
+    text-shadow: 0 1px 0  #fff; font-weight: bold; line-height: 12px; font-size: 10px; font-family: Arial;
+    background: #efefef; /* Old browsers */
+    background: -moz-linear-gradient(top,  #efefef 0%, #dddddd 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(100%,#dddddd)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #efefef 0%,#dddddd 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #efefef 0%,#dddddd 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #efefef 0%,#dddddd 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #efefef 0%,#dddddd 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+}
+.photo-button:hover {
+    background: #efefef; /* Old browsers */
+    background: -moz-linear-gradient(top, #efefef 0%, #efefef 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(100%,#efefef)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #efefef 0%,#efefef 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #efefef 0%,#efefef 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #efefef 0%,#efefef 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #efefef 0%,#efefef 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#efefef',GradientType=0
+    ); /* IE6-9 */}
+.photo-button:active { box-shadow: none; 
+    background: #dddddd; /* Old browsers */
+    background: -moz-linear-gradient(top,  #dddddd 0%, #efefef 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dddddd), color-stop(100%,#efefef)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #dddddd 0%,#efefef 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #dddddd 0%,#efefef 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #dddddd 0%,#efefef 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #dddddd 0%,#efefef 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+}
+.photo-button .plus {display: block; font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif; font-size: 36px; line-height: 24px; margin-bottom: 4px;}
+.photo-button.type2 {width: 162px; font-size: 12px; line-height: 14px; padding: 8px 22px;}
+    .photo-button.type2 .plus {margin-bottom: 5px;}
+.photo-button.type3 {width: 244px; font-size: 12px; padding-top: 14px;}
+    .photo-button.type3 .plus {margin-bottom: 10px;}
+
 </style>
 
 <a class="photo-button" href="#"><span class="plus">+</span>Please, upload more photos</a>
 
+<br><br><br>
+
+<a class="photo-button type2" href="#"><span class="plus">+</span>Please, upload more photos</a>
+
+<br><br><br>
+
+<a class="photo-button type3" href="#"><span class="plus">+</span>Please, upload more photos</a>
 </body>
 </html>

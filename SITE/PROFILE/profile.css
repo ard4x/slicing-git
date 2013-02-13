@@ -14,7 +14,13 @@
     .profile__block-basicInfo {margin-bottom: 30px;}
         .b-user__photoFrame {margin-bottom: 18px;}
         .profile__photoFrame_photo {width: 274px; height: 363px;}
-        .profile__previews {padding: 10px 15px; }
+        .profile__previews {padding: 10px 15px; font-size: 0; text-align: right;}
+            .profile__previews_container {text-align: center; position: relative;}
+            .profile__previews_photo {width: 76px; height: 76px;}
+            .profile__previews_frame {margin-bottom: 1px;}
+            .profile__previews_viewAll {font-size: 14px; margin-top: 6px; display: inline-block;}
+            .profile__previews_arrow_right, .profile__previews_arrow_left {position: absolute; top: 28px; left: -26px;}
+                .profile__previews_arrow_right {left: auto; right: -27px;}
         .profile__info_top {position: relative; width: 421px; height: 80px; margin: 3px 0 13px -31px; padding: 15px 15px  15px 78px; box-sizing: border-box; -moz-box-sizing: border-box; font-size: 14px;}
             .profile__info_city        {color: #999; padding-left: 8px; margin-bottom: 4px; margin-top: 6px; font-weight: bold;}
             .profile__info_seeking     {padding-left: 9px;}
@@ -72,3 +78,49 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 /** Bottom buttons block **/
 .profile__block-bottom {padding: 30px 90px 0; border-top: 1px solid #ccc; text-align: justify; }
     .profile__block-bottom .button {width: 200px; margin-bottom: 0;}
+
+/** Buttons photo preview **/
+.photo-button {
+    vertical-align: top;
+    margin: 0 1px 2px 1px; ; display: inline-block; line-height: 0; position: relative; box-sizing: border-box; box-shadow: 0 1px 3px 0px #7D7D7D;
+    text-align: center; width: 80px; height: 80px; border: 2px solid #fff; text-decoration: none; padding: 6px; color: #525252;
+    text-shadow: 0 1px 0  #fff; font-weight: bold; line-height: 12px; font-size: 10px; font-family: Arial;
+    background: #efefef; /* Old browsers */
+    background: -moz-linear-gradient(top,  #efefef 0%, #dddddd 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(100%,#dddddd)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #efefef 0%,#dddddd 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #efefef 0%,#dddddd 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #efefef 0%,#dddddd 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #efefef 0%,#dddddd 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+}
+.photo-button:hover {
+    text-decoration: none;
+    color: #525252;
+    background: #efefef; /* Old browsers */
+    background: -moz-linear-gradient(top, #efefef 0%, #efefef 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efefef), color-stop(100%,#efefef)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #efefef 0%,#efefef 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #efefef 0%,#efefef 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #efefef 0%,#efefef 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #efefef 0%,#efefef 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#efefef',GradientType=0
+    ); /* IE6-9 */}
+.photo-button:active { box-shadow: none;
+    color: #525252;
+    background: #dddddd; /* Old browsers */
+    background: -moz-linear-gradient(top,  #dddddd 0%, #efefef 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dddddd), color-stop(100%,#efefef)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #dddddd 0%,#efefef 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #dddddd 0%,#efefef 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #dddddd 0%,#efefef 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #dddddd 0%,#efefef 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#efefef',GradientType=0 ); /* IE6-9 */
+}
+.photo-button .plus {display: block; font-family: 'Arial Black', 'Arial Bold', Gadget, sans-serif; font-size: 36px; line-height: 24px; margin-bottom: 4px; width: 100%;
+    position: relative;}
+.photo-button.type2 {width: 162px; font-size: 12px; line-height: 14px; padding: 8px 22px;}
+.photo-button.type2 .plus {margin-bottom: 5px;}
+.photo-button.type3 {width: 244px; font-size: 12px; padding-top: 14px;}
+.photo-button.type3 .plus {margin-bottom: 10px;}
+
