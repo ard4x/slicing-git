@@ -14,13 +14,13 @@
     .profile__block-basicInfo {margin-bottom: 30px;}
         .b-user__photoFrame {margin-bottom: 18px;}
         .profile__photoFrame_photo {width: 274px; height: 363px;}
-        .profile__previews {padding: 10px 15px; font-size: 0; text-align: right;}
+        .profile__previews {padding: 10px 10px; font-size: 0; text-align: center;}
             .profile__previews_container {text-align: center; position: relative;}
             .profile__previews_photo {width: 76px; height: 76px;}
             .profile__previews_frame {margin-bottom: 1px;}
-            .profile__previews_viewAll {font-size: 14px; margin-top: 6px; display: inline-block;}
-            .profile__previews_arrow_right, .profile__previews_arrow_left {position: absolute; top: 28px; left: -26px;}
-                .profile__previews_arrow_right {left: auto; right: -27px;}
+            .profile__previews_viewAll {font-size: 14px; margin-top: 6px; display: inline-block; float:right;}
+            .profile__previews_arrow_right, .profile__previews_arrow_left {position: absolute; top: 28px; left: -21px;}
+                .profile__previews_arrow_right {left: auto; right: -22px;}
         .profile__info_top {position: relative; width: 421px; height: 80px; margin: 3px 0 13px -31px; padding: 15px 15px  15px 78px; box-sizing: border-box; -moz-box-sizing: border-box; font-size: 14px;}
             .profile__info_city        {color: #999; padding-left: 8px; margin-bottom: 4px; margin-top: 6px; font-weight: bold;}
             .profile__info_seeking     {padding-left: 9px;}
