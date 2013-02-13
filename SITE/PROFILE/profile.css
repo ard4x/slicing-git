@@ -22,7 +22,7 @@
             .profile__previews_arrow_right, .profile__previews_arrow_left {position: absolute; top: 28px; left: -21px;}
                 .profile__previews_arrow_right {left: auto; right: -22px;}
         .profile__info_top {position: relative; width: 421px; height: 80px; margin: 3px 0 13px -31px; padding: 15px 15px  15px 78px; box-sizing: border-box; -moz-box-sizing: border-box; font-size: 14px;}
-            .profile__info_city        {color: #999; padding-left: 8px; margin-bottom: 4px; margin-top: 6px; font-weight: bold;}
+            .profile__info_city        {color: #999; padding-left: 9px; margin-bottom: 4px; margin-top: 6px; font-weight: bold;}
             .profile__info_seeking     {padding-left: 9px;}
             .profile__likeButton       {position: absolute; left: 0; top: 15px; width: 64px; height: 54px; display: block; background: 0 -60px url(../img/profile/profile.png) no-repeat;}
                 .profile__likeButton.liked {background-position: 0 0;}
@@ -123,4 +123,14 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 .photo-button.type2 .plus {margin-bottom: 5px;}
 .photo-button.type3 {width: 244px; font-size: 12px; padding-top: 14px;}
 .photo-button.type3 .plus {margin-bottom: 10px;}
+/** no photo **/
+.profile__block-basicInfo.no-photo .profile__previews {display: none;}
+.profile__empty_photo {display: none; text-align: center;}
+.profile__empty_photo .button {margin-top: 17px; width: 260px;}
+.profile__block-basicInfo.no-photo .profile__empty_photo {display: block;}
+.profile__block-basicInfo.no-photo .b-user__photoFrame {box-shadow: none; padding: 0; margin: 23px 0 25px;}
+.profile__block-basicInfo.no-photo .b-user__photoFrame_photo {width: 280px; height: 267px;}
+
+.profile__block-basicInfo.no-photo .profile__likeButton {display: none;}
+.profile__block-basicInfo.no-photo .profile__info_top {width: 100%; margin-left: -10px; padding-left: 0;}
 
