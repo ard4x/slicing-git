@@ -60,11 +60,11 @@
             b) Can't find the e-mail in <strong>Spam/Junk</strong> folder, <strong><a href="#" id="show_resend">click here</a></strong> to change your e-mail address
         </p>
 
-        <div id="resend" class="std__layer_grey-lite reg__confirm_newEmail">
+        <div id="resend" class="std__layer_grey-lite reg__confirm_newEmail error"><!-- класс для вывода ошибки error -->
             <h2 class="std__header std__fs-smallH">Change your e-mail address</h2>
 
             <form action="#">
-                <input class="std__input" type="text" placeholder="Enter new e-mail"> <br>
+                <input class="std__input" type="text" placeholder="Enter new e-mail"><span class="reg__confirm_newEmail_errMsg">This e-mail already exists!</span><br>
                 <a class="btn-s-1 reg__confirm_newEmail_button" href="#"><span>Resend activation e-mail</span></a>
             </form>
         </div><!-- /.reg__confirm_newEmail -->

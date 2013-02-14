@@ -41,3 +41,7 @@
             .reg__confirm_newEmail .std__header {text-align: left;}
             .reg__confirm_newEmail input[type=text] {width: 450px; margin-bottom: 10px;}
             .reg__confirm_newEmail .reg__confirm_newEmail_button {width: 225px;}
+            .reg__confirm_newEmail .reg__confirm_newEmail_errMsg {display: none;  text-align: left;  margin-left: 12px; margin-top: 6px;position: absolute; font: 14px Arial;  color: #990000;
+                background: 0 4px url(http://yangutu.com/img/err_arrow.png) no-repeat; padding-left: 15px; width: 200px;}
+            .reg__confirm_newEmail.error input {border-color: #990000;}
+            .reg__confirm_newEmail.error .reg__confirm_newEmail_errMsg {display: inline-block;}
