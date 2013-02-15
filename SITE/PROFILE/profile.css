@@ -155,6 +155,5 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
                     .profile__block-signals_user_event  {margin-bottom: 8px;}
                     .profile__block-signals_user_links  {}
 
-.profile__history_empty {height: 157px; width: 580px; display: table-cell; text-align: center; vertical-align: middle; left: 60px; line-height: 30px; top: 30px; position: relative;; background-color: #e8eff5; border-radius: 4px;}
-.profile__history_empty .corner {display: block;
-    position: absolute; width: 0; height: 0; border: 78px solid transparent; border-left: 40px solid #e8eff5; border-right: none;right: -40px; top: 0;}
+.profile__history_empty {height: 157px; width: 580px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; text-align: center; margin-left: 60px; line-height: 30px; margin-top: 30px; padding-top: 31px; position: relative;; background-color: #e8eff5; border-radius: 4px;}
+.profile__history_empty .corner {display: block; position: absolute; width: 0; height: 0; border: 78px solid transparent; border-left: 40px solid #e8eff5; border-right: none;right: -39px; top: 0;}
