@@ -147,8 +147,8 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
     .profile__block-signals {}
         .profile__block-signals h3 {border: none; background-color: #f5f5f5 !important; text-transform: none; padding: 7px 10px 10px!important; border-radius: 4px; margin: 15px 10px 10px !important;}
         .profile__block-signals_userList {overflow: hidden;}
-            .profile__block-signals_user {overflow: hidden; margin: 0 20px 17px; width: 310px; float: left;}
-                .profile__block-signals_userPic       {float: left; margin-bottom: 0;}
+            .profile__block-signals_user {overflow: hidden; margin: 0 20px 15px; width: 310px; float: left;}
+                .profile__block-signals_userPic       {float: left; margin-bottom: 2px;}
                 .profile__block-signals_userPic_photo {width: 100px; height: 100px;}
                 .profile__block-signals_user_descript {margin-left: 115px; padding-top: 1px;}
                     .profile__block-signals_user_person {text-align: left; font-size: 18px; margin-bottom: 7px;}
