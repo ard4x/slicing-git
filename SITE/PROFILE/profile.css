@@ -6,8 +6,8 @@
     .profile__block-head {padding-bottom: 20px; border-bottom: 1px solid #ccc; margin-bottom: 20px;}
         .profile__block-head .b-std__header,
         .profile__block-head .slider {margin-bottom: 0;}
-        .profile__userName {margin-top: 5px;}
-        .profile__userName .icon {margin-left: 10px; margin-bottom: 8px;}
+        .profile__userName {}
+        .profile__userName .icon {margin-left: 10px; margin-bottom: 3px;}
         .profile__block-head .slider-item {width: 33.3333%}
         .profile__block-head .button.favorite {width: 100%;}
         .profile__block-head .profile__info_block {margin-bottom: 10px;}
@@ -73,9 +73,10 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
     .profile__top_message_close {width: 9px; height: 9px; display: block;  position: absolute; top: 15px; right:14px; background: 0 -116px url(../img/profile/profile.png) no-repeat;}
     .profile__top_message_close:hover {background-position: -11px -116px;}
 /** profile buttons **/
+.profile__buttons {padding-bottom: 1px;}
 .profile__buttons li {text-align: center;}
 .profile__buttons .button {margin-bottom: 17px;  width: 100%;}
-.profile__buttons .link {padding-top: 2px; margin-bottom: 13px; display: inline-block}
+.profile__buttons .link {padding-top: 2px; margin-bottom: 13px; display: inline-block; font-size: 12px;}
 /** Bottom buttons block **/
 .profile__block-bottom {padding: 30px 90px 0; border-top: 1px solid #ccc; text-align: justify; }
     .profile__block-bottom .button {width: 200px; margin-bottom: 0;}
