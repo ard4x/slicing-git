@@ -360,6 +360,25 @@
 
   }
 
+  &.like {
+    .iconedButton(@btnBgPosY:-409px);
+    padding-left: 38px;
+    i.icon {
+      width: 31px;
+    }
+
+    &.liked {
+      .iconedButton(@btnBgPosY:-437px);
+      cursor: pointer;
+      padding-left: 38px;
+      i.icon {
+        width: 31px;
+      }
+    }
+
+
+  }
+
   &.google {
     .iconedButton();
      &.large {

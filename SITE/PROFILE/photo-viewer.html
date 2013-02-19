@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <title>Another Profile</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/button.css">   <!-- НОВЫЕ стили кнопок. Проверить наличие, заменить более новой версией, а так же файлы btns.png и btns-icos.png, Версия указана в первой строке файла-->
+    <link rel="stylesheet" href="profile.css">
+    <!-- Костыли для ИE, можно добавить в уже существующие -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../yngtu_ie8.css" type="text/css">
+    <![endif]-->
+
+    <!--  Файлы для замены селектов -->
+
+    <script src="../js/jquery-1.4.4.min.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'});
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+    <!--  ---------------------------------------- -->
+
+</head>
+<body>
+<!-- начало шаблонной шапки -->
+<div class="header">
+    <div class="header_inn">
+        <div class="top_navigation">
+            <ul class="left">
+                <li><a href="#">Messages</a><span class="new_event">2</span></li>
+                <li><a href="#">Signals</a><span class="new_event">45</span></li>
+                <li><a href="#">Soulmates</a><span class="new_event">167</span></li>
+            </ul>
+            <ul class="right">
+                <li class="coints">1450 Coins <a href="#">Add</a></li>
+                <li class="profile"><a href="#">Profile </a></li>
+                <li class="account"><a href="#">Account Settings</a></li>
+            </ul>
+            <div class="std__clear"></div>
+        </div>
+        <div class="bot_navigation">
+            <a href="#"><img src="../img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>
+            <ul class="main_menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Matches</a></li>
+                <li><a href="#">TOP-100</a></li>
+                <li><a href="#">Apps and Games</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+            <div class="clr2"></div>
+        </div>
+    </div>
+</div>
+<!-- КОНЕЦ шаблонной шапки -->
+<div class="content">
+    <div class="content_inn profile">
+
+        <div class="profile__block-head">
+            <div class="profile__collLeft">
+                <h1 class="b-std__header std__fs-bigH profile__userName">Punkyrobinson, 34<i class="icon icon-online"></i></h1>
+
+            </div><!-- /.profile__collLeft -->
+
+            <div class="profile__collCenter">
+                <div class="slider">
+                    <a class="slider-item current" href="#">Her profile</a>
+                    <a class="slider-item" href="#">Photos (1)</a>
+                    <a class="slider-item" href="#">Our history</a>
+                </div>
+
+            </div><!-- /.profile__collLeft -->
+
+            <div class="profile__collRight">
+                <a class="button lite-grey favorite" href="#"><i class="icon"></i>Add to favorites</a>
+
+            </div><!-- /.profile__collLeft -->
+
+            <div class="std__clear"></div>
+        </div><!-- /.profile__block-head -->
+
+        <div class="profile__block">
+
+            <div class="profile__collWide">
+
+                <div class="profile__photoViewer">
+
+                    <div class="profile__photoViewer_top">
+                        <div class="profile__photoViewer_top_head">
+
+                            <a href="#" class="button lite-grey like"><i class="icon"></i>Like</a>
+
+                            <div class="profile__photoViewer_rate">
+
+                                <div class="profile__photoViewer_rate_stars">
+                                    <a class="profile__photoViewer_star" href="#">1</a>
+                                    <a class="profile__photoViewer_star" href="#">2</a>
+                                    <a class="profile__photoViewer_star" href="#">3</a>
+                                    <a class="profile__photoViewer_star" href="#">4</a>
+                                    <a class="profile__photoViewer_star" href="#">5</a>
+                                </div>
+
+                            </div><!-- /.profile__photoViewer_stars -->
+
+                            <a class="profile__photoViewer_top_report" href="#">Report photo</a>
+
+                        </div><!-- /.profile__photoViewer_top_head -->
+
+                        <div class="profile__slider">
+
+                            <div class="profile__slider_item">
+                                <img src="../img/profile/slide1.jpg" alt="">
+                            </div><!-- /.profile__slider_item -->
+
+                            <a class="profile__slider_nav"><i></i></a>
+                            <a class="profile__slider_nav right"><i></i></a>
+                        </div><!-- /.profile__slider -->
+                    </div><!-- /.profile__photoViewer_top -->
+
+                    <div class="profile__photoViewer_bottom">
+
+                        <div class="profile__photoViewer_carousel">
+
+                            <div class="profile__photoViewer_carousel_list">
+
+                                <div class="profile__photoViewer_carousel_listItem">
+                                    <a class="b-user__photoFrame profile__previews_frame" href="#">
+                                        <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__previews_photo">
+                                    </a>
+                                </div><!-- profile__photoViewer_carousel_listItem -->
+
+                                <div class="profile__photoViewer_carousel_listItem">
+                                    <a class="b-user__photoFrame profile__previews_frame" href="#">
+                                        <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__previews_photo">
+                                    </a>
+                                </div><!-- profile__photoViewer_carousel_listItem -->
+
+                                <div class="profile__photoViewer_carousel_listItem">
+                                    <a class="b-user__photoFrame profile__previews_frame" href="#">
+                                        <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__previews_photo">
+                                    </a>
+                                </div><!-- profile__photoViewer_carousel_listItem -->
+
+                                <div class="profile__photoViewer_carousel_listItem">
+                                    <a class="b-user__photoFrame profile__previews_frame" href="#">
+                                        <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__previews_photo">
+                                    </a>
+                                </div><!-- profile__photoViewer_carousel_listItem -->
+
+                                <div class="profile__photoViewer_carousel_listItem">
+                                    <a class="b-user__photoFrame profile__previews_frame" href="#">
+                                        <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__previews_photo">
+                                    </a>
+                                </div><!-- profile__photoViewer_carousel_listItem -->
+
+                            </div><!-- /.profile__photoViewer_carousel_list -->
+
+                            <a href="#" class="profile__photoViewer_carousel_arrow_left button small lite-grey round"><i class="icon icon-arrow-left"></i></a>
+                            <a href="#" class="profile__photoViewer_carousel_arrow_right button small lite-grey round"><i class="icon icon-arrow-right"></i></a>
+
+                        </div><!-- /. profile__photoViewer_carousel -->
+
+                    </div><!-- /.profile__photoViewer_bottom -->
+
+                </div><!-- /. profile__photoViewer -->
+
+            </div><!-- /.profile__collWide -->
+
+            <div class="profile__collRight ">
+                <ul class="profile__buttons std__layer_grey-lite">
+                    <li><a class="button big message red" href="#"><i class="icon"></i>Send message</a></li>
+                    <li><a class="button big wink" href="#"><i class="icon"></i>Wink</a></li>
+                    <li><a class="button big gift" href="#"><i class="icon"></i>Send gift</a></li>
+                    <li><a class="link" href="#">Hide from search</a></li>
+                    <li><a class="link" href="#">Block from contact</a></li>
+                    <li><a class="link" href="#">Report this user</a></li>
+                </ul>
+
+            </div><!-- /.profile__collRight -->
+            <div class="std__clear"></div>
+        </div><!-- /.profile__container -->
+
+    </div><!-- /.profile /.content_inn -->
+</div><!-- /.content -->
+<!-- НАЧАЛО шаблонного Футера -->
+<div class="footer">
+    <div class="footer_inn">`
+        <ul>
+            <li><a href="/page/about">About us</a></li>
+            <li><a href="/help">FAQ</a></li>
+            <li><a href="http://blog.yangutu.com/">Our blog</a></li>
+            <li><a href="/feedback">Contact us</a></li>
+        </ul>
+        <ul>
+            <li><a href="/page/policy">Privacy</a></li>
+            <li><a href="/page/terms">Terms of use</a></li>
+        </ul>
+        <ul>
+            <li><a href="/page/scams">Scam warning</a></li>
+            <li><a href="/page/safety">Safety Tips</a></li>
+        </ul>
+        <ul>
+            <li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+            <li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+            <li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+
+        </ul>
+        <ul>
+            <li><a href="/dating/all">People Directory</a></li>
+        </ul>
+        <div class="right">
+            <font color="black">&copy; 2010-2011 Yangutu Inc. All rights reserved</font><br>
+            <span>Yangutu (swahili) - My one and only.</span>
+        </div>
+        <div class="std__clear"></div>
+    </div>
+</div>
+
+</body>
+</html>
