@@ -1,0 +1,328 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <title>Another Profile</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/button.css">   <!-- НОВЫЕ стили кнопок. Проверить наличие, заменить более новой версией, а так же файлы btns.png и btns-icos.png, Версия указана в первой строке файла-->
+    <link rel="stylesheet" href="profile.css">
+    <!-- Костыли для ИE, можно добавить в уже существующие -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../yngtu_ie8.css" type="text/css">
+    <![endif]-->
+
+    <!--  Файлы для замены селектов -->
+
+    <script src="../js/jquery-1.4.4.min.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'});
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+    <!--  ---------------------------------------- -->
+
+</head>
+<body>
+<!-- начало шаблонной шапки -->
+<div class="header">
+    <div class="header_inn">
+        <div class="top_navigation">
+            <ul class="left">
+                <li><a href="#">Messages</a><span class="new_event">2</span></li>
+                <li><a href="#">Signals</a><span class="new_event">45</span></li>
+                <li><a href="#">Soulmates</a><span class="new_event">167</span></li>
+            </ul>
+            <ul class="right">
+                <li class="coints">1450 Coins <a href="#">Add</a></li>
+                <li class="profile"><a href="#">Profile </a></li>
+                <li class="account"><a href="#">Account Settings</a></li>
+            </ul>
+            <div class="std__clear"></div>
+        </div>
+        <div class="bot_navigation">
+            <a href="#"><img src="../img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>
+            <ul class="main_menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Matches</a></li>
+                <li><a href="#">TOP-100</a></li>
+                <li><a href="#">Apps and Games</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+            <div class="clr2"></div>
+        </div>
+    </div>
+</div>
+<!-- КОНЕЦ шаблонной шапки -->
+<div class="content">
+    <div class="content_inn profile">
+
+        <h1 class="b-std__header std__fs-bigH dashed">Signals</h1>
+
+        <div class="profile__signals_filter_wrapper">
+            <ul class="profile__signals_filter">
+                <li class="profile__signals_filter_item active"><a href="#">All</a></li>
+                <li class="profile__signals_filter_item"><a href="#">Guests</a></li>
+                <li class="profile__signals_filter_item haveSignal"><a href="#">Photo rates (15)</a></li>
+                <li class="profile__signals_filter_item"><a href="#">Winks</a></li>
+                <li class="profile__signals_filter_item"><a href="#">Added me to favorites</a></li>
+                <li class="profile__signals_filter_item haveSignal"><a href="#">Face-to-Face (18)</a></li>
+                <li class="profile__signals_filter_item haveSignal"><a href="#">TOP-100 (145)</a></li>
+                <li class="profile__signals_filter_item more">
+                    <ul class="profile__signals_filter_more">
+                        <li class="profile__signals_filter_more_item first haveSignal"><a href="#">More signals (4)</a></li>
+                        <li class="profile__signals_filter_more_item separator"></li>
+                        <li class="profile__signals_filter_more_item haveSignal"><a href="#">Updated his/her profile (1)</a></li>
+                        <li class="profile__signals_filter_more_item"><a href="#">Updated his/her profile as you asked</a></li>
+                        <li class="profile__signals_filter_more_item haveSignal"><a href="#">Wants to get know you better (3)</a></li>
+                        <li class="profile__signals_filter_more_arrow"></li>
+                    </ul>
+
+                </li><!-- /.profile__signals_filter -->
+
+            </ul><!-- .profile__signals_filter -->
+        </div><!-- /.profile__signals_filter_wrapper -->
+
+        <div class="profile__info_block profile__block-signals profile__signals">
+
+              <h2 class="b-std__header std__fs-miniH">January 8</h2>
+
+              <div class="profile__block-signals_userList">
+
+                  <div class="profile__block-signals_user">
+                      <div class="profile__block-signals_userPic b-user__photoFrame">
+
+                          <a href="/1623018452" target="_blank">
+                              <img class="profile__block-signals_userPic_photo b-user__photoFrame_photo" src="http://yangutu-s4.s3.amazonaws.com/93/a7/00/96x96_5032865.JPG?1333266674" alt="">
+                          </a>
+
+                      </div><!-- /.profile__block-signals_userPic-->
+
+                      <div class="profile__block-signals_user_descript">
+                          <div class="b-user__person profile__block-signals_user_person">
+                              <a href="/1623018452" target="_blank">
+                                  Svetlana</a>, 36
+                              </a>
+                          </div>
+
+                          <div class="profile__block-signals_user_time">
+                              Today 5:26 PM
+                          </div>
+                          <div class="profile__block-signals_user_event">
+                              Checked out your profile
+                          </div><!-- /.profile__block-signals_user_event -->
+
+                          <div class="profile__block-signals_user_links">
+                              <a href="#">View profile</a>&nbsp;|&nbsp;<a href="#">View all profile visitors</a>
+                          </div><!-- /.profile__block-signals_user_links -->
+                      </div><!-- /.profile__block-signals_user_descript -->
+                  </div><!-- /.profile__block-signals_user -->
+
+                  <div class="profile__block-signals_user">
+                      <div class="profile__block-signals_userPic b-user__photoFrame">
+
+                          <a href="/1623018452" target="_blank">
+                              <img class="profile__block-signals_userPic_photo b-user__photoFrame_photo" src="http://yangutu-s4.s3.amazonaws.com/93/a7/00/96x96_5032865.JPG?1333266674" alt="">
+                          </a>
+
+                      </div><!-- /.profile__block-signals_userPic-->
+
+                      <div class="profile__block-signals_user_descript">
+                          <div class="b-user__person profile__block-signals_user_person">
+                              <a href="/1623018452" target="_blank">
+                                  Svetlana</a>, 36
+                              </a>
+                          </div>
+
+                          <div class="profile__block-signals_user_time">
+                              Today 5:26 PM
+                          </div>
+                          <div class="profile__block-signals_user_event">
+                              Checked out your profile
+                          </div><!-- /.profile__block-signals_user_event -->
+
+                          <div class="profile__block-signals_user_links">
+                              <a href="#">View profile</a>&nbsp;|&nbsp;<a href="#">View all profile visitors</a>
+                          </div><!-- /.profile__block-signals_user_links -->
+                      </div><!-- /.profile__block-signals_user_descript -->
+                  </div><!-- /.profile__block-signals_user -->
+
+              </div><!-- /.profile__block-signals_userList -->
+
+              <h2 class="b-std__header std__fs-miniH">January 6</h2>
+              <div class="profile__block-signals_userList">
+                  <div class="profile__block-signals_user">
+                      <div class="profile__block-signals_userPic b-user__photoFrame">
+
+                          <a href="/1623018452" target="_blank">
+                              <img class="profile__block-signals_userPic_photo b-user__photoFrame_photo" src="http://yangutu-s4.s3.amazonaws.com/93/a7/00/96x96_5032865.JPG?1333266674" alt="">
+                          </a>
+
+                      </div><!-- /.profile__block-signals_userPic-->
+
+                      <div class="profile__block-signals_user_descript">
+                          <div class="b-user__person profile__block-signals_user_person">
+                              <a href="/1623018452" target="_blank">
+                                  Svetlana</a>, 36
+                              </a>
+                          </div>
+
+                          <div class="profile__block-signals_user_time">
+                              Today 5:26 PM
+                          </div>
+                          <div class="profile__block-signals_user_event">
+                              Checked out your profile
+                          </div><!-- /.profile__block-signals_user_event -->
+
+                          <div class="profile__block-signals_user_links">
+                              <a href="#">View profile</a>&nbsp;|&nbsp;<a href="#">View all profile visitors</a>
+                          </div><!-- /.profile__block-signals_user_links -->
+                      </div><!-- /.profile__block-signals_user_descript -->
+                  </div><!-- /.profile__block-signals_user -->
+              </div><!-- /."profile__block-signals_userList -->
+
+            <h2 class="b-std__header std__fs-miniH">Aug 6, 2012</h2>
+            <div class="profile__block-signals_userList">
+                <div class="profile__block-signals_user">
+                    <div class="profile__block-signals_userPic b-user__photoFrame">
+
+                        <a href="/1623018452" target="_blank">
+                            <img class="profile__block-signals_userPic_photo b-user__photoFrame_photo" src="http://yangutu-s4.s3.amazonaws.com/93/a7/00/96x96_5032865.JPG?1333266674" alt="">
+                        </a>
+
+                    </div><!-- /.profile__block-signals_userPic-->
+
+                    <div class="profile__block-signals_user_descript">
+                        <div class="b-user__person profile__block-signals_user_person">
+                            <a href="/1623018452" target="_blank">
+                                Svetlana</a>, 36
+                            </a>
+                        </div>
+
+                        <div class="profile__block-signals_user_time">
+                            Today 5:26 PM
+                        </div>
+                        <div class="profile__block-signals_user_event">
+                            Checked out your profile
+                        </div><!-- /.profile__block-signals_user_event -->
+
+                        <div class="profile__block-signals_user_links">
+                            <a href="#">View profile</a>&nbsp;|&nbsp;<a href="#">View all profile visitors</a>
+                        </div><!-- /.profile__block-signals_user_links -->
+                    </div><!-- /.profile__block-signals_user_descript -->
+                </div><!-- /.profile__block-signals_user -->
+
+                <div class="profile__block-signals_user">
+                    <div class="profile__block-signals_userPic b-user__photoFrame">
+
+                        <a href="/1623018452" target="_blank">
+                            <img class="profile__block-signals_userPic_photo b-user__photoFrame_photo" src="http://yangutu-s4.s3.amazonaws.com/93/a7/00/96x96_5032865.JPG?1333266674" alt="">
+                        </a>
+
+                    </div><!-- /.profile__block-signals_userPic-->
+
+                    <div class="profile__block-signals_user_descript">
+                        <div class="b-user__person profile__block-signals_user_person">
+                            <a href="/1623018452" target="_blank">
+                                Svetlana</a>, 36
+                            </a>
+                        </div>
+
+                        <div class="profile__block-signals_user_time">
+                            Today 5:26 PM
+                        </div>
+                        <div class="profile__block-signals_user_event">
+                            Checked out your profile
+                        </div><!-- /.profile__block-signals_user_event -->
+
+                        <div class="profile__block-signals_user_links">
+                            <a href="#">View profile</a>&nbsp;|&nbsp;<a href="#">View all profile visitors</a>
+                        </div><!-- /.profile__block-signals_user_links -->
+                    </div><!-- /.profile__block-signals_user_descript -->
+                </div><!-- /.profile__block-signals_user -->
+
+                <div class="profile__block-signals_user">
+                    <div class="profile__block-signals_userPic b-user__photoFrame">
+
+                        <a href="/1623018452" target="_blank">
+                            <img class="profile__block-signals_userPic_photo b-user__photoFrame_photo" src="http://yangutu-s4.s3.amazonaws.com/93/a7/00/96x96_5032865.JPG?1333266674" alt="">
+                        </a>
+
+                    </div><!-- /.profile__block-signals_userPic-->
+
+                    <div class="profile__block-signals_user_descript">
+                        <div class="b-user__person profile__block-signals_user_person">
+                            <a href="/1623018452" target="_blank">
+                                Svetlana</a>, 36
+                            </a>
+                        </div>
+
+                        <div class="profile__block-signals_user_time">
+                            Today 5:26 PM
+                        </div>
+                        <div class="profile__block-signals_user_event">
+                            Checked out your profile
+                        </div><!-- /.profile__block-signals_user_event -->
+
+                        <div class="profile__block-signals_user_links">
+                            <a href="#">View profile</a>&nbsp;|&nbsp;<a href="#">View all profile visitors</a>
+                        </div><!-- /.profile__block-signals_user_links -->
+                    </div><!-- /.profile__block-signals_user_descript -->
+                </div><!-- /.profile__block-signals_user -->
+            </div><!-- /."profile__block-signals_userList -->
+
+        </div><!-- /.profile__info_block -->
+
+    </div><!-- /.profile /.content_inn -->
+</div><!-- /.content -->
+<!-- НАЧАЛО шаблонного Футера -->
+<div class="footer">
+    <div class="footer_inn">`
+        <ul>
+            <li><a href="/page/about">About us</a></li>
+            <li><a href="/help">FAQ</a></li>
+            <li><a href="http://blog.yangutu.com/">Our blog</a></li>
+            <li><a href="/feedback">Contact us</a></li>
+        </ul>
+        <ul>
+            <li><a href="/page/policy">Privacy</a></li>
+            <li><a href="/page/terms">Terms of use</a></li>
+        </ul>
+        <ul>
+            <li><a href="/page/scams">Scam warning</a></li>
+            <li><a href="/page/safety">Safety Tips</a></li>
+        </ul>
+        <ul>
+            <li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+            <li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+            <li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+
+        </ul>
+        <ul>
+            <li><a href="/dating/all">People Directory</a></li>
+        </ul>
+        <div class="right">
+            <font color="black">&copy; 2010-2011 Yangutu Inc. All rights reserved</font><br>
+            <span>Yangutu (swahili) - My one and only.</span>
+        </div>
+        <div class="std__clear"></div>
+    </div>
+</div>
+
+</body>
+</html>

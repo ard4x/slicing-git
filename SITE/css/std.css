@@ -2,6 +2,7 @@
 .l-std__content {float: left; margin-right: 17px; position: relative;}
 /** headers styles ***/
 .std__header, .b-std__header {font-family: 'PT Sans'; font-weight: bold; color: #333333; margin:0; margin-bottom: 15px;}
+.std__header.dashed, .b-std__header.dashed {padding-bottom: 6px; border-bottom: 1px solid #ccc;}
 .std__fs-bigH {font-size: 30px; line-height: 30px;}
 .std__fs-mainH {font-size: 24px; line-height: 24px;}
 .std__fs-smallH {font-size: 18px; line-height: 18px;}
