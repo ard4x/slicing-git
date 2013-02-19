@@ -170,7 +170,7 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
         .profile__signals_filter_item.active > a {color: #fff;}
         .profile__signals_filter_item.active > a:hover {color: #fff; text-decoration: none; cursor: default;}
 
-    .profile__signals_filter_more {z-index: 3; overflow: hidden; height: 27px; position: relative; display: inline-block; background-color: #fff; box-sizing: border-box; -moz-box-sizing: border-box;  padding-bottom: 5px; border: 1px solid #ccc; border-radius: 4px;}
+    .profile__signals_filter_more {z-index: 3; overflow: hidden; height: 27px; position: relative; top: 1px; display: inline-block; background-color: #fff; box-sizing: border-box; -moz-box-sizing: border-box;  padding-bottom: 5px; border: 1px solid #ccc; border-radius: 4px;}
     .profile__signals_filter_more:hover {height: auto;}
     .profile__signals_filter_more_item {display: block; padding: 4px 14px 5px;}
     .profile__signals_filter_more_item.first {paddint-top: 5px; padding-bottom: 6px; margin-bottom: 1px;}
