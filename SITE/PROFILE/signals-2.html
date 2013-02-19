@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../style_curr.css">
     <link rel="stylesheet" href="../css/std.css">
     <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/btns.css"> <!-- отсюда берем стили пагинаторане обращать внимание, используем то, что есть на проде -->
     <link rel="stylesheet" href="../css/button.css">   <!-- НОВЫЕ стили кнопок. Проверить наличие, заменить более новой версией, а так же файлы btns.png и btns-icos.png, Версия указана в первой строке файла-->
     <link rel="stylesheet" href="profile.css">
     <!-- Костыли для ИE, можно добавить в уже существующие -->
@@ -281,6 +282,17 @@
             </div><!-- /.profile__block-signals_user_descript -->
         </div><!-- /.profile__block-signals_user -->
     </div><!-- /."profile__block-signals_userList -->
+
+    <div class="profile__content_bottom">
+        <!-- Код пагинатора можно взять такой, какой сейчас есть на проде -->
+        <ul class="btn__paging">
+            <li class="btn__paging-item btn__paging-prew btn__paging-item__disabled"><a href="#">Prew</a></li>
+            <li class="btn__paging-item btn__paging-item__current btn__paging-page"><a href="#">1</a></li>
+            <li class="btn__paging-item btn__paging-page"><a href="#">2</a></li>
+            <li class="btn__paging-item btn__paging-page"><a href="#">3</a></li>
+            <li class="btn__paging-item btn__paging-next"><a href="javascript:void(0);">next</a></li>
+        </ul>
+    </div><!-- /.profile__content_bottom -->
 
 </div><!-- /.profile__info_block -->
 
