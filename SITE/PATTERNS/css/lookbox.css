@@ -59,10 +59,10 @@ form .lookingbx.f2f_look .b-lookBox__selectParams_param label {font-weight: norm
             
 .location_field.small {width: 178px;}
     .location_field.small .progress-control {background-position: 171px -75px;}
-    .location_field.small .progress-control-point-city{right: -23px; width: 38px; text-align: center; color: #999999; font-size: 10px; line-height: 11px;}
+    .location_field.small .progress-control-point-city{right: -22px; width: 36px; text-align: center; color: #999999; font-size: 10px; line-height: 11px;}
     .location_field.small .b-lookBox__progressbarLabel {overflow: visible; color: #999999;}
-    .location_field.small .location {width: 38px; text-align: center; display: inline-block; left: -19px; position: relative; color: #999999; font-size: 10px; line-height: 11px;}
-    .location_field.small .b-lookBox__locationEnd span {display: inline-block; position: relative; width: 38px; text-align: center; right: -19px;  color: #999999; font-size: 10px; line-height: 11px;}
+    .location_field.small .location {width: 36px; text-align: center; display: inline-block; left: -18px; position: relative; color: #999999; font-size: 10px; line-height: 11px;}
+    .location_field.small .b-lookBox__locationEnd span {display: inline-block; position: relative; width: 36px; text-align: center; right: -18px;  color: #999999; font-size: 10px; line-height: 11px;}
 
 /*********  Looking Box  ******************/
  
