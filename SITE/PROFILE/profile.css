@@ -158,27 +158,27 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 /* Signals Page */
 .profile__signals {}
     .profile__signals > .b-std__header {background-color: #f5f5f5; font-family: Arial; padding: 8px 10px 11px; margin-bottom: 10px;}
-    .profile__signals .profile__block-signals_userList {width: 970px; margin-left: -10px; margin-bottom: 20px;}
+    .profile__signals .profile__block-signals_userList {width: 970px; margin-left: -10px; margin-bottom: 8px;}
     .profile__signals .profile__block-signals_user {width: 445px; margin: 0 11px 5px 9px; padding: 10px;}
     .profile__block-signals_user.new {background-color: #ECF4FB;}
 
-.profile__signals_filter_wrapper {display: table; width: 100%; margin-bottom: 13px; margin-top: -3px;}
-    .profile__signals_filter {display: table-row; font-size: 12px;}
-    .profile__signals_filter_item {display: table-cell; white-space: nowrap; width: 1px; padding: 6px 14px 5px; position: relative; height: 27px; box-sizing: border-box; -moz-box-sizing: border-box;}
+    .profile__signals_filter {display: block; font-size: 12px; margin: -3px 0 13px;}
+    .profile__signals_filter_item {vertical-align: top; display:inline-block; padding: 6px 16px 5px; position: relative; height: 27px; box-sizing: border-box; -moz-box-sizing: border-box;}
     .profile__signals_filter .haveSignal a {font-weight: bold;}
     .profile__signals_filter_item.more {width: auto; padding: 0;}
     .profile__signals_filter_item.active {background-color: #436187; color: #fff; padding: 6px 16px 5px; text-decoration: none; font-weight: bold; border-radius: 4px;}
         .profile__signals_filter_item.active > a {color: #fff;}
         .profile__signals_filter_item.active > a:hover {color: #fff; text-decoration: none; cursor: default;}
 
-    .profile__signals_filter_more {overflow: hidden; height: 27px; position: absolute; display: inline-block; width: 100%; background-color: #fff; box-sizing: border-box; -moz-box-sizing: border-box;  padding-bottom: 5px; border: 1px solid #ccc; border-radius: 4px;}
+    .profile__signals_filter_more {z-index: 3; overflow: hidden; height: 27px; position: relative; display: inline-block; background-color: #fff; box-sizing: border-box; -moz-box-sizing: border-box;  padding-bottom: 5px; border: 1px solid #ccc; border-radius: 4px;}
     .profile__signals_filter_more:hover {height: auto;}
     .profile__signals_filter_more_item {display: block; padding: 4px 14px 5px;}
     .profile__signals_filter_more_item.first {paddint-top: 5px; padding-bottom: 6px; margin-bottom: 1px;}
     .profile__signals_filter_more_item.separator {height: 1px;border-top: 1px solid #ccc; padding: 0; margin: 0 14px;}
-    .profile__signals_filter_more_arrow {position: absolute; display: block; width: 0px; border: 5px solid transparent; border-top: 6px solid #ccc; top: 10px; right: 13px; border-bottom: none;}
+    .profile__signals_filter_more_arrow {position: absolute; display: block; width: 0px; border: 5px solid transparent; border-top-color: #ccc; top: 11px; right: 14px; border-bottom: none;}
     .profile__signals_filter_more_item.active {}
-        .profile__signals_filter_more.active .profile__signals_filter_more_item:first-child {background-color: #436187; }
+        .profile__signals_filter_more.active .profile__signals_filter_more_item:first-child {background-color: #436187; border-radius: 3px;}
+            .profile__signals_filter_more.active:hover .profile__signals_filter_more_item:first-child {background-color: #436187; border-bottom-left-radius: 0; border-bottom-right-radius: 0;}
         .profile__signals_filter_more.active .separator {display: none}
         .profile__signals_filter_more.active .profile__signals_filter_more_arrow  {border-top-color: #fff;}
         .profile__signals_filter_more.active .profile__signals_filter_more_item:first-child a {color: #fff;}
