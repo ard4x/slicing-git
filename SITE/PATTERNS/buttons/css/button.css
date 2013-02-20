@@ -3,7 +3,7 @@
 *** Variables
 ********************/
 .button {
-  background: url('../img/btns.png') repeat-x;
+  background: url('../img/button/btns.png') repeat-x;
   display: inline-block;
   position: relative;
   line-height: 31px;
@@ -263,7 +263,7 @@ input.button {
   background-color: #cbcbcb;
 }
 .button.disabled {
-  background: 0 -2705px url('../img/btns.png') repeat-x;
+  background: 0 -2705px url('../img/button/btns.png') repeat-x;
   background-color: #666666;
   cursor: default;
   box-shadow: none;
@@ -380,7 +380,7 @@ input.button {
   padding: 0;
 }
 .button.small.disabled {
-  background: 0 -2705px url('../img/btns.png') repeat-x;
+  background: 0 -2705px url('../img/button/btns.png') repeat-x;
   background-color: #666666;
   cursor: default;
 }
@@ -512,7 +512,7 @@ input.button {
   padding: 0;
 }
 .button.middle.disabled {
-  background: 0 -2705px url('../img/btns.png') repeat-x;
+  background: 0 -2705px url('../img/button/btns.png') repeat-x;
   background-color: #666666;
   cursor: default;
 }
@@ -613,7 +613,7 @@ input.button {
   padding: 0;
 }
 .button.big.disabled {
-  background: 0 -2705px url('../img/btns.png') repeat-x;
+  background: 0 -2705px url('../img/button/btns.png') repeat-x;
   background-color: #666666;
   cursor: default;
 }
@@ -666,7 +666,7 @@ input.button {
   padding: 0;
 }
 .button.large.disabled {
-  background: 0 -2705px url('../img/btns.png') repeat-x;
+  background: 0 -2705px url('../img/button/btns.png') repeat-x;
   background-color: #666666;
   cursor: default;
 }
@@ -689,7 +689,7 @@ input.button {
 }
 .button.facebook i.icon {
   display: inline-block;
-  background: 0 -135px url('../img/btns-icos.png') no-repeat;
+  background: 0 -135px url('../img/button/btns-icos.png') no-repeat;
   width: 25px;
   height: 29px;
   position: absolute;
@@ -724,7 +724,7 @@ input.button {
 }
 .button.message i.icon {
   display: inline-block;
-  background: 0 -260px url('../img/btns-icos.png') no-repeat;
+  background: 0 -260px url('../img/button/btns-icos.png') no-repeat;
   width: 25px;
   height: 29px;
   position: absolute;
@@ -759,7 +759,7 @@ input.button {
 }
 .button.wink i.icon {
   display: inline-block;
-  background: 0 -299px url('../img/btns-icos.png') no-repeat;
+  background: 0 -299px url('../img/button/btns-icos.png') no-repeat;
   width: 25px;
   height: 29px;
   position: absolute;
@@ -794,7 +794,7 @@ input.button {
 }
 .button.gift i.icon {
   display: inline-block;
-  background: 0 -338px url('../img/btns-icos.png') no-repeat;
+  background: 0 -338px url('../img/button/btns-icos.png') no-repeat;
   width: 25px;
   height: 29px;
   position: absolute;
@@ -829,7 +829,7 @@ input.button {
 }
 .button.twitter i.icon {
   display: inline-block;
-  background: 0 -164px url('../img/btns-icos.png') no-repeat;
+  background: 0 -164px url('../img/button/btns-icos.png') no-repeat;
   width: 25px;
   height: 29px;
   position: absolute;
@@ -865,7 +865,7 @@ input.button {
 }
 .button.favorite i.icon {
   display: inline-block;
-  background: 0 -195px url('../img/btns-icos.png') no-repeat;
+  background: 0 -195px url('../img/button/btns-icos.png') no-repeat;
   width: 25px;
   height: 29px;
   position: absolute;
@@ -904,7 +904,7 @@ input.button {
 }
 .button.favorite.added i.icon {
   display: inline-block;
-  background: 0 -224px url('../img/btns-icos.png') no-repeat;
+  background: 0 -224px url('../img/button/btns-icos.png') no-repeat;
   width: 25px;
   height: 29px;
   position: absolute;
@@ -943,7 +943,7 @@ input.button {
 }
 .button.like i.icon {
   display: inline-block;
-  background: 0 -409px url('../img/btns-icos.png') no-repeat;
+  background: 0 -409px url('../img/button/btns-icos.png') no-repeat;
   width: 25px;
   height: 29px;
   position: absolute;
@@ -983,7 +983,7 @@ input.button {
 }
 .button.like.liked i.icon {
   display: inline-block;
-  background: 0 -437px url('../img/btns-icos.png') no-repeat;
+  background: 0 -437px url('../img/button/btns-icos.png') no-repeat;
   width: 25px;
   height: 29px;
   position: absolute;
@@ -1021,7 +1021,7 @@ input.button {
 }
 .button.google i.icon {
   display: inline-block;
-  background: 0 -135px url('../img/btns-icos.png') no-repeat;
+  background: 0 -135px url('../img/button/btns-icos.png') no-repeat;
   width: 25px;
   height: 29px;
   position: absolute;
@@ -1060,7 +1060,7 @@ input.button {
 }
 .button.yangutu i.icon {
   display: inline-block;
-  background: 0 -135px url('../img/btns-icos.png') no-repeat;
+  background: 0 -135px url('../img/button/btns-icos.png') no-repeat;
   width: 25px;
   height: 29px;
   position: absolute;
@@ -1111,7 +1111,7 @@ input.button {
   padding: 7px;
   width: 25%;
   vertical-align: middle;
-  background: #e6e6e6 0 -764px url('../img/btns.png') repeat-x;
+  background: #e6e6e6 0 -764px url('../img/button/btns.png') repeat-x;
   font: 14px Arial;
   color: #525252;
   text-decoration: none;
@@ -1162,7 +1162,7 @@ input.button {
 }
 /** ICONS **/
 i.icon {
-  background: url('../img/btns-icos.png') no-repeat;
+  background: url('../img/button/btns-icos.png') no-repeat;
   display: inline-block;
 }
 i.icon.icon-eye {

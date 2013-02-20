@@ -186,3 +186,44 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 .profile__content_bottom {border-top: 1px solid #ccc; padding-top: 20px;}
 .profile__history_empty {height: 157px; width: 580px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; text-align: center; margin-left: 60px; line-height: 30px; margin-top: 30px; padding-top: 31px; position: relative;; background-color: #e8eff5; border-radius: 4px;}
 .profile__history_empty .corner {display: block; position: absolute; width: 0; height: 0; border: 78px solid transparent; border-left: 40px solid #e8eff5; border-right: none;right: -39px; top: 0;}
+
+/** Photo Viewer **/
+.profile__photoViewer {}
+    .profile__photoViewer_top {background-color: #7f7f7f; border-radius: 4px 4px 0 0; padding: 14px 20px 20px;}
+        .profile__photoViewer_top_head {position: relative; margin-bottom: 11px; height: 46px;}
+            .profile__photoViewer_top_head .button.like {position: absolute; top: 6px; left: 0; padding-right: 17px; padding-left: 47px;}
+            .profile__photoViewer_top_report {position: absolute; top: 15px; right: 0;}
+            .profile__photoViewer_rate {}
+                .profile__photoViewer_rate_stars {text-align: center; padding-top: 6px;}
+                    .profile__photoViewer_star {padding-top: 10px; margin: 0 4px 0 3px; display: inline-block; width: 34px; height: 32px; box-sizing: border-box; -moz-box-sizing: border-box; font-weight: bold; text-align: center; font-size: 12px; color: #000; background: -36px -128px url(../img/profile/profile.png) no-repeat;}
+                    .profile__photoViewer_star:hover {background-position: 0 -128px; text-decoration: none; color: #000;}
+                    .profile__photoViewer_star.disabled {background-position: 0 -164px;}
+                    .profile__photoViewer_top_report {font-size: 12px; color: #fff;}
+                    .profile__photoViewer_top_report:hover {color: #fff;}
+            .profile__photoViewer_rate.rated {}
+                .profile__photoViewer_rate.rated .profile__photoViewer_rate_stars {display: none;}
+                .profile__photoViewer_rate_ratedMsg {display: none; color: #fff; font-size: 12px; text-align: center;}
+                .profile__photoViewer_rate.rated .profile__photoViewer_rate_ratedMsg {display: block;}
+                    .profile__photoViewer_rate_ratedMsg_msg {display: inline-block; padding-top: 14px; vertical-align: top;}
+                    .profile__photoViewer_rate_ratedMsg_star {display: inline-block; background-color: #333; width: 46px; height: 46px; margin: 0 5px; padding-top: 4px; border-radius: 23px; border: 2px solid #fff; box-sizing: border-box; -moz-box-sizing: border-box;}
+                    .profile__photoViewer_rate_ratedMsg_highlited {font-weight: bold; color: #ffff00; display: inline-block; padding-top: 14px; vertical-align: top;}
+    .profile__photoViewer_bottom {background-color: #f5f5f5; padding: 15px; border-radius: 0 0 4px 4px;}
+        /** Slider **/
+    .profile__slider {width: 660px; height: 450px; position: relative;}
+        .profile__slider_item {width: 660px; height: 450px; display: block; text-align: center; line-height: 450px; background: url(../img/profile/photo-viewer_bg.png) repeat; font-size: 0;}
+            .profile__slider_item img {max-width: 660px; max-height: 450px; display: inline-block; vertical-align: middle;}
+            .profile__slider_nav {position: absolute; top: 0; left: 0; height: 450px; width: 40px; line-height: 450px; text-align: right}
+                .profile__slider_nav i {opacity: .7; vertical-align: middle; display: inline-block; height: 0; width: 0; border: 20px solid transparent; border-left: none; border-right-color: #fff;}
+                .profile__slider_nav.right {text-align: left; right: 0; left: auto;}
+                .profile__slider_nav.right i {border-right: none; border-left: 20px solid #fff;}
+        /** Carousel **/
+    .profile__photoViewer_carousel {position: relative;}
+        .profile__photoViewer_carousel_list {text-align: left; width: 588px; margin: 0 auto;}
+            .profile__photoViewer_carousel_listItem  {padding: 4px; display: inline-block; vertical-align: top; font-size: 0;   }
+            .profile__photoViewer_carousel_listItem.current {background-color: #7f7f7f;}
+            .profile__photoViewer_carousel_listItem .photo-button {width: 104px; height: 104px; margin: 1px; padding-top: 15px; font-size: 12px; line-height: 14px;}
+            .profile__photoViewer_carousel_listItem .photo-button .plus {margin-bottom: 16px; }
+                .profile__photoViewer_carousel_frame {margin: 1px;}
+                .profile__photoViewer_carousel_photo {width: 100px; height: 100px;}
+                .profile__photoViewer_carousel_arrow {position: absolute; top: 45px; left: 5px;}
+                .profile__photoViewer_carousel_arrow.right {left: auto; right: 5px;}
