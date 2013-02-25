@@ -14,7 +14,7 @@
   margin-top: 0;
   vertical-align: baseline;
   cursor: pointer;
-  color: #fff;
+  color: #fff !important;
   font: bold 14px Arial !important;
   text-shadow: #364f6d 0 1px 2px;
   text-decoration: none;
@@ -26,7 +26,7 @@
 }
 .button:hover {
   text-decoration: none;
-  color: #fff;
+  color: #fff !important;
 }
 .button {
   border-color: #3a639a #496b94 #334b67;
@@ -233,7 +233,7 @@ input.button {
 .button.lite-grey {
   height: 31px;
   background-position: 0 -2984px;
-  color: #525252;
+  color: #525252 !important;
   text-shadow: #fff 0 1px 2px;
   box-shadow: 0 1px 2px #b3b3b3;
 }
@@ -1100,6 +1100,18 @@ input.button {
   margin-bottom: 20px;
   position: relative;
 }
+.slider.type2 .slider-item {
+  width: 50%;
+}
+.slider.type3 .slider-item {
+  width: 33.333%;
+}
+.slider.type4 .slider-item {
+  width: 25%;
+}
+.slider.type5 .slider-item {
+  width: 20%;
+}
 .slider .slider-item {
   border: solid 1px #cbcbcb;
   border-left: none;
@@ -1164,6 +1176,7 @@ input.button {
 i.icon {
   background: url('../img/button/btns-icos.png') no-repeat;
   display: inline-block;
+  font-size: 0;
 }
 i.icon.icon-eye {
   background-position: 0 -380px;
@@ -1200,4 +1213,9 @@ i.icon.icon-arrow-right {
   border-right: none;
   margin-left: 1px;
   margin-top: 7px;
+}
+i.icon.icon-edit {
+  background-position: 0 -473px;
+  width: 12px;
+  height: 12px;
 }

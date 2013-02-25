@@ -8,6 +8,8 @@
 .std__fs-smallH {font-size: 18px; line-height: 18px;}
 .std__fs-miniH {font-size: 14px; line-height: 14px;}
 .std__fc_default {color:#010101;}
+.std__underline {border-bottom: 1px solid #ccc;}
+    .std__fs-mainH.std__underline {padding-bottom: 6px;}
 /*** end headers styles ***/
 .std__2col-main {width: 733px;}
 .std__2col-side  {width: 200px;}

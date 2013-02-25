@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <title>Profile</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/button.css">   <!-- НОВЫЕ стили кнопок. Проверить наличие, заменить более новой версией, а так же файлы btns.png и btns-icos.png, Версия указана в первой строке файла-->
+    <link rel="stylesheet" href="../css/vip.css">
+    <!-- Костыли для ИE, можно добавить в уже существующие -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../yngtu_ie8.css" type="text/css">
+    <![endif]-->
+
+    <!--  Файлы для замены селектов -->
+
+    <script src="../js/jquery-1.4.4.min.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'});
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+    <!--  ---------------------------------------- -->
+
+</head>
+<body>
+<!-- начало шаблонной шапки -->
+<div class="header">
+    <div class="header_inn">
+        <div class="top_navigation">
+            <ul class="left">
+                <li><a href="#">Messages</a><span class="new_event">2</span></li>
+                <li><a href="#">Signals</a><span class="new_event">45</span></li>
+                <li><a href="#">Soulmates</a><span class="new_event">167</span></li>
+            </ul>
+            <ul class="right">
+                <li class="coints">1450 Coins <a href="#">Add</a></li>
+                <li class="profile"><a href="#">Profile </a></li>
+                <li class="account"><a href="#">Account Settings</a></li>
+            </ul>
+            <div class="std__clear"></div>
+        </div>
+        <div class="bot_navigation">
+            <a href="#"><img src="../img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>
+            <ul class="main_menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Matches</a></li>
+                <li><a href="#">TOP-100</a></li>
+                <li><a href="#">Apps and Games</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+            <div class="clr2"></div>
+        </div>
+    </div>
+</div>
+<!-- КОНЕЦ шаблонной шапки -->
+<div class="content">
+<div class="content_inn profile vip_page">
+
+<div class="vip__guest">
+    <div class="vip__guest_icon">
+        <img src="../img/vip-guest-logo.png" alt="">
+        <a id="register-on-vip" href="#" class="button big green"><span>Register now</span></a>
+    </div>
+    <div class="vip__guest_message">
+        <h1 class="std__header">VIP SUBSCRIPTION</h1>
+        <p>Our online-dating site Yangutu for seniors over 40 is free to join for all members. You can upload photos, share videos, find interesting people, play games and so on.</p><p>We also provide different additional services for those who want to get even more attention from other users.</p><p>Additional features are available with VIP subscription. VIP subscription gives you additional possibilities to organize your search, communicate with people and enjoy our site!</p>        </div><!-- /.message -->
+</div>
+
+<div class="vip__block_descript">
+    <h2 class="std__header std__fs-bigH">VIP subscription includes</h2>
+
+    <div class="vip__block_descript_item">
+        <h3 class="std__header std__fs-smallH vip__block_descript_item_header">Unlimited communication</h3>
+
+        <ul class="vip__block_descript_list">
+            <li><i class="vip__block_descript_list_point"></i>Send unlimited messages</li>
+            <li><i class="vip__block_descript_list_point"></i>Receive and reply to messages</li>
+            <li><i class="vip__block_descript_list_point"></i>Read and respond to messages on your mobile</li>
+            <li><i class="vip__block_descript_list_point"></i>Real-time chat with online users</li>
+        </ul>
+    </div><!-- /.vip__block_descript_item -->
+
+    <div class="vip__block_descript_item">
+        <h3 class="std__header std__fs-smallH vip__block_descript_item_header">Easy connections</h3>
+
+        <ul class="vip__block_descript_list">
+            <li><i class="vip__block_descript_list_point"></i>See who added you to Favorites</li>
+            <li><i class="vip__block_descript_list_point"></i>Browse singles  anonymously</li>
+            <li><i class="vip__block_descript_list_point"></i>Access to profiles in Encounter</li>
+            <li><i class="vip__block_descript_list_point"></i>View who's interested in you in Encounter</li>
+        </ul>
+    </div><!-- /.vip__block_descript_item -->
+
+    <div class="vip__block_descript_item">
+        <h3 class="std__header std__fs-smallH vip__block_descript_item_header">More benefits</h3>
+
+        <ul class="vip__block_descript_list">
+            <li><i class="vip__block_descript_list_point"></i>Hide members from view</li>
+            <li><i class="vip__block_descript_list_point"></i>Easy to turn off billing renewal to avoid unwanted payment</li>
+            <li><i class="vip__block_descript_list_point"></i>Top priority customer service</li>
+        </ul>
+    </div><!-- /.vip__block_descript_item -->
+
+    <div class="std__justify_helper"></div>
+</div><!-- /.vip__block_descript -->
+
+<div class="vip__block_faq std__layer_grey-lite">
+    <h2 class="std__header std__fs-mainH std__underline">FAQ</h2>
+
+    <div class="vip__block_faq_colLeft">
+
+        <div class="vip__block_faq_item">
+            <h3 class="std__header std__fs-smallH">Why was my subscription automatically continued?</h3>
+
+            <p>
+                So you're happily emailing along with someone you're discovering to be a really great match, when, without warning, your subscription expires! No one wants that. Uninterrupted access to the millions of potential matches on Yangutu.com is very important to our subscribers; therefore, all subscriptions paid for by a credit card or PayPal are automatically renewed at the end of the subscription period.
+            </p>
+        </div>
+
+        <div class="vip__block_faq_item">
+            <h3 class="std__header std__fs-smallH">Do I have to subscribe to Yangutu to see my daily matches?</h3>
+
+            <p>
+                No, everyone can see their daily matches every day. Only those who wish to contact one of their matches must subscribe to Yangutu.
+            </p>
+        </div>
+
+    </div><!-- /.vip__block_faq_colLeft -->
+
+    <div class="vip__block_faq_colRight">
+
+        <div class="vip__block_faq_item">
+            <h3 class="std__header std__fs-smallH">How can I cancel my Yangutu subscription?</h3>
+
+            <p>
+                To cancel your subscription, go to Account → Payments. In this section you’ll find all information about subscription canceling.
+            </p>
+        </div>
+
+        <div class="vip__block_faq_item">
+            <h3 class="std__header std__fs-smallH">What can I do as free member?</h3>
+
+            <p>
+                As a free member, you'll be able only to receive daily matches, perform people searches, view users profiles, send and receive winks, view and post photos, rate users photos, watch videos. The same features are available with our mobile apps.
+            </p>
+        </div>
+
+    </div><!-- /.vip__block_faq_colRight -->
+    <div class="std__clear"></div>
+</div><!-- /.vip__block_faq -->
+
+<div class="vip__block_testimon">
+    <h2 class="std__header std__fs-mainH std__underline">Testimonials</h2>
+
+    <div class="vip__block_testimon_item">
+        <span class="quot">”</span>
+        <blockquote>Short messages turned into a long serious and wonderful relationships!</blockquote>
+        <div class="author">― <a href="#">Vasilioc</a>, 28</div>
+    </div>
+
+    <div class="vip__block_testimon_item">
+        <span class="quot">”</span>
+        <blockquote>I just want to thank you so very much. Over one year ago I met my love here and we are still together!</blockquote>
+        <div class="author">― <a href="#">Richardson</a>, 45</div>
+    </div>
+
+    <div class="vip__block_testimon_item">
+        <span class="quot">”</span>
+        <blockquote>I’m a newcomer here, but I’ve already met new nice people and soon I’m going out on a date!</blockquote>
+        <div class="author">― <a href="#">Olivia</a>, 48</div>
+    </div>
+    <div class="std__justify_helper"></div>
+</div><!-- /.vip__block_testimon -->
+
+</div><!-- /.profile /.content_inn -->
+</div><!-- /.content -->
+<!-- НАЧАЛО шаблонного Футера -->
+<div class="footer">
+    <div class="footer_inn"  style="position:relative;">
+        <ul>
+            <li><a href="/page/about">About us</a></li>
+            <li><a href="/help">FAQ</a></li>
+            <li><a href="http://blog.yangutu.com/">Our blog</a></li>
+            <li><a href="/feedback">Contact us</a></li>
+        </ul>
+        <ul>
+            <li><a href="/page/policy">Privacy</a></li>
+            <li><a href="/page/terms">Terms of use</a></li>
+        </ul>
+        <ul>
+            <li><a href="/page/scams">Scam warning</a></li>
+            <li><a href="/page/safety">Safety Tips</a></li>
+        </ul>
+        <ul>
+            <li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+            <li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+            <li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+
+        </ul>
+
+        <div class="left">
+            <font color="black">&copy; 2010-2011 Yangutu Inc. All rights reserved</font><br>
+            <span>Yangutu (swahili) - My one and only.</span>
+        </div>
+        <div class="std__clear"></div>
+        <div class="vip__ssl"></div>
+    </div>
+</div>
+
+</body>
+</html>

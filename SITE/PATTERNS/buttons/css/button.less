@@ -61,12 +61,12 @@
   vertical-align: baseline;
   cursor: pointer;
 // TEXT settings
-  color: #fff;
+  color: #fff !important;
   font: bold 14px Arial !important;
   text-shadow: #364f6d 0 1px 2px;
   text-decoration: none;
   text-align: center;
-  &:hover {text-decoration: none; color: #fff;}
+  &:hover {text-decoration: none; color: #fff !important;}
 // _ Text settings
   padding: 6px 17px 0;
   border: 1px solid;
@@ -127,7 +127,7 @@
     .buttonColors(#cbcbcb, #cbcbcb, #cbcbcb,
                   #cbcbcb, #cbcbcb, #cbcbcb,
                   #cbcbcb, #cbcbcb, #cbcbcb);
-    color: #525252;
+    color: #525252 !important;
     text-shadow: #fff 0 1px 2px;
     box-shadow: 0 1px 2px #b3b3b3;
 
@@ -410,6 +410,11 @@
   margin-bottom: 20px;
   position: relative;
 
+  &.type2 .slider-item {width: 50%;}
+  &.type3 .slider-item {width: 33.333%;}
+  &.type4 .slider-item {width: 25%;}
+  &.type5 .slider-item {width: 20%;}
+
   .slider-item {
     border: solid 1px #cbcbcb;
     border-left: none;
@@ -482,6 +487,7 @@
 i.icon {
   background: url(@btnIconImg) no-repeat;
   display: inline-block;
+  font-size: 0;
   &.icon-eye{
     background-position: 0 -380px;
     width: 16px; height: 8px;
@@ -522,6 +528,13 @@ i.icon {
     border-right: none;
     margin-left: 1px;
     margin-top: 7px;
+  }
+
+  &.icon-edit {
+    background-position: 0 -473px;
+    width: 12px;
+    height: 12px;
+
   }
 }
 
