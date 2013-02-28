@@ -1,4 +1,4 @@
-/* Стандартные (Глобальные) элементы */
+/* Стандартные (Глобальные) элементы !! dump of htdocs/css/std.css v.20130228 */
 select {width: 100%; height: 24px;}
 .l-std__content {float: left; margin-right: 17px; position: relative;}
 /** headers styles ***/
@@ -10,7 +10,7 @@ select {width: 100%; height: 24px;}
 .std__fs-miniH {font-size: 14px; line-height: 14px;}
 .std__fc_default {color:#010101;}
 .std__underline {border-bottom: 1px solid #ccc;}
-    .std__fs-mainH.std__underline {padding-bottom: 6px;}
+.std__fs-mainH.std__underline {padding-bottom: 6px;}
 /*** end headers styles ***/
 .std__2col-main {width: 733px;}
 .std__2col-side  {width: 200px;}
