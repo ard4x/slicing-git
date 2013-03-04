@@ -138,39 +138,56 @@
                     <div class="profile__photoViewer_bottom">
 
                         <div class="profile__photoViewer_carousel">
-
+                        <!-- Принцип работы карусели: Внутри контейрера распологается люьое количество фото, обернутых в ссылки и теги с классом profile__photoViewer_carousel_listItem
+                            (у фото и ссылок сообтетствующие классы)
+                            листание происходит присваиванием .profile__photoViewer_carousel_listItem  соответствующих отступов margin, по величине кратных 114px.
+                            Например, margin-left: -228px спрячет две первые фото и покажет две следующие, которых до этого не было видно
+                        -->
                             <div class="profile__photoViewer_carousel_list">
+                                <div class="profile__photoViewer_carousel_container">
+                                    <div class="profile__photoViewer_carousel_listItem">
+                                        <a class="b-user__photoFrame profile__photoViewer_carousel_frame" href="#">
+                                            <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__photoViewer_carousel_photo">
+                                        </a>
+                                    </div><!-- profile__photoViewer_carousel_listItem -->
 
-                                <div class="profile__photoViewer_carousel_listItem">
-                                    <a class="b-user__photoFrame profile__photoViewer_carousel_frame" href="#">
-                                        <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__photoViewer_carousel_photo">
-                                    </a>
-                                </div><!-- profile__photoViewer_carousel_listItem -->
+                                    <div class="profile__photoViewer_carousel_listItem current">
+                                        <a class="b-user__photoFrame profile__photoViewer_carousel_frame" href="#">
+                                            <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__photoViewer_carousel_photo">
+                                        </a>
+                                    </div><!-- profile__photoViewer_carousel_listItem -->
 
-                                <div class="profile__photoViewer_carousel_listItem current">
-                                    <a class="b-user__photoFrame profile__photoViewer_carousel_frame" href="#">
-                                        <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__photoViewer_carousel_photo">
-                                    </a>
-                                </div><!-- profile__photoViewer_carousel_listItem -->
+                                    <div class="profile__photoViewer_carousel_listItem">
+                                        <a class="b-user__photoFrame profile__photoViewer_carousel_frame" href="#">
+                                            <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__photoViewer_carousel_photo">
+                                        </a>
+                                    </div><!-- profile__photoViewer_carousel_listItem -->
 
-                                <div class="profile__photoViewer_carousel_listItem">
-                                    <a class="b-user__photoFrame profile__photoViewer_carousel_frame" href="#">
-                                        <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__photoViewer_carousel_photo">
-                                    </a>
-                                </div><!-- profile__photoViewer_carousel_listItem -->
+                                    <div class="profile__photoViewer_carousel_listItem">
+                                        <a class="b-user__photoFrame profile__photoViewer_carousel_frame" href="#">
+                                            <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__photoViewer_carousel_photo">
+                                        </a>
+                                    </div><!-- profile__photoViewer_carousel_listItem -->
 
-                                <div class="profile__photoViewer_carousel_listItem">
-                                    <a class="b-user__photoFrame profile__photoViewer_carousel_frame" href="#">
-                                        <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__photoViewer_carousel_photo">
-                                    </a>
-                                </div><!-- profile__photoViewer_carousel_listItem -->
+                                    <div class="profile__photoViewer_carousel_listItem">
+                                        <a class="b-user__photoFrame profile__photoViewer_carousel_frame" href="#">
+                                            <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__photoViewer_carousel_photo">
+                                        </a>
+                                    </div><!-- profile__photoViewer_carousel_listItem -->
 
-                                <div class="profile__photoViewer_carousel_listItem">
-                                    <a class="b-user__photoFrame profile__photoViewer_carousel_frame" href="#">
-                                        <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__photoViewer_carousel_photo">
-                                    </a>
-                                </div><!-- profile__photoViewer_carousel_listItem -->
+                                    <div class="profile__photoViewer_carousel_listItem">
+                                        <a class="b-user__photoFrame profile__photoViewer_carousel_frame" href="#">
+                                            <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__photoViewer_carousel_photo">
+                                        </a>
+                                    </div><!-- profile__photoViewer_carousel_listItem -->
 
+                                    <div class="profile__photoViewer_carousel_listItem">
+                                        <a class="b-user__photoFrame profile__photoViewer_carousel_frame" href="#">
+                                            <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__photoViewer_carousel_photo">
+                                        </a>
+                                    </div><!-- profile__photoViewer_carousel_listItem -->
+
+                                </div><!-- /.profile__photoViewer_carousel_container -->
                             </div><!-- /.profile__photoViewer_carousel_list -->
 
                             <a href="#" class="profile__photoViewer_carousel_arrow button small lite-grey round"><i class="icon icon-arrow-left"></i></a>

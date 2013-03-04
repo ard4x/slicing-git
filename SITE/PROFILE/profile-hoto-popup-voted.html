@@ -1,0 +1,619 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <title>Another Profile</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/button.css">   <!-- НОВЫЕ стили кнопок. Проверить наличие, заменить более новой версией, а так же файлы btns.png и btns-icos.png, Версия указана в первой строке файла-->
+    <link rel="stylesheet" href="profile.css">
+    <!-- Костыли для ИE, можно добавить в уже существующие -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../yngtu_ie8.css" type="text/css">
+    <![endif]-->
+
+    <!--  Файлы для замены селектов -->
+
+    <script src="../js/jquery-1.4.4.min.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'});
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+    <!--  ---------------------------------------- -->
+
+</head>
+<body>
+<!-- начало шаблонной шапки -->
+<div class="header">
+    <div class="header_inn">
+        <div class="top_navigation">
+            <ul class="left">
+                <li><a href="#">Messages</a><span class="new_event">2</span></li>
+                <li><a href="#">Signals</a><span class="new_event">45</span></li>
+                <li><a href="#">Soulmates</a><span class="new_event">167</span></li>
+            </ul>
+            <ul class="right">
+                <li class="coints">1450 Coins <a href="#">Add</a></li>
+                <li class="profile"><a href="#">Profile </a></li>
+                <li class="account"><a href="#">Account Settings</a></li>
+            </ul>
+            <div class="std__clear"></div>
+        </div>
+        <div class="bot_navigation">
+            <a href="#"><img src="../img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>
+            <ul class="main_menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Matches</a></li>
+                <li><a href="#">TOP-100</a></li>
+                <li><a href="#">Apps and Games</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+            <div class="clr2"></div>
+        </div>
+    </div>
+</div>
+<!-- КОНЕЦ шаблонной шапки -->
+<div class="content">
+<div class="content_inn profile">
+
+<div class="profile__block-head">
+    <div class="profile__collLeft">
+        <h1 class="b-std__header std__fs-bigH profile__userName">Punkyrobinson, 34<i class="icon icon-online"></i></h1>
+
+    </div><!-- /.profile__collLeft -->
+
+    <div class="profile__collCenter">
+        <div class="slider type2">
+            <a class="slider-item" href="#">My profile</a>
+            <a class="slider-item current" href="#">My photos</a>
+        </div>
+
+    </div><!-- /.profile__collLeft -->
+
+
+    <div class="std__clear"></div>
+</div><!-- /.profile__block-head -->
+
+<div class="profile__block">
+
+<div class="std__layer_grey-lite profile__photo_more">
+    <h3 class="std__header std__fs-smallH std__underline">Upload more photos</h3>
+
+    <a class="button big red" href="#">Add more photos</a>
+
+    <div class="profile__photo_more_msg">The presence of photos is an important factor when meeting on dating site. The more photos you upload,
+        the more confidence you get from other users.</div>
+
+
+</div>
+
+<div class="profile__collWide profile__photo">
+
+<div class="profile__photoViewer">
+
+<div class="profile__photoViewer_top">
+
+    <div class="profile__slider">
+
+
+        <div class="profile__slider_item">
+            <img src="../img/profile/slide1.jpg" alt="">
+
+        </div><!-- /.profile__slider_item -->
+
+        <a class="profile__slider_nav" href="#"><i></i></a>
+        <a class="profile__slider_nav right" href="#"><i></i></a>
+    </div><!-- /.profile__slider -->
+
+    <div class="profile__photoViewer_side">
+
+        <div class="profile__photoViewer_block">
+            <div class="profile__photoViewer_stat">
+                <div>Total rates <span class="profile__photoViewer_stat_number">3</span></div>
+                <div>Rating      <span class="profile__photoViewer_stat_number">5</span></div>
+            </div>
+
+            <h3 class="std__header std__fs-smallH std__underline">Last votes:</h3>
+
+            <div class="profile__photoViewer_lastVotes">
+
+                <div class="profile__photoViewer_lastVotes_item">
+                    <a class="user__pic" href="#"><img src="../img/usr/user1.jpg" alt="">  </a>
+                    <div class="profile__photoViewer_lastVotes_descr">
+                        <div class="profile__photoViewer_lastVotes_person">
+                            <a href="#">Codygreen</a>, 31
+                        </div>
+                        <div class="profile__photoViewer_lastVotes_locate">
+                            Los Angeles, United States
+                        </div>
+                        <div class="profile__photoViewer_lastVotes_stars rate3">
+                            <div class="rate_star star1"></div>
+                            <div class="rate_star star2"></div>
+                            <div class="rate_star star3"></div>
+                            <div class="rate_star star4"></div>
+                            <div class="rate_star star5"></div>
+                        </div>
+                    </div>
+                </div><!-- /.profile__photoViewer_lastVotes_item -->
+
+                <div class="profile__photoViewer_lastVotes_item">
+                    <a class="user__pic" href="#"><img src="../img/usr/user1.jpg" alt="">  </a>
+                    <div class="profile__photoViewer_lastVotes_descr">
+                        <div class="profile__photoViewer_lastVotes_person">
+                            <a href="#">Codygreen</a>, 31
+                        </div>
+                        <div class="profile__photoViewer_lastVotes_locate">
+                            Los Angeles, United States
+                        </div>
+                        <div class="profile__photoViewer_lastVotes_stars rate3">
+                            <div class="rate_star star1"></div>
+                            <div class="rate_star star2"></div>
+                            <div class="rate_star star3"></div>
+                            <div class="rate_star star4"></div>
+                            <div class="rate_star star5"></div>
+                        </div>
+                    </div>
+                </div><!-- /.profile__photoViewer_lastVotes_item -->
+
+                <div class="profile__photoViewer_lastVotes_item">
+                    <a class="user__pic" href="#"><img src="../img/usr/user1.jpg" alt="">  </a>
+                    <div class="profile__photoViewer_lastVotes_descr">
+                        <div class="profile__photoViewer_lastVotes_person">
+                            <a href="#">Codygreen</a>, 31
+                        </div>
+                        <div class="profile__photoViewer_lastVotes_locate">
+                            Los Angeles, United States
+                        </div>
+                        <div class="profile__photoViewer_lastVotes_stars rate3">
+                            <div class="rate_star star1"></div>
+                            <div class="rate_star star2"></div>
+                            <div class="rate_star star3"></div>
+                            <div class="rate_star star4"></div>
+                            <div class="rate_star star5"></div>
+                        </div>
+                    </div>
+                </div><!-- /.profile__photoViewer_lastVotes_item -->
+
+            </div><!-- /.profile__photoViewer_lastVotes -->
+
+            <a href="#" class="button lite-grey small profile__photoViewer_lastVotes_button">Who voted for my photo</a>
+
+        </div><!-- /.profile__photoViewer_block -->
+
+        <div class="profile__photoViewer_block profile__photoViewer_block_links">
+
+            <a href="#">Edit photo</a>
+            <a href="#">Set photo as main</a>
+            <a href="#">Make a TOP-100 participant</a>
+            <a href="#">Delete photo</a>
+
+        </div><!-- /.profile__photoViewer_block -->
+
+    </div><!-- /.profile__photoViewer_side -->
+
+    <div class="profile__photoViewer_likers">
+
+        <h3 class="std__header std__fs-smallH std__underline">Like
+            <span class="profile__photoViewer_likers_number">41 people</span>
+            <a class="profile__photoViewer_likers_view_all" href="#">View all</a>
+        </h3>
+
+        <div class="profile__photoViewer_likers_list">
+            <a class="profile__photoViewer_likers_item" href="#">
+                <img src="../img/usr/user5.jpg" alt="">
+            </a>
+
+            <a class="profile__photoViewer_likers_item" href="#">
+                <img src="../img/usr/user5.jpg" alt="">
+            </a>
+
+            <a class="profile__photoViewer_likers_item" href="#">
+                <img src="../img/usr/user5.jpg" alt="">
+            </a>
+
+            <a class="profile__photoViewer_likers_item" href="#">
+                <img src="../img/usr/user5.jpg" alt="">
+            </a>
+
+            <a class="profile__photoViewer_likers_item" href="#">
+                <img src="../img/usr/user5.jpg" alt="">
+            </a>
+
+            <a class="profile__photoViewer_likers_item" href="#">
+                <img src="../img/usr/user5.jpg" alt="">
+            </a>
+
+            <a class="profile__photoViewer_likers_item" href="#">
+                <img src="../img/usr/user5.jpg" alt="">
+            </a>
+
+            <a class="profile__photoViewer_likers_item" href="#">
+                <img src="../img/usr/user5.jpg" alt="">
+            </a>
+
+            <a class="profile__photoViewer_likers_item" href="#">
+                <img src="../img/usr/user5.jpg" alt="">
+            </a>
+
+            <a class="profile__photoViewer_likers_item" href="#">
+                <img src="../img/usr/user5.jpg" alt="">
+            </a>
+
+            <a class="profile__photoViewer_likers_item" href="#">
+                <img src="../img/usr/user5.jpg" alt="">
+            </a>
+
+            <a class="profile__photoViewer_likers_item" href="#">
+                <img src="../img/usr/user5.jpg" alt="">
+            </a>
+
+            <a class="profile__photoViewer_likers_item" href="#">
+                <img src="../img/usr/user5.jpg" alt="">
+            </a>
+
+            <a class="profile__photoViewer_likers_item" href="#">
+                <img src="../img/usr/user5.jpg" alt="">
+            </a>
+
+            <a class="profile__photoViewer_likers_item" href="#">
+                <img src="../img/usr/user5.jpg" alt="">
+            </a>
+        </div><!-- /.profile__photoViewer_likers_list -->
+
+    </div><!-- /.profile__photoViewer_likers -->
+</div><!-- /.profile__photoViewer_top -->
+
+<div class="profile__photoViewer_bottom">
+
+    <div class="profile__photoViewer_carousel">
+        <!-- Принцип работы карусели: Внутри контейрера распологается люьое количество фото, обернутых в ссылки и теги с классом profile__photoViewer_carousel_listItem
+            (у фото и ссылок сообтетствующие классы)
+            листание происходит присваиванием .profile__photoViewer_carousel_listItem  соответствующих отступов margin, по величине кратных 114px.
+            Например, margin-left: -228px спрячет две первые фото и покажет две следующие, которых до этого не было видно
+        -->
+        <div class="profile__photoViewer_carousel_list">
+            <div class="profile__photoViewer_carousel_container">
+                <div class="profile__photoViewer_carousel_listItem">
+                    <a class="b-user__photoFrame profile__photoViewer_carousel_frame" href="#">
+                        <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__photoViewer_carousel_photo">
+                    </a>
+                </div><!-- profile__photoViewer_carousel_listItem -->
+
+                <div class="profile__photoViewer_carousel_listItem current">
+                    <a class="b-user__photoFrame profile__photoViewer_carousel_frame" href="#">
+                        <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__photoViewer_carousel_photo">
+                    </a>
+                </div><!-- profile__photoViewer_carousel_listItem -->
+
+                <div class="profile__photoViewer_carousel_listItem">
+                    <a class="b-user__photoFrame profile__photoViewer_carousel_frame" href="#">
+                        <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__photoViewer_carousel_photo">
+                    </a>
+                </div><!-- profile__photoViewer_carousel_listItem -->
+
+                <div class="profile__photoViewer_carousel_listItem">
+                    <a class="b-user__photoFrame profile__photoViewer_carousel_frame" href="#">
+                        <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__photoViewer_carousel_photo">
+                    </a>
+                </div><!-- profile__photoViewer_carousel_listItem -->
+
+                <div class="profile__photoViewer_carousel_listItem">
+                    <a class="b-user__photoFrame profile__photoViewer_carousel_frame" href="#">
+                        <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__photoViewer_carousel_photo">
+                    </a>
+                </div><!-- profile__photoViewer_carousel_listItem -->
+
+                <div class="profile__photoViewer_carousel_listItem">
+                    <a class="b-user__photoFrame profile__photoViewer_carousel_frame" href="#">
+                        <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__photoViewer_carousel_photo">
+                    </a>
+                </div><!-- profile__photoViewer_carousel_listItem -->
+
+                <div class="profile__photoViewer_carousel_listItem">
+                    <a class="b-user__photoFrame profile__photoViewer_carousel_frame" href="#">
+                        <img src="../img/usr/76x76.jpg" alt="" class="b-user__photoFrame_photo profile__photoViewer_carousel_photo">
+                    </a>
+                </div><!-- profile__photoViewer_carousel_listItem -->
+
+            </div><!-- /.profile__photoViewer_carousel_container -->
+        </div><!-- /.profile__photoViewer_carousel_list -->
+
+        <a href="#" class="profile__photoViewer_carousel_arrow button small lite-grey round"><i class="icon icon-arrow-left"></i></a>
+        <a href="#" class="profile__photoViewer_carousel_arrow right button small lite-grey round"><i class="icon icon-arrow-right"></i></a>
+
+    </div><!-- /. profile__photoViewer_carousel -->
+
+</div><!-- /.profile__photoViewer_bottom -->
+
+</div><!-- /. profile__photoViewer -->
+
+</div><!-- /.profile__collWide -->
+
+<div class="std__clear"></div>
+</div><!-- /.profile__container -->
+
+</div><!-- /.profile /.content_inn -->
+</div><!-- /.content -->
+
+
+<div class="std__popup">
+    <div class="std__popup_content profile__photo_popup">
+
+        <h2 class="std__header std__fs-mainH std__underline">Who voted for my photo  <span>41 people</span></h2>
+
+
+        <div class="profile__photoViewer_lastVotes">
+
+            <div class="profile__photoViewer_lastVotes_item">
+                <a class="b-user__photoFrame" href="#">
+                    <img class="b-user__photoFrame_photo" src="../img/usr/user5.jpg" alt="">
+                </a>
+                <div class="profile__photoViewer_lastVotes_descr">
+                    <div class="profile__photoViewer_lastVotes_person">
+                        <a href="#">Codygreen</a>, 31
+                    </div>
+                    <div class="profile__photoViewer_lastVotes_locate">
+                        Los Angeles, United States
+                    </div>
+                    <div class="profile__photoViewer_lastVotes_stars rate3">
+                        <div class="rate_star star1"></div>
+                        <div class="rate_star star2"></div>
+                        <div class="rate_star star3"></div>
+                        <div class="rate_star star4"></div>
+                        <div class="rate_star star5"></div>
+                    </div>
+
+                    <div class="profile__photoViewer_lastVotes_time">Today 7:59 AM</div>
+                </div>
+            </div><!-- /.profile__photoViewer_lastVotes_item -->
+
+            <div class="profile__photoViewer_lastVotes_item">
+                <a class="b-user__photoFrame" href="#">
+                    <img class="b-user__photoFrame_photo" src="../img/usr/user5.jpg" alt="">
+                </a>
+                <div class="profile__photoViewer_lastVotes_descr">
+                    <div class="profile__photoViewer_lastVotes_person">
+                        <a href="#">Codygreen</a>, 31
+                    </div>
+                    <div class="profile__photoViewer_lastVotes_locate">
+                        Los Angeles, United States
+                    </div>
+                    <div class="profile__photoViewer_lastVotes_stars rate3">
+                        <div class="rate_star star1"></div>
+                        <div class="rate_star star2"></div>
+                        <div class="rate_star star3"></div>
+                        <div class="rate_star star4"></div>
+                        <div class="rate_star star5"></div>
+                    </div>
+
+                    <div class="profile__photoViewer_lastVotes_time">Today 7:59 AM</div>
+                </div>
+            </div><!-- /.profile__photoViewer_lastVotes_item -->
+
+            <div class="profile__photoViewer_lastVotes_item">
+                <a class="b-user__photoFrame" href="#">
+                    <img class="b-user__photoFrame_photo" src="../img/usr/user5.jpg" alt="">
+                </a>
+                <div class="profile__photoViewer_lastVotes_descr">
+                    <div class="profile__photoViewer_lastVotes_person">
+                        <a href="#">Codygreen</a>, 31
+                    </div>
+                    <div class="profile__photoViewer_lastVotes_locate">
+                        Los Angeles, United States
+                    </div>
+                    <div class="profile__photoViewer_lastVotes_stars rate3">
+                        <div class="rate_star star1"></div>
+                        <div class="rate_star star2"></div>
+                        <div class="rate_star star3"></div>
+                        <div class="rate_star star4"></div>
+                        <div class="rate_star star5"></div>
+                    </div>
+
+                    <div class="profile__photoViewer_lastVotes_time">Today 7:59 AM</div>
+                </div>
+            </div><!-- /.profile__photoViewer_lastVotes_item -->
+
+            <div class="profile__photoViewer_lastVotes_item">
+                <a class="b-user__photoFrame" href="#">
+                    <img class="b-user__photoFrame_photo" src="../img/usr/user5.jpg" alt="">
+                </a>
+                <div class="profile__photoViewer_lastVotes_descr">
+                    <div class="profile__photoViewer_lastVotes_person">
+                        <a href="#">Codygreen</a>, 31
+                    </div>
+                    <div class="profile__photoViewer_lastVotes_locate">
+                        Los Angeles, United States
+                    </div>
+                    <div class="profile__photoViewer_lastVotes_stars rate3">
+                        <div class="rate_star star1"></div>
+                        <div class="rate_star star2"></div>
+                        <div class="rate_star star3"></div>
+                        <div class="rate_star star4"></div>
+                        <div class="rate_star star5"></div>
+                    </div>
+
+                    <div class="profile__photoViewer_lastVotes_time">Today 7:59 AM</div>
+                </div>
+            </div><!-- /.profile__photoViewer_lastVotes_item -->
+
+            <div class="profile__photoViewer_lastVotes_item">
+                <a class="b-user__photoFrame" href="#">
+                    <img class="b-user__photoFrame_photo" src="../img/usr/user5.jpg" alt="">
+                </a>
+                <div class="profile__photoViewer_lastVotes_descr">
+                    <div class="profile__photoViewer_lastVotes_person">
+                        <a href="#">Codygreen</a>, 31
+                    </div>
+                    <div class="profile__photoViewer_lastVotes_locate">
+                        Los Angeles, United States
+                    </div>
+                    <div class="profile__photoViewer_lastVotes_stars rate3">
+                        <div class="rate_star star1"></div>
+                        <div class="rate_star star2"></div>
+                        <div class="rate_star star3"></div>
+                        <div class="rate_star star4"></div>
+                        <div class="rate_star star5"></div>
+                    </div>
+
+                    <div class="profile__photoViewer_lastVotes_time">Today 7:59 AM</div>
+                </div>
+            </div><!-- /.profile__photoViewer_lastVotes_item -->
+
+            <div class="profile__photoViewer_lastVotes_item">
+                <a class="b-user__photoFrame" href="#">
+                    <img class="b-user__photoFrame_photo" src="../img/usr/user5.jpg" alt="">
+                </a>
+                <div class="profile__photoViewer_lastVotes_descr">
+                    <div class="profile__photoViewer_lastVotes_person">
+                        <a href="#">Codygreen</a>, 31
+                    </div>
+                    <div class="profile__photoViewer_lastVotes_locate">
+                        Los Angeles, United States
+                    </div>
+                    <div class="profile__photoViewer_lastVotes_stars rate3">
+                        <div class="rate_star star1"></div>
+                        <div class="rate_star star2"></div>
+                        <div class="rate_star star3"></div>
+                        <div class="rate_star star4"></div>
+                        <div class="rate_star star5"></div>
+                    </div>
+
+                    <div class="profile__photoViewer_lastVotes_time">Today 7:59 AM</div>
+                </div>
+            </div><!-- /.profile__photoViewer_lastVotes_item -->
+
+            <div class="profile__photoViewer_lastVotes_item">
+                <a class="b-user__photoFrame" href="#">
+                    <img class="b-user__photoFrame_photo" src="../img/usr/user5.jpg" alt="">
+                </a>
+                <div class="profile__photoViewer_lastVotes_descr">
+                    <div class="profile__photoViewer_lastVotes_person">
+                        <a href="#">Codygreen</a>, 31
+                    </div>
+                    <div class="profile__photoViewer_lastVotes_locate">
+                        Los Angeles, United States
+                    </div>
+                    <div class="profile__photoViewer_lastVotes_stars rate3">
+                        <div class="rate_star star1"></div>
+                        <div class="rate_star star2"></div>
+                        <div class="rate_star star3"></div>
+                        <div class="rate_star star4"></div>
+                        <div class="rate_star star5"></div>
+                    </div>
+
+                    <div class="profile__photoViewer_lastVotes_time">Today 7:59 AM</div>
+                </div>
+            </div><!-- /.profile__photoViewer_lastVotes_item -->
+
+            <div class="profile__photoViewer_lastVotes_item">
+                <a class="b-user__photoFrame" href="#">
+                    <img class="b-user__photoFrame_photo" src="../img/usr/user5.jpg" alt="">
+                </a>
+                <div class="profile__photoViewer_lastVotes_descr">
+                    <div class="profile__photoViewer_lastVotes_person">
+                        <a href="#">Codygreen</a>, 31
+                    </div>
+                    <div class="profile__photoViewer_lastVotes_locate">
+                        Los Angeles, United States
+                    </div>
+                    <div class="profile__photoViewer_lastVotes_stars rate3">
+                        <div class="rate_star star1"></div>
+                        <div class="rate_star star2"></div>
+                        <div class="rate_star star3"></div>
+                        <div class="rate_star star4"></div>
+                        <div class="rate_star star5"></div>
+                    </div>
+
+                    <div class="profile__photoViewer_lastVotes_time">Today 7:59 AM</div>
+                </div>
+            </div><!-- /.profile__photoViewer_lastVotes_item -->
+
+            <div class="profile__photoViewer_lastVotes_item">
+                <a class="b-user__photoFrame" href="#">
+                    <img class="b-user__photoFrame_photo" src="../img/usr/user5.jpg" alt="">
+                </a>
+                <div class="profile__photoViewer_lastVotes_descr">
+                    <div class="profile__photoViewer_lastVotes_person">
+                        <a href="#">Codygreen</a>, 31
+                    </div>
+                    <div class="profile__photoViewer_lastVotes_locate">
+                        Los Angeles, United States
+                    </div>
+                    <div class="profile__photoViewer_lastVotes_stars rate3">
+                        <div class="rate_star star1"></div>
+                        <div class="rate_star star2"></div>
+                        <div class="rate_star star3"></div>
+                        <div class="rate_star star4"></div>
+                        <div class="rate_star star5"></div>
+                    </div>
+
+                    <div class="profile__photoViewer_lastVotes_time">Today 7:59 AM</div>
+                </div>
+            </div><!-- /.profile__photoViewer_lastVotes_item -->
+        </div>
+
+        <ul class="btn__paging">
+            <li class="btn__paging-item btn__paging-prew btn__paging-item__disabled"><a href="#">Prew</a></li>
+            <li class="btn__paging-item btn__paging-item__current btn__paging-page"><a href="#">1</a></li>
+            <li class="btn__paging-item btn__paging-page"><a href="#">2</a></li>
+            <li class="btn__paging-item btn__paging-page"><a href="#">3</a></li>
+            <li class="btn__paging-item btn__paging-next"><a href="javascript:void(0);">next</a></li>
+        </ul>
+
+        <a class="std__popup_close" href="#"></a>
+    </div><!-- /.std__popup_content -->
+</div><!-- /.std__popup -->
+
+
+<!-- НАЧАЛО шаблонного Футера -->
+<div class="footer">
+    <div class="footer_inn">`
+        <ul>
+            <li><a href="/page/about">About us</a></li>
+            <li><a href="/help">FAQ</a></li>
+            <li><a href="http://blog.yangutu.com/">Our blog</a></li>
+            <li><a href="/feedback">Contact us</a></li>
+        </ul>
+        <ul>
+            <li><a href="/page/policy">Privacy</a></li>
+            <li><a href="/page/terms">Terms of use</a></li>
+        </ul>
+        <ul>
+            <li><a href="/page/scams">Scam warning</a></li>
+            <li><a href="/page/safety">Safety Tips</a></li>
+        </ul>
+        <ul>
+            <li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+            <li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+            <li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+
+        </ul>
+        <ul>
+            <li><a href="/dating/all">People Directory</a></li>
+        </ul>
+        <div class="right">
+            <font color="black">&copy; 2010-2011 Yangutu Inc. All rights reserved</font><br>
+            <span>Yangutu (swahili) - My one and only.</span>
+        </div>
+        <div class="std__clear"></div>
+    </div>
+</div>
+
+</body>
+</html>

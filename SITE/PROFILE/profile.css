@@ -190,12 +190,12 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 
 /** Photo Viewer **/
 .profile__photoViewer {}
-    .profile__photoViewer_top {background-color: #7f7f7f; border-radius: 4px 4px 0 0; padding: 14px 20px 20px;}
+    .profile__photoViewer_top {background-color: #7f7f7f; border-radius: 4px 4px 0 0; padding: 20px;}
         .profile__photoViewer_top_head {position: relative; margin-bottom: 11px; height: 46px;}
             .profile__photoViewer_top_head .button.like {position: absolute; top: 6px; left: 0; padding-right: 17px; padding-left: 47px;}
             .profile__photoViewer_top_report {position: absolute; top: 15px; right: 0;}
             .profile__photoViewer_rate {}
-                .profile__photoViewer_rate_stars {text-align: center; padding-top: 6px;}
+                .profile__photoViewer_rate_stars {text-align: center;}
                     .profile__photoViewer_star {padding-top: 10px; margin: 0 4px 0 3px; display: inline-block; width: 34px; height: 32px; box-sizing: border-box; -moz-box-sizing: border-box; font-weight: bold; text-align: center; font-size: 12px; color: #000; background: -36px -128px url(../img/profile/profile.png) no-repeat;}
                     .profile__photoViewer_star:hover {background-position: 0 -128px; text-decoration: none; color: #000;}
                     .profile__photoViewer_star.disabled {background-position: 0 -164px;}
@@ -209,6 +209,50 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
                     .profile__photoViewer_rate_ratedMsg_star {display: inline-block; background-color: #333; width: 46px; height: 46px; margin: 0 5px; padding-top: 4px; border-radius: 23px; border: 2px solid #fff; box-sizing: border-box; -moz-box-sizing: border-box;}
                     .profile__photoViewer_rate_ratedMsg_highlited {font-weight: bold; color: #ffff00; display: inline-block; padding-top: 14px; vertical-align: top;}
     .profile__photoViewer_bottom {background-color: #f5f5f5; padding: 15px; border-radius: 0 0 4px 4px;}
+
+    .profile__photo_more {padding-top: 13px; overflow: hidden; margin-bottom: 30px;}
+        .profile__photo_more .std__header {margin-bottom: 13px;}
+        .profile__photo_more .button {width: 200px; float: right; margin-left: 55px;}
+        .profile__photo_more_msg {font-size: 14px; color: #333; line-height: 17px;}
+
+.profile__collWide.profile__photo {width: 950px;}
+    .profile__photoViewer_side {width: 230px; float: right; margin-top: -20px}
+        .profile__photoViewer_block {border-radius: 4px; background-color: #fff; padding: 14px 15px 15px; margin-top: 20px;}
+        .profile__photoViewer_block .std__header {padding-bottom: 2px; margin-bottom: 10px; margin-top: 15px;}
+        .profile__photo .profile__slider {float: left;}
+            .profile__photoViewer_stat {font-size: 12px; color: #333;}
+                .profile__photoViewer_stat div {margin-bottom: 3px;}
+                .profile__photoViewer_stat_number {color: #999; float: right;}
+
+            .profile__photoViewer_lastVotes {margin-bottom: 15px;}
+                .profile__photoViewer_lastVotes_item {overflow: hidden; margin-bottom: 10px;}
+                    .profile__photoViewer_lastVotes_descr {margin-left: 60px;}
+                        .profile__photoViewer_lastVotes_person {font: bold 14px Arial; padding-top: 2px; margin-bottom: 2px;}
+                        .profile__photoViewer_lastVotes_locate {font-size: 10px; color:#999; margin-bottom: 4px;}
+                        .profile__photoViewer_lastVotes_stars {overflow: hidden; position: relative;}
+                            .profile__photoViewer_lastVotes_stars .rate_star{display: block; margin-right: 3px; font-size: 0; float: left; width: 10px; height: 10px; background: -50px -166px url(../img/profile/profile.png) no-repeat;}
+                                .profile__photoViewer_lastVotes_stars.rate1 .star1,
+                                .profile__photoViewer_lastVotes_stars.rate2 .star1,
+                                .profile__photoViewer_lastVotes_stars.rate2 .star2,
+                                .profile__photoViewer_lastVotes_stars.rate3 .star1,
+                                .profile__photoViewer_lastVotes_stars.rate3 .star2,
+                                .profile__photoViewer_lastVotes_stars.rate3 .star3,
+                                .profile__photoViewer_lastVotes_stars.rate4 .star1,
+                                .profile__photoViewer_lastVotes_stars.rate4 .star2,
+                                .profile__photoViewer_lastVotes_stars.rate4 .star3,
+                                .profile__photoViewer_lastVotes_stars.rate4 .star4,
+                                .profile__photoViewer_lastVotes_stars.rate5 .rate_star {background-position: -38px -166px;}
+            .profile__photoViewer_lastVotes_button {width: 170px; margin: 0 auto; position: relative; display: block;}
+
+        .profile__photoViewer_block_links {padding: 13px 15px 4px;}
+            .profile__photoViewer_block_links a {font-size: 12px; display: block; margin-bottom: 11px; line-height: 13px;}
+.profile__photoViewer_likers {width: auto; clear: both; padding-top: 13px;}
+    .profile__photoViewer_likers .std__header {color: #fff; border-bottom-color: #fff; margin-bottom: 10px;}
+    .profile__photoViewer_likers_number   {font: 12px Arial; color:#ddd; margin-left: 4px;}
+    .profile__photoViewer_likers_view_all {font: 12px Arial; color: #fff; float: right; position: relative; bottom: -4px;}
+    .profile__photoViewer_likers_list {overflow: hidden; margin-left: -11px;}
+        .profile__photoViewer_likers_item {display: block; float: left; margin-left: 11px;}
+.profile__photo .profile__photoViewer_carousel_list {margin-left: 61px;}
         /** Slider **/
     .profile__slider {width: 660px; height: 450px; position: relative;}
         .profile__slider_item { width: 660px; height: 450px; display: block; text-align: center; line-height: 450px; background: url(../img/profile/photo-viewer_bg.png) repeat; font-size: 0;}
@@ -220,8 +264,8 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
                 .profile__slider_nav.right i {border-right: none; border-left: 20px solid #fff;}
         /** Carousel **/
     .profile__photoViewer_carousel {position: relative;}
-        .profile__photoViewer_carousel_list {text-align: left; width: 588px; margin: 0 auto;}
-            .profile__photoViewer_carousel_listItem  {padding: 4px; display: inline-block; vertical-align: top; font-size: 0;   }
+        .profile__photoViewer_carousel_list {text-align: left; margin: 0 50px; overflow: hidden; height: 114px;}
+            .profile__photoViewer_carousel_listItem  {padding: 4px; display: block; float: left;}
             .profile__photoViewer_carousel_listItem.current {background-color: #7f7f7f;}
             .profile__photoViewer_carousel_listItem .photo-button {width: 104px; height: 104px; margin: 1px; padding-top: 15px; font-size: 12px; line-height: 14px;}
             .profile__photoViewer_carousel_listItem .photo-button .plus {margin-bottom: 16px; }
@@ -339,3 +383,30 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
                 .profile__interest_content_catBox_nav_btn.right {padding-right: 9px; float: right;}
                 .profile__interest_content_catBox_nav_btn.right:after {border-right: none; border-left: 4px solid #436187; left: auto; right: 0;}
     .profile__interest_button {clear: both;}
+
+.profile__info_list .profile__interest {margin: 10px 0 20px;}
+
+/* No Photo */
+.profile__photoViewer_top.no-photo {border-radius: 4px;}
+.profile__photoViewer_noPhoto {background-color: #fff; border-radius: 4px; padding: 13px 15px 15px; text-align: center;}
+    .profile__photoViewer_noPhoto .std__header {margin-bottom: 12px; text-align: left;}
+    .profile__photoViewer_noPhoto p {padding-bottom: 21px; text-align: left; line-height: 17px;}
+    .profile__photoViewer_noPhoto img {margin-bottom: 17px;}
+    .profile__photoViewer_noPhoto .button {width: 180px; margin-bottom: 7px;}
+
+    /* photo-viewer POPUPS*/
+.profile__photo_popup {padding: 15px; width: 770px; box-sizing: border-box; -moz-box-sizing: border-box;}
+    .profile__photo_popup .std__popup_close {top: 15px; right: 15px;}
+    .profile__photo_popup > .std__header {margin-bottom: 10px;}
+    .profile__photo_popup > .std__header span {font: 14px Arial; color: #999; margin-left: 5px;}
+
+    .profile__photo_popup .profile__photoViewer_lastVotes {margin-left: -10px; height:  276px; margin-bottom: 0;}
+        .profile__photo_popup .profile__photoViewer_lastVotes_item {width: 233px; margin-left: 10px; float: left;}
+            .profile__photo_popup .b-user__photoFrame {margin-bottom: 2px; float: left;}
+            .profile__photo_popup .b-user__photoFrame_photo {width: 76px; height: 76px; }
+            .profile__photo_popup .profile__photoViewer_lastVotes_descr {margin-left: 90px;}
+                .profile__photo_popup .profile__photoViewer_lastVotes_person {padding-top: 1px; margin-bottom: 3px;}
+                .profile__photo_popup .profile__photoViewer_lastVotes_locate {margin-bottom: 9px;}
+                .profile__photo_popup .profile__photoViewer_lastVotes_stars  {margin-bottom: 3px;}
+                .profile__photo_popup .profile__photoViewer_lastVotes_time   {font-size: 10px; color:#333;}
+    .profile__photo_popup .btn__paging   {border-top: 1px solid #ccc; padding-top: 16px;}

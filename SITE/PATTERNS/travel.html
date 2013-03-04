@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>LookBox</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../css/travel.css">
+    <link rel="stylesheet" href="../css/btns.css">
+    <script src="../js/jquery.js"></script>
+    
+    
+   <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+        
+        function stsStyle(){ 
+                $('.select_menu').each(function(){
+                    var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),                    
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                    objElement.css({'width': w+'px'})
+                    console.log(obj.width())
+                
+                });
+            }
+            stsStyle();
+    </script> 
+</head>
+<body><div style="margin: 100px;">
+
+<div class="travel__search">
+    
+	<div class="travel__search_item">
+		<div class="label">
+            Looking for
+        </div>
+		<div class="select">
+            <select class="sSelect" name="" id="">
+            	<option value="">1</option>
+            	<option value="">2</option>
+            	<option value="">3</option>
+            	<option value="">4</option>
+            	<option value="">5</option>
+            </select>
+        
+        </div>
+	</div>
+	
+	<div class="travel__search_item w2">
+		<div class="label">
+            Type of traveling
+        </div>
+		<div class="select">
+            <select class="sSelect" name="" id="">
+            	<option value="">1</option>
+            	<option value="">2</option>
+            	<option value="">3</option>
+            	<option value="">4</option>
+            	<option value="">5</option>
+            </select>
+        </div>
+	</div>
+	
+	<div class="travel__search_item big">
+		<div class="label">
+            Locations
+        </div>
+		<div class="select">
+            <input type="text" name="" id="" />
+        </div>
+	</div>
+    
+    <div class="travel__search_item submit last">
+        <a href="#" class="btn-25">Find people</a>
+	</div>
+	
+</div> 
+
+<br><br><br>
+
+<div class="travel__search travel__search_widget">
+    <h2>TB Quick Search</h2>
+        
+	<div class="travel__search_item">
+		<div class="label">
+            Looking for
+        </div>
+		<div class="select">
+            <select class="sSelect" name="" id="">
+            	<option value="">1</option>
+            	<option value="">2</option>
+            	<option value="">3</option>
+            	<option value="">4</option>
+            	<option value="">5</option>
+            </select>
+        
+        </div>
+	</div>
+    
+    <div class="travel__search_item big">
+		<div class="label">
+            Location
+        </div>
+		<div class="select">
+            <input type="text" name="" id="" />
+        </div>
+	</div>
+	
+	<div class="travel__search_item">
+		<div class="label">
+            Type of traveling
+        </div>
+		<div class="select">
+            <select class="sSelect" name="" id="">
+            	<option value="">1</option>
+            	<option value="">2</option>
+            	<option value="">3</option>
+            	<option value="">4</option>
+            	<option value="">5</option>
+            </select>
+        </div>
+	</div>
+	
+	
+    
+    <div class="travel__search_item last">
+		<div class="submit">
+            <a href="#" class="btn-s-1"><span>Go</span></a>
+        </div>
+	</div>
+	
+</div> 
+            
+
+     
+    
+</div></body>
+</html>

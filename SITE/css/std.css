@@ -11,6 +11,7 @@ select {width: 100%; height: 24px;}
 .std__fc_default {color:#010101;}
 .std__underline {border-bottom: 1px solid #ccc;}
     .std__fs-mainH.std__underline {padding-bottom: 6px;}
+    .std__fs-smallH.std__underline {padding-bottom: 2px;}
 /*** end headers styles ***/
 .std__2col-main {width: 733px;}
 .std__2col-side  {width: 200px;}
@@ -54,3 +55,22 @@ select {width: 100%; height: 24px;}
 
 .std__input {outline: none; font-size: 12px; box-sizing: border-box; -moz-box-sizing: border-box; height: 27px!important; padding: 0 6px; width: 100%;}
 .std__input {height: 27px!important;}
+
+/*** PAGINATION **/
+.btn__paging {font-size:0;}
+.btn__paging-item {display: inline-block; margin: 0!important; margin-right: 3px!important; height: 24px; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0; background: 0 -946px url(../img/btns.png) repeat-x; border: solid 1px #cbcbcb;
+    border-radius: 3px; width: 23px; text-align: center; font: 12px Arial !important; color: #525252;  text-decoration: none; cursor: pointer;}
+.btn__paging-item:hover{background-position: 0 -968px; color: #525252;  text-decoration: none;}
+.btn__paging-item:active{background-position: 0 -990px; color: #525252;  text-decoration: none;}
+.btn__paging-item a {color: #525252 !important;  text-decoration: none; padding-top: 4px!important; display: inline-block; height: 22px; -moz-box-sizing: border-box; box-sizing: border-box; width: 100%;}
+.btn__paging-item__current a {color:#fafafa !important;}
+.btn__paging-item__disabled a {color: #CBCBCB !important;}
+.btn__paging-item__current, .btn__paging-item__current:hover, .btn__paging-item__current:active, .btn__paging-item__current a {background-position: 0 -1012px; color:#fafafa; text-shadow: 0 1px 0 #454545; cursor: default; text-decoration: none;}
+.btn__paging-item__disabled, .btn__paging-item__disabled:hover, .btn__paging-item__disabled:active, .btn__paging-item__disabled a{cursor: default; color: #CBCBCB; background-position: 0 -990px; text-decoration: none;}
+.btn__paging-prew {padding-left: 7px!important; padding-right: 7px!important; width: auto; margin-right: 6px!important;}
+.btn__paging-page {}
+.btn__paging-next {padding-left: 7px!important; padding-right: 7px!important; width: auto; margin-left: 3px!important; margin-right: 0!important;}
+/* old style hack*/
+li.btn__paging-item {float: none !important;}
+li.btn__paging-item a {background: none !important;  text-shadow: none !important; display: inline-block;}
+li.btn__paging-item a span {background: none !important; padding: 0 !important; display: inline; line-height: 12px!important;}
