@@ -171,38 +171,81 @@
 
                 <div class="vip__tabContent">
 
-                    <div class="vip__tabContent_inner">
+                    <div class="vip__tabContent_inner tab1">
+
+                        <div class="vip__tabContent_dataCard">
+
+                            <div class="vip__tabContent_dataCard_number">
+                                <div class="vip__tabContent_dataCard_label">Card Number:</div>
+                                <input class="vip__tabContent_dataCard_field" type="text">
+
+                            </div>
+
+                            <div class="vip__tabContent_dataCard_date">
+                                <div class="vip__tabContent_dataCard_label">Exp. Date:</div>
+                                <div class="vip__tabContent_dataCard_field month">
+                                    <select class="sSelect" id="00" name="month">
+                                        <option value="01">01</option>
+                                        <option value="02">02</option>
+                                        <option value="03">03</option>
+                                        <option value="04">04</option>
+                                        <option value="05">05</option>
+                                        <option value="06">06</option>
+                                        <option value="07">07</option>
+                                        <option value="08">08</option>
+                                        <option value="09">09</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="31">31</option>
+                                    </select>
+                                </div>
+                                <span>/</span>
+                                <div class="vip__tabContent_dataCard_field year">
+                                    <select class="sSelect" id="000"  name="month">
+                                        <option value="2001">2001</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2005">2005</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="vip__tabContent_dataCard_code">
+                                <div class="vip__tabContent_dataCard_label">CVC:</div>
+                                <input class="vip__tabContent_dataCard_field" type="text">
+                            </div>
+                            <div class="std__clear"></div>
+
+                            <div class="vip__tabContent_currency">
+                                <i class="vip__tab_icon visa"></i><i
+                                    class="vip__tab_icon mc"></i><i
+                                    class="vip__tab_icon dn"></i><i
+                                    class="vip__tab_icon ae"></i><i
+                                    class="vip__tab_icon dc"></i><i
+                                    class="vip__tab_icon jcb"></i>
+                            </div>
+                        </div><!-- /.vip__tabContent_dataCard -->
+                        
+
+
 
                         <div class="vip__tabContent_descript">
-                            Your credit card will be charged $65,94. <a class="vip__tabContent_details" href="#">Billing details</a>
+                            Your card will be charged $65,94. <br><a class="vip__tabContent_details" href="#">Billing details</a>
                         </div>
 
                         <div class="vip__tabContent_purchaseBtn">
                             <a href="#" class="button big dark-red">Purchase now</a>
                         </div>
 
-                        <div class="vip__tabContent_currency">
-                            We accept:&nbsp;&nbsp;<i class="vip__tab_icon visa"></i><i
-                                          class="vip__tab_icon mc"></i><i
-                                          class="vip__tab_icon dn"></i><i
-                                          class="vip__tab_icon dc"></i><i
-                                          class="vip__tab_icon jcb"></i>
-                        </div>
+                        <div class="std__clear"></div>
                     </div>
+
+
 
                     <div style="display:none;" class="vip__tabContent_inner tab2">
 
-                        <div class="vip__tabContent_descript">
-                            Your credit card will be charged $65,94. <a class="vip__tabContent_details" href="#">Billing details</a>
-                        </div>
-
-                        <div class="vip__tabContent_currency">
-                            Make secure payment with&nbsp;&nbsp;<i class="vip__tab_icon paypal_big"></i>
-                        </div>
-
-                        <div class="vip__tabContent_purchaseBtn">
-                            <a href="#" class="button big dark-red">Purchase now</a>
-                        </div>
+                        <!-- see on vip-2.html -->
 
 
                     </div>
@@ -305,19 +348,71 @@
         <div class="vip__block_testimon_item">
             <span class="quot">”</span>
             <blockquote>Short messages turned into a long serious and wonderful relationships!</blockquote>
-            <div class="author">― Vasilioc, 28</div>
+            <div class="author">
+                ― <span class="vip__link">Vasilioc</span>, 38
+
+                <span class="vip__block_tooltip">
+                    <span class="vip__block_tooltip_img">
+                        <img src="../img/vip/user1.jpg" alt="#">
+                    </span>
+                    <span class="vip__block_tooltip_content">
+                        <span class="vip__block_tooltip_name"><span class="vip__link">Vasilioc</span>, 38</span>
+                        <span class="vip__block_tooltip_location">
+                            San Francisco, <br>
+                            United States
+                        </span>
+                    </span><!-- /.vip__block_tooltip_content -->
+                    <span class="arr"><span class="arr-i"></span></span>
+                </span><!-- /.vip__block_tooltip -->
+
+            </div><!-- /.author -->
         </div>
 
         <div class="vip__block_testimon_item">
             <span class="quot">”</span>
             <blockquote>I just want to thank you so very much. Over one year ago I met my love here and we are still together!</blockquote>
-            <div class="author">― Richardson, 45</div>
+            <div class="author">
+                ― <span class="vip__link">Richardson</span>, 45
+
+                <span class="vip__block_tooltip">
+                        <span class="vip__block_tooltip_img">
+                            <img src="../img/vip/user2.jpg" alt="#">
+                        </span>
+                        <span class="vip__block_tooltip_content">
+                            <span class="vip__block_tooltip_name"><span class="vip__link">Richardson</span>, 45</span>
+                            <span class="vip__block_tooltip_location">
+                                New York, <br>
+                                United States
+                            </span>
+                        </span><!-- /.vip__block_tooltip_content -->
+                        <span class="arr"><span class="arr-i"></span></span>
+                    </span><!-- /.vip__block_tooltip -->
+
+
+            </div>
         </div>
 
         <div class="vip__block_testimon_item">
             <span class="quot">”</span>
             <blockquote>I’m a newcomer here, but I’ve already met new nice people and soon I’m going out on a date!</blockquote>
-            <div class="author">― Olivia, 48</div>
+            <div class="author">
+                ― <span class="vip__link">Olivia</span>, 48
+
+                <span class="vip__block_tooltip">
+                    <span class="vip__block_tooltip_img">
+                        <img src="../img/vip/user3.jpg" alt="#">
+                    </span>
+                    <span class="vip__block_tooltip_content">
+                        <span class="vip__block_tooltip_name"><span class="vip__link">Olivia</span>, 48</span>
+                        <span class="vip__block_tooltip_location">
+                            Boston, <br>
+                            United States
+                        </span>
+                    </span><!-- /.vip__block_tooltip_content -->
+                    <span class="arr"><span class="arr-i"></span></span>
+                </span><!-- /.vip__block_tooltip -->
+
+            </div>
         </div>
         <div class="std__justify_helper"></div>
     </div><!-- /.vip__block_testimon -->

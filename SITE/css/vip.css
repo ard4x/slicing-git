@@ -174,15 +174,17 @@ body.payments {padding-right: 80px;}
     .vip__block_descript .std__header {text-align: center; margin-bottom: 23px;}
 /* TABS */
 .vip__tabContent {position: relative; text-align: center; border: solid 1px #dde0e6; background-color: #fff; border-top-color: #f4f5f7; border-bottom-color: #bbc0ce; padding: 25px; border-radius: 6px; box-shadow: 0 2px 2px #dde0e6;}
-    .vip__tabContent_inner {background-color: #f5f5f5; border-radius: 4px; padding: 15px; box-sizing: border-box; -moz-box-sizing: border-box; width: 456px; height: 190px;}
-    .vip__tabs {}
+    .vip__tabContent_inner {background-color: #f5f5f5; border-radius: 4px; padding: 15px; box-sizing: border-box; -moz-box-sizing: border-box; width: 456px;}
+    .vip__tabContent_inner.tab2 {height: 190px;}
+    .vip__tabContent_inner.tab1 {height: 152px; padding: 17px 20px; margin-bottom: 38px; position: relative;}
+.vip__tabs {}
         .vip__tab_item {border-top-left-radius: 5px; border-top-right-radius: 5px; position: relative; border: 1px solid #e3e3e3; background-color: #e3e3e3; border-bottom-color: #cdced0;
             margin-right: 9px; float: left; box-sizing: border-box; -moz-box-sizing: border-box; bottom: -1px; box-shadow: inset 0px -5px 10px -4px rgb(202, 202, 202);
             width: 102px; height: 51px; line-height: 50px; text-align: center; display: block; cursor: pointer;}
         .vip__tab_item.active {border: solid 1px #dde0e6; border-top-color: #f4f5f7; border-bottom: none; background-color: #ffffff; box-shadow: none; cursor: default; z-index: 2;}
             .vip__tab_item:first-child :after {content: ''; position: absolute; width: 7px; height: 7px; background-color: #d6d6d6; bottom: -6px; left: -1px; }
             .vip__tab_item.active:first-child :after {content: ''; position: absolute; width: 7px; height: 7px; background-color: #fff; border-left: 1px solid #e3e3e3; bottom: -7px; left: -1px; }
-            .vip__tab_icon {width: 37px; height: 23px; margin-left: 10px; background: url(../img/vip/vip.png) no-repeat; display: inline-block; vertical-align: middle;}
+            .vip__tab_icon {width: 37px; height: 23px; margin-left: 10px; margin-right: 5px; background: url(../img/vip/vip.png) no-repeat; display: inline-block; vertical-align: middle;}
             .vip__tab_icon.cards {background-position: -64px 0; width: 40px; height: 30px; margin-left: 0;}
             .vip__tab_icon.paypal{background-position: -138px -33px; width: 59px; height: 17px; margin-left: 0;}
             .vip__tab_icon.visa  {background-position: -107px 0;}
@@ -192,15 +194,34 @@ body.payments {padding-right: 80px;}
             .vip__tab_icon.dc    {background-position: -64px -33px;}
             .vip__tab_icon.jcb   {background-position: -102px -33px; width: 34px; height: 23px; }
             .vip__tab_icon.paypal_big {background-position: -201px -33px; width: 83px; height: 24px; }
+
+
+        .vip__tabContent_dataCard {font-size: 14px; color: #333; text-align: left; margin-bottom: 22px;}
+            .vip__tabContent_dataCard_label {margin-bottom: 7px;}
+            [type=text].vip__tabContent_dataCard_field,
+            .vip__tabContent_dataCard_field .newListSelected,
+            .vip__tabContent_dataCard_field .select {box-sizing: border-box; -moz-box-sizing: border-box; height: 27px!important; width: 100%; padding: 5px;}
+                .vip__tabContent_dataCard_field.month {display: inline-block; width: 60px;}
+                .vip__tabContent_dataCard_field.year {display: inline-block; width: 70px;}
+            .vip__tabContent_dataCard_number {width: 161px; float: left; margin-right: 30px;}
+            .vip__tabContent_dataCard_date {width: 145px; float: left; margin-right: 30px;}
+            .vip__tabContent_dataCard_code {width: 50px; float: left;}
+
         .vip__tabContent_descript{font-size: 14px; color: #333; padding-top: 7px; margin-bottom: 25px;}
             .vip__tabContent_details {margin-left: 16px; text-decoration: underline;}
             .vip__tabContent_details:hover {text-decoration: none;}
         .vip__tabContent_purchaseBtn {margin-bottom: 28px;}
-            .vip__tabContent_purchaseBtn .button {width: 180px;}
-        .vip__tabContent_currency  {font-size: 12px; font-weight: bold; color: #333; text-transform: uppercase; padding: 10px; background-color: #fff;}
-    .tab2 .vip__tabContent_descript {margin-bottom: 21px;}
-    .tab2 .vip__tabContent_currency {margin-bottom: 20px;}
-    .tab2 .vip__tabContent_purchaseBtn {margin-bottom: 0;}
+        .vip__tabContent_purchaseBtn .button {width: 180px;}
+        .vip__tabContent_currency  {font-size: 12px; font-weight: bold; color: #333; text-transform: uppercase; background-color: #fff; text-align: right;}
+
+        .tab1 .vip__tabContent_descript{font-size: 12px; padding-top: 5px; float: left; text-align: left; margin-bottom: 0;}
+        .tab1 .vip__tabContent_details {margin: 0; }
+        .tab1 .vip__tabContent_details:hover {text-decoration: none;}
+        .tab1 .vip__tabContent_purchaseBtn {float: right; margin-bottom: 0;}
+        .tab1 .vip__tabContent_currency  {position: absolute; right: 0; bottom: -48px; height: 48px; padding-top: 20px; font-size: 12px; font-weight: bold; color: #333; text-transform: uppercase; background-color: #fff; box-sizing: border-box; -moz-box-sizing: border-box;}
+        .tab2 .vip__tabContent_descript {margin-bottom: 21px;}
+        .tab2 .vip__tabContent_currency {margin-bottom: 20px; text-align: center; padding: 10px;}
+        .tab2 .vip__tabContent_purchaseBtn {margin-bottom: 0;}
 
     /* Description block */
 .vip__block_descript {padding: 0 15px; text-align: justify;}
@@ -221,13 +242,21 @@ body.payments {padding-right: 80px;}
     .vip__block_faq_item > .std__header {color: #666; font: bold 16px Arial; margin-bottom: 4px;}
 
     /* Testimonials block*/
-.vip__block_testimon {text-align: justify; }
+.vip__block_testimon {text-align: justify;}
     .vip__block_testimon .std__header {margin-bottom: 17px;}
     .vip__block_testimon_item {display: inline-block; width: 265px; vertical-align: top; margin: 0 15px  0 10px; position: relative;}
     .vip__block_testimon_item .quot { font: bold 72px/72px 'Times New Roman'; color: #ccc; position: absolute; top: -8px; left: -2px; text-align: left; vertical-align: top;}
-    .vip__block_testimon_item blockquote { margin: 0 0 9px 50px; font-size: 14px; line-height: 17px; font-style: italic; color: #333;}
-    .vip__block_testimon_item .author {text-align: right; font-size: 18px; font-weight: bold; color:  #666;}
-
+    .vip__block_testimon_item blockquote { margin: 0 0 0 50px; font-size: 14px; line-height: 17px; font-style: italic; color: #333;}
+    .vip__block_testimon_item .author {padding-top: 9px; position: relative; text-align: right; font-size: 18px; font-weight: bold; color:  #666;}
+.vip__block_testimon_item .author:hover .vip__block_tooltip {display: block}
+    .vip__block_tooltip {display: none; box-shadow: 0 0 5px #ccc; box-sizing: border-box; -moz-box-sizing: border-box; border: 1px solid #ccc; border-radius: 2px;padding: 9px;
+            width: 190px; height: 70px; font-size: 0; position: relative; position: absolute; top: -67px; right: 0; background-color: #fff;}
+        .vip__block_tooltip_img {width: 50px; height: 50px; float: left;}
+        .vip__block_tooltip_content {margin-left: 61px; text-align: left; display: block;}
+            .vip__block_tooltip_name {font-size: 14px; font-weight: bold; color: #666; display: block; padding-top: 1px; margin-bottom: 4px;}
+            .vip__block_tooltip_location {font-size: 10px; line-height: 13px; font-weight: normal; color: #999;}
+        .vip__block_tooltip .arr { position: absolute; bottom: -6px; left: 47%; display: block; height: 0; width: 0; border: 6px solid transparent; border-top-color: #ccc; border-bottom: none; }
+            .vip__block_tooltip .arr-i {position: absolute; top: -6px; left: -5px; display: block; height: 0; width: 0; border: 5px solid transparent; border-top-color: #fff; border-bottom: none;}
     /* Guest page */
 .vip__guest {margin-top: 15px; margin-bottom: 30px;}
     .vip__guest .button {width:178px; display: block; margin-top: 33px;}
@@ -236,4 +265,5 @@ body.payments {padding-right: 80px;}
     .vip__guest .std__header {font: bold 36px 'PT Sans'; color:#436187;  margin: 0 0 0 0; text-transform: uppercase; line-height: 36px; }
     .vip__guest_message {position: relative; top: -6px; margin-left: 197px;}
         .vip__guest_message p {font: 16px Arial; color:#333333; margin: 10px 0 18px 0; padding: 0; line-height: 20px;}
+.vip__link {color: #436187; cursor: default;}
 
