@@ -342,7 +342,7 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 
 /* INTERSEST block */
 .profile__interest {width: 490px;}
-    .profile__interest_labelsList {font-size: 0; margin-bottom: 10px;}
+    .profile__interest_labelsList {font-size: 0; margin-bottom: 10px; min-height: 10px;}
         .profile__interest_label  {display: inline-block; box-sizing: border-box; -moz-box-sizing: border-box; height: 21px; padding: 2px 10px 0 9px; background-color: #dee7f8;
             border: 1px solid #cad8f3; font: 12px Arial; color: #436187 !important; margin: 0 10px 10px 0; border-radius: 4px;}
         .profile__interest_label .close {display: inline-block; width: 7px; height: 7px; margin-left: 11px; position: relative; top: -1px;
@@ -367,7 +367,8 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
             .profile__interest_content_catList {}
                 .profile__interest_content_cat {display: block; color: #436187; font-size: 12px; text-decoration: none!important; height: 23px; line-height: 23px; vertical-align: middle;
                         margin-bottom: 1px; box-sizing: border-box; -moz-box-sizing: border-box; padding: 0 10px;}
-                .profile__interest_content_cat.current {background-color: #436187; font-weight: bold; color: #fff; border-top-left-radius: 4px; border-bottom-left-radius: 4px;}
+                .profile__interest_content_cat.current {background-color: #436187; font-weight: bold; color: #fff; border-top-left-radius: 4px; border-bottom-left-radius: 4px; position: relative;}
+                    .profile__interest_content_cat.current:after {content: ''; display: block; position: absolute; width: 0;  height: 0; border: 11px solid transparent; border-right: none; border-left-color: #436187; border-bottom-width: 12px; right: -11px; top: 0; z-index: 1;}
         .profile__interest_content_catBox {position: relative; overflow: hidden; width: 365px; margin-left: 95px; background-color: #fff; border: 1px solid #c4d9ec; border-radius: 4px; padding: 10px; box-sizing: border-box; -moz-box-sizing:  border-box;
                         padding: 12px 19px 45px 19px; height: 372px;}
             .profile__interest_content_catBox_col {width: 152px; font-size: 12px; color: #333;}

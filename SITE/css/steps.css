@@ -44,9 +44,9 @@ textarea.err, .err .newListSelected, .err .newList{border-color: #990000; border
             .steps.step-2 .steps__progress_point.point-1 {font-weight: normal; color: #333;}
             .steps.step-2 .steps__progress_point.point-2 {color: #436187;}
             .steps.step-3 .steps__progress_line {background-position: 0 -64px;}
-            .steps.step-3 .steps__progress_point.point-1 {}
-            .steps.step-3 .steps__progress_point.point-2 {}
-            .steps.step-3 .steps__progress_point.point-3 {}
+            .steps.step-3 .steps__progress_point.point-1,
+            .steps.step-3 .steps__progress_point.point-2 {font-weight: normal; color: #333;}
+            .steps.step-3 .steps__progress_point.point-3 {color: #436187;}
             .steps.step-4 .steps__progress_line {background-position: 0 -96px;}
             .steps.step-4 .steps__progress_point.point-1 {}
             .steps.step-4 .steps__progress_point.point-2 {}
@@ -75,3 +75,9 @@ textarea.err, .err .newListSelected, .err .newList{border-color: #990000; border
     .steps__photoUpload_wrap .errMsg {top: 65px;}
     .steps__photoUpload_wrap .okMsg {top: 65px;}
 .steps__photoUpload.err {border: 2px solid #990000; border-radius: 4px;}
+
+/* Step 2 */
+.steps_interest_message {margin-bottom: 10px;}
+    .steps_interest_message .count {font-weight: bold;}
+    .steps_interest_button {text-align: right; margin-top: 30px;}
+    .steps_interest_button .button {width: 105px;}

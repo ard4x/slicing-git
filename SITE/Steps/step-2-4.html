@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <title>Step 2</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/steps.css">
+    <link rel="stylesheet" href="../css/profile.css">
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'})
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+</head>
+<body>
+<!-- начало  шапки -->
+<div class="pre-header">
+    <div class="pre-header_inner">
+        <a href="/">
+            <img src="../img/ya_block_logo_in.png" class="logo" alt="Yangutu">
+        </a>
+    </div>
+</div>
+<!-- КОНЕЦ  шапки -->
+<div class="content">
+    <div class="content_inn profile ">
+        <div class="steps step-2">
+
+            <h1 class="std__header std__fs-bigH std__underline">Congratulations! Registration is completed!</h1>
+
+            <div class="steps__progress std__layer_grey-lite">
+                <h2 class="std__header std__fs-smallH std__underline std">Tell some words about yourself</h2>
+
+                <div class="steps__progress_line"></div>
+
+                <div class="steps__progress_points">
+                    <div class="steps__progress_point point-1">Basic information</div>
+                    <div class="steps__progress_point point-2">Interests</div>
+                    <div class="steps__progress_point point-3">In your own words</div>
+                    <div class="steps__progress_point point-4">About my date</div>
+                </div><!-- /.steps__progress_points -->
+            </div><!-- /.steps__progress -->
+
+            <div class="steps__description std__layer_blue">
+                <h2 class="std__header std__fs-smallH std__underline">Add your interests</h2>
+                <div>
+                    Choose at least 5 interests,
+                    show your personality to
+                    other Yangutu users and find
+                    people who share your
+                    interests.
+                </div>
+            </div><!-- /.steps__description -->
+
+            <div class="steps__content">
+                <div class="steps_interest_message">
+                    <span class="count">5</span> interests are choosen
+                </div>
+
+                <div class="profile__interest">
+                    <div class="profile__interest_labelsList">
+                        <span class="profile__interest_label">Video<i class="close"></i></span><span
+                            class="profile__interest_label">Music<i class="close"></i></span><span
+                            class="profile__interest_label">Car<i class="close"></i></span><span
+                            class="profile__interest_label">Something<i class="close"></i></span><span
+                            class="profile__interest_label">Smthn<i class="close"></i></span>
+                    </div><!-- /.profile__interest_labelsList -->
+
+                    <div class="profile__interest_search">
+                        <span class="profile__interest_search_label">Quick search:</span>
+
+                        <div class="profile__interest_search_field">
+                            <input type="text" placeholder="Start to type your interests here">
+                            <ul class="profile__interest_search_field_toolTip" style="display: none;">
+                                <li><span>sorry, no results found</span></li>
+                            </ul><!-- /.profile__interest_search_field_toolTip -->
+                        </div><!-- /.profile__interest_search_field -->
+
+                    </div><!-- /.profile__interest_search -->
+
+                    <div class="std__or_horiz">
+                        <div class="std__or">
+                            <div class="std__or_item">or</div>
+                        </div>
+                    </div>
+
+                    <div class="profile__interest_content std__layer_blue">
+
+                        <div class="profile__interest_content_leftSide">
+                            <h3 class="profile__interest_content_header">Browse</h3>
+
+                            <div class="profile__interest_content_catList">
+
+                                <a class="profile__interest_content_cat" href="#">Most popular</a>
+                                <a class="profile__interest_content_cat current" href="#">Activitites</a>
+                                <a class="profile__interest_content_cat" href="#">Books</a>
+                                <a class="profile__interest_content_cat" href="#">Brands</a>
+                                <a class="profile__interest_content_cat" href="#">Cars</a>
+                                <a class="profile__interest_content_cat" href="#">Countries</a>
+                                <a class="profile__interest_content_cat" href="#">Food</a>
+                                <a class="profile__interest_content_cat" href="#">Movies</a>
+                                <a class="profile__interest_content_cat" href="#">Music</a>
+                                <a class="profile__interest_content_cat" href="#">Sports</a>
+                                <a class="profile__interest_content_cat" href="#">TV</a>
+                                <a class="profile__interest_content_cat" href="#">Websites</a>
+
+                            </div><!-- /.profile__interest_content_catList -->
+
+                        </div><!-- /.profile__interest_content_leftSide -->
+
+                        <div class="profile__interest_content_catBox">
+                            <ul class="profile__interest_content_catBox_col col-1">
+                                <li class="profile__interest_content_catBox_item head">A</li>
+                                <li class="profile__interest_content_catBox_item"><a href="#">Asterix</a></li>
+                                <li class="profile__interest_content_catBox_item"><a href="#">Axious</a></li>
+                                <li class="profile__interest_content_catBox_item head">B</li>
+                                <li class="profile__interest_content_catBox_item"><a href="#">Batman</a></li>
+                                <li class="profile__interest_content_catBox_item head">C</li>
+                                <li class="profile__interest_content_catBox_item"><a href="#">Croatoan</a></li>
+                                <li class="profile__interest_content_catBox_item"><a href="#">Crown</a></li>
+                                <li class="profile__interest_content_catBox_item"><a href="#">Cupidon</a></li>
+                                <li class="profile__interest_content_catBox_item head">D</li>
+                                <li class="profile__interest_content_catBox_item"><a href="#">Dexter</a></li>
+                                <li class="profile__interest_content_catBox_item"><a href="#">Dishonored</a></li>
+                                <li class="profile__interest_content_catBox_item"><a href="#">Driver</a></li>
+                            </ul><!-- /.profile__interest_content_catBox_col-1 -->
+
+                            <ul class="profile__interest_content_catBox_col col-2">
+                                <li class="profile__interest_content_catBox_item head">R</li>
+                                <li class="profile__interest_content_catBox_item"><a href="#">Robocop</a></li>
+                                <li class="profile__interest_content_catBox_item"><a href="#">Roboticus</a></li>
+                                <li class="profile__interest_content_catBox_item"><a href="#">Ryu Ken</a></li>
+                                <li class="profile__interest_content_catBox_item head">S</li>
+                                <li class="profile__interest_content_catBox_item"><a href="#">Sherlock</a></li>
+                                <li class="profile__interest_content_catBox_item"><a href="#">Sniper</a></li>
+                                <li class="profile__interest_content_catBox_item"><a href="#">Street fighter</a></li>
+                                <li class="profile__interest_content_catBox_item head">T</li>
+                                <li class="profile__interest_content_catBox_item"><a href="#">Tahoma</a></li>
+                                <li class="profile__interest_content_catBox_item"><a href="#">Talented John</a></li>
+                                <li class="profile__interest_content_catBox_item"><a href="#">Transformers</a></li>
+                                <li class="profile__interest_content_catBox_item"><a href="#">Trine</a></li>
+                            </ul><!-- /.profile__interest_content_catBox_col-2 -->
+
+                            <div class="profile__interest_content_catBox_nav">
+                                <a class="profile__interest_content_catBox_nav_btn" href="#">previous</a>
+                                <a class="profile__interest_content_catBox_nav_btn right" href="#">next</a>
+                            </div>
+                        </div><!-- /.profile__interest_content_catBox -->
+
+                    </div><!-- /.profile__interest_content -->
+
+                    <div class="profile__interest_button steps_interest_button">
+
+                        <a class="button" href="#">Next</a>
+
+                    </div><!-- /.profile__interest_content -->
+
+                </div><!-- /.profile__interest -->
+
+            </div><!-- /.steps__content -->
+
+        </div><!-- /.steps -->
+
+    </div><!-- /.profile /.content_inn -->
+</div><!-- /.content -->
+
+</body>
+</html>
