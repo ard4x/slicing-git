@@ -1,7 +1,7 @@
 /**** steps.css v.20130311  (remove old htdocs/css/steps.css && htdocs/css/profile/steps.css)  *******/
 /* Old styles */
-textarea.err, .err .newListSelected, .err .newList{border-color: #990000;}
-.errMsg {font: 12px Arial; color:#990000; background: 0 4px  url(../img/err_arrow.png) no-repeat; padding-left: 12px; width: 110px; position: absolute;top:4px; right: -10px; box-sizing: border-box; -moz-box-sizing: border-box;}
+textarea.err, .err .newListSelected, .err .newList{border-color: #990000; border-radius: 2px;}
+.errMsg {font: 12px Arial; color:#990000; background: 0 3px  url(../img/err_arrow.png) no-repeat; padding-left: 12px; width: 110px; position: absolute;top:4px; right: -10px; box-sizing: border-box; -moz-box-sizing: border-box;}
 .okMsg {background: url(../img/icons/v.png) no-repeat; width: 11px; height:12px; position: absolute;top:8px; right: 89px; box-sizing: border-box; -moz-box-sizing: border-box;}
 .hide       {display:none;}
 .margT5     {margin-top: 5px;}
@@ -22,9 +22,47 @@ textarea.err, .err .newListSelected, .err .newList{border-color: #990000;}
 #required-info  span.div {font-size: 17px; text-align: center; margin: 5px;}
 #required-info a {font: 12px Arial; color:#334a66;}
 #required-info a.more {margin-left: 4px;}
-#required-info a.centim {margin-top: 5px; display: inline-block; position: relative;}
+#required-info a.centim {margin-top: 5px; display: inline-block; position: relative; text-decoration: none; border-bottom: 1px dotted #436187;}
+    #required-info a.centim:hover {border: none; text-decoration: none;}
 #required-info .newListSelected {box-sizing: border-box; -moz-box-sizing: border-box; height: 27px; padding-top: 5px; padding-left: 5px;}
 #required-info .formRow input[type="radio"] {position: relative; bottom: -2px;}
 .shortField {width: 120px; display: inline-block;}
 .shortSelect{width: 106px; display: inline-block;}
 
+#required-info .formRow .fieldLang {width: 170px; float: left;}
+#required-info .formRow .fieldLangLevel {width: 170px; float: right}
+.steps #required-info .formRow {margin-bottom: 10px;}
+.steps #required-info .button {margin-top: 17px; margin-left: 305px; width: 185px;}
+/* Steps */
+.steps > .std__header {margin-bottom: 20px;}
+.steps__progress {border: 1px solid #ddd; padding-top: 12px; padding-bottom: 14px; margin-bottom: 30px;}
+    .steps__progress_line {width: 720px; height: 30px; margin: 0 auto 3px; position: relative; background: url(../img/vip/progress.png) no-repeat;}
+    .steps__progress_points {overflow: hidden;}
+        .steps__progress_point {float: left; width: 25%; text-align: center; font-size: 14px; font-weight: bold; color: #ccc}
+            .steps__progress_point.point-1 {}
+            .steps__progress_point.point-2 {}
+            .steps__progress_point.point-3 {}
+            .steps__progress_point.point-4 {}
+            .steps.step-1 .steps__progress_point.point-1 {color: #436187;}
+.steps__description {width: 190px; float: left; font-size: 14px; color: #333; padding-top: 13px;}
+    .steps__description > .std__header {margin-bottom: 12px;}
+.steps__content {margin-left: 250px;}
+    .steps__photoUpload {width: 490px; margin-bottom: 30px; padding-top: 13px; box-sizing: border-box; -moz-box-sizing: border-box;}
+        .steps__photoUpload_title {font-size: 14px; color: #333; margin-bottom: 10px;}
+        .steps__photoUpload_photoFrame {float: left; position: relative;}
+        .steps__photoUpload_photo {width: 100px; height: 100px;}
+        .steps__photoUpload_preloader {position: absolute; top: 2px; left: 2px; width: 100px; height: 100px; background: url(../img/opacity-lite.png) repeat; }
+            .steps__photoUpload_preloader_message {font-size: 12px; color: #fff; line-height: 100px; vertical-align: middle; text-align: center;}
+            .steps__photoUpload_preloader_message .preloader {background: url(../img/preloader-11.gif) no-repeat; display: inline-block; width: 11px; height: 11px; margin-right: 8px;
+
+            }
+        .steps__photoUpload_description {margin-left: 125px;}
+            .steps__photoUpload_description_text {font-size: 12px; color: #333; margin-bottom: 10px; line-height: 14px;}
+            .steps__photoUpload_button {margin-bottom: 5px;}
+            .steps__photoUpload_conditions {font-size: 10px; color:#999; line-height: 12px;}
+.steps .errMsg {right: 72px; width: 125px;}
+.steps .okMsg {right: 186px;}
+.steps__photoUpload_wrap {position: relative}
+    .steps__photoUpload_wrap .errMsg {top: 65px;}
+    .steps__photoUpload_wrap .okMsg {top: 65px;}
+.steps__photoUpload.err {border: 2px solid #990000; border-radius: 4px;}
