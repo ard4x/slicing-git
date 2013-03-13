@@ -34,7 +34,7 @@ textarea.err, .err .newListSelected, .err .newList{border-color: #990000; border
 .steps #required-info .formRow {margin-bottom: 10px;}
 .steps #required-info .button {margin-top: 17px; margin-left: 305px; width: 185px;}
 /* Steps */
-.steps > .std__header {margin-bottom: 20px;}
+.steps > .std__header {margin-bottom: 20px; padding-bottom: 6px;}
 .steps__progress {border: 1px solid #ddd; padding-top: 12px; padding-bottom: 14px; margin-bottom: 30px;}
     .steps__progress_line {width: 720px; height: 30px; margin: 0 auto 3px; position: relative; background: url(../img/vip/progress.png) no-repeat;}
     .steps__progress_points {overflow: hidden;}
