@@ -39,11 +39,20 @@ textarea.err, .err .newListSelected, .err .newList{border-color: #990000; border
     .steps__progress_line {width: 720px; height: 30px; margin: 0 auto 3px; position: relative; background: url(../img/vip/progress.png) no-repeat;}
     .steps__progress_points {overflow: hidden;}
         .steps__progress_point {float: left; width: 25%; text-align: center; font-size: 14px; font-weight: bold; color: #ccc}
-            .steps__progress_point.point-1 {}
-            .steps__progress_point.point-2 {}
-            .steps__progress_point.point-3 {}
-            .steps__progress_point.point-4 {}
             .steps.step-1 .steps__progress_point.point-1 {color: #436187;}
+            .steps.step-2 .steps__progress_line {background-position: 0 -32px;}
+            .steps.step-2 .steps__progress_point.point-1 {font-weight: normal; color: #333;}
+            .steps.step-2 .steps__progress_point.point-2 {color: #436187;}
+            .steps.step-3 .steps__progress_line {background-position: 0 -64px;}
+            .steps.step-3 .steps__progress_point.point-1 {}
+            .steps.step-3 .steps__progress_point.point-2 {}
+            .steps.step-3 .steps__progress_point.point-3 {}
+            .steps.step-4 .steps__progress_line {background-position: 0 -96px;}
+            .steps.step-4 .steps__progress_point.point-1 {}
+            .steps.step-4 .steps__progress_point.point-2 {}
+            .steps.step-4 .steps__progress_point.point-3 {}
+            .steps.step-4 .steps__progress_point.point-4 {}
+
 .steps__description {width: 190px; float: left; font-size: 14px; color: #333; padding-top: 13px;}
     .steps__description > .std__header {margin-bottom: 12px;}
 .steps__content {margin-left: 250px;}
