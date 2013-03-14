@@ -47,10 +47,10 @@ textarea.err, .err .newListSelected, .err .newList{border-color: #990000; border
             .steps.step-3 .steps__progress_point.point-2 {font-weight: normal; color: #333;}
             .steps.step-3 .steps__progress_point.point-3 {color: #436187;}
             .steps.step-4 .steps__progress_line {background-position: 0 -96px;}
-            .steps.step-4 .steps__progress_point.point-1 {}
-            .steps.step-4 .steps__progress_point.point-2 {}
-            .steps.step-4 .steps__progress_point.point-3 {}
-            .steps.step-4 .steps__progress_point.point-4 {}
+            .steps.step-4 .steps__progress_point.point-1,
+            .steps.step-4 .steps__progress_point.point-2,
+            .steps.step-4 .steps__progress_point.point-3 {font-weight: normal; color: #333;}
+            .steps.step-4 .steps__progress_point.point-4 {color: #436187;}
 
 .steps__description {width: 190px; float: left; font-size: 14px; color: #333; padding-top: 13px;}
     .steps__description > .std__header {margin-bottom: 12px;}
@@ -96,3 +96,28 @@ textarea.err, .err .newListSelected, .err .newList{border-color: #990000; border
         .steps__step-3_form .errMsg {top: 25px; right: 10px; width: 187px;}
         .steps__step-3_form .okMsg  {top: 28px; right: 189px;}
         .steps__step-3_form .err textarea {border-color: #900;}
+
+/* Step 4*/
+.steps__step-4_sideLabel {color: #436187; font-weight: bold; background: #fff; display: block; box-sizing: border-box; -moz-box-sizing: border-box; padding: 13px 20px 15px; width: 170px; height: 60px;
+    border-top-left-radius: 4px;  border-bottom-left-radius: 4px; position: relative; margin-top: 14px;}
+    .steps__step-4_sideLabel .a{display: block; width: 0; height: 0; border: 30px solid transparent; border-right: none; border-left: 20px solid #fff; position: absolute; top: 0; right: -20px; }
+
+    .steps__step-4_list {margin-bottom: 22px;}
+        .steps__step-4_list_header {margin: 0 0 20px; font: bold 14px Arial; color: #333; text-transform: uppercase; padding-bottom: 2px; border-bottom: 1px solid #ccc;}
+        .steps__step-4_list .formRow {margin-bottom: 20px;}
+            .steps__step-4_list .label {width: 115px; float: left; vertical-align: top;}
+            .steps__step-4_list .content-steps {font-size: 12px; margin-left: 140px;}
+            .steps__step-4_list .content-steps.haveSelect {position: relative; top: -5px;}
+                .steps__step-4_optList {font-size: 0; margin-left: -25px;}
+                    .steps__step-4_optList_item {display: inline-block; width: 170px; margin-left: 25px; font-size: 12px; vertical-align: top; margin-bottom: 10px;}
+                        .steps__step-4_optList_item label {vertical-align: top; padding: 1px 0 1px 33px; position: relative; display: inline-block; }
+                        .steps__step-4_optList_item input[type=checkbox] {position: absolute;top: -1px; left: 1px;}
+                .steps__step-4_height {width: 160px; display: inline-block;}
+                    .steps__step-4_height select,
+                    .steps__step-4_height .newListSelected {box-sizing: border-box; -moz-box-sizing: border-box; height: 27px; width: 100%;}
+                    .steps__step-4_height .newListSelected {padding: 5px; font-size: 14px;}
+                        .steps__step-4_list .divide {margin: 0 7px 0 8px; font-size: 14px;}
+                        .steps__step-4_list .centim {margin-left: 15px; text-decoration: none; border-bottom: 1px dotted #436187;}
+                        .steps__step-4_list .centim:hover {text-decoration: none; border-bottom: none;}
+    .steps__step-4_button {text-align: right; padding-top: 5px;}
+        .steps__step-4_button .button {width: 265px;}

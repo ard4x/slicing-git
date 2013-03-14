@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <title>Step 4</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/steps.css">
+    <link rel="stylesheet" href="../css/profile.css">
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'})
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+</head>
+<body>
+<!-- начало  шапки -->
+<div class="pre-header">
+    <div class="pre-header_inner">
+        <a href="/">
+            <img src="../img/ya_block_logo_in.png" class="logo" alt="Yangutu">
+        </a>
+    </div>
+</div>
+<!-- КОНЕЦ  шапки -->
+<div class="content">
+<div class="content_inn profile ">
+<div class="steps step-4">
+
+<h1 class="std__header std__fs-bigH std__underline">Congratulations! Registration is completed!</h1>
+
+<div class="steps__progress std__layer_grey-lite">
+    <h2 class="std__header std__fs-smallH std__underline std">Tell some words about yourself</h2>
+
+    <div class="steps__progress_line"></div>
+
+    <div class="steps__progress_points">
+        <div class="steps__progress_point point-1">Basic information</div>
+        <div class="steps__progress_point point-2">Interests</div>
+        <div class="steps__progress_point point-3">In your own words</div>
+        <div class="steps__progress_point point-4">About my date</div>
+    </div><!-- /.steps__progress_points -->
+</div><!-- /.steps__progress -->
+
+<div class="steps__description std__layer_blue">
+    <h2 class="std__header std__fs-smallH std__underline">About my date</h2>
+    <div>
+        Describe who you would like
+        to find. What looks that
+        person must have, what kind
+        of lifestyle lead, and to what
+        values stick.
+
+        <div class="steps__step-4_sideLabel">
+            Pick up the most
+            suitable options
+            <span class="a"></span>
+        </div>
+    </div>
+</div><!-- /.steps__description -->
+
+<div class="steps__content">
+
+    <div class="steps__step-4_list">
+        <h3 class="steps__step-4_list_header">Appearence</h3>
+        <div class="formRow">
+            <div class="label">Body type:</div>
+            <div class="content-steps">
+                <ul class="steps__step-4_optList">
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">No preferences</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Athletic</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Overweight</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Slim</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Fit</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Average</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Slender</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Muscular</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Stocky</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">A few extra pounds</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Curvy</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Overweight</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Big and beautiful</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Full-figured</label></li>
+
+                </ul>
+            </div><!-- /.content-steps -->
+        </div><!-- /.formRow -->
+
+        <div class="formRow">
+            <div class="label">Eye color:</div>
+            <div class="content-steps">
+                <ul class="steps__step-4_optList">
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">No preferences</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Blue</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Blue-gray</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Brown</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Green</label></li>
+                    <li class="steps__step-4_optList_item"><a href="#">more</a></li>
+                </ul>
+            </div><!-- /.content-steps -->
+        </div><!-- /.formRow -->
+
+        <div class="formRow">
+            <div class="label">Hair color:</div>
+            <div class="content-steps">
+                <ul class="steps__step-4_optList">
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">No preferences</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Black</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Blond</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Brown</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Fit</label></li>
+                    <li class="steps__step-4_optList_item"><a class="more" href="#">more</a></li>
+                </ul>
+            </div><!-- /.content-steps -->
+        </div><!-- /.formRow -->
+
+        <div class="formRow">
+            <div class="label">Height:</div>
+            <div class="content-steps haveSelect">
+                <div class="steps__step-4_height">
+                    <select class="sSelect">
+                        <option value="1" selected="selected">From</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <span class="divide">&ndash;</span>
+                <div class="steps__step-4_height">
+                    <select class="sSelect">
+                        <option value="1" selected="selected">To</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+
+                <a href="#" class="centim">centimetres</a>
+
+            </div><!-- /.content-steps -->
+        </div><!-- /.formRow -->
+
+    </div><!-- /.steps__step-4_list -->
+
+    <div class="steps__step-4_list">
+        <h3 class="steps__step-4_list_header">Lifestyle</h3>
+        <div class="formRow">
+            <div class="label">Smoke:</div>
+            <div class="content-steps">
+                <ul class="steps__step-4_optList">
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">No preferences</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">About once a week</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Hookah only</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">A few times a year</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">A few times a year</label></li>
+                    <li class="steps__step-4_optList_item"><a href="#">more</a></li>
+                </ul>
+            </div><!-- /.content-steps -->
+        </div><!-- /.formRow -->
+
+        <div class="formRow">
+            <div class="label">Drink:</div>
+            <div class="content-steps">
+                <ul class="steps__step-4_optList">
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">No preferences</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">A few times a year</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">About once a week</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Several times a week</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Several times a week</label></li>
+                    <li class="steps__step-4_optList_item"><a href="#">more</a></li>
+                </ul>
+            </div><!-- /.content-steps -->
+        </div><!-- /.formRow -->
+
+        <div class="formRow">
+            <div class="label">Have kids:</div>
+            <div class="content-steps">
+                <ul class="steps__step-4_optList">
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">No preferences</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">No</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">No, but want</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Yes</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">No, don't want</label></li>
+                </ul>
+            </div><!-- /.content-steps -->
+        </div><!-- /.formRow -->
+
+    </div><!-- /.steps__step-4_list -->
+
+    <div class="steps__step-4_list">
+        <h3 class="steps__step-4_list_header">Background / values</h3>
+        <div class="formRow">
+            <div class="label">Ethnicity:</div>
+            <div class="content-steps">
+                <ul class="steps__step-4_optList">
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">No preferences</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">African-American / African descent</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Asian</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">East Indian</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">East Indian</label></li>
+                    <li class="steps__step-4_optList_item"><a href="#">more</a></li>
+                </ul>
+            </div><!-- /.content-steps -->
+        </div><!-- /.formRow -->
+
+        <div class="formRow">
+            <div class="label">Language:</div>
+            <div class="content-steps">
+                <ul class="steps__step-4_optList">
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">No preferences</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">English</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">French</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Deutsch</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Japanese</label></li>
+                    <li class="steps__step-4_optList_item"><a href="#">more</a></li>
+                </ul>
+            </div><!-- /.content-steps -->
+        </div><!-- /.formRow -->
+
+        <div class="formRow">
+            <div class="label">Faith:</div>
+            <div class="content-steps">
+                <ul class="steps__step-4_optList">
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">No preferences</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Buddhist</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Christian</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Hindu</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Jewish</label></li>
+                    <li class="steps__step-4_optList_item"><a href="#">more</a></li>
+                </ul>
+            </div><!-- /.content-steps -->
+        </div><!-- /.formRow -->
+
+        <div class="formRow">
+            <div class="label">Education:</div>
+            <div class="content-steps">
+                <ul class="steps__step-4_optList">
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">No preferences</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">No formal education</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">High school</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Associate's degree</label></li>
+                    <li class="steps__step-4_optList_item"><label><input type="checkbox">Associate's degree</label></li>
+                    <li class="steps__step-4_optList_item"><a href="#">more</a></li>
+                </ul>
+            </div><!-- /.content-steps -->
+        </div><!-- /.formRow -->
+
+    </div><!-- /.steps__step-4_list -->
+
+    <div class="steps__step-4_button">
+        <a class="button" href="">Save and start using the site</a>
+    </div>
+
+</div><!-- /.steps__content -->
+
+</div><!-- /.steps -->
+
+</div><!-- /.profile /.content_inn -->
+</div><!-- /.content -->
+
+</body>
+</html>
