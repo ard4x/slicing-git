@@ -93,5 +93,6 @@ textarea.err, .err .newListSelected, .err .newList{border-color: #990000; border
         .steps__step-3_form_description .count {float: right;}
         .steps__step-3_form_button {text-align: right; width: 490px; padding-top: 13px;}
             .steps__step-3_form_button .button {width: 184px;}
-        .steps__step-3_form .errMsg {top: 28px; right: 189px;}
+        .steps__step-3_form .errMsg {top: 25px; right: 10px; width: 187px;}
         .steps__step-3_form .okMsg  {top: 28px; right: 189px;}
+        .steps__step-3_form .err textarea {border-color: #900;}
