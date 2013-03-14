@@ -417,3 +417,9 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
     .profile__chat_interests .std__popup_close {top: 15px; right: 15px;}
     .profile__chat_interests .profile__interest_button {text-align: right; margin-top: 20px;}
         .profile__chat_interests .profile__interest_button .button {width: 105px;}
+        
+/* Profile Walker */
+.profile__walker {overflow: hidden; margin-bottom: 20px; font-size: 14px;}
+    .profile__walker_left {float: left;}
+    .profile__walker_right {float: right;}
+    .profile__walker_right a {margin-left: 30px;}
