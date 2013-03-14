@@ -28,7 +28,6 @@ textarea.err, .err .newListSelected, .err .newList{border-color: #990000; border
 #required-info .formRow input[type="radio"] {position: relative; bottom: -2px;}
 .shortField {width: 120px; display: inline-block;}
 .shortSelect{width: 106px; display: inline-block;}
-
 #required-info .formRow .fieldLang {width: 170px; float: left;}
 #required-info .formRow .fieldLangLevel {width: 170px; float: right}
 .steps #required-info .formRow {margin-bottom: 10px;}
@@ -81,3 +80,18 @@ textarea.err, .err .newListSelected, .err .newList{border-color: #990000; border
     .steps_interest_message .count {font-weight: bold;}
     .steps_interest_button {text-align: right; margin-top: 30px;}
     .steps_interest_button .button {width: 105px;}
+
+/* Step 3 */
+.steps__step-3_form  {margin-bottom: 20px;}
+    .steps__step-3_form .formRow {margin-bottom: 15px; position: relative}
+    .steps__step-3_form .label {font-size: 14px; color: #000; margin-bottom: 4px;}
+    .steps__step-3_form .content-steps {width: 490px;}
+        .steps__step-3_form .content-steps textarea {width: 100%; height: 100px; margin: 0; box-sizing: border-box; -moz-box-sizing: border-box; resize: vertical;}
+        .steps__step-3_form .content-steps textarea::-webkit-input-placeholder {font-style: italic;}
+        .steps__step-3_form .content-steps textarea::-moz-placeholder {font-style: italic;}
+        .steps__step-3_form_description {font-size: 11px; color: #666;}
+        .steps__step-3_form_description .count {float: right;}
+        .steps__step-3_form_button {text-align: right; width: 490px; padding-top: 13px;}
+            .steps__step-3_form_button .button {width: 184px;}
+        .steps__step-3_form .errMsg {top: 28px; right: 189px;}
+        .steps__step-3_form .okMsg  {top: 28px; right: 189px;}
