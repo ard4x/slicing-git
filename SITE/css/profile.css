@@ -191,6 +191,7 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 /** Photo Viewer **/
 .profile__photoViewer {position: relative;}
 .profile__photoViewer_top {background-color: #7f7f7f; border-radius: 4px 4px 0 0; padding: 20px;}
+.profile__photoViewer_top .button {box-shadow: 0 1px 2px #222;}
 .profile__photoViewer_top_head {position: relative; margin-bottom: 11px; height: 46px;}
 .profile__photoViewer_like{z-index: 10; position: absolute; top: 35px; left: 35px; padding-right: 17px; padding-left: 47px;}
 .profile__photoViewer_report {z-index: 10; position: absolute; top: 35px; right: 35px;}
