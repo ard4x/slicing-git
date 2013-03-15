@@ -1154,6 +1154,23 @@ input.button {
   text-shadow: #364f6d 0 1px 1px;
   cursor: default;
 }
+.switch.slider .slider-item.current {
+  background-color: #f9f9f9;
+  background: #c94027 0 -3071px url('../img/button/btns.png') repeat-x;
+  border-color: #862714 #862714 #a13f2c;
+}
+.switch.slider .slider-item.current:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 45%;
+  width: 0;
+  height: 0;
+  border: 11px solid transparent;
+  border-bottom: none;
+  border-top: 10px solid #d35239;
+}
 .slider .slider-item .bubble {
   display: block;
   border-radius: 11px;
@@ -1218,4 +1235,67 @@ i.icon.icon-edit {
   background-position: 0 -473px;
   width: 12px;
   height: 12px;
+}
+i.icon.icon-message {
+  background-position: -15px -473px;
+  width: 16px;
+  height: 16px;
+}
+i.icon.icon-message-small {
+  background-position: -15px -492px;
+  width: 10px;
+  height: 10px;
+}
+i.icon.icon-like {
+  background-position: -34px -473px;
+  width: 16px;
+  height: 16px;
+}
+i.icon.icon-dislike {
+  background-position: -52px -473px;
+  width: 16px;
+  height: 16px;
+}
+i.icon.icon-share {
+  background-position: -34px -492px;
+  width: 16px;
+  height: 16px;
+}
+i.icon.icon-shared {
+  background-position: -52px -492px;
+  width: 16px;
+  height: 16px;
+}
+i.icon.icon-close-grey {
+  background-position: -19px -379px;
+  width: 9px;
+  height: 9px;
+}
+i.icon.icon-rotate-left {
+  background-position: -70px -491px;
+  width: 16px;
+  height: 17px;
+}
+i.icon.icon-rotate-right {
+  background-position: -88px -491px;
+  width: 16px;
+  height: 17px;
+}
+i.icon.icon-crop {
+  background-position: -70px -472px;
+  width: 16px;
+  height: 17px;
+}
+i.icon.icon-basket {
+  background-position: -88px -472px;
+  width: 16px;
+  height: 17px;
+}
+i.icon.icon-check {
+  background-position: -70px -453px;
+  width: 16px;
+  height: 17px;
+}
+i.icon.icon-check.lite {
+  background-position: -88px -453px;
 }
