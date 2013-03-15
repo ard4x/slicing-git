@@ -317,7 +317,7 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 .profile__block-myWord .profile__info_list_item.active .profile__info_block_edit_buttons {display: block;}
 
 /* profile POPUP - edit basic info */
-.profile__pop_editBasic {padding: 15px; padding-bottom: 63px; width: 720px;}
+.profile__pop_editBasic {padding: 15px 15px 63px; width: 720px;}
 .profile__pop_editBasic > .std__header {margin-bottom: 20px;}
 .profile__pop_editBasic_leftCol {width: 340px; float: left;}
 .profile__pop_editBasic_rightCol {width: 340px; float: right;}

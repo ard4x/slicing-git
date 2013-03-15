@@ -1271,3 +1271,31 @@ i.icon.icon-close-grey {
   width: 9px;
   height: 9px;
 }
+i.icon.icon-rotate-left {
+  background-position: -70px -491px;
+  width: 16px;
+  height: 17px;
+}
+i.icon.icon-rotate-right {
+  background-position: -88px -491px;
+  width: 16px;
+  height: 17px;
+}
+i.icon.icon-crop {
+  background-position: -70px -472px;
+  width: 16px;
+  height: 17px;
+}
+i.icon.icon-basket {
+  background-position: -88px -472px;
+  width: 16px;
+  height: 17px;
+}
+i.icon.icon-check {
+  background-position: -70px -453px;
+  width: 16px;
+  height: 17px;
+}
+i.icon.icon-check.lite {
+  background-position: -88px -453px;
+}
