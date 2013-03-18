@@ -55,6 +55,10 @@
 }
 input.button {
   padding-top: 0!important;
+  border-width: 1px !important;
+}
+.button.bg-dark {
+  box-shadow: 0 1px 2px #525252;
 }
 .button.green {
   height: 31px;
@@ -679,6 +683,59 @@ input.button {
   background-color: #636363;
 }
 .button.large.disabled:active {
+  box-shadow: none;
+  border-color: #555555 #636363 #4e4e4e;
+  background-color: #636363;
+}
+.button.huge {
+  font-size: 30px!important;
+  padding: 12px 28px 0;
+  border-radius: 4px;
+  height: 57px;
+  background-position: 0 0px;
+}
+.button.huge:hover {
+  background-position: 0 -55px;
+}
+.button.huge:active {
+  background-position: 0 -110px;
+}
+.button.huge.round {
+  border-radius: 28.5px;
+  width: 57px;
+  overflow: hidden;
+  padding: 0;
+}
+.button.huge.red {
+  height: 57px;
+  background-position: 0 -3100px;
+}
+.button.huge.red:hover {
+  background-position: 0 -3155px;
+}
+.button.huge.red:active {
+  background-position: 0 -3210px;
+}
+.button.huge.red.round {
+  border-radius: 28.5px;
+  width: 57px;
+  overflow: hidden;
+  padding: 0;
+}
+.button.huge.disabled {
+  background: 0 -2705px url('../img/button/btns.png') repeat-x;
+  background-color: #666666;
+  cursor: default;
+}
+.button.huge.disabled {
+  border-color: #555555 #636363 #4e4e4e;
+  background-color: #636363;
+}
+.button.huge.disabled:hover {
+  border-color: #555555 #636363 #4e4e4e;
+  background-color: #636363;
+}
+.button.huge.disabled:active {
   box-shadow: none;
   border-color: #555555 #636363 #4e4e4e;
   background-color: #636363;
