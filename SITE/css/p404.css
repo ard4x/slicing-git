@@ -1,0 +1,17 @@
+.p404 {padding: 20px 0;}
+.p404__top {border: 3px solid #fff; padding: 37px 57px 35px 55px; border-radius: 4px; box-shadow: 0 1px 3px 0px #7D7D7D; margin-bottom: 28px; }
+    .p404__top .std__header {font-size: 60px; line-height: 60px; color: #436187; text-transform: uppercase; margin-bottom: 2px;}
+    .p404__top p {font: 24px 'PT Sans'; color: #333; line-height: 29px; margin-bottom: 0; padding-left: 2px;}
+    .p404__top_icon {float: right; width: 128px; height: 98px; background: 0 -876px url(../img/404/404.png) no-repeat; margin-top: 15px;}
+.p404__header {padding-bottom: 6px; text-align: center; margin-bottom: 37px;}
+.p404__servicesList {text-align: justify; padding: 0 20px;}
+    .p404__servicesList_item {width: 263px; text-align: center; margin-bottom: 36px; display: inline-block; vertical-align: bottom;}
+        .p404__servicesList_item .std__header {margin-bottom: 24px; vertical-align: middle;}
+        .p404__servicesList_item_icon {display: inline-block; width: 202px; height: 144px; background: url(../img/404/404.png) no-repeat; max-resolution: 5px;}
+        .p404__servicesList_item_description {text-align: left; font-size: 14px; line-height: 17px;}
+            .p404__servicesList_item_icon_search    {background-position: 0 0;}
+            .p404__servicesList_item_icon_match     {background-position: 0 -146px;}
+            .p404__servicesList_item_icon_dating    {background-position: 0 -292px;}
+            .p404__servicesList_item_icon_videobox  {background-position: 0 -438px;}
+            .p404__servicesList_item_icon_policy    {background-position: 0 -584px;}
+            .p404__servicesList_item_icon_mobile    {background-position: 0 -730px;}
