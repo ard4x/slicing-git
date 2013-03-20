@@ -1565,11 +1565,23 @@
     click a match<br>
     in your singles list
 </td>
-<td rowspan="2" class="" id="chat-window" style="display: table-cell;">
+<td rowspan="2" id="chat-window" style="display: table-cell;" class="chat-barrier">
+
+<!-- CHAT Barrier Layer -->
+
+<div class="chat-barrier-mess">
+    <h2 class="std__header">You have 16 new messages</h2>
+    <p>Want to find what was written to you?</p>
+    <p clas="selected">Upgrade account to unlock your chat.</p>
+    <a class="button huge red bg-dark" href="#">Upgrade</a>
+</div>
+
+<!-- /.CHAT Barrier Layer -->
 <table cellpadding="0" cellspacing="0" class="chatrighttbl" id="">
 <tbody>
 <tr>
-    <td id="messages" data-userid="0">
+    <td id="messages" data-userid="0" >
+
         <table cellpadding="0" cellspacing="0" class="chatrighttbl" rel="1017044" deleted="" id="chat-messages-1017044">
             <tbody>
             <tr>
@@ -1626,17 +1638,7 @@
             <tr>
 
                 <!-- Добавлен класс .barrier (когда нужно показывать барьер)-->
-                <td class="messagestd barrier" id="find_scroll">
-                    <!-- CHAT Barrier Layer -->
-                    <div class="chat-barrier" style="height: 363px;">
-                        <div class="chat-barrier-mess">
-                            <h2 class="std__header">You have 16 new messages</h2>
-                            <p>Want to find what was written to you?</p>
-                            <p clas="selected">Upgrade account to unlock your chat.</p>
-                            <a class="button huge red bg-dark" href="#">Upgrade</a>
-                        </div>
-                    </div>
-                    <!-- /.CHAT Barrier Layer -->
+                <td class="messagestd" id="find_scroll">
 
                     <div class="messagesbx" id="scroll" style="height: 363px; position: relative">
 
