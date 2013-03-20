@@ -184,7 +184,7 @@ body.lang-ru .smiles-link {width: 65px !important;}
 .messContruct td{padding-right:10px; color:#515151;}
 .messContruct .first{text-align:right; width:70px;}
 /* Chat barrier layer */
-.chat-barrier {background-color: #666 !important;font-size: 24px; position: relative; color:#fff; text-align: center; vertical-align: middle!important; background-image: none;}
+.chat-barrier {background-color: #666 !important;font-size: 24px; position: relative; color:#fff; text-align: center; vertical-align: middle!important; background-image: none!important;}
 .chat-barrier > * {display: none !important;}
 .chat-barrier-mess {display: inline-block!important; }
 .chat-barrier .std__header {font-size: 36px; color: #fff; margin-bottom: 25px;}
