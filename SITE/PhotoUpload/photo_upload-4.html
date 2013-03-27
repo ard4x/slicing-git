@@ -2,9 +2,10 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <title>Popup</title>
+    <title>Photo upload 1</title>
     <link rel="stylesheet" href="../style_curr.css">
-    <link rel="stylesheet" href="../css/btns.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="../css/pop.css">
 
     <script src="../js/jquery.js"></script>
@@ -32,10 +33,28 @@
 
 <div class="pop__layer">
 
-    <div class="pop__window">
+    <div class="pop__window pop__photo">
         <!-- popup`s content -->
+        <h1 class="pop__photo_header std__header std__fs-mainH std__underline">Upload photo</h1>
+
+        <div class="pop__photo_slider slider type4">
+            <a class="slider-item" href="#">From drive</a>
+            <a class="slider-item current" href="#">With webcam</a>
+            <a class="slider-item" href="#">From Facebook</a>
+            <a class="slider-item" href="#">From Instagram</a>
+        </div>
+
+       <div class="pop__photo_webcam">
+           <img src="../img/usr/630x470.jpg" alt=""/><!-- ВАместо картинки - код получения изображения с вебки-->
+       </div>
 
         <!-- /.popup`s content -->
+
+        <div class="pop__bottom">
+            <div class="pop__photo_takePic">
+                <a class="button" href="#">Take a photo</a>
+            </div>
+        </div><!-- /.pop__bottom -->
         <a href="#" class="pop__close"></a>
     </div><!-- /.pop__window -->
 

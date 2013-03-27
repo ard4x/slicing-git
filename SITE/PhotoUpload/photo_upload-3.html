@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo upload 3</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/pop.css">
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'})
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+</head>
+<body>
+
+<div class="pop__layer">
+
+    <div class="pop__window pop__photo">
+        <!-- popup`s content -->
+        <h1 class="pop__photo_header std__header std__fs-mainH std__underline">Edit photo</h1>
+
+        <div class="pop__photo_notice">7 photos successfully uploaded. You can edit it now</div>
+
+        <div class="pop__photo_list">
+
+            <div class="pop__photo_list_item">
+                <div class="pop__photo_list_item_img">
+                    <img src="../img/user-116x156.jpg" alt="">
+                </div>
+                <div class="pop__photo_list_item_controls">
+                    <a class="pop__photo_list_item_control pop__photo_list_item_control_crop" href="#">Crop</a>
+
+                    <a class="pop__photo_list_item_control pop__photo_list_item_control_right" href="#"><i class="icon icon-rotate-right"></i></a>
+                    <a class="pop__photo_list_item_control pop__photo_list_item_control_left" href="#"><i class="icon icon-rotate-left"></i></a>
+
+                </div>
+            </div><!-- /.pop__photo_list_item -->
+
+            <div class="pop__photo_list_item">
+                <div class="pop__photo_list_item_img">
+                    <img src="../img/user-116x156.jpg" alt="">
+                </div>
+                <div class="pop__photo_list_item_controls">
+                    <a class="pop__photo_list_item_control pop__photo_list_item_control_crop" href="#">Crop</a>
+
+                    <a class="pop__photo_list_item_control pop__photo_list_item_control_right" href="#"><i class="icon icon-rotate-right"></i></a>
+                    <a class="pop__photo_list_item_control pop__photo_list_item_control_left" href="#"><i class="icon icon-rotate-left"></i></a>
+
+                </div>
+            </div><!-- /.pop__photo_list_item -->
+
+            <div class="pop__photo_list_item">
+                <div class="pop__photo_list_item_img">
+                    <img src="../img/user-116x156.jpg" alt="">
+                </div>
+                <div class="pop__photo_list_item_controls">
+                    <a class="pop__photo_list_item_control pop__photo_list_item_control_crop" href="#">Crop</a>
+
+                    <a class="pop__photo_list_item_control pop__photo_list_item_control_right" href="#"><i class="icon icon-rotate-right"></i></a>
+                    <a class="pop__photo_list_item_control pop__photo_list_item_control_left" href="#"><i class="icon icon-rotate-left"></i></a>
+
+                </div>
+            </div><!-- /.pop__photo_list_item -->
+
+            <div class="pop__photo_list_item">
+                <div class="pop__photo_list_item_img">
+                    <img src="../img/user-116x156.jpg" alt="">
+                </div>
+                <div class="pop__photo_list_item_controls">
+                    <a class="pop__photo_list_item_control pop__photo_list_item_control_crop" href="#">Crop</a>
+
+                    <a class="pop__photo_list_item_control pop__photo_list_item_control_right" href="#"><i class="icon icon-rotate-right"></i></a>
+                    <a class="pop__photo_list_item_control pop__photo_list_item_control_left" href="#"><i class="icon icon-rotate-left"></i></a>
+
+                </div>
+            </div><!-- /.pop__photo_list_item -->
+
+            <div class="pop__photo_list_item">
+                <div class="pop__photo_list_item_img">
+                    <img src="../img/user-116x156.jpg" alt="">
+                </div>
+                <div class="pop__photo_list_item_controls">
+                    <a class="pop__photo_list_item_control pop__photo_list_item_control_crop" href="#">Crop</a>
+
+                    <a class="pop__photo_list_item_control pop__photo_list_item_control_right" href="#"><i class="icon icon-rotate-right"></i></a>
+                    <a class="pop__photo_list_item_control pop__photo_list_item_control_left" href="#"><i class="icon icon-rotate-left"></i></a>
+
+                </div>
+            </div><!-- /.pop__photo_list_item -->
+
+            <div class="pop__photo_list_item">
+                <div class="pop__photo_list_item_img">
+                    <img src="../img/user-116x156.jpg" alt="">
+                </div>
+                <div class="pop__photo_list_item_controls">
+                    <a class="pop__photo_list_item_control pop__photo_list_item_control_crop" href="#">Crop</a>
+
+                    <a class="pop__photo_list_item_control pop__photo_list_item_control_right" href="#"><i class="icon icon-rotate-right"></i></a>
+                    <a class="pop__photo_list_item_control pop__photo_list_item_control_left" href="#"><i class="icon icon-rotate-left"></i></a>
+
+                </div>
+            </div><!-- /.pop__photo_list_item -->
+
+            <div class="pop__photo_list_item">
+                <div class="pop__photo_list_item_img">
+                    <img src="../img/user-116x156.jpg" alt="">
+                </div>
+                <div class="pop__photo_list_item_controls">
+                    <a class="pop__photo_list_item_control pop__photo_list_item_control_crop" href="#">Crop</a>
+
+                    <a class="pop__photo_list_item_control pop__photo_list_item_control_right" href="#"><i class="icon icon-rotate-right"></i></a>
+                    <a class="pop__photo_list_item_control pop__photo_list_item_control_left" href="#"><i class="icon icon-rotate-left"></i></a>
+
+                </div>
+            </div><!-- /.pop__photo_list_item -->
+
+            <div class="std__clear"></div>
+        </div><!-- /.pop__photo_list -->
+        <!-- /.popup`s content -->
+
+        <div class="pop__bottom">
+            <div class="pop__photo_edit_submit">
+
+                <label><input type="checkbox"/>Add more photos</label>
+
+                <a class="button" href="#">I'm done editing</a>
+
+            </div>
+        </div><!-- /.pop__bottom -->
+        <a href="#" class="pop__close"></a>
+    </div><!-- /.pop__window -->
+
+</div><!-- /.pop__layer -->
+
+
+
+</body>
+</html>

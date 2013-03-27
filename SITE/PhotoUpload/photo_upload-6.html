@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo upload 5</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/pop.css">
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'})
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+</head>
+<body>
+
+<div class="pop__layer">
+
+    <div class="pop__window pop__photo">
+        <!-- popup`s content -->
+        <h1 class="pop__photo_header std__header std__fs-mainH std__underline">Edit photo</h1>
+
+        <div class="pop__photo_crop_description">All photos must comply with our photo <a href="#">requirements</a>.</div>
+
+        <div class="pop__photo_edit">
+            <div class="pop__photo_edit_row">
+                <div class="pop__photo_edit_canvas">
+                    <img src="../img/usr/cropping.jpg" alt=""/><!-- скрипт кроппинга -->
+                </div>
+
+                <div class="pop__photo_edit_preview std__layer_grey-lite">
+                    <h2 class="pop__photo_edit_preview_header std__header std__fs-smallH std__underline">Preview</h2>
+
+                    <div class="pop__photo_edit_preview_container">
+                        <img src="../img/usr/crop-result.jpg" alt=""/>
+                    </div>
+                </div>
+            </div><!-- /.pop__photo_edit_row -->
+        </div><!-- /.pop__photo_edit -->
+
+
+        <!-- /.popup`s content -->
+
+        <div class="pop__bottom">
+
+            <div class="pop__photo_cropSubmit">
+                <a class="button" href="#">Save and Continue</a>
+                <a class="button-link" href="#">Cancel</a>
+            </div>
+
+        </div><!-- /.pop__bottom -->
+        <a href="#" class="pop__close"></a>
+    </div><!-- /.pop__window -->
+
+</div><!-- /.pop__layer -->
+
+
+
+</body>
+</html>
