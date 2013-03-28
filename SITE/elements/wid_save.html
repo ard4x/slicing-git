@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo upload 1</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/pop.css">
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'})
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+</head>
+<body>
+
+
+<div id="saveForLater__container" class="std__layer_blue f2f__widSave">
+
+    <div class="b-user__person f2f__widSave_person">
+        <a href="/2402992474">Andrea</a>, 38    </div>
+
+    <div class="b-user__photoFrame f2f__widSave_frame">
+        <a href="/2402992474">
+            <img alt="Andrea" src="http://yangutu-s4.s3.amazonaws.com/1d/31/c5/116x156_5042124.jpeg?1336029616" class="b-user__photoFrame_photo f2f__widSave_photo">
+        </a>
+    </div>
+
+    <div class="f2f__widSave_descript">Save to favorites?</div>
+
+    <div class="f2f__widSave_buttons">
+        <a id="saveForLater__btnSave" href="/profile-user/save-for-later/save" data-user_id="1027670" data-user_name="Andrea" class="button blue f2f__widSave_buttons_save">Save</a>
+        <a id="saveForLater__btnNext" href="/profile-user/save-for-later/next">Next</a>
+    </div>
+
+</div>
+
+</body></html>

@@ -24,13 +24,15 @@
                 .wid__matches_control_buttons{float: right; display: inline-block;}
                     .wid__matches_control_buttons .matches_button{width: 58px; margin-left: 10px; margin-bottom: 2px;}
 
-
     /***** Today Birthdays *****/
+.wid__bday_preview.birth-previev{padding:0;}
 
 .wid__bday {background-color: #ecf4fb; border-radius: 4px; width: 241px; padding: 8px 10px 10px; position: relative; }
-    .wid__bday_controls {width: 7px; height: 13px; position: absolute; top: 76px;}
-        .wid__bday_controls_left{left: 6px; background: -65px -16px url(../img/search/srch_sprt.png) no-repeat;}
-        .wid__bday_controls_right{right: 6px; background: -73px -16px url(../img/search/srch_sprt.png) no-repeat;}
+    .wid__bday_controls {width: 7px !important; height: 13px !important; position: absolute !important; top: 45px!important; background: url(/img/search/srch_sprt.png) no-repeat !important; cursor: pointer !important;}
+        .wid__bday_controls_left{left: -1px !important; background-position: -65px -16px !important;}
+        .wid__bday_controls_right{right: -1px!important; background-position: -73px -16px !important;}
+        .wid__bday_controls_left.false, .wid__bday_controls_right.false {display: none;}
+        
     .wid__bday_userHolder{}
         .wid__bday_user{}
             .wid__bday_user_userPic{margin: 0 15px 0 11px; float: left;}
@@ -41,7 +43,7 @@
                 .wid__bday_user_options{padding-top: 6px;}
 
     .wid__bday_button{margin-top: 7px; padding-top: 10px; border-top: 1px solid #dddddd; text-align: center; padding-bottom: 2px;}
-        .wid__bday_buttonSend{width: 118px;}
+        .wid__bday_buttonSend{width: 118px; padding: 0px!important;}
 
     /**** Lastest users list ****/
 .wid__userList {}
@@ -50,13 +52,48 @@
         .wid__userList_item .user__location {font-size: 11px;}
         .wid__userList_item .user__descript {font-size: 12px;}
 
-    /**** After Video ****/
+.wid__fbRec {padding: 10px; backgroung-color: #ECF4FB; border-radius: 4px; padding-top: 90px;}
+    .wid__fbRec_frame {background-color: #fff; width: 180px; height: 350px;}
+
+/**** After Video ****/
 .wid__videoAfter {box-sizing: border-box; -moz-box-sizing: border-box; background-color: #e7f0f5; width: 560px; height: 400px; padding: 5px;}
-    .wid__videoAfter .b-std__header{ margin: 13px 0 13px 15px;}
-    .wid__wideoAfter_list {background-color: #fff; padding: 19px 15px 17px;}
-        .wid__videoAfter .srch__userList_user{}
-        .wid__videoAfter .b-user__photoFrame_photo {width: 76px; height: 76px;}
-        .wid__videoAfter .b-user__person {font-size: 12px; text-align: left; margin-bottom: 3px;}
-        .wid__videoAfter .user__location {font-size: 10px; text-align: left; margin-bottom: 15px;}
-        .wid__videoAfter .user__options  {font-size: 10px; text-align: left; }
-        .wid__videoAfter .srch__userList_user {padding: 10px 9px 11px; width: 160px;}
+.wid__videoAfter .b-std__header{ margin: 13px 0 13px 15px;}
+.wid__wideoAfter_list {background-color: #fff; padding: 19px 15px 17px;}
+.wid__videoAfter .srch__userList_user{}
+.wid__videoAfter .b-user__photoFrame_photo {width: 76px; height: 76px;}
+.wid__videoAfter .b-user__person {font-size: 10px; text-align: left; margin-bottom: 3px;}
+.wid__videoAfter .user__location {font-size: 10px; text-align: left; margin-bottom: 15px;}
+.wid__videoAfter .user__options  {font-size: 10px; text-align: left; }
+.wid__videoAfter .srch__userList_user {padding: 10px 9px 11px; width: 154px;}
+        
+.wid__dropDown {top: 18px; right: 0px; position: absolute; width: 240px; background: #fff !important; box-shadow: 0 0 10px rgba(0,0,0,0.5); padding:5px 0; z-index: 10; }
+        .wid__dropDown li { margin-left: 0!important; list-style: none; margin: 0; padding:0; display: block; width: 100%;}
+        .wid__dropDown li a{background: none; padding: 4px 15px; display: block; font: 12px Arial; color:#4F6B8D; text-decoration: none;}
+        .wid__dropDown li a:hover{background-color:#4F6B8D; color: #fff; text-decoration: none;}
+        .wid__dropDown .wid__dropDown-top {width: 100%; height: 10px; position: absolute; top: -10px; background: url(../img/button-icos.png) no-repeat 198px -354px;}
+        .wid__dropDown .delimit {border-bottom: solid 1px #DCE1E8; margin-bottom: 7px;  padding-bottom: 7px;}
+        .wid__dropDown .wid__dropDown-user {padding-top: 7px; padding-bottom: 15px; overflow: hidden}
+        .wid__dropDown .b-user__photoFrame {float: left; margin: 0 10px 0 15px; width:  46px;   height: 46px; }
+        .wid__dropDown .b-user__photoFrame a {padding: 0!important; font-size: 0; text-decoration: none; }
+            .wid__dropDown .b-user__photoFrame img {width:  46px;   height: 46px; font-size: 0;}
+        .wid__dropDown .b-user__person, .wid__dropDown .b-user__person a { background: none; padding: 0; color: #494949; text-decoration: none; font-size: 14px; font-weight: bold; display: inline;}
+        .wid__dropDown .b-user__person {display: block; text-align: left;}
+        .wid__dropDown .b-user__person a:hover {background: none; color:#494949; text-decoration: underline; }
+        .wid__dropDown .user__location {font-family: arial, sans-serif; font-size: 12px; color: #010101; }
+.wid__dropDown-profile { top: 18px; right: 0px; width: 140px; }
+        .wid__dropDown-profile .wid__dropDown-top{ background-position: 105px -354px !important; }
+
+        /* user Save widget */
+
+/* widget Save To Favorites*/
+.wid__saveUser {text-align: center; font-size: 14px; padding: 14px 15px 16px;}
+    .wid__saveUser .std__header {text-align: left;}
+    .wid__saveUser_wrapper {background-color: #fff; border-radius: 4px; padding: 15px; margin-bottom: 13px;}
+        .wid__saveUser_person {font-size: 18px; border-bottom: 1px solid #ccc; font-family: 'PT Sans', Arial, sans-serif; margin-bottom: 15px;}
+        .wid__saveUser_frame {margin-bottom: 3px;}
+            .wid__saveUser_photo {width: 116px; height: 156px;}
+    .wid__saveUser_descript {margin-bottom: 14px;}
+    .wid__saveUser_buttons {}
+        .wid__saveUser_buttons_save {width: 88px; float: left;}
+        .wid__saveUser_buttons_next {width: 88px; float: right;}
+.wid__saveUser_stopper { background-image: url("/img/indicator_32x32.gif");background-repeat: no-repeat;background-position: 50% 50%;height: 280px; width: 170px !important; }
