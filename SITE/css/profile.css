@@ -427,3 +427,14 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
     .profile__walker_left {float: left;}
     .profile__walker_right {float: right;}
     .profile__walker_right a {margin-left: 30px;}
+
+/* Email frequency settings */
+.profile__settings_emailFreq {width: 660px; margin: 40px auto 100px; }
+    .profile__settings_emailFreq > .std__header {margin-bottom: 30px; padding-bottom: 8px}
+    .profile__settings_emailFreq_description {font-size: 14px; margin: 20px;}
+    .profile__settings_emailFreq_optList {margin: 30px 40px; font-size: 14px; display: block;}
+    .profile__settings_emailFreq_buttons {margin: 0 20px; font-size: 14px; padding-bottom: 20px; border-bottom: 1px solid #ccc; position: relative;}
+        .profile__settings_emailFreq_buttons .button {margin-right: 20px;}
+        .profile__settings_emailFreq_unsubscribe {display: block; position: absolute; right: 0; bottom: 15px; font-size: 14px;}
+    .profile__settings_emailFreq_popup {text-align: center; font-size: 14px;}
+    .profile__settings_emailFreq_popup_description {margin: 30px;}
