@@ -10,8 +10,7 @@ select {width: 100%; height: 24px;}
 .std__fs-miniH {font-size: 14px; line-height: 14px;}
 .std__fc_default {color:#010101;}
 .std__underline {border-bottom: 1px solid #ccc;}
-    .std__fs-mainH.std__underline {padding-bottom: 6px;}
-    .std__fs-smallH.std__underline {padding-bottom: 2px;}
+.std__fs-mainH.std__underline {padding-bottom: 6px;}
 /*** end headers styles ***/
 .std__2col-main {width: 733px;}
 .std__2col-side  {width: 200px;}
@@ -20,7 +19,7 @@ select {width: 100%; height: 24px;}
 .std__noMargRight {margin-right:0;}
 .std__noMargBottom {margin-bottom:0;}
 .std__noMargLeft {margin-left:0;}
-.std__hidden, .std__hide {display: none !important;}
+.std__hidden, .std__hide {display: none;}
 .std__clear {clear: both;}
 .std__right {float: right;}
 .std__stopperWhite {background-color: #fff; opacity: 0.7; filter: alpha(opacity=70); position: absolute; width: 100%; z-index: 20; }
@@ -32,10 +31,10 @@ select {width: 100%; height: 24px;}
 .std__frame_sorry_message {font-size: 14px; line-height: 18px; color: #333; margin-top: 15px;}
 .std__frame_sorry_message_header {margin-bottom: 23px;}
 .std__frame_sorry_message  p{padding: 0;  margin-bottom: 22px;}
-.b-std__popup, .std__popup {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url(../img/opacity.png) repeat; z-index: 999;}
-.std__popup_content {width: 650px; padding: 25px 0 25px 30px; border: solid 5px #ecf4fb; position: relative; margin: 150px auto 0 auto; background-color: #ffffff;}
+.b-std__popup {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url(../img/opacity.png) repeat; z-index: 999;}
+.std__popup_content {width: 650px; padding: 25px 0 25px 30px; border: solid 5px #ecf4fb; position: relative; margin: 150px auto 0 auto; background-color: #ffffff; padding: 25px 0 25px 30px;}
 .std__popup_bottom {width: 100%; background-color:#ecf4fb; position:absolute; bottom:0px; left:0px;}
-.std__popup_close {display:block; width: 9px; height: 9px; position: absolute; top: 10px; right: 10px; background: url(../img/close_pop.png) no-repeat}
+.std__popup_close {display:block; width: 9px; height: 9px; background: url(../img/close_pop.png) no-repeat; position: absolute; top: 10px; right: 10px;}
 .std__layer_blue {background-color: #ecf4fb; border-radius: 4px; padding: 15px;}
 .std__layer_yellow {background-color: #fffce2; border-radius: 4px; padding: 15px;}
 .std__layer_grey-lite {background-color: #f5f5f5; border-radius: 4px; padding: 15px;}
@@ -44,7 +43,7 @@ select {width: 100%; height: 24px;}
 
 .std__or_horiz{text-align: center; height: 1px; background-color:#ccc; position: relative; margin: 22px 0;}
 .std__or {position:absolute; top: -21px; display: inline-block; background-color:#ccc; border-radius: 21px; height: 42px; width:42px; text-align:center;}
-.std__or_item{font-size:18px; line-height: 41px; vertical-align: middle; font-weight:bold; color:#fff;display: block;}
+.std__or_item{font-size:18px; line-height: 18px; font-weight:bold; color:#fff; padding-top: 11px; display: block;}
 
 .std__block {display: block; margin-bottom: 30px;}
 .std__justify_helper {width: 100%; height: 0; visibility: hidden; display: inline-block;}
@@ -53,24 +52,6 @@ select {width: 100%; height: 24px;}
 .std__sideMenu .menuTitle{font: bold 16px/16px 'PT Sans'; color: #666666; margin-top: 20px; margin-bottom: 10px;}
 .std__sideMenu .menuItem {margin-left: 10px; margin-bottom: 2px; font-size: 14px;}
 
-.std__input {outline: none; font-size: 12px; box-sizing: border-box; -moz-box-sizing: border-box; height: 27px!important; padding: 0 6px; width: 100%;}
+.std__video_play {display: block; position: absolute; top: 32px; left: 57px; background: url(../img/video/play.png) no-repeat; width: 35px; height: 35px;}
 .std__input {height: 27px!important;}
-
-/*** PAGINATION **/
-.btn__paging {font-size:0;}
-.btn__paging-item {display: inline-block; margin: 0!important; margin-right: 3px!important; height: 24px; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0; background: 0 -946px url(../img/btns.png) repeat-x; border: solid 1px #cbcbcb;
-    border-radius: 3px; width: 23px; text-align: center; font: 12px Arial !important; color: #525252;  text-decoration: none; cursor: pointer;}
-.btn__paging-item:hover{background-position: 0 -968px; color: #525252;  text-decoration: none;}
-.btn__paging-item:active{background-position: 0 -990px; color: #525252;  text-decoration: none;}
-.btn__paging-item a {color: #525252 !important;  text-decoration: none; padding-top: 4px!important; display: inline-block; height: 22px; -moz-box-sizing: border-box; box-sizing: border-box; width: 100%;}
-.btn__paging-item__current a {color:#fafafa !important;}
-.btn__paging-item__disabled a {color: #CBCBCB !important;}
-.btn__paging-item__current, .btn__paging-item__current:hover, .btn__paging-item__current:active, .btn__paging-item__current a {background-position: 0 -1012px; color:#fafafa; text-shadow: 0 1px 0 #454545; cursor: default; text-decoration: none;}
-.btn__paging-item__disabled, .btn__paging-item__disabled:hover, .btn__paging-item__disabled:active, .btn__paging-item__disabled a{cursor: default; color: #CBCBCB; background-position: 0 -990px; text-decoration: none;}
-.btn__paging-prew {padding-left: 7px!important; padding-right: 7px!important; width: auto; margin-right: 6px!important;}
-.btn__paging-page {}
-.btn__paging-next {padding-left: 7px!important; padding-right: 7px!important; width: auto; margin-left: 3px!important; margin-right: 0!important;}
-/* old style hack*/
-li.btn__paging-item {float: none !important;}
-li.btn__paging-item a {background: none !important;  text-shadow: none !important; display: inline-block;}
-li.btn__paging-item a span {background: none !important; padding: 0 !important; display: inline; line-height: 12px!important;}
+.std__listLocker {min-height: 200px; position: absolute; opacity: .8; display: block; z-index: 101; background: 50% 40%  #fff url(../img/search/preloader.gif) no-repeat}

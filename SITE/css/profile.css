@@ -260,7 +260,7 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 /** Slider **/
 .profile__slider {width: 910px; height: 560px; position: relative;}
 .profile__slider_item { width: 910px; height: 560px; display: block; text-align: center; line-height: 560px; background: url(../img/profile/photo-viewer_bg.png) repeat; font-size: 0;}
-.profile__slider_preloader {display: none; width: 910px; height: 560px; background: 50% 50% url(../img/profile/preload.gif) no-repeat; position: absolute; top: 0; left: 0;}
+.profile__slider_preloader {display: none; width: 910px; height: 560px; position: absolute; top: 0; left: 0; background: 50% 40% url(../img/search/preloader.gif) no-repeat}
 .profile__slider_item img {max-width: 9100px; max-height: 560px; display: inline-block; vertical-align: middle;}
 .profile__slider_nav {position: absolute; top: 0; left: 0; height: 560px; width: 40px; line-height: 560px; text-align: right}
 .profile__slider_nav i {opacity: .7; vertical-align: middle; display: inline-block; height: 0; width: 0; border: 20px solid transparent; border-left: none; border-right-color: #fff;}
