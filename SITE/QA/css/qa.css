@@ -101,3 +101,12 @@ button.button {padding-top:0;}
     .qa__reg_popup .reg__form_item.reset,
     .qa__reg_popup .reg__form_item.submitBox {margin-bottom: 0; }
     .qa__reg_popup .reg__form_item.reset .button {margin-top: 10px; width: 100%;}
+.qa__reg_popup .reg__form_item .description .day .newListSelected,
+.qa__reg_popup .reg__form_item .description .month .newListSelected,
+.qa__reg_popup .reg__form_item .description .year .newListSelected {padding: 5px 3px;}
+.qa__reg_popup .reg__form input[type=text],
+.qa__reg_popup .reg__form input[type=password],
+.qa__reg_popup .reg__form input[type=email],
+.qa__reg_popup .reg__form .newListSelected {
+    box-sizing: border-box; -moz-box-sizing: border-box; width: 100%; height: 27px; padding: 5px;
+}
