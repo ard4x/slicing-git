@@ -12,17 +12,17 @@
                 .reg__form_item .description .day {width: 49px;}
                 .reg__form_item .description .month {width: 85px;}
                 .reg__form_item .description .year {width: 55px; margin-right: 0;}
+                .reg__form_item .description .day .newListSelected,
+                .reg__form_item .description .month .newListSelected,
+                .reg__form_item .description .year .newListSelected {padding: 5px 3px;}
 
     .reg__form_item.submitBox{padding-top: 10px; margin-bottom: 0;}
         .submit_button {margin-bottom: 18px;}
             .submit_button input{width: 100%;}
         .submit_text {font-size: 12px; color: #333333;}
 
-
-
-
 .reg__form input[type=text], .reg__form input[type=password], .reg__form input[type=email], .reg__form .newListSelected {
-    box-sizing: border-box; width: 100%; height: 22px;
+    box-sizing: border-box; -moz-box-sizing: border-box; width: 100%; height: 27px; padding: 5px;
 }
 .mainPage .reg__form_item.submitBox {background: #ffffff; border-radius: 4px; padding: 10px; height: 90px;  box-sizing: content-box;}
     .mainPage .submit_button {position: absolute; bottom: 10px; width: 260px; margin-bottom: 0px; }

@@ -1,4 +1,4 @@
-/* new v.20130228 */
+/* new v.20130401 */
 /** page layouts **/
 .qa__page {padding-top: 15px; padding-bottom: 25px;}
     .qa__page_top   {border-bottom: 1px solid #ccc; margin-bottom: 20px; padding: 0 0 3px 0;}
@@ -76,3 +76,28 @@
                     .qa__block_question_title {font-size: 14px;}
                         .qa__block_question_msg {color: #666; font-size: 10px; line-height: 18px; vertical-align: top; display: inline-block; height: 16px;}
                         .qa__block_question_msg .icon {margin-right: 5px; position: relative; top: 2px;}
+.qa__question_social {display:none;}
+button.button {padding-top:0;}
+.comment-wrapper {margin-top:20px;}
+.qa__answer_quote_message {word-wrap: break-word;}
+.beta-label:after {color:black; content:'beta'; font-size:50%; line-height: 0;  position: relative;  vertical-align: baseline;  top: -0.7em; font-weight: normal;}
+
+    /** added 01.04.2013 **/
+    .qa__reg_popup {padding: 25px; width: 340px;}
+        .qa__reg_popup .pop__close {top: 5px; right: 5px;}
+        .qa__reg_popup .submitBox .button {width: 100%}
+        .qa__reg_popup .reg__form_item label {padding-top: 5px;}
+    .qa__search_nav {overflow: hidden; width: 350px; margin-bottom: 20px;}
+        .qa__search_nav_item {float: left}
+            .qa__search_nav_item_link {display: inline-block; padding: 5px 0 6px; border-radius: 4px; font-size: 12px; margin-right: 20px; text-decoration: underline;}
+            .qa__search_nav_item.active .qa__search_nav_item_link {background-color: #909090; color: #ffffff; text-decoration: none; font-weight: bold; padding-left: 15px; padding-right: 15px;}
+    .qa__reg_popup .reg__form_item .error {display: none; margin-left: 75px; color: #990000; font-size: 10px;}
+    .qa__reg_popup .reg__form_item.submit {overflow: hidden; padding-left: 75px; margin-bottom: 0;}
+    .qa__reg_popup .reg__form_item.submit label {width: 110px; font-size: 12px; margin: 0 0 25px 6px;}
+    .qa__reg_popup .reg__form_item.submit [type=checkbox] {margin: 0 5px 0 0; position: relative; top: 2px; }
+    .qa__reg_popup .reg__form_item.submit .button {width: 130px;}
+    .qa__reg_popup .reg__form_item.login .error {width: 280px; margin-left: 0; font-size: 12px; text-align: center; margin-bottom: 20px;}
+    .qa__reg_popup .reg__form_item.reset .error  {width: 280px; font-size: 12px;  margin-left: 0; text-align: center; margin-bottom: 20px;}
+    .qa__reg_popup .reg__form_item.reset,
+    .qa__reg_popup .reg__form_item.submitBox {margin-bottom: 0; }
+    .qa__reg_popup .reg__form_item.reset .button {margin-top: 10px; width: 100%;}

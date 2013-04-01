@@ -1,0 +1,47 @@
+/* registration *
+* reg.css
+*/
+
+.reg__form {width: 280px; position: relative; }
+    .reg__form_item {margin-bottom: 10px; position: relative;}
+        .reg__form_item label {display: inline-block; width: 74px; padding-top: 2px; float: left; font-size: 14px; font-family: Arial; }
+        .reg__form_item .description {display: inline-block; width: 205px}
+            .reg__form_item .description .day,
+            .reg__form_item .description .month,
+            .reg__form_item .description .year {display: block; margin-right: 8px; float:left;}
+                .reg__form_item .description .day {width: 49px;}
+                .reg__form_item .description .month {width: 85px;}
+                .reg__form_item .description .year {width: 55px; margin-right: 0;}
+                .reg__form_item .description .day .newListSelected,
+                .reg__form_item .description .month .newListSelected,
+                .reg__form_item .description .year .newListSelected {padding: 5px 3px;}
+
+    .reg__form_item.submitBox{padding-top: 10px; margin-bottom: 0;}
+        .submit_button {margin-bottom: 18px;}
+            .submit_button input{width: 100%;}
+        .submit_text {font-size: 12px; color: #333333;}
+
+.reg__form input[type=text], .reg__form input[type=password], .reg__form input[type=email], .reg__form .newListSelected {
+    box-sizing: border-box; -moz-box-sizing: border-box; width: 100%; height: 27px; padding: 5px;
+}
+.mainPage .reg__form_item.submitBox {background: #ffffff; border-radius: 4px; padding: 10px; height: 90px;  box-sizing: content-box;}
+    .mainPage .submit_button {position: absolute; bottom: 10px; width: 260px; margin-bottom: 0px; }
+    .mainPage .submit_text {font-size: 11px;}
+
+.reg__pre-header {position: relative; top: 0; margin: 0; height: 37px;  background-color: #436187; width: 100%;}
+    .reg__pre-header_inner {position: relative; width: 960px; margin: 0 auto; padding-top: 4px;}
+
+.reg__page {padding-top: 20px;}
+    .reg__page .std__header {border-bottom: 1px solid #ccc; padding-bottom: 2px; }
+        .reg__page .std__fs-bigH {padding-bottom: 4px;}
+    .reg__confirm_msg {margin-top: 20px; margin-bottom: 15px; padding-top: 30px; padding-bottom: 30px; text-align: center; font-size: 16px; color: #333;}
+    .reg__confirm_description {color: #333; font-size: 14px; line-height: 18px;}
+        .reg__confirm_description  .gaudy {font-weight: bold; color: #bb0000;}
+        .reg__confirm_newEmail {margin-top: 15px; text-align: center; display: none}
+            .reg__confirm_newEmail .std__header {text-align: left;}
+            .reg__confirm_newEmail input[type=text] {width: 450px; margin-bottom: 10px;}
+            .reg__confirm_newEmail .reg__confirm_newEmail_button {width: 225px;}
+            .reg__confirm_newEmail .reg__confirm_newEmail_errMsg {display: none;  text-align: left;  margin-left: 12px; margin-top: 6px;position: absolute; font: 14px Arial;  color: #990000;
+                background: 0 4px url(http://yangutu.com/img/err_arrow.png) no-repeat; padding-left: 15px; width: 200px;}
+            .reg__confirm_newEmail.error input {border-color: #990000;}
+            .reg__confirm_newEmail.error .reg__confirm_newEmail_errMsg {display: inline-block;}

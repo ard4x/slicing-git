@@ -1,0 +1,56 @@
+/* Стандартные (Глобальные) элементы !! dump of htdocs/css/std.css v.20130228 */
+select {width: 100%; height: 24px;}
+.l-std__content {float: left; margin-right: 17px; position: relative;}
+/** headers styles ***/
+.std__header, .b-std__header {font-family: 'PT Sans'; font-weight: bold; color: #333333; margin:0; margin-bottom: 15px;}
+.std__header.dashed, .b-std__header.dashed {padding-bottom: 6px; border-bottom: 1px solid #ccc;}
+.std__fs-bigH {font-size: 30px; line-height: 30px;}
+.std__fs-mainH {font-size: 24px; line-height: 24px;}
+.std__fs-smallH {font-size: 18px; line-height: 18px;}
+.std__fs-miniH {font-size: 14px; line-height: 14px;}
+.std__fc_default {color:#010101;}
+.std__underline {border-bottom: 1px solid #ccc;}
+.std__fs-mainH.std__underline {padding-bottom: 6px;}
+/*** end headers styles ***/
+.std__2col-main {width: 733px;}
+.std__2col-side  {width: 200px;}
+.std__noMarg {margin: 0;}
+.std__noMargTop {margin-top:0;}
+.std__noMargRight {margin-right:0;}
+.std__noMargBottom {margin-bottom:0;}
+.std__noMargLeft {margin-left:0;}
+.std__hidden, .std__hide {display: none !important;}
+.std__clear {clear: both;}
+.std__right {float: right;}
+.std__stopperWhite {background-color: #fff; opacity: 0.7; filter: alpha(opacity=70); position: absolute; width: 100%; z-index: 20; }
+.std__margLayout {margin: 0 0 20px 0;}
+.std__topContentPadding {padding-top: 20px;}
+.w-std__frame  {display: inline-block; padding: 5px; background-color: #ffffff; -moz-box-shadow: 0 1px 3px 0px #7D7D7D; -webkit-box-shadow: 0 1px 3px 0px #7D7D7D; box-shadow: 0 1px 3px 0px #7D7D7D; }
+.std__frame_sorry { position: relative; width: 420px; margin: 60px 150px;}
+.std__frame_sorry_content {background-color: #ecf4fb; padding: 30px 70px; display: block;}
+.std__frame_sorry_message {font-size: 14px; line-height: 18px; color: #333; margin-top: 15px;}
+.std__frame_sorry_message_header {margin-bottom: 23px;}
+.std__frame_sorry_message  p{padding: 0;  margin-bottom: 22px;}
+.b-std__popup, .std__popup {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: url(../img/opacity.png) repeat; z-index: 999;}
+.std__popup_content {width: 650px; padding: 25px 0 25px 30px; border: solid 5px #ecf4fb; position: relative; margin: 150px auto 0 auto; background-color: #ffffff;}
+.std__popup_bottom {width: 100%; background-color:#ecf4fb; position:absolute; bottom:0px; left:0px;}
+.std__popup_close {display:block; width: 9px; height: 9px; position: absolute; top: 10px; right: 10px; background: url(../img/close_pop.png) no-repeat}
+.std__layer_blue {background-color: #ecf4fb; border-radius: 4px; padding: 15px;}
+.std__layer_yellow {background-color: #fffce2; border-radius: 4px; padding: 15px;}
+.std__layer_grey-lite {background-color: #f5f5f5; border-radius: 4px; padding: 15px;}
+
+.std__buble_long_green {font-size: 12px; line-height: 12px; color: #ffffff; padding: 4px 10px 5px 10px; border-radius: 4px; display: inline-block;}
+
+.std__or_horiz{text-align: center; height: 1px; background-color:#ccc; position: relative; margin: 22px 0;}
+.std__or {position:absolute; top: -21px; display: inline-block; background-color:#ccc; border-radius: 21px; height: 42px; width:42px; text-align:center;}
+.std__or_item{font-size:18px; line-height: 41px; vertical-align: middle; font-weight:bold; color:#fff;display: block;}
+
+.std__block {display: block; margin-bottom: 30px;}
+.std__justify_helper {width: 100%; height: 0; visibility: hidden; display: inline-block;}
+
+.std__sideMenu {margin:0; padding: 0;}
+.std__sideMenu .menuTitle{font: bold 16px/16px 'PT Sans'; color: #666666; margin-top: 20px; margin-bottom: 10px;}
+.std__sideMenu .menuItem {margin-left: 10px; margin-bottom: 2px; font-size: 14px;}
+
+.std__input {outline: none; font-size: 12px; box-sizing: border-box; -moz-box-sizing: border-box; height: 27px!important; padding: 0 6px; width: 100%;}
+.std__input {height: 27px!important;}
