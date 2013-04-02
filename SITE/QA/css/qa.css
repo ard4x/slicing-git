@@ -1,4 +1,4 @@
-/* new v.20130401 */
+/* new v.20130402 */
 /** page layouts **/
 .qa__page {padding-top: 15px; padding-bottom: 25px;}
     .qa__page_top   {border-bottom: 1px solid #ccc; margin-bottom: 20px; padding: 0 0 3px 0;}
@@ -110,3 +110,12 @@ button.button {padding-top:0;}
 .qa__reg_popup .reg__form .newListSelected {
     box-sizing: border-box; -moz-box-sizing: border-box; width: 100%; height: 27px; padding: 5px;
 }
+
+/** added 02/04/2013 **/
+.qa__answer_userPic .qa__answer_userPic_data {display: none;}
+.qa__answer_userPic:hover {padding: 9px; border: 1px solid #ccc; border-radius: 4px; top: -10px; left: -10px; background-color: #fff; box-shadow: 0 0 2px 2px #e3e3e3; z-index: 1;
+        text-decoration: none; font-size: 0; min-height: 50px; min-width: 50px;}
+    .qa__answer_userPic:hover img {position: absolute;}
+    .qa__answer_userPic:hover .qa__answer_userPic_data {display: block; margin-left: 60px;  font-size: 12px; color: #999;}
+        .qa__answer_userPic:hover .qa__answer_userPic_data_personal {font-size: 14px; font-weight: bold; display: block; padding-top: 1px; padding-bottom: 3px; color: #333;}
+        .qa__answer_userPic:hover .qa__answer_userPic_data_name {color: #436187;}
