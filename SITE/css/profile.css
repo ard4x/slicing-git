@@ -438,3 +438,10 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
         .profile__settings_emailFreq_unsubscribe {display: block; position: absolute; right: 0; bottom: 15px; font-size: 14px;}
     .profile__settings_emailFreq_popup {text-align: center; font-size: 14px;}
     .profile__settings_emailFreq_popup_description {margin: 30px;}
+
+/** Settings **/
+.profile__settings {}
+    .profile__settings .profile__collLeft {width: 220px;}
+    .profile__settings_paymentTable {border-collapse: collapse;}
+    .profile__settings_paymentTable th {border: 1px solid #ccc;}
+    .profile__settings_paymentTable td {border: 1px solid #ccc;}

@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <title>Profile</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/button.css">   <!-- НОВЫЕ стили кнопок. Проверить наличие, заменить более новой версией, а так же файлы btns.png и btns-icos.png, Версия указана в первой строке файла-->
+    <link rel="stylesheet" href="../css/profile.css">
+    <!-- Костыли для ИE, можно добавить в уже существующие -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../yngtu_ie8.css" type="text/css">
+    <![endif]-->
+
+    <!--  Файлы для замены селектов -->
+
+    <script src="../js/jquery-1.4.4.min.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'});
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+    <!--  ---------------------------------------- -->
+
+</head>
+<body>
+<!-- начало шаблонной шапки -->
+<div class="header">
+    <div class="header_inn">
+        <div class="top_navigation">
+            <ul class="left">
+                <li><a href="#">Messages</a><span class="new_event">2</span></li>
+                <li><a href="#">Signals</a><span class="new_event">45</span></li>
+                <li><a href="#">Soulmates</a><span class="new_event">167</span></li>
+            </ul>
+            <ul class="right">
+                <li class="coints">1450 Coins <a href="#">Add</a></li>
+                <li class="profile"><a href="#">Profile </a></li>
+                <li class="account"><a href="#">Account Settings</a></li>
+            </ul>
+            <div class="std__clear"></div>
+        </div>
+        <div class="bot_navigation">
+            <a href="#"><img src="../img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>
+            <ul class="main_menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Matches</a></li>
+                <li><a href="#">TOP-100</a></li>
+                <li><a href="#">Apps and Games</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+            <div class="clr2"></div>
+        </div>
+    </div>
+</div>
+<!-- КОНЕЦ шаблонной шапки -->
+<div class="content">
+<div class="content_inn profile profile__settings">
+
+    <div class="profile__collLeft">
+        
+        <div class="std__layer_grey-lite">
+
+            <ul class="profile__settings_menu">
+                <li class="profile__settings_menu_item">
+                    <a class="profile__settings_menu_itemLink" href="#">Settings</a></li>
+                <li class="profile__settings_menu_item">
+                    <a class="profile__settings_menu_itemLink" href="#">Email Notifications</a></li>
+                <li class="profile__settings_menu_item">
+                    <a class="profile__settings_menu_itemLink" href="#">Payments</a></li>
+                <li class="profile__settings_menu_item">
+                    <a class="profile__settings_menu_itemLink" href="#">Change Password</a></li>
+                <li class="profile__settings_menu_item">
+                    <a class="profile__settings_menu_itemLink" href="#">Blocked users</a></li>
+                <li class="profile__settings_menu_item">
+                    <a class="profile__settings_menu_itemLink" href="#">Delete my account</a></li>
+            </ul>
+
+        </div>
+        
+    </div><!-- /.profile__collLeft -->
+    
+    <div class="profile__collWide">
+
+        <h1 class="std__header std__fs-mainH std__underline">Payment Settings</h1>
+
+        <div class="profile__info_block">
+            <h2 class="b-std__header std__fs-smallH">Account information</h2>
+
+            <div class="profile__info_list">
+
+                <div class="profile__info_list_row">
+                    <div class="profile__info_list_label">Account type:</div>
+                    <div class="profile__info_list_item">VIP account</div>
+                </div><!-- /.profile__info_list_row -->
+
+            </div><!-- /.profile__info_list -->
+
+        </div><!-- /.profile__info_block -->
+
+        <div class="profile__info_block">
+            <h2 class="b-std__header std__fs-smallH">Billing details</h2>
+
+            <div class="profile__info_list">
+
+                <div class="profile__info_list_row">
+                    <div class="profile__info_list_label">Billing cycle:</div>
+                    <div class="profile__info_list_item">1 year</div>
+                </div><!-- /.profile__info_list_row -->
+
+                <div class="profile__info_list_row">
+                    <div class="profile__info_list_label">Payment amount:</div>
+                    <div class="profile__info_list_item">32,99$/month</div>
+                </div><!-- /.profile__info_list_row -->
+
+                <div class="profile__info_list_row">
+                    <div class="profile__info_list_label">Next date of charge:</div>
+                    <div class="profile__info_list_item">Mar 29, 2013</div>
+                </div><!-- /.profile__info_list_row -->
+
+                <div class="profile__info_list_row">
+                    <div class="profile__info_list_label">Payment method:</div>
+                    <div class="profile__info_list_item">Credit card</div>
+                </div><!-- /.profile__info_list_row -->
+
+                <div class="profile__info_list_row">
+                    <div class="profile__info_list_label">Card:</div>
+                    <div class="profile__info_list_item">**** **** **** 4325 <a href="#">Change</a></div>
+                </div><!-- /.profile__info_list_row -->
+
+            </div><!-- /.profile__info_list -->
+
+        </div><!-- /.profile__info_block -->
+
+        <div class="std__layer_grey-lite">
+            <h2 class="b-std__header std__fs-smallH">Payment history</h2>
+
+            <table class="profile__settings_paymentTable">
+
+                <tr>
+                    <th>Date</th>
+                    <th>Amount charged</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>Dec 29, 2012</td>
+                    <td>32,99$</td>
+                    <td><a href="#">View invoice</a></td>
+                </tr>
+                <tr>
+                    <td>Dec 29, 2012</td>
+                    <td>32,99$</td>
+                    <td><a href="#">View invoice</a></td>
+                </tr>
+
+            </table>
+
+
+
+        </div>
+
+    </div><!-- /.profile__collWide -->
+
+    <div class="std__clear"></div>
+
+
+
+</div><!-- /.profile /.content_inn -->
+</div><!-- /.content -->
+
+
+<!-- НАЧАЛО шаблонного Футера -->
+<div class="footer">
+    <div class="footer_inn">`
+        <ul>
+            <li><a href="/page/about">About us</a></li>
+            <li><a href="/help">FAQ</a></li>
+            <li><a href="http://blog.yangutu.com/">Our blog</a></li>
+            <li><a href="/feedback">Contact us</a></li>
+        </ul>
+        <ul>
+            <li><a href="/page/policy">Privacy</a></li>
+            <li><a href="/page/terms">Terms of use</a></li>
+        </ul>
+        <ul>
+            <li><a href="/page/scams">Scam warning</a></li>
+            <li><a href="/page/safety">Safety Tips</a></li>
+        </ul>
+        <ul>
+            <li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+            <li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+            <li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+
+        </ul>
+        <ul>
+            <li><a href="/dating/all">People Directory</a></li>
+        </ul>
+        <div class="right">
+            <font color="black">&copy; 2010-2011 Yangutu Inc. All rights reserved</font><br>
+            <span>Yangutu (swahili) - My one and only.</span>
+        </div>
+        <div class="std__clear"></div>
+    </div>
+</div>
+
+</body>
+</html>
