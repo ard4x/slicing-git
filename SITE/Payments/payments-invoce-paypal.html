@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <title>Settings - Card</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/pop.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/button.css">   <!-- НОВЫЕ стили кнопок. Проверить наличие, заменить более новой версией, а так же файлы btns.png и btns-icos.png, Версия указана в первой строке файла-->
+    <link rel="stylesheet" href="../css/profile.css">
+
+    <!-- Костыли для ИE, можно добавить в уже существующие -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../yngtu_ie8.css" type="text/css">
+    <![endif]-->
+
+    <!--  Файлы для замены селектов -->
+
+    <script src="../js/jquery-1.4.4.min.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'});
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+    <!--  ---------------------------------------- -->
+
+</head>
+<body>
+
+<div class="pop__layer">
+
+    <div class="pop__window profile__settings_invoice">
+        <!-- popup`s content -->
+        <h1 class="std__header std__fs-mainH profile__settings_invoice_header">Invoice # 539895</h1>
+
+        <a class="button lite-grey profile__settings_invoice_print-button" href="#">Print</a>
+
+        <div class="profile__settings_invoice_body">
+
+            The transaction will appear on your statement as <br>
+            RPL-YANGUTU <br>
+            <div class="std__underline line"></div>
+            <br>
+            All questions and comments regarding your order should be directed to the merchant: <br>
+            <br>
+            Name: www.yangutu.com <br>
+            Website: http://www.yangutu.com <br>
+            E-mail: billing@yangutu.com <br>
+            Phone: +1-415-832-2000 <br>
+            <br>
+            Please use your Order Id 539895 as a reference to your order. <br>
+            <br>
+
+            <h3 class="std__underline">ORDER DETAILS</h3>
+            Paid feature x 1 0.01 USD <br>
+            Sub total amount: USD 0.01 <br>
+            Total amount: USD 0.01 <br>
+            <br>
+            Payment method: Visa/xxxx1881 <br>
+            <br>
+            <h3 class="std__underline">MERCHANT INFORMATION</h3>
+            Name: www.yangutu.com <br>
+            Website: http://www.yangutu.com <br>
+            E-mail: billing@yangutu.com <br>
+            Phone: +1-415-832-2000 <br>
+            <br>
+            <h3 class="std__underline">CUSTOMER INFORMATION</h3>
+            Customer: Aliaksandr Siarheyeu <br>
+            E-mail: sergey211@gmail.com <br>
+            <br>
+            Address: Korzehenevsy st. 31-405 <br>
+            City: Minsk <br>
+            Country: BY <br>
+            State: MINSK <br>
+            Zip: 220108 <br>
+            Phone: 3333333333 <br>
+            <br>
+            IP-address: 81.25.45.46 <br>
+            <br>
+            <h3 class="std__underline">SHIPPING INFORMATION</h3>
+            Address: Korzehenevsy st. 31-405 <br>
+            City: Minsk <br>
+            Country: BY <br>
+            State: MINSK <br>
+            Zip: 220108 <br>
+            Phone: 3333333333 <br>
+            <div class="std__underline line"></div>
+            <br>
+            IMPORTANT NOTE: <br>
+            Any valid charges that are not paid, refused, or "Charged Back" will be sent to our Collection Agency and may affect your Credit Rating. <br>
+            <br>
+            You can print this message for your reference. <br>
+            ************************************************************** <br>
+            Billing services provided by PSBill, http://www.psbill.com <br>
+            24 College Ln, Gibraltar <br>
+            **************************************************************
+
+        </div><!-- /.profile__settings_invoice_body -->
+
+        <!-- /.popup`s content -->
+        <a href="#" class="pop__close blue"></a>
+    </div><!-- /.pop__window -->
+
+</div><!-- /.pop__layer -->
+
+</body>
+</html>

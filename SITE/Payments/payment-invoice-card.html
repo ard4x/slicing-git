@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <title>Settings - Card</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/pop.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/button.css">   <!-- НОВЫЕ стили кнопок. Проверить наличие, заменить более новой версией, а так же файлы btns.png и btns-icos.png, Версия указана в первой строке файла-->
+    <link rel="stylesheet" href="../css/profile.css">
+
+    <!-- Костыли для ИE, можно добавить в уже существующие -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../yngtu_ie8.css" type="text/css">
+    <![endif]-->
+
+    <!--  Файлы для замены селектов -->
+
+    <script src="../js/jquery-1.4.4.min.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'});
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+    <!--  ---------------------------------------- -->
+
+</head>
+<body>
+
+<div class="pop__layer">
+
+    <div class="pop__window std__settings_invoice">
+        <!-- popup`s content -->
+        <h1 class="std__header std__fs-mainH std__settings_invoice_header">Transaction ID: <a href="#">6UM44466MA310493P</a></h1>
+
+        <a class="button lite-grey std__settings_invoice_print-button" href="#">Print</a>
+
+        <div class="std__settings_invoice_body">
+
+            <table class="std__settings_invoice_cardTable">
+
+                <tr>
+                    <td>
+                        <h3 class="std__underline">Merchant</h3>
+                        Yangutu <br>
+                        <a href="mailto:paypal@yangutu.com">paypal@yangutu.com</a>
+                    </td>
+                    <td class="std__settings_invoice_cardTable_delim"></td>
+                    <td>
+                        <h3 class="std__underline">Instructions to seller</h3>
+                        You haven't entered any instructions.
+
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3 class="std__underline">Shipping address</h3>
+                        Svetlichny Sergey <br>
+                        Kalinovskogo Str. 40-2-38 <br>
+                        Minsk <br>
+                        Belarus <br>
+                        220086 <br>
+                        Russia
+                    </td>
+                    <td class="std__settings_invoice_cardTable_delim"></td>
+                    <td>
+                        <h3 class="std__underline">Shipping details</h3>
+                        The seller hasn't provided any shipping details yet.
+                    </td>
+
+                </tr>
+
+            </table>
+
+            <table class="std__settings_invoice_cardInfoTable">
+                <tr>
+                    <th class="col-1">Description</th>
+                    <th class="col-2">Unit price</th>
+                    <th class="col-3">Qty</th>
+                    <th class="col-4">Amount</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>$0,01 USD</td>
+                    <td>1</td>
+                    <td>$0,01 USD</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="subtotal">Subtotal</td>
+                    <td>$0,01 USD</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="total">Total</td>
+                    <td>$0,01 USD</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="payment">Payment</td>
+                    <td>$0,01 USD</td>
+                </tr>
+            </table>
+
+            <div class="std__settings_invoice_note">
+                Charge will appear on your credit card statement as "PAYPAL *YANGUTU"<br>
+                Payment sent to <a href="mailto:paypal@yangutu.com">paypal@yangutu.com</a>
+            </div>
+
+            <div class="std__settings_invoice_issue">
+                <h3>Issues with this transaction?</h3>
+                You have 45 days from the date of the transaction to open a dispute in the Resolution Center. <br>
+                Questions? Go to the Help Center at: <a href="www.paypal.com/ru/help">www.paypal.com/ru/help</a>.
+            </div>
+
+        </div><!-- /.std__settings_invoice_body -->
+
+        <!-- /.popup`s content -->
+        <a href="#" class="pop__close blue"></a>
+    </div><!-- /.pop__window -->
+
+</div><!-- /.pop__layer -->
+
+</body>
+</html>

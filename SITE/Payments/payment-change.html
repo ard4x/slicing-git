@@ -70,118 +70,95 @@
 </div>
 <!-- КОНЕЦ шаблонной шапки -->
 <div class="content">
-<div class="content_inn profile profile__settings">
+    <div class="content_inn profile profile__settings">
 
-    <div class="profile__collLeft">
-        
-        <div class="std__layer_grey-lite profile__settings_nav">
+        <div class="profile__settings_change">
 
-            <ul class="profile__settings_menu">
-                <li class="profile__settings_menu_item">
-                    <a href="#">Settings</a></li>
-                <li class="profile__settings_menu_item">
-                    <a href="#">Email Notifications</a></li>
-                <li class="profile__settings_menu_item">
-                    <a href="#">Payments</a></li>
-                <li class="profile__settings_menu_item">
-                    <a href="#">Change Password</a></li>
-                <li class="profile__settings_menu_item">
-                    <a href="#">Blocked users</a></li>
-                <li class="profile__settings_menu_item">
-                    <a href="#">Delete my account</a></li>
-            </ul>
+            <h1 class="std__header std__fs-mainH std__underline">Changing payment information</h1>
 
-        </div>
-        
-    </div><!-- /.profile__collLeft -->
-    
-    <div class="profile__collWide">
+            <div class="profile__info_block">
+                <h2 class="b-std__header std__fs-smallH">Changing from</h2>
 
-        <h1 class="std__header std__fs-mainH std__underline">Payment Settings</h1>
+                <div class="profile__info_list">
 
-        <div class="profile__info_block">
-            <h2 class="b-std__header std__fs-smallH">Account information</h2>
+                    <div class="profile__info_list_row">
+                        <div class="profile__info_list_label">Card Number:</div>
+                        <div class="profile__info_list_item">**** **** **** 4325</div>
+                    </div><!-- /.profile__info_list_row -->
 
-            <div class="profile__info_list">
+                    <div class="profile__info_list_row">
+                        <div class="profile__info_list_label">Exp. Date:</div>
+                        <div class="profile__info_list_item">Mar 29, 2013</div>
+                    </div><!-- /.profile__info_list_row -->
 
-                <div class="profile__info_list_row">
-                    <div class="profile__info_list_label">Account type:</div>
-                    <div class="profile__info_list_item">VIP account</div>
-                </div><!-- /.profile__info_list_row -->
+                </div><!-- /.profile__info_list -->
 
-            </div><!-- /.profile__info_list -->
+            </div>
 
-        </div><!-- /.profile__info_block -->
+            <div class="profile__info_block">
+                <h2 class="b-std__header std__fs-smallH">Changing to</h2>
 
-        <div class="profile__info_block">
-            <h2 class="b-std__header std__fs-smallH">Billing details</h2>
+                <div class="profile__info_list">
 
-            <div class="profile__info_list">
+                    <div class="profile__info_list_row">
+                        <div class="profile__info_list_label">Card Number:</div>
+                        <div class="profile__info_list_item">
+                            <input type="text">
+                        </div>
+                    </div><!-- /.profile__info_list_row -->
 
-                <div class="profile__info_list_row">
-                    <div class="profile__info_list_label">Billing cycle:</div>
-                    <div class="profile__info_list_item">1 year</div>
-                </div><!-- /.profile__info_list_row -->
+                    <div class="profile__info_list_row">
+                        <div class="profile__info_list_label">Exp. Date:</div>
+                        <div class="profile__info_list_item">
 
-                <div class="profile__info_list_row">
-                    <div class="profile__info_list_label">Payment amount:</div>
-                    <div class="profile__info_list_item">32,99$/month</div>
-                </div><!-- /.profile__info_list_row -->
+                            <div class="profile__settings_change_shortField">
+                                <select class="sSelect">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            
+                            <span class="field-separator">/</span>
+                            
+                            <div class="profile__settings_change_shortField">
+                                <select class="sSelect">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
 
-                <div class="profile__info_list_row">
-                    <div class="profile__info_list_label">Next date of charge:</div>
-                    <div class="profile__info_list_item">Mar 29, 2013</div>
-                </div><!-- /.profile__info_list_row -->
+                        </div>
+                    </div><!-- /.profile__info_list_row -->
 
-                <div class="profile__info_list_row">
-                    <div class="profile__info_list_label">Payment method:</div>
-                    <div class="profile__info_list_item">Credit card</div>
-                </div><!-- /.profile__info_list_row -->
+                    <div class="profile__info_list_row">
+                        <div class="profile__info_list_label">CVC:</div>
+                        <div class="profile__info_list_item">
+                            <div class="profile__settings_change_shortField">
+                                <input type="text"/>
+                            </div>
+                        </div>
+                    </div><!-- /.profile__info_list_row -->
 
-                <div class="profile__info_list_row">
-                    <div class="profile__info_list_label">Card:</div>
-                    <div class="profile__info_list_item">**** **** **** 4325 <a href="#" class="profile__settings_cardChange">Change</a></div>
-                </div><!-- /.profile__info_list_row -->
+                </div><!-- /.profile__info_list -->
 
-            </div><!-- /.profile__info_list -->
+            </div>
+            
+            <div class="profile__settings_change_controls">
+                <a class="button button-save" href="#">Save changes</a>
+                <a class="button-cancel" href="#">Cancel</a>
+            </div>
 
-        </div><!-- /.profile__info_block -->
-
-        <div class="std__layer_grey-lite profile__settings_tableHolder">
-            <h2 class="std__header std__fs-smallH">Payment history</h2>
-
-            <table class="profile__settings_paymentTable">
-
-                <tr>
-                    <th>Date</th>
-                    <th>Amount charged</th>
-                    <th>Action</th>
-                </tr>
-                <tr>
-                    <td>Dec 29, 2012</td>
-                    <td>32,99$</td>
-                    <td><a href="#">View invoice</a></td>
-                </tr>
-                <tr>
-                    <td>Dec 29, 2012</td>
-                    <td>32,99$</td>
-                    <td><a href="#">View invoice</a></td>
-                </tr>
-
-            </table>
+        </div><!-- /.profile__settings_change -->
 
 
 
-        </div>
-
-        <a class="profile__settings_cancelLink" href="#">Cancel subscription</a>
-    </div><!-- /.profile__collWide -->
-
-    <div class="std__clear"></div>
-
-
-
-</div><!-- /.profile /.content_inn -->
+    </div><!-- /.profile /.content_inn -->
 </div><!-- /.content -->
 
 

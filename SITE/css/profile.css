@@ -457,4 +457,51 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 
 .profile__settings_nav {padding: 13px 15px 7px;}
     .profile__settings_menu_item {margin-bottom: 8px;}
-.profile__settings_no-pay {font-style: italic; color}
+.profile__settings_no-pay {font-style: italic; color: #999; padding: 0 0 10px 5px;}
+.profile__settings_tableHolder .profile__settings_no-pay {padding: 8px 0 0; border-top: 1px solid #ccc;}
+.profile__settings .upgrade-button {margin-left: 80px; }
+.profile__settings .profile__info_list_label {vertical-align: middle; }
+
+/* Invoices popups */
+.profile__settings_invoice {padding: 47px 15px 15px; width: 770px !important;}
+    .profile__settings_invoice_header {background-color: #ecf4fb; position: absolute; top: 0; left: 0; width: 100%; height: 47px; box-sizing: border-box; -moz-box-sizing: border-box; padding: 12px 14px;}
+    .profile__settings_invoice_print-button {width: 105px; margin: 15px 0 0 0;}
+    .profile__settings_invoice_body {padding-top: 19px; font-size: 12px; line-height: 14px; color: #333;}
+        .profile__settings_invoice_body h3 {font-size: 12px; color: #333;  margin: 3px 0 8px; padding-bottom: 2px; text-transform: uppercase;}
+        .profile__settings_invoice_body .std__underline.line {padding-top: 5px; padding-bottom: 8px;}
+.profile__settings_invoice_cardTable {width:  100%; border-collapse: collapse; border: none; margin-bottom: 8px;}
+    .profile__settings_invoice_cardTable td {width: 345px; vertical-align: top; padding-bottom: 14px; border: none;}
+    td.profile__settings_invoice_cardTable_delim {width: 40px;}
+.profile__settings_invoice_cardInfoTable {width: 100%; border-collapse: collapse;}
+    .profile__settings_invoice_cardInfoTable .col-1 {width: 445px; box-sizing: border-box; -moz-box-sizing: border-box;}
+    .profile__settings_invoice_cardInfoTable .col-2 {width: 110px; box-sizing: border-box; -moz-box-sizing: border-box;}
+    .profile__settings_invoice_cardInfoTable .col-3 {width: 70px;  box-sizing: border-box; -moz-box-sizing: border-box;}
+    .profile__settings_invoice_cardInfoTable .col-4 {}
+    .profile__settings_invoice_cardInfoTable th {height: 40px; background-color: #f5f5f5; border-top: 1px solid #ccc; vertical-align: middle; font-size: 14px; padding-left: 15px;}
+    .profile__settings_invoice_cardInfoTable td {height: 38px; border-top: 1px solid #ccc; vertical-align: middle; padding-left: 15px; }
+        .profile__settings_invoice_cardInfoTable .subtotal  {text-align: right; padding-right: 55px; font-weight: bold; height: 26px; vertical-align: bottom;}
+        .profile__settings_invoice_cardInfoTable .subtotal + td {height: 26px; vertical-align: bottom;}
+        .profile__settings_invoice_cardInfoTable .total         {text-align: right; padding-right: 55px; font-weight: bold;  height: 16px; vertical-align: bottom; border: none;}
+        .profile__settings_invoice_cardInfoTable .total + td    {height: 16px; vertical-align: bottom; border: none;}
+        .profile__settings_invoice_cardInfoTable .payment       {text-align: right; padding-right: 55px; font-weight: bold; border: none; height: 34px; vertical-align: bottom;}
+        .profile__settings_invoice_cardInfoTable .payment + td  {border: none; height: 34px; vertical-align: bottom;}
+.profile__settings_invoice_note {text-align: right; padding-right: 160px; margin-top: 12px;}
+.profile__settings_invoice_issue {margin-top: 16px; padding-top: 10px; border-top: 1px solid #ccc;}
+    .profile__settings_invoice_issue h3 {text-transform: none; font-size: 14px;}
+
+/* Change card */
+.profile__settings_change {width: 450px; position: relative; margin: 0 auto;}
+
+    .profile__settings_change .profile__info_block > .b-std__header {padding-left: 10px;}
+    .profile__settings_change .profile__info_list_item {width: 260px;}
+    .profile__settings_change .profile__info_list_item input,
+    .profile__settings_change .profile__info_list_item select,
+    .profile__settings_change .profile__info_list_item .newListSelected {box-sizing: border-box; -moz-box-sizing: border-box; height: 27px; padding: 5px; width: 100%;}
+    .profile__settings_change_shortField {display: inline-block; width: 80px;}
+    .profile__settings_change .field-separator {margin: 0 3px;}
+    .profile__settings_change_controls {margin-top: 20px; text-align: center;}
+    .profile__settings_change_controls .button-save {width: 130px; padding-left: 10px; padding-right: 10px;}
+    .profile__settings_change_controls .button-cancel {margin-left: 15px;}
+
+.profile__settings_change_popup {padding: 30px 25px; text-align: center; }
+    .profile__settings_change_popup .button {width: 235px; margin-top: 7px;}
