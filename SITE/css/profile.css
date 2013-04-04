@@ -441,7 +441,20 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 
 /** Settings **/
 .profile__settings {}
+    .profile__settings h1.std__header {margin-bottom: 20px;}
     .profile__settings .profile__collLeft {width: 220px;}
-    .profile__settings_paymentTable {border-collapse: collapse;}
-    .profile__settings_paymentTable th {border: 1px solid #ccc;}
-    .profile__settings_paymentTable td {border: 1px solid #ccc;}
+    .profile__settings .profile__info_block {margin-bottom: 12px;}
+        .profile__settings .profile__info_block > .b-std__header {padding-left: 15px;}
+        .profile__settings .profile__info_list_label {width: 161px;}
+    .profile__settings_tableHolder {padding-top: 8px;}
+        .profile__settings_tableHolder > .std__header {margin-bottom: 11px;}
+    .profile__settings_paymentTable {border-collapse: collapse; width: 100%; border: 1px solid #ccc;}
+        .profile__settings_paymentTable th {border: 1px solid #ccc; width: 215px; height: 30px; padding-left: 15px; background-color: #ccc; box-sizing: border-box; -moz-box-sizing: border-box; vertical-align: middle;}
+            .profile__settings_paymentTable th:last-child {width: auto;}
+        .profile__settings_paymentTable td {border-bottom: 1px solid #ccc; height: 42px; padding-left: 15px; vertical-align: middle;}
+        .profile__settings_cardChange {margin-left: 65px;}
+    .profile__settings_cancelLink {margin-top: 28px; float: right;}
+
+.profile__settings_nav {padding: 13px 15px 7px;}
+    .profile__settings_menu_item {margin-bottom: 8px;}
+.profile__settings_no-pay {font-style: italic; color}
