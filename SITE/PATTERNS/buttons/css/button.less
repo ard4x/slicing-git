@@ -5,23 +5,24 @@
 @btnIconImg: '../img/button/btns-icos.png'; // icons image
 @btnBgImg:   '../img/button/btns.png';  // Background image
 @btnHeight:  31px;
+.clrBlik {box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 40%);}
 // SET COLORS of button
 .buttonColors (@btnTopColor:#3a639a, @btnBgColor:#496b94, @btnBottomColor:#334b67,
                @btnTopColorHover:#5177a5, @btnBgColorHover:#3a639a, @btnBottomColorHover:#3f5d81,
                @btnTopColorActive:#486993, @btnBgColorActive:#2f4f7b, @btnBottomColorActive:#3f5c81){
 
-  & {border-color:  @btnTopColor @btnBgColor @btnBottomColor;
+  & {border-color:  @btnTopColor @btnBgColor @btnBottomColor !important;
      background-color: @btnBgColor;
   }
 
   &:hover {
-    border-color:  @btnTopColorHover @btnBgColorHover @btnBottomColorHover;
+    border-color:  @btnTopColorHover @btnBgColorHover @btnBottomColorHover !important;
     background-color: @btnBgColorHover;
   }
 
   &:active {
     box-shadow: none;
-    border-color:  @btnTopColorActive @btnBgColorActive @btnBottomColorActive;
+    border-color:  @btnTopColorActive @btnBgColorActive @btnBottomColorActive !important;
     background-color: @btnBgColorActive;
   }
 
@@ -69,7 +70,7 @@
   &:hover {text-decoration: none; color: #fff !important;}
 // _ Text settings
   padding: 6px 17px 0;
-  border: 1px solid;
+  border: 1px solid !important;
   .buttonColors();
   .buttonBg();
   input& {padding-top: 0!important; border-width: 1px !important;} // When INPUT as  button
@@ -434,6 +435,18 @@
 }
 
 // FUNCTIONAL buttons
+.btnGradient (@col1, @col2){
+  background: @col1 - #10101; /* Old browsers */
+  background: -moz-linear-gradient(top, @col1 0%, @col2 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @col1), color-stop(100%,@col2)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, @col1 0%,@col2 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, @col1 0%,@col2 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, @col1 0%,@col2 100%); /* IE10+ */
+  background: linear-gradient(to bottom, @col1 0%,@col2 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@col1', endColorstr='@col2',GradientType=0 ); /* IE6-9 */
+}
+
+.btnHovered (@col1, @col2){background: 1.5*@col1 - 0.5*@col2;}
 
 .slider {
   width: 100%;
@@ -449,6 +462,10 @@
   &.type5 .slider-item {width: 20%;}
 
     .slider-item {
+      @color-1: #eeeeee;
+      @color-2: #dedede;
+      .btnGradient (@color-1, @color-2);
+      .clrBlik;
       border: solid 1px #cbcbcb;
       border-left: none;
       display: block;
@@ -459,7 +476,6 @@
       padding: 7px;
       width: 25%;
       vertical-align: middle;
-      background: #e6e6e6 0 -764px url(@btnBgImg) repeat-x;
       font: 14px Arial;
       color: #525252;
       text-decoration: none;
@@ -478,26 +494,24 @@
         }
 
         &:hover {
-          background-position: 0 -793px;
+          .btnHovered(@color-1, @color-2);
           text-decoration: none;
           color: #525252;
-          background-color: #dedede;
         }
 
         &:active,
         &.current {
-          background-position: 0 -822px;
-          background-color: #545454;
+          .btnGradient (#454545, #656565);
           font: 14px Arial;
           color: #ffffff;
           text-shadow: #364f6d 0 1px 1px;
           cursor: default;
         }
 
+        .switch&:active {.btnGradient (#c03117, #d35239);}
         .switch&.current {
-          background-color: #f9f9f9;
-          background: #c94027 0 -3071px url(@btnBgImg) repeat-x;
-          border-color: #862714 #862714 #a13f2c;
+          .btnGradient (#c03117, #d35239);
+          border-color: #862714 #862714 #a13f2c #862714;
 
           &:after {
             content: '';
@@ -510,6 +524,33 @@
             border: 11px solid transparent;
             border-bottom: none;
             border-top: 10px solid #d35239;
+          }
+        }
+
+        .switch-blue& {
+          height: 39px;
+          padding-top: 10px;
+
+          &:active {
+            .btnGradient (#436288, #5075a3);
+            border-color: #2f4f7b #3c587b #3d5a7d #3c587b;
+          }
+        }
+        .switch-blue&.current {
+          .btnGradient (#436288, #5075a3);
+          border-color: #2f4f7b #3c587b #3d5a7d #3c587b;
+
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -10px;
+            left: 45%;
+            width: 0;
+            height: 0;
+            border: 11px solid transparent;
+            border-bottom: none;
+            border-top: 10px solid #5075a3;
           }
         }
 

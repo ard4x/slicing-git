@@ -1,0 +1,16 @@
+.payment-errors {
+    color: #900;
+    line-height: 22px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 5px;}
+/* vop.css:179*/
+.vip__tabContent_inner.tab1 {padding: 9px 20px;}
+/* vop.css:218*/
+.vip__tabContent_descript {margin: 12px 0 0 0;}
+/* vop.css:221*/
+.tab1 .vip__tabContent_purchaseBtn  {margin: 12px 0 0 0;}
+
+/*стили кнопок обновить с http://dev8.yangutu.com/slicing/SITE/PATTERNS/buttons/css/button.css*/
