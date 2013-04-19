@@ -1325,8 +1325,8 @@ input.button {
   border-top: 10px solid #d35239;
 }
 .switch-blue.slider .slider-item {
-  height: 39px;
-  padding-top: 10px;
+  height: 41px;
+  padding-top: 8px;
 }
 .switch-blue.slider .slider-item:active {
   background: #326277 1;

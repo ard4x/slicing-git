@@ -2,16 +2,59 @@
     .dates__mainCol {width: 700px; float: left;}
     .dates__sideCol {width: 220px; float: right;}
 
-        .dates__postBlock {border: 3px solid #fff; padding: 12px 17px 17px; border-radius: 4px; box-shadow: 0 1px 3px 0px #7D7D7D; margin-bottom: 23px;}
-            .dates__postBlock_vars {font: 14px Arial; float: right;}
-                .dates__postBlock_vars_item {margin-left: 15px;}
+        .dates__postBlock {border: 3px solid #fff; padding: 14px 17px 17px; border-radius: 4px; box-shadow: 0 1px 3px 0px #7D7D7D; margin-bottom: 23px;}
+            .dates__postBlock_vars {font: 14px Arial; float: right; padding-top: 7px;}
+                .dates__postBlock_vars_item {margin-left: 26px;}
                     .dates__postBlock_vars_item.dashed {text-decoration: none; border-bottom: 1px dotted #436187;}
                     .dates__postBlock_vars_item.dashed:hover {text-decoration: none; border-bottom: none;}
                 .dates__postBlock_fields {}
-                    .dates__postBlock_row {}
-                        .dates__postBlock_label{width: 100px; font-size: 14px; font-weight: bold; color: #333; float-left;}
+                    .dates__postBlock_row {margin-bottom: 10px;}
+                        .dates__postBlock_label{width: 100px; font-size: 14px; font-weight: bold; color: #333; float:left; padding-top: 5px;}
                         .dates__postBlock_field {width: 560px; margin-left: 100px;}
-                    .dates__postBlock_buttons {}
-                        .dates__postBlock_buttons_post {}
-                        .dates__postBlock_buttons_cancel {}
+                            .dates__postBlock_field textarea {width:100%; height: 70px; box-sizing: border-box; -moz-box-sizing: border-box; resize: none; padding: 6px; font-size: 12px; color: #333;}
+                        .dates__postBlock_select {width: 240px;}
+                        .dates select,
+                        .dates input[type=text],
+                        .dates .newListSelected {box-sizing: border-box; -moz-box-sizing: border-box; height: 27px; padding: 5px 5px 0;  width: 100%;}
+                    .dates__postBlock_buttons {text-align: center; margin-top: 15px; padding-left: 10px;}
+                        .dates__postBlock_buttons_post {width: 125px; margin-right: 20px;}
+                        .dates__postBlock_buttons_cancel {font-size: 14px;}
     .dates .switch-blue >* {font-weight: bold!important; font-size: 18px !important;}
+    .dates__datesList {}
+        .dates__datesList_item {margin-bottom: 24px;}
+            .dates__datesList_item_person {width: 105px; float: left;}
+                .dates__datesList_photoFrame {margin-bottom: 4px;}
+                .dates__datesList_photo {width: 100px; height: 100px;}
+                .dates__datesList_person {font-size: 14px; text-align: left; padding-left: 2px;}
+                .dates__datesList_location {font-size: 12px; padding-left: 2px; line-height: 14px;}
+            .dates__datesList_item_message {margin-left: 126px; padding-top: 2px;}
+                .dates__datesList_item_message_subj {position: relative;}
+                    .dates__datesList_item_message_text {font-size: 18px; color: #333; box-sizing: border-box; -moz-box-sizing: border-box; padding: 10px 15px 30px; border: 1px solid #ccc; min-height: 100px; border-radius: 2px;}
+                        .dates__datesList_item_message_text:before {content: ''; position: absolute; top: 38px; left: -12px; height: 0; width: 0; border: 12px solid transparent; border-left: none; border-right-color: #ccc;}
+                        .dates__datesList_item_message_text:after  {content: ''; position: absolute; top: 39px; left: -10px; height: 0; width: 0; border: 11px solid transparent; border-left: none; border-right-color: #fff;}
+
+.dates__messLabel {font-weight: bold; color: #999; font-style: italic;}
+                    .dates__datesList_item_message_info {position: absolute; bottom: 0px; width: 100%; padding: 12px 15px; box-sizing: border-box; -moz-box-sizing: border-box; font-size: 12px; color: #999;}
+                        .dates__datesList_item_message_info .category {float: left; }
+                            .dates__datesList_item_message_info .cat_label {font-size: 11px; }
+                        .dates__datesList_item_message_info .posted {float: right; font-weight: bold;}
+                    .dates__datesList_item_message_buttons {line-height: 31px; padding: 10px 10px 10px 20px; background-color: #f5f5f5; overflow: hidden;}
+                        .dates__datesList_item_message_buttons .left_buttons {float: left; vertical-align: middle;}
+                            .dates__datesList_item_message_buttons .left_buttons a {margin-right: 30px;}
+                        .dates__datesList_item_message_buttons .right_buttons {float: right; vertical-align: middle;}
+                            .dates__datesList_item_message_buttons .right_buttons .button {margin-left: 10px;}
+
+.dates__widget_popular {}
+    .dates__widget_popular_pic {}
+    .dates__widget_popular_message {color: #333;}
+        .dates__widget_popular_message .dates__messLabel {display: block; font-style: normal;}
+    .dates__widget_popular_likes {background-color: #fff; border-radius: 3px; padding: 10px;}
+        .dates__widget_popular_likes_count {}
+        .dates__widget_popular_likes_pics {margin-left: -10px; overflow: hidden; }
+            .dates__widget_popular_likes_pics_item {margin-left: 10px; display: block; float: left; }
+                .dates__widget_popular_likes_pics_item img {width: 50px; height: 50px; }
+    .dates__widget_popular_buttons {overflow: hidden;}
+        .dates__widget_popular_buttons .button-like {width: 90px; float: left;}
+        .dates__widget_popular_buttons .button-next {width: 90px; float: right;}
+
+.dates__widget_guests {}

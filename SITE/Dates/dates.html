@@ -10,6 +10,27 @@
     <link rel="stylesheet" href="../css/wid.css">
     <link rel="stylesheet" href="../css/dates.css">
 
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'})
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+
 </head>
 <body>
 <!-- Start of Pattern Header  for guests -->
@@ -311,12 +332,10 @@
                     <div class="dates__postBlock_row">
 
                         <div class="dates__postBlock_label">
-                            Lets's we...
+                            Let's we...
                         </div><!-- /.dates__postBlock_label -->
 
-                        <div class="dates__postBlock_field">
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
-                        </div><!-- /.dates__postBlock_field -->
+                        <div class="dates__postBlock_field"><textarea placeholder="Describe your date idea here..."></textarea></div><!-- /.dates__postBlock_field -->
                     </div><!-- /.dates__postBlock_row -->
 
                     <div class="dates__postBlock_row">
@@ -326,10 +345,15 @@
                         </div><!-- /.dates__postBlock_label -->
 
                         <div class="dates__postBlock_field">
-                            <select class="sSelect">
-                                <option>Other</option>
-                                <option>Sss</option>
-                            </select>
+                            <div class="dates__postBlock_select">
+
+                                <select class="sSelect">
+                                    <option>Other</option>
+                                    <option>Sss</option>
+                                </select>
+
+                            </div>
+
                         </div><!-- /.dates__postBlock_field -->
                     </div><!-- /.dates__postBlock_row -->
 
@@ -353,13 +377,13 @@
 
                         <div class="dates__datesList_item_person">
 
-                            <div class="b-user__photoFrame">
-                                <img class="b-user__photoFrame_photo" src="../img/usr/user1.jpg" alt=""/>
+                            <div class="b-user__photoFrame dates__datesList_photoFrame">
+                                <img class="b-user__photoFrame_photo dates__datesList_photo" src="../img/usr/user1.jpg" alt=""/>
                             </div>
-                            <div class="b-user__person">
+                            <div class="b-user__person dates__datesList_person">
                                 <a href="#">Licydi</a>, 42
                             </div>
-                            <div class="user__location">
+                            <div class="user__location dates__datesList_location">
                                 Miami, <br>
                                 United States
                             </div>
@@ -369,13 +393,13 @@
                             <div class="dates__datesList_item_message_subj">
 
                                 <div class="dates__datesList_item_message_text">
-                                    <span class="dates__messLabel">Lets`s we...</span> Go to the cinema next week!</div>
+                                    <span class="dates__messLabel">Lets`s we...</span> Go to the cinema next week!
+                                </div>
 
                                 <div class="dates__datesList_item_message_info">
-
-                                    <div class="category">Date category: Play</div>
+                                    <div class="category"><span class="cat_label">Date category:</span> Play</div>
                                     <div class="posted">Posted today</div>
-
+                                    <div class="std__clear"></div>
                                 </div>
 
                             </div>
@@ -396,6 +420,307 @@
 
                         </div><!-- /.dates__datesList_item_message -->
 
+                        <div class="std__clear"></div>
+                    </div><!-- /.dates__datesList_item -->
+
+                <div class="dates__datesList_item">
+
+                        <div class="dates__datesList_item_person">
+
+                            <div class="b-user__photoFrame dates__datesList_photoFrame">
+                                <img class="b-user__photoFrame_photo dates__datesList_photo" src="../img/usr/user1.jpg" alt=""/>
+                            </div>
+                            <div class="b-user__person dates__datesList_person">
+                                <a href="#">Licydi</a>, 42
+                            </div>
+                            <div class="user__location dates__datesList_location">
+                                Miami, <br>
+                                United States
+                            </div>
+                        </div><!-- /.dates__datesList_item_person -->
+
+                        <div class="dates__datesList_item_message">
+                            <div class="dates__datesList_item_message_subj">
+
+                                <div class="dates__datesList_item_message_text">
+                                    <span class="dates__messLabel">Lets`s we...</span> Go to the cinema next week!
+                                </div>
+
+                                <div class="dates__datesList_item_message_info">
+                                    <div class="category"><span class="cat_label">Date category:</span> Play</div>
+                                    <div class="posted">Posted today</div>
+                                    <div class="std__clear"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="dates__datesList_item_message_buttons">
+
+                                <div class="left_buttons">
+                                    <a href="#">Add her to favorites</a>
+                                    <a href="#">Repost</a>
+                                </div>
+
+                                <div class="right_buttons">
+                                    <a class="button lite-grey" href="#">I`m thrilled</a>
+                                    <a class="button red" href="#">Message</a>
+                                </div>
+
+                            </div>
+
+                        </div><!-- /.dates__datesList_item_message -->
+
+                        <div class="std__clear"></div>
+                    </div><!-- /.dates__datesList_item -->
+
+                <div class="dates__datesList_item">
+
+                        <div class="dates__datesList_item_person">
+
+                            <div class="b-user__photoFrame dates__datesList_photoFrame">
+                                <img class="b-user__photoFrame_photo dates__datesList_photo" src="../img/usr/user1.jpg" alt=""/>
+                            </div>
+                            <div class="b-user__person dates__datesList_person">
+                                <a href="#">Licydi</a>, 42
+                            </div>
+                            <div class="user__location dates__datesList_location">
+                                Miami, <br>
+                                United States
+                            </div>
+                        </div><!-- /.dates__datesList_item_person -->
+
+                        <div class="dates__datesList_item_message">
+                            <div class="dates__datesList_item_message_subj">
+
+                                <div class="dates__datesList_item_message_text">
+                                    <span class="dates__messLabel">Lets`s we...</span> Go to the cinema next week!
+                                </div>
+
+                                <div class="dates__datesList_item_message_info">
+                                    <div class="category"><span class="cat_label">Date category:</span> Play</div>
+                                    <div class="posted">Posted today</div>
+                                    <div class="std__clear"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="dates__datesList_item_message_buttons">
+
+                                <div class="left_buttons">
+                                    <a href="#">Add her to favorites</a>
+                                    <a href="#">Repost</a>
+                                </div>
+
+                                <div class="right_buttons">
+                                    <a class="button lite-grey" href="#">I`m thrilled</a>
+                                    <a class="button red" href="#">Message</a>
+                                </div>
+
+                            </div>
+
+                        </div><!-- /.dates__datesList_item_message -->
+
+                        <div class="std__clear"></div>
+                    </div><!-- /.dates__datesList_item -->
+
+                <div class="dates__datesList_item">
+
+                        <div class="dates__datesList_item_person">
+
+                            <div class="b-user__photoFrame dates__datesList_photoFrame">
+                                <img class="b-user__photoFrame_photo dates__datesList_photo" src="../img/usr/user1.jpg" alt=""/>
+                            </div>
+                            <div class="b-user__person dates__datesList_person">
+                                <a href="#">Licydi</a>, 42
+                            </div>
+                            <div class="user__location dates__datesList_location">
+                                Miami, <br>
+                                United States
+                            </div>
+                        </div><!-- /.dates__datesList_item_person -->
+
+                        <div class="dates__datesList_item_message">
+                            <div class="dates__datesList_item_message_subj">
+
+                                <div class="dates__datesList_item_message_text">
+                                    <span class="dates__messLabel">Lets`s we...</span> Go to the cinema next week!
+                                </div>
+
+                                <div class="dates__datesList_item_message_info">
+                                    <div class="category"><span class="cat_label">Date category:</span> Play</div>
+                                    <div class="posted">Posted today</div>
+                                    <div class="std__clear"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="dates__datesList_item_message_buttons">
+
+                                <div class="left_buttons">
+                                    <a href="#">Add her to favorites</a>
+                                    <a href="#">Repost</a>
+                                </div>
+
+                                <div class="right_buttons">
+                                    <a class="button lite-grey" href="#">I`m thrilled</a>
+                                    <a class="button red" href="#">Message</a>
+                                </div>
+
+                            </div>
+
+                        </div><!-- /.dates__datesList_item_message -->
+
+                        <div class="std__clear"></div>
+                    </div><!-- /.dates__datesList_item -->
+
+                <div class="dates__datesList_item">
+
+                        <div class="dates__datesList_item_person">
+
+                            <div class="b-user__photoFrame dates__datesList_photoFrame">
+                                <img class="b-user__photoFrame_photo dates__datesList_photo" src="../img/usr/user1.jpg" alt=""/>
+                            </div>
+                            <div class="b-user__person dates__datesList_person">
+                                <a href="#">Licydi</a>, 42
+                            </div>
+                            <div class="user__location dates__datesList_location">
+                                Miami, <br>
+                                United States
+                            </div>
+                        </div><!-- /.dates__datesList_item_person -->
+
+                        <div class="dates__datesList_item_message">
+                            <div class="dates__datesList_item_message_subj">
+
+                                <div class="dates__datesList_item_message_text">
+                                    <span class="dates__messLabel">Lets`s we...</span> Go to the cinema next week!
+                                </div>
+
+                                <div class="dates__datesList_item_message_info">
+                                    <div class="category"><span class="cat_label">Date category:</span> Play</div>
+                                    <div class="posted">Posted today</div>
+                                    <div class="std__clear"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="dates__datesList_item_message_buttons">
+
+                                <div class="left_buttons">
+                                    <a href="#">Add her to favorites</a>
+                                    <a href="#">Repost</a>
+                                </div>
+
+                                <div class="right_buttons">
+                                    <a class="button lite-grey" href="#">I`m thrilled</a>
+                                    <a class="button red" href="#">Message</a>
+                                </div>
+
+                            </div>
+
+                        </div><!-- /.dates__datesList_item_message -->
+
+                        <div class="std__clear"></div>
+                    </div><!-- /.dates__datesList_item -->
+
+                <div class="dates__datesList_item">
+
+                        <div class="dates__datesList_item_person">
+
+                            <div class="b-user__photoFrame dates__datesList_photoFrame">
+                                <img class="b-user__photoFrame_photo dates__datesList_photo" src="../img/usr/user1.jpg" alt=""/>
+                            </div>
+                            <div class="b-user__person dates__datesList_person">
+                                <a href="#">Licydi</a>, 42
+                            </div>
+                            <div class="user__location dates__datesList_location">
+                                Miami, <br>
+                                United States
+                            </div>
+                        </div><!-- /.dates__datesList_item_person -->
+
+                        <div class="dates__datesList_item_message">
+                            <div class="dates__datesList_item_message_subj">
+
+                                <div class="dates__datesList_item_message_text">
+                                    <span class="dates__messLabel">Lets`s we...</span> Go to the cinema next week!
+                                </div>
+
+                                <div class="dates__datesList_item_message_info">
+                                    <div class="category"><span class="cat_label">Date category:</span> Play</div>
+                                    <div class="posted">Posted today</div>
+                                    <div class="std__clear"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="dates__datesList_item_message_buttons">
+
+                                <div class="left_buttons">
+                                    <a href="#">Add her to favorites</a>
+                                    <a href="#">Repost</a>
+                                </div>
+
+                                <div class="right_buttons">
+                                    <a class="button lite-grey" href="#">I`m thrilled</a>
+                                    <a class="button red" href="#">Message</a>
+                                </div>
+
+                            </div>
+
+                        </div><!-- /.dates__datesList_item_message -->
+
+                        <div class="std__clear"></div>
+                    </div><!-- /.dates__datesList_item -->
+
+                <div class="dates__datesList_item">
+
+                        <div class="dates__datesList_item_person">
+
+                            <div class="b-user__photoFrame dates__datesList_photoFrame">
+                                <img class="b-user__photoFrame_photo dates__datesList_photo" src="../img/usr/user1.jpg" alt=""/>
+                            </div>
+                            <div class="b-user__person dates__datesList_person">
+                                <a href="#">Licydi</a>, 42
+                            </div>
+                            <div class="user__location dates__datesList_location">
+                                Miami, <br>
+                                United States
+                            </div>
+                        </div><!-- /.dates__datesList_item_person -->
+
+                        <div class="dates__datesList_item_message">
+                            <div class="dates__datesList_item_message_subj">
+
+                                <div class="dates__datesList_item_message_text">
+                                    <span class="dates__messLabel">Lets`s we...</span> Go to the cinema next week!
+                                </div>
+
+                                <div class="dates__datesList_item_message_info">
+                                    <div class="category"><span class="cat_label">Date category:</span> Play</div>
+                                    <div class="posted">Posted today</div>
+                                    <div class="std__clear"></div>
+                                </div>
+
+                            </div>
+
+                            <div class="dates__datesList_item_message_buttons">
+
+                                <div class="left_buttons">
+                                    <a href="#">Add her to favorites</a>
+                                    <a href="#">Repost</a>
+                                </div>
+
+                                <div class="right_buttons">
+                                    <a class="button lite-grey" href="#">I`m thrilled</a>
+                                    <a class="button red" href="#">Message</a>
+                                </div>
+
+                            </div>
+
+                        </div><!-- /.dates__datesList_item_message -->
+
+                        <div class="std__clear"></div>
                     </div><!-- /.dates__datesList_item -->
 
                 <div class="dates__datesList_button">
@@ -412,15 +737,15 @@
 
                 <h3 class="std__header std__fs-smallH">Popular dates</h3>
 
-                <img src="../img/dates/popular.jpg" alt=""/>
+                <img class="dates__widget_popular_pic" src="../img/dates/popular.jpg" alt=""/>
 
-                <div class="dates__widget_popular">
+                <div class="dates__widget_popular_message">
                     <span class="dates__messLabel">Let’s we…</span>
                     Get a waffle at the Waffle and Dinges truck and then check out Astor Place and Cooper Square.
                 </div>
 
                 <div class="dates__widget_popular_likes">
-                    <div class="dates__widget_popular_likes_count">92 people like it</div>
+                    <div class="dates__widget_popular_likes_count"><a href="#">92 people like it</a></div>
                     <div class="dates__widget_popular_likes_pics">
                         <a href="#" class="dates__widget_popular_likes_pics_item">
                             <img src="../img/usr/100x100-4.jpg" alt=""/>
@@ -435,14 +760,18 @@
                         </a>
 
                     </div><!-- /.dates__widget_popular_likes_pics -->
-                    <div class="dates__widget_popular_likes_buttons">
-                        <a class="button" href="#">Like</a>
-                        <a class="button lite-grey" href="#">Next</a>
-                    </div>
+
                 </div> <!-- /.dates__widget_popular_likes -->
+
+                <div class="dates__widget_popular_buttons">
+                    <a class="button button-like" href="#">Like</a>
+                    <a class="button button-next lite-grey" href="#">Next</a>
+                </div>
             </div><!-- /.dates__widget_popular -->
 
-            <div class="dates__widget_guests">
+            <div class="dates__widget_guests std__layer_grey-lite">
+
+                <h3 class="std__header std__fs-smallH std__underline">Latest guests</h3>
                 <div class="wid__userList">
 
                     <div class="wid__userList_item">
