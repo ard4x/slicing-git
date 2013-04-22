@@ -1,10 +1,10 @@
 body {padding-top: 50px;}
-.debates__header_wrapper {font: 14px Arial; top: 0; left: 0; position: absolute; height: 50px; width: 100%; background-color: #436187; box-sizing: border-box; -moz-box-sizing: border-box;}
+.debates__header_wrapper {position: fixed; z-index: 1000; font: 14px Arial; top: 0; left: 0; height: 50px; width: 100%; background-color: #436187; box-sizing: border-box; -moz-box-sizing: border-box;}
 .debates__inner {width: 950px; margin: 0 auto; position: relative}
 .debates__logo {width: 98px; height: 26px; background: url(../img/img.png) no-repeat; display: block; float: left; margin-top: 13px; margin-right: 21px;}
 .debates__slogan {color:#fff; font-size: 16px; margin-top: 16px; display: inline-block;}
 .debates__icon-info {display: block; width: 31px; height: 31px; background: 0 -28px url(../img/img.png) no-repeat; float: left; margin: 4px 20px 0 15px;}
-.debates__tooltip {font: 14px Arial; color: #3d3009; position: relative; left: 0; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; height: 72px; border-top: 1px solid #d2ae43; border-bottom: 1px solid #d2ae43; background-color: #ffe67a;}
+.debates__tooltip {position: fixed; z-index: 1000; top: 50px; font: 14px Arial; color: #3d3009; left: 0; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; height: 72px; border-top: 1px solid #d2ae43; border-bottom: 1px solid #d2ae43; background-color: #ffe67a;}
 .debates__tooltip_border {border-top: 1px solid #ffea98; border-bottom: 1px solid #ffea98; box-sizing: border-box; -moz-box-sizing: border-box; height: 70px;}
 .debates__tooltip_description {padding: 2px 30px 0 0; margin-top: 14px;}
 .debates__close {height: 7px; width: 7px; background: -33px -28px url(../img/img.png) no-repeat; display: block; position: absolute; top: 10px; right: 10px;}

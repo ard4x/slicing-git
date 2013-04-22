@@ -2,13 +2,21 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" >
-    <title>Debates Popup</title>
+    <title>Battle</title>
     <link rel="stylesheet" href="../css/style.css"><!-- new style file -->
     <link rel="stylesheet" href="css/debates.css"><!-- new style file -->
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $(".debates__tooltip .debates__close").on("click",
+                    function (){
+                        $(".debates__tooltip").remove();
+                    })
+        });
+    </script>
 
 </head>
 <body>
-
 <!-- POPUP -->
 <div class="debates__popup">
     <div class="debates__popup_window">
@@ -25,7 +33,6 @@
 </div><!-- /.debates__popup -->
 
 <!-- /.POPUP -->
-
 <div class="debates__header_wrapper">
 
     <div class="debates__inner">
@@ -45,6 +52,7 @@
 
 </div><!-- /.header_wrapper -->
 <div class="debates__tooltip">
+    <style>body {padding-top: 120px;}</style>
     <div class="debates__tooltip_border">
         <div class="debates__inner">
 
