@@ -201,6 +201,7 @@ a.debates__button_more:hover span {text-decoration: underline;}
     .debates__block {margin-bottom: 30px;}
     .debates__block_tags {text-align: center; font-size: 0;}
     .debates__tag { display: inline-block; background-color: #f6f5eb; border-radius: 4px; color: #4f6b8d; font-size: 12px; margin: 2px 3px; padding: 6px 7px; }
+    .debates__tag:hover {background-color: #436187; color: #fff; text-decoration: none; }
     .debates__block_cats { padding-top: 13px; padding-bottom: 6px; background-color: #f5f5f5; border-radius: 4px; padding: 15px;}
     .debates__block_header {padding-bottom: 7px; border-bottom: 1px solid #ccc; margin: 0 0 12px; font-size: 18px; line-height: 18px;}
     .debates__block_cats li {font-size: 14px; font-weight: bold; height: 24px;}
