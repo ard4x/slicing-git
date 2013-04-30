@@ -1,0 +1,1290 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <title>Search</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/wid.css">
+    <link rel="stylesheet" href="../css/btns.css" type="text/css">   <!-- Проверить наличие, заменить более новой версией, а так же файлы btns.png и button-icos.png, Версия указана в первой строке файла-->
+    <link rel="stylesheet" href="../css/srch.css">
+    <link rel="stylesheet" href="../PATTERNS/css/lookbox.css"><!-- Файл стилей, измененный-->
+    <!-- Костыли для ИE, можно добавить в уже существующие -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../yngtu_ie8.css" type="text/css">
+    <![endif]-->
+
+    <!--  Файлы для замены селектов -->
+
+    <script src="../js/jquery-1.4.4.min.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'});
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+    <!--  ---------------------------------------- -->
+
+</head>
+<body>
+<!-- начало шаблонной шапки -->
+<div class="header">
+    <div class="header_inn">
+        <div class="top_navigation">
+            <ul class="left">
+                <li><a href="#">Messages</a><span class="new_event">2</span></li>
+                <li><a href="#">Signals</a><span class="new_event">45</span></li>
+                <li><a href="#">Soulmates</a><span class="new_event">167</span></li>
+            </ul>
+            <ul class="right">
+                <li class="coints">1450 Coins <a href="#">Add</a></li>
+                <li class="profile"><a href="#">Profile </a></li>
+                <li class="account"><a href="#">Account Settings</a></li>
+            </ul>
+            <div class="std__clear"></div>
+        </div>
+        <div class="bot_navigation">
+            <a href="#"><img src="../img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>
+            <ul class="main_menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Matches</a></li>
+                <li><a href="#">TOP-100</a></li>
+                <li><a href="#">Apps and Games</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+            <div class="clr2"></div>
+        </div>
+    </div>
+</div>
+<!-- КОНЕЦ шаблонной шапки -->
+
+
+<div class="content">
+<div class="srch">
+
+    <div class="srch__side"><!-- начало сайдбара -->
+
+        <div class="srch__searchBlock">
+
+            <!-- Полная  форма -->
+            <div class="srch__searchBlock_fullForm">
+                <div class="srch__searchBlock_item">
+                    <div class="label">
+                        You're looking for...
+                    </div>
+
+                    <div class="field">
+                        <select class="sSelect">
+                            <option value="">Woman</option>
+                            <option value="">Man</option>
+                            <option value="">Company</option>
+                        </select>
+                    </div>
+                </div><!-- /.srch__searchBlock_item -->
+
+                <div class="srch__searchBlock_item">
+                    <div class="label">
+                        Interested in:
+                    </div>
+
+                    <div class="field">
+                        <select class="sSelect">
+                            <option value="">Anything</option>
+                            <option value="">Man</option>
+                            <option value="">Company</option>
+                        </select>
+                    </div>
+                </div><!-- /.srch__searchBlock_item -->
+
+                <div class="srch__searchBlock_item">
+                    <div class="label">
+                        Age:
+                    </div>
+
+                    <div class="field">
+                        <div class="firstField">
+                            <select class="sSelect">
+                                <option value="">From</option>
+                                <option value="">man</option>
+                                <option value="">company</option>
+                            </select>
+                        </div><!-- /.firstField -->
+
+                        <div class="secondField">
+                            <select class="sSelect">
+                                <option value="">To</option>
+                                <option value="">man</option>
+                                <option value="">company</option>
+                            </select>
+                        </div><!-- /.secondField -->
+                        <div class="clr2"></div>
+                    </div><!-- /. field -->
+                </div><!-- /.srch__searchBlock_item -->
+
+                <div class="srch__searchBlock_item">
+                    <div class="label">
+                        Location:
+                    </div>
+
+                    <div class="field">
+                       <label><input type="radio" id="radioZip" name="location" value="1"/> <span class="radioLabel">ZIP</span> </label>
+                       <label><input type="radio" id="radioCity" name="location" value="2" checked/> <span class="radioLabel">City</span> </label>
+                    </div>
+                </div><!-- /.srch__searchBlock_item -->
+
+                <!-- demo script -->
+                <script>
+                    $(document).ready(function(){
+
+                        $("#radioZip").change(function(){
+
+                                if ($(this).attr("checked")){
+                                    $(".srch__searchBlock_city").hide();
+                                    $(".srch__searchBlock_zip").show();
+                                }
+
+
+
+                        });
+                        $("#radioCity").change(function(){
+
+                            if ($(this).attr("checked")){
+                                $(".srch__searchBlock_city").show();
+                                $(".srch__searchBlock_zip").hide();
+                            }
+                        });
+                    });
+                </script>
+                <div style="display: block;" class="srch__searchBlock_city">
+                    <div class="srch__searchBlock_item">
+                        <div class="label">
+                            Country:
+                        </div>
+
+                        <div class="field">
+                            <select class="sSelect">
+                                <option value="">Russia</option>
+                                <option value="">man</option>
+                                <option value="">company</option>
+                            </select>
+                        </div>
+                    </div><!-- /.srch__searchBlock_item -->
+
+                    <div class="srch__searchBlock_item">
+                        <div class="label">
+                            Region:
+                        </div>
+
+                        <div class="field">
+                            <select class="sSelect">
+                                <option value="">Leningradkaya oblast</option>
+                                <option value="">man</option>
+                                <option value="">company</option>
+                            </select>
+                        </div>
+                    </div><!-- /.srch__searchBlock_item -->
+
+                    <div class="srch__searchBlock_item">
+                        <div class="label">
+                            City:
+                        </div>
+
+                        <div class="field">
+                            <select class="sSelect">
+                                <option value="">Saint Petersburg</option>
+                                <option value="">man</option>
+                                <option value="">company</option>
+                            </select>
+                        </div>
+                    </div><!-- /.srch__searchBlock_item -->
+
+                    <div class="srch__searchBlock_item">
+                        <div class="label">
+                           Radius:
+                        </div>
+
+                        <div class="field">
+                            <div class="location_field small">
+                                <div class="progressbar" style="border:none; background-color: none;">
+                                    <div class="progressbar_left"></div>
+                                    <div class="progressbar_right"></div>
+                                    <div class="progress-control">
+                                        <div class="progress-control-point" style="width:33.3333333333%;" pointnum="0" val="15 miles">
+                                            <span class="progress-control-point-city">30 miles</span>
+                                        </div>
+
+                                        <div class="progress-control-point" style="width:33.3333333333%;" pointnum="1" val="30 miles">
+                                            <span class="progress-control-point-city">60 miles</span>
+                                        </div>
+
+                                        <div class="progress-control-point" style="width:33.3333333333%;" pointnum="2" val="60 miles">
+                                        </div>
+
+                                    </div>
+                                    <div class="progress-line" style="width:96%;"><!-- Крайнее правое положение, крайнее левое = 0% -->
+                                        <div class="progress-line-button ui-draggable">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sliderUnicId b-lookBox__progressbarLabel">
+                                    <div class="b-lookBox__locationSelect">
+                                        <span class="location">15 miles</span>
+                                    </div>
+                                    <div class="b-lookBox__locationEnd"><span>120 miles</span></div>
+                                </div>
+
+                            </div><!-- /.location_field small -->
+                            <div class="std__clear"></div>
+                        </div><!-- /.field -->
+                    </div><!-- /.srch__searchBlock_item -->
+
+                </div><!-- /.srch__searchBlock_city -->
+
+                <div class="srch__searchBlock_zip std__hidden">
+                    <div class="srch__searchBlock_item">
+
+                        <div class="field">
+
+                           <input type="text"  class="firstFieldZip">
+
+                            <div class="centertFieldZip">
+                                miles of
+                            </div>
+
+                            <input type="text" placeholder="ZIP code" class="secondFieldZip">
+
+                            <div class="clr2"></div>
+                        </div><!-- /. field -->
+                    </div><!-- /.srch__searchBlock_item -->
+                </div><!-- /.srch__searchBlock_zip -->
+
+                <div class="srch__searchBlock_item srch__searchBlock_item_submit">
+                    <a class="btn-s-1 srch__searchBlock_buttonSubmit">
+                        <span>Search</span>
+                    </a>
+                </div>
+
+            </div><!-- / .srch__searchBlock_fullForm -->
+
+            <!-- Краткая форма -->
+            <div class="srch__searchBlock_shortForm">
+
+                <div class="srch__searchBlock_item">
+                    <div class="label">
+                        You're looking for...
+                    </div>
+
+                    <div class="field">
+                        <a href="#">Woman</a>
+                    </div>
+                </div><!-- /.srch__searchBlock_item -->
+
+                <div class="srch__searchBlock_item">
+                    <div class="label">
+                        Interested in:
+                    </div>
+
+                    <div class="field">
+                        <a href="#">Virtual talking</a>
+                    </div>
+                </div><!-- /.srch__searchBlock_item -->
+
+                <div class="srch__searchBlock_item">
+                    <div class="label">
+                        Age:
+                    </div>
+
+                    <div class="field">
+                        <a href="#">45 - 50</a>
+                    </div><!-- /. field -->
+                </div><!-- /.srch__searchBlock_item -->
+
+                <div class="srch__searchBlock_item">
+                    <div class="label">
+                        From:
+                    </div>
+
+                    <div class="field">
+                        <a href="#">Russia, Saint Petersburg</a>
+                    </div>
+                </div><!-- /.srch__searchBlock_item -->
+
+                <!-- Стрелка перехода к полной форме -->
+
+
+            </div><!-- /.srch__searchBlock_shortForm -->
+
+            <a class="srch__searchBlock_getFullForm srch__searchBlock_getShort _showFullForm" href="#"><i></i></a>
+        </div><!-- /. srch__searchBlock -->
+
+
+        <!-- к открытому списку добавляется класс .open-->
+        <div class="srch__searchBlock-criteria">
+            <h2 class="b-std__header std__fs-smallH">Concretize your criteria</h2>
+            <a class="srch__searchBlock-criteria_refresh" href="#"></a>
+            <!-- Демо скрипт раскрытия пунктов-->
+            <script>
+                $(document).ready(function(){
+                    $(".srch__list_item_label").each(function(){
+                        $(this).click(function(){
+                                $(this).closest('.srch__list_item').toggleClass('open');
+                        });
+                    });
+                });
+            </script>
+
+            <div class="srch__list criteriaList">
+                <div class="srch__list_item">
+
+                    <a href="#" class="srch__list_item_label">
+                        <em></em>body type
+                    </a><!-- /.srch__list_item_label -->
+
+                    <div class="srch__list_item_inner">
+aaa
+                    </div><!-- /.srch__list_item_inner -->
+
+                </div><!-- /.srch__list_item -->
+
+                <div class="srch__list_item open">
+
+                    <a href="#" class="srch__list_item_label">
+                        <em></em>height
+                    </a><!-- /.srch__list_item_label -->
+
+                    <div class="srch__list_item_inner">
+
+                        <div class="srch__list_item_inner_selectItem">
+                            <div class="label">From:</div>
+                            <div class="field">
+                                <select class="sSelect">
+                                    <option>4' 5"</option>
+                                    <option>4' 6"</option>
+                                    <option>4' 7"</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="srch__list_item_inner_selectItem">
+                            <div class="label">To:</div>
+                            <div class="field">
+                                <select class="sSelect">
+                                    <option>4' 5"</option>
+                                    <option>4' 6"</option>
+                                    <option>4' 7"</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <a class="srch__list_item_inner_item_param" href="#">centimetres</a>
+
+                    </div><!-- /.srch__list_item_inner -->
+
+                </div><!-- /.srch__list_item -->
+
+                <div class="srch__list_item open">
+
+                    <a href="#" class="srch__list_item_label">
+                        <em></em>eye color
+                    </a><!-- /.srch__list_item_label -->
+
+                    <!--  Демо-скрипт выделения фона чекбоксов -->
+                    <script>
+                        $(document).ready(function(){
+
+                            $(".srch__list_item_inner_chkBoxItem input[type=checkbox]").change(function(){
+                                $(this).closest(".srch__list_item_inner_chkBoxItem").toggleClass("checked");
+                            });
+
+                        });
+                    </script>
+                    <div class="srch__list_item_inner">
+                        <div class="srch__list_item_inner_chkBoxItem">
+                            <label><input type="checkbox"> <span class="label">Black</span> <span class="count">(4345)</span> </label>
+                        </div>
+
+                        <div class="srch__list_item_inner_chkBoxItem checked">
+                            <label><input type="checkbox" checked> <span class="label">Black</span> <span class="count">(4345)</span> </label>
+                        </div>
+
+                        <div class="srch__list_item_inner_chkBoxItem checked">
+                            <label><input type="checkbox" checked> <span class="label">Black</span> <span class="count">(4345)</span> </label>
+                        </div>
+
+                        <div class="srch__list_item_inner_chkBoxItem">
+                            <label><input type="checkbox"> <span class="label">Black</span> <span class="count">(4345)</span> </label>
+                        </div>
+
+                    </div><!-- /.srch__list_item_inner -->
+
+                </div><!-- /.srch__list_item -->
+
+                <div class="srch__list_item">
+
+                    <a href="#" class="srch__list_item_label">
+                        <em></em>hair color
+                    </a><!-- /.srch__list_item_label -->
+
+                    <div class="srch__list_item_inner">
+ddd
+                    </div><!-- /.srch__list_item_inner -->
+
+                </div><!-- /.srch__list_item -->
+
+                <div class="srch__list_item">
+
+                    <a href="#" class="srch__list_item_label">
+                        <em></em>education
+                    </a><!-- /.srch__list_item_label -->
+
+                    <div class="srch__list_item_inner">
+eee
+                    </div><!-- /.srch__list_item_inner -->
+
+                </div><!-- /.srch__list_item -->
+
+                <div class="srch__list_item">
+
+                    <a href="#" class="srch__list_item_label">
+                        <em></em>occupation
+                    </a><!-- /.srch__list_item_label -->
+
+                    <div class="srch__list_item_inner">
+                        eee
+                    </div><!-- /.srch__list_item_inner -->
+
+                </div><!-- /.srch__list_item -->
+
+                <div class="srch__list_item">
+
+                    <a href="#" class="srch__list_item_label">
+                        <em></em>ethnicity
+                    </a><!-- /.srch__list_item_label -->
+
+                    <div class="srch__list_item_inner">
+                        eee
+                    </div><!-- /.srch__list_item_inner -->
+
+                </div><!-- /.srch__list_item -->
+
+                <div class="srch__list_item">
+
+                    <a href="#" class="srch__list_item_label">
+                        <em></em>religion
+                    </a><!-- /.srch__list_item_label -->
+
+                    <div class="srch__list_item_inner">
+                        eee
+                    </div><!-- /.srch__list_item_inner -->
+
+                </div><!-- /.srch__list_item -->
+
+                <div class="srch__list_item">
+
+                    <a href="#" class="srch__list_item_label">
+                        <em></em>relationship status
+                    </a><!-- /.srch__list_item_label -->
+
+                    <div class="srch__list_item_inner">
+                        eee
+                    </div><!-- /.srch__list_item_inner -->
+
+                </div><!-- /.srch__list_item -->
+
+                <div class="srch__list_item">
+
+                    <a href="#" class="srch__list_item_label">
+                        <em></em>kids
+                    </a><!-- /.srch__list_item_label -->
+
+                    <div class="srch__list_item_inner">
+                        eee
+                    </div><!-- /.srch__list_item_inner -->
+
+                </div><!-- /.srch__list_item -->
+
+                <div class="srch__list_item">
+
+                    <a href="#" class="srch__list_item_label">
+                        <em></em>smokes
+                    </a><!-- /.srch__list_item_label -->
+
+                    <div class="srch__list_item_inner">
+                        eee
+                    </div><!-- /.srch__list_item_inner -->
+
+                </div><!-- /.srch__list_item -->
+
+                <div class="srch__list_item open">
+
+                    <a href="#" class="srch__list_item_label">
+                        <em></em>language
+                    </a><!-- /.srch__list_item_label -->
+
+                    <div class="srch__list_item_inner">
+
+                        <div class="srch__list_item_inner_chkBoxItem">
+                            <label><input type="checkbox"> <span class="label">Black</span> <span class="count">(4345)</span> </label>
+                        </div>
+
+                        <div class="srch__list_item_inner_chkBoxItem">
+                            <label><input type="checkbox"> <span class="label">Black</span> <span class="count">(4345)</span> </label>
+                        </div>
+
+                        <div class="srch__list_item_inner_chkBoxItem">
+                            <label><input type="checkbox"> <span class="label">Black</span> <span class="count">(4345)</span> </label>
+                        </div>
+
+                        <div class="srch__list_item_inner_chkBoxItem">
+                            <input type="checkbox">
+                                <div class="chkSelect">
+                                    <select class="sSelect">
+                                        <option value="">Select</option>
+                                        <option value="">1</option>
+                                        <option value="">2</option>
+                                    </select>
+                                </div>
+                        </div>
+                    </div><!-- /.srch__list_item_inner -->
+
+                </div><!-- /.srch__list_item -->
+
+            </div><!-- /.criteriaList -->
+
+
+        </div><!-- /. srch__searchBlock-criteria -->
+
+    </div><!-- /.srch__side-->
+    <!-- / конец Сайдбара-->
+
+    <div class="srch__main">
+
+        <!--  Основной контент -->
+        <div class="srch__main_content">
+            <h1 class="b-std__header std__fs-mainH srch__main_header">Search results</h1>
+
+            <div class="srch__searchParams">
+
+                <ul class="srch__searchParams_show">
+                    <li class="srch__searchParams_show_item">
+                        <a class="srch__searchParams_show_item_link active" href="#">
+                            People (45)
+                        </a>
+                    </li>
+                    <li class="srch__searchParams_show_item">
+                        <a class="srch__searchParams_show_item_link" href="#">
+                            Dates (20)
+                        </a>
+                    </li>
+                </ul><!-- /.srch__searchParams_show -->
+
+                <div class="srch__searchParams_sort">
+
+                    <span class="srch__searchParams_label">Sort by</span>
+
+                    <div class="srch__searchParams_sort_select">
+                        <select class="sSelect">
+                            <option value="">Select</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                        </select>
+
+                    </div><!-- /.srch__searchParams_sort_select -->
+
+                </div><!-- /.srch__searchParams_sort -->
+                <div class="clr2"></div>
+            </div><!-- / .srch__searchParams -->
+
+            <div class="srch__userList">
+
+                <div class="srch__userList_row">
+                    <div class="srch__userList_user firstItem">
+
+                        <div class="srch__userList_userPic b-user__photoFrame">
+
+                            <img class="srch__userList_userPic_photo b-user__photoFrame_photo" src="../img/user-66x86.jpg" alt="">
+
+                            <span class="b-user__imgOpaLayer srch__userList_userPic_opaLayer">
+
+                               <a class="user__options_item srchFirst" href="#"><em class="favo added"></em></a>
+                               <a class="user__options_item" href="#"><em class="msg"></em></a>
+                               <a class="user__options_item srchLast" href="#"><em class="wink"></em></a>
+
+                            </span><!-- /.srch__userList_userPic_opaLayer -->
+
+                            <span class="user__vipIcon"></span>
+
+                        </div><!-- /.wid__matches_user_userPic-->
+
+                        <a class="srch__userList_user_hideUser" href="#">hide user</a>
+
+                        <div class="b-user__person srch__userList_user_person">
+                            <a href="#">Natasha</a>, 38
+                        </div>
+
+                        <div class="user__location srch__userList_user_location">
+                            Jacksonville,<br> United States
+                        </div>
+
+                        <ul class="user__options srch__userList_user_options">
+                            <li class="user__options_item online"><em></em>online</li>
+                            <li class="user__options_item"><a href="#"><em class="photo"></em>7 photos</a> </li>
+
+                        </ul>
+
+
+                    </div><!-- /.srch__userList_user -->
+
+                    <div class="srch__userList_user">
+
+                        <div class="srch__userList_userPic b-user__photoFrame">
+
+                            <img class="srch__userList_userPic_photo b-user__photoFrame_photo" src="../img/user-66x86.jpg" alt="">
+
+                            <span class="b-user__imgOpaLayer srch__userList_userPic_opaLayer">
+
+                               <a class="user__options_item srchFirst" href="#"><em class="favo"></em></a>
+                               <a class="user__options_item" href="#"><em class="msg"></em></a>
+                               <a class="user__options_item srchLast" href="#"><em class="wink"></em></a>
+
+                            </span><!-- /.srch__userList_userPic_opaLayer -->
+
+
+                        </div><!-- /.wid__matches_user_userPic-->
+
+                        <a class="srch__userList_user_hideUser" href="#">hide user</a>
+                        <div class="b-user__person srch__userList_user_person">
+                            <a href="#">Natasha</a>, 38
+                        </div>
+
+                        <div class="user__location srch__userList_user_location">
+                            Jacksonville, <br>United States
+                        </div>
+
+                        <ul class="user__options srch__userList_user_options">
+                            <li class="user__options_item offline"><em></em>offline</li>
+                            <li class="user__options_item"><a href="#"><em class="photo"></em>7 photos</a> </li>
+                        </ul>
+
+
+                    </div><!-- /.srch__userList_user -->
+
+                    <div class="srch__userList_user lastItem">
+
+                        <div class="srch__userList_userPic b-user__photoFrame">
+
+                            <img class="srch__userList_userPic_photo b-user__photoFrame_photo" src="../img/user-66x86.jpg" alt="">
+
+                       <span class="b-user__imgOpaLayer srch__userList_userPic_opaLayer">
+
+                               <a class="user__options_item srchFirst" href="#"><em class="favo"></em></a>
+                               <a class="user__options_item" href="#"><em class="msg"></em></a>
+                               <a class="user__options_item srchLast" href="#"><em class="wink"></em></a>
+
+                            </span><!-- /.srch__userList_userPic_opaLayer -->
+                        </div><!-- /.wid__matches_user_userPic-->
+
+                        <a class="srch__userList_user_hideUser" href="#">hide user</a>
+
+                        <div class="b-user__person srch__userList_user_person">
+                            <a href="#">Natasha</a>, 38
+                        </div>
+
+                        <div class="user__location srch__userList_user_location">
+                            Jacksonville,<br> United States
+                        </div>
+
+                        <ul class="user__options srch__userList_user_options">
+                            <li class="user__options_item online"><em></em>online</li>
+                            <li class="user__options_item"><a href="#"><em class="photo"></em>7 photos</a> </li>
+                        </ul>
+
+
+                    </div><!-- /.srch__userList_user -->
+
+                </div><!-- /.srch__userList_row -->
+
+                <div class="srch__userList_row">
+                    <div class="srch__userList_user firstItem">
+
+                        <div class="srch__userList_userPic b-user__photoFrame">
+
+                            <img class="srch__userList_userPic_photo b-user__photoFrame_photo" src="../img/user-66x86.jpg" alt="">
+
+                            <span class="b-user__imgOpaLayer srch__userList_userPic_opaLayer">
+
+                               <a class="user__options_item srchFirst" href="#"><em class="favo"></em></a>
+                               <a class="user__options_item" href="#"><em class="msg"></em></a>
+                               <a class="user__options_item srchLast" href="#"><em class="wink"></em></a>
+
+                            </span><!-- /.srch__userList_userPic_opaLayer -->
+                        </div><!-- /.wid__matches_user_userPic-->
+
+                        <a class="srch__userList_user_hideUser" href="#">hide user</a>
+
+                        <div class="b-user__person srch__userList_user_person">
+                            <a href="#">Natasha</a>, 38
+                        </div>
+
+                        <div class="user__location srch__userList_user_location">
+                            Jacksonville,<br> United States
+                        </div>
+
+                        <ul class="user__options srch__userList_user_options">
+                            <li class="user__options_item online"><em></em>online</li>
+                            <li class="user__options_item"><a href="#"><em class="photo"></em>7 photos</a> </li>
+
+                        </ul>
+
+
+                    </div><!-- /.srch__userList_user -->
+
+                    <div class="srch__userList_user">
+
+                        <div class="srch__userList_userPic b-user__photoFrame">
+
+                            <img class="srch__userList_userPic_photo b-user__photoFrame_photo" src="../img/user-66x86.jpg" alt="">
+
+                            <span class="b-user__imgOpaLayer srch__userList_userPic_opaLayer">
+
+                               <a class="user__options_item srchFirst" href="#"><em class="favo"></em></a>
+                               <a class="user__options_item" href="#"><em class="msg"></em></a>
+                               <a class="user__options_item srchLast" href="#"><em class="wink"></em></a>
+
+                            </span><!-- /.srch__userList_userPic_opaLayer -->
+                        </div><!-- /.wid__matches_user_userPic-->
+
+                        <a class="srch__userList_user_hideUser" href="#">hide user</a>
+                        <div class="b-user__person srch__userList_user_person">
+                            <a href="#">Natasha</a>, 38
+                        </div>
+
+                        <div class="user__location srch__userList_user_location">
+                            Jacksonville, <br>United States
+                        </div>
+
+                        <ul class="user__options srch__userList_user_options">
+                            <li class="user__options_item offline"><em></em>offline</li>
+                            <li class="user__options_item"><a href="#"><em class="photo"></em>7 photos</a> </li>
+                        </ul>
+
+
+                    </div><!-- /.srch__userList_user -->
+
+                    <div class="srch__userList_user lastItem">
+
+                        <div class="srch__userList_userPic b-user__photoFrame">
+
+                            <img class="srch__userList_userPic_photo b-user__photoFrame_photo" src="../img/user-66x86.jpg" alt="">
+
+                       <span class="b-user__imgOpaLayer srch__userList_userPic_opaLayer">
+
+                               <a class="user__options_item srchFirst" href="#"><em class="favo"></em></a>
+                               <a class="user__options_item" href="#"><em class="msg"></em></a>
+                               <a class="user__options_item srchLast" href="#"><em class="wink"></em></a>
+
+                            </span><!-- /.srch__userList_userPic_opaLayer -->
+                        </div><!-- /.wid__matches_user_userPic-->
+
+                        <a class="srch__userList_user_hideUser" href="#">hide user</a>
+
+                        <div class="b-user__person srch__userList_user_person">
+                            <a href="#">Natasha</a>, 38
+                        </div>
+
+                        <div class="user__location srch__userList_user_location">
+                            Jacksonville,<br> United States
+                        </div>
+
+                        <ul class="user__options srch__userList_user_options">
+                            <li class="user__options_item online"><em></em>online</li>
+                            <li class="user__options_item"><a href="#"><em class="photo"></em>7 photos</a> </li>
+                        </ul>
+
+
+                    </div><!-- /.srch__userList_user -->
+
+                </div><!-- /.srch__userList_row -->
+
+                <div class="srch__userList_row">
+                    <div class="srch__userList_user firstItem">
+
+                        <div class="srch__userList_userPic b-user__photoFrame">
+
+                            <img class="srch__userList_userPic_photo b-user__photoFrame_photo" src="../img/user-66x86.jpg" alt="">
+
+                            <span class="b-user__imgOpaLayer srch__userList_userPic_opaLayer">
+
+                               <a class="user__options_item srchFirst" href="#"><em class="favo"></em></a>
+                               <a class="user__options_item" href="#"><em class="msg"></em></a>
+                               <a class="user__options_item srchLast" href="#"><em class="wink"></em></a>
+
+                            </span><!-- /.srch__userList_userPic_opaLayer -->
+                        </div><!-- /.wid__matches_user_userPic-->
+
+                        <a class="srch__userList_user_hideUser" href="#">hide user</a>
+
+                        <div class="b-user__person srch__userList_user_person">
+                            <a href="#">Natasha</a>, 38
+                        </div>
+
+                        <div class="user__location srch__userList_user_location">
+                            Jacksonville,<br> United States
+                        </div>
+
+                        <ul class="user__options srch__userList_user_options">
+                            <li class="user__options_item online"><em></em>online</li>
+                            <li class="user__options_item"><a href="#"><em class="photo"></em>7 photos</a> </li>
+
+                        </ul>
+
+
+                    </div><!-- /.srch__userList_user -->
+
+                    <div class="srch__userList_user">
+
+                        <div class="srch__userList_userPic b-user__photoFrame">
+
+                            <img class="srch__userList_userPic_photo b-user__photoFrame_photo" src="../img/user-66x86.jpg" alt="">
+
+                            <span class="b-user__imgOpaLayer srch__userList_userPic_opaLayer">
+
+                               <a class="user__options_item srchFirst" href="#"><em class="favo"></em></a>
+                               <a class="user__options_item" href="#"><em class="msg"></em></a>
+                               <a class="user__options_item srchLast" href="#"><em class="wink"></em></a>
+
+                            </span><!-- /.srch__userList_userPic_opaLayer -->
+                        </div><!-- /.wid__matches_user_userPic-->
+
+                        <a class="srch__userList_user_hideUser" href="#">hide user</a>
+                        <div class="b-user__person srch__userList_user_person">
+                            <a href="#">Natasha</a>, 38
+                        </div>
+
+                        <div class="user__location srch__userList_user_location">
+                            Jacksonville, <br>United States
+                        </div>
+
+                        <ul class="user__options srch__userList_user_options">
+                            <li class="user__options_item offline"><em></em>offline</li>
+                            <li class="user__options_item"><a href="#"><em class="photo"></em>7 photos</a> </li>
+                        </ul>
+
+
+                    </div><!-- /.srch__userList_user -->
+
+                    <div class="srch__userList_user lastItem">
+
+                        <div class="srch__userList_userPic b-user__photoFrame">
+
+                            <img class="srch__userList_userPic_photo b-user__photoFrame_photo" src="../img/user-66x86.jpg" alt="">
+
+                       <span class="b-user__imgOpaLayer srch__userList_userPic_opaLayer">
+
+                               <a class="user__options_item srchFirst" href="#"><em class="favo"></em></a>
+                               <a class="user__options_item" href="#"><em class="msg"></em></a>
+                               <a class="user__options_item srchLast" href="#"><em class="wink"></em></a>
+
+                            </span><!-- /.srch__userList_userPic_opaLayer -->
+                        </div><!-- /.wid__matches_user_userPic-->
+
+                        <a class="srch__userList_user_hideUser" href="#">hide user</a>
+
+                        <div class="b-user__person srch__userList_user_person">
+                            <a href="#">Natasha</a>, 38
+                        </div>
+
+                        <div class="user__location srch__userList_user_location">
+                            Jacksonville,<br> United States
+                        </div>
+
+                        <ul class="user__options srch__userList_user_options">
+                            <li class="user__options_item online"><em></em>online</li>
+                            <li class="user__options_item"><a href="#"><em class="photo"></em>7 photos</a> </li>
+                        </ul>
+
+
+                    </div><!-- /.srch__userList_user -->
+
+                </div><!-- /.srch__userList_row -->
+
+                <div class="srch__userList_row">
+                    <div class="srch__userList_user firstItem">
+
+                        <div class="srch__userList_userPic b-user__photoFrame">
+
+                            <img class="srch__userList_userPic_photo b-user__photoFrame_photo" src="../img/user-66x86.jpg" alt="">
+
+                            <span class="b-user__imgOpaLayer srch__userList_userPic_opaLayer">
+
+                               <a class="user__options_item srchFirst" href="#"><em class="favo"></em></a>
+                               <a class="user__options_item" href="#"><em class="msg"></em></a>
+                               <a class="user__options_item srchLast" href="#"><em class="wink"></em></a>
+
+                            </span><!-- /.srch__userList_userPic_opaLayer -->
+                        </div><!-- /.wid__matches_user_userPic-->
+
+                        <a class="srch__userList_user_hideUser" href="#">hide user</a>
+
+                        <div class="b-user__person srch__userList_user_person">
+                            <a href="#">Natasha</a>, 38
+                        </div>
+
+                        <div class="user__location srch__userList_user_location">
+                            Jacksonville,<br> United States
+                        </div>
+
+                        <ul class="user__options srch__userList_user_options">
+                            <li class="user__options_item online"><em></em>online</li>
+                            <li class="user__options_item"><a href="#"><em class="photo"></em>7 photos</a> </li>
+
+                        </ul>
+
+
+                    </div><!-- /.srch__userList_user -->
+
+                    <div class="srch__userList_user">
+
+                        <div class="srch__userList_userPic b-user__photoFrame">
+
+                            <img class="srch__userList_userPic_photo b-user__photoFrame_photo" src="../img/user-66x86.jpg" alt="">
+
+                            <span class="b-user__imgOpaLayer srch__userList_userPic_opaLayer">
+
+                               <a class="user__options_item srchFirst" href="#"><em class="favo"></em></a>
+                               <a class="user__options_item" href="#"><em class="msg"></em></a>
+                               <a class="user__options_item srchLast" href="#"><em class="wink"></em></a>
+
+                            </span><!-- /.srch__userList_userPic_opaLayer -->
+                        </div><!-- /.wid__matches_user_userPic-->
+
+                        <a class="srch__userList_user_hideUser" href="#">hide user</a>
+                        <div class="b-user__person srch__userList_user_person">
+                            <a href="#">Natasha</a>, 38
+                        </div>
+
+                        <div class="user__location srch__userList_user_location">
+                            Jacksonville, <br>United States
+                        </div>
+
+                        <ul class="user__options srch__userList_user_options">
+                            <li class="user__options_item offline"><em></em>offline</li>
+                            <li class="user__options_item"><a href="#"><em class="photo"></em>7 photos</a> </li>
+                        </ul>
+
+
+                    </div><!-- /.srch__userList_user -->
+
+                    <div class="srch__userList_user lastItem">
+
+                        <div class="srch__userList_userPic b-user__photoFrame">
+
+                            <img class="srch__userList_userPic_photo b-user__photoFrame_photo" src="../img/user-66x86.jpg" alt="">
+
+                       <span class="b-user__imgOpaLayer srch__userList_userPic_opaLayer">
+
+                               <a class="user__options_item srchFirst" href="#"><em class="favo"></em></a>
+                               <a class="user__options_item" href="#"><em class="msg"></em></a>
+                               <a class="user__options_item srchLast" href="#"><em class="wink"></em></a>
+
+                            </span><!-- /.srch__userList_userPic_opaLayer -->
+                        </div><!-- /.wid__matches_user_userPic-->
+
+                        <a class="srch__userList_user_hideUser" href="#">hide user</a>
+
+                        <div class="b-user__person srch__userList_user_person">
+                            <a href="#">Natasha</a>, 38
+                        </div>
+
+                        <div class="user__location srch__userList_user_location">
+                            Jacksonville,<br> United States
+                        </div>
+
+                        <ul class="user__options srch__userList_user_options">
+                            <li class="user__options_item online"><em></em>online</li>
+                            <li class="user__options_item"><a href="#"><em class="photo"></em>7 photos</a> </li>
+                        </ul>
+
+
+                    </div><!-- /.srch__userList_user -->
+
+                </div><!-- /.srch__userList_row -->
+
+                <div class="srch__userList_row">
+                    <div class="srch__userList_user firstItem">
+
+                        <div class="srch__userList_userPic b-user__photoFrame">
+
+                            <img class="srch__userList_userPic_photo b-user__photoFrame_photo" src="../img/user-66x86.jpg" alt="">
+
+                            <span class="b-user__imgOpaLayer srch__userList_userPic_opaLayer">
+
+                               <a class="user__options_item srchFirst" href="#"><em class="favo"></em></a>
+                               <a class="user__options_item" href="#"><em class="msg"></em></a>
+                               <a class="user__options_item srchLast" href="#"><em class="wink"></em></a>
+
+                            </span><!-- /.srch__userList_userPic_opaLayer -->
+                        </div><!-- /.wid__matches_user_userPic-->
+
+                        <a class="srch__userList_user_hideUser" href="#">hide user</a>
+
+                        <div class="b-user__person srch__userList_user_person">
+                            <a href="#">Natasha</a>, 38
+                        </div>
+
+                        <div class="user__location srch__userList_user_location">
+                            Jacksonville,<br> United States
+                        </div>
+
+                        <ul class="user__options srch__userList_user_options">
+                            <li class="user__options_item online"><em></em>online</li>
+                            <li class="user__options_item"><a href="#"><em class="photo"></em>7 photos</a> </li>
+
+                        </ul>
+
+
+                    </div><!-- /.srch__userList_user -->
+
+                    <div class="srch__userList_user">
+
+                        <div class="srch__userList_userPic b-user__photoFrame">
+
+                            <img class="srch__userList_userPic_photo b-user__photoFrame_photo" src="../img/user-66x86.jpg" alt="">
+
+                            <span class="b-user__imgOpaLayer srch__userList_userPic_opaLayer">
+
+                               <a class="user__options_item srchFirst" href="#"><em class="favo"></em></a>
+                               <a class="user__options_item" href="#"><em class="msg"></em></a>
+                               <a class="user__options_item srchLast" href="#"><em class="wink"></em></a>
+
+                            </span><!-- /.srch__userList_userPic_opaLayer -->
+                        </div><!-- /.wid__matches_user_userPic-->
+
+                        <a class="srch__userList_user_hideUser" href="#">hide user</a>
+                        <div class="b-user__person srch__userList_user_person">
+                            <a href="#">Natasha</a>, 38
+                        </div>
+
+                        <div class="user__location srch__userList_user_location">
+                            Jacksonville, <br>United States
+                        </div>
+
+                        <ul class="user__options srch__userList_user_options">
+                            <li class="user__options_item offline"><em></em>offline</li>
+                            <li class="user__options_item"><a href="#"><em class="photo"></em>7 photos</a> </li>
+                        </ul>
+
+
+                    </div><!-- /.srch__userList_user -->
+
+                    <div class="srch__userList_user lastItem">
+
+                        <div class="srch__userList_userPic b-user__photoFrame">
+
+                            <img class="srch__userList_userPic_photo b-user__photoFrame_photo" src="../img/user-66x86.jpg" alt="">
+
+                       <span class="b-user__imgOpaLayer srch__userList_userPic_opaLayer">
+
+                               <a class="user__options_item srchFirst" href="#"><em class="favo"></em></a>
+                               <a class="user__options_item" href="#"><em class="msg"></em></a>
+                               <a class="user__options_item srchLast" href="#"><em class="wink"></em></a>
+
+                            </span><!-- /.srch__userList_userPic_opaLayer -->
+                        </div><!-- /.wid__matches_user_userPic-->
+
+                        <a class="srch__userList_user_hideUser" href="#">hide user</a>
+
+                        <div class="b-user__person srch__userList_user_person">
+                            <a href="#">Natasha</a>, 38
+                        </div>
+
+                        <div class="user__location srch__userList_user_location">
+                            Jacksonville,<br> United States
+                        </div>
+
+                        <ul class="user__options srch__userList_user_options">
+                            <li class="user__options_item online"><em></em>online</li>
+                            <li class="user__options_item"><a href="#"><em class="photo"></em>7 photos</a> </li>
+                        </ul>
+
+
+                    </div><!-- /.srch__userList_user -->
+
+                </div><!-- /.srch__userList_row -->
+
+                <div class="srch__userList_row">
+                    <div class="srch__userList_user firstItem">
+
+                        <div class="srch__userList_userPic b-user__photoFrame">
+
+                            <img class="srch__userList_userPic_photo b-user__photoFrame_photo" src="../img/user-66x86.jpg" alt="">
+
+                            <span class="b-user__imgOpaLayer srch__userList_userPic_opaLayer">
+
+                               <a class="user__options_item srchFirst" href="#"><em class="favo"></em></a>
+                               <a class="user__options_item" href="#"><em class="msg"></em></a>
+                               <a class="user__options_item srchLast" href="#"><em class="wink"></em></a>
+
+                            </span><!-- /.srch__userList_userPic_opaLayer -->
+                        </div><!-- /.wid__matches_user_userPic-->
+
+                        <a class="srch__userList_user_hideUser" href="#">hide user</a>
+
+                        <div class="b-user__person srch__userList_user_person">
+                            <a href="#">Natasha</a>, 38
+                        </div>
+
+                        <div class="user__location srch__userList_user_location">
+                            Jacksonville,<br> United States
+                        </div>
+
+                        <ul class="user__options srch__userList_user_options">
+                            <li class="user__options_item online"><em></em>online</li>
+                            <li class="user__options_item"><a href="#"><em class="photo"></em>7 photos</a> </li>
+
+                        </ul>
+
+
+                    </div><!-- /.srch__userList_user -->
+
+                    <div class="srch__userList_user">
+
+                        <div class="srch__userList_userPic b-user__photoFrame">
+
+                            <img class="srch__userList_userPic_photo b-user__photoFrame_photo" src="../img/user-66x86.jpg" alt="">
+
+                            <span class="b-user__imgOpaLayer srch__userList_userPic_opaLayer">
+
+                               <a class="user__options_item srchFirst" href="#"><em class="favo"></em></a>
+                               <a class="user__options_item" href="#"><em class="msg"></em></a>
+                               <a class="user__options_item srchLast" href="#"><em class="wink"></em></a>
+
+                            </span><!-- /.srch__userList_userPic_opaLayer -->
+                        </div><!-- /.wid__matches_user_userPic-->
+
+                        <a class="srch__userList_user_hideUser" href="#">hide user</a>
+                        <div class="b-user__person srch__userList_user_person">
+                            <a href="#">Natasha</a>, 38
+                        </div>
+
+                        <div class="user__location srch__userList_user_location">
+                            Jacksonville, <br>United States
+                        </div>
+
+                        <ul class="user__options srch__userList_user_options">
+                            <li class="user__options_item offline"><em></em>offline</li>
+                            <li class="user__options_item"><a href="#"><em class="photo"></em>7 photos</a> </li>
+                        </ul>
+
+
+                    </div><!-- /.srch__userList_user -->
+
+                    <div class="srch__userList_user lastItem">
+
+                        <div class="srch__userList_userPic b-user__photoFrame">
+
+                            <img class="srch__userList_userPic_photo b-user__photoFrame_photo" src="../img/user-66x86.jpg" alt="">
+
+                       <span class="b-user__imgOpaLayer srch__userList_userPic_opaLayer">
+
+                               <a class="user__options_item srchFirst" href="#"><em class="favo"></em></a>
+                               <a class="user__options_item" href="#"><em class="msg"></em></a>
+                               <a class="user__options_item srchLast" href="#"><em class="wink"></em></a>
+
+                            </span><!-- /.srch__userList_userPic_opaLayer -->
+                        </div><!-- /.wid__matches_user_userPic-->
+
+                        <a class="srch__userList_user_hideUser" href="#">hide user</a>
+
+                        <div class="b-user__person srch__userList_user_person">
+                            <a href="#">Natasha</a>, 38
+                        </div>
+
+                        <div class="user__location srch__userList_user_location">
+                            Jacksonville,<br> United States
+                        </div>
+
+                        <ul class="user__options srch__userList_user_options">
+                            <li class="user__options_item online"><em></em>online</li>
+                            <li class="user__options_item"><a href="#"><em class="photo"></em>7 photos</a> </li>
+                        </ul>
+
+
+                    </div><!-- /.srch__userList_user -->
+
+                </div><!-- /.srch__userList_row -->
+
+
+            </div><!-- / .srch__userList -->
+
+            <ul class="btn__paging srch__main_content_paging">
+                <li class="btn__paging-item btn__paging-prew btn__paging-item__disabled"><a href="#">Prew</a></li>
+                <li class="btn__paging-item btn__paging-item__current btn__paging-page"><a href="#">1</a></li>
+                <li class="btn__paging-item btn__paging-page"><a href="#">2</a></li>
+                <li class="btn__paging-item btn__paging-page"><a href="#">3</a></li>
+                <li class="btn__paging-item btn__paging-next"><a href="#">Next</a></li>
+            </ul>
+
+
+        </div><!-- / .srch__main_content -->
+
+
+    </div><!-- /.srch__main-->
+
+    <div class="std__clear"></div>
+</div><!-- /. content_inn -->
+</div><!-- /.content -->
+
+<!-- НАЧАЛО шаблонного Футера -->
+<div class="footer">
+    <div class="footer_inn">
+        <ul>
+            <li><a href="/page/about">About us</a></li>
+            <li><a href="/help">FAQ</a></li>
+            <li><a href="http://blog.yangutu.com/">Our blog</a></li>
+            <li><a href="/feedback">Contact us</a></li>
+        </ul>
+        <ul>
+            <li><a href="/page/policy">Privacy</a></li>
+            <li><a href="/page/terms">Terms of use</a></li>
+        </ul>
+        <ul>
+            <li><a href="/page/scams">Scam warning</a></li>
+            <li><a href="/page/safety">Safety Tips</a></li>
+        </ul>
+        <ul>
+            <li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+            <li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+            <li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+
+        </ul>
+        <ul>
+            <li><a href="/dating/all">People Directory</a></li>
+        </ul>
+        <div class="right">
+            <font color="black">&copy; 2010-2011 Yangutu Inc. All rights reserved</font><br>
+            <span>Yangutu (swahili) - My one and only.</span>
+        </div>
+        <div class="std__clear"></div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -31,6 +31,18 @@
         stsStyle();
     </script>
 
+    <script>
+        $(document).ready(function(){
+            $("#postBlock").on('click', function(e){
+                e.stopPropagation();
+                $(this).removeClass('closed');
+            });
+            $("body").on('click', function(){
+                $("#postBlock").addClass('closed');
+            });
+        });
+    </script>
+
 </head>
 <body>
 <!-- Start of Pattern Header  for guests -->
@@ -318,7 +330,7 @@
 
         <div class="dates__mainCol">
             
-            <div class="std__layer_grey-lite dates__postBlock">
+            <div class="std__layer_grey-lite dates__postBlock closed"  id="postBlock">
 
                 <h1 class="std__header std__fs-mainH std__underline">Post a Date
                     <span class="dates__postBlock_vars">
@@ -338,7 +350,7 @@
                         <div class="dates__postBlock_field"><textarea placeholder="Describe your date idea here..."></textarea></div><!-- /.dates__postBlock_field -->
                     </div><!-- /.dates__postBlock_row -->
 
-                    <div class="dates__postBlock_row">
+                    <div class="dates__postBlock_row dates__postBlock_info">
 
                         <div class="dates__postBlock_label">
                             Category:
@@ -769,18 +781,19 @@
                 </div>
             </div><!-- /.dates__widget_popular -->
 
+            <!-- Виджет последних гостей, уже используется на сайте -->
             <div class="dates__widget_guests std__layer_grey-lite">
 
                 <h3 class="std__header std__fs-smallH std__underline">Latest guests</h3>
                 <div class="wid__userList">
 
                     <div class="wid__userList_item">
-                        <a href="http://dev8.yangutu.com/1280941137" class="user__pic">
+                        <a href="#" class="user__pic">
                             <img alt="" src="http://yangutu-s8.s3.amazonaws.com/90/9b/bc/46x46_5032455.jpg?1333264195">
                         </a>
 
                         <div class="b-user__person">
-                            <a href="http://dev8.yangutu.com/1280941137">
+                            <a href="#">
                                 Lena</a>, 32            </div><!-- /.user__person -->
 
                         <div class="user__location">
@@ -789,19 +802,19 @@
                         </div><!-- /.user__location -->
 
                         <div class="user__descript">
-                            <a href="http://dev8.yangutu.com/1280941137" target="_blank">
+                            <a href="#" target="_blank">
                                 View profile                </a>
                         </div>
 
                     </div><!-- /.wid__userList_item -->
 
                     <div class="wid__userList_item">
-                        <a href="http://dev8.yangutu.com/4192753036" class="user__pic">
+                        <a href="#" class="user__pic">
                             <img alt="" src="/photos/f7/b3/c8/46x46_5053742.jpeg">
                         </a>
 
                         <div class="b-user__person">
-                            <a href="http://dev8.yangutu.com/4192753036">
+                            <a href="#">
                                 Qwertys</a>, 41            </div><!-- /.user__person -->
 
                         <div class="user__location">
@@ -810,19 +823,19 @@
                         </div><!-- /.user__location -->
 
                         <div class="user__descript">
-                            <a href="http://dev8.yangutu.com/4192753036" target="_blank">
+                            <a href="#" target="_blank">
                                 View profile                </a>
                         </div>
 
                     </div><!-- /.wid__userList_item -->
 
                     <div class="wid__userList_item">
-                        <a href="http://dev8.yangutu.com/710857255" class="user__pic">
+                        <a href="#" class="user__pic">
                             <img alt="" src="http://yangutu-s4.s3.amazonaws.com/61/58/7b/46x46_5007007.jpeg?1330673100">
                         </a>
 
                         <div class="b-user__person">
-                            <a href="http://dev8.yangutu.com/710857255">
+                            <a href="#">
                                 Christ..</a>, 22            </div><!-- /.user__person -->
 
                         <div class="user__location">
@@ -831,19 +844,19 @@
                         </div><!-- /.user__location -->
 
                         <div class="user__descript">
-                            <a href="http://dev8.yangutu.com/710857255" target="_blank">
+                            <a href="#" target="_blank">
                                 View profile                </a>
                         </div>
 
                     </div><!-- /.wid__userList_item -->
 
                     <div class="wid__userList_item">
-                        <a href="http://dev8.yangutu.com/3082193021" class="user__pic">
+                        <a href="#" class="user__pic">
                             <img alt="" src="/photos/73/1a/e7/46x46_5053704.jpeg">
                         </a>
 
                         <div class="b-user__person">
-                            <a href="http://dev8.yangutu.com/3082193021">
+                            <a href="#">
                                 Yabgutu</a>, 83            </div><!-- /.user__person -->
 
                         <div class="user__location">
@@ -852,7 +865,7 @@
                         </div><!-- /.user__location -->
 
                         <div class="user__descript">
-                            <a href="http://dev8.yangutu.com/3082193021" target="_blank">
+                            <a href="#" target="_blank">
                                 View profile                </a>
                         </div>
 

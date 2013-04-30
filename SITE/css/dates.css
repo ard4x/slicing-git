@@ -1,8 +1,8 @@
-.dates {padding-top: 20px;}
+.dates {padding-top: 20px; padding-bottom: 40px;}
     .dates__mainCol {width: 700px; float: left;}
     .dates__sideCol {width: 220px; float: right;}
 
-        .dates__postBlock {border: 3px solid #fff; padding: 14px 17px 17px; border-radius: 4px; box-shadow: 0 1px 3px 0px #7D7D7D; margin-bottom: 23px;}
+        .dates__postBlock {border: 3px solid #fff; padding: 14px 17px 17px; border-radius: 4px; box-shadow: 0 1px 3px 0px #7D7D7D; margin-bottom: 23px; position: relative;}
             .dates__postBlock_vars {font: 14px Arial; float: right; padding-top: 7px;}
                 .dates__postBlock_vars_item {margin-left: 26px;}
                     .dates__postBlock_vars_item.dashed {text-decoration: none; border-bottom: 1px dotted #436187;}
@@ -19,11 +19,17 @@
                     .dates__postBlock_buttons {text-align: center; margin-top: 15px; padding-left: 10px;}
                         .dates__postBlock_buttons_post {width: 125px; margin-right: 20px;}
                         .dates__postBlock_buttons_cancel {font-size: 14px;}
+            #postBlock.closed .dates__postBlock_field textarea {height: 29px; overflow: hidden; resize: none;}
+            #postBlock.closed .dates__postBlock_info {display: none;}
+            #postBlock.closed .dates__postBlock_buttons {display: none;}
+            #postBlock.closed .dates__postBlock_row {margin-bottom: 0;}
+
+
     .dates .switch-blue >* {font-weight: bold!important; font-size: 18px !important;}
     .dates__datesList {}
         .dates__datesList_item {margin-bottom: 24px;}
             .dates__datesList_item_person {width: 105px; float: left;}
-                .dates__datesList_photoFrame {margin-bottom: 4px;}
+                .dates__datesList_photoFrame {margin-bottom: 8px;}
                 .dates__datesList_photo {width: 100px; height: 100px;}
                 .dates__datesList_person {font-size: 14px; text-align: left; padding-left: 2px;}
                 .dates__datesList_location {font-size: 12px; padding-left: 2px; line-height: 14px;}
@@ -33,23 +39,28 @@
                         .dates__datesList_item_message_text:before {content: ''; position: absolute; top: 38px; left: -12px; height: 0; width: 0; border: 12px solid transparent; border-left: none; border-right-color: #ccc;}
                         .dates__datesList_item_message_text:after  {content: ''; position: absolute; top: 39px; left: -10px; height: 0; width: 0; border: 11px solid transparent; border-left: none; border-right-color: #fff;}
 
-.dates__messLabel {font-weight: bold; color: #999; font-style: italic;}
+                .dates__messLabel {font-weight: bold; color: #999; font-style: italic;}
                     .dates__datesList_item_message_info {position: absolute; bottom: 0px; width: 100%; padding: 12px 15px; box-sizing: border-box; -moz-box-sizing: border-box; font-size: 12px; color: #999;}
-                        .dates__datesList_item_message_info .category {float: left; }
+                        .dates__datesList_item_message_info .category {float: left; display: none;}
+                            .dates__datesList_item:hover .dates__datesList_item_message_info .category,
+                            .dates__ideas_page .dates__datesList_item_message_info .category {display: block;}
                             .dates__datesList_item_message_info .cat_label {font-size: 11px; }
                         .dates__datesList_item_message_info .posted {float: right; font-weight: bold;}
                     .dates__datesList_item_message_buttons {line-height: 31px; padding: 10px 10px 10px 20px; background-color: #f5f5f5; overflow: hidden;}
-                        .dates__datesList_item_message_buttons .left_buttons {float: left; vertical-align: middle;}
+                        .dates__datesList_item_message_buttons .left_buttons {display: none;float: left; vertical-align: middle;}
+                            .dates__datesList_item:hover .dates__datesList_item_message_buttons .left_buttons {display: block;}
                             .dates__datesList_item_message_buttons .left_buttons a {margin-right: 30px;}
                         .dates__datesList_item_message_buttons .right_buttons {float: right; vertical-align: middle;}
                             .dates__datesList_item_message_buttons .right_buttons .button {margin-left: 10px;}
-
-.dates__widget_popular {}
-    .dates__widget_popular_pic {}
-    .dates__widget_popular_message {color: #333;}
-        .dates__widget_popular_message .dates__messLabel {display: block; font-style: normal;}
-    .dates__widget_popular_likes {background-color: #fff; border-radius: 3px; padding: 10px;}
-        .dates__widget_popular_likes_count {}
+                .dates__datesList_button {margin: 30px auto; text-align: center;}
+                    .dates__datesList_button .button {width: 200px;}
+.dates__widget_popular {padding-top: 13px; margin-bottom: 20px;}
+    .dates__widget_popular > .std__header {margin-bottom: 11px;}
+    .dates__widget_popular_pic {margin-bottom: 5px; width: 190px; height: 145px;}
+    .dates__widget_popular_message {color: #333; line-height: 14px; margin-bottom: 14px;}
+        .dates__widget_popular_message .dates__messLabel {display: block; font-style: normal; margin-bottom: 4px;}
+    .dates__widget_popular_likes {background-color: #fff; border-radius: 3px; padding: 7px 10px 10px; margin-bottom: 12px;}
+        .dates__widget_popular_likes_count {margin-bottom: 7px;}
         .dates__widget_popular_likes_pics {margin-left: -10px; overflow: hidden; }
             .dates__widget_popular_likes_pics_item {margin-left: 10px; display: block; float: left; }
                 .dates__widget_popular_likes_pics_item img {width: 50px; height: 50px; }
@@ -57,4 +68,88 @@
         .dates__widget_popular_buttons .button-like {width: 90px; float: left;}
         .dates__widget_popular_buttons .button-next {width: 90px; float: right;}
 
-.dates__widget_guests {}
+.dates .srch__userList_user {width: 218px;}
+.dates .dates__hOptions {font: 14px/14px Arial; color: #999999; margin-left: 14px;}
+.dates_matches_userList_button {text-align: center; margin-top: 30px;}
+    .dates_matches_userList_button .button {width: 210px;}
+    .dates_matches_header {margin-bottom: 10px;}
+    .dates__ideas .dates__datesList_item_message {margin-left: 0;}
+    .dates__ideas .dates__datesList_item_message_text:before {left: 30px; top: auto; bottom: -9px; border: 10px solid transparent; border-bottom: none; border-top-color: #ccc;}
+    .dates__ideas .dates__datesList_item_message_text:after {left: 31px; top: auto; bottom: -8px; border: 9px solid transparent; border-bottom: none; border-top-color: #fff;}
+    .dates__ideas .dates__datesList_item_userPics {width: 540px; overflow: hidden; float: left; font-size: 0; line-height: 0; height: 50px;}
+        .dates__ideas .dates__datesList_item_userPics_item {margin-right: 10px;}
+            .dates__ideas .dates__datesList_item_userPics_img {width: 50px; height: 50px;}
+    .dates__ideas .dates__datesList_item_userPics_count {width: 100%; clear: both; line-height: 14px; padding-top: 8px;}
+    .dates__ideas .dates__datesList_item_message_buttons {padding: 15px;}
+    .dates__ideas .right_buttons .button {width: 88px; margin-top: 8px;}
+    .dates__ideas .posted {font-weight: normal;}
+
+    /* BUBBLE */
+.dates__postBlock_bubble {display: none; overflow: visible; width: 250px; padding: 13px 15px 15px; right: -240px; top: -10px; position: absolute; border-radius: 4px; margin: 0; z-index: 10; box-shadow: 0 0 16px 2px rgba(0,0,0,0.5);}
+    .dates__postBlock_bubble:before,
+    .dates__postBlock_bubble:after {display: block; content: ''; width: 0; height: 0; border: 9px solid transparent; border-right-color: #e8eff5; border-left: none; position: absolute; top: 90px; left: -14px;}
+    .dates__postBlock_bubble:after {border-right-color: #fff; left: -9px;}
+    .dates__postBlock_bubble > .std__header {margin-bottom: 1px;}
+    .dates__postBlock_bubble_subheader {font-size: 10px; color: #999;}
+    .dates__postBlock_bubble_list {margin-top: 7px; border-top: 1px solid #ccc;}
+        .dates__postBlock_bubble_listItem {padding: 15px 0; border-bottom: 1px solid #ccc; font-size: 0; overflow: hidden;}
+            .dates__postBlock_bubble_listItem_pic {width: 75px; float: left; }
+                .dates__postBlock_bubble_listItem_pic img {width: 75px; height: 50px; }
+            .dates__postBlock_bubble_listItem_msg {margin-left: 85px; font-size: 12px; line-height: 14px; color: #333; position: relative; margin-top: -2px;}
+    .dates__postBlock_bubble_buttons {padding-top: 15px;}
+        .dates__postBlock_bubble_buttons .button-left {}
+        .dates__postBlock_bubble_buttons .button-right {float: right;}
+
+        /* POPUP */
+.dates__popup {width: 770px; padding: 12px 15px 15px;}
+    .dates__popup > .std__header {margin-bottom: 15px;}
+    .dates__popup_slider {position: relative; margin-bottom: 25px;}
+        .dates__popup_slider_container {width: 660px; position: relative; margin: 0 auto; overflow: hidden;}
+            .dates__popup_slider_list {}
+                .dates__popup_slider_item {width: 150px; padding: 5px; float: left; margin-right: 5px; cursor: pointer; line-height: 14px;}
+                .dates__popup_slider_item:hover,
+                .dates__popup_slider_item.current {background: #ecf4fb; border-radius: 4px;}
+                    .dates__popup_slider_item_img {width: 150px; margin-bottom: 13px;}
+            .dates__popup_slider_control {position: absolute; top: 48px; left: 0;}
+                .dates__popup_slider_control.controlLeft {}
+                .dates__popup_slider_control.controlRight {left: auto; right: 0;}
+    .dates__popup_button {text-align: center;}
+        .dates__popup_button .button {width: 160px;}
+
+    /* page top */
+.dates__main_top {overflow: hidden; margin-bottom: 18px;}
+    .dates__main_top > .std__header {float: left; margin-right: 30px; margin-bottom: 0;}
+    .dates__navigate {}
+        .dates__navigate_item {display: inline-block; padding: 6px 15px;}
+        .dates__navigate_item.current {background: #436187; border-radius: 4px; color: #fff !important; text-decoration: none !important;}
+
+.dates__datesList_paging {text-align: right;}
+.dates__backLink {font-size: 14px; margin-bottom: 17px;}
+.dates__datesList_userCount {float: left; font-size:  14px; color: #333;}
+    .dates__datesList_userCount a {font-weight: bold; text-decoration: none; border-bottom: 1px dotted #436187; }
+        .dates__datesList_userCount a:hover {text-decoration: none; border-bottom: none; }
+
+/* date idea page */
+.dates__ideas_page .right_buttons .button {margin-top: 1px;}
+.dates__usersList {border-top: 1px solid #ccc; margin-bottom: 30px;}
+    .dates__usersList_item {border-bottom: 1px solid #ccc; padding: 15px 0 13px; overflow: hidden;}
+        .dates__datesList_photoFrame {float: left;}
+            .dates__datesList_photo {}
+        .dates__usersList_item_content {margin-left: 115px;}
+            .dates__usersList_person {font-size: 18px; font-weight: bold; color: #333; position: relative; margin-top: -2px;}
+                .dates__usersList_location {font-size: 12px; color: #999;}
+                .dates__usersList_interests {font-size: 14px; color: #333; margin-top: 8px;}
+                    .dates__usersList_info {font-size: 12px; color: #999; overflow: hidden; padding-top: 21px;}
+                    .dates__usersList_info_btns {float: right; position: relative; margin-top: -8px;}
+                    .dates__usersList_info_btns .button {margin-left: 10px;}
+    /* idea page empty*/
+.dates__ideas_page_empty {background: #e8eff5; width: 520px; position: relative; margin: 90px auto 0; padding: 28px 20px 31px; box-sizing: border-box; -moz-box-sizing: border-box; text-align: center;}
+    .dates__ideas_page_empty:before {content: ''; display: block; position: absolute; height: 0; width: 0; top: -40px; left: 0;  border: 260px solid transparent; border-top: none; border-bottom: 40px solid #e8eff5;}
+    .dates__ideas_page_empty .std__header {margin-bottom: 20px;}
+    .dates__ideas_page_empty .button {width: 168px;}
+.srch .dates__datesList {padding-top: 20px; border-top: 1px solid #ccc;}
+
+/* PROFILE*/
+.dates__profile {background: #f5f5f5; padding: 25px 20px 20px; position: relative;}
+    .dates__profile_tabs {height: 3px; width: 100%; position: absolute; top: 0; left: 0; background: #5278a8; border-top: 1px solid #3a6298; border-bottom: 1px solid #3f5d81;}
+        .dates__profile_tabs_item {width: 252px; margin-right: 15px;}

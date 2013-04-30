@@ -13,7 +13,7 @@
 .profile__block-head .profile__info_block {margin-bottom: 10px;}
 
 .profile__block-basicInfo {margin-bottom: 30px;}
-.b-user__photoFrame {margin-bottom: 18px;}
+.profile .b-user__photoFrame {margin-bottom: 18px;}
 .profile__photoFrame_photo {width: 274px; height: 363px;}
 .profile__previews {padding: 10px 10px; font-size: 0; text-align: center;}
 .profile__previews_container {text-align: center; position: relative;}
@@ -165,16 +165,16 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 
 .profile__signals_filter {display: block; font-size: 12px; margin: -3px 0 13px;}
 .profile__signals_filter_item {vertical-align: top; display:inline-block; padding: 6px 16px 5px; position: relative; height: 27px; box-sizing: border-box; -moz-box-sizing: border-box;}
-.profile__signals_filter .haveSignal a {font-weight: bold;}
-.profile__signals_filter_item.more {width: auto; padding: 0;}
+.profile__signals_filter li.haveSignal a {font-weight: bold;}
+.profile__signals_filter_item.more {width: auto; padding: 0; margin-left: 16px;}
 .profile__signals_filter_item.active {background-color: #436187; color: #fff; padding: 6px 16px 5px; text-decoration: none; font-weight: bold; border-radius: 4px;}
 .profile__signals_filter_item.active > a {color: #fff;}
 .profile__signals_filter_item.active > a:hover {color: #fff; text-decoration: none; cursor: default;}
 
-.profile__signals_filter_more {z-index: 3; overflow: hidden; height: 27px; position: relative; top: 1px; display: inline-block; background-color: #fff; box-sizing: border-box; -moz-box-sizing: border-box;  padding-bottom: 5px; border: 1px solid #ccc; border-radius: 4px;}
+.profile__signals_filter_more {z-index: 300; overflow: hidden; height: 27px; position: relative; top: 1px; display: inline-block; background-color: #fff; box-sizing: border-box; -moz-box-sizing: border-box;  padding-bottom: 5px; border: 1px solid #ccc; border-radius: 4px;}
 .profile__signals_filter_more:hover {height: auto;}
 .profile__signals_filter_more_item {display: block; padding: 4px 14px 5px;}
-.profile__signals_filter_more_item.first {paddint-top: 5px; padding-bottom: 6px; margin-bottom: 1px;}
+.profile__signals_filter_more_item.first {paddint-top: 5px; padding-bottom: 6px; margin-bottom: 1px; padding-right: 30px;}
 .profile__signals_filter_more_item.separator {height: 1px;border-top: 1px solid #ccc; padding: 0; margin: 0 14px;}
 .profile__signals_filter_more_arrow {position: absolute; display: block; width: 0px; border: 5px solid transparent; border-top-color: #ccc; top: 11px; right: 14px; border-bottom: none;}
 .profile__signals_filter_more_item.active {}
@@ -214,9 +214,9 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 .profile__photoViewer_stat_number {color: #999; float: right;}
 
 .profile__photoViewer_message {background-color: #353535; padding: 19px 100px; border-bottom: 1px solid #9a9a9a; margin-top: 5px;}
-    .profile__photoViewer_message_title {color: #fff; margin-bottom: 6px;}
-    .profile__photoViewer_message_field {font-size: 18px; box-sizing: border-box; -moz-box-sizing: border-box; height: 41px !important; width: 510px; margin-right: 26px !important; padding: 0 12px!important; }
-    .profile__photoViewer_message_button {width: 170px; padding-left: 5px !important; padding-right: 5px !important;}
+.profile__photoViewer_message_title {color: #fff; margin-bottom: 6px;}
+.profile__photoViewer_message_field {font-size: 18px; box-sizing: border-box; -moz-box-sizing: border-box; height: 41px !important; width: 510px; margin-right: 26px !important; padding: 0 12px!important; }
+.profile__photoViewer_message_button {width: 170px; padding-left: 5px !important; padding-right: 5px !important;}
 
 .profile__photoViewer_lastVotes {margin-bottom: 15px;}
 .profile__photoViewer_lastVotes_item {overflow: hidden; margin-bottom: 10px;}
@@ -250,17 +250,17 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 .profile__photo .profile__photoViewer_carousel_list {margin-left: 61px;}
 
 .profile__photoViewer_buttons {margin-bottom: 20px;}
-    .profile__photoViewer_buttons .button {padding-left: 12px; padding-right: 12px;}
-    .profile__photoViewer_buttons .button .icon {position: relative; margin-bottom: -4px; margin-right: 4px;}
-    .profile__photoViewer_buttons_leftGroup {float: left; text-align: left;}
-    .profile__photoViewer_buttons_leftGroup .button {margin-right: 8px;}
-    .profile__photoViewer_buttons_rightGroup {float: right; text-align: right;}
-    .profile__photoViewer_buttons_rightGroup .button {margin-left: 8px;}
+.profile__photoViewer_buttons .button {padding-left: 12px; padding-right: 12px;}
+.profile__photoViewer_buttons .button .icon {position: relative; margin-bottom: -4px; margin-right: 4px;}
+.profile__photoViewer_buttons_leftGroup {float: left; text-align: left;}
+.profile__photoViewer_buttons_leftGroup .button {margin-right: 8px;}
+.profile__photoViewer_buttons_rightGroup {float: right; text-align: right;}
+.profile__photoViewer_buttons_rightGroup .button {margin-left: 8px;}
 
 /** Slider **/
 .profile__slider {width: 910px; height: 560px; position: relative;}
 .profile__slider_item { width: 910px; height: 560px; display: block; text-align: center; line-height: 560px; background: url(../img/profile/photo-viewer_bg.png) repeat; font-size: 0;}
-.profile__slider_preloader {display: none; width: 910px; height: 560px; position: absolute; top: 0; left: 0; background: 50% 40% url(../img/search/preloader.gif) no-repeat}
+.profile__slider_preloader {display: none; width: 910px; height: 560px; background: 50% 50% url(../img/profile/preload.gif) no-repeat; position: absolute; top: 0; left: 0;}
 .profile__slider_item img {max-width: 9100px; max-height: 560px; display: inline-block; vertical-align: middle;}
 .profile__slider_nav {position: absolute; top: 0; left: 0; height: 560px; width: 40px; line-height: 560px; text-align: right}
 .profile__slider_nav i {opacity: .7; vertical-align: middle; display: inline-block; height: 0; width: 0; border: 20px solid transparent; border-left: none; border-right-color: #fff;}
@@ -418,90 +418,59 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 
 /* Interests in chat */
 .profile__chat_interests {width: 530px; box-sizing: border-box; -moz-box-sizing: border-box; padding: 15px;}
-    .profile__chat_interests .std__popup_close {top: 15px; right: 15px;}
-    .profile__chat_interests .profile__interest_button {text-align: right; margin-top: 20px;}
-        .profile__chat_interests .profile__interest_button .button {width: 105px;}
-        
+.profile__chat_interests .std__popup_close {top: 15px; right: 15px;}
+.profile__chat_interests .profile__interest_button {text-align: right; margin-top: 20px;}
+.profile__chat_interests .profile__interest_button .button {width: 105px;}
+
 /* Profile Walker */
 .profile__walker {overflow: hidden; margin-bottom: 20px; font-size: 14px;}
-    .profile__walker_left {float: left;}
-    .profile__walker_right {float: right;}
-    .profile__walker_right a {margin-left: 30px;}
+.profile__walker_left {float: left;}
+.profile__walker_right {float: right;}
+.profile__walker_right a {margin-left: 30px;}
 
 /* Email frequency settings */
 .profile__settings_emailFreq {width: 660px; margin: 40px auto 100px; }
-    .profile__settings_emailFreq > .std__header {margin-bottom: 30px; padding-bottom: 8px}
-    .profile__settings_emailFreq_description {font-size: 14px; margin: 20px;}
-    .profile__settings_emailFreq_optList {margin: 30px 40px; font-size: 14px; display: block;}
-    .profile__settings_emailFreq_buttons {margin: 0 20px; font-size: 14px; padding-bottom: 20px; border-bottom: 1px solid #ccc; position: relative;}
-        .profile__settings_emailFreq_buttons .button {margin-right: 20px;}
-        .profile__settings_emailFreq_unsubscribe {display: block; position: absolute; right: 0; bottom: 15px; font-size: 14px;}
-    .profile__settings_emailFreq_popup {text-align: center; font-size: 14px;}
-    .profile__settings_emailFreq_popup_description {margin: 30px;}
+.profile__settings_emailFreq > .std__header {margin-bottom: 30px; padding-bottom: 8px}
+.profile__settings_emailFreq_description {font-size: 14px; margin: 20px 0;}
+.profile__settings_emailFreq_optList {margin: 30px 20px; font-size: 14px; display: block;}
+.profile__settings_emailFreq_buttons {margin: 0; font-size: 14px; padding-bottom: 20px; border-bottom: 1px solid #ccc; position: relative;}
+.profile__settings_emailFreq_buttons .button {margin-right: 20px;}
+.profile__settings_emailFreq_unsubscribe {display: block; position: absolute; right: 0; bottom: 15px; font-size: 14px;}
+.profile__settings_emailFreq_popup {text-align: center; font-size: 14px;}
+.profile__settings_emailFreq_popup_description {margin: 30px;}
 
-/** Settings **/
-.profile__settings {}
-    .profile__settings h1.std__header {margin-bottom: 20px;}
-    .profile__settings .profile__collLeft {width: 220px;}
-    .profile__settings .profile__info_block {margin-bottom: 12px;}
-        .profile__settings .profile__info_block > .b-std__header {padding-left: 15px;}
-        .profile__settings .profile__info_list_label {width: 161px;}
-    .profile__settings_tableHolder {padding-top: 8px;}
-        .profile__settings_tableHolder > .std__header {margin-bottom: 11px;}
-    .profile__settings_paymentTable {border-collapse: collapse; width: 100%; border: 1px solid #ccc;}
-        .profile__settings_paymentTable th {border: 1px solid #ccc; width: 215px; height: 30px; padding-left: 15px; background-color: #ccc; box-sizing: border-box; -moz-box-sizing: border-box; vertical-align: middle;}
-            .profile__settings_paymentTable th:last-child {width: auto;}
-        .profile__settings_paymentTable td {border-bottom: 1px solid #ccc; height: 42px; padding-left: 15px; vertical-align: middle;}
-        .profile__settings_cardChange {margin-left: 65px;}
-    .profile__settings_cancelLink {margin-top: 28px; float: right;}
+/* Profile Y */
+.profile__y {margin-top: 20px;}
+.profile__y .profile__photoFrame_photo {width: 274px; height: 274px;}
+.profile__y .profile__info_city,
+.profile__y .profile__info_seeking {padding-left: 0;}
+.profile__guestMsg {padding: 20px; border-right: 4px; background: #e8eff5; text-align: center; font-size: 18px; font-weight: bold; color: #333; margin-bottom: 27px;}
+.profile__y_newUsers {}
+.profile__y_newUsers .std__header {margin-bottom: 20px;}
+.profile__y_newUsers_list { width: 970px; margin-left: -20px; overflow: hidden;}
+.profile__y_newUsers_list_item {width: 222px; margin-left: 20px; float: left; overflow: hidden; margin-bottom: 18px;}
+.profile__y_newUsers_list_item .b-user__photoFrame {float: left; margin-bottom: 4px;}
+.profile__y_newUsers_list_item .b-user__photoFrame_photo {width: 100px; height: 100px;}
+.profile__y_newUsers_list_item_info {margin-left: 115px;}
+.profile__y_newUsers_list_item_info .b-user__person {text-align: left; font-size: 16px;}
+.profile__y_newUsers_list_item_info .user__location {font-size: 11px;}
+.profile .profile__userName {margin: 5px 0 9px;}
+.profile .profile__info_top_info {margin-bottom: 22px;}
+.profile .profile__block-basicInfo {margin-bottom: 8px;}
 
-.profile__settings_nav {padding: 13px 15px 7px;}
-    .profile__settings_menu_item {margin-bottom: 8px;}
-.profile__settings_no-pay {font-style: italic; color: #999; padding: 0 0 10px 5px;}
-.profile__settings_tableHolder .profile__settings_no-pay {padding: 8px 0 0; border-top: 1px solid #ccc;}
-.profile__settings .upgrade-button {margin-left: 80px; }
-.profile__settings .profile__info_list_label {vertical-align: middle; }
-
-/* Invoices popups */
-.profile__settings_invoice {padding: 47px 15px 15px; width: 770px !important;}
-    .profile__settings_invoice_header {background-color: #ecf4fb; position: absolute; top: 0; left: 0; width: 100%; height: 47px; box-sizing: border-box; -moz-box-sizing: border-box; padding: 12px 14px;}
-    .profile__settings_invoice_print-button {width: 105px; margin: 15px 0 0 0;}
-    .profile__settings_invoice_body {padding-top: 19px; font-size: 12px; line-height: 14px; color: #333;}
-        .profile__settings_invoice_body h3 {font-size: 12px; color: #333;  margin: 3px 0 8px; padding-bottom: 2px; text-transform: uppercase;}
-        .profile__settings_invoice_body .std__underline.line {padding-top: 5px; padding-bottom: 8px;}
-.profile__settings_invoice_cardTable {width:  100%; border-collapse: collapse; border: none; margin-bottom: 8px;}
-    .profile__settings_invoice_cardTable td {width: 345px; vertical-align: top; padding-bottom: 14px; border: none;}
-    td.profile__settings_invoice_cardTable_delim {width: 40px;}
-.profile__settings_invoice_cardInfoTable {width: 100%; border-collapse: collapse;}
-    .profile__settings_invoice_cardInfoTable .col-1 {width: 445px; box-sizing: border-box; -moz-box-sizing: border-box;}
-    .profile__settings_invoice_cardInfoTable .col-2 {width: 110px; box-sizing: border-box; -moz-box-sizing: border-box;}
-    .profile__settings_invoice_cardInfoTable .col-3 {width: 70px;  box-sizing: border-box; -moz-box-sizing: border-box;}
-    .profile__settings_invoice_cardInfoTable .col-4 {}
-    .profile__settings_invoice_cardInfoTable th {height: 40px; background-color: #f5f5f5; border-top: 1px solid #ccc; vertical-align: middle; font-size: 14px; padding-left: 15px;}
-    .profile__settings_invoice_cardInfoTable td {height: 38px; border-top: 1px solid #ccc; vertical-align: middle; padding-left: 15px; }
-        .profile__settings_invoice_cardInfoTable .subtotal  {text-align: right; padding-right: 55px; font-weight: bold; height: 26px; vertical-align: bottom;}
-        .profile__settings_invoice_cardInfoTable .subtotal + td {height: 26px; vertical-align: bottom;}
-        .profile__settings_invoice_cardInfoTable .total         {text-align: right; padding-right: 55px; font-weight: bold;  height: 16px; vertical-align: bottom; border: none;}
-        .profile__settings_invoice_cardInfoTable .total + td    {height: 16px; vertical-align: bottom; border: none;}
-        .profile__settings_invoice_cardInfoTable .payment       {text-align: right; padding-right: 55px; font-weight: bold; border: none; height: 34px; vertical-align: bottom;}
-        .profile__settings_invoice_cardInfoTable .payment + td  {border: none; height: 34px; vertical-align: bottom;}
-.profile__settings_invoice_note {text-align: right; padding-right: 160px; margin-top: 12px;}
-.profile__settings_invoice_issue {margin-top: 16px; padding-top: 10px; border-top: 1px solid #ccc;}
-    .profile__settings_invoice_issue h3 {text-transform: none; font-size: 14px;}
-
-/* Change card */
-.profile__settings_change {width: 450px; position: relative; margin: 0 auto;}
-
-    .profile__settings_change .profile__info_block > .b-std__header {padding-left: 10px;}
-    .profile__settings_change .profile__info_list_item {width: 260px;}
-    .profile__settings_change .profile__info_list_item input,
-    .profile__settings_change .profile__info_list_item select,
-    .profile__settings_change .profile__info_list_item .newListSelected {box-sizing: border-box; -moz-box-sizing: border-box; height: 27px; padding: 5px; width: 100%;}
-    .profile__settings_change_shortField {display: inline-block; width: 80px;}
-    .profile__settings_change .field-separator {margin: 0 3px;}
-    .profile__settings_change_controls {margin-top: 20px; text-align: center;}
-    .profile__settings_change_controls .button-save {width: 130px; padding-left: 10px; padding-right: 10px;}
-    .profile__settings_change_controls .button-cancel {margin-left: 15px;}
-
-.profile__settings_change_popup {padding: 30px 25px; text-align: center; }
-    .profile__settings_change_popup .button {width: 235px; margin-top: 7px;}
+/* Y-profile for registered */
+.profile__y_registered {}
+.profile__y_registered .profile__photoFrame_photo {}
+.profile__y_registered .profile__collCenter {width: 640px;}
+.profile__y_registered .profile__guestMsg {padding: 64px;}
+.profile__y_registered .profile__userName{margin: 0 0 14px;}
+.profile__y_services {background: #f5f5f5;  border-radius: 4px; padding-top: 20px;}
+.profile__y_services_header {font-size: 24px; text-align: center;}
+.profile__y_servicesList {text-align: justify; padding: 0 10px; line-height: 10px;}
+.profile__y_servicesList_item {width: 263px; text-align: center; padding: 16px 20px 22px; display: inline-block; vertical-align: top; background: #fff; border-radius: 4px; line-height: 16px;}
+.profile__y_servicesList_item > .std__header {font-size: 18px;}
+.profile__y_servicesList_item_icon {display: inline-block; width: 202px; height: 144px; background: url(../img/404/404.png) no-repeat;}
+    .profile__y_servicesList_item_icon_match {background-position: 0 -292px;}
+    .profile__y_servicesList_item_icon_video {background-position: 0 -438px;}
+.profile__y_servicesList_item_description {text-align: left; height: 48px;}
+.profile__y_servicesList_item .button {margin-top: 20px; width: 185px;}

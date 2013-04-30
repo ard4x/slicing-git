@@ -883,6 +883,41 @@ input.button {
   height: 39px;
   width: 41px;
 }
+.button.ask {
+  padding-left: 33px;
+  padding-right: 8px;
+}
+.button.ask i.icon {
+  display: inline-block;
+  background: 0 -512px url('../img/button/btns-icos.png') no-repeat;
+  width: 25px;
+  height: 29px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.button.ask.large {
+  padding-left: 53px;
+  padding-right: 9px;
+}
+.button.ask.large i.icon {
+  background-position: 0 -45px;
+  width: 45px;
+  height: 45px;
+}
+.button.ask.middle i.icon {
+  background-position: 0 -514px;
+  height: 25px;
+}
+.button.ask.big {
+  padding-left: 45px;
+  padding-right: 9px;
+}
+.button.ask.big i.icon {
+  background-position: 0 -512px;
+  height: 39px;
+  width: 41px;
+}
 .button.twitter {
   padding-left: 33px;
   padding-right: 8px;
