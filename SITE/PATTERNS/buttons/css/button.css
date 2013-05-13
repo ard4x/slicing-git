@@ -1463,16 +1463,45 @@ i.icon {
   width: 14px;
   height: 15px;
 }
-.slider .current i.icon.icon-facebook {
+.slider .current i.icon.icon-facebook,
+.slider-item:active i.icon.icon-facebook {
   background-position: -90px 0;
 }
-.slider i.icon.icon-facebook {
-  background-position: -74px 0;
+.slider i.icon.icon-email {
+  background-position: -74px -17px;
   width: 14px;
   height: 15px;
 }
-.slider .current i.icon.icon-facebook {
-  background-position: -90px 0;
+.slider .current i.icon.icon-email,
+.slider-item:active i.icon.icon-email {
+  background-position: -90px -17px;
+}
+.slider i.icon.icon-google {
+  background-position: -74px -34px;
+  width: 14px;
+  height: 15px;
+}
+.slider .current i.icon.icon-google,
+.slider-item:active i.icon.icon-google {
+  background-position: -90px -34px;
+}
+.slider i.icon.icon-twitter {
+  background-position: -72px -51px;
+  width: 14px;
+  height: 15px;
+}
+.slider .current i.icon.icon-twitter,
+.slider-item:active i.icon.icon-twitter {
+  background-position: -89px -51px;
+}
+.slider i.icon.icon-yahoo {
+  background-position: -68px -66px;
+  width: 14px;
+  height: 15px;
+}
+.slider .current i.icon.icon-yahoo,
+.slider-item:active i.icon.icon-yahoo {
+  background-position: -87px -66px;
 }
 i.icon.icon-eye {
   background-position: 0 -380px;
