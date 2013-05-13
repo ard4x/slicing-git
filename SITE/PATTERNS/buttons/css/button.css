@@ -1453,6 +1453,27 @@ i.icon {
   display: inline-block;
   font-size: 0;
 }
+.slider i.icon {
+  position: relative;
+  margin-bottom: -3px;
+  margin-right: 10px;
+}
+.slider i.icon.icon-facebook {
+  background-position: -74px 0;
+  width: 14px;
+  height: 15px;
+}
+.slider .current i.icon.icon-facebook {
+  background-position: -90px 0;
+}
+.slider i.icon.icon-facebook {
+  background-position: -74px 0;
+  width: 14px;
+  height: 15px;
+}
+.slider .current i.icon.icon-facebook {
+  background-position: -90px 0;
+}
 i.icon.icon-eye {
   background-position: 0 -380px;
   width: 16px;

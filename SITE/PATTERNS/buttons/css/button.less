@@ -585,6 +585,15 @@ i.icon {
   background: url(@btnIconImg) no-repeat;
   display: inline-block;
   font-size: 0;
+
+  .slider & {position: relative; margin-bottom: -3px; margin-right: 10px;}
+  .slider &.icon-facebook{background-position: -74px 0; width: 14px; height: 15px;}
+  .slider .current &.icon-facebook{background-position: -90px 0;}
+
+  .slider &.icon-facebook{background-position: -74px 0; width: 14px; height: 15px;}
+  .slider .current &.icon-facebook{background-position: -90px 0;}
+
+
   &.icon-eye{
     background-position: 0 -380px;
     width: 16px; height: 8px;

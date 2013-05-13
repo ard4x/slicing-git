@@ -2,7 +2,7 @@
 .profile__collLeft  {display: block; width: 280px; float: left; margin-right: 30px; }
 .profile__collCenter{display: block; width: 390px; float: left;}
 .profile__collRight {display: block; width: 220px; float: right;}
-.profile__collWide  {display: block; width: 700px; float: left;}
+.profile__collWide  {display: block; width: 700px; float: left; box-sizing: border-box; -moz-box-sizing: border-box;}
 .profile__block-head {padding-bottom: 20px; border-bottom: 1px solid #ccc; margin-bottom: 20px;}
 .profile__block-head .b-std__header,
 .profile__block-head .slider {margin-bottom: 0;}
@@ -474,3 +474,5 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
     .profile__y_servicesList_item_icon_video {background-position: 0 -438px;}
 .profile__y_servicesList_item_description {text-align: left; height: 48px;}
 .profile__y_servicesList_item .button {margin-top: 20px; width: 185px;}
+
+/* Profile Invite */
