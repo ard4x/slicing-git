@@ -103,8 +103,8 @@
                 .chat__user_name {text-align: left; font-size: 18px; }
                 .chat__user_location {font-size: 12px; margin-bottom: 8px;}
                 .chat__user_wants {font-size: 14px;}
-                .chat__add2fave {font-size: 12px; position: absolute; right: 0; bottom: 0;}
-        .chat__mainSide_middle {border: 1px solid #ccc; height: 365px; overflow: auto; font-size: 12px; color: #333; margin-bottom: 10px;}
+                .chat__add2fave {font-size: 12px; position: absolute; right: 0; bottom: 20px;}
+        .chat__mainSide_middle {border: 1px solid #ccc; height: 365px; overflow: auto; font-size: 12px; color: #333; margin-bottom: 10px; position: relative;}
             .chat__message_box {border-bottom: 1px solid #ccc; padding: 6px;}
                 .chat__message_timeline {}
             .chat__row {overflow: hidden; padding-top: 4px; padding-bottom: 7px;}
@@ -138,3 +138,12 @@
     .chat__message_first_item {position: relative; top: 160px; font-size: 14px; text-align: center !important; }
     .chat__message_first_title {font: bold 24px Arial; color: #a9aeb7;}
     .chat__message_first_item p {padding: 0 20px 10px;}
+    /* No message */
+.chat__noMsg {color: #989fab; font-size: 30px; font-weight: bold; text-align: center; line-height: 95%; padding-top: 30%;}
+    /* Chat blocker */
+.chat__sendMsg_blocker {position: absolute; top: 0; left: 0;
+    box-sizing: border-box; -moz-box-sizing: border-box;
+    padding: 30px; padding-top: 20%; background: url(../img/opacity.png) repeat; z-index: 999; font-size: 18px; font-weight: bold; color: #fff; width: 100%; height: 100%;}
+    .chat__sendMsg_blocker p {margin-bottom: 22px; padding: 0;}
+    .chat__sendMsg_blocker_button {text-align: center;}
+    .chat__sendMsg_blocker_button .button {width: 250px; box-shadow: 0 1px 2px rgba(0,0,0,0.5);}
