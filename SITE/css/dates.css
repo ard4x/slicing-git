@@ -150,7 +150,37 @@
 .srch .dates__datesList {padding-top: 20px; border-top: 1px solid #ccc;}
 
 /* PROFILE*/
-.dates__profile {background: #f5f5f5; padding: 25px 20px 20px; position: relative;}
+.dates__profile {background: #f5f5f5; padding: 25px 20px 20px; position: relative; margin: 30px 0;}
     .dates__profile_tabs {height: 3px; width: 100%; position: absolute; top: 0; left: 0; background: #5278a8; border-top: 1px solid #3a6298; border-bottom: 1px solid #3f5d81;}
-        .dates__profile_tabs_item {width: 250px; margin-right: 15px;}
-            .dates__profile_tabs_item:after {}
+    .dates__profile_tabs_holder {position: absolute; top: -35px; padding-left: 310px;}
+        .dates__profile_tabs_item {width: 250px; margin-right: 16px; height: 35px; box-sizing: border-box; -moz-box-sizing: border-box; border: 1px solid transparent; border-top-left-radius: 4px;
+            color: #666; font-size: 16px; font-weight: bold; border-top-color: #ddd; border-left-color: #ddd; float: left; position: relative; background: #f5f5f5; border-bottom-color: #3a6298;
+            z-index: 1; box-shadow: inset 0 -70px 10px -70px rgba(0,0,0,0.27); text-align: center; line-height: 38px; cursor: pointer; border-bottom-left-radius: 2px;}
+            .dates__profile_tabs_item.current {border-top-color: #2f4f7b; border-bottom-color: #5278a7; border-left-color: #496a94; z-index: 2; box-shadow: none; color: #fff;
+                text-shadow: 0 1px rgba(0,0,0,0.5); cursor: default; border-bottom-left-radius: 0;
+                background: #4b6e99; /* Old browsers */
+                background: -moz-linear-gradient(top,  #436187 0%, #5177a6 100%); /* FF3.6+ */
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#436187), color-stop(100%,#5177a6)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top,  #436187 0%,#5177a6 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top,  #436187 0%,#5177a6 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top,  #436187 0%,#5177a6 100%); /* IE10+ */
+                background: linear-gradient(to bottom,  #436187 0%,#5177a6 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#436187', endColorstr='#5177a6',GradientType=0 ); /* IE6-9 */
+            }
+            .dates__profile_tabs_item:after {content: ''; display: block; position: absolute; right: -26px; top: -1px; width: 26px; height: 35px; background: -28px 0 url(../img/dates/tabs.png) no-repeat;}
+            .dates__profile_tabs_item.current:after {background-position: 0 0;}
+.dates__profile_list {background: #fff; padding: 0 15px; border-radius: 4px; display: table; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box;}
+    .dates__profile_list_row {display: table-row;}
+        .dates__profile_list_row:last-child .dates__profile_list_cell {border-bottom: none;}
+    .dates__profile_list_cell {display: table-cell; padding: 15px 0; vertical-align: middle; border-bottom: 1px solid #ccc;}
+        .dates__profile_list_message {width: 540px; padding-right: 40px; box-sizing: border-box; -moz-box-sizing: border-box;}
+        .dates__profile_list_category {width: 160px; font-size: 12px;}
+            .dates__category_name {color: #999; font-size: 14px;}
+        .dates__profile_list_button {text-align: right;}
+            .dates__profile_list_button .edit {float: left; width: 85px;}
+            .dates__profile_list_button .remove {text-align: right;  width: 85px;}
+            .dates__profile_list_button .dates__posted {text-align: left}
+            .dates__profile_list_button .dates__posted_name {font-weight: bold;}
+    .dates__profile_paging {margin-top: 15px;}
+    .dates__profile_empty {font-weight: bold; font-size: 18px; color: #333; text-align: center; padding: 30px; background: #fff; border-radius: 4px;}
+        .dates__profile_empty .button {margin-left: 25px;}
