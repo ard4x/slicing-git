@@ -496,3 +496,15 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
             .profile__invite_userList_item_name {font-size: 14px; vertical-align: top; line-height: 48px; display: inline-block;}
             .profile__invite_userList_item_btn {float: right; margin-top: 9px;}
             .profile__invite_noMsg {font-size: 14px; font-weight: bold; color: #999; text-align: center; display: block; padding-top: 10px;}
+
+            .profile__invite_row {font-size: 0; text-align: left; margin-bottom: 10px;}
+                .profile__invite_label {vertical-align: top; width: 110px; display: inline-block; font-size: 14px; text-align: left; box-sizing: border-box; -moz-box-sizing: border-box; padding: 5px 20px 0;}
+                .profile__invite_field {display: inline-block; width: 470px; font-size: 12px; color: #333; font-weight: normal;}
+                    .profile__invite_field input {width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; height: 27px!important; padding: 4px 7px!important;}
+                .profile__invite_emailList .profile__invite_field {width: 380px;}
+            .profile__invite_emailPreview {width: 600px; position: relative; padding-left: 0; box-sizing: border-box; -moz-box-sizing: border-box; padding-bottom: 1px;}
+                .profile__invite_emailPreview .profile__invite_field {padding-top: 3px;}
+                .profile__invite_emailPreview p {padding: 0; margin-bottom: 10px;}
+                .profile__invite_emailPreview .profile__invite_label {padding-top: 2px;}
+            .profile__invite_emailButtons {font-size: 14px; font-weight: normal; text-align: left; margin-top: 20px;}
+                .profile__invite_emailButtons .button {margin: 0 30px 0 110px;}
