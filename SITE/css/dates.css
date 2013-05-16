@@ -38,7 +38,7 @@
                     .dates__datesList_item_message_text {font-size: 18px; color: #333; box-sizing: border-box; -moz-box-sizing: border-box; padding: 10px 15px 30px; border: 1px solid #ccc; min-height: 100px; border-radius: 2px;}
                         .dates__datesList_item_message_text:before {content: ''; position: absolute; top: 38px; left: -12px; height: 0; width: 0; border: 12px solid transparent; border-left: none; border-right-color: #ccc;}
                         .dates__datesList_item_message_text:after  {content: ''; position: absolute; top: 39px; left: -10px; height: 0; width: 0; border: 11px solid transparent; border-left: none; border-right-color: #fff;}
-
+                    .dates__datesList_item_noLikes {font-size: 14px; font-weight: bold; text-align: left; padding-top: 4px; float: left; color: #4f6b8d;}
                 .dates__messLabel {font-weight: bold; color: #999; font-style: italic;}
                     .dates__datesList_item_message_info {position: absolute; bottom: 0px; width: 100%; padding: 12px 15px; box-sizing: border-box; -moz-box-sizing: border-box; font-size: 12px; color: #999;}
                         .dates__datesList_item_message_info .category {float: left; display: none;}
@@ -184,3 +184,17 @@
     .dates__profile_paging {margin-top: 15px;}
     .dates__profile_empty {font-weight: bold; font-size: 18px; color: #333; text-align: center; padding: 30px; background: #fff; border-radius: 4px;}
         .dates__profile_empty .button {margin-left: 25px;}
+/* Popup for edit dates */
+.dates__popup_add {width: 640px; padding: 12px 15px 75px; overflow: visible;}
+    .dates__popup_add > .std__header {margin-bottom: 20px;}
+    .dates__popup_add .dates__postBlock_bubble {top: -71px; right: -259px;}
+    .dates__popup_add .dates__postBlock_row {margin-bottom: 7px; position: relative;}
+    .dates__popup_add .dates__postBlock_field {width: 500px;}
+    .dates__popup_add .dates__postBlock_buttons {width: 100%; position: absolute; height: 65px; left: 0; bottom: 0; box-sizing: border-box; -moz-box-sizing: border-box;
+    background: #ecf4fb; padding-top: 20px;}
+    .dates__popup_add .b-user__photoFrame {float: left; margin-bottom: 5px;}
+        .dates__popup_add .b-user__photoFrame_photo {width: 76px; height: 76px;}
+    .dates__popup_add_user {margin-left: 93px;}
+        .dates__popup_add_user .b-user__person {font-size: 18px; text-align: left; margin-bottom: 2px;}
+        .dates__popup_add_user .user__location {font-size: 12px; font-weight: bold;}
+    .dates__popup_add .dates__postBlock_buttons_post {width: auto}
