@@ -486,8 +486,10 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
     .profile__invite_side_header {text-align: center; padding-bottom: 5px;}
     .profile__invite_side_msg {padding: 8px 10px 8px; background: #fff; border-radius: 4px; text-align: center; margin-bottom: 10px; color: #333;}
     .profile__invite_side_msg:last-child {margin: 0;}
-.profile__invite_userList {margin-left: -30px; position: relative; overflow: hidden;}
-    .profile__invite_userList_coll {width: 285px; margin-left: 30px; float: left; text-align: left; max-height: 450px; overflow: auto; overflow-x: hidden;}
+.profile__invite_userList_wrap {margin-left: -30px; position: relative; overflow: hidden;}
+    .profile__invite_userList {max-height: 450px; overflow: auto; overflow-x: hidden;}
+    .profile__invite_userList_coll {width: 250px; margin-left: 30px; float: left; text-align: left;}
+        .profile__invite_userList_coll.wide_coll {width: 320px;}
     .profile__invite_userList_coll > .std__header {padding-bottom: 5px;}
         .profile__invite_userList_item {margin-bottom: 10px; vertical-align: top; color: #333; }
         .profile__invite_userList_item:last-child {margin-bottom: 0;}
