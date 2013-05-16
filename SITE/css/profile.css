@@ -491,7 +491,7 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
     .profile__invite_userList_coll {width: 250px; margin-left: 30px; float: left; text-align: left;}
         .profile__invite_userList_coll.wide_coll {width: 320px;}
     .profile__invite_userList_coll > .std__header {padding-bottom: 5px;}
-        .profile__invite_userList_item {margin-bottom: 10px; vertical-align: top; color: #333; }
+        .profile__invite_userList_item {margin-bottom: 10px; vertical-align: top; color: #333; padding-right: 6px;}
         .profile__invite_userList_item:last-child {margin-bottom: 0;}
             .profile__invite_userList_search {width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; height: 27px!important; padding: 4px 7px 4px 25px !important; background: #fff url(../img/search.gif) 5px 6px no-repeat;}
             .profile__invite_userList_item_pic {width: 50px; height: 50px; margin-right: 5px;}
