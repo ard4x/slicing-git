@@ -524,3 +524,8 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
                 .profile__invite_google_bottom_info {}
             .profile__invite_google_list {margin: 0; max-height: 450px; overflow: auto; margin-bottom: 15px;}
                 .profile__invite_google_list .profile__invite_userList_item  {margin-bottom: 15px;}
+        .profile__invite_google_users_error {font-size: 16px; font-weight: bold; color: #333; padding: 25px;}
+        .profile__invite_popup {width: 778px; padding: 12px 14px 10px;}
+            .profile__invite_popup_subj {font-size: 14px; color: #333; margin-bottom: 20px; padding-top: 3px;}
+                .profile__invite_popup_subj_label {font-weight: bold;}
+            .profile__invite_popup_screen {width: 740px; height: 319px; border: 1px solid #ccc;}
