@@ -1,0 +1,10 @@
+.matrix {padding-top: 35px;}
+    .matrix__header {padding-bottom: 6px; margin-bottom: 20px;}
+    .matrix__list {width:  977px; position: relative; margin-left: -22px; overflow: hidden;}
+        .matrix__list_item {width: 138px; height: 96px; margin: 0 1px 22px 23px; display: block; float: left; box-shadow: 0 1px 3px 0px rgba(0,0,0,0.5); border-radius: 4px;}
+            .matrix__list_item_top {background: #f5f5f5; height: 46px; padding-top: 9px; box-sizing: border-box; -moz-box-sizing: border-box; margin-bottom: 7px;}
+            .matrix__user_name {font-size: 14px; font-weight: bold; margin-left: 12px;}
+            .matrix__user_nickname {color: #333; font-size: 12px; margin-left: 12px;}
+            .matrix__user_location {font-size: 11px; color: #999; margin-left: 12px; margin-bottom: 3px;}
+            .matrix__user_age {color: #333; font-size: 12px; margin-left: 12px;}
+    .matrix__paging {margin: 10px 0 28px;}
