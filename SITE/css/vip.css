@@ -152,7 +152,7 @@ body.payments {padding-right: 80px;}
     .vip__head > .std__header span {font-weight: normal;}
     .vip__head .b-user__photoFrame {width: 80px; display: inline-block; box-sizing: border-box; -moz-box-sizing: border-box; margin-right: 27px; vertical-align: middle; margin-top: 22px;}
 .vip__pay_label {position: relative; height: 65px; border: solid 1px #dde0e6; border-top-color: #f4f5f7; border-bottom-color: #bbc0ce; box-shadow: 0 2px 2px #dde0e6;
-    border-radius: 7px; margin-bottom: 8px; cursor: pointer; line-height: 60px;}
+    border-radius: 7px; margin-bottom: 8px; cursor: pointer; line-height: 60px; }
     .vip__pay_label.last   {margin:2px}
     .vip__pay_label_label {height: 65px; width: 44px; float:left; margin-right: 9px; line-height: 72px; vertical-align: middle; text-align: center; cursor: pointer}
         .vip__pay_label.active .vip__pay_label_label {border-top-left-radius: 6px; border-bottom-left-radius: 5px; background-color:#eda71e; }

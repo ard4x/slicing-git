@@ -5,7 +5,7 @@
 @btnIconImg: '../img/button/btns-icos.png'; // icons image
 @btnBgImg:   '../img/button/btns.png';  // Background image
 @btnHeight:  31px;
-.clrBlik {box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 40%);}
+.clrBlik {box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 40%) !important;}
 // SET COLORS of button
 .buttonColors (@btnTopColor:#3a639a, @btnBgColor:#496b94, @btnBottomColor:#334b67,
                @btnTopColorHover:#5177a5, @btnBgColorHover:#3a639a, @btnBottomColorHover:#3f5d81,
@@ -29,6 +29,18 @@
 }// end set of colors
 
 //SET BACKGROUND0
+.btnGradient (@col1, @col2){
+  background: @col1 - #101010  !important; /* Old browsers */
+  background: -moz-linear-gradient(top, @col1 0%, @col2 100%)  !important; /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @col1), color-stop(100%,@col2)) ; /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, @col1 0%,@col2 100%)  !important; /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, @col1 0%,@col2 100%)  !important; /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, @col1 0%,@col2 100%)  !important; /* IE10+ */
+  background: linear-gradient(to bottom, @col1 0%,@col2 100%) !important; /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@col1, endColorstr=@col2,GradientType=0 )  !important; /* IE6-9 */
+}
+
+.btnHovered (@col1, @col2){background: ((1.5*@col1)-(0.5*@col2))  !important;}
 
 .buttonBg (@btnHeight: 31px, @btnBgPositionY: 0px){
   height: @btnHeight;
@@ -124,13 +136,19 @@
   }
 
   &.lite-grey {
-    .buttonBg(@btnHeight, -2984px);
-    .buttonColors(#cbcbcb, #cbcbcb, #cbcbcb,
-                  #cbcbcb, #cbcbcb, #cbcbcb,
-                  #cbcbcb, #cbcbcb, #cbcbcb);
+    @color-1: #eeeeee;
+    @color-2: #dedede;
+    background-image: none !important;
+    border: 1px solid #cbcbcb !important;
     color: #525252 !important;
     text-shadow: #fff 0 1px 2px;
-    box-shadow: 0 1px 2px #b3b3b3;
+    box-shadow: 0 1px 2px #b3b3b3, inset 0px 1px 0 0 rgba(255, 255, 255, 60%) !important;
+    .btnGradient (@color-1, @color-2);
+    &:hover {background: #efefef !important;}
+    &:active {
+      .btnGradient (@color-2, @color-1);
+      box-shadow: inset 0px 1px 0 0 rgba(255, 255, 255, 60%) !important;
+    }
 
   }
 
@@ -168,8 +186,6 @@
       &.grey {.buttonBg( @btnHeight, -2918px);}
 
       &.azure {}
-
-      &.lite-grey {.buttonBg( @btnHeight, -116px);}
 
       &.disabled {
         background: 0 -2705px url(@btnBgImg) repeat-x;
@@ -438,19 +454,6 @@
 
 }
 
-// FUNCTIONAL buttons
-.btnGradient (@col1, @col2){
-  background: @col1 - #10101; /* Old browsers */
-  background: -moz-linear-gradient(top, @col1 0%, @col2 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @col1), color-stop(100%,@col2)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, @col1 0%,@col2 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, @col1 0%,@col2 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, @col1 0%,@col2 100%); /* IE10+ */
-  background: linear-gradient(to bottom, @col1 0%,@col2 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@col1', endColorstr='@col2',GradientType=0 ); /* IE6-9 */
-}
-
-.btnHovered (@col1, @col2){background: 1.5*@col1 - 0.5*@col2;}
 
 .slider {
   width: 100%;

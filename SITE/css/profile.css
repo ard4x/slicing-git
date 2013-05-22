@@ -79,7 +79,7 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 .profile__buttons .button {margin-bottom: 17px;  width: 100%;}
 .profile__buttons .link {padding-top: 2px; margin-bottom: 13px; display: inline-block; font-size: 12px;}
 /** Bottom buttons block **/
-.profile__block-bottom {padding: 30px 90px 0; border-top: 1px solid #ccc; text-align: justify; }
+.profile__block-bottom {padding: 38px 90px 0; text-align: justify; }
 .profile__block-bottom .button {width: 200px; margin-bottom: 0;}
 
 /** Buttons photo preview **/
@@ -529,3 +529,20 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
             .profile__invite_popup_subj {font-size: 14px; color: #333; margin-bottom: 20px; padding-top: 3px;}
                 .profile__invite_popup_subj_label {font-weight: bold;}
             .profile__invite_popup_screen {width: 740px; height: 319px; border: 1px solid #ccc;}
+
+.profile__invite_sendEmail {padding: 17px 19px 20px; border: 1px solid #ccc; background: #f5f5f5; border-radius: 4px;}
+    .profile__invite_sendEmail_header {padding-bottom: 2px;}
+    .profile__invite_sendEmail_message {font-size: 14px; font-weight: bold; color: #333; text-align: center; font-style: italic; padding-top: 2px;}
+    .profile__invite_sendEmail_inputs {text-align: center; margin-top: 20px;}
+        .profile__invite_sendEmail_field {margin-right: 15px!important; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; height: 27px!important; padding: 4px 7px!important; width: 290px;}
+        .profile__invite_sendEmail_button {}
+    .profile__invite_popup_email {width: 670px; color: #333;}
+        .profile__invite_popup_email > .std__header  {margin-bottom: 20px;}
+        .profile__invite_popup_email .profile__invite_label  {width: 140px;}
+        .profile__invite_popup_email .profile__invite_field  {width: 350px;}
+        .profile__invite_popup_email .profile__invite_emailPreview  {padding-top: 17px; width: auto; padding-right: 20px;}
+        .profile__invite_label_area {padding-top: 8px!important; line-height: 16px;}
+        .profile__invite_field_area {margin-bottom: 4px; width: 470px; box-sizing: border-box; -moz-box-sizing: border-box; padding: 5px 7px; overflow: auto; resize: none; font-size: 12px; height: 57px;}
+        .profile__invite_popup_email_link {padding-left: 7px; margin-bottom: 11px; display: inline-block;}
+        .profile__invite_popup_email_from {padding-left: 7px!important;}
+        .profile__invite_popup_email .profile__invite_emailButtons .button  {width: 190px; margin-bottom: 7px;}
