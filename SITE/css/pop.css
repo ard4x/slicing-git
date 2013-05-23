@@ -119,3 +119,9 @@
         .pop__photo_cropSubmit {padding: 10px; text-align: center;}
             .pop__photo_cropSubmit .button {width: 185px;}
             .pop__photo_cropSubmit .button-link {font-size: 14px; margin-left: 20px; }
+
+    /* popup Scam Warning */
+.pop__warning {padding: 15px; padding-top: 12px; width: 520px;}
+    .pop__warning_header {padding-bottom: 5px; margin-bottom: 20px;}
+    .pop__warning_message {font-size: 14px; margin-bottom: 20px; line-height: 17px;}
+    .pop__warning_button {text-align: center;}
