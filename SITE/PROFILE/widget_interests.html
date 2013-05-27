@@ -1,0 +1,517 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <title>Another Profile</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/wid.css">
+    <!-- Костыли для ИE, можно добавить в уже существующие -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../yngtu_ie8.css" type="text/css">
+    <![endif]-->
+
+    <!--  Файлы для замены селектов -->
+
+    <script src="../js/jquery-1.4.4.min.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'});
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+    <!--  ---------------------------------------- -->
+
+</head>
+<body>
+<!-- начало шаблонной шапки -->
+<div class="header">
+    <div class="header_inn">
+        <div class="top_navigation">
+            <ul class="left">
+                <li><a href="#">Messages</a><span class="new_event">2</span></li>
+                <li><a href="#">Signals</a><span class="new_event">45</span></li>
+                <li><a href="#">Soulmates</a><span class="new_event">167</span></li>
+            </ul>
+            <ul class="right">
+                <li class="coints">1450 Coins <a href="#">Add</a></li>
+                <li class="profile"><a href="#">Profile </a></li>
+                <li class="account"><a href="#">Account Settings</a></li>
+            </ul>
+            <div class="std__clear"></div>
+        </div>
+        <div class="bot_navigation">
+            <a href="#"><img src="../img/ya_block_logo.png" class="logo" alt="Yangutu"/></a>
+            <ul class="main_menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Matches</a></li>
+                <li><a href="#">TOP-100</a></li>
+                <li><a href="#">Apps and Games</a></li>
+                <li><a href="#">Blogs</a></li>
+            </ul>
+            <div class="clr2"></div>
+        </div>
+    </div>
+</div>
+<!-- КОНЕЦ шаблонной шапки -->
+<div class="content">
+<div class="content_inn profile">
+
+<div class="profile__block-head">
+
+    <div class="profile__collLeft">
+        <h1 class="b-std__header std__fs-bigH profile__userName">Punkyrobinson, 34<i class="icon icon-online"></i></h1>
+
+    </div><!-- /.profile__collLeft -->
+
+    <div class="profile__collCenter">
+        <div class="slider type3">
+            <a class="slider-item current" href="#">Her profile</a>
+            <a class="slider-item" href="#">Photos (1)</a>
+            <a class="slider-item" href="#">Our history</a>
+        </div>
+
+    </div><!-- /.profile__collLeft -->
+
+    <div class="profile__collRight">
+
+        <a class="button lite-grey favorite" href="#"><i class="icon"></i>Add to favorites</a>
+
+    </div><!-- /.profile__collLeft -->
+
+    <div class="std__clear"></div>
+</div><!-- /.profile__block-head -->
+
+<div class="profile__block-basicInfo">
+    <div class="profile__collLeft">
+
+        <a href="#" class="b-user__photoFrame">
+            <img class="b-user__photoFrame_photo  profile__photoFrame_photo" alt="" src="../img/user-261x343.jpg">
+        </a><!-- /.profile__photoFrame -->
+
+        <div class="profile__previews std__layer_grey-lite">
+            <a class="photo-button type3" href="#"><span class="plus">+</span>Please, upload more photos</a>
+        </div>
+
+        <div class="profile__empty_photo">
+            <h3 class="std__header std__fs-smallH">Are you intrigued of her?</h3>
+            <a class="button big red" href="#">Ask her to upload photo</a>
+        </div><!-- /.profile__empty_photo -->
+
+    </div><!-- /.profile__collLeft -->
+
+    <div class="profile__collCenter">
+        <div class="profile__info_top">
+            <a class="profile__likeButton" href="#"></a>
+
+            <div class="profile__info_top_info">
+                <div class="profile__info_city">
+                    San Francisco, California, United States
+                </div>
+                <div class="profile__info_seeking">
+                    seeking women 30-47
+                </div>
+            </div><!-- /.profile__info_top_info -->
+
+            <div class="profile__info_top_message">
+
+                <textarea class="profile__message_area" name="message" onfocus="if (this.value == this.defaultValue) this.value = '';" onblur="if (this.value == '') this.value = this.defaultValue;" >Write your message here
+                </textarea>
+                <input type="submit" class="button small" value="Send">
+                <a class="profile__top_message_close" href="#"></a>
+            </div><!-- /.profile__info_top_message -->
+
+        </div><!-- /.profile__info_top -->
+
+        <div class="profile__info_block">
+            <h2 class="b-std__header std__fs-smallH">Basic information
+                    <span class="profile__info_more">
+                        <a href="#"><i class="icon icon-attention"></i>ask for more info</a>
+                        <span>you have asked for more info</span>
+                    </span>
+            </h2>
+
+            <div class="profile__info_list">
+
+                <div class="profile__info_list_row">
+                    <div class="profile__info_list_label">Relationship: </div>
+                    <div class="profile__info_list_item">Single</div>
+                </div><!-- /.profile__info_list_row -->
+
+                <div class="profile__info_list_row">
+                    <div class="profile__info_list_label">Have kids: </div>
+                    <div class="profile__info_list_item">No</div>
+                </div><!-- /.profile__info_list_row -->
+
+                <div class="profile__info_list_row">
+                    <div class="profile__info_list_label">Want kids: </div>
+                    <div class="profile__info_list_item">I'll tell you later</div>
+                </div><!-- /.profile__info_list_row -->
+
+                <div class="profile__info_list_row">
+                    <div class="profile__info_list_label">Ethnicity: </div>
+                    <div class="profile__info_list_item">White / Caucasian</div>
+                </div><!-- /.profile__info_list_row -->
+
+                <div class="profile__info_list_row">
+                    <div class="profile__info_list_label">Body type: </div>
+                    <div class="profile__info_list_item">Average</div>
+                </div><!-- /.profile__info_list_row -->
+
+                <div class="profile__info_list_row">
+                    <div class="profile__info_list_label">Height: </div>
+                    <div class="profile__info_list_item">173 cm</div>
+                </div><!-- /.profile__info_list_row -->
+
+                <div class="profile__info_list_row">
+                    <div class="profile__info_list_label">Faith:  </div>
+                    <div class="profile__info_list_item">I'll tell you later</div>
+                </div><!-- /.profile__info_list_row -->
+
+                <div class="profile__info_list_row">
+                    <div class="profile__info_list_label">Smoke:</div>
+                    <div class="profile__info_list_item">Never</div>
+                </div><!-- /.profile__info_list_row -->
+
+                <div class="profile__info_list_row">
+                    <div class="profile__info_list_label">Drink:</div>
+                    <div class="profile__info_list_item">I'll tell you later</div>
+                </div><!-- /.profile__info_list_row -->
+
+                <div class="profile__info_list_row">
+                    <div class="profile__info_list_label">Eye color:</div>
+                    <div class="profile__info_list_item">I'll tell you later</div>
+                </div><!-- /.profile__info_list_row -->
+
+                <div class="profile__info_list_row">
+                    <div class="profile__info_list_label">Hair color:	</div>
+                    <div class="profile__info_list_item">I'll tell you later</div>
+                </div><!-- /.profile__info_list_row -->
+
+            </div><!-- /.profile__info_list -->
+
+
+        </div><!-- /.profile__info_block -->
+
+
+    </div><!-- /.profile__collCenter -->
+
+    <div class="profile__collRight ">
+        <ul class="profile__buttons std__layer_grey-lite">
+            <li><a class="button big message red" href="#"><i class="icon"></i>Send message</a></li>
+            <li><a class="button big wink" href="#"><i class="icon"></i>Wink</a></li>
+            <li><a class="button big ask" href="#"><i class="icon"></i>Ask her out</a></li>
+            <li><a class="link" href="#">Hide profile</a></li>
+            <li><a class="link" href="#">Report this user</a></li>
+        </ul>
+
+        <div class="std__layer_grey-lite wid__interests">
+
+            <h2 class="std__fs-smallH std__header wid__interests_header">You have in common</h2>
+
+            <a href="#" class="wid__interests_item">
+                <i class="wid__interests_icon icon_activities"></i>Activities
+            </a><!-- /.wid__interests_item -->
+
+            <a href="#" class="wid__interests_item">
+                <i class="wid__interests_icon icon_books"></i>Books
+            </a> <!-- /.wid__interests_item -->
+
+            <a href="#" class="wid__interests_item">
+                <i class="wid__interests_icon icon_brands"></i>Brands
+            </a> <!-- /.wid__interests_item -->
+
+        </div><!-- /.profile__wid__interest -->
+
+    </div><!-- /.profile__collRight -->
+    <div class="std__clear"></div>
+</div><!-- /.profile__container -->
+
+<div class="profile__info_block">
+    <h2 class="b-std__header std__fs-smallH">About her & who she's looking for
+            <span class="profile__info_more">
+                <a href="#"><i class="icon icon-attention"></i>ask for more info</a>
+                <span>you have asked for more info</span>
+            </span>
+    </h2>
+
+    <p>
+        I enjoy watching and playing sports, I am a Dodger and Clippers fan! I may present myself to be the woman who does not like to get dirty, but give me a ball and I'll rise to the occasion! If that means changing into b-ball shorts, a tank and hat, I'm game and I will give you a run for your money!!! My competetive nature will present itself and even if you lose I'll be a fair sport.
+    </p>
+
+    <p>
+        I've been told that I am somewhat of an old soul, however with a new age approach.. I tend to be very quiet at first, yet an outspoken individual once rapport is built. Often described as a caring, kind, loyal, dependable,intelligent, passionate, compassionate, empathetic, and reliable person. There's much more but there's a brief insight :)
+    </p>
+</div><!-- /.profile__info_block -->
+
+<div class="profile__info_block">
+    <h2 class="b-std__header std__fs-smallH">My life style
+            <span class="profile__info_more">
+                <a href="#"><i class="icon icon-attention"></i>ask for more info</a>
+                <span>you have asked for more info</span>
+            </span>
+    </h2>
+
+    <h3>Interests</h3>
+
+    <div class="profile__info_list">
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Books: </div>
+            <div class="profile__info_list_item"><a href="#">Gardening/Landscaping</a>, <a href="#">Movies/Videos</a>, <a href="#">Museums and art</a>, <a href="#">Music and concerts</a>
+                <a href="#" class="label">+26</a></div>
+        </div><!-- /.profile__info_list_row -->
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Food: </div>
+            <div class="profile__info_list_item"><a href="#">Coffee and conversation</a>, <a href="#">Business networking</a>, <a href="#">Cooking</a>, <a href="#">Dining out</a>, <a href="#">Fishing/Hunting</a>
+                <a href="#" class="label">+26</a></div>
+        </div><!-- /.profile__info_list_row -->
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Movies: </div>
+            <div class="profile__info_list_item"><a href="#">Performing arts</a>, <a href="#">Religion/Spiritual</a>, <a href="#">Travel/Sightseeing</a>, <a href="#">Volunteering</a>, <a href="#">Watching sports</a>
+                <a href="#" class="label">+26</a></div>
+        </div><!-- /.profile__info_list_row -->
+
+    </div><!-- /.profile__info_list -->
+
+    <div class="profile__info_list">
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Sports and exercise: </div>
+            <div class="profile__info_list_item">I'll tell you later   </div>
+        </div><!-- /.profile__info_list_row -->
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Political views:  </div>
+            <div class="profile__info_list_item">I'll tell you later</div>
+        </div><!-- /.profile__info_list_row -->
+
+    </div><!-- /.profile__info_list -->
+
+</div>
+
+<div class="profile__info_block profile__block-3coll">
+    <h2 class="b-std__header std__fs-smallH">
+        <span class="profile__about_coll-1">About</span><span class="profile__about_coll-2">Her</span><span class="profile__about_coll-3">Her partner</span>
+            <span class="profile__info_more">
+                <a href="#"><i class="icon icon-attention"></i>ask for more info</a>
+                <span>you have asked for more info</span>
+            </span>
+
+    </h2>
+
+    <h3>Appearance </h3>
+    <div class="profile__info_list">
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Height: </div>
+            <div class="profile__info_list_item">173 cm</div>
+            <div class="profile__info_list_item-2">No preference</div>
+        </div><!-- /.profile__info_list_row -->
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Body type: </div>
+            <div class="profile__info_list_item">Average</div>
+            <div class="profile__info_list_item-2">No preference</div>
+        </div><!-- /.profile__info_list_row -->
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Eye color: </div>
+            <div class="profile__info_list_item">Brown</div>
+            <div class="profile__info_list_item-2">No preference</div>
+        </div><!-- /.profile__info_list_row -->
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Hair color: </div>
+            <div class="profile__info_list_item">Black</div>
+            <div class="profile__info_list_item-2">No preference</div>
+        </div><!-- /.profile__info_list_row -->
+
+    </div><!-- /.profile__info_list-->
+
+    <h3>Lifestyle </h3>
+    <div class="profile__info_list">
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Smoke: </div>
+            <div class="profile__info_list_item">Never</div>
+            <div class="profile__info_list_item-2">No preference</div>
+        </div><!-- /.profile__info_list_row -->
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Drink: </div>
+            <div class="profile__info_list_item">Several times a week</div>
+            <div class="profile__info_list_item-2">No preference</div>
+        </div><!-- /.profile__info_list_row -->
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Occupation: </div>
+            <div class="profile__info_list_item">I'll tell you later</div>
+            <div class="profile__info_list_item-2">No preference</div>
+        </div><!-- /.profile__info_list_row -->
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Income: </div>
+            <div class="profile__info_list_item">I'll tell you later</div>
+            <div class="profile__info_list_item-2">No preference</div>
+        </div><!-- /.profile__info_list_row -->
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Relationship: </div>
+            <div class="profile__info_list_item">Single</div>
+            <div class="profile__info_list_item-2">No preference</div>
+        </div><!-- /.profile__info_list_row -->
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Have kids: </div>
+            <div class="profile__info_list_item">No</div>
+            <div class="profile__info_list_item-2">No preference</div>
+        </div><!-- /.profile__info_list_row -->
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Want kids: </div>
+            <div class="profile__info_list_item">Yes</div>
+            <div class="profile__info_list_item-2">No preference</div>
+        </div><!-- /.profile__info_list_row -->
+
+    </div><!-- /.profile__info_list-->
+
+    <h3>Background / Values </h3>
+    <div class="profile__info_list">
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Ethnicity: </div>
+            <div class="profile__info_list_item">White / Caucasian</div>
+            <div class="profile__info_list_item-2">No preference</div>
+        </div><!-- /.profile__info_list_row -->
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Faith: </div>
+            <div class="profile__info_list_item">I'll tell you later</div>
+            <div class="profile__info_list_item-2">No preference</div>
+        </div><!-- /.profile__info_list_row -->
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Languages: </div>
+            <div class="profile__info_list_item">English</div>
+            <div class="profile__info_list_item-2">No preference</div>
+        </div><!-- /.profile__info_list_row -->
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Education: </div>
+            <div class="profile__info_list_item">I'll tell you later</div>
+            <div class="profile__info_list_item-2">No preference</div>
+        </div><!-- /.profile__info_list_row -->
+
+    </div><!-- /.profile__info_list-->
+
+</div><!-- /.profile__info_block -->
+
+<div class="profile__info_block profile__block-myWord">
+    <h2 class="b-std__header std__fs-smallH">
+        In my own words
+            <span class="profile__info_more">
+                <a href="#"><i class="icon icon-attention"></i>ask for more info</a>
+                <span>you have asked for more info</span>
+            </span>
+    </h2>
+
+    <div class="profile__info_list">
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Dreams: </div>
+            <div class="profile__info_list_item">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </div>
+        </div><!-- /.profile__info_list_row -->
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Life goals: </div>
+            <div class="profile__info_list_item">
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+                venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+
+            </div>
+        </div><!-- /.profile__info_list_row -->
+
+        <div class="profile__info_list_row">
+            <div class="profile__info_list_label">Favorite quote: </div>
+            <div class="profile__info_list_item">
+                Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+                consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
+                viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+                Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+
+            </div>
+        </div><!-- /.profile__info_list_row -->
+
+    </div><!-- /.profile__info_list -->
+
+</div><!-- /.profile__info_block -->
+
+<div class="profile__buttons profile__block-bottom">
+    <a class="button big message red" href="#"><i class="icon"></i>Send message</a>
+    <a class="button big wink" href="#"><i class="icon"></i>Wink</a>
+    <a class="button big gift" href="#"><i class="icon"></i>Send gift</a>
+    <span class="std__justify_helper"></span>
+</div><!-- /.profile__buttons -->
+
+
+</div><!-- /.profile /.content_inn -->
+</div><!-- /.content -->
+<!-- НАЧАЛО шаблонного Футера -->
+<div class="footer">
+    <div class="footer_inn">`
+        <ul>
+            <li><a href="/page/about">About us</a></li>
+            <li><a href="/help">FAQ</a></li>
+            <li><a href="http://blog.yangutu.com/">Our blog</a></li>
+            <li><a href="/feedback">Contact us</a></li>
+        </ul>
+        <ul>
+            <li><a href="/page/policy">Privacy</a></li>
+            <li><a href="/page/terms">Terms of use</a></li>
+        </ul>
+        <ul>
+            <li><a href="/page/scams">Scam warning</a></li>
+            <li><a href="/page/safety">Safety Tips</a></li>
+        </ul>
+        <ul>
+            <li><a href="http://datingtips.yangutu.com/">Dating tips</a></li>
+            <li><a href="http://discussionboard.yangutu.com/">Discussion board</a></li>
+            <li><a href="http://relationshipadvice.yangutu.com/">Relationship advice</a></li>
+
+        </ul>
+        <ul>
+            <li><a href="/dating/all">People Directory</a></li>
+        </ul>
+        <div class="right">
+            <font color="black">&copy; 2010-2011 Yangutu Inc. All rights reserved</font><br>
+            <span>Yangutu (swahili) - My one and only.</span>
+        </div>
+        <div class="std__clear"></div>
+    </div>
+</div>
+
+</body>
+</html>

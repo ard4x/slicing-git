@@ -32,7 +32,7 @@
         .wid__bday_controls_left{left: -1px !important; background-position: -65px -16px !important;}
         .wid__bday_controls_right{right: -1px!important; background-position: -73px -16px !important;}
         .wid__bday_controls_left.false, .wid__bday_controls_right.false {display: none;}
-        
+
     .wid__bday_userHolder{}
         .wid__bday_user{}
             .wid__bday_user_userPic{margin: 0 15px 0 11px; float: left;}
@@ -65,7 +65,7 @@
 .wid__videoAfter .user__location {font-size: 10px; text-align: left; margin-bottom: 15px;}
 .wid__videoAfter .user__options  {font-size: 10px; text-align: left; }
 .wid__videoAfter .srch__userList_user {padding: 10px 9px 11px; width: 154px;}
-        
+
 .wid__dropDown {top: 18px; right: 0px; position: absolute; width: 240px; background: #fff !important; box-shadow: 0 0 10px rgba(0,0,0,0.5); padding:5px 0; z-index: 10; }
         .wid__dropDown li { margin-left: 0!important; list-style: none; margin: 0; padding:0; display: block; width: 100%;}
         .wid__dropDown li a{background: none; padding: 4px 15px; display: block; font: 12px Arial; color:#4F6B8D; text-decoration: none;}
@@ -83,9 +83,7 @@
 .wid__dropDown-profile { top: 18px; right: 0px; width: 140px; }
         .wid__dropDown-profile .wid__dropDown-top{ background-position: 105px -354px !important; }
 
-        /* user Save widget */
-
-/* widget Save To Favorites*/
+ /* widget Save To Favorites*/
 .wid__saveUser {text-align: center; font-size: 14px; padding: 14px 15px 16px;}
     .wid__saveUser .std__header {text-align: left;}
     .wid__saveUser_wrapper {background-color: #fff; border-radius: 4px; padding: 15px; margin-bottom: 13px;}
@@ -97,3 +95,20 @@
         .wid__saveUser_buttons_save {width: 88px; float: left;}
         .wid__saveUser_buttons_next {width: 88px; float: right;}
 .wid__saveUser_stopper { background-image: url("/img/indicator_32x32.gif");background-repeat: no-repeat;background-position: 50% 50%;height: 280px; width: 170px !important; }
+
+/* Widget Interests*/
+.wid__interests {padding: 13px 15px 12px; margin-top: 20px;}
+    .wid__interests_header {margin-bottom: 12px; text-align: center;}
+    .wid__interests_item {font-size: 12px; display: block; background: #fff; border: 1px solid #ccc; padding: 9px 10px; border-radius: 4px; margin-bottom: 5px; line-height: 23px;}
+        .wid__interests_icon {display: inline-block; width: 23px; height: 23px; background: url(../img/widgets/interests_icons.png) no-repeat; margin-right: 10px; vertical-align: middle;}
+            .wid__interests_icon.icon_activities {background-position: 0 0;}
+            .wid__interests_icon.icon_books {background-position: -25px 0;}
+            .wid__interests_icon.icon_brands {background-position: -50px 0;}
+            .wid__interests_icon.icon_cars {background-position: -75px 0;}
+            .wid__interests_icon.icon_countries {background-position: 0 -25px;}
+            .wid__interests_icon.icon_food {background-position: -25px -25px;}
+            .wid__interests_icon.icon_movies {background-position: -50px -25px;}
+            .wid__interests_icon.icon_music {background-position: -75px -25px;}
+            .wid__interests_icon.icon_sports {background-position: 0 -50px;}
+            .wid__interests_icon.icon_tv {background-position: -25px -50px;}
+            .wid__interests_icon.icon_websites {background-position: -50px -50px;}
