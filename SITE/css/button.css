@@ -1620,3 +1620,18 @@ i.icon.icon-check {
 i.icon.icon-check.lite {
   background-position: -88px -453px;
 }
+i.icon.icon-round-checked {
+  width: 24px;
+  height: 24px;
+  background-position: -44px -446px;
+}
+i.icon.icon-round-check {
+  width: 24px;
+  height: 24px;
+  background-position: -44px -420px;
+}
+i.icon.icon-round-checked-big {
+  width: 62px;
+  height: 62px;
+  background-position: -43px -135px;
+}
