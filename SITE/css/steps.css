@@ -90,8 +90,8 @@ textarea.err, .err .newListSelected, .err .newList{border-color: #990000; border
         .steps__step-2_counter.count_value_4 .count_item_3,
         .steps__step-2_counter.count_value_4 .count_item_4,
         .steps__step-2_counter.count_value_5 .steps__step_counterItem {background-position: -44px -446px;}
-    .steps__step-2_interests_list {font-size: 0; border-bottom: 1px solid #ccc;}
-        .steps__step-2_interests_item {display: inline-block; padding: 3px; border-radius: 3px; margin: 0 15px 30px;}
+    .steps__step-2_interests_list {font-size: 0; border-bottom: 1px solid #ccc; border-top: 1px solid #ccc;}
+        .steps__step-2_interests_item {display: inline-block; padding: 3px; border-radius: 3px; margin: 15px;}
         .steps__step-2_interests_item:hover {background: #436187!important;}
         .steps__step-2_interests_item.checked {padding: 2px; background: #f1f1f1; border: 1px solid #ddd;}
             .steps__step-2_interests_item.checked .steps__step-2_interests_item_label {color: #ffe67a;}
