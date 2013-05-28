@@ -76,7 +76,7 @@ textarea.err, .err .newListSelected, .err .newList{border-color: #990000; border
 .steps__photoUpload.err {border: 2px solid #990000; border-radius: 4px;}
 
 /* Step 2 */
-.steps__step-2_header {padding-bottom: 13px; font-size: 16px;}
+.steps__step-2_header {font-size: 16px;}
     .steps__step-2_counter {display: inline-block; float: right;}
         .steps__step_counterItem {display: inline-block; width: 24px; height: 24px; background: -44px -420px url(../img/button/btns-icos.png); margin-left: 6px;}
         .steps__step-2_counter.count_value_1 .count_item_1,
