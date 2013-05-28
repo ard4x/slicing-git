@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <title>Step 2</title>
+    <link rel="stylesheet" href="../style_curr.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/steps.css">
+
+
+    <script src="../js/jquery.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'})
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+</head>
+<body>
+<!-- начало  шапки -->
+<div class="pre-header">
+    <div class="pre-header_inner">
+        <a href="/">
+            <img src="../img/ya_block_logo_in.png" class="logo" alt="Yangutu">
+        </a>
+    </div>
+</div>
+<!-- КОНЕЦ  шапки -->
+<div class="content">
+    <div class="content_inn profile ">
+        <div class="steps step-2">
+
+            <h1 class="std__header std__fs-bigH std__underline">Congratulations! Registration is completed!</h1>
+
+            <div class="steps__progress std__layer_grey-lite">
+                <h2 class="std__header std__fs-smallH std__underline std">Tell some words about yourself</h2>
+
+                <div class="steps__progress_line"></div>
+
+                <div class="steps__progress_points">
+                    <div class="steps__progress_point point-1">Basic information</div>
+                    <div class="steps__progress_point point-2">Interests</div>
+                    <div class="steps__progress_point point-3">In your own words</div>
+                    <div class="steps__progress_point point-4">About my date</div>
+                </div><!-- /.steps__progress_points -->
+            </div><!-- /.steps__progress -->
+
+            <div class="steps__description std__layer_blue">
+                <h2 class="std__header std__fs-smallH std__underline">Add your interests</h2>
+                <div>
+                    Choose at least 5 interests,
+                    show your personality to
+                    other Yangutu users and find
+                    people who share your
+                    interests.
+                </div>
+            </div><!-- /.steps__description -->
+
+            <div class="steps__content">
+                <h2 class="std__header std__fs-smallH std__underline steps__step-2_header">Select 5 interests to continue
+                    <ul class="steps__step-2_counter count_value_1">
+                        <li class="steps__step_counterItem count_item_1"></li>
+                        <li class="steps__step_counterItem count_item_2"></li>
+                        <li class="steps__step_counterItem count_item_3"></li>
+                        <li class="steps__step_counterItem count_item_4"></li>
+                        <li class="steps__step_counterItem count_item_5"></li>
+                    </ul>
+                </h2>
+
+
+                <div class="steps__step-2_interests_list">
+
+                        <div class="steps__step-2_interests_item">
+                            <img class="steps__step-2_interests_image" src="../img/steps/interest_.png" alt=""/>
+                            <div class="steps__step-2_interests_item_label">
+                                <span class="steps__step-2_interests_item_labelText">
+                                    Jogging
+                                </span>
+                            </div>
+                            <div class="steps__step-2_interests_item_check"></div>
+                        </div>
+
+                </div>
+
+                <div class="steps_interest_button">
+
+                    <a class="button disabled" href="#">Next</a>
+
+                </div><!-- /.profile__interest_content -->
+            </div><!-- /.steps__content -->
+
+        </div><!-- /.steps -->
+
+    </div><!-- /.profile /.content_inn -->
+</div><!-- /.content -->
+
+</body>
+</html>

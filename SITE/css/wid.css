@@ -99,7 +99,7 @@
 /* Widget Interests*/
 .wid__interests {padding: 13px 15px 12px; margin-top: 20px;}
     .wid__interests_header {margin-bottom: 12px; text-align: center;}
-    .wid__interests_item {font-size: 12px; display: block; background: #fff; border: 1px solid #ccc; padding: 9px 10px; border-radius: 4px; margin-bottom: 5px; line-height: 23px;}
+    .wid__interests_item {font-size: 12px; color: #4f6b8d; display: block; background: #fff; border: 1px solid #ccc; padding: 9px 10px; border-radius: 4px; margin-bottom: 5px; line-height: 23px;}
         .wid__interests_icon {display: inline-block; width: 23px; height: 23px; background: url(../img/widgets/interests_icons.png) no-repeat; margin-right: 10px; vertical-align: middle;}
             .wid__interests_icon.icon_activities {background-position: 0 0;}
             .wid__interests_icon.icon_books {background-position: -25px 0;}

@@ -76,9 +76,29 @@ textarea.err, .err .newListSelected, .err .newList{border-color: #990000; border
 .steps__photoUpload.err {border: 2px solid #990000; border-radius: 4px;}
 
 /* Step 2 */
-.steps_interest_message {margin-bottom: 10px;}
-    .steps_interest_message .count {font-weight: bold;}
-    .steps_interest_button {text-align: right; margin-top: 30px;}
+.steps__step-2_header {}
+    .steps__step-2_counter {}
+        .steps__step_counterItem {}
+        .steps__step-2_counter.count_value_1 .count_item_1,
+        .steps__step-2_counter.count_value_2 .count_item_1,
+        .steps__step-2_counter.count_value_2 .count_item_2,
+        .steps__step-2_counter.count_value_3 .count_item_1,
+        .steps__step-2_counter.count_value_3 .count_item_2,
+        .steps__step-2_counter.count_value_3 .count_item_3,
+        .steps__step-2_counter.count_value_4 .count_item_1,
+        .steps__step-2_counter.count_value_4 .count_item_2,
+        .steps__step-2_counter.count_value_4 .count_item_3,
+        .steps__step-2_counter.count_value_4 .count_item_4,
+        .steps__step-2_counter.count_value_5 .steps__step_counterItem {}
+    .steps__step-2_interests_list {}
+        .steps__step-2_interests_item {}
+        .steps__step-2_interests_item:hover {}
+        .steps__step-2_interests_item.checked {}
+            .steps__step-2_interests_image {}
+            .steps__step-2_interests_item_label {}
+                .steps__step-2_interests_item_labelText {}
+                .steps__step-2_interests_item_check {}
+    .steps_interest_button {text-align: center; margin-top: 30px;}
     .steps_interest_button .button {width: 105px;}
 
 /* Step 3 */
