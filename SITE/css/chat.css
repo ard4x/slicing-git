@@ -57,8 +57,9 @@
         .chat__list_switcher {margin-bottom: 10px;}
             .chat__list_switcher .slider {margin: 0;}
         .chat__search {margin-bottom: 15px; position: relative;}
-            input.chat__search_field {box-sizing: border-box; -moz-box-sizing: border-box; height: 27px!important; margin: 0; padding-left: 22px; padding-right: 3px; width: 100%;}
+            input.chat__search_field {box-sizing: border-box; -moz-box-sizing: border-box; height: 27px!important; margin: 0; padding-left: 22px; padding-right: 22px; width: 100%;}
             .chat__search_icon {display: block; width: 13px; height: 14px; background: -16px -138px url(../img/chat/chat.png) no-repeat; position: absolute; top: 7px; left: 6px; border: none; font-size: 0; cursor: pointer;}
+            .chat__search_reset {position: absolute; top: 9px; right: 9px; font-size: 0;display: inline-block;}
         .chat__list_wrapper {height: 535px; overflow: auto;}
             .chat__list {}
                 .chat__list_conversations {}
