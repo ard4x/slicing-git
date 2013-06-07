@@ -11,19 +11,19 @@
 // ******************************
 
 .gradient (@col1, @col2){
-  background: @col1 - #101010; /* Old browsers */
-  background: -moz-linear-gradient(top, @col1 0%, @col2 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @col1), color-stop(100%,@col2)) ; /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, @col1 0%,@col2 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, @col1 0%,@col2 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, @col1 0%,@col2 100%); /* IE10+ */
-  background: linear-gradient(to bottom, @col1 0%,@col2 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@col1, endColorstr=@col2,GradientType=0 ); /* IE6-9 */
+  background: @col1 - #101010; //* Old browsers */
+//  background: -moz-linear-gradient(top, @col1 0%, @col2 100%); //* FF3.6+ */
+//  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, @col1), color-stop(100%,@col2)) ; //* Chrome,Safari4+ */
+//  background: -webkit-linear-gradient(top, @col1 0%,@col2 100%); //* Chrome10+,Safari5.1+ */
+//  background: -o-linear-gradient(top, @col1 0%,@col2 100%); //* Opera 11.10+ */
+  background: -ms-linear-gradient(top, @col1 0%,@col2 100%); //* IE10+ */
+  background: linear-gradient(to bottom, @col1 0%,@col2 100%); //* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@col1, endColorstr=@col2,GradientType=0 ); //* IE6-9 */
 }
 
 .gradient_off (@col1){
   background: @col1;
-  filter: progid:DXImageTransform.Microsoft.gradient( enabled = false ); /* IE6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( enabled = false ); //* IE6-9 */
 }
 
 .button_borders ( @btnTopColor:#3a639a,       @btnBgColor:#496b94,        @btnBottomColor:#334b67,
@@ -225,6 +225,14 @@
   }
   &.facebook {
     .iconedButton();
+
+    &.big {padding-left: 39px;}
+
+    &.big i.icon{
+      background-position: -8px -48px;
+      width: 29px;
+      border-right: 1px solid #334a67;
+    }
   }
 
   &.message {
@@ -532,7 +540,9 @@ i.icon {
     .switch&.current {
       .gradient (#c03117, #d35239);
       border-color: #862714 #862714 #a13f2c #862714 !important;
+    }
 
+    .switch&.current {
       &:after {
         content: '';
         display: block;
