@@ -1,0 +1,512 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="style_curr.css">
+    <link rel="stylesheet" type="text/css" href="popups.css.css">
+    <link rel="stylesheet" type="text/css" href="steps.css">
+<body>
+	
+    
+    
+    <div style="position: fixed; left: 0px; top: 0px; zoom: 1; " class="ygPopupHolder p-viewer"><div style="position: relative; display: block; width: 835px; margin-top: 145.5px; margin-left: 522.5px; " class="fixWidth635 rubber" id="user-barrier-popup">
+        <a class="popClose ygPopupClose" href=""><img src="/img/close_ic.png" alt=""></a>
+        <div class="yp_top"><div class="rubber_top_right"></div></div>
+        <div class="yp_content_left">
+            <div class="yp_content_right">
+                    <div class="yp_grad">
+                            <h3>Fill in the required fields and upload your photo, otherwise you will not be able to contact this user</h3>
+                            <div class="indentTop10">
+                                    <div class="register_info_table left-col left">
+                                            <div class="brdpic picstub" id="barrier-popup-avatar">
+                                                    <a class="ygPopup" href="/photo/add-popup/barrier/1/" title="Upload photo" data-options="{callbackClose: &quot;refreshBarrierProfilePhoto&quot;}">
+                                                        <img src="/img/stubs/116x156.gif">                                                        <span rel="upload_photo" class="no-photo">Upload photo</span>
+                                                    </a>
+                                            </div>
+                                    </div>
+                                    <div class="register_info_table right-col left" style="width: 490px!important;padding-left:30px">
+                                        
+<form action="/barrier/save" method="POST" id="required-info">
+    <div class="formRow">
+        <div class="label">Language:</div>
+
+        <div class="content-steps">
+            <div class="fixWidth168 left">
+                
+<select name="languages" id="languages" class="sselect empty-value" style="display: none; ">
+    <option value="0" label="Please select">Please select</option>
+    <option value="621" label="Afrikaans">Afrikaans</option>
+    <option value="622" label="Albanian">Albanian</option>
+    <option value="623" label="Amharic">Amharic</option>
+    <option value="624" label="Arabic">Arabic</option>
+    <option value="626" label="Armenian">Armenian</option>
+    <option value="627" label="Assamese">Assamese</option>
+    <option value="625" label="Assyrian/Syriac">Assyrian/Syriac</option>
+    <option value="628" label="Aymara">Aymara</option>
+    <option value="629" label="Azeri">Azeri</option>
+    <option value="630" label="Basque">Basque</option>
+    <option value="631" label="Belarusian">Belarusian</option>
+    <option value="632" label="Bengali">Bengali</option>
+    <option value="633" label="Bislama">Bislama</option>
+    <option value="634" label="Bosnian">Bosnian</option>
+    <option value="635" label="Bulgarian">Bulgarian</option>
+    <option value="636" label="Burmese">Burmese</option>
+    <option value="637" label="Catalan">Catalan</option>
+    <option value="338" label="Chinese">Chinese</option>
+    <option value="638" label="Croatian">Croatian</option>
+    <option value="349" label="Czech">Czech</option>
+    <option value="639" label="Danish">Danish</option>
+    <option value="640" label="Dari">Dari</option>
+    <option value="641" label="Dhivehi">Dhivehi</option>
+    <option value="341" label="Dutch">Dutch</option>
+    <option value="642" label="Dzongkha">Dzongkha</option>
+    <option value="333" label="English">English</option>
+    <option value="643" label="Estonian">Estonian</option>
+    <option value="644" label="Fijian">Fijian</option>
+    <option value="645" label="Filipino">Filipino</option>
+    <option value="336" label="Finnish">Finnish</option>
+    <option value="343" label="French">French</option>
+    <option value="646" label="Frisian (West)">Frisian (West)</option>
+    <option value="647" label="Gagauz">Gagauz</option>
+    <option value="648" label="Galician">Galician</option>
+    <option value="649" label="Georgian">Georgian</option>
+    <option value="347" label="German">German</option>
+    <option value="345" label="Greek">Greek</option>
+    <option value="650" label="Gujarati">Gujarati</option>
+    <option value="652" label="Haitian Creole">Haitian Creole</option>
+    <option value="653" label="Hebrew">Hebrew</option>
+    <option value="654" label="Hindi">Hindi</option>
+    <option value="655" label="Hiri Motu">Hiri Motu</option>
+    <option value="656" label="Hungarian">Hungarian</option>
+    <option value="657" label="Icelandic">Icelandic</option>
+    <option value="658" label="Indonesian">Indonesian</option>
+    <option value="659" label="Inuinnaqtun">Inuinnaqtun</option>
+    <option value="660" label="Inuktitut">Inuktitut</option>
+    <option value="661" label="Irish">Irish</option>
+    <option value="348" label="Italian">Italian</option>
+    <option value="346" label="Japanese">Japanese</option>
+    <option value="662" label="Kannada">Kannada</option>
+    <option value="663" label="Kashmiri">Kashmiri</option>
+    <option value="664" label="Kazakh">Kazakh</option>
+    <option value="665" label="Khmer">Khmer</option>
+    <option value="337" label="Korean">Korean</option>
+    <option value="666" label="Kurdish">Kurdish</option>
+    <option value="667" label="Kyrgyz">Kyrgyz</option>
+    <option value="668" label="Lao">Lao</option>
+    <option value="669" label="Latin">Latin</option>
+    <option value="670" label="Latvian">Latvian</option>
+    <option value="671" label="Lithuanian">Lithuanian</option>
+    <option value="672" label="Luxembourgish">Luxembourgish</option>
+    <option value="673" label="Macedonian">Macedonian</option>
+    <option value="674" label="Malagasy">Malagasy</option>
+    <option value="675" label="Malay">Malay</option>
+    <option value="676" label="Malayalam">Malayalam</option>
+    <option value="677" label="Maltese">Maltese</option>
+    <option value="678" label="Manx Gaelic">Manx Gaelic</option>
+    <option value="680" label="Marathi">Marathi</option>
+    <option value="681" label="Mayan">Mayan</option>
+    <option value="682" label="Moldovan">Moldovan</option>
+    <option value="683" label="Mongolian">Mongolian</option>
+    <option value="684" label="Montenegrin">Montenegrin</option>
+    <option value="686" label="Ndebele">Ndebele</option>
+    <option value="687" label="Nepali">Nepali</option>
+    <option value="688" label="New Zealand Sign Language">New Zealand Sign Language</option>
+    <option value="689" label="Northern Sotho">Northern Sotho</option>
+    <option value="690" label="Norwegian">Norwegian</option>
+    <option value="691" label="Occitan">Occitan</option>
+    <option value="692" label="Oriya">Oriya</option>
+    <option value="693" label="Ossetian">Ossetian</option>
+    <option value="694" label="Papiamento">Papiamento</option>
+    <option value="695" label="Pashto">Pashto</option>
+    <option value="696" label="Persian">Persian</option>
+    <option value="335" label="Polish">Polish</option>
+    <option value="339" label="Portuguese">Portuguese</option>
+    <option value="697" label="Punjabi">Punjabi</option>
+    <option value="698" label="Quechua">Quechua</option>
+    <option value="700" label="Rhaeto-Romansh">Rhaeto-Romansh</option>
+    <option value="699" label="Romanian">Romanian</option>
+    <option value="342" label="Russian">Russian</option>
+    <option value="701" label="Sanskrit">Sanskrit</option>
+    <option value="702" label="Scottish Gaelic">Scottish Gaelic</option>
+    <option value="703" label="Serbian">Serbian</option>
+    <option value="704" label="Shona">Shona</option>
+    <option value="705" label="Sindhi">Sindhi</option>
+    <option value="706" label="Sinhala">Sinhala</option>
+    <option value="707" label="Slovak">Slovak</option>
+    <option value="708" label="Slovene">Slovene</option>
+    <option value="709" label="Somali">Somali</option>
+    <option value="710" label="Sotho">Sotho</option>
+    <option value="340" label="Spanish">Spanish</option>
+    <option value="711" label="Sranan Tongo">Sranan Tongo</option>
+    <option value="712" label="Swahili">Swahili</option>
+    <option value="713" label="Swati">Swati</option>
+    <option value="344" label="Swedish">Swedish</option>
+    <option value="714" label="Tajik">Tajik</option>
+    <option value="715" label="Tamil">Tamil</option>
+    <option value="716" label="Telugu">Telugu</option>
+    <option value="717" label="Tetum">Tetum</option>
+    <option value="718" label="Thai">Thai</option>
+    <option value="719" label="Tok Pisin">Tok Pisin</option>
+    <option value="720" label="Tsonga">Tsonga</option>
+    <option value="721" label="Tswana">Tswana</option>
+    <option value="334" label="Turkish">Turkish</option>
+    <option value="722" label="Turkmen">Turkmen</option>
+    <option value="723" label="Ukrainian">Ukrainian</option>
+    <option value="724" label="Urdu">Urdu</option>
+    <option value="725" label="Uzbek">Uzbek</option>
+    <option value="726" label="Venda">Venda</option>
+    <option value="727" label="Vietnamese">Vietnamese</option>
+    <option value="728" label="Welsh">Welsh</option>
+    <option value="729" label="Xhosa">Xhosa</option>
+    <option value="730" label="Yiddish">Yiddish</option>
+    <option value="731" label="Zulu">Zulu</option>
+</select><div class="newListSelected" tabindex="0"><div class="selectedTxt">Please select</div><div class="SSContainerDivWrapper" style="visibility: visible; top: 17px; height: 150px; left: 0px; display: none; "><ul class="newList" style="height: 150px; "><li><a href="JavaScript:void(0);" class="hiLite">Please select</a></li><li><a href="JavaScript:void(0);">Afrikaans</a></li><li><a href="JavaScript:void(0);">Albanian</a></li><li><a href="JavaScript:void(0);">Amharic</a></li><li><a href="JavaScript:void(0);">Arabic</a></li><li><a href="JavaScript:void(0);">Armenian</a></li><li><a href="JavaScript:void(0);">Assamese</a></li><li><a href="JavaScript:void(0);">Assyrian/Syriac</a></li><li><a href="JavaScript:void(0);">Aymara</a></li><li><a href="JavaScript:void(0);">Azeri</a></li><li><a href="JavaScript:void(0);">Basque</a></li><li><a href="JavaScript:void(0);">Belarusian</a></li><li><a href="JavaScript:void(0);">Bengali</a></li><li><a href="JavaScript:void(0);">Bislama</a></li><li><a href="JavaScript:void(0);">Bosnian</a></li><li><a href="JavaScript:void(0);">Bulgarian</a></li><li><a href="JavaScript:void(0);">Burmese</a></li><li><a href="JavaScript:void(0);">Catalan</a></li><li><a href="JavaScript:void(0);">Chinese</a></li><li><a href="JavaScript:void(0);">Croatian</a></li><li><a href="JavaScript:void(0);">Czech</a></li><li><a href="JavaScript:void(0);">Danish</a></li><li><a href="JavaScript:void(0);">Dari</a></li><li><a href="JavaScript:void(0);">Dhivehi</a></li><li><a href="JavaScript:void(0);">Dutch</a></li><li><a href="JavaScript:void(0);">Dzongkha</a></li><li><a href="JavaScript:void(0);">English</a></li><li><a href="JavaScript:void(0);">Estonian</a></li><li><a href="JavaScript:void(0);">Fijian</a></li><li><a href="JavaScript:void(0);">Filipino</a></li><li><a href="JavaScript:void(0);">Finnish</a></li><li><a href="JavaScript:void(0);">French</a></li><li><a href="JavaScript:void(0);">Frisian (West)</a></li><li><a href="JavaScript:void(0);">Gagauz</a></li><li><a href="JavaScript:void(0);">Galician</a></li><li><a href="JavaScript:void(0);">Georgian</a></li><li><a href="JavaScript:void(0);">German</a></li><li><a href="JavaScript:void(0);">Greek</a></li><li><a href="JavaScript:void(0);">Gujarati</a></li><li><a href="JavaScript:void(0);">Haitian Creole</a></li><li><a href="JavaScript:void(0);">Hebrew</a></li><li><a href="JavaScript:void(0);">Hindi</a></li><li><a href="JavaScript:void(0);">Hiri Motu</a></li><li><a href="JavaScript:void(0);">Hungarian</a></li><li><a href="JavaScript:void(0);">Icelandic</a></li><li><a href="JavaScript:void(0);">Indonesian</a></li><li><a href="JavaScript:void(0);">Inuinnaqtun</a></li><li><a href="JavaScript:void(0);">Inuktitut</a></li><li><a href="JavaScript:void(0);">Irish</a></li><li><a href="JavaScript:void(0);">Italian</a></li><li><a href="JavaScript:void(0);">Japanese</a></li><li><a href="JavaScript:void(0);">Kannada</a></li><li><a href="JavaScript:void(0);">Kashmiri</a></li><li><a href="JavaScript:void(0);">Kazakh</a></li><li><a href="JavaScript:void(0);">Khmer</a></li><li><a href="JavaScript:void(0);">Korean</a></li><li><a href="JavaScript:void(0);">Kurdish</a></li><li><a href="JavaScript:void(0);">Kyrgyz</a></li><li><a href="JavaScript:void(0);">Lao</a></li><li><a href="JavaScript:void(0);">Latin</a></li><li><a href="JavaScript:void(0);">Latvian</a></li><li><a href="JavaScript:void(0);">Lithuanian</a></li><li><a href="JavaScript:void(0);">Luxembourgish</a></li><li><a href="JavaScript:void(0);">Macedonian</a></li><li><a href="JavaScript:void(0);">Malagasy</a></li><li><a href="JavaScript:void(0);">Malay</a></li><li><a href="JavaScript:void(0);">Malayalam</a></li><li><a href="JavaScript:void(0);">Maltese</a></li><li><a href="JavaScript:void(0);">Manx Gaelic</a></li><li><a href="JavaScript:void(0);">Marathi</a></li><li><a href="JavaScript:void(0);">Mayan</a></li><li><a href="JavaScript:void(0);">Moldovan</a></li><li><a href="JavaScript:void(0);">Mongolian</a></li><li><a href="JavaScript:void(0);">Montenegrin</a></li><li><a href="JavaScript:void(0);">Ndebele</a></li><li><a href="JavaScript:void(0);">Nepali</a></li><li><a href="JavaScript:void(0);">New Zealand Sign Language</a></li><li><a href="JavaScript:void(0);">Northern Sotho</a></li><li><a href="JavaScript:void(0);">Norwegian</a></li><li><a href="JavaScript:void(0);">Occitan</a></li><li><a href="JavaScript:void(0);">Oriya</a></li><li><a href="JavaScript:void(0);">Ossetian</a></li><li><a href="JavaScript:void(0);">Papiamento</a></li><li><a href="JavaScript:void(0);">Pashto</a></li><li><a href="JavaScript:void(0);">Persian</a></li><li><a href="JavaScript:void(0);">Polish</a></li><li><a href="JavaScript:void(0);">Portuguese</a></li><li><a href="JavaScript:void(0);">Punjabi</a></li><li><a href="JavaScript:void(0);">Quechua</a></li><li><a href="JavaScript:void(0);">Rhaeto-Romansh</a></li><li><a href="JavaScript:void(0);">Romanian</a></li><li><a href="JavaScript:void(0);">Russian</a></li><li><a href="JavaScript:void(0);">Sanskrit</a></li><li><a href="JavaScript:void(0);">Scottish Gaelic</a></li><li><a href="JavaScript:void(0);">Serbian</a></li><li><a href="JavaScript:void(0);">Shona</a></li><li><a href="JavaScript:void(0);">Sindhi</a></li><li><a href="JavaScript:void(0);">Sinhala</a></li><li><a href="JavaScript:void(0);">Slovak</a></li><li><a href="JavaScript:void(0);">Slovene</a></li><li><a href="JavaScript:void(0);">Somali</a></li><li><a href="JavaScript:void(0);">Sotho</a></li><li><a href="JavaScript:void(0);">Spanish</a></li><li><a href="JavaScript:void(0);">Sranan Tongo</a></li><li><a href="JavaScript:void(0);">Swahili</a></li><li><a href="JavaScript:void(0);">Swati</a></li><li><a href="JavaScript:void(0);">Swedish</a></li><li><a href="JavaScript:void(0);">Tajik</a></li><li><a href="JavaScript:void(0);">Tamil</a></li><li><a href="JavaScript:void(0);">Telugu</a></li><li><a href="JavaScript:void(0);">Tetum</a></li><li><a href="JavaScript:void(0);">Thai</a></li><li><a href="JavaScript:void(0);">Tok Pisin</a></li><li><a href="JavaScript:void(0);">Tsonga</a></li><li><a href="JavaScript:void(0);">Tswana</a></li><li><a href="JavaScript:void(0);">Turkish</a></li><li><a href="JavaScript:void(0);">Turkmen</a></li><li><a href="JavaScript:void(0);">Ukrainian</a></li><li><a href="JavaScript:void(0);">Urdu</a></li><li><a href="JavaScript:void(0);">Uzbek</a></li><li><a href="JavaScript:void(0);">Venda</a></li><li><a href="JavaScript:void(0);">Vietnamese</a></li><li><a href="JavaScript:void(0);">Welsh</a></li><li><a href="JavaScript:void(0);">Xhosa</a></li><li><a href="JavaScript:void(0);">Yiddish</a></li><li><a href="JavaScript:void(0);">Zulu</a></li></ul></div></div>            </div>
+
+            <div class="fixWidth168 right">
+                
+<select name="langLevel" id="langLevel" class="sselect empty-value" style="display: none; ">
+    <option value="0" label="Your level">Your level</option>
+    <option value="1" label="low">low</option>
+    <option value="2" label="average">average</option>
+    <option value="3" label="fluent">fluent</option>
+    <option value="4" label="native">native</option>
+</select><div class="newListSelected" tabindex="0"><div class="selectedTxt">Your level</div><div class="SSContainerDivWrapper" style="visibility: visible; top: 17px; height: 105px; left: 0px; display: none; "><ul class="newList" style="height: 105px; "><li><a href="JavaScript:void(0);" class="hiLite">Your level</a></li><li><a href="JavaScript:void(0);">low</a></li><li><a href="JavaScript:void(0);">average</a></li><li><a href="JavaScript:void(0);">fluent</a></li><li><a href="JavaScript:void(0);">native</a></li></ul></div></div>            </div>
+        </div>
+
+        <div class="errMsg hide">
+            Need to be filled        </div>
+    </div><!-- /.formRow -->
+
+    <div class="formRow">
+        <div class="label">Relationship status:</div>
+
+        <div class="content-steps">
+            <div class="flWidth100">
+                
+<select name="relationshipStatus" id="relationshipStatus" class="sselect empty-value" style="display: none; ">
+    <option value="" label="Please select">Please select</option>
+    <option value="single" label="Single">Single</option>
+    <option value="civil" label="In a civil union">In a civil union</option>
+    <option value="domestic" label="In a domestic partnership">In a domestic partnership</option>
+    <option value="open" label="In an open relationship">In an open relationship</option>
+    <option value="relationship" label="In a relationship">In a relationship</option>
+    <option value="married" label="Engaged, Married">Engaged, Married</option>
+    <option value="complicated" label="It's complicated">It's complicated</option>
+</select><div class="newListSelected" tabindex="0"><div class="selectedTxt">Please select</div><div class="SSContainerDivWrapper" style="visibility: visible; top: 17px; height: 150px; left: 0px; display: none; "><ul class="newList" style="height: 150px; "><li><a href="JavaScript:void(0);" class="hiLite">Please select</a></li><li><a href="JavaScript:void(0);">Single</a></li><li><a href="JavaScript:void(0);">In a civil union</a></li><li><a href="JavaScript:void(0);">In a domestic partnership</a></li><li><a href="JavaScript:void(0);">In an open relationship</a></li><li><a href="JavaScript:void(0);">In a relationship</a></li><li><a href="JavaScript:void(0);">Engaged, Married</a></li><li><a href="JavaScript:void(0);">It's complicated</a></li></ul></div></div>            </div>
+        </div>
+
+        <div class="errMsg hide">
+            Need to be filled        </div>
+    </div><!-- /.formRow -->
+
+    <div class="formRow">
+        <div class="label">Age of partner:</div>
+
+        <div class="content-steps">
+            <div class="fixWidth158 left">
+                
+<select name="seekingAgeFrom" id="seekingAgeFrom" class="sselect" style="display: none; ">
+    <option value="0" label="From">From</option>
+    <option value="18" label="18" selected="selected">18</option>
+    <option value=" 26" label=" 26"> 26</option>
+    <option value=" 36" label=" 36"> 36</option>
+    <option value=" 46" label=" 46"> 46</option>
+    <option value=" 56" label=" 56"> 56</option>
+</select><div class="newListSelected" tabindex="0"><div class="selectedTxt">18</div><div class="SSContainerDivWrapper" style="visibility: visible; top: 17px; height: 126px; left: 0px; display: none; "><ul class="newList" style="height: 126px; "><li><a href="JavaScript:void(0);">From</a></li><li><a href="JavaScript:void(0);" class="hiLite">18</a></li><li><a href="JavaScript:void(0);"> 26</a></li><li><a href="JavaScript:void(0);"> 36</a></li><li><a href="JavaScript:void(0);"> 46</a></li><li><a href="JavaScript:void(0);"> 56</a></li></ul></div></div>            </div>
+
+            <span class="div">-</span>
+
+            <div class="fixWidth158 right">
+                
+<select name="seekingAgeTo" id="seekingAgeTo" class="sselect" style="display: none; ">
+    <option value="0" label="To">To</option>
+    <option value="18" label="18">18</option>
+    <option value="25" label="25">25</option>
+    <option value="35" label="35">35</option>
+    <option value="45" label="45">45</option>
+    <option value="55" label="55">55</option>
+    <option value=" 99" label=" 99" selected="selected"> 99</option>
+</select><div class="newListSelected" tabindex="0"><div class="selectedTxt"> 99</div><div class="SSContainerDivWrapper" style="visibility: visible; top: 17px; height: 147px; left: 0px; display: none; "><ul class="newList" style="height: 147px; "><li><a href="JavaScript:void(0);">To</a></li><li><a href="JavaScript:void(0);">18</a></li><li><a href="JavaScript:void(0);">25</a></li><li><a href="JavaScript:void(0);">35</a></li><li><a href="JavaScript:void(0);">45</a></li><li><a href="JavaScript:void(0);">55</a></li><li><a href="JavaScript:void(0);" class="hiLite"> 99</a></li></ul></div></div>            </div>
+
+            <div class="tips">
+                Choose desired age of partner you are looking for            </div>
+        </div>
+
+        <div class="errMsg hide">
+            Need to be filled        </div>
+    </div> <!-- /.formRow -->
+
+    <div class="formRow">
+        <div class="label">Education:</div>
+
+        <div class="content-steps">
+            <div class="flWidth100">
+                
+<select name="education" id="education" class="sselect empty-value" style="display: none; ">
+    <option value="0" label="Please select">Please select</option>
+    <option value="9" label="Associate's degree">Associate's degree</option>
+    <option value="11" label="Bachelor's degree">Bachelor's degree</option>
+    <option value="10" label="College degree">College degree</option>
+    <option value="13" label="Doctor of Philosophy">Doctor of Philosophy</option>
+    <option value="8" label="High school">High school</option>
+    <option value="12" label="Master's degree">Master's degree</option>
+    <option value="7" label="No formal education">No formal education</option>
+</select><div class="newListSelected" tabindex="0"><div class="selectedTxt">Please select</div><div class="SSContainerDivWrapper" style="visibility: visible; top: -150px; height: 150px; left: 0px; display: none; "><ul class="newList" style="height: 150px; "><li><a href="JavaScript:void(0);" class="hiLite">Please select</a></li><li><a href="JavaScript:void(0);">Associate's degree</a></li><li><a href="JavaScript:void(0);">Bachelor's degree</a></li><li><a href="JavaScript:void(0);">College degree</a></li><li><a href="JavaScript:void(0);">Doctor of Philosophy</a></li><li><a href="JavaScript:void(0);">High school</a></li><li><a href="JavaScript:void(0);">Master's degree</a></li><li><a href="JavaScript:void(0);">No formal education</a></li></ul></div></div>            </div>
+        </div>
+
+        <div class="errMsg hide">
+            Need to be filled        </div>
+    </div> <!-- /.formRow -->
+
+    <div class="formRow">
+        <div class="label">Ethnicity:</div>
+
+        <div class="content-steps">
+            <div class="flWidth100">
+                
+<select name="ethnicity" id="ethnicity" class="sselect empty-value" style="display: none; ">
+    <option value="0" label="Please select">Please select</option>
+    <option value="16" label="African-American / African descent">African-American / African descent</option>
+    <option value="752" label="Asian">Asian</option>
+    <option value="21" label="East Indian">East Indian</option>
+    <option value="15" label="Latino / Hispanic">Latino / Hispanic</option>
+    <option value="22" label="Middle Eastern / Arab">Middle Eastern / Arab</option>
+    <option value="23" label="Native American">Native American</option>
+    <option value="24" label="Other">Other</option>
+    <option value="18" label="Pacific Islander">Pacific Islander</option>
+    <option value="14" label="White / Caucasian">White / Caucasian</option>
+</select><div class="newListSelected" tabindex="0"><div class="selectedTxt">Please select</div><div class="SSContainerDivWrapper" style="visibility: visible; top: -150px; height: 150px; left: 0px; display: none; "><ul class="newList" style="height: 150px; "><li><a href="JavaScript:void(0);" class="hiLite">Please select</a></li><li><a href="JavaScript:void(0);">African-American / African descent</a></li><li><a href="JavaScript:void(0);">Asian</a></li><li><a href="JavaScript:void(0);">East Indian</a></li><li><a href="JavaScript:void(0);">Latino / Hispanic</a></li><li><a href="JavaScript:void(0);">Middle Eastern / Arab</a></li><li><a href="JavaScript:void(0);">Native American</a></li><li><a href="JavaScript:void(0);">Other</a></li><li><a href="JavaScript:void(0);">Pacific Islander</a></li><li><a href="JavaScript:void(0);">White / Caucasian</a></li></ul></div></div>            </div>
+        </div>
+
+        <div class="errMsg hide">
+            Need to be filled        </div>
+    </div> <!-- /.formRow -->
+
+    <div class="formRow">
+        <div class="label">Occupation:</div>
+
+        <div class="content-steps">
+            <div class="flWidth100">
+                
+<select name="occupation" id="occupation" class="sselect empty-value" style="display: none; ">
+    <option value="0" label="Please select">Please select</option>
+    <option value="317" label="Artistic/musical/writer">Artistic/musical/writer</option>
+    <option value="318" label="Banking/financial/real estate">Banking/financial/real estate</option>
+    <option value="319" label="Clerical/administrative">Clerical/administrative</option>
+    <option value="320" label="Computer/hardware/software">Computer/hardware/software</option>
+    <option value="321" label="Education/academia">Education/academia</option>
+    <option value="322" label="Entertainment/media">Entertainment/media</option>
+    <option value="323" label="Executive/management">Executive/management</option>
+    <option value="324" label="Hospitality/travel">Hospitality/travel</option>
+    <option value="325" label="Law/legal services">Law/legal services</option>
+    <option value="326" label="Medicine/health">Medicine/health</option>
+    <option value="327" label="Military">Military</option>
+    <option value="328" label="Political/government">Political/government</option>
+    <option value="329" label="Sales/marketing">Sales/marketing</option>
+    <option value="330" label="Science/tech/engineering">Science/tech/engineering</option>
+    <option value="316" label="Student">Student</option>
+    <option value="331" label="Transportation">Transportation</option>
+    <option value="332" label="Unemployed">Unemployed</option>
+</select><div class="newListSelected" tabindex="0"><div class="selectedTxt">Please select</div><div class="SSContainerDivWrapper" style="visibility: visible; top: -150px; height: 150px; left: 0px; display: none; "><ul class="newList" style="height: 150px; "><li><a href="JavaScript:void(0);" class="hiLite">Please select</a></li><li><a href="JavaScript:void(0);">Artistic/musical/writer</a></li><li><a href="JavaScript:void(0);">Banking/financial/real estate</a></li><li><a href="JavaScript:void(0);">Clerical/administrative</a></li><li><a href="JavaScript:void(0);">Computer/hardware/software</a></li><li><a href="JavaScript:void(0);">Education/academia</a></li><li><a href="JavaScript:void(0);">Entertainment/media</a></li><li><a href="JavaScript:void(0);">Executive/management</a></li><li><a href="JavaScript:void(0);">Hospitality/travel</a></li><li><a href="JavaScript:void(0);">Law/legal services</a></li><li><a href="JavaScript:void(0);">Medicine/health</a></li><li><a href="JavaScript:void(0);">Military</a></li><li><a href="JavaScript:void(0);">Political/government</a></li><li><a href="JavaScript:void(0);">Sales/marketing</a></li><li><a href="JavaScript:void(0);">Science/tech/engineering</a></li><li><a href="JavaScript:void(0);">Student</a></li><li><a href="JavaScript:void(0);">Transportation</a></li><li><a href="JavaScript:void(0);">Unemployed</a></li></ul></div></div>            </div>
+        </div>
+
+        <div class="errMsg hide">
+            Need to be filled        </div>
+    </div> <!-- /.formRow -->
+
+    <div class="formRow">
+        <div class="label">Religion:</div>
+        <div class="content-steps">
+            <div class="flWidth100">
+                
+<select name="religion" id="religion" class="sselect empty-value" style="display: none; ">
+    <option value="0" label="Please select">Please select</option>
+    <option value="309" label="Buddhist">Buddhist</option>
+    <option value="305" label="Christian">Christian</option>
+    <option value="308" label="Hindu">Hindu</option>
+    <option value="306" label="Jewish">Jewish</option>
+    <option value="307" label="Muslim">Muslim</option>
+    <option value="313" label="Neither religious nor spiritual">Neither religious nor spiritual</option>
+    <option value="315" label="No preference">No preference</option>
+    <option value="314" label="Other">Other</option>
+    <option value="311" label="Shinto">Shinto</option>
+    <option value="310" label="Sikh">Sikh</option>
+    <option value="312" label="Spiritual, but not religious">Spiritual, but not religious</option>
+</select><div class="newListSelected" tabindex="0"><div class="selectedTxt">Please select</div><div class="SSContainerDivWrapper" style="visibility: visible; top: -150px; height: 150px; left: 0px; display: none; "><ul class="newList" style="height: 150px; "><li><a href="JavaScript:void(0);" class="hiLite">Please select</a></li><li><a href="JavaScript:void(0);">Buddhist</a></li><li><a href="JavaScript:void(0);">Christian</a></li><li><a href="JavaScript:void(0);">Hindu</a></li><li><a href="JavaScript:void(0);">Jewish</a></li><li><a href="JavaScript:void(0);">Muslim</a></li><li><a href="JavaScript:void(0);">Neither religious nor spiritual</a></li><li><a href="JavaScript:void(0);">No preference</a></li><li><a href="JavaScript:void(0);">Other</a></li><li><a href="JavaScript:void(0);">Shinto</a></li><li><a href="JavaScript:void(0);">Sikh</a></li><li><a href="JavaScript:void(0);">Spiritual, but not religious</a></li></ul></div></div>            </div>
+            <div class="errMsg hide">
+                Need to be filled            </div>
+        </div>
+    </div> <!-- /.formRow -->
+
+    <div class="formRow">
+        <div class="label">Do you have kids:</div>
+
+        <div class="content-steps">
+            
+<label for="kidsAtHome-yes"><input type="radio" name="kidsAtHome" id="kidsAtHome-yes" value="yes" class="sselect empty-value">Yes</label><label for="kidsAtHome-no"><input type="radio" name="kidsAtHome" id="kidsAtHome-no" value="no" class="sselect empty-value">No</label>        </div>
+
+        <div class="errMsg hide">
+            Need to be checked        </div>
+    </div> <!-- /.formRow -->
+
+    <div class="formRow">
+        <div class="label">Smokes:</div>
+        <div class="content-steps">
+            <div class="flWidth100">
+                
+<select name="smokes" id="smokes" class="sselect empty-value" style="display: none; ">
+    <option value="0" label="Please select">Please select</option>
+    <option value="63" label="About once a week">About once a week</option>
+    <option value="62" label="A few times a year">A few times a year</option>
+    <option value="753" label="Hookah only">Hookah only</option>
+    <option value="65" label="Many times a day">Many times a day</option>
+    <option value="61" label="Never">Never</option>
+    <option value="64" label="Several times a week">Several times a week</option>
+    <option value="754" label="When drink">When drink</option>
+</select><div class="newListSelected" tabindex="0"><div class="selectedTxt">Please select</div><div class="SSContainerDivWrapper" style="visibility: visible; top: -150px; height: 150px; left: 0px; display: none; "><ul class="newList" style="height: 150px; "><li><a href="JavaScript:void(0);" class="hiLite">Please select</a></li><li><a href="JavaScript:void(0);">About once a week</a></li><li><a href="JavaScript:void(0);">A few times a year</a></li><li><a href="JavaScript:void(0);">Hookah only</a></li><li><a href="JavaScript:void(0);">Many times a day</a></li><li><a href="JavaScript:void(0);">Never</a></li><li><a href="JavaScript:void(0);">Several times a week</a></li><li><a href="JavaScript:void(0);">When drink</a></li></ul></div></div>            </div>
+            <div class="errMsg hide">
+                Need to be filled            </div>
+        </div>
+    </div> <!-- /.formRow -->
+
+    <div class="formRow">
+        <div class="label">Height:</div>
+
+        <div class="content-steps">
+            <div class="fixWidth168 left margR10">
+                
+<select name="height" id="m-height" class="sselect empty-value" style="display: none; ">
+    <option value="0" label="Please select">Please select</option>
+    <option value="529" label="4' 11&quot;">4' 11"</option>
+    <option value="530" label="5' 0&quot;">5' 0"</option>
+    <option value="531" label="5' 1&quot;">5' 1"</option>
+    <option value="532" label="5' 2&quot;">5' 2"</option>
+    <option value="533" label="5' 3&quot;">5' 3"</option>
+    <option value="534" label="5' 4&quot;">5' 4"</option>
+    <option value="535" label="5' 5&quot;">5' 5"</option>
+    <option value="536" label="5' 6&quot;">5' 6"</option>
+    <option value="537" label="5' 7&quot;">5' 7"</option>
+    <option value="538" label="5' 8&quot;">5' 8"</option>
+    <option value="539" label="5' 9&quot;">5' 9"</option>
+    <option value="540" label="5' 10&quot;">5' 10"</option>
+    <option value="541" label="5' 11&quot;">5' 11"</option>
+    <option value="542" label="6' 0&quot;">6' 0"</option>
+    <option value="543" label="6' 1&quot;">6' 1"</option>
+    <option value="544" label="6' 2&quot;">6' 2"</option>
+    <option value="545" label="6' 3&quot;">6' 3"</option>
+    <option value="546" label="6' 4&quot;">6' 4"</option>
+    <option value="547" label="6' 5&quot;">6' 5"</option>
+    <option value="548" label="6' 6&quot;">6' 6"</option>
+    <option value="549" label="6' 7&quot;">6' 7"</option>
+    <option value="550" label="6' 8&quot;">6' 8"</option>
+    <option value="551" label="6' 9&quot;">6' 9"</option>
+    <option value="552" label="6' 10&quot;">6' 10"</option>
+    <option value="553" label="6' 11&quot;">6' 11"</option>
+    <option value="554" label="7' 0&quot;">7' 0"</option>
+</select><div class="newListSelected" tabindex="0"><div class="selectedTxt">Please select</div><div class="SSContainerDivWrapper" style="visibility: visible; top: -150px; height: 150px; left: 0px; display: none; "><ul class="newList" style="height: 150px; "><li><a href="JavaScript:void(0);" class="hiLite">Please select</a></li><li><a href="JavaScript:void(0);">4' 11"</a></li><li><a href="JavaScript:void(0);">5' 0"</a></li><li><a href="JavaScript:void(0);">5' 1"</a></li><li><a href="JavaScript:void(0);">5' 2"</a></li><li><a href="JavaScript:void(0);">5' 3"</a></li><li><a href="JavaScript:void(0);">5' 4"</a></li><li><a href="JavaScript:void(0);">5' 5"</a></li><li><a href="JavaScript:void(0);">5' 6"</a></li><li><a href="JavaScript:void(0);">5' 7"</a></li><li><a href="JavaScript:void(0);">5' 8"</a></li><li><a href="JavaScript:void(0);">5' 9"</a></li><li><a href="JavaScript:void(0);">5' 10"</a></li><li><a href="JavaScript:void(0);">5' 11"</a></li><li><a href="JavaScript:void(0);">6' 0"</a></li><li><a href="JavaScript:void(0);">6' 1"</a></li><li><a href="JavaScript:void(0);">6' 2"</a></li><li><a href="JavaScript:void(0);">6' 3"</a></li><li><a href="JavaScript:void(0);">6' 4"</a></li><li><a href="JavaScript:void(0);">6' 5"</a></li><li><a href="JavaScript:void(0);">6' 6"</a></li><li><a href="JavaScript:void(0);">6' 7"</a></li><li><a href="JavaScript:void(0);">6' 8"</a></li><li><a href="JavaScript:void(0);">6' 9"</a></li><li><a href="JavaScript:void(0);">6' 10"</a></li><li><a href="JavaScript:void(0);">6' 11"</a></li><li><a href="JavaScript:void(0);">7' 0"</a></li></ul></div></div>            </div>
+
+            <a href="javascript:void(0);" class="t-h-w centim">Centimeters</a>
+        </div>
+
+        <div class="errMsg hide">
+            Need to be filled        </div>
+    </div> <!-- /.formRow -->
+
+    <div class="formRow">
+        <div class="label">Eye color:</div>
+
+        <div class="content-steps">
+            <div class="flWidth100">
+                
+<select name="eyeColor" id="eyeColor" class="sselect empty-value" style="display: none; ">
+    <option value="0" label="Please select">Please select</option>
+    <option value="31" label="Black ">Black </option>
+    <option value="25" label="Blue">Blue</option>
+    <option value="30" label="Blue-gray">Blue-gray</option>
+    <option value="26" label="Brown">Brown</option>
+    <option value="29" label="Green">Green</option>
+    <option value="27" label="Green-gray">Green-gray</option>
+    <option value="28" label="Hazel">Hazel</option>
+</select><div class="newListSelected" tabindex="0"><div class="selectedTxt">Please select</div><div class="SSContainerDivWrapper" style="visibility: visible; top: -150px; height: 150px; left: 0px; display: none; "><ul class="newList" style="height: 150px; "><li><a href="JavaScript:void(0);" class="hiLite">Please select</a></li><li><a href="JavaScript:void(0);">Black </a></li><li><a href="JavaScript:void(0);">Blue</a></li><li><a href="JavaScript:void(0);">Blue-gray</a></li><li><a href="JavaScript:void(0);">Brown</a></li><li><a href="JavaScript:void(0);">Green</a></li><li><a href="JavaScript:void(0);">Green-gray</a></li><li><a href="JavaScript:void(0);">Hazel</a></li></ul></div></div>            </div>
+        </div>
+
+        <div class="errMsg hide">
+            Need to be filled        </div>
+    </div> <!-- /.formRow -->
+
+    <div class="formRow">
+        <div class="label">Hair color:</div>
+
+        <div class="content-steps">
+            <div class="flWidth100">
+                
+<select name="hairColor" id="hairColor" class="sselect empty-value" style="display: none; ">
+    <option value="0" label="Please select">Please select</option>
+    <option value="299" label="Bald">Bald</option>
+    <option value="34" label="Black">Black</option>
+    <option value="32" label="Blonde">Blonde</option>
+    <option value="33" label="Brown ">Brown </option>
+    <option value="297" label="Light brown">Light brown</option>
+    <option value="35" label="Red">Red</option>
+    <option value="298" label="White/gray">White/gray</option>
+</select><div class="newListSelected" tabindex="0"><div class="selectedTxt">Please select</div><div class="SSContainerDivWrapper" style="visibility: visible; top: -150px; height: 150px; left: 0px; display: none; "><ul class="newList" style="height: 150px; "><li><a href="JavaScript:void(0);" class="hiLite">Please select</a></li><li><a href="JavaScript:void(0);">Bald</a></li><li><a href="JavaScript:void(0);">Black</a></li><li><a href="JavaScript:void(0);">Blonde</a></li><li><a href="JavaScript:void(0);">Brown </a></li><li><a href="JavaScript:void(0);">Light brown</a></li><li><a href="JavaScript:void(0);">Red</a></li><li><a href="JavaScript:void(0);">White/gray</a></li></ul></div></div>            </div>
+        </div>
+
+        <div class="errMsg hide">
+            Need to be filled        </div>
+    </div> <!-- /.formRow -->
+
+    <div class="formRow">
+        <div class="label">Body type:</div>
+
+        <div class="content-steps">
+            <div class="flWidth100">
+                
+<select name="bodyType" id="bodyType" class="sselect empty-value" style="display: none; ">
+    <option value="0" label="Please select">Please select</option>
+    <option value="38" label="A few extra pounds">A few extra pounds</option>
+    <option value="737" label="Athletic">Athletic</option>
+    <option value="37" label="Average">Average</option>
+    <option value="740" label="Big and beautiful">Big and beautiful</option>
+    <option value="739" label="Curvy">Curvy</option>
+    <option value="736" label="Fit">Fit</option>
+    <option value="741" label="Full-figured">Full-figured</option>
+    <option value="40" label="Muscular">Muscular</option>
+    <option value="742" label="Other">Other</option>
+    <option value="41" label="Overweight">Overweight</option>
+    <option value="734" label="Skinny">Skinny</option>
+    <option value="735" label="Slender">Slender</option>
+    <option value="36" label="Slim">Slim</option>
+    <option value="738" label="Stocky">Stocky</option>
+</select><div class="newListSelected" tabindex="0"><div class="selectedTxt">Please select</div><div class="SSContainerDivWrapper" style="visibility: visible; top: -150px; height: 150px; left: 0px; display: none; "><ul class="newList" style="height: 150px; "><li><a href="JavaScript:void(0);" class="hiLite">Please select</a></li><li><a href="JavaScript:void(0);">A few extra pounds</a></li><li><a href="JavaScript:void(0);">Athletic</a></li><li><a href="JavaScript:void(0);">Average</a></li><li><a href="JavaScript:void(0);">Big and beautiful</a></li><li><a href="JavaScript:void(0);">Curvy</a></li><li><a href="JavaScript:void(0);">Fit</a></li><li><a href="JavaScript:void(0);">Full-figured</a></li><li><a href="JavaScript:void(0);">Muscular</a></li><li><a href="JavaScript:void(0);">Other</a></li><li><a href="JavaScript:void(0);">Overweight</a></li><li><a href="JavaScript:void(0);">Skinny</a></li><li><a href="JavaScript:void(0);">Slender</a></li><li><a href="JavaScript:void(0);">Slim</a></li><li><a href="JavaScript:void(0);">Stocky</a></li></ul></div></div>            </div>
+        </div>
+
+        <div class="errMsg hide">
+            Need to be filled        </div>
+    </div> <!-- /.formRow -->
+
+    
+<input type="submit" name="submit" id="submit" value="Save" class="right button_blue small bnt-cont ajax-save"></form>
+
+                                        <div class="clear"></div>
+                                    </div>
+                                <div class="clear"></div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        <input type="hidden" id="has-main-photo" name="hasMainPhoto" value="0">
+        <div class="yp_bot"><div class="rubber_bot_right"></div></div>
+</div></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>

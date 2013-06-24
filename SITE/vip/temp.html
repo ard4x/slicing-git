@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+    <script type="text/javascript" src="../js/jquery-1.4.4.min.js"></script>
+</head>
+<body>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $('#sendMsgShort').click(function (){
+                        event.stopPropagation();
+                        $(this).hide();
+                        $('#fast-message-text').show();
+                        $(document).bind('click',function(){
+                            $("#sendMsgShort").show();
+                            $('#fast-message-text').hide();
+                            $('#fast-message-text').click(function (){
+                                    event.stopPropagation();
+                                    });
+                        });
+                    });
+                });
+            </script>
+            
+	<input type="text" placeholder="Don't lose your time! Write her..." style="width: 99%" id="sendMsgShort" >
+            <textarea name="message" class="newText" id="fast-message-text" style="display:none"></textarea>
+            
+            
+            <hr>
+            <script type="text/javascript">
+jQuery('html').click(function() {
+// Здесь выполняем скрытие (свёртование нашего меню)
+jQuery('#menucontainer').html('Меню свёрнуто.');
+});
+jQuery('#menucontainer').click(function(event){
+// Отменим общее событие клика
+event.stopPropagation();
+// Откроем (развернём) наше меню
+jQuery(this).html('Меню открыто.<br />В нём есть некие дочерние элементы.<br />Кликните вне этого меню, чтобы свернуть его.');
+});
+            
+            </script>
+            <div id="menucontainer"></div>
+</body>
+</html>

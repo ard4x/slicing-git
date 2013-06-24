@@ -1,0 +1,147 @@
+/* new v.20130403 */
+/** page layouts **/
+.qa__page {padding-top: 30px; padding-bottom: 25px;}
+    .qa__page_top   {border-bottom: 1px solid #ccc; margin-bottom: 20px; padding: 0 0 3px 0;} /* changed 03/04/2013*/
+    .qa__page_left  {width: 700px; float: left;}
+    .qa__page_right {width: 220px; float: right;}
+/** content styles **/
+    /** qa__page_top **/
+.qa__page_top > .std__header {margin: 0 0 3px 0;}
+    .qa__breadCrumbs {color: #666; font-size: 14px; margin-bottom: 16px;}
+        .qa__breadCrumbs a {text-decoration: underline;}
+        .qa__breadCrumbs a:hover {text-decoration: none; color: #666;}
+            .qa__breadCrumbs_separator {margin: 0 7px;}
+
+    /** qa__page_left **/
+.qa__page_left > .slider {margin-bottom: 27px;}
+.qa__list {}
+    .qa__list_item {border-bottom: 1px solid #ccc; padding-bottom: 10px; margin-bottom: 27px;}
+    .qa__list_item:last-child {border-bottom: none; padding-bottom: 0; margin-bottom: 30px;}
+        .qa__question {margin-bottom: 14px;}
+            .qa__question_top {display: table;}
+                .qa__question_title {margin: 0; font-size: 18px; font-weight: bold; display: table-row; line-height: 16px;}
+                    .qa__question_title > a {display: table-cell; vertical-align: top; width: 460px; line-height: 20px;}
+                    .qa__question__buttons {font: 12px Arial; color: #666; display: table-cell; vertical-align: middle; text-align: right; width: 240px; padding-top: 3px;}
+                        .qa__question_buttons_item {display: inline-block; line-height: 18px; vertical-align: top; margin-left: 6px;}
+                            .qa__question_buttons_separator {display: inline-block; vertical-align: top; margin-left: 6px; color: #ccc;}
+                            .qa__question_buttons_item .icon {margin-right: 7px;}
+            .qa__question_info {font-size: 12px; color: #666; margin-top: 5px; margin-bottom: 0px; height: 31px;} /** changed 04/03/2013 **/
+                .qa__question_info .button {float: right} /** added 04/03/2013 **/
+            .qa__question_social {display: block; font-size: 0; position: relative; margin-top: 10px;}
+                .qa__question_social_close {display: block; position: absolute; top: 15px; right: 15px;}
+                .qa__question_info_item {margin-right: 23px;}
+        .qa__answer {padding: 0 0 0 70px; position: relative; min-height: 50px; margin-bottom: 20px;}
+            .qa__answer_userPic {position: absolute; left:  0; top: 0; }
+                .qa__answer_userPic img {width: 50px; height: 50px;}
+            .qa__answer_quote {display: block; border: 1px solid #e6e6e6; padding: 11px 14px 13px; border-radius: 3px; position: relative;}
+                .qa__answer_quote:before {content: ''; position: absolute; top: 14px; left: -12px; height: 0; width: 0; border: 12px solid transparent; border-left: none; border-right-color: #e6e6e6;}
+                .qa__answer_quote:after  {content: ''; position: absolute; top: 15px; left: -10px; height: 0; width: 0; border: 11px solid transparent; border-left: none; border-right-color: #fff;}
+                .qa__answer_quote_message {font-size: 14px; color: #333; padding-bottom: 7px;}
+                .qa__answer_quote_info {font-size: 12px; color: #666;}
+                .qa__answer_quote_info a {font-weight: bold;}
+                .qa__answer_quote_info_controls {float: right;}
+                    .qa__answer_quote_info_controls a {margin-left: 15px; font-weight: normal;}
+        .qa__answer.level-1 {margin-left: 25px;}
+        .qa__answer.level-2 {margin-left: 50px;}
+        .qa__answer.level-3 {margin-left: 75px;}
+        .qa__answer.level-4 {margin-left: 100px;}
+        .qa__answer.level-5 {margin-left: 125px;}
+        .qa__answer.level-6 {margin-left: 150px;}
+        .qa__answer.level-7 {margin-left: 175px;}
+        .qa__answer.level-8 {margin-left: 200px;}
+        .qa__answer.level-9 {margin-left: 225px;}
+        .qa__answer.level-10 {margin-left: 250px;}
+
+        .qa__comment {}
+            .qa__comment_field {width: 664px;}
+            .qa__comment_buttons {margin-top: 15px;}
+            .qa__comment_buttons .button {width: 135px; margin-right: 15px;}
+
+.qa__page_question .qa__question_title {font-size: 24px;}
+.qa__page_question .qa__question_top {margin-bottom: 5px;}
+    /** qa__page_right **/
+.qa__block {margin-bottom: 30px;}
+    .qa__block > .std__header {padding-bottom: 7px; border-bottom: 1px solid #ccc; margin-bottom: 12px;}
+    .qa__block_cats {padding-top:13px; padding-bottom: 6px;}
+        .qa__block_cats li {font-size: 14px; font-weight: bold; height: 24px;}
+        .qa__block_cats a {}
+        .qa__block_cats a span {font-size: 12px; font-weight: normal;}
+    .qa__block_tags {text-align: center; font-size: 0; }
+        .qa__tag {display: inline-block; background-color: #f6f5eb; border-radius: 4px; color: #4f6b8d; font-size: 12px; margin: 2px 3px; padding: 6px 7px;}
+        .qa__tag:hover {background-color: #436187; color: #fff; text-decoration: none; }
+
+        .qa__block_question .std__header {margin-bottom: 0; border-bottom: none;}
+            .qa__block_question_item {padding: 12px 0 15px; border-top: 1px solid #ccc;}
+                .qa__block_question_info {font-size: 10px; color:#666; margin-bottom: 5px;}
+                    .qa__block_question_info > a {font-weight: bold; }
+                    .qa__block_question_title {font-size: 14px;}
+                        .qa__block_question_msg {color: #666; font-size: 10px; line-height: 18px; vertical-align: top; display: inline-block; height: 16px;}
+                        .qa__block_question_msg .icon {margin-right: 5px; position: relative; top: 2px;}
+.qa__question_social {display:none;}
+button.button {padding-top:0;}
+.comment-wrapper {margin-top:20px;}
+.qa__answer_quote_message {word-wrap: break-word;}
+.beta-label:after {color:black; content:'beta'; font-size:50%; line-height: 0;  position: relative;  vertical-align: baseline;  top: -0.7em; font-weight: normal;}
+
+    /** added 01.04.2013 **/
+    .qa__reg_popup {padding: 25px; width: 340px;}
+        .qa__reg_popup .pop__close {top: 5px; right: 5px;}
+        .qa__reg_popup .submitBox .button {width: 100%}
+        .qa__reg_popup .reg__form_item label {padding-top: 5px;}
+    .qa__search_nav {overflow: hidden; width: 350px; margin-bottom: 20px;}
+        .qa__search_nav_item {float: left}
+            .qa__search_nav_item_link {display: inline-block; padding: 5px 0 6px; border-radius: 4px; font-size: 12px; margin-right: 20px; text-decoration: underline;}
+            .qa__search_nav_item.active .qa__search_nav_item_link {background-color: #909090; color: #ffffff; text-decoration: none; font-weight: bold; padding-left: 15px; padding-right: 15px;}
+    .qa__reg_popup .reg__form_item .error {display: none; margin-left: 75px; color: #990000; font-size: 10px;}
+    .qa__reg_popup .reg__form_item.submit {overflow: hidden; padding-left: 75px; margin-bottom: 0;}
+    .qa__reg_popup .reg__form_item.submit label {width: 110px; font-size: 12px; margin: 0 0 25px 6px;}
+    .qa__reg_popup .reg__form_item.submit [type=checkbox] {margin: 0 5px 0 0; position: relative; top: 2px; }
+    .qa__reg_popup .reg__form_item.submit .button {width: 130px;}
+    .qa__reg_popup .reg__form_item.login .error {width: 280px; margin-left: 0; font-size: 12px; text-align: center; margin-bottom: 20px;}
+    .qa__reg_popup .reg__form_item.reset .error  {width: 280px; font-size: 12px;  margin-left: 0; text-align: center; margin-bottom: 20px;}
+    .qa__reg_popup .reg__form_item.reset,
+    .qa__reg_popup .reg__form_item.submitBox {margin-bottom: 0; }
+    .qa__reg_popup .reg__form_item.reset .button {margin-top: 10px; width: 100%;}
+.qa__reg_popup .reg__form_item .description .day .newListSelected,
+.qa__reg_popup .reg__form_item .description .month .newListSelected,
+.qa__reg_popup .reg__form_item .description .year .newListSelected {padding: 5px 3px;}
+.qa__reg_popup .reg__form input[type=text],
+.qa__reg_popup .reg__form input[type=password],
+.qa__reg_popup .reg__form input[type=email],
+.qa__reg_popup .reg__form .newListSelected {
+    box-sizing: border-box; -moz-box-sizing: border-box; width: 100%; height: 27px; padding: 5px;
+}
+
+/** added 02/04/2013 **/
+.qa__answer_userPic .qa__answer_userPic_data {display: none;}
+.qa__answer_userPic:hover {padding: 9px; border: 1px solid #ccc; border-radius: 4px; top: -10px; left: -10px; background-color: #fff; box-shadow: 0 0 2px 2px #e3e3e3; z-index: 1;
+        text-decoration: none; font-size: 0; min-height: 50px; min-width: 50px;}
+    .qa__answer_userPic:hover img {position: absolute;}
+    .qa__answer_userPic:hover .qa__answer_userPic_data {display: block; margin-left: 60px;  font-size: 12px; color: #999;}
+        .qa__answer_userPic:hover .qa__answer_userPic_data_personal {font-size: 14px; font-weight: bold; display: block; padding-top: 1px; padding-bottom: 3px; color: #333;}
+        .qa__answer_userPic:hover .qa__answer_userPic_data_name {color: #436187;}
+
+/** added 03/04/2013 **/
+body {padding-top: 50px;}
+.qa__header_wrapper {font: 14px Arial; top: 0; left: 0; position: absolute; height: 50px; width: 100%; background-color: #436187; box-sizing: border-box; -moz-box-sizing: border-box;}
+.qa__inner {width: 950px; margin: 0 auto; position: relative}
+.qa__logo {width: 98px; height: 26px; background: url(../img/img.png) no-repeat; display: block; float: left; margin-top: 13px; margin-right: 21px;}
+.qa__slogan {color:#fff; font-size: 16px; margin-top: 16px; display: inline-block;}
+.qa__icon-info {display: block; width: 31px; height: 31px; background: 0 -28px url(../img/img.png) no-repeat; float: left; margin: 4px 20px 0 15px;}
+.qa__tooltip {font: 14px Arial; color: #3d3009; position: relative; left: 0; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; height: 72px; border-top: 1px solid #d2ae43; border-bottom: 1px solid #d2ae43; background-color: #ffe67a;}
+.qa__tooltip_border {border-top: 1px solid #ffea98; border-bottom: 1px solid #ffea98; box-sizing: border-box; -moz-box-sizing: border-box; height: 70px;}
+.qa__tooltip_description {padding: 2px 30px 0 0; margin-top: 14px;}
+.qa__close {height: 7px; width: 7px; background: -33px -28px url(../img/img.png) no-repeat; display: block; position: absolute; top: 10px; right: 10px;}
+.qa__button_more {font-size: 11px; text-transform: uppercase; color: #3d3009; text-decoration: none; box-sizing: border-box; -moz-box-sizing: border-box; height: 20px; width: 160px; text-align: center; background-color: #ffe67a;
+    border: 1px solid #d2ae43; border-top: none; border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; display: block; position: absolute; bottom: -20px; left: 45%;}
+a.qa__button_more:hover span {text-decoration: underline;}
+.qa__button_more span {display: block; box-sizing: border-box; -moz-box-sizing: border-box; height: 20px; width: 158px; border: 1px solid #ffea98; position: absolute; top: -1px; left: 0; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; border-top-color: #ffe67a;}
+.qa__button {position: relative; box-sizing: border-box; -moz-box-sizing: border-box; height: 31px; background: 0 -62px url(../img/img.png) repeat-x; border-radius: 4px; display: inline-block; vertical-align: middle; padding: 0 15px;
+    font: bold 14px/31px Arial; color: #fff; text-shadow: #364f6d 0 1px 2px; text-decoration: none!important; border: 1px solid transparent; box-shadow: 0 1px 2px #525252;}
+.qa__button.lite-blue {background-position: 0 -155px; border-color: #547db3 #6a88ae #4b5f7a; background-color: #6a88ae;}
+.qa__button.lite-blue:hover  {background-position: 0 -186px; border-color: #547db3 #7596c0 #5b7596; background-color: #7596c0;}
+.qa__button.lite-blue:active {background-position: 0 -217px; border-color: #446691 #6a88ae #5b7595; background-color: #6a88ae; box-shadow: none;}
+.qa__button.facebook {padding-left: 35px;}
+.qa__button.facebook i {display: block; height: 29px; width: 20px; background: -80px -28px url(../img/img.png) no-repeat; position: absolute; top: 0; left: 9px;}
+.qa__buttons {width: 450px; position: absolute; right: 0; top: 5px; text-align: right; padding-top: 4px;}
+.qa__buttons .button {margin-left: 15px; box-shadow: 0 1px 2px #525252; padding-top: 6px; }
