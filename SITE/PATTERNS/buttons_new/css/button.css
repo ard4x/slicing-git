@@ -134,19 +134,28 @@ input.button {
 .button.orange:active {
   border-color: #8a3714 #c75127 #a55133 !important;
 }
-.button.disabled {
+.button.disabled,
+.button[disabled],
+.button[disabled="disabled"] {
   background: #666666;
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
   cursor: default;
+  color: #fff!important;
   box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 0.4);
 }
-.button.disabled {
+.button.disabled,
+.button[disabled],
+.button[disabled="disabled"] {
   border-color: #555555 #636363 #4e4e4e !important;
 }
-.button.disabled:hover {
+.button.disabled:hover,
+.button[disabled]:hover,
+.button[disabled="disabled"]:hover {
   border-color: #555555 #636363 #4e4e4e !important;
 }
-.button.disabled:active {
+.button.disabled:active,
+.button[disabled]:active,
+.button[disabled="disabled"]:active {
   border-color: #555555 #636363 #4e4e4e !important;
 }
 .button.dark-red {

@@ -109,12 +109,13 @@
                   #8a3714, #c75127, #a55133);
   }
 
-  &.disabled {
+  &.disabled, &[disabled], &[disabled="disabled"] {
     .gradient_off(#666666);
     .button_borders(#555555, #636363, #4e4e4e,
                   #555555, #636363, #4e4e4e,
                   #555555, #636363, #4e4e4e);
     cursor: default;
+    color: #fff!important;
     box-shadow: @highlight;
   }
 

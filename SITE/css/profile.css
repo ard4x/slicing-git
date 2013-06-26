@@ -9,7 +9,8 @@
 .profile__userName {}
 .profile__userName .icon {margin-left: 10px; margin-bottom: 3px;}
 .profile__block-head .slider-item {width: 33.3333%}
-.profile__block-head .button.favorite {width: 100%;}
+.profile__block-head .button.favo {width: 100%;}
+.profile__block-head .button.favorite.added {font-weight: normal!important;}
 .profile__block-head .profile__info_block {margin-bottom: 10px;}
 
 .profile__block-basicInfo {margin-bottom: 30px;}
@@ -194,10 +195,25 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 .profile__photoViewer_top .button {box-shadow: 0 1px 2px #595959;}
 .profile__photoViewer_top .button.disabled {box-shadow: none;}
 .profile__photoViewer_top_head {position: relative; margin-bottom: 11px; height: 46px;}
-.profile__photoViewer_like{z-index: 10; position: absolute; top: 35px; left: 35px; padding-right: 17px; padding-left: 47px;}
-.profile__photoViewer_report {z-index: 10; position: absolute; top: 35px; right: 35px;}
 .profile__photoViewer_top_report {position: absolute; top: 15px; right: 0;}
 .profile__photoViewer_bottom {background-color: #f5f5f5; padding: 15px; border-radius: 0 0 4px 4px;}
+/*****/
+
+.profile__photoViewer_report {z-index: 10; position: absolute; bottom: 5px; right: 5px; font-size: 12px; color: #ccc; display: inline-block; padding: 10px; border-radius: 4px; background: url(../img/opacity-lite.png) repeat; text-decoration: underline;}
+.profile__photoViewer_report:hover {text-decoration: none; color: #fff;}
+.profile__photoViewer_like_holder {box-sizing: border-box; -moz-box-sizing: border-box; width: 100%; height: 61px; padding: 15px; display: block;
+    position: absolute; top: 0; left: 0; background: url(../img/opacity-lite.png) repeat;}
+    .profile__photoViewer_like_holder .icon, .profile__photoViewer_like_sendMessage  {display: inline-block; height: 31px;}
+    .profile__photoViewer_like_holder .icon {width: 35px; background: url(../img/profile/profile.png) -37px 0 no-repeat; margin-right: 14px; vertical-align: top;}
+    input.profile__photoViewer_like_text {box-sizing: border-box; -moz-box-sizing: border-box; height: 31px; padding: 8px; font-size: 12px; margin-right: 10px; width: 305px;}
+    .profile__photoViewer_like_holder_msg {display: none;}
+.profile__photoViewer_like_holder.empty {cursor: pointer;}
+    .profile__photoViewer_like_holder.empty .profile__photoViewer_like_sendMessage{display: none;}
+    .profile__photoViewer_like_holder.empty .icon {background-position: 0 0;}
+    .profile__photoViewer_like_holder.empty .profile__photoViewer_like_holder_msg {display: inline-block; height: 31px; color: #fff; font: bold 18px 'PT Sans'; line-height: 31px;}
+
+.profile__photoViewer_like {display: block; position: absolute; width: 35px; height: 31px; background: url(../img/profile/profile.png) -37px 0 no-repeat; top: 15px; left: 15px;
+    display: none;  }
 
 .profile__photo_more {padding-top: 13px; overflow: hidden; margin-bottom: 30px;}
 .profile__photo_more .std__header {margin-bottom: 13px;}

@@ -88,7 +88,8 @@
             </div><!-- /.profile__collLeft -->
 
             <div class="profile__collRight">
-                <a class="button lite-grey favorite" href="#"><i class="icon"></i>Add to favorites</a>
+                <!-- a class="button lite-grey favo" href="#">Add to favorites</a-->
+                <a class="button lite-grey favo favorite added" href="#"><i class="icon"></i>Remove from favorites</a>
 
             </div><!-- /.profile__collLeft -->
 
@@ -101,11 +102,26 @@
 
                 <div class="profile__photoViewer_top">
 
-                    <a href="#" class="profile__photoViewer_like button lite-grey like"><i class="icon"></i>Like</a>
-
-                    <a class="button lite-grey profile__photoViewer_report" href="#">Report photo</a>
-
                     <div class="profile__slider">
+                        <!-- Report button -->
+                        <a class="profile__photoViewer_report" href="#">Report photo</a>
+
+                        <!-- Like line -->
+                        <div class="profile__photoViewer_like_holder empty">
+                            <i class="icon"></i>
+
+                            <div class="profile__photoViewer_like_sendMessage">
+                                <input type="text" class="profile__photoViewer_like_text" placeholder="Tell her several words"/>
+                                <a class="button red" href="#">Send message</a>
+                            </div>
+
+                            <div class="profile__photoViewer_like_holder_msg">Like photo</div>
+                        </div>
+
+                        <!-- Like button -->
+                        <a href="#" class="profile__photoViewer_like">
+                            <i class="icon"></i>
+                        </a>
 
 
                         <div class="profile__slider_item">
@@ -119,7 +135,7 @@
 
                     <div class="profile__photoViewer_message">
                         <h3 class="std__header std__fs-smallH profile__photoViewer_message_title">Send message:</h3>
-                        <input class="profile__photoViewer_message_field" type="text" placeholder="Hi, I saw your photo and..."> <a class="button big orange profile__photoViewer_message_button" href="#">Send message</a>
+                        <input class="profile__photoViewer_message_field" type="text" placeholder="Hi, I saw your photo and..."> <a class="button big red profile__photoViewer_message_button" href="#">Send message</a>
                     </div><!-- /.profile__photoViewer_message -->
                 </div><!-- /.profile__photoViewer_top -->
 
