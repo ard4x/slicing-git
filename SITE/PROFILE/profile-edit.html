@@ -15,7 +15,7 @@
 
     <!--  Файлы для замены селектов -->
 
-    <script src="../js/jquery-1.4.4.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="../js/jquery.stylish-select.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
@@ -671,45 +671,109 @@ I've been told that I am somewhat of an old soul, however with a new age approac
     </h2>
 
     <div class="profile__info_list">
+        <style type="text/css">
+            .profile__info_block_edit_counter {float: left;}
+            .profile__info_block_edit_counter .current {color: #900;}
+            .profile__info_block_edit_counter .current.ok {color: #090;}
+            .profile__info_list_item.error textarea {border-color: #900;}
+            .profile__info_list_item.error .profile__info_block_edit_counter {color: #900;}
+        </style>
 
         <div class="profile__info_list_row">
             <div class="profile__info_list_label">Dreams: </div>
-            <div class="profile__info_list_item active">
-                <textarea>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</textarea>
+            <div  id="dd" class="profile__info_list_item active _jTextCounter" data-length="50">
+                <textarea class="_jTextCounter_field">fd</textarea>
 
                 <div class="profile__info_block_edit_buttons">
+
+                    <span class="profile__info_block_edit_counter">
+                        At least 150 characters required ( <span class="current _jTextCounter_counter">0</span> / <span class="limit _jTextCounter_counter_limit">0</span>)
+                    </span>
+
                     <a class="cancel" href="#">Cancel</a><a
-                        class="button blue" href="#">Save</a>
+                        class="button blue _jTextCounter_button" href="#">Save</a>
                 </div>
             </div>
         </div><!-- /.profile__info_list_row -->
+        <script type="text/javascript">
 
+            function textCounter() {
+                var parent = this;
+                this.textCount = function(parent){
+
+                    var countNumb = $(parent.field).val().length;
+                    $(parent.counter).text( countNumb );
+                    if (countNumb >= parent.limit ){
+                        $(parent.counter).addClass('ok');
+                        $(parent.block).removeClass('error');
+                    }
+                };
+
+                this.buttonCheck =
+                        function(e, parent){
+                            //parent = this;
+                            if ($(parent.field).val().length < parent.limit ){
+                                $(parent.block).addClass('error');
+                                e.preventDefault()
+                                return 0;
+                            }
+                }
+
+                this.init =
+                        function(element, parent){
+                            parent = this;
+                            this.block = $(element).closest('._jTextCounter');
+                            this.field = $('._jTextCounter_field', parent.block);
+                            this.counter = $('._jTextCounter_counter', parent.block);
+                            this.counter_limit = $('._jTextCounter_counter_limit', parent.block);
+                            this.button = $('._jTextCounter_button', parent.block);
+                            this.limit = $("._jTextCounter").data("length");
+                            $(parent.counter_limit).text(parent.limit);
+                            parent.textCount(parent);
+                            $(parent.field).on('keyup', function(){ parent.textCount(parent)});
+                            $(parent.button).on('click', function(){parent.buttonCheck(event, parent)} );
+                        };
+                //return this.init();
+            }
+
+            var a = new textCounter();
+            var b = new textCounter();
+            $(function (){
+
+               a.init("#dd");
+               b.init("#bb");
+            });
+        </script>
         <div class="profile__info_list_row">
             <div class="profile__info_list_label">Life goals: </div>
-            <div class="profile__info_list_item">
-                <textarea>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
-venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</textarea>
+            <div id ="bb" class="profile__info_list_item active _jTextCounter" data-length="10">
+                <textarea class="_jTextCounter_field">fd</textarea>
 
                 <div class="profile__info_block_edit_buttons">
+
+                    <span class="profile__info_block_edit_counter">
+                        At least 150 characters required ( <span class="current _jTextCounter_counter">0</span> / <span class="limit _jTextCounter_counter_limit">0</span>)
+                    </span>
+
                     <a class="cancel" href="#">Cancel</a><a
-                        class="button blue" href="#">Save</a>
+                        class="button blue _jTextCounter_button" href="#">Save</a>
                 </div>
             </div>
         </div><!-- /.profile__info_list_row -->
 
         <div class="profile__info_list_row">
             <div class="profile__info_list_label">Favorite quote: </div>
-            <div class="profile__info_list_item">
-                <textarea>Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
-consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus
-viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
-Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.</textarea>
+            <div class="profile__info_list_item active _jTextCounter" data-length="50">
+                <textarea class="_jTextCounter_field">fd</textarea>
 
                 <div class="profile__info_block_edit_buttons">
+
+                    <span class="profile__info_block_edit_counter">
+                        At least 150 characters required ( <span class="current _jTextCounter_counter">0</span> / <span class="limit _jTextCounter_counter_limit">0</span>)
+                    </span>
+
                     <a class="cancel" href="#">Cancel</a><a
-                        class="button blue" href="#">Save</a>
+                        class="button blue _jTextCounter_button" href="#">Save</a>
                 </div>
             </div>
         </div><!-- /.profile__info_list_row -->
