@@ -20,7 +20,7 @@ div.topMessage {position: relative; width: 900px; background-color: #ecf4fb; bor
 div.topMessage .message {position: relative; top: -6px;}
 div.topMessage h1 {font: bold 36px 'PT Sans'; color:#436187;  margin: 0 0 0 0; text-transform: uppercase; }
 div.topMessage p {font: 16px Arial; color:#333333; margin: 10px 0 15px 0; padding: 0;}
-div.topMessage .topIcon {width: 145px; height: 145px; background: url(/img/vip/upg_icon_top.png) no-repeat; float: left; margin-right: 40px;}
+div.topMessage .topIcon {width: 145px; height: 145px; background: url(../img/vip/upg_icon_top.png) no-repeat; float: left; margin-right: 40px;}
 div.v2 .topIcon {background-position: 0 -145px;}
 div.v3 .topIcon {background-position: 0 -290px;}
 div.v4 .topIcon {background-position: 0 -435px;}
@@ -44,10 +44,10 @@ div.vipPayment .paymentInfo {position: relative; width: 465px; float:right;}
 .tabBlock .tabs li.active {border: solid 1px #dde0e6; border-top-color: #f4f5f7; border-bottom: none; background-color: #ffffff;}
 .tabBlock .tabs li a {display: block; width: 100%; height: 50px; }
 .tabBlock .tabs li span {display: block; width: 42px; position: relative; margin: 12px auto;}
-.tabBlock .tabs .firstTab a span {width: 41px; height: 31px; background: url(/img/p_master_ico.gif) no-repeat; display: block;}
-.tabBlock .tabs .secondTab a span {width: 59px; height: 23px; background: url(/img/p_paypal_ico.gif) no-repeat; display: block; margin-top: 15px;}
-.visa_icon_vip_iframe {width: 29px; height: 21px; background: url(/img/type_visa.gif) no-repeat; display: inline-block;}
-.mc_icon_vip_iframe {width: 29px; height: 21px; background: url(/img/type_master.gif) no-repeat; display: inline-block;}
+.tabBlock .tabs .firstTab a span {width: 41px; height: 31px; background: url(../img/p_master_ico.gif) no-repeat; display: block;}
+.tabBlock .tabs .secondTab a span {width: 59px; height: 23px; background: url(../img/p_paypal_ico.gif) no-repeat; display: block; margin-top: 15px;}
+.visa_icon_vip_iframe {width: 29px; height: 21px; background: url(../img/type_visa.gif) no-repeat; display: inline-block;}
+.mc_icon_vip_iframe {width: 29px; height: 21px; background: url(../img/type_master.gif) no-repeat; display: inline-block;}
 
 .tabBlock .firstTab table {width: 100%; border: none; border-collapse: collapse; border-spacing: 0; }
 .tabBlock .firstTab td {padding-bottom: 13px; vertical-align: top;}
@@ -55,7 +55,7 @@ table.vip_iframe td {vertical-align: middle;}
 td.label_vip_iframe {width: 125px; vertical-align: middle;}
 input.vip_iframe {width: 295px}
 .cardCode_vip_iframe {width: 123px; margin-right: 13px; float: left;}
-.helper_vip_iframe {background: url(/img/help-icons.png) 0 0 no-repeat; width: 16px; height: 16px; cursor: pointer; display: inline-block; margin-right: 10px;}
+.helper_vip_iframe {background: url(../img/help-icons.png) 0 0 no-repeat; width: 16px; height: 16px; cursor: pointer; display: inline-block; margin-right: 10px;}
 
 .cardtype_vip_iframe {width: 120px; margin-right: 13px; float: left;}
 .month_vip_iframe {width: 58px; margin-right: 10px; display: inline-block;}
@@ -63,11 +63,11 @@ input.vip_iframe {width: 295px}
 .country_vip_iframe {width: 240px; display: inline-block;}
 .tabBlock .firstTab .servInfo {font: 12px Arial; color: #999999; text-align: center;}
 .servInfo_vip_iframe {font: 12px Arial; text-align: left; margin-top: 10px; margin-bottom: 10px;}
-.rapidSSL_vip_iframe {background: url(/img/RapidSSL_SEAL-90x50.gif) no-repeat; width: 90px; height: 50px; display: block; position: absolute; bottom: 0px; left: 0px;}
+.rapidSSL_vip_iframe {background: url(../img/RapidSSL_SEAL-90x50.gif) no-repeat; width: 90px; height: 50px; display: block; position: absolute; bottom: 0px; left: 0px;}
 .btn-next_vip_iframe {float: right; margin-top: 25px; padding: 0 35px!important;}
 .collapse_vip_iframe {float: right; margin-top: 35px; padding: 0 10px!important;}
 
-a.paypal {width: 150px; height: 52px; background: url(/img/paypalbut.jpg) no-repeat; position: relative; margin: 20px auto; display: block;}
+a.paypal {width: 150px; height: 52px; background: url(../img/paypalbut.jpg) no-repeat; position: relative; margin: 20px auto; display: block;}
 .tabBlock .secondTab .servInfo {font: 12px Arial; color: #999999; text-align: center; margin-bottom: 20px;}
 
 div.whatGet .g1, div.whatGet .g3, div.whatGet .g5, div.whatGet .g7 {float: left;}
@@ -77,7 +77,7 @@ div.whatGet h3 {font: bold 24px 'PT Sans'; color:#436187; margin: 0 0 10px 0; li
 div.whatGet p {font: 14px Arial; color:#333333; width: 330px;}
 div.whatGet ul {overflow: hidden; margin-bottom: 30px;}
 div.whatGet li {padding: 15px; background-color: #ecf4fb; border-radius: 4px; margin-bottom: 10px; position: relative; height: 90px; width: 435px;}
-div.whatGet .icon {background: url(/img/vip/upg_icon_small.png); width: 90px; height: 90px; float: right;}
+div.whatGet .icon {background: url(../img/vip/upg_icon_small.png); width: 90px; height: 90px; float: right;}
 div.whatGet .g2 .icon {background-position: 0 -90px;}
 div.whatGet .g3 .icon {background-position: 0 -180px;}
 div.whatGet .g4 .icon {background-position: 0 -270px;}
@@ -112,7 +112,7 @@ body.payments {padding-right: 80px;}
 .vip__conrgat {position: relative; width: 910px; margin: 10px auto; }
 .vip__conrgat_velcome{border-radius: 4px; background-color: #e8eff5; padding: 15px 20px 20px; margin-bottom: 27px;}
 .vip__conrgat_velcome_head{margin: 0 0 15px; text-align: center;}
-.vip__conrgat_velcome_head .vipIcon{width: 64px; height: 64px; display: inline-block; background: url(/img/vip/vip-ico64.png) no-repeat; margin-right: 18px;}
+.vip__conrgat_velcome_head .vipIcon{width: 64px; height: 64px; display: inline-block; background: url(../img/vip/vip-ico64.png) no-repeat; margin-right: 18px;}
 .vip__conrgat_velcome_head h1{font: bold 30px 'PT Sans'; color: #424242; margin: 0; padding: 0;}
 .vip__conrgat_velcome_head h1 span {vertical-align: middle;}
 .vip__conrgat_velcome_msg{background-color: #ffffff; border-radius: 3px; padding: 18px 20px 20px; color: #333333; font-size: 14px;}
@@ -127,7 +127,7 @@ body.payments {padding-right: 80px;}
 .specList{display: block; text-align: center;}
 .specList .g {width: 280px; height: 48px; text-align: left; vertical-align: middle; display: inline-table; margin: 0 10px 20px 10px; text-align: left; color: #436187; font-size: 14px;}
 .r{display: table-row;}
-.specList .icon {display: table-cell;width: 48px; height: 48px; background: url(/img/vip/upg_icon_48.png) no-repeat;}
+.specList .icon {display: table-cell;width: 48px; height: 48px; background: url(../img/vip/upg_icon_48.png) no-repeat;}
 .specList .label {display: table-cell; padding-left: 20px; vertical-align: middle;}
 .specList .g1 .icon{background-position: 0 -240px;}
 .specList .g2 .icon{background-position: 0 0;}
@@ -148,11 +148,11 @@ body.payments {padding-right: 80px;}
 .vip__head {background-color: #f5f5f5; border: 3px solid #fff; text-align: center; border-radius: 5px; box-shadow: 0 1px 4px rgb(168, 168, 168); height: 124px;margin-bottom: 40px;}
     .vip__head_userPic {width: 76px; height: 76px; }
     .vip__head > .std__header {display: inline-block; margin: 0; vertical-align: middle; line-height: 116px;}
-    .vip__head.withUser > .std__header {text-align: left;   line-height: 36px; padding-top: 8px; width: 580px;}
+    .vip__head.withUser > .std__header {text-align: left;   line-height: 36px; padding-top: 8px; width: 680px;}
     .vip__head > .std__header span {font-weight: normal;}
     .vip__head .b-user__photoFrame {width: 80px; display: inline-block; box-sizing: border-box; -moz-box-sizing: border-box; margin-right: 27px; vertical-align: middle; margin-top: 22px;}
 .vip__pay_label {position: relative; height: 65px; border: solid 1px #dde0e6; border-top-color: #f4f5f7; border-bottom-color: #bbc0ce; box-shadow: 0 2px 2px #dde0e6;
-    border-radius: 7px; margin-bottom: 8px; cursor: pointer; line-height: 60px; }
+    border-radius: 7px; margin-bottom: 8px; cursor: pointer; line-height: 60px;}
     .vip__pay_label.last   {margin:2px}
     .vip__pay_label_label {height: 65px; width: 44px; float:left; margin-right: 9px; line-height: 72px; vertical-align: middle; text-align: center; cursor: pointer}
         .vip__pay_label.active .vip__pay_label_label {border-top-left-radius: 6px; border-bottom-left-radius: 5px; background-color:#eda71e; }
@@ -176,7 +176,7 @@ body.payments {padding-right: 80px;}
 .vip__tabContent {position: relative; text-align: center; border: solid 1px #dde0e6; background-color: #fff; border-top-color: #f4f5f7; border-bottom-color: #bbc0ce; padding: 25px; border-radius: 6px; box-shadow: 0 2px 2px #dde0e6;}
     .vip__tabContent_inner {background-color: #f5f5f5; border-radius: 4px; padding: 15px; box-sizing: border-box; -moz-box-sizing: border-box; width: 456px;}
     .vip__tabContent_inner.tab2 {height: 190px;}
-    .vip__tabContent_inner.tab1 {height: 152px; padding: 17px 20px; margin-bottom: 38px; position: relative;}
+    .vip__tabContent_inner.tab1 {height: 152px; padding: 9px 20px; margin-bottom: 38px; position: relative;}
 .vip__tabs {}
         .vip__tab_item {border-top-left-radius: 5px; border-top-right-radius: 5px; position: relative; border: 1px solid #e3e3e3; background-color: #e3e3e3; border-bottom-color: #cdced0;
             margin-right: 9px; float: left; box-sizing: border-box; -moz-box-sizing: border-box; bottom: -1px; box-shadow: inset 0px -5px 10px -4px rgb(202, 202, 202);
@@ -201,11 +201,12 @@ body.payments {padding-right: 80px;}
             [type=text].vip__tabContent_dataCard_field,
             .vip__tabContent_dataCard_field .newListSelected,
             .vip__tabContent_dataCard_field .select {box-sizing: border-box; -moz-box-sizing: border-box; height: 27px!important; width: 100%; padding: 5px;}
-                .vip__tabContent_dataCard_field.month {display: inline-block; width: 60px;}
-                .vip__tabContent_dataCard_field.year {display: inline-block; width: 70px;}
-            .vip__tabContent_dataCard_number {width: 161px; float: left; margin-right: 30px;}
-            .vip__tabContent_dataCard_date {width: 145px; float: left; margin-right: 30px;}
-            .vip__tabContent_dataCard_code {width: 50px; float: left;}
+                .vip__tabContent_dataCard_field.month {display: inline-block; width: 50px;}
+                .vip__tabContent_dataCard_field.year {display: inline-block; width: 50px;}
+            .vip__tabContent_dataCard_number {width: 135px; float: left; margin-right: 20px;}
+            .vip__tabContent_dataCard_date {width: 115px; margin-right: 20px;  float: left;}
+            .vip__tabContent_dataCard_code {width: 40px; margin-right: 20px; float: left;}
+            .vip__tabContent_dataCard_code.zip {width: 60px; float: left; margin-right: 0;}
 
         .vip__tabContent_descript{font-size: 14px; color: #333; padding-top: 7px; margin-bottom: 25px;}
             .vip__tabContent_details {margin-left: 16px; text-decoration: underline;}
@@ -214,12 +215,13 @@ body.payments {padding-right: 80px;}
         .vip__tabContent_purchaseBtn .button {width: 180px;}
         .vip__tabContent_currency  {font-size: 12px; font-weight: bold; color: #333; text-transform: uppercase; background-color: #fff; text-align: right;}
 
-        .tab1 .vip__tabContent_descript{font-size: 12px; padding-top: 5px; float: left; text-align: left; margin-bottom: 0;}
+        .tab1 .vip__tabContent_dataCard {margin-bottom: 0;}
+        .tab1 .vip__tabContent_descript{font-size: 12px; padding-top: 5px; float: left; text-align: left; margin: 12px 0 0 0;}
         .tab1 .vip__tabContent_details {margin: 0; }
         .tab1 .vip__tabContent_details:hover {text-decoration: none;}
-        .tab1 .vip__tabContent_purchaseBtn {float: right; margin-bottom: 0;}
+        .tab1 .vip__tabContent_purchaseBtn {float: right; margin: 12px 0 0 0;}
         .tab1 .vip__tabContent_currency  {position: absolute; right: 0; bottom: -48px; height: 48px; padding-top: 20px; font-size: 12px; font-weight: bold; color: #333; text-transform: uppercase; background-color: #fff; box-sizing: border-box; -moz-box-sizing: border-box;}
-        .tab2 .vip__tabContent_descript {margin-bottom: 21px;}
+        .tab2 .vip__tabContent_descript {margin-bottom: 21px; text-align: center;}
         .tab2 .vip__tabContent_currency {margin-bottom: 20px; text-align: center; padding: 10px;}
         .tab2 .vip__tabContent_purchaseBtn {margin-bottom: 0;}
 
@@ -267,3 +269,18 @@ body.payments {padding-right: 80px;}
         .vip__guest_message p {font: 16px Arial; color:#333333; margin: 10px 0 18px 0; padding: 0; line-height: 20px;}
 .vip__link {color: #436187; cursor: default;}
 
+.payment-errors {
+    color: #900;
+    line-height: 22px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 5px;}
+
+/* Error page*/
+.vip__errorPage {width: 600px; margin: 50px auto;}
+.vip__errorPage_subHeader {font: bold 16px Arial; color: #333;}
+.vip__errorPage_msgBlock {font-size: 16px; color: #333; text-align: center; padding: 25px; margin-bottom: 20px;}
+.vip__errorPage_msgBlock p {margin: 0 15px 15px;}
+/* vop.css:179*/
