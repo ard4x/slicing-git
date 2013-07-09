@@ -1,0 +1,190 @@
+.inner {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header.index-header {
+    display: block;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: rgba(0,0,0,0.65);
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+.logo {
+    display: block;
+    width: 167px;
+    height: 43px;
+
+}
+header.index-header .logo {
+    position: absolute;
+    top: 11px;
+    left: 0;
+}
+
+header.index-header .slogan {
+    width: 90px;
+    position: absolute;
+    left: 185px;
+    top: 17px;
+}
+
+header.index-header nav {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+header.index-header nav a {
+    margin-left: 40px;
+}
+
+#promo-image {
+    width: 100%;
+    min-width: 1000px;
+    position: absolute;
+    top: 0;
+    z-index: -1000;
+}
+
+.promo .inner h1 {
+    width: 630px;
+    position: absolute;
+    left: 0;
+    bottom: 66%;
+}
+
+.promo-block {
+    width: 530px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 26px 30px 30px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 5%;
+}
+
+.promo-block h2 {
+    margin-bottom: 22px;
+}
+
+.promo-block li {
+    margin-bottom: 5px;
+}
+.promo-block ol {
+    margin-bottom: 20px;
+}
+
+.tracking {
+    padding-top: 60px;
+}
+.tracking .inner, .report .inner {
+    padding: 0 30px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+figure.promo {overflow: hidden; margin-bottom: 60px;}
+figure.promo figcaption {
+    width: 440px;
+    float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+figure.promo figcaption.right {float: right;}
+figure.promo h2 {margin-bottom: 28px; line-height: 35px;}
+figure.promo p {margin-bottom: 20px; line-height: 18px}
+figure.promo .button {margin-top: 8px;}
+img.align-left {
+    float: left;
+    margin-right: 50px;
+}
+
+img.align-right {
+    float: right;
+    margin-left: 50px;
+}
+
+.promo-list {
+    background-color: #f2f7fa;
+    border-top: 1px solid #d9dee1;
+    padding-top: 36px;
+}
+
+.promo-list h2 {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #d9dee1;
+}
+
+.promo-item {
+    width: 437px;
+    display: inline-block;
+    margin: 0 30px 45px;
+    padding-left: 70px;
+    position: relative;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    vertical-align: top;
+    line-height: 18px;
+}
+
+.promo-item .icon {
+    position: absolute;
+    left: 0;
+    top: 3px;
+}
+
+.promo-item h4, .promo-item p {margin-bottom: 13px;}
+.promo-item h4 {line-height: 23px;}
+
+footer.index-footer {
+    background-color: #1a1a1a;
+}
+footer.index-footer .inner {
+    height: 270px;
+}
+
+footer.index-footer .logo {
+    position: absolute;
+    top: 42px;
+    left: 30px;
+}
+
+footer.index-footer .copyright {
+    display: block;
+    position: absolute;
+    top: 92px;
+    left: 30px;
+}
+
+footer.index-footer .social {
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    bottom: 53px;
+    font-size: 0;
+}
+footer.index-footer .social a {
+    margin-right: 15px;
+}
+
+footer.index-footer nav {
+    position: absolute;
+    right: 30px;
+    top: 50px;
+}
+footer.index-footer nav ul {
+    display: block;
+    width: 190px;
+    float: left;
+    margin-left: 30px;
+}
+footer.index-footer nav li {margin-bottom: 10px;}

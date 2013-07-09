@@ -260,6 +260,31 @@ input.button {
 .button.azure:active {
   border-color: #197bbb #35a9dd #3797bd !important;
 }
+.button.lite_blue {
+  background: #678ab4;
+  background: -ms-linear-gradient(top, #779ac4 0%, #627ea1 100%);
+  background: linear-gradient(to bottom, #779ac4 0%, #627ea1 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#779ac4, endColorstr=#627ea1, GradientType=0);
+}
+.button.lite_blue:hover {
+  background: #779ac4;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+}
+.button.lite_blue:active {
+  background: #526e91;
+  background: -ms-linear-gradient(top, #627ea1 0%, #779ac4 100%);
+  background: linear-gradient(to bottom, #627ea1 0%, #779ac4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#627ea1, endColorstr=#779ac4, GradientType=0);
+}
+.button.lite_blue {
+  border-color: #547db3 #6a88ae #4b5f7a !important;
+}
+.button.lite_blue:hover {
+  border-color: #547db3 #7596c0 #5b7596 !important;
+}
+.button.lite_blue:active {
+  border-color: #446691 #6a88ae #5b7595 !important;
+}
 .button.small {
   height: 24px;
   font-size: 12px!important;
