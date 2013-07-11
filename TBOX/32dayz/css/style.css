@@ -24,20 +24,20 @@ header.index-header {
 header.index-header .logo {
     position: absolute;
     top: 11px;
-    left: 0;
+    left: 30px;
 }
 
 header.index-header .slogan {
     width: 90px;
     position: absolute;
-    left: 185px;
+    left: 215px;
     top: 17px;
 }
 
 header.index-header nav {
     position: absolute;
     top: 20px;
-    right: 0;
+    right: 30px;
 }
 
 header.index-header nav a {
@@ -55,8 +55,8 @@ header.index-header nav a {
 .promo .inner h1 {
     width: 630px;
     position: absolute;
-    left: 0;
-    bottom: 66%;
+    left: 30px;
+    top: 88px;
 }
 
 .promo-block {
@@ -67,21 +67,44 @@ header.index-header nav a {
     background-color: rgba(0,0,0,0.6);
     border-radius: 4px;
     position: absolute;
-    left: 0;
-    bottom: 5%;
+    left: 30px;
+    top: 210px;
+    line-height: 19px;
 }
 
 .promo-block h2 {
     margin-bottom: 22px;
+    line-height: 24px;
 }
 
 .promo-block li {
     margin-bottom: 5px;
 }
 .promo-block ol {
-    margin-bottom: 20px;
+    margin-bottom: 27px;
 }
 
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .promo h1 {font-size: 56px; top: 18% !important;}
+    .promo-block {top: 43%;}
+}
+@media (min-width: 1281px) and (max-width: 1440px) {
+    .promo h1 {font-size: 56px; top: 22.9%!important}
+    .promo-block {top: 47.5%}
+}
+@media (min-width: 1441px) and (max-width: 1600px) {
+    .promo h1 {font-size: 56px; top: 25%!important;}
+    .promo-block {top: 48%;}
+}
+@media (min-width: 1601px) and (max-width: 1920px) {
+    .promo h1 {font-size: 60px; top: 25.25%!important; width: 700px !important}
+    .promo-block {top: 50.25%;}
+}
+@media (min-width: 1921px) {
+    .promo h1 {font-size: 60px; top: 26.6%!important; width: 700px !important}
+    .promo-block {top: 52.14%;}
+}
 .tracking {
     padding-top: 60px;
 }
