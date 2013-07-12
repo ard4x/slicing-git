@@ -1,0 +1,43 @@
+.login__header {margin-bottom: 18px;}
+.login__block {overflow: hidden; margin-bottom: 250px;}
+.login__form {width: 430px; float: left;}
+    .login__form_field {margin-bottom: 10px;}
+        .login__form_field input {box-sizing: border-box; -moz-box-sizing: border-box; height: 35px; width: 100%; padding: 8px; font-size: 16px;}
+        .login__form_field input:-moz-placeholder { font-style: italic }
+        .login__form_field input::-webkit-input-placeholder { font-style: italic }
+.login__form_options {font-size: 14px; color: #333; margin-bottom: 12px;}
+        .login__form_options label {}
+            .login__form_options label [type=checkbox]{margin: 0 8px; vertical-align: middle;}
+        .login__form_options_forgot {float: right;}
+    .login__form_submit {font-size: 0;}
+        .login__form_errorMsg {background: #ffe6e7; width: 330px; box-sizing: border-box; -moz-box-sizing: border-box; height: 31px; margin-left: 25px; display: inline-block;
+                vertical-align: top; color: #5f2222; font-size: 12px; line-height: 29px; text-align: center; border: 1px solid #ffd4d6; border-radius: 3px;}
+.login__form_or {display: inline-block; background: #fff; position: absolute; color: #999; font-size: 18px; line-height: 18px; text-align: center; width: 85px; line-height: 145px;}
+.login__register {display: block; width: 430px; float: right; padding: 20px; box-sizing: border-box; -moz-box-sizing: border-box; background: #f5f5f5; border-radius: 4px;}
+    .login__register_buttons {padding-bottom: 20px; border-bottom: 1px solid #ccc; font-size: 0;}
+        .login__register_buttons .button {width: 190px;}
+        .login__register_buttons .button.facebook {margin-right: 10px;}
+    .login__register_message {font-size: 14px; text-align: center; color: #333; margin-top: 25px;}
+
+.login__popup {width: 390px; padding: 12px 15px 43px;}
+    .login__popup_header {margin-bottom: 20px;}
+    .login__popup .login__form {width: 350px; margin-bottom: 15px;}
+    .login__popup .login__form_submit .button {width: 80px;}
+    .login__popup .login__form_errorMsg {width: 250px; margin-left: 20px;}
+    .login__popup .login__form_options {margin-bottom: 14px; padding-top: 5px;}
+    .login__popup_register {font-size: 0; padding-bottom: 27px; border-bottom: 1px solid #ccc; margin-bottom: 24px; position: relative;}
+    .login__popup_register .button {width: 170px;}
+    .login__popup_register .button.facebook {margin-right: 10px;}
+    .login__popup_or {padding: 10px; display: inline-block; background: #fff; position: absolute; color: #999; font-size: 18px; line-height: 18px; bottom: -19px; left: 45%;  }
+    .login__popup_bottom {position: absolute; left: 0; bottom: 0; height: 43px; background: #ecf4fb; width: 100%;
+    line-height: 43px; font-size: 14px; color: #333; text-align: center;}
+    
+.login__forgot_form {width: 515px; float: left;}
+    .login__forgot_form_label {font-size: 14px; color: #333; margin-bottom: 10px; padding-top: 6px;}
+    input.login__forgot_form_field {box-sizing: border-box; -moz-box-sizing: border-box; height: 31px; width: 100%; padding: 6px 8px; font-size: 16px; width: 345px;}
+    .login__forgot_form_button {margin-left: 15px; vertical-align: top; width: 150px;}
+    .login__forgot_error {margin: 10px 0; width: 345px}
+.login__forgot_notice {width: 395px; float: right; background: #e8eff5; border-radius: 4px; text-align: center; padding: 16px 20px 17px; box-sizing: border-box; -moz-box-sizing: border-box;
+font-size: 12px; color: #333; line-height: 18px; margin-top: 3px;}
+.login__forgot {overflow: hidden; margin-bottom: 350px;}
+input.error {border: 1px solid #900;}
