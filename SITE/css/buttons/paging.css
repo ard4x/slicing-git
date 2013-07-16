@@ -4,7 +4,7 @@
     background: none; color: #494949; text-shadow: none; }
 
 .btn__paging {}
-.btn__paging-item {display: inline-block !important; margin-right: 3px !important; height: 18px !important; padding-top: 4px !important; background: 0 -946px url(/img/btns.png) repeat-x !important; border: solid 1px #cbcbcb !important;
+.btn__paging-item {display: inline-block !important; margin-right: 3px !important; height: 18px !important; padding-top: 4px !important; background: 0 -946px url(../../img/btns.png) repeat-x !important; border: solid 1px #cbcbcb !important;
     border-radius: 3px !important; min-width: 17px !important; text-align: center !important; font: 12px Arial !important; color: #525252 !important;  text-decoration: none !important; padding: 3px 3px 0 !important; cursor: pointer !important;}
 .btn__paging-item:hover{background-position: 0 -968px !important; color: #525252 !important;  text-decoration: none !important;}
 .btn__paging-item:active{background-position: 0 -990px !important; color: #525252 !important;  text-decoration: none!important;}
