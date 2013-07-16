@@ -1,0 +1,317 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <title>Another Profile</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/user.css">
+
+    <link rel="stylesheet" href="../css/wid.css">
+    <link rel="stylesheet" href="../css/btns.css"> <!-- отсюда берем стили пагинаторане обращать внимание, используем то, что есть на проде -->
+    <link rel="stylesheet" href="../css/button.css">   <!-- НОВЫЕ стили кнопок. Проверить наличие, заменить более новой версией, а так же файлы btns.png и btns-icos.png, Версия указана в первой строке файла-->
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/dash.css">
+    <!-- Костыли для ИE, можно добавить в уже существующие -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../yngtu_ie8.css" type="text/css">
+    <![endif]-->
+
+    <!--  Файлы для замены селектов -->
+
+    <script src="../js/jquery-1.4.4.min.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'});
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+    <!--  ---------------------------------------- -->
+
+</head>
+<body>
+
+<!-- Добавить в конец dash.css -->
+<style type="text/css">
+    .wid__userList_item {position: relative;}
+    .user__pic.like_photo { position: absolute; margin: 0; right: 0; top: 0; z-index: 10;}
+</style>
+
+<div class="std__block std__layer_blue dash__latest ">
+
+<div class="dash__signals">
+    <h2 class="b-std__header std__fs-smallH">Latest notifications <a href="/signals" class="right dash__hOptions">
+        View all notifications</a>
+    </h2>
+    <div class="wid__userList">
+
+
+        <div class="wid__userList_item like_photo">
+            <a href="http://dev8.yangutu.com/4058453897" class="user__pic">
+                <img alt="" src="../img/usr/mask-50.png">
+            </a>
+
+            <div class="b-user__person">
+                <a href="#">
+                    Somebody.
+                </a>
+            </div><!-- /.user__person -->
+
+            <div class="user__location">
+                Last year
+            </div><!-- /.user__location -->
+
+            <div class="user__descript">
+                Has liked yor photo
+                <a href="http://dev8.yangutu.com/4058453897">
+                    View
+                </a>
+            </div>
+
+            <a href="http://dev8.yangutu.com/4058453897" class="user__pic like_photo">
+                <img alt="" src="http://yangutu-dev.s3.amazonaws.com/6b/3f/a9/46x46_5053599.jpeg">
+            </a>
+        </div><!-- /.wid__userList_item -->
+
+        <div class="wid__userList_item">
+            <a href="http://dev8.yangutu.com/4058453897" class="user__pic">
+                <img alt="" src="/img/stubs/46x46.gif">
+            </a>
+
+            <div class="b-user__person">
+                <a href="http://dev8.yangutu.com/4058453897">
+                    A.j.
+                </a>
+                , 53
+            </div><!-- /.user__person -->
+
+            <div class="user__location">
+                Last year
+            </div><!-- /.user__location -->
+
+            <div class="user__descript">
+                Has liked yor photo
+                <a href="http://dev8.yangutu.com/4058453897">
+                    View
+                </a>
+            </div>
+
+            <a href="http://dev8.yangutu.com/4058453897" class="user__pic like_photo">
+                <img alt="" src="http://yangutu-dev.s3.amazonaws.com/6b/3f/a9/46x46_5053599.jpeg">
+            </a>
+
+        </div><!-- /.wid__userList_item -->
+    </div><!-- /.wid__userList -->
+
+</div><!-- /.dash__signals -->
+<!-- /Latest Signals Panel -->
+
+<!-- Latest Guests Panel -->
+
+
+<div class="dash__guests">
+    <h2 class="b-std__header std__fs-smallH">Latest guests <a href="/visitors" class="right dash__hOptions">
+        View all guests</a></h2>
+
+    <div class="wid__userList">
+
+
+
+        <div class="wid__userList_item">
+            <a href="http://dev8.yangutu.com/maginaigelu" class="user__pic">
+                <img alt="" src="http://yangutu-dev.s3.amazonaws.com/2a/ba/11/46x46_5053631.jpeg">
+            </a>
+
+            <div class="b-user__person">
+                <a href="http://dev8.yangutu.com/maginaigelu">
+                    Roman</a>, 19            </div><!-- /.user__person -->
+
+            <div class="user__location">
+
+                Jul 10 5:58 PM
+            </div><!-- /.user__location -->
+
+            <div class="user__descript">
+                <a href="http://dev8.yangutu.com/maginaigelu" target="_blank">
+                    View profile                </a>
+            </div>
+
+        </div><!-- /.wid__userList_item -->
+
+
+        <div class="wid__userList_item">
+            <a href="http://dev8.yangutu.com/3684593823" class="user__pic">
+                <img alt="" src="/img/stubs/46x46.gif">
+            </a>
+
+            <div class="b-user__person">
+                <a href="http://dev8.yangutu.com/3684593823">
+                    Pavel</a>, 38            </div><!-- /.user__person -->
+
+            <div class="user__location">
+
+                Last year
+            </div><!-- /.user__location -->
+
+            <div class="user__descript">
+                <a href="http://dev8.yangutu.com/3684593823" target="_blank">
+                    View profile                </a>
+            </div>
+
+        </div><!-- /.wid__userList_item -->
+
+
+        <div class="wid__userList_item">
+            <a href="http://dev8.yangutu.com/1782045241" class="user__pic">
+                <img alt="" src="http://yangutu-dev.s3.amazonaws.com/6b/3f/a9/46x46_5053599.jpeg">
+            </a>
+
+            <div class="b-user__person">
+                <a href="http://dev8.yangutu.com/1782045241">
+                    Glenn</a>, 26            </div><!-- /.user__person -->
+
+            <div class="user__location">
+
+                Last year
+            </div><!-- /.user__location -->
+
+            <div class="user__descript">
+                <a href="http://dev8.yangutu.com/1782045241" target="_blank">
+                    View profile                </a>
+            </div>
+
+        </div><!-- /.wid__userList_item -->
+
+
+        <div class="wid__userList_item">
+            <a href="http://dev8.yangutu.com/alektasp" class="user__pic">
+                <img alt="" src="/light/generate-photo/id/5006268/size/avatar?1330672765">
+            </a>
+
+            <div class="b-user__person">
+                <a href="http://dev8.yangutu.com/alektasp">
+                    Alekta</a>, 25            </div><!-- /.user__person -->
+
+            <div class="user__location">
+
+                Last year
+            </div><!-- /.user__location -->
+
+            <div class="user__descript">
+                <a href="http://dev8.yangutu.com/alektasp" target="_blank">
+                    View profile                </a>
+            </div>
+
+        </div><!-- /.wid__userList_item -->
+
+
+        <div class="wid__userList_item">
+            <a href="http://dev8.yangutu.com/4058453897" class="user__pic">
+                <img alt="" src="/img/stubs/46x46.gif">
+            </a>
+
+            <div class="b-user__person">
+                <a href="http://dev8.yangutu.com/4058453897">
+                    A.j.</a>, 53            </div><!-- /.user__person -->
+
+            <div class="user__location">
+                Last year
+            </div><!-- /.user__location -->
+
+            <div class="user__descript">
+                <a href="http://dev8.yangutu.com/4058453897" target="_blank">
+                    View profile                </a>
+            </div>
+
+        </div><!-- /.wid__userList_item -->
+
+
+        <div class="wid__userList_item">
+            <a href="http://dev8.yangutu.com/1596218447" class="user__pic">
+                <img alt="" src="http://yangutu-s7.s3.amazonaws.com/2d/cf/c8/46x46_4854230.jpg?1305872984">
+            </a>
+
+            <div class="b-user__person">
+                <a href="http://dev8.yangutu.com/1596218447">
+                    Ignaci..</a>, 46            </div><!-- /.user__person -->
+
+            <div class="user__location">
+
+                Last year
+            </div><!-- /.user__location -->
+
+            <div class="user__descript">
+                <a href="http://dev8.yangutu.com/1596218447" target="_blank">
+                    View profile                </a>
+            </div>
+
+        </div><!-- /.wid__userList_item -->
+
+
+        <div class="wid__userList_item">
+            <a href="http://dev8.yangutu.com/3934530423" class="user__pic">
+                <img alt="" src="http://yangutu-s8.s3.amazonaws.com/1a/f9/87/46x46_5039538.jpg?1335202683">
+            </a>
+
+            <div class="b-user__person">
+                <a href="http://dev8.yangutu.com/3934530423">
+                    Pavel</a>, 34            </div><!-- /.user__person -->
+
+            <div class="user__location">
+
+                Last year
+            </div><!-- /.user__location -->
+
+            <div class="user__descript">
+                <a href="http://dev8.yangutu.com/3934530423" target="_blank">
+                    View profile                </a>
+            </div>
+
+        </div><!-- /.wid__userList_item -->
+
+
+        <div class="wid__userList_item">
+            <a href="http://dev8.yangutu.com/3923623652" class="user__pic">
+                <img alt="" src="http://yangutu-s7.s3.amazonaws.com/40/c4/d3/46x46_4995053.JPG?1330603261">
+            </a>
+
+            <div class="b-user__person">
+                <a href="http://dev8.yangutu.com/3923623652">
+                    Kostadin</a>, 46            </div><!-- /.user__person -->
+
+            <div class="user__location">
+
+                Last year
+            </div><!-- /.user__location -->
+
+            <div class="user__descript">
+                <a href="http://dev8.yangutu.com/3923623652" target="_blank">
+                    View profile                </a>
+            </div>
+
+        </div><!-- /.wid__userList_item -->
+
+
+
+    </div><!-- /.wid__userList -->
+
+</div><!-- /.dash__guests -->
+<!-- Latest Guests Panel -->
+
+</div>
+
+</body>
+</html>

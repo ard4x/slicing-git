@@ -1,0 +1,18 @@
+/*** PAGINATION **/
+.paginator-style .btn__paging-item span { background: none; display: inline; height: 18px; padding: 0; font: 12px/12px Arial;}
+.paginator-style .btn__paging-item a { height: 18px; padding-left: 0px; display: inline-block; white-space: nowrap; padding-bottom: 0px;
+    background: none; color: #494949; text-shadow: none; }
+
+.btn__paging {}
+.btn__paging-item {display: inline-block !important; margin-right: 3px !important; height: 18px !important; padding-top: 4px !important; background: 0 -946px url(/img/btns.png) repeat-x !important; border: solid 1px #cbcbcb !important;
+    border-radius: 3px !important; min-width: 17px !important; text-align: center !important; font: 12px Arial !important; color: #525252 !important;  text-decoration: none !important; padding: 3px 3px 0 !important; cursor: pointer !important;}
+.btn__paging-item:hover{background-position: 0 -968px !important; color: #525252 !important;  text-decoration: none !important;}
+.btn__paging-item:active{background-position: 0 -990px !important; color: #525252 !important;  text-decoration: none!important;}
+.btn__paging-item a {color: #525252 !important;  text-decoration: none !important; height: 18px;width: 100%;display: inline-block;}
+.btn__paging-item__current a {color:#fafafa !important; cursor: default !important;}
+.btn__paging-item__disabled a {color: #CBCBCB !important; cursor: default !important;}
+.btn__paging-item__current, .btn__paging-item__current:hover, .btn__paging-item__current:active {background-position: 0 -1012px !important; color:#fafafa !important; text-shadow: 0 1px 0 #454545 !important; cursor: default !important; text-decoration: none !important;}
+.btn__paging-item__disabled, .btn__paging-item__disabled:hover, .btn__paging-item__disabled:active{cursor: default !important; color: #CBCBCB !important; background-position: 0 -990px !important; text-decoration: none !important;}
+.btn__paging-prew {padding-left: 7px !important; padding-right: 7px !important; width: auto !important; margin-right: 5px !important;}
+.btn__paging-page {}
+.btn__paging-next {padding-left: 7px !important; padding-right: 7px !important; width: auto !important; margin-left: 3px !important; margin-right: 0 !important;}
