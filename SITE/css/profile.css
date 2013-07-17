@@ -510,3 +510,74 @@ textarea.err, .err textarea, .err .newListSelected, .err .newList{border-color: 
 .profile_likes_empty {position: relative; background-color: #e8eff5; margin: 0 0 300px; padding: 70px 0; font: bold 28px 'PT Sans'; color: #333; text-align: center; border-radius: 4px;}
     .profile_likes_empty p {padding: 0; margin: 0;}
     .profile_likes_empty .button {margin-top: 30px;}
+
+/* Profile Invite */
+.profile__invite {padding-top: 15px;}
+.profile__invite_header {margin-bottom: 21px;}
+.profile__invite_mainBlock {padding: 16px 20px 20px;}
+.profile__invite_content {padding: 30px; text-align: center; background: #fff; border-radius: 4px; color: #333; font-size: 18px;}
+.profile__invite_content p {padding: 0; margin-bottom: 20px;}
+.profile__invite_content .profile__invite_message_button {}
+.profile__invite_side_header {text-align: center; padding-bottom: 5px;}
+.profile__invite_side_msg {padding: 8px 10px 8px; background: #fff; border-radius: 4px; text-align: center; margin-bottom: 10px; color: #333;}
+.profile__invite_side_msg:last-child {margin: 0;}
+.profile__invite_userList_wrap {margin-left: -30px; position: relative; overflow: hidden;}
+.profile__invite_userList {max-height: 450px; overflow: auto; overflow-x: hidden;}
+.profile__invite_userList_coll {width: 250px; margin-left: 30px; float: left; text-align: left;}
+.profile__invite_userList_coll.wide_coll {width: 320px;}
+.profile__invite_userList_coll > .std__header {padding-bottom: 5px;}
+.profile__invite_userList_item {margin-bottom: 10px; vertical-align: top; color: #333; padding-right: 6px;}
+.profile__invite_userList_item:last-child {margin-bottom: 0;}
+.profile__invite_userList_search {width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; height: 27px!important; padding: 4px 7px 4px 25px !important; background: #fff url(../img/search.gif) 5px 6px no-repeat;}
+.profile__invite_userList_item_pic {width: 50px; height: 50px; margin-right: 5px;}
+.profile__invite_userList_item_name {font-size: 14px; vertical-align: top; line-height: 48px; display: inline-block;}
+.profile__invite_userList_item_btn {float: right; margin-top: 9px;}
+.profile__invite_noMsg {font-size: 14px; color: #999; text-align: center; display: block; padding-top: 10px;}
+
+.profile__invite_row {font-size: 0; text-align: left; margin-bottom: 10px;}
+.profile__invite_label {vertical-align: top; width: 110px; display: inline-block; font-size: 14px; text-align: left; box-sizing: border-box; -moz-box-sizing: border-box; padding: 5px 20px 0;}
+.profile__invite_field {display: inline-block; width: 470px; font-size: 12px; color: #333; font-weight: normal;}
+.profile__invite_field input {width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; height: 27px!important; padding: 4px 7px!important;}
+.profile__invite_emailList .profile__invite_field {width: 380px;}
+.profile__invite_emailPreview {width: 600px; position: relative; padding-left: 0; box-sizing: border-box; -moz-box-sizing: border-box; padding-bottom: 1px;}
+.profile__invite_emailPreview .profile__invite_field {padding-top: 3px;}
+.profile__invite_emailPreview p {padding: 0; margin-bottom: 10px;}
+.profile__invite_emailPreview .profile__invite_label {padding-top: 2px;}
+.profile__invite_emailButtons {font-size: 14px; font-weight: normal; text-align: center; margin-top: 20px;}
+.profile__invite_emailButtons .button {margin: 0;}
+.profile__invite_google {margin-left: 0; text-align: left; font-weight: normal; font-size: 14px;}
+.profile__invite_google_selectAll {display: inline-block; padding-top: 2px;}
+.profile__invite_google_search {width: 250px; float: right;}
+.profile__invite_google_checkBox {margin-top: 9px; margin-right: 15px; float: left;}
+.profile__invite_google_emails {}
+.profile__invite_google_emails_name {font-size: 14px; color: #333;}
+.profile__invite_google_emails_mail {font-size: 12px; color: #666;}
+.profile__invite_google_top {margin-bottom: 30px;}
+.profile__invite_google_bottom {}
+.profile__invite_google_bottom_selected {margin-bottom: 15px;}
+.profile__invite_google_button {margin-bottom: 20px;}
+.profile__invite_google_bottom_info {}
+.profile__invite_google_list {margin: 0; max-height: 450px; overflow: auto; margin-bottom: 15px;}
+.profile__invite_google_list .profile__invite_userList_item  {margin-bottom: 15px;}
+.profile__invite_google_users_error {font-size: 16px; font-weight: bold; color: #333; padding: 25px;}
+.profile__invite_popup {width: 778px; padding: 12px 14px 10px;}
+.profile__invite_popup_subj {font-size: 14px; color: #333; margin-bottom: 20px; padding-top: 3px;}
+.profile__invite_popup_subj_label {font-weight: bold;}
+.profile__invite_popup_screen {width: 740px; border: 1px solid #ccc;}
+
+.profile__invite_sendEmail {padding: 17px 19px 20px; border: 1px solid #ccc; background: #f5f5f5; border-radius: 4px;}
+.profile__invite_sendEmail_header {padding-bottom: 2px;}
+.profile__invite_sendEmail_message {font-size: 14px; font-weight: bold; color: #333; text-align: center; font-style: italic; padding-top: 2px;}
+.profile__invite_sendEmail_inputs {text-align: center; margin-top: 20px;}
+.profile__invite_sendEmail_field {margin-right: 15px!important; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; height: 27px!important; padding: 4px 7px!important; width: 290px;}
+.profile__invite_sendEmail_button {}
+.profile__invite_popup_email {width: 670px; color: #333;}
+.profile__invite_popup_email > .std__header  {margin-bottom: 20px;}
+.profile__invite_popup_email .profile__invite_label  {width: 140px;}
+.profile__invite_popup_email .profile__invite_field  {width: 350px;}
+.profile__invite_popup_email .profile__invite_emailPreview  {padding-top: 17px; width: auto; padding-right: 20px;}
+.profile__invite_label_area {padding-top: 8px!important; line-height: 16px;}
+.profile__invite_field_area {margin-bottom: 4px; width: 470px; box-sizing: border-box; -moz-box-sizing: border-box; padding: 5px 7px; overflow: auto; resize: none; font-size: 12px; height: 57px;}
+.profile__invite_popup_email_link {padding-left: 7px; margin-bottom: 11px; display: inline-block;}
+.profile__invite_popup_email_from {padding-left: 7px!important;}
+.profile__invite_popup_email .profile__invite_emailButtons .button  {width: 190px; margin-bottom: 7px;}
