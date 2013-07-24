@@ -1,6 +1,6 @@
 body {background: bottom center url(../img/mobile/iphone_bg.jpg) no-repeat; background-size: 100%;}
 .iphone_page {width: 100%; text-align: center; overflow: hidden}
-    .iphone_page_inner {width: 556px; position: relative; margin: 0 auto; height: 830px;}
+    .iphone_page_inner {padding: 0 40px; height: 830px;}
         .iphone_page_inner h1 {color: #121212; font: 36px 'Helvetica Neue', Arial, sans-serif; text-shadow: 0 1px rgba(255,2552,255,0.5); margin-top: 0px; padding-top: 33px;
             margin-bottom: 24px; line-height: 43px;}
         .iphone_page_button {margin-top: 30px; padding: 6px; position: relative; margin-bottom: 29px;}
