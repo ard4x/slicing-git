@@ -1,0 +1,18 @@
+body {background: bottom center url(../img/mobile/iphone_bg.jpg) no-repeat; background-size: 100%;}
+.iphone_page {width: 100%; text-align: center; overflow: hidden}
+    .iphone_page_inner {width: 556px; position: relative; margin: 0 auto; height: 830px;}
+        .iphone_page_inner h1 {color: #121212; font: 36px 'Helvetica Neue', Arial, sans-serif; text-shadow: 0 1px rgba(255,2552,255,0.5); margin-top: 0px; padding-top: 33px;
+            margin-bottom: 24px; line-height: 43px;}
+        .iphone_page_button {margin-top: 30px; padding: 6px; position: relative; margin-bottom: 29px;}
+            .iphone_page_button_background {width: 100%; background: #464951; opacity: 0.7; border-radius: 6px; height: 90px;
+                box-shadow: inset 0 2px 3px rgba(0,0,0,0.8), 0 2px rgba(255,255,255,0.16); position: absolute; top: 0; left: 0;
+            }
+            a.iphone_page_button_item {display: block; box-sizing: border-box; height: 78px; border: 1px solid #982e1a; color: #fff;
+                font: bold 36px 'Helvetica Neue', Arial, sans-serif; text-shadow: 0 -1px  2px rgba(0,0,0,0.5); z-index: 10; position: relative;
+                background: linear-gradient(to bottom, #da5d44 0%,#bf3016 100%); box-shadow: inset 0 1px 1px rgba(255,255,255,0.3), 0 1px 2px rgba(0,0,0,0.5);
+                border-radius: 3px; text-decoration: none!important; line-height: 76px;
+            }
+            a.iphone_page_button_item:active {box-shadow: inset 0 1px 1px rgba(255,255,255,0.3); background: linear-gradient(to bottom, #bf3016 0%,#da5d44 100%);}
+            .iphone_page_inner_or {color: #121212; font: 30px 'Helvetica Neue', Arial, sans-serif; margin-bottom: 35px;}
+            .iphone_page_inner_or a {color: #121212; text-decoration: underline;}
+.iphone_page_icon {height: 360px; overflow: visible;}
