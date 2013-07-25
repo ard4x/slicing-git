@@ -10,10 +10,17 @@ body {background: bottom center url(../img/mobile/iphone_bg.jpg) no-repeat; back
             }
             a.iphone_page_button_item {display: block; box-sizing: border-box; height: 39px; border: 1px solid #982e1a; color: #fff;
                 font: bold 18px 'Helvetica Neue', Arial, sans-serif; text-shadow: 0 -1px  2px rgba(0,0,0,0.5); z-index: 10; position: relative;
-                background: linear-gradient(to bottom, #da5d44 0%,#bf3016 100%); box-shadow: inset 0 1px 1px rgba(255,255,255,0.3), 0 1px 2px rgba(0,0,0,0.5);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#da5d44), color-stop(100%,#bf3016)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top, #da5d44 0%,#bf3016 100%); /* Chrome10+,Safari5.1+ */
+                background: linear-gradient(to bottom, #da5d44 0%,#bf3016 100%);
+                box-shadow: inset 0 1px 1px rgba(255,255,255,0.3), 0 1px 2px rgba(0,0,0,0.5);
                 border-radius: 3px; text-decoration: none!important; line-height: 39px;
             }
-            a.iphone_page_button_item:active {box-shadow: inset 0 1px 1px rgba(255,255,255,0.3); background: linear-gradient(to bottom, #bf3016 0%,#da5d44 100%);}
+            a.iphone_page_button_item:active {box-shadow: inset 0 1px 1px rgba(255,255,255,0.3);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bf3016), color-stop(100%,#da5d44)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top, #bf3016 0%,#da5d44 100%); /* Chrome10+,Safari5.1+ */
+                background: linear-gradient(to bottom, #bf3016 0%,#da5d44 100%);
+            }
             .iphone_page_inner_or {color: #121212; font: 15px 'Helvetica Neue', Arial, sans-serif; margin-bottom: 17px;}
             .iphone_page_inner_or a {color: #121212; text-decoration: underline;}
 .iphone_page_icon {height: 180px; overflow: visible;}
