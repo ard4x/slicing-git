@@ -679,6 +679,7 @@ a.pluscount2:hover {color:#ffffff; text-decoration: none;}
 .subnav .newListSelected .selectedTxt,.subnav .newList li{font-size:11px; display:block;}
 .subnav .newListSelected .newList{top:16px!important;}
 
+
 .newListSelected {height:17px; background: url("data:image/gif;base64,R0lGODlhFQAVAMQAAEJdgENpj0JfgkNnjUJghENmi0BVdkVxmUFYe0VwmEFafERvlkRrkUNkiUJihkFbfkFXeURsk0BWd0RulEVymv///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAAAAAAALAAAAAAVABUAAAV6ICWOZGkeaKqubOK+cCwvdG3f+KTvfO9HwKBwSGQYj8ikMsBsOisVp3RArVahUKu1wO1ysVhvt0Eum89oh3rNbrsJ8DgcDJXHBfh8HqzXA/6AgVCBhA+Gh4iJigqMjY6PkAiSk5SVlhCYmZqbnBKen6ChogakpaanqCEAOw==") right top #ffffff no-repeat; color:#030303; border: solid 1px #8098ae; padding:3px 2px 2px 3px;}
 
 .selectedTxt {padding-right: 20px; text-align:left; cursor:pointer; overflow:hidden; text-overflow: ellipsis; white-space: nowrap;}

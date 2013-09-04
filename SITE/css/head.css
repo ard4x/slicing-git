@@ -5,7 +5,7 @@
         .head__logo_img {}
 /* Menu */
     .head__menu {position: absolute; left: 242px; top: 9px;}
-        .head__menu_item {display: block; float: left; font: bold 16px Arial; color: #fff; margin-right: 6px; line-height: 16px; padding: 7px 9px; text-decoration: none;}
+        .head__menu_item {display: block; float: left; font: bold 16px Arial; color: #fff; margin-right: 6px; line-height: 16px; padding: 7px 9px; text-decoration: none; position: relative;}
         .head__menu_item:hover,
         .head__menu_item:active {text-decoration: none; background: #3c5779; border-radius: 2px; color: #fff;}
         .head__menu_item.active {background: #f6f5eb; cursor: default; color: #436187; text-decoration: none; border-radius: 2px;}
@@ -15,10 +15,10 @@
         .head__toolbar_item_divider {display: block; height: 28px; width: 0px; border-left: 1px solid #3c5779;}
         .head__toolbar .icon {display: block; position: relative; background: url(../img/head/icons.png) no-repeat; position: absolute; top: 8px;}
 
-        .head__toolbar .counter {display: none; background: #fc3e39; font-size: 10px; color: #fff; line-height: 10px; border-radius: 2px; padding: 2px 2px 1px 3px;
+        .head__toolbar .counter, .bubble_counter {display: none; background: #fc3e39; font-size: 10px; color: #fff; line-height: 10px; border-radius: 2px; padding: 2px 2px 1px 3px;
             position: absolute; top: -3px; right: -2px;}
         .head__toolbar .action .counter {display: inline-block;}
-
+        .bubble_counter {display: inline-block; top: -4px; font-weight: normal}
 /* Toolbar submenu  */
         .head__toolbar_subMenu {display: none; text-indent: 0; padding: 15px 0 8px; background: #fff; z-index: -1; box-shadow: 0 0 4px 1px rgba(0,0,0,0.3);
             position: absolute; top: 32px; left: 0;}
