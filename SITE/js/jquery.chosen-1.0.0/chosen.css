@@ -4,6 +4,7 @@
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     height: 27px;
+    color: #333 !important;
 }
 .selectedTxt {
     position: relative;
@@ -19,6 +20,9 @@ ul.newList li {
     margin: 0 4px !important;
 }
 
+.newList a {
+    color: #333;
+}
 .newList li a:hover {
     background: #436187;
     border-radius: 2px;
@@ -176,6 +180,7 @@ ul.newList li {
   padding: 4px 6px;
   list-style: none;
   line-height: 12px;
+  color: #333;
 }
 .chosen-container .chosen-results li.active-result {
   display: list-item;
