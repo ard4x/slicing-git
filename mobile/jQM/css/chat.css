@@ -1,0 +1,64 @@
+.chat-conversation-page .message-form {
+    bottom: 52px;
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:        border-box;
+    background:#cccccc;
+    border: 0;
+    margin-top: -1px;
+}
+.chat-conversation-page .message-form label {
+    display: none;
+}
+.chat-conversation-page .message-form .ui-field-contain {
+    width: 100%;
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:         border-box;
+    padding: .2em 75px .2em 3px;
+    margin: 0;
+    border-bottom: none;
+}
+/* http://stackoverflow.com/questions/5219030/content-of-div-is-longer-then-div-itself-when-width-is-set-to-100/5219090 */
+.chat-conversation-page .message-form .ui-field-contain input:focus {
+    box-shadow:inset 1px 1px 4px #999;
+}
+.chat-conversation-page .message-form .ui-field-contain input {
+    width: 100%;
+    -moz-box-sizing:    border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:        border-box;
+    box-shadow:inset 1px 1px 4px #999;
+    /* Override margin-left from '.ui-header input.ui-input-text, .ui-footer input.ui-input-text' */
+    margin-left: 0;
+    font-size:15px;
+}
+.chat-conversation-page .message-form .ui-btn.ui-fullsize .ui-btn-inner{
+	padding:0.4em;
+    width:49px;
+}
+.chat-conversation-page .message-form .ui-btn .ui-btn-text{
+	font-size:13px;
+}
+.chat-conversation-page .message-form .ui-btn {
+    position: absolute;
+    top: 4px;
+    right: 5px;
+}
+
+.chat-conversation-page .collocutor-message .username {
+    color: #4a991c;
+}
+
+.chat-conversation-page .actor-message .username {
+    color: #b3b3b5;
+}
+
+.chat-conversation-page .message {
+    background-color: white;
+    cursor: default;
+}
+
+.chat-conversation-page .collocutor-message {
+    background-color: #eff6fc;
+}

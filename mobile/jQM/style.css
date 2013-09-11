@@ -1,0 +1,134 @@
+/* G-theme button  */
+
+
+.ui-btn-up-g {
+    border: 2px solid #1a1e2a;
+    box-shadow: 0px -1px 0px #1a1e2a;
+    background: 			#eee /*{c-bup-background-color}*/;
+    font-weight: bold;
+    color: 					#fff /*{c-bup-color}*/;
+    text-shadow: 0 /*{c-bup-shadow-x}*/ 1px /*{c-bup-shadow-y}*/ 1px /*{c-bup-shadow-radius}*/ rgba(0,0,0,0.5) /*{c-bup-shadow-color}*/;
+    background-image: linear-gradient(top, #5479C5 0%, #3B5999 100%);
+    background-image: -ms-linear-gradient(top, #5479C5 0%, #3B5999 100%);
+    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #5479C5), color-stop(1, #3B5999) );
+}
+
+.ui-btn.ui-btn-up-g .ui-btn-inner,
+.ui-btn.ui-btn-hover-g .ui-btn-inner,
+.ui-btn.ui-btn-up-g.ui-btn-active .ui-btn-inner{
+    line-height: 19px;
+    height: 20px;
+    border-width: 1px;
+    border-top-color: transparent;
+    border-style: solid;
+    border-left-color: #6D83B1;
+    border-right-color: #6F8CC6;
+    border-bottom-color: transparent;
+    box-shadow: 0px -1px 0px #B4C5E6;
+    text-shadow:0px -1px 0px #2C416B;
+}
+
+.ui-btn-up-g a.ui-link-inherit {
+    color: 					#2F3E46 /*{c-bup-color}*/;
+}
+
+.ui-btn-hover-g {
+    border: 2px solid #1a1e2a;
+    box-shadow: 0px -1px 0px #1a1e2a;
+    background: 			#dfdfdf /*{c-bhover-background-color}*/;
+    font-weight: bold;
+    color: 					#fff /*{c-bup-color}*/;
+    text-shadow: 0 /*{c-bup-shadow-x}*/ 1px /*{c-bup-shadow-y}*/ 1px /*{c-bup-shadow-radius}*/ rgba(0,0,0,0.5) /*{c-bup-shadow-color}*/;
+    background-image: linear-gradient(top, #3B5999 0%, #5479C5 100%);
+    background-image: -ms-linear-gradient(top, #3B5999 0%, #5479C5 100%);
+    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #3B5999), color-stop(1, #5479C5) );
+}
+.ui-btn-hover-g a.ui-link-inherit {
+    color: 					#2F3E46 /*{c-bhover-color}*/;
+}
+.ui-btn-down-g {
+    border: 2px solid #1a1e2a;
+    box-shadow: 0px -1px 0px #1a1e2a;
+    background: 			#d6d6d6 /*{c-bdown-background-color}*/;
+    font-weight: bold;
+    color: 					#fff /*{c-bup-color}*/;
+    text-shadow: 0 /*{c-bup-shadow-x}*/ 1px /*{c-bup-shadow-y}*/ 1px /*{c-bup-shadow-radius}*/ rgba(0,0,0,0.5) /*{c-bup-shadow-color}*/;
+    background-image: linear-gradient(top, #3B5999 0%, #5479C5 100%);
+    background-image: -ms-linear-gradient(top, #3B5999 0%, #5479C5 100%);
+    background-image: -webkit-gradient( linear, left top, left bottom, color-stop(0, #3B5999), color-stop(1, #5479C5) );
+}
+.ui-btn-down-g a.ui-link-inherit {
+    color: 					#2F3E46 /*{c-bdown-color}*/;
+}
+.ui-btn-up-c,
+.ui-btn-hover-c,
+.ui-btn-down-c {
+    font-family: Helvetica, Arial, sans-serif /*{global-font-family}*/;
+    text-decoration: none;
+}
+
+/* List with select */
+.list-select {padding: 0 !important; }
+.list-select .list-select-label {position: absolute !important; z-index: 2 !important; top: 12px !important; left: 15px !important;
+    font-weight: bold; color: #7f7f7f;}
+.list-select .ui-btn {border: none !important; min-height: 41px;}
+.list-select .ui-select .ui-btn-icon-right .ui-icon {right: 10px!important; top: 10px!important; margin-top: 0;}
+.ui-listview .list-select .ui-btn .ui-btn-inner .ui-btn-text {color: #000; text-align: right;}
+.list-select .ui-select .ui-btn-icon-right .ui-btn-inner { padding-right: 45px; width: 35%; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; float: right;}
+.ui-first-child.list-select .ui-btn {border-top-left-radius: 8px!important; border-top-right-radius: 8px!important;}
+.ui-last-child.list-select .ui-btn {border-bottom-left-radius: 8px!important; border-bottom-right-radius: 8px!important;}
+
+.about-me .ui-li-aside {
+    position: relative;
+    margin: 0 15px;
+    font-size: 16px!important; color: #000;
+}
+.header-tips {font: 16px 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif; color: #999; text-align: center; margin-bottom: 10px;}
+.about-me .ui-listview .list-select-label {font-size: 16px !important}
+.about-me .ui-btn .ui-link-inherit {
+    font-size: 16px; font-weight: bold; color: #7f7f7f;
+}
+.about-me .ui-listview .ui-li-aside {}
+.choose-form .ui-radio {margin: 0;}
+.choose-form .ui-radio label {box-shadow: none; }
+.choose-form .ui-li:hover,
+.choose-form .ui-li:active{background: rgb(221,222,224);}
+.choose-form .ui-radio input {visibility: hidden;}
+.choose-form .ui-li {padding: 0;}
+.choose-form .ui-listview .ui-btn .ui-btn-inner .ui-btn-text  {text-shadow: rgb(255, 255, 255) 0px 1px 1px !important; font-weight: bold !important; font-size: 16px !important; color: #7f7f7f !important}
+
+.interests .header-tips {margin-bottom: 5px;}
+/* Interests list (Step 2) */
+.interests_list {overflow: hidden; display: block; padding: 0; margin: 0; margin-left: -6px; min-width: 288px; max-width: 576px; }
+.interests_list li {list-style: none;float: left; margin: 0 0 6px 6px;}
+.interests_list .ui-checkbox .ui-icon-checkbox-on {width: 46px; height: 46px; background: url(img/interests/chekked.png) no-repeat;
+    position: absolute !important; top: 14px !important; left: 24px !important; margin: 0 !important; z-index: 999;}
+.interests_list .ui-checkbox {margin: 0;}
+.interests_list .ui-checkbox .ui-btn-inner {padding: 0; width: 90px; height: 90px;}
+.interests_list .ui-checkbox .interest_label {position: absolute; left: 0; bottom: 0; font-size: 9px; font-weight: bold; z-index: 99; color: #fff; text-shadow: none;
+                                              display: block; width: 100%; height: 24px; line-height: 24px; left: 0; bottom: 0; text-align: center; }
+.interests_list .ui-checkbox .ui-btn-text {height: 90px;}
+.interest_imgFrame {box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5); border-radius: 6px;}
+.interests_list .ui-checkbox .ui-btn-text img {width: 90px; height: 90px; position: relative; z-index: -2;}
+.interests_list .ui-checkbox .ui-btn {border:none; box-shadow: none; border-radius: 6px;}
+.interests_list .ui-checkbox .interest_layout {display: block; height: 24px; width: 100%; position: absolute; left: 0; bottom: 0; background: rgba(0,0,0,0.6); z-index: 10; }
+.interests_list .ui-checkbox .ui-checkbox-on .interest_layout {height: 100%;}
+.interests_list .ui-checkbox .ui-checkbox-on .interest_label {color: #ffe67a;}
+.interests_list_wrapper {display: block; margin: 0 auto; max-width: 570px;}
+
+/* Interests progress */
+.interests_progress {display: block; text-align: center; margin-bottom: 10px;}
+    .interests_progress_item {display: inline-block; width: 27px; height: 27px; background: url(img/interests/uncheck.png) no-repeat; margin: 0 3px;}
+    .interests_progress.checked_1 .item_1,
+    .interests_progress.checked_2 .item_1,
+    .interests_progress.checked_2 .item_2,
+    .interests_progress.checked_3 .item_1,
+    .interests_progress.checked_3 .item_2,
+    .interests_progress.checked_3 .item_3,
+    .interests_progress.checked_4 .item_1,
+    .interests_progress.checked_4 .item_2,
+    .interests_progress.checked_4 .item_3,
+    .interests_progress.checked_4 .item_4,
+    .interests_progress.checked_5 .interests_progress_item {background: url(img/interests/check.png) no-repeat;}
+
+.interests_list_area {width: 110%; margin-left: -5%; padding: 21px 0; margin-bottom: 20px; box-shadow: inset 0px 5px 5px -5px rgba(0,0,0,0.5), inset 0px -5px 5px -5px rgba(0,0,0,0.5);}

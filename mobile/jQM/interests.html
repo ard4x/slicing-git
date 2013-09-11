@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Mobile</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="ui-mobile-viewport ui-overlay-c">
+
+<div data-role="page" id="sign-up-first-page" class="ui-page ui-body-c ui-page-header-fixed ui-page-active">
+    <div data-role="header" data-position="fixed" class="ui-header ui-bar-b ui-header-fixed slidedown">
+        <a class="ui-btn-back" href="#yangutu-start-page" data-role="button" data-inline="true" data-direction="reverse">Back</a>
+        <a class="ui-btn-right" data-direction="reverse">Next</a>
+        <h1>Interests (Step 2 of 2)</h1>
+    </div>
+
+    <div data-role="content" class="interests ui-content ui-body-c">
+
+        <div class="header-tips">Pick up at list 5 interests</div>
+        <div class="interests_progress checked_2">
+            <div class="interests_progress_item item_1"></div>
+            <div class="interests_progress_item item_2"></div>
+            <div class="interests_progress_item item_3"></div>
+            <div class="interests_progress_item item_4"></div>
+            <div class="interests_progress_item item_5"></div>
+        </div>
+        <div class="interests_list_area">
+            <div class="interests_list_wrapper">
+                <ul class="interests_list">
+                    <li>
+                        <label>
+                            <input checked='checked' type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/camping.jpg" alt=""/></div>
+                            <span class='interest_label'>Camping / Hiking</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/charity.jpg" alt=""/></div>
+                            <span class='interest_label'>Charity</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/cycling.jpg" alt=""/></div>
+                            <span class='interest_label'>Cycling</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/collecting.jpg" alt=""/></div>
+                            <span class='interest_label'>Collecting</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/computer_games.jpg" alt=""/></div>
+                            <span class='interest_label'>Computer games</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/cooking.jpg" alt=""/></div>
+                            <span class='interest_label'>Cooking</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/dancing.jpg" alt=""/></div>
+                            <span class='interest_label'>Dancing</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/drawing.jpg" alt=""/></div>
+                            <span class='interest_label'>Drawing / Painting</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/crafts.jpg" alt=""/></div>
+                            <span class='interest_label'>DYI / Crafts</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/fitness.jpg" alt=""/></div>
+                            <span class='interest_label'>Fitness /Gym</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/gardening.jpg" alt=""/></div>
+                            <span class='interest_label'>Gardening</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/internet_browsing.jpg" alt=""/></div>
+                            <span class='interest_label'>Internet Browsing</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/listen_music.jpg" alt=""/></div>
+                            <span class='interest_label'>Listening to Music</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/outdoor_hobbies.jpg" alt=""/></div>
+                            <span class='interest_label'>Outdoor Hobbies</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/pets.jpg" alt=""/></div>
+                            <span class='interest_label'>Pets</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input checked='checked' type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/photography.jpg" alt=""/></div>
+                            <span class='interest_label'>Photography</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/playing_cards.jpg" alt=""/></div>
+                            <span class='interest_label'>Playing Cards</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/play_sport.jpg" alt=""/></div>
+                            <span class='interest_label'>Play Sport Games</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/reading.jpg" alt=""/></div>
+                            <span class='interest_label'>Reading</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/running.jpg" alt=""/></div>
+                            <span class='interest_label'>Running / Jogging</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/shopping.jpg" alt=""/></div>
+                            <span class='interest_label'>Shopping</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/singing.jpg" alt=""/></div>
+                            <span class='interest_label'>Singing</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/social.jpg" alt=""/></div>
+                            <span class='interest_label'>Social Networking</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/spirituality.jpg" alt=""/></div>
+                            <span class='interest_label'>Spirituality</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/swimming.jpg" alt=""/></div>
+                            <span class='interest_label'>Swimming</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/traveling.jpg" alt=""/></div>
+                            <span class='interest_label'>Travelling</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/walking.jpg" alt=""/></div>
+                            <span class='interest_label'>Walking</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/watch_movies.jpg" alt=""/></div>
+                            <span class='interest_label'>Watching Movies</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/watch_sports.jpg" alt=""/></div>
+                            <span class='interest_label'>Watching Sports</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox"/>
+                            <div class="interest_imgFrame"><img src="img/interests/watch_tv.jpg" alt=""/></div>
+                            <span class='interest_label'>Watching TV</span>
+                            <span class="interest_layout"></span>
+                        </label>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <a href="#" data-prefetch data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="g">
+            Next
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
