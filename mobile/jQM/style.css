@@ -114,7 +114,9 @@
 .interests_list .ui-checkbox .interest_layout {display: block; height: 24px; width: 100%; position: absolute; left: 0; bottom: 0; background: rgba(0,0,0,0.6); z-index: 10; }
 .interests_list .ui-checkbox .ui-checkbox-on .interest_layout {height: 100%;}
 .interests_list .ui-checkbox .ui-checkbox-on .interest_label {color: #ffe67a;}
-.interests_list_wrapper {display: block; margin: 0 auto; max-width: 570px;}
+.interests_list_wrapper {display: inline-block; margin: 0; width: 290px;}
+.interests_list_area {width: 110%; margin-left: -5%; padding: 21px 0; margin-bottom: 20px; text-align: center;
+    box-shadow: inset 0px 5px 5px -5px rgba(0,0,0,0.5), inset 0px -5px 5px -5px rgba(0,0,0,0.5);}
 
 /* Interests progress */
 .interests_progress {display: block; text-align: center; margin-bottom: 10px;}
@@ -131,7 +133,6 @@
     .interests_progress.checked_4 .item_4,
     .interests_progress.checked_5 .interests_progress_item {background: url(img/interests/check.png) no-repeat;}
 
-.interests_list_area {width: 110%; margin-left: -5%; padding: 21px 0; margin-bottom: 20px; box-shadow: inset 0px 5px 5px -5px rgba(0,0,0,0.5), inset 0px -5px 5px -5px rgba(0,0,0,0.5);}
 
 /* Create Account */
 .create-form .ui-li-has-arrow .ui-icon {right: 20px;}
