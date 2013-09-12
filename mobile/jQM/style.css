@@ -132,3 +132,26 @@
     .interests_progress.checked_5 .interests_progress_item {background: url(img/interests/check.png) no-repeat;}
 
 .interests_list_area {width: 110%; margin-left: -5%; padding: 21px 0; margin-bottom: 20px; box-shadow: inset 0px 5px 5px -5px rgba(0,0,0,0.5), inset 0px -5px 5px -5px rgba(0,0,0,0.5);}
+
+/* Create Account */
+.create-form .ui-li-has-arrow .ui-icon {right: 20px;}
+.create-form .text-field {padding: 0;}
+.create-form .text-field {padding: 0;}
+.create-form .text-field label.ui-input-text {position: absolute; top: 7px; left: 14px;}
+.create-form .text-field div.ui-input-text, .create-form .date-field div.ui-input-text {border: none; box-shadow: none; margin: 0; padding: 0 1em;}
+.create-form .text-field > div.ui-input-text.ui-focus + label.ui-input-text {display: none!important;}
+.create-form .select-field, .create-form .date-field {padding: 0;}
+.create-form .select-field .ui-btn {border: none; text-align: left;}
+.create-form .select-field .ui-btn-inner {padding-left: 14px;}
+.create-form .date-field {overflow: hidden;}
+.create-form .date-field .ui-field-contain {margin: 0!important; padding: 0!important;}
+.create-form .date-field label.ui-input-text {position: absolute; left: 14px; top: 7px; width: 50%;}
+.create-form .date-field div.ui-input-text {margin-left: 30%; width: 70%!important; padding: 0 14px!important;}
+.create-form .date-field div.ui-input-text.ui-focus + label.ui-input-text {display: none!important;}
+.create-form .date-field div.ui-input-text.ui-focus {width: 100%!important; margin-left: 0; }
+.create-form .double-select-form {padding: 0;}
+.create-form .double-select-form fieldset {margin: 0; margin-left: 30%;}
+.create-form .double-select-form .ui-controlgroup-label {position: absolute; top: 7px; left: 14px;}
+.create-form .double-select-form .ui-select {width: 50%; border-radius: 0;}
+.create-form .double-select-form .ui-select .ui-btn {width: 100%; border-bottom: none; border-top: none; border-right: 0;}
+

@@ -22,38 +22,10 @@
 
         <div class="header-tips">All fields are reuired</div>
 
-
             <label for="file">Upload photo:</label>
             <input type="file" name="file" id="file" value="1">
 
-        <label for="date">Date:</label>
-        <input type="date" name="date" id="date" value="">
-
-        <style type="text/css">.multiselect .ui-btn-inner {padding-right: 36px!important;}</style>
-        <fieldset data-role="controlgroup" data-type="horizontal" class="multiselect">
-            <label for="1">Native select:</label>
-            <select name="1" id="1">
-                <option value="1">Variant 1</option>
-                <option value="2">Variant 2</option>
-                <option value="3">Long text variant 123456789</option>
-            </select>
-
-            <label for="2">Native select:</label>
-            <select name="2" id="2">
-                <option value="1">Variant 1</option>
-                <option value="2">Variant 2</option>
-                <option value="3">Long text variant 123456789</option>
-            </select>
-
-            <label for="3">Native select:</label>
-            <select name="3" id="3">
-                <option value="1">Variant 1</option>
-                <option value="2">Variant 2</option>
-                <option value="3">Long text variant 123456789</option>
-            </select>
-        </fieldset>
-
-        <ul data-role="listview" class="ui-listview ui-listview-inset ui-corner-all ">
+        <ul data-role="listview" data-inset="true">
             <li class="list-select">
                 <span class="list-select-label">Relationship</span>
                 <select name="kids" data-icon="arrow-r" data-corners="false" data-iconshadow="false">
