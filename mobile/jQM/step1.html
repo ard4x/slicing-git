@@ -11,13 +11,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <script type="text/javascript">
         $(function(){
-            $('.text-field input').each(function(){
+            $('.text-field input, .date-field input').each(function(){
                 $(this).on('change', function(){
                     console.log('Default value = "'+this.defaultValue+'"');
-                    if ($(this).val() != this.defaultValue){
-                        $(this).closest('.text-field').find('label').hide();
+                    if ($(this).val() != ""){
+                        $(this).closest("li").addClass("changed");
                     }else{
-                        $(this).closest('.text-field').find('label').show();
+                        $(this).closest("li").removeClass("changed");
                     }
                 });
             });
