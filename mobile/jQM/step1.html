@@ -13,7 +13,6 @@
         $(function(){
             $('.text-field input, .date-field input').each(function(){
                 $(this).on('change', function(){
-                    console.log('Default value = "'+this.defaultValue+'"');
                     if ($(this).val() != ""){
                         $(this).closest("li").addClass("changed");
                     }else{
