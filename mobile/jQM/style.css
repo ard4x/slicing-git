@@ -157,3 +157,5 @@
 .create-form .double-select-form .ui-select .ui-btn {width: 100%; border-bottom: none; border-top: none; border-right: 0;}
 .create-form .text-field.changed label, .create-form .date-field.changed label {display: none;}
 .create-form .date-field.changed .ui-input-text {margin-left: 14px;}
+.create-form ::-webkit-input-placeholder {color: transparent;}
+.create-form .ui-focus ::-webkit-input-placeholder {color: gray;}
