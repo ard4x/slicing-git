@@ -101,7 +101,7 @@
 /* Interests list (Step 2) */
 .interests_list {overflow: hidden; display: block; padding: 0; margin: 0; margin-left: -6px; min-width: 288px; max-width: 576px; }
 .interests_list li {list-style: none;float: left; margin: 0 0 6px 6px;}
-.interests_list .ui-checkbox .ui-icon-checkbox-on {width: 46px!important; height: 46px!important; display: block; background: url(img/interests/chekked.png) no-repeat;
+.interests_list .ui-checkbox .ui-icon-checkbox-on {width: 46px!important; height: 46px!important; display: block; background: url(img/interests/chekked.png) no-repeat; background-size: cover;
     position: absolute !important; top: 14px !important; left: 24px !important; margin: 0 !important; z-index: 999;}
 .interests_list .ui-checkbox {margin: 0;}
 .interests_list .ui-checkbox .ui-btn-inner {padding: 0; width: 90px; height: 90px;}
