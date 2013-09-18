@@ -1,0 +1,130 @@
+.vip__page {padding-top: 20px;}
+.vip__head {text-align: center; height: 82px; margin-bottom: 30px;}
+    .vip__head_userPic {width: 76px; height: 76px; }
+    .vip__head > .std__header {display: inline-block; margin: 0; vertical-align: middle; line-height: 116px;}
+    .vip__head.single_header > .std__header {font-size: 36px;}
+    .vip__head.withUser > .std__header {text-align: left;   line-height: 36px; width: auto; vertical-align: top;}
+    .vip__head > .std__header span {font-weight: normal;}
+    .vip__head .b-user__photoFrame {width: 80px; display: inline-block; box-sizing: border-box; -moz-box-sizing: border-box; margin-right: 27px; vertical-align: middle;}
+
+.vip__section {margin-bottom: 30px;}
+    .vip__section_right,
+    .vip__section_left  {width: 460px; float: left; box-sizing: border-box; -moz-box-sizing: border-box;}
+    .vip__section_left {margin-right: 30px; padding: 15px; background: #f5f5f5; border-radius: 4px;}
+    .vip__section_left > .std__header {margin-bottom: 11px;}
+
+ /* Select plan */
+.vip__plan_list {margin-bottom: 17px; background: #fff; border: 1px solid #ccc; border-radius: 4px;}
+    .vip__plan_list_item:first-child {border-top: none; }
+        .vip__plan_list_item:first-child .vip__plan_list_check {height: 96px; top: 0; border-top-left-radius: 4px; }
+        .vip__plan_list_item:last-child .vip__plan_list_check {height: 98px; border-bottom-left-radius: 4px; }
+    .vip__plan_list_item {position: relative; display: block; height: 98px; border-top: 1px solid #ccc; margin-top: -1px;
+        cursor: pointer;}
+    .vip__plan_list_item * {cursor: pointer;}
+        .vip__plan_list_item input {position: absolute; top: 50%; left: 12px; margin-top: -8px; z-index: 2;}
+        .vip__plan_list_item input:checked + label .vip__plan_list_check {display: block}
+        .vip__plan_list_item label {display: block; height: 98px;}
+        .vip__plan_price {display: block; position: absolute; top: 14px; left: 35px; height: 69px; border-left: 1px solid #ccc;
+                          font: bold 30px Arial; color: #5f6975; line-height: 69px; padding-left: 15px;}
+            .vip__plan_price_sup {font-size: 16px; font-weight: normal; vertical-align: top; position: relative; top: -5px;}
+        .vip__plan_description {display: block; position: absolute; left: 206px; top: 14px;}
+            .vip__plan_description_term  {display: block; font-size: 18px; font-weight: bold; color: #000; line-height: 18px; margin-top: -2px; margin-bottom: 2px;}
+            .vip__plan_description_bill {display: block; color: #333; font-size: 14px; margin-bottom: 3px;}
+            .vip__plan_description_tips {display: inline-block; font-size: 12px; color: #999; border-bottom: 1px dotted #999; margin-bottom: 2px;}
+            .vip__plan_description_tips.bright {color: #2a7700; border-bottom-color: #2a7700;}
+        .vip__plan_description.rows_3 {top: 22px;}
+        .vip__plan_description.rows_2 {top: 34px;}
+        .vip__plan_description_label {display: block; width: 90px; height: 65px; position: absolute; top: 19px; right: -6px; padding: 7px 15px 7px 25px;
+            font-size: 14px; font-weight: bold; color: #fff; text-align: center; background: url(../../img/vip/vip_sprite.png) no-repeat; box-sizing: border-box; -moz-box-sizing: border-box;}
+            .vip__plan_description_discount {font-size: 22px;}
+    .vip__plan_list_check {display: none; height: 97px; width: 36px; position: absolute; top: -1px; left: -1px; background: #ffbe3f; border: 1px solid #e9ab32; z-index: 1;}
+
+/* Icon */
+.vip__page .icon {margin-right: 2px; width: 29px; height: 18px; background: url(../../img/vip/vip_sprite.png) no-repeat;}
+.vip__page .icon:last-child {margin-right: 0;}
+.vip__page .icon.icon-visa  {background-position: 0 -67px;}
+.vip__page .icon.icon-mc    {background-position: -31px -67px;}
+.vip__page .icon.icon-ae    {background-position: 0 -87px;}
+.vip__page .icon.icon-dn    {background-position: -62px -67px;}
+.vip__page .icon.icon-jcb   {background-position: -31px -87px;}
+.vip__page .icon.icon-dc    {background-position: -62px -87px;}
+.vip__page .icon.icon-paypal {background-position: 0 -130px; width: 58px; height: 16px;}
+.vip__page .icon.icon-card {background-position: 0 -107px; width: 32px; height: 21px; vertical-align: middle;
+    position: relative; top: -2px; margin-left: 7px; margin-right: 6px;}
+.vip__page .icon.icon-ok {background-position: -80px -107px; width: 10px; height: 12px;}
+i.icon.icon-close-grey {background-image: url(../../img/button/btns-icos.png)}
+    /* Payment Form */
+.vip__payment {position: relative; height: 273px; box-sizing: border-box; -moz-box-sizing: border-box; border: 1px solid #ccc; border-radius: 3px; border-top-left-radius: 0;
+              padding: 19px; margin-top: 57px; background: #fff;}
+.vip__payment_tabs {position: absolute; top: -47px; left: -1px; }
+.vip__payment_tabItem {background: #e3e3e3; border: 1px solid #e3e3e3; border-bottom: none; height: 46px; box-sizing: border-box; -moz-box-sizing: border-box;
+    padding: 15px 19px; border-top-left-radius: 3px; border-top-right-radius: 3px; float: left; margin-right: 10px; cursor: pointer;}
+.vip__payment_tabContent {display: none;}
+.active_1 .vip__payment_tabItem.tab_1,
+.active_2 .vip__payment_tabItem.tab_2 {background: #fff; border: 1px solid #ccc; border-bottom: none;  height: 47px; cursor: default;}
+.active_1 .content_1 {display: block}
+.active_2 .content_2 {display: block}
+.vip__payment_tabContent.content_2 .vip__payment_form_message {padding-top: 47px; margin-bottom: 20px;}
+.vip__payment_form_paypalMessage {font-size: 12px; font-weight: bold; text-align: center; background: #f5f5f5; border-radius: 4px;
+    padding: 20px 0 10px; vertical-align: top; margin-bottom: 20px;}
+.vip__payment_form_paypalMessage .icon {margin-left: 10px;}
+/* Pay Form */
+.vip__payment_form_row {margin-bottom: 10px;}
+    .vip__payment_form_row input[type=text] {height: 27px; -moz-box-sizing: border-box; box-sizing: border-box;}
+    .vip__payment_form_label {width: 100px; margin-right: 10px; float: left; font-size: 14px; color: #333; line-height: 27px; vertical-align: middle;}
+        .vip__payment_form_field {margin-left: 110px; position: relative}
+        .vip__payment_form_field_cardNumber {width: 170px;}
+        .vip__payment_form_field_select {width: 76px; display: inline-block;}
+        .vip__payment_form_field_separator {display: inline-block; width: 10px; text-align: center; font-size: 14px; color: #333;}
+        .vip__payment_form_field_code {width: 50px; display: inline-block;}
+        .vip__payment_form_field_code_tip {font-size: 12px; color: #999; }
+        .vip__payment_form_field_zip {width: 76px;}
+    .vip__payment_form_message {padding-top: 7px; margin-bottom: 19px; color: #666; font-size: 12px; text-align: center;}
+    .vip__payment_form_submit {text-align: center; margin-bottom: 6px;}
+    .vip__payment_agreement {font-size: 12px; color: #000; text-align: center; padding-top: 15px; margin-bottom: 5px;}
+
+/* Features table */
+.vip__features {width: 100%; border-collapse: collapse;}
+    .vip__features th {font: bold 24px 'PT Sans',arial,serif; padding: 0 20px; text-align: center; vertical-align: middle; background-color: #f5f5f5; height: 48px;}
+    .vip__features td {height: 47px; border-bottom: 1px solid #ccc; padding: 0 20px; text-align: center; vertical-align: middle; font-size: 14px; color: #333;}
+    .vip__features td:first-child, .vip__features th:first-child {text-align: left; padding: 0 10px 0 15px;}
+
+/* Testimonials */
+.vip__section_testimon {margin-bottom: 16px;}
+.vip__section_testimon > .std__header {margin-bottom: 10px;}
+.vip__section_testimon_item {width: 310px; box-sizing: border-box; -moz-box-sizing: border-box; padding: 10px; float: left; margin-left: 10px;}
+    .vip__section_testimon_item.first {margin-left: 0;}
+    .vip__section_testimon_userpic {width: 50px; height: 50px; float: left;}
+    .vip__section_testimon_message {margin-left: 65px; position: relative; top: -2px; font-size: 14px; font-style: italic;}
+        .vip__section_testimon_message_author {margin-top: 8px; text-align: right; font-style: normal; color: #666;}
+        .vip__section_testimon_message_author .name {color: #333;}
+
+/* FAQ */
+.vip__section_faq > .std__header {margin-bottom: 4px;}
+.vip__section_faq {padding: 20px; background: #f5f5f5; border-radius: 4px;}
+    .vip__section_faq_coll {width: 445px; float:left; font-size: 12px; line-height: 15px; color: #333;}
+        .vip__section_faq_coll.first {margin-right: 20px;}
+    .vip__section_faq_question {font: bold 16px Arial, serif; margin: 13px 0 3px; color: #666;}
+
+/* Tooltips */
+.vip__withTooltip {position: relative; display: inline-block}
+.vip__tooltip {display: block; position: absolute; padding: 15px; background-color: #fff; border: 5px solid #e8eff5; width: 260px; z-index: 1; left: -50%; top: 25px;
+    border-radius: 4px; box-shadow: 0 0 20px 0 rgba(0,0,0,0.5); font-size: 12px; color: #333; box-sizing: border-box; -moz-box-sizing: border-box;
+    line-height: 14px; text-align: left;}
+    .vip__tooltip > .std__header {margin-bottom: 8px; position: relative; margin-top: -2px; padding-bottom: 2px;}
+    .vip__tooltip_more {margin-top: 4px; text-align: right; display: block;}
+    .vip__tooltip_arr,
+    .vip__tooltip_arr_inn {display: block; width: 0; height: 0; border: 10px solid transparent; border-top: none; border-bottom-color: #e8eff5;
+                        position: absolute; top: -15px; left: 50%; margin-left: -10px;}
+        .vip__tooltip_arr_inn {border-bottom-color: #fff; top: 6px; left: 0;}
+.vip__tooltip .close {position: absolute; top: 15px; right: 15px;}
+.vip__tooltip.big {width: 420px;}
+.vip__tooltip.billing {top: 40px; right: -193px; left: auto;}
+
+.vip__error {display: block; position: absolute; padding: 20px 10px; background-color: #fff; border: 5px solid #fc3e39; width: 310px; z-index: 1; left: -25%; bottom: 38px;
+    border-radius: 4px; box-shadow: 0 0 20px 0 rgba(0,0,0,0.5); font-size: 14px; color: #c51818; box-sizing: border-box; -moz-box-sizing: border-box;
+    line-height: 14px; text-align: center; font-weight: bold;}
+.vip__error_arr,
+.vip__error_arr_inn {display: block; width: 0; height: 0; border: 15px solid transparent; border-bottom: none; border-top-color: #fc3e39;
+    position: absolute; bottom: -15px; left: 50%; margin-left: -15px;}
+.vip__error_arr_inn {border-top-color: #fff; bottom: 6px; left: 0;}

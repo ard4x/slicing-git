@@ -6,279 +6,128 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/std.css">
     <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/head.css">
+    <link rel="stylesheet" href="../css/head.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
 
 </head>
 <body>
 <!-- Start of Pattern Header  for guests -->
-<div class="header " style="">
-<div class="header_inn" id="topHeadMenu">
+<div class="head__wrap">
+    <div class="head__inner">
 
+        <a href="#" class="head__logo">
+            <img class="head__logo_img" src="../img/head/logo.png" alt="Meetville"/>
+        </a>
 
-<div class="top_navigation">
+        <div class="head__menu">
+            <a class="head__menu_item active" href="#">Search</a>
+            <a class="head__menu_item"  href="#">Encounters</a>
+            <div class="head__menu_item head__menu_hovering _jDropDown_widthFix _jDropDown_hover">Connections
 
-    <ul class="left">
-        <li><a href="#" class="chat " data-action="chat-messages">Messages</a>
-            <a id="new-messages-count" href="/chat" class="notify_list_icn chatm chat" data-action="chat"><span class="new_event">1</span></a>
-        </li>
-        <li>    <a href="#1" class="msbx notify_list_icn notif ">Notifications</a>
-
-            <a id="new-notifications-count" href="#2" class="notify_list_icn notif"><span class="new_event upd">2</span></a>
-
-            <div class="ya_mbx3 hl_mbx" style="display: none">
-                <div class="ya_mbx3_top"></div>
-                <div class="ya_mbx_mid3">
-                    <div class="inn" id="notif-ttip">
-                        <div class="poptitebar">
-                            <h2>Signals</h2>
-                        </div>
-                        <div class="indentLeft15 indentTop15"><img src="../img/preloader.gif"><br><br></div>
-                    </div>
-                </div>
-                <div class="ya_mbx_bot3"> &nbsp; </div>
+                <ul class="head__toolbar_subMenu _jDropDown_widthFix_menu">
+                    <li class="head__toolbar_subMenu_item"><a href="#">My guests</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">My favorites</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">My likes</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Added you to favorites</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Hidden users</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Likes me</a></li>
+                    <li class="head__toolbar_subMenu_item head__toolbar_subMenu_item_divider"></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Invite your friends</a></li>
+                </ul>
             </div>
-        </li>
-    </ul>
+            <a class="head__menu_item" href="#">Messages<span class="bubble_counter">197</span></a>
 
-    <ul class="right">
+        </div><!-- /.head__menu -->
 
-        <li id="profileMenu">
-            <a class="header-userPic" href="/profile">
-                <img src="../img/user/profile.jpg" alt="dating Roman, 19, New York City, United States">                            </a>
-            <a href="/profile">
-                                <span>
-                                    Roman                                </span>
-            </a>
-            <ul class="wid__dropDown wid__dropDown-profile" style="display: none;">
-                <li class="wid__dropDown-top"></li>
-                <li><a href="/profile/">Edit / View profile</a></li>
-                <li><a href="/profile/photos">Photos</a></li>
-            </ul>
-        </li>
+        <ul class="head__toolbar">
+            <li class="head__toolbar_item head__toolbar_item_iconed head__toolbar_item_signals action _jDropDownActivate"><i  title="Notifications" class="icon"></i><span class="counter">197</span>
 
-        <li class="account" id="accountMenu">
-            <a href="#">Account</a>
-            <ul class="wid__dropDown" style="display: none;">
-                <li class="wid__dropDown-top"></li>
-                <li class="wid__dropDown-user">
-                                <span class="b-user__photoFrame">
-                                    <a href="/profile"><img src="http://yangutu-dev.s3.amazonaws.com/2a/ba/11/46x46_5053631.jpeg" alt="dating Roman, 19, New York City, United States"></a>
-                                </span>
-                                <span class="b-user__person">
-                                    <a href="/profile">Roman</a>, 19                                </span>
-                                <span class="user__location">
-                                    New York City, New York, United States                                </span>
-                </li>
-                <li><a href="/invite/">Invite Friends</a></li>
-                <li><a href="/settings/profile-settings">Settings</a></li>
-                <li><a href="/settings/email-notifications">Email Notifications</a></li>
-                <li><a href="/settings/payments">Payments</a></li>
-                <li><a href="/settings/blocked">Blocked Users</a></li>
-                <li class="delimit"></li>
-                <li><a href="http://itunes.apple.com/app/yangutu-meet-new-people/id508760385" target="_blank">Meetville iPhone</a></li>
-                <li class="delimit"></li>
-                <li><a href="/logout">Logout</a></li>
-            </ul>
-        </li>
-    </ul>
+                <div class="head__dropDown">
 
-    <div class="clear"></div>
-</div>
+                    <div class="head__dropDown_arrow"></div>
+                    <div class="head__dropDown_header">Notifications</div>
+                    <!-- dropDown list -->
+                    <div class="head__dropDown_listItem">
+                        <img class="head__dropDown_listItem_userPic" src="../img/user/user1.jpg" alt=""/>
+                        <span class="head__dropDown_listItem_descr">
+                            <span class="head__dropDown_listItem_who"><span class="head__dropDown_listItem_name">Jeannette</span>, 37</span>
+                            <span class="head__dropDown_listItem_when">Today 8:13 AM</span>
+                            <div class="head__dropDown_listItem_what">Checked out your profile</div>
+                        </span>
+                        <span class="head__dropDown_clear"></span>
+                    </div><!-- /.head__dropDown_listItem -->
 
+                    <div class="head__dropDown_listItem">
+                        <img class="head__dropDown_listItem_userPic" src="../img/user/user1.jpg" alt=""/>
+                        <span class="head__dropDown_listItem_descr">
+                            <span class="head__dropDown_listItem_who"><span class="head__dropDown_listItem_name">Jeannette</span>, 37</span>
+                            <span class="head__dropDown_listItem_when">Today 8:13 AM</span>
+                            <span class="head__dropDown_listItem_what">Has liked your photo</span>
+                        </span>
+                        <img class="head__dropDown_listItem_userPic" src="../img/user/user2.jpg" alt=""/>
+                        <span class="head__dropDown_clear"></span>
+                    </div><!-- /.head__dropDown_listItem -->
 
-<div class="bot_navigation">
-    <a href="/dashboard">
-        <img src="../img/logo.png" class="logo" alt="Meetville">
-    </a>
+                    <div class="head__dropDown_listItem">
+                        <img class="head__dropDown_listItem_userPic" src="../img/user/user1.jpg" alt=""/>
+                        <span class="head__dropDown_listItem_descr">
+                            <span class="head__dropDown_listItem_who"><span class="head__dropDown_listItem_name">Jeannette</span>, 37</span>
+                            <span class="head__dropDown_listItem_when">Today 8:13 AM</span>
+                            <span class="head__dropDown_listItem_what">Request you to upload more photos of yours</span>
+                        </span>
+                        <span class="head__dropDown_clear"></span>
+                    </div><!-- /.head__dropDown_listItem -->
 
-    <ul class="main_menu">
-        <li>
-            <a href="/dashboard/">Home</a>
-        </li>
-        <li>
-            <a href="/search/">Search</a>
-        </li>
-        <li>
-            <a href="/face-to-face/">Encounters</a>
-        </li>
-        <li>
-            <a href="/video/">Videobox</a>
-            <div class="main-menu-popap" style="display: none;">
-                <div class="arrow"></div>
-                <div class="main-menu-popap-inner cell2">
-                    <table><tbody><tr><td><ul>
+                    <div class="head__dropDown_listItem">
+                        <img class="head__dropDown_listItem_userPic" src="../img/user/user1.jpg" alt=""/>
+                        <span class="head__dropDown_listItem_descr">
+                            <span class="head__dropDown_listItem_who"><span class="head__dropDown_listItem_name">Jeannette</span>, 37</span>
+                            <span class="head__dropDown_listItem_when">Today 8:13 AM</span>
+                            <span class="head__dropDown_listItem_what">Wants to get to know you better</span>
+                        </span>
+                        <span class="head__dropDown_clear"></span>
+                    </div><!-- /.head__dropDown_listItem -->
+                    <!-- /dropDown list -->
+                    <div class="head__dropDown_last"><a href="#">View All Notifications</a></div>
 
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Accidents">Accidents &amp; Fails</a>
-                        </li>
+                </div><!-- /.head__dropDown -->
 
+            </li>
+            <!--
+            <li class="head__toolbar_item head__toolbar_item_iconed head__toolbar_item_messages action"><i title="Messages" class="icon"></i><span class="counter">25</span></li>
+            -->
+            <li class="head__toolbar_item head__toolbar_item_divider"></li>
+            <li class="head__toolbar_item _jDropDownActivate head__user _jDropDown_widthFix">
+                <img class="head__user_pic" src="../img/head/user.jpg" alt="Andersonas"/>Andersonads
 
-                        <li class=" ">
+                <ul class="head__toolbar_subMenu _jDropDown_widthFix_menu">
+                    <li class="head__toolbar_subMenu_item"><a href="#">Edit / View profile</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Photos</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Upload photos</a></li>
+                </ul>
 
-                            <a href="/video/adult" class="" data-selector="">Adult</a>
-                        </li>
+            </li>
+            <li class="head__toolbar_item head__toolbar_item_divider"></li>
+            <li class="head__toolbar_item head__toolbar_item_iconed head__toolbar_item_settings _jDropDownActivate"><i title="Settings" class="icon"></i>
 
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Adventures">Adventures</a>
-                        </li>
+                <ul class="head__toolbar_subMenu">
+                    <li class="head__toolbar_subMenu_item"><a href="#">Invite friends</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Settings</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Email Notifications</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Payments</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Blocked Users</a></li>
+                    <li class="head__toolbar_subMenu_item head__toolbar_subMenu_item_divider"></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Meetville iPhone</a></li>
+                    <li class="head__toolbar_subMenu_item head__toolbar_subMenu_item_divider"></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Logout</a></li>
+                </ul>
 
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Animals+%26+Birds">Animals, Birds, Fish</a>
-                        </li>
+            </li>
+        </ul>
 
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Cars">Cars</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Celebrities">Celebrities</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Children">Children</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Cities">Cities</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Cool+commercials">Cool commercials</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Crazy">Crazy, Cranks, Extreme</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Dating+%26+Relationships">Dating &amp; Relationships</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Entertainment">Entertainment</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Family">Family</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Fashion">Fashion</a>
-                        </li>
-                    </ul></td><td><ul>
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Funny">Funny &amp; Cute</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Hobbies%2C+Records%2C+Cranks">Hobbies &amp; Records</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Satire+%26+Parody">Humor, Parody, Satire</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Lifehack+tips+%26+advice">Lifehack tips &amp; advice</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Misc">Miscellaneous</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Movies+%26+Trailers">Movies &amp; Trailers</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Music+%26+Dance">Music &amp; Dance</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Nature">Nature</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/News+%26+Events">News, Events, Opinions</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/People+%26+Stories">People &amp; Stories</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Pets">Pets</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Science+%26+Tech">Science &amp; Tech</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Sports">Sports</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Travel+%26+Outdoors">Travel &amp; Outdoors</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Wheels+%26+Wings">Wheels &amp; Wings</a>
-                        </li>
-
-                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Yangutu+Editor%27s+Choice">Meetville Editor's Choice</a>
-                        </li>
-                    </ul></td></tr></tbody></table>
-                </div>
-            </div>
-        </li>
-
-        <li class="connections-menu floatRight">
-            <a href="#">My Connections</a>
-            <div class="main-menu-popap" style="position: absolute; top: 24px; left: 0px; z-index: 1000; display: none;">
-                <div class="arrow"></div>
-                <div class="main-menu-popap-inner ">
-                    <ul>
-                        <li><a href="/visitors/">My guests</a></li>
-                        <li><a href="/favorites/">Favorites</a></li>
-                        <li><a href="/photo/view/show/rates">Photo Ratings</a></li>
-                        <li><a href="/favorites/added-you">Added you to favorites</a></li>
-                        <li class="wborder"><a href="/profile/hidden">Hidden users</a></li>
-                        <li><a href="/invite/">Invite your friends</a></li>
-                    </ul>
-                </div>
-            </div>
-        </li>
-    </ul>
-
-
-    <!-- // YNGTU-5095
-        //  deleted by YNGTU-6837-->
-
-    <div class="clr2"></div>
-</div>
-
-<script type="text/javascript">
-    //<![CDATA[
-    jQuery(document).ready(function() {
-        jQuery('div.bot_navigation > ul > li').bind('mouseenter', function () {
-            var $self = jQuery(this), $active,
-                    $submenu = $self.find('div.main-menu-popap');
-
-            if ($self.hasClass('active') && $submenu.is('visible')) {
-                return false;
-            }
-
-            $active = $self.parent().find('li.active:not(.current)');
-            $active.find('div.main-menu-popap').hide()
-                    .end().removeClass('active');
-
-            $self.addClass('active');
-
-            $submenu.css({
-                'position': 'absolute',
-                'top': '24px',
-                'left': 0,
-                'z-index': 1000
-            }).show();
-
-            $submenu.parent().css('z');
-
-            return false;
-        }).bind('mouseleave', function () {
-                    var $self = jQuery(this);
-
-                    $self.parents('ul')
-                            .find('li.active:not(.current)')
-                            .removeClass('active');
-
-                    $self.find('div.main-menu-popap').hide();
-
-                    $self.parents('.header')
-                            .attr('style', ''); // someday you'll fill it! :)
-
-                    return false;
-                });
-    });
-    //]]>
-</script>
-
-</div>
-</div>
+    </div><!-- /.head__inner -->
+</div><!-- /.head__wrap -->
 <!-- End of Pattern Header  for guests -->
 
 <!-- CONTENT -->

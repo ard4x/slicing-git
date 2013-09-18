@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LessManager">
+    <option name="lessProfiles">
+      <map>
+        <entry key="Buttons">
+          <value>
+            <LessProfile>
+              <option name="cssDirectories">
+                <list>
+                  <CssDirectory>
+                    <option name="path" value="Z:\home\slicing-git\SITE\PATTERNS\buttons_new\css" />
+                  </CssDirectory>
+                </list>
+              </option>
+              <option name="lessDirPath" value="Z:\home\slicing-git\SITE\PATTERNS\buttons_new\css" />
+              <option name="name" value="Buttons" />
+            </LessProfile>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
+

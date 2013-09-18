@@ -183,6 +183,19 @@ input.button {
 .button.dark-red:active {
   border-color: #8a1214 #c92c2c #a53333 !important;
 }
+.button.dark-red.flat {
+  background: #c51818;
+  border-color: #8a1316 !important;
+  box-shadow: none;
+}
+.button.dark-red.flat:hover {
+  background: #da4444;
+  border-color: #a63434 !important;
+}
+.button.dark-red.flat:active {
+  background: #8a1316;
+  border-color: #8a1316 !important;
+}
 .button.grey {
   background: #9a9a9a;
   background: -ms-linear-gradient(top, #aaaaaa 0%, #9a9a9a 100%);
