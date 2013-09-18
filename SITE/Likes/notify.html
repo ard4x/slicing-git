@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <title>Another Profile</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/btns.css"> <!-- отсюда берем стили пагинаторане обращать внимание, используем то, что есть на проде -->
+    <link rel="stylesheet" href="../css/button.css">   <!-- НОВЫЕ стили кнопок. Проверить наличие, заменить более новой версией, а так же файлы btns.png и btns-icos.png, Версия указана в первой строке файла-->
+    <link rel="stylesheet" href="../css/profile.css">
+    <!-- Костыли для ИE, можно добавить в уже существующие -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../yngtu_ie8.css" type="text/css">
+    <![endif]-->
+
+    <!--  Файлы для замены селектов -->
+
+    <script src="../js/jquery-1.4.4.min.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'});
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+    <!--  ---------------------------------------- -->
+
+</head>
+<body>
+
+<!-- Добавить в конец style.css -->
+<style type="text/css">
+    .photo_like .descr {margin-left: 10px!important; float: left; width: 115px!important; padding-right: 0!important;}
+    .ya_mbx_mid3 .inn .matches .ava.photo_like {margin-left: 3px;}
+</style>
+
+<div class="ya_mbx3 hl_mbx highlighted" style="display: block;">
+    <div class="ya_mbx3_top"></div>
+    <div class="ya_mbx_mid3">
+        <div class="inn" id="notif-ttip">
+            <div class="poptitebar">
+                <h2>Notifications</h2>
+            </div>
+            <ul class="matches">
+
+                <li class="usline ">
+
+                    <div class="ava">
+                        <a href="/1619808657">
+                            <img src="http://yangutu-s5.s3.amazonaws.com/98/f3/78/46x46_4835313.jpg?1297680143" alt="">
+
+                        </a>
+                    </div>
+                    <div class="descr">
+                        <a href="/1619808657">
+                            <span style="font-weight: bold;">
+                                Dawn, 64                            </span>
+
+                            <br>
+                            <span class="lightgr" style="font-weight: normal; font-size: 12px;">
+                                Today 11:12 AM                            </span>
+
+                            <br>
+                            Checked out your profile
+
+                        </a>
+                    </div>
+                </li>
+
+                <li class="usline photo_like">
+
+                    <div class="ava ">
+                        <a href="/3191752567">
+                            <img src="../img/usr/mask-50.png" alt="">
+
+                        </a>
+                    </div>
+                    <div class="descr">
+                        <a href="/3191752567">
+                            <span style="font-weight: bold;">
+                                Someone
+                            </span>
+                            <br>
+                            <span class="lightgr" style="font-weight: normal; font-size: 12px;">
+                                Yesterday 9:05 PM                            </span>
+                            <br>
+                            Has liked your photo
+                        </a>
+                    </div>
+
+                    <div class="ava photo_like">
+                        <a href="/3191752567">
+                            <img src="http://yangutu-s1.s3.amazonaws.com/d0/f5/d8/46x46_4836023.jpg?1298286717" alt="">
+
+                        </a>
+                    </div>
+                </li>
+
+
+
+                <li class="usline ">
+
+                    <div class="ava">
+                        <a href="/148270509">
+                            <img src="http://yangutu-s7.s3.amazonaws.com/c0/46/55/46x46_720263.jpg?1298892183" alt="">
+
+                        </a>
+                    </div>
+                    <div class="descr">
+                        <a href="/148270509">
+                            <span style="font-weight: bold;">
+                                Elena, 24                            </span>
+
+                            <br>
+                            <span class="lightgr" style="font-weight: normal; font-size: 12px;">
+                                Yesterday 4:40 PM                            </span>
+
+                            <br>
+                            Checked out your profile
+
+                        </a>
+                    </div>
+                </li>
+
+
+
+                <li class="usline ">
+
+                    <div class="ava">
+                        <a href="/3243445518">
+                            <img src="http://yangutu-s6.s3.amazonaws.com/68/84/ba/46x46_297796.jpg?1295863870" alt="">
+
+                        </a>
+                    </div>
+                    <div class="descr">
+                        <a href="/3243445518">
+                            <span style="font-weight: bold;">
+                                Anna, 28                            </span>
+
+                            <br>
+                            <span class="lightgr" style="font-weight: normal; font-size: 12px;">
+                                Jul 13 8:21 PM                            </span>
+
+                            <br>
+                            Checked out your profile
+
+                        </a>
+                    </div>
+                </li>
+
+
+
+                <li class="usline ">
+
+                    <div class="ava">
+                        <a href="/3457837922">
+                            <img src="http://yangutu-s7.s3.amazonaws.com/18/86/c4/46x46_174639.JPG?1329502133" alt="">
+
+                        </a>
+                    </div>
+                    <div class="descr">
+                        <a href="/3457837922">
+                            <span style="font-weight: bold;">
+                                Veronika, 26                            </span>
+
+                            <br>
+                            <span class="lightgr" style="font-weight: normal; font-size: 12px;">
+                                Jul 13 3:24 PM                            </span>
+
+                            <br>
+                            Checked out your profile
+
+                        </a>
+                    </div>
+                </li>
+
+
+                <li class="noBorder">
+                    <a href="/signals">View All Notifications</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="ya_mbx_bot3"> &nbsp; </div>
+</div>
+</body>
+</html>

@@ -1,17 +1,20 @@
 .profile {margin-top: 10px; color: #333; font-size: 14px;}
 .profile__collLeft  {display: block; width: 280px; float: left; margin-right: 30px; }
+.profile__mainUserPhoto {text-align: left; }
+.profile__mainUserPhoto_img {width: 274px; }
 .profile__collCenter{display: block; width: 390px; float: left;}
 .profile__collRight {display: block; width: 220px; float: right;}
-.profile__collWide  {display: block; width: 700px; float: left; box-sizing: border-box; -moz-box-sizing: border-box;}
+.profile__collWide  {display: block; width: 700px; float: left;}
 .profile__block-head {padding-bottom: 20px; border-bottom: 1px solid #ccc; margin-bottom: 20px;}
 .profile__block-head .b-std__header,
 .profile__block-head .slider {margin-bottom: 0;}
 .profile__userName {}
 .profile__userName .icon {margin-left: 10px; margin-bottom: 3px;}
 .profile__block-head .slider-item {width: 33.3333%}
-.profile__block-head .button.favo {width: 100%;}
-.profile__block-head .button.favorite.added {font-weight: normal!important;}
+.profile__block-head .button.favorite {width: 100%;}
 .profile__block-head .profile__info_block {margin-bottom: 10px;}
+.profile__block-head .profile__collLeft {width: 335px;}
+.profile__block-head .profile__collCenter {width: 335px;}
 
 .profile__block-basicInfo {margin-bottom: 30px;}
 .profile .b-user__photoFrame {margin-bottom: 18px;}
@@ -48,10 +51,16 @@
 .profile__info_list_label {font-weight: bold; color: #999; padding-right: 10px; display: table-cell; width: 242px; padding-bottom: 10px; vertical-align: top;}
 .profile__block-basicInfo .profile__info_list_label {width: 135px;}
 .profile__info_list_item  {margin-left: 145px; display: table-cell; padding-bottom: 10px;}
+.profile__info_list_item_text {display: block; text-overflow: ellipsis; width: 950px; overflow: hidden;}
+.profile__my .profile__info_list_item_text {cursor: pointer;}
+.profile__block-myWord .profile__info_list_item_text {width: 680px;}
 .profile__info_block > p {padding: 0 10px 16px; line-height: 17px;}
 .profile__info_block > p:last-child {padding-bottom: 9px;}
 .profile__info_block > h3 {font: bold 14px Arial; padding-bottom: 2px; margin: 0 10px 12px; border-bottom: 1px solid #ccc; text-transform: uppercase; }
 .profile__info_block > h3 .profile__info_edit {text-transform: none;}
+.profile__info_block > form h3 {font: bold 14px Arial; padding-bottom: 2px; margin: 0 10px 12px; border-bottom: 1px solid #ccc; text-transform: uppercase; }
+.profile__info_block > form h3.profile__interest_content_header  {margin: 0; font: bold 14px/10px Arial; color: #333; margin-bottom: 13px; border-bottom: 0px; text-transform: none; }
+.profile__info_block > form h3 .profile__info_edit {text-transform: none;}
 .profile__block-3coll .profile__info_list_item {width: 278px; padding-right: 10px;}
 .profile__info_list_item-2 {padding-bottom: 10px; width: 390px;}
 .profile__block-myWord .profile__info_list_label, .profile__block-myWord .profile__info_list_item {padding-bottom: 15px;}
@@ -70,9 +79,9 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 .profile__message.active .profile__message_area {color: #333; }
 /** top message **/
 .profile__info_top_message {}
-.profile__info_top_message .profile__message_area {width: 305px; height: 50px;}
+.profile__info_top_message .profile__message_area {width: 305px; height: 50px; padding-right: 65px; }
 .profile__info_top_message .button {position: absolute; bottom: 27px; right: 47px; padding-left: 10px; padding-right: 10px;}
-.profile__top_message_close {width: 9px; height: 9px; display: block;  position: absolute; top: 15px; right:14px; background: 0 -116px url(../img/profile/profile.png) no-repeat;}
+.profile__top_message_close {width: 9px; height: 9px; display: block;  position: absolute; top: 15px; right:14px; background: 0 -116px url(/img/profile/profile.png) no-repeat;}
 .profile__top_message_close:hover {background-position: -11px -116px;}
 /** profile buttons **/
 .profile__buttons {padding-bottom: 1px;}
@@ -80,11 +89,12 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 .profile__buttons .button {margin-bottom: 17px;  width: 100%;}
 .profile__buttons .link {padding-top: 2px; margin-bottom: 13px; display: inline-block; font-size: 12px;}
 /** Bottom buttons block **/
-.profile__block-bottom {padding: 38px 90px 0; text-align: justify; }
-.profile__block-bottom .button {width: 200px; margin-bottom: 0;}
+.profile__block-bottom {padding: 30px 90px 0; text-align: center; }
+.profile__block-bottom .button {width: 200px; margin: 0 20px;}
 
 /** Buttons photo preview **/
 .photo-button {
+    box-sizing: border-box; -moz-box-sizing: border-box;
     vertical-align: top;
     margin: 0 1px 2px 1px; ; display: inline-block; line-height: 0; position: relative; box-sizing: border-box; box-shadow: 0 1px 3px 0px #7D7D7D;
     text-align: center; width: 80px; height: 80px; border: 2px solid #fff; text-decoration: none; padding: 6px; color: #525252;
@@ -195,25 +205,10 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 .profile__photoViewer_top .button {box-shadow: 0 1px 2px #595959;}
 .profile__photoViewer_top .button.disabled {box-shadow: none;}
 .profile__photoViewer_top_head {position: relative; margin-bottom: 11px; height: 46px;}
+.profile__photoViewer_like{z-index: 10; position: absolute; top: 35px; left: 35px; padding-right: 17px; padding-left: 47px;}
+.profile__photoViewer_report {z-index: 10; position: absolute; top: 35px; right: 35px;}
 .profile__photoViewer_top_report {position: absolute; top: 15px; right: 0;}
 .profile__photoViewer_bottom {background-color: #f5f5f5; padding: 15px; border-radius: 0 0 4px 4px;}
-/*****/
-
-.profile__photoViewer_report {z-index: 10; position: absolute; bottom: 5px; right: 5px; font-size: 12px; color: #ccc; display: inline-block; padding: 10px; border-radius: 4px; background: url(../img/opacity-lite.png) repeat; text-decoration: underline;}
-.profile__photoViewer_report:hover {text-decoration: none; color: #fff;}
-.profile__photoViewer_like_holder {box-sizing: border-box; -moz-box-sizing: border-box; width: 100%; height: 61px; padding: 15px; display: block;
-    position: absolute; top: 0; left: 0; background: url(../img/opacity-lite.png) repeat;}
-    .profile__photoViewer_like_holder .icon, .profile__photoViewer_like_sendMessage  {display: inline-block; height: 31px;}
-    .profile__photoViewer_like_holder .icon {width: 35px; background: url(../img/profile/profile.png) -37px 0 no-repeat; margin-right: 14px; vertical-align: top;}
-    input.profile__photoViewer_like_text {box-sizing: border-box; -moz-box-sizing: border-box; height: 31px; padding: 8px; font-size: 12px; margin-right: 10px; width: 305px;}
-    .profile__photoViewer_like_holder_msg {display: none;}
-.profile__photoViewer_like_holder.empty {cursor: pointer;}
-    .profile__photoViewer_like_holder.empty .profile__photoViewer_like_sendMessage{display: none;}
-    .profile__photoViewer_like_holder.empty .icon {background-position: 0 0;}
-    .profile__photoViewer_like_holder.empty .profile__photoViewer_like_holder_msg {display: inline-block; height: 31px; color: #fff; font: bold 18px 'PT Sans'; line-height: 31px;}
-
-.profile__photoViewer_like {display: block; position: absolute; width: 35px; height: 31px; background: url(../img/profile/profile.png) -37px 0 no-repeat; top: 15px; left: 15px;
-    display: none;  }
 
 .profile__photo_more {padding-top: 13px; overflow: hidden; margin-bottom: 30px;}
 .profile__photo_more .std__header {margin-bottom: 13px;}
@@ -230,9 +225,9 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 .profile__photoViewer_stat_number {color: #999; float: right;}
 
 .profile__photoViewer_message {background-color: #353535; padding: 19px 100px; border-bottom: 1px solid #9a9a9a; margin-top: 5px;}
-.profile__photoViewer_message_title {color: #fff; margin-bottom: 6px;}
-.profile__photoViewer_message_field {font-size: 18px; box-sizing: border-box; -moz-box-sizing: border-box; height: 41px !important; width: 510px; margin-right: 26px !important; padding: 0 12px!important; }
-.profile__photoViewer_message_button {width: 170px; padding-left: 5px !important; padding-right: 5px !important;}
+    .profile__photoViewer_message_title {color: #fff; margin-bottom: 6px;}
+    .profile__photoViewer_message_field {font-size: 18px; box-sizing: border-box; -moz-box-sizing: border-box; height: 41px !important; width: 510px; margin-right: 26px !important; padding: 0 12px!important; }
+    .profile__photoViewer_message_button {width: 170px; padding-left: 5px !important; padding-right: 5px !important;}
 
 .profile__photoViewer_lastVotes {margin-bottom: 15px;}
 .profile__photoViewer_lastVotes_item {overflow: hidden; margin-bottom: 10px;}
@@ -266,21 +261,21 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 .profile__photo .profile__photoViewer_carousel_list {margin-left: 61px;}
 
 .profile__photoViewer_buttons {margin-bottom: 20px;}
-.profile__photoViewer_buttons .button {padding-left: 12px; padding-right: 12px;}
-.profile__photoViewer_buttons .button .icon {position: relative; margin-bottom: -4px; margin-right: 4px;}
-.profile__photoViewer_buttons_leftGroup {float: left; text-align: left;}
-.profile__photoViewer_buttons_leftGroup .button {margin-right: 8px;}
-.profile__photoViewer_buttons_rightGroup {float: right; text-align: right;}
-.profile__photoViewer_buttons_rightGroup .button {margin-left: 8px;}
+    .profile__photoViewer_buttons .button {padding-left: 12px; padding-right: 12px;}
+    .profile__photoViewer_buttons .button .icon {position: relative; margin-bottom: -4px; margin-right: 4px;}
+    .profile__photoViewer_buttons_leftGroup {float: left; text-align: left;}
+    .profile__photoViewer_buttons_leftGroup .button {margin-right: 8px;}
+    .profile__photoViewer_buttons_rightGroup {float: right; text-align: right;}
+    .profile__photoViewer_buttons_rightGroup .button {margin-left: 8px;}
 
 /** Slider **/
 .profile__slider {width: 910px; height: 560px; position: relative;}
 .profile__slider_item { width: 910px; height: 560px; display: block; text-align: center; line-height: 560px; background: url(../img/profile/photo-viewer_bg.png) repeat; font-size: 0;}
-.profile__slider_preloader {display: none; width: 910px; height: 560px; background: 50% 50% url(../img/profile/preload.gif) no-repeat; position: absolute; top: 0; left: 0;}
-.profile__slider_item img {max-width: 9100px; max-height: 560px; display: inline-block; vertical-align: middle;}
-.profile__slider_nav {position: absolute; top: 0; left: 0; height: 560px; width: 40px; line-height: 560px; text-align: right}
-.profile__slider_nav i {opacity: .7; vertical-align: middle; display: inline-block; height: 0; width: 0; border: 20px solid transparent; border-left: none; border-right-color: #fff;}
-.profile__slider_nav.right {text-align: left; right: 0; left: auto;}
+.profile__slider_preloader {display: none; width: 910px; height: 560px; position: absolute; top: 0; left: 0; background: 50% 40% url(../img/search/preloader.gif) no-repeat}
+.profile__slider_item img {max-width: 910px; max-height: 560px; display: inline-block; vertical-align: middle;}
+.profile__slider_nav {text-align: left;width: 30%; position: absolute; top: 0; left: 0; height: 560px; /*width: 40px;*/ line-height: 560px; /*text-align: right*/}
+.profile__slider_nav i {opacity: .7; vertical-align: middle; display: inline-block; height: 0; width: 0; border: 20px solid transparent; border-left: none; border-right-color: #fff; margin: 0 20px;}
+.profile__slider_nav.right {text-align: right; width: 70%; right: 0; left: auto;}
 .profile__slider_nav.right i {border-right: none; border-left: 20px solid #fff;}
 /** Carousel **/
 .profile__photoViewer_carousel {position: relative;}
@@ -323,8 +318,10 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 /* Edit profile */
 .profile__info_block_edit textarea {margin: 10px;  padding: 6px; box-sizing: border-box; -moz-box-sizing: border-box; width: 930px; height: 130px; overflow: auto; resize: vertical;}
 .profile__info_block_edit_buttons {text-align: right; padding: 0 10px;}
-.profile__info_block_edit_buttons .cancel {text-align: right; margin-right: 30px;}
+.profile__info_block_edit_buttons .cancel {text-align: right; margin-left: 30px;}
 .profile__info_block_edit_buttons .button {width: 105px;}
+.profile__info_block_edit_counter {float: left}
+    .err .profile__info_block_edit_counter {color: #900;}
 
 .profile__info_editList {position: relative; top: 1px; overflow: hidden; margin-bottom: 10px;}
 .profile__info_editList li {height: 27px; display: block; line-height: 27px; padding-left: 10px; }
@@ -333,24 +330,34 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 .profile__info_editList input {margin: 0 15px 0 0; position: relative; top: 2px;}
 
 .profile__info_edit_select {width: 115px; display: inline-block; margin-top: 2px; margin-bottom: 15px;}
+.profile__info_edit_select.language {width: 230px;}
 .profile__info_edit_select .newListSelected {height: 19px; padding: 4px 5px 2px 6px;}
 .profile__info_edit_select_dash {margin: 0 3px;}
 .profile__info_edit_select_centim {margin-left: 20px; border-bottom: 1px dotted #4f6b8d; text-decoration: none; font-size: 12px;}
 .profile__info_edit_select_centim:hover {border-bottom: none; text-decoration: none;}
 
 .profile__block-myWord textarea {width: 680px; height: 70px; box-sizing: border-box; -moz-box-sizing: border-box; margin: 3px 0 7px; }
+.profile__block-myWord div textarea {width: 680px; height: 70px; box-sizing: border-box; -moz-box-sizing: border-box; margin: 3px 0 7px; resize: vertical; }
 .profile__block-myWord .profile__info_block_edit_buttons {padding: 0; display: none;}
 .profile__block-myWord .profile__info_list_item.active .profile__info_block_edit_buttons {display: block;}
 
+.profile__info_block_edit_counter {float: left; font-size: 12px;}
+.profile__info_block_edit_counter .current {color: #900;}
+.profile__info_block_edit_counter .current.ok {color: #090;}
+.profile__info_list_item.error textarea,
+.profile__info_list_item .error textarea {border-color: #900;}
+.profile__info_list_item.error .profile__info_block_edit_counter,
+.profile__info_list_item .error .profile__info_block_edit_counter  {color: #900;}
 /* profile POPUP - edit basic info */
-.profile__pop_editBasic {padding: 15px 15px 63px; width: 720px;}
+.profile__pop_editBasic {padding: 15px 15px 63px; width: 760px; overflow: visible;}
 .profile__pop_editBasic > .std__header {margin-bottom: 20px;}
 .profile__pop_editBasic_leftCol {width: 340px; float: left;}
 .profile__pop_editBasic_rightCol {width: 340px; float: right;}
 .profile__pop_editBasic .profile__info_list {padding: 0; margin-bottom: 5px;}
 .profile__pop_editBasic .profile__info_list_row {}
-.profile__pop_editBasic .profile__info_list_label {width: 100px; font: bold 12px Arial; color: #333; vertical-align: baseline; padding: 0;}
+.profile__pop_editBasic .profile__info_list_label {width: 100px; font: bold 12px Arial; color: #333; vertical-align: top; padding: 7px 0 0;}
 .profile__pop_editBasic .profile__info_list_item {width: 240px;}
+.profile__pop_editBasic .profile__info_select {width: 240px;}
 .profile__pop_editBasic .profile__info_select select,
 .profile__pop_editBasic .profile__info_select input[type=text],
 .profile__pop_editBasic .profile__info_select .newListSelected {box-sizing: border-box; -moz-box-sizing: border-box; height: 27px; padding: 4px 5px 0;  width: 100%;}
@@ -364,7 +371,7 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 .profile__interest {width: 490px;}
 .profile__interest_labelsList {font-size: 0; margin-bottom: 10px; min-height: 10px;}
 .profile__interest_label  {display: inline-block; box-sizing: border-box; -moz-box-sizing: border-box; height: 21px; padding: 2px 10px 0 9px; background-color: #dee7f8;
-    border: 1px solid #cad8f3; font: 12px Arial; color: #436187 !important; margin: 0 10px 10px 0; border-radius: 4px;}
+    border: 1px solid #cad8f3; font: 12px Arial; color: #436187 !important; margin: 0 10px 10px 0; border-radius: 4px; cursor: pointer;}
 .profile__interest_label .close {display: inline-block; width: 7px; height: 7px; margin-left: 11px; position: relative; top: -1px;
     cursor: pointer; background: -22px -116px url(../img/profile/profile.png) no-repeat;}
 
@@ -380,7 +387,7 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 
 .profile__interest .std__or_horiz {margin: 25px 0;}
 .profile__interest .std__or {width: 30px; height: 30px; border: 10px solid #fff; border-radius: 30px; top: -24px; left: 45%;}
-.profile__interest .std__or_item {font-size: 12px; line-height: 30px;}
+.profile__interest .std__or_item {font-size: 12px; line-height: 30px; padding-top: 0px; }
 .profile__interest_content {padding: 15px;}
 .profile__interest_content_leftSide {width: 95px; float: left;}
 .profile__interest_content_header {margin: 0; font: bold 14px/10px Arial; color: #333; margin-bottom: 13px;}
@@ -390,12 +397,12 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 .profile__interest_content_cat.current {background-color: #436187; font-weight: bold; color: #fff; border-top-left-radius: 4px; border-bottom-left-radius: 4px; position: relative;}
 .profile__interest_content_cat.current:after {content: ''; display: block; position: absolute; width: 0;  height: 0; border: 11px solid transparent; border-right: none; border-left-color: #436187; border-bottom-width: 12px; right: -11px; top: 0; z-index: 1;}
 .profile__interest_content_catBox {position: relative; overflow: hidden; width: 365px; margin-left: 95px; background-color: #fff; border: 1px solid #c4d9ec; border-radius: 4px; padding: 10px; box-sizing: border-box; -moz-box-sizing:  border-box;
-    padding: 12px 19px 45px 19px; height: 372px;}
+    padding: 12px 19px 45px 19px; min-height: 372px;}
 .profile__interest_content_catBox_col {width: 152px; font-size: 12px; color: #333;}
 .profile__interest_content_catBox_col.col-1 {float: left;}
 .profile__interest_content_catBox_col.col-2 {float: right}
 .profile__interest_content_catBox_item.head {font-weight: bold;}
-.profile__interest_content_catBox_item {height: 24px;}
+.profile__interest_content_catBox_item {margin-bottom: 10px;}
 
 .profile__interest_content_catBox_nav {position: absolute; bottom: 0; left: 19px; width: 325px; height: 28px; border-top: 1px solid #ccc; padding-top: 12px;}
 .profile__interest_content_catBox_nav_btn {padding-left: 9px; position: relative;}
@@ -427,11 +434,10 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 .profile__photo_popup .b-user__photoFrame_photo {width: 76px; height: 76px; }
 .profile__photo_popup .profile__photoViewer_lastVotes_descr {margin-left: 90px;}
 .profile__photo_popup .profile__photoViewer_lastVotes_person {padding-top: 1px; margin-bottom: 3px;}
-.profile__photo_popup .profile__photoViewer_lastVotes_locate {margin-bottom: 9px;}
+.profile__photo_popup .profile__photoViewer_lastVotes_locate {margin-bottom: 5px;}
 .profile__photo_popup .profile__photoViewer_lastVotes_stars  {margin-bottom: 3px;}
-.profile__photo_popup .profile__photoViewer_lastVotes_time   {font-size: 10px; color:#333;}
+.profile__photo_popup .profile__photoViewer_lastVotes_time   {font-size: 10px; color:#333; margin-bottom: 4px;}
 .profile__photo_popup .btn__paging   {border-top: 1px solid #ccc; padding-top: 16px;}
-
 /* Interests in chat */
 .profile__chat_interests {width: 530px; box-sizing: border-box; -moz-box-sizing: border-box; padding: 15px;}
 .profile__chat_interests .std__popup_close {top: 15px; right: 15px;}
@@ -445,82 +451,23 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 .profile__walker_right a {margin-left: 30px;}
 
 /* Email frequency settings */
-.profile__settings_emailFreq {width: 660px; margin: 40px auto 100px; }
-.profile__settings_emailFreq > .std__header {margin-bottom: 30px; padding-bottom: 8px}
-.profile__settings_emailFreq_description {font-size: 14px; margin: 20px 0;}
-.profile__settings_emailFreq_optList {margin: 30px 20px; font-size: 14px; display: block;}
-.profile__settings_emailFreq_buttons {margin: 0; font-size: 14px; padding-bottom: 20px; border-bottom: 1px solid #ccc; position: relative;}
-.profile__settings_emailFreq_buttons .button {margin-right: 20px;}
-.profile__settings_emailFreq_unsubscribe {display: block; position: absolute; right: 0; bottom: 15px; font-size: 14px;}
-.profile__settings_emailFreq_popup {text-align: center; font-size: 14px;}
-.profile__settings_emailFreq_popup_description {margin: 30px;}
+    .profile__settings_emailFreq {width: 660px; margin: 40px auto 100px; }
+    .profile__settings_emailFreq > .std__header {margin-bottom: 30px; padding-bottom: 8px}
+    .profile__settings_emailFreq_description {font-size: 14px; margin: 20px 0;}
+    .profile__settings_emailFreq_optList {margin: 30px 20px; font-size: 14px; display: block;}
+    .profile__settings_emailFreq_buttons {margin: 0; font-size: 14px; padding-bottom: 20px; border-bottom: 1px solid #ccc; position: relative;}
+        .profile__settings_emailFreq_buttons .button {margin-right: 20px;}
+        .profile__settings_emailFreq_unsubscribe {display: block; position: absolute; right: 0; bottom: 15px; font-size: 14px;}
+    .profile__settings_emailFreq_popup {text-align: center; font-size: 14px;}
+    .profile__settings_emailFreq_popup_description {margin: 30px;}
 
 /** Settings **/
 .profile__settings {}
-.profile__settings h1.std__header {margin-bottom: 20px;}
-.profile__settings .profile__collLeft {width: 220px;}
-.profile__settings .profile__info_block {margin-bottom: 12px;}
-.profile__settings .profile__info_block > .b-std__header {padding-left: 15px;}
-.profile__settings .profile__info_list_label {width: 161px;}
-.profile__settings_tableHolder {padding-top: 8px;}
-.profile__settings_tableHolder > .std__header {margin-bottom: 11px;}
-.profile__settings_paymentTable {border-collapse: collapse; width: 100%; border: 1px solid #ccc;}
-.profile__settings_paymentTable th {border: 1px solid #ccc; width: 215px; height: 30px; padding-left: 15px; background-color: #ccc; box-sizing: border-box; -moz-box-sizing: border-box; vertical-align: middle;}
-.profile__settings_paymentTable th:last-child {width: auto;}
-.profile__settings_paymentTable td {border-bottom: 1px solid #ccc; height: 42px; padding-left: 15px; vertical-align: middle;}
-.profile__settings_cardChange {margin-left: 65px;}
-.profile__settings_cancelLink {margin-top: 28px; float: right;}
-
-.profile__settings_nav {padding: 13px 15px 7px;}
-.profile__settings_menu_item {margin-bottom: 8px;}
-.profile__settings_no-pay {font-style: italic; color: #999; padding: 0 0 10px 5px;}
-.profile__settings_tableHolder .profile__settings_no-pay {padding: 8px 0 0; border-top: 1px solid #ccc;}
-.profile__settings .upgrade-button {margin-left: 80px; }
-.profile__settings .profile__info_list_label {vertical-align: middle; }
-
-/* Invoices popups */
-.profile__settings_invoice {padding: 47px 15px 15px; width: 770px !important;}
-.profile__settings_invoice_header {background-color: #ecf4fb; position: absolute; top: 0; left: 0; width: 100%; height: 47px; box-sizing: border-box; -moz-box-sizing: border-box; padding: 12px 14px;}
-.profile__settings_invoice_print-button {width: 105px; margin: 15px 0 0 0;}
-.profile__settings_invoice_body {padding-top: 19px; font-size: 12px; line-height: 14px; color: #333;}
-.profile__settings_invoice_body h3 {font-size: 12px; color: #333;  margin: 3px 0 8px; padding-bottom: 2px; text-transform: uppercase;}
-.profile__settings_invoice_body .std__underline.line {padding-top: 5px; padding-bottom: 8px;}
-.profile__settings_invoice_cardTable {width:  100%; border-collapse: collapse; border: none; margin-bottom: 8px;}
-.profile__settings_invoice_cardTable td {width: 345px; vertical-align: top; padding-bottom: 14px; border: none;}
-td.profile__settings_invoice_cardTable_delim {width: 40px;}
-.profile__settings_invoice_cardInfoTable {width: 100%; border-collapse: collapse;}
-.profile__settings_invoice_cardInfoTable .col-1 {width: 445px; box-sizing: border-box; -moz-box-sizing: border-box;}
-.profile__settings_invoice_cardInfoTable .col-2 {width: 110px; box-sizing: border-box; -moz-box-sizing: border-box;}
-.profile__settings_invoice_cardInfoTable .col-3 {width: 70px;  box-sizing: border-box; -moz-box-sizing: border-box;}
-.profile__settings_invoice_cardInfoTable .col-4 {}
-.profile__settings_invoice_cardInfoTable th {height: 40px; background-color: #f5f5f5; border-top: 1px solid #ccc; vertical-align: middle; font-size: 14px; padding-left: 15px;}
-.profile__settings_invoice_cardInfoTable td {height: 38px; border-top: 1px solid #ccc; vertical-align: middle; padding-left: 15px; }
-.profile__settings_invoice_cardInfoTable .subtotal  {text-align: right; padding-right: 55px; font-weight: bold; height: 26px; vertical-align: bottom;}
-.profile__settings_invoice_cardInfoTable .subtotal + td {height: 26px; vertical-align: bottom;}
-.profile__settings_invoice_cardInfoTable .total         {text-align: right; padding-right: 55px; font-weight: bold;  height: 16px; vertical-align: bottom; border: none;}
-.profile__settings_invoice_cardInfoTable .total + td    {height: 16px; vertical-align: bottom; border: none;}
-.profile__settings_invoice_cardInfoTable .payment       {text-align: right; padding-right: 55px; font-weight: bold; border: none; height: 34px; vertical-align: bottom;}
-.profile__settings_invoice_cardInfoTable .payment + td  {border: none; height: 34px; vertical-align: bottom;}
-.profile__settings_invoice_note {text-align: right; padding-right: 160px; margin-top: 12px;}
-.profile__settings_invoice_issue {margin-top: 16px; padding-top: 10px; border-top: 1px solid #ccc;}
-.profile__settings_invoice_issue h3 {text-transform: none; font-size: 14px;}
-
-/* Change card */
-.profile__settings_change {width: 450px; position: relative; margin: 0 auto;}
-
-.profile__settings_change .profile__info_block > .b-std__header {padding-left: 10px;}
-.profile__settings_change .profile__info_list_item {width: 260px;}
-.profile__settings_change .profile__info_list_item input,
-.profile__settings_change .profile__info_list_item select,
-.profile__settings_change .profile__info_list_item .newListSelected {box-sizing: border-box; -moz-box-sizing: border-box; height: 27px; padding: 5px; width: 100%;}
-.profile__settings_change_shortField {display: inline-block; width: 80px;}
-.profile__settings_change .field-separator {margin: 0 3px;}
-.profile__settings_change_controls {margin-top: 20px; text-align: center;}
-.profile__settings_change_controls .button-save {width: 130px; padding-left: 10px; padding-right: 10px;}
-.profile__settings_change_controls .button-cancel {margin-left: 15px;}
-
-.profile__settings_change_popup {padding: 30px 25px; text-align: center; }
-.profile__settings_change_popup .button {width: 235px; margin-top: 7px;}
+    .profile__settings .profile__collLeft {width: 220px;}
+    .profile__settings_paymentTable {border-collapse: collapse;}
+    .profile__settings_paymentTable th {border: 1px solid #ccc;}
+    .profile__settings_paymentTable td {border: 1px solid #ccc;}
+textarea.err, .err textarea, .err .newListSelected, .err .newList{border-color: #990000;}
 
 /* Profile Y */
 .profile__y {margin-top: 20px;}
@@ -537,9 +484,9 @@ td.profile__settings_invoice_cardTable_delim {width: 40px;}
 .profile__y_newUsers_list_item_info {margin-left: 115px;}
 .profile__y_newUsers_list_item_info .b-user__person {text-align: left; font-size: 16px;}
 .profile__y_newUsers_list_item_info .user__location {font-size: 11px;}
-.profile .profile__userName {margin: 5px 0 9px;}
+.profile .profile__userName {margin: 0 0 9px;}
 .profile .profile__info_top_info {margin-bottom: 22px;}
-.profile .profile__block-basicInfo {margin-bottom: 8px;}
+.profile .profile__block-basicInfo {margin-bottom: 25px;}
 
 /* Y-profile for registered */
 .profile__y_registered {}
@@ -553,79 +500,84 @@ td.profile__settings_invoice_cardTable_delim {width: 40px;}
 .profile__y_servicesList_item {width: 263px; text-align: center; padding: 16px 20px 22px; display: inline-block; vertical-align: top; background: #fff; border-radius: 4px; line-height: 16px;}
 .profile__y_servicesList_item > .std__header {font-size: 18px;}
 .profile__y_servicesList_item_icon {display: inline-block; width: 202px; height: 144px; background: url(../img/404/404.png) no-repeat;}
-    .profile__y_servicesList_item_icon_match {background-position: 0 -292px;}
-    .profile__y_servicesList_item_icon_video {background-position: 0 -438px;}
+.profile__y_servicesList_item_icon_match {background-position: 0 -292px;}
+.profile__y_servicesList_item_icon_video {background-position: 0 -438px;}
 .profile__y_servicesList_item_description {text-align: left; height: 48px;}
 .profile__y_servicesList_item .button {margin-top: 20px; width: 185px;}
 
+.profile__signals_likes_me .profile__block-signals_userPic.photo_like  {position: absolute; top: 10px; right: 40px;}
+.profile__signals_likes_me.profile__block-signals_user  {position: relative;}
+.profile_likes_empty {position: relative; background-color: #e8eff5; margin: 0 0 300px; padding: 70px 0; font: bold 28px 'PT Sans'; color: #333; text-align: center; border-radius: 4px;}
+    .profile_likes_empty p {padding: 0; margin: 0;}
+    .profile_likes_empty .button {margin-top: 30px;}
+
 /* Profile Invite */
 .profile__invite {padding-top: 15px;}
-    .profile__invite_header {margin-bottom: 21px;}
+.profile__invite_header {margin-bottom: 21px;}
 .profile__invite_mainBlock {padding: 16px 20px 20px;}
-.profile__invite_content {padding: 30px; text-align: center; background: #fff; border-radius: 4px; color: #333; font-size: 18px;
-    font-weight: bold;}
-    .profile__invite_content p {padding: 0; margin-bottom: 20px;}
-    .profile__invite_content .profile__invite_message_button {}
-    .profile__invite_side_header {text-align: center; padding-bottom: 5px;}
-    .profile__invite_side_msg {padding: 8px 10px 8px; background: #fff; border-radius: 4px; text-align: center; margin-bottom: 10px; color: #333;}
-    .profile__invite_side_msg:last-child {margin: 0;}
+.profile__invite_content {padding: 30px; text-align: center; background: #fff; border-radius: 4px; color: #333; font-size: 18px;}
+.profile__invite_content p {padding: 0; margin-bottom: 20px;}
+.profile__invite_content .profile__invite_message_button {}
+.profile__invite_side_header {text-align: center; padding-bottom: 5px;}
+.profile__invite_side_msg {padding: 8px 10px 8px; background: #fff; border-radius: 4px; text-align: center; margin-bottom: 10px; color: #333;}
+.profile__invite_side_msg:last-child {margin: 0;}
 .profile__invite_userList_wrap {margin-left: -30px; position: relative; overflow: hidden;}
-    .profile__invite_userList {max-height: 450px; overflow: auto; overflow-x: hidden;}
-    .profile__invite_userList_coll {width: 250px; margin-left: 30px; float: left; text-align: left;}
-        .profile__invite_userList_coll.wide_coll {width: 320px;}
-    .profile__invite_userList_coll > .std__header {padding-bottom: 5px;}
-        .profile__invite_userList_item {margin-bottom: 10px; vertical-align: top; color: #333; padding-right: 6px;}
-        .profile__invite_userList_item:last-child {margin-bottom: 0;}
-            .profile__invite_userList_search {width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; height: 27px!important; padding: 4px 7px 4px 25px !important; background: #fff url(../img/search.gif) 5px 6px no-repeat;}
-            .profile__invite_userList_item_pic {width: 50px; height: 50px; margin-right: 5px;}
-            .profile__invite_userList_item_name {font-size: 14px; vertical-align: top; line-height: 48px; display: inline-block;}
-            .profile__invite_userList_item_btn {float: right; margin-top: 9px;}
-            .profile__invite_noMsg {font-size: 14px; font-weight: bold; color: #999; text-align: center; display: block; padding-top: 10px;}
+.profile__invite_userList {max-height: 450px; overflow: auto; overflow-x: hidden;}
+.profile__invite_userList_coll {width: 250px; margin-left: 30px; float: left; text-align: left;}
+.profile__invite_userList_coll.wide_coll {width: 320px;}
+.profile__invite_userList_coll > .std__header {padding-bottom: 5px;}
+.profile__invite_userList_item {margin-bottom: 10px; vertical-align: top; color: #333; padding-right: 6px;}
+.profile__invite_userList_item:last-child {margin-bottom: 0;}
+.profile__invite_userList_search {width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; height: 27px!important; padding: 4px 7px 4px 25px !important; background: #fff url(../img/search.gif) 5px 6px no-repeat;}
+.profile__invite_userList_item_pic {width: 50px; height: 50px; margin-right: 5px;}
+.profile__invite_userList_item_name {font-size: 14px; vertical-align: top; line-height: 48px; display: inline-block;}
+.profile__invite_userList_item_btn {float: right; margin-top: 9px;}
+.profile__invite_noMsg {font-size: 14px; color: #999; text-align: center; display: block; padding-top: 10px;}
 
-            .profile__invite_row {font-size: 0; text-align: left; margin-bottom: 10px;}
-                .profile__invite_label {vertical-align: top; width: 110px; display: inline-block; font-size: 14px; text-align: left; box-sizing: border-box; -moz-box-sizing: border-box; padding: 5px 20px 0;}
-                .profile__invite_field {display: inline-block; width: 470px; font-size: 12px; color: #333; font-weight: normal;}
-                    .profile__invite_field input {width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; height: 27px!important; padding: 4px 7px!important;}
-                .profile__invite_emailList .profile__invite_field {width: 380px;}
-            .profile__invite_emailPreview {width: 600px; position: relative; padding-left: 0; box-sizing: border-box; -moz-box-sizing: border-box; padding-bottom: 1px;}
-                .profile__invite_emailPreview .profile__invite_field {padding-top: 3px;}
-                .profile__invite_emailPreview p {padding: 0; margin-bottom: 10px;}
-                .profile__invite_emailPreview .profile__invite_label {padding-top: 2px;}
-            .profile__invite_emailButtons {font-size: 14px; font-weight: normal; text-align: center; margin-top: 20px;}
-                .profile__invite_emailButtons .button {margin: 0;}
-        .profile__invite_google {margin-left: 0; text-align: left; font-weight: normal; font-size: 14px;}
-            .profile__invite_google_selectAll {display: inline-block; padding-top: 2px;}
-            .profile__invite_google_search {width: 250px; float: right;}
-            .profile__invite_google_checkBox {margin-top: 9px; margin-right: 15px; float: left;}
-            .profile__invite_google_emails {}
-                .profile__invite_google_emails_name {font-size: 14px; color: #333;}
-                .profile__invite_google_emails_mail {font-size: 12px; color: #666;}
-            .profile__invite_google_top {margin-bottom: 30px;}
-            .profile__invite_google_bottom {}
-                .profile__invite_google_bottom_selected {margin-bottom: 15px;}
-                .profile__invite_google_button {margin-bottom: 20px;}
-                .profile__invite_google_bottom_info {}
-            .profile__invite_google_list {margin: 0; max-height: 450px; overflow: auto; margin-bottom: 15px;}
-                .profile__invite_google_list .profile__invite_userList_item  {margin-bottom: 15px;}
-        .profile__invite_google_users_error {font-size: 16px; font-weight: bold; color: #333; padding: 25px;}
-        .profile__invite_popup {width: 778px; padding: 12px 14px 10px;}
-            .profile__invite_popup_subj {font-size: 14px; color: #333; margin-bottom: 20px; padding-top: 3px;}
-                .profile__invite_popup_subj_label {font-weight: bold;}
-            .profile__invite_popup_screen {width: 740px; height: 319px; border: 1px solid #ccc;}
+.profile__invite_row {font-size: 0; text-align: left; margin-bottom: 10px;}
+.profile__invite_label {vertical-align: top; width: 110px; display: inline-block; font-size: 14px; text-align: left; box-sizing: border-box; -moz-box-sizing: border-box; padding: 5px 20px 0;}
+.profile__invite_field {display: inline-block; width: 470px; font-size: 12px; color: #333; font-weight: normal;}
+.profile__invite_field input {width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; height: 27px!important; padding: 4px 7px!important;}
+.profile__invite_emailList .profile__invite_field {width: 380px;}
+.profile__invite_emailPreview {width: 600px; position: relative; padding-left: 0; box-sizing: border-box; -moz-box-sizing: border-box; padding-bottom: 1px;}
+.profile__invite_emailPreview .profile__invite_field {padding-top: 3px;}
+.profile__invite_emailPreview p {padding: 0; margin-bottom: 10px;}
+.profile__invite_emailPreview .profile__invite_label {padding-top: 2px;}
+.profile__invite_emailButtons {font-size: 14px; font-weight: normal; text-align: center; margin-top: 20px;}
+.profile__invite_emailButtons .button {margin: 0;}
+.profile__invite_google {margin-left: 0; text-align: left; font-weight: normal; font-size: 14px;}
+.profile__invite_google_selectAll {display: inline-block; padding-top: 2px;}
+.profile__invite_google_search {width: 250px; float: right;}
+.profile__invite_google_checkBox {margin-top: 9px; margin-right: 15px; float: left;}
+.profile__invite_google_emails {}
+.profile__invite_google_emails_name {font-size: 14px; color: #333;}
+.profile__invite_google_emails_mail {font-size: 12px; color: #666;}
+.profile__invite_google_top {margin-bottom: 30px;}
+.profile__invite_google_bottom {}
+.profile__invite_google_bottom_selected {margin-bottom: 15px;}
+.profile__invite_google_button {margin-bottom: 20px;}
+.profile__invite_google_bottom_info {}
+.profile__invite_google_list {margin: 0; max-height: 450px; overflow: auto; margin-bottom: 15px;}
+.profile__invite_google_list .profile__invite_userList_item  {margin-bottom: 15px;}
+.profile__invite_google_users_error {font-size: 16px; font-weight: bold; color: #333; padding: 25px;}
+.profile__invite_popup {width: 778px; padding: 12px 14px 10px;}
+.profile__invite_popup_subj {font-size: 14px; color: #333; margin-bottom: 20px; padding-top: 3px;}
+.profile__invite_popup_subj_label {font-weight: bold;}
+.profile__invite_popup_screen {width: 740px; border: 1px solid #ccc;}
 
 .profile__invite_sendEmail {padding: 17px 19px 20px; border: 1px solid #ccc; background: #f5f5f5; border-radius: 4px;}
-    .profile__invite_sendEmail_header {padding-bottom: 2px;}
-    .profile__invite_sendEmail_message {font-size: 14px; font-weight: bold; color: #333; text-align: center; font-style: italic; padding-top: 2px;}
-    .profile__invite_sendEmail_inputs {text-align: center; margin-top: 20px;}
-        .profile__invite_sendEmail_field {margin-right: 15px!important; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; height: 27px!important; padding: 4px 7px!important; width: 290px;}
-        .profile__invite_sendEmail_button {}
-    .profile__invite_popup_email {width: 670px; color: #333;}
-        .profile__invite_popup_email > .std__header  {margin-bottom: 20px;}
-        .profile__invite_popup_email .profile__invite_label  {width: 140px;}
-        .profile__invite_popup_email .profile__invite_field  {width: 350px;}
-        .profile__invite_popup_email .profile__invite_emailPreview  {padding-top: 17px; width: auto; padding-right: 20px;}
-        .profile__invite_label_area {padding-top: 8px!important; line-height: 16px;}
-        .profile__invite_field_area {margin-bottom: 4px; width: 470px; box-sizing: border-box; -moz-box-sizing: border-box; padding: 5px 7px; overflow: auto; resize: none; font-size: 12px; height: 57px;}
-        .profile__invite_popup_email_link {padding-left: 7px; margin-bottom: 11px; display: inline-block;}
-        .profile__invite_popup_email_from {padding-left: 7px!important;}
-        .profile__invite_popup_email .profile__invite_emailButtons .button  {width: 190px; margin-bottom: 7px;}
+.profile__invite_sendEmail_header {padding-bottom: 2px;}
+.profile__invite_sendEmail_message {font-size: 14px; font-weight: bold; color: #333; text-align: center; font-style: italic; padding-top: 2px;}
+.profile__invite_sendEmail_inputs {text-align: center; margin-top: 20px;}
+.profile__invite_sendEmail_field {margin-right: 15px!important; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; height: 27px!important; padding: 4px 7px!important; width: 290px;}
+.profile__invite_sendEmail_button {}
+.profile__invite_popup_email {width: 670px; color: #333;}
+.profile__invite_popup_email > .std__header  {margin-bottom: 20px;}
+.profile__invite_popup_email .profile__invite_label  {width: 140px;}
+.profile__invite_popup_email .profile__invite_field  {width: 350px;}
+.profile__invite_popup_email .profile__invite_emailPreview  {padding-top: 17px; width: auto; padding-right: 20px;}
+.profile__invite_label_area {padding-top: 8px!important; line-height: 16px;}
+.profile__invite_field_area {margin-bottom: 4px; width: 470px; box-sizing: border-box; -moz-box-sizing: border-box; padding: 5px 7px; overflow: auto; resize: none; font-size: 12px; height: 57px;}
+.profile__invite_popup_email_link {padding-left: 7px; margin-bottom: 11px; display: inline-block;}
+.profile__invite_popup_email_from {padding-left: 7px!important;}
+.profile__invite_popup_email .profile__invite_emailButtons .button  {width: 190px; margin-bottom: 7px;}

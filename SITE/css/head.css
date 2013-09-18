@@ -1,0 +1,75 @@
+.head__wrap {z-index: 999; display: block; position: fixed; top: 0; left: 0; width: 100%; height: 48px; background: #436187; box-shadow: 0 0 4px 1px rgba(0,0,0,0.5);}
+    .head__inner {width: 950px; position: relative; margin: 0 auto;}
+
+    .head__logo {display: block; position: relative; width: 123px; height: 25px; top: 11px;}
+        .head__logo_img {}
+/* Menu */
+    .head__menu {position: absolute; left: 242px; top: 9px;}
+        .head__menu_item {display: block; float: left; font: bold 16px Arial; color: #fff; margin-right: 6px; line-height: 16px; padding: 7px 9px; text-decoration: none; position: relative;}
+        .head__menu_item:hover,
+        .head__menu_item:active {text-decoration: none; background: #3c5779; border-radius: 2px; color: #fff;}
+        .head__menu_item.active {background: #f6f5eb; cursor: default; color: #436187; text-decoration: none; border-radius: 2px;}
+/* Toolbar */
+    .head__toolbar {position: absolute; right: -1px; top: 10px;}
+        .head__toolbar_item {float: left; position: relative; margin-left: 6px; height: 32px; box-sizing: border-box; -moz-box-sizing: border-box;}
+        .head__toolbar_item_divider {display: block; height: 28px; width: 0px; border-left: 1px solid #3c5779;}
+        .head__toolbar .icon {display: block; position: relative; background: url(../img/head/icons.png) no-repeat; position: absolute; top: 8px;}
+
+        .head__toolbar .counter, .bubble_counter {display: none; background: #fc3e39; font-size: 10px; color: #fff; line-height: 10px; border-radius: 2px; padding: 2px 2px 1px 3px;
+            position: absolute; top: -3px; right: -2px;}
+        .head__toolbar .action .counter {display: inline-block;}
+        .bubble_counter {display: inline-block; top: -4px; font-weight: normal}
+/* Toolbar submenu  */
+        .head__toolbar_subMenu {display: none; text-indent: 0; padding: 15px 0 8px; background: #fff; z-index: -1; box-shadow: 0 0 4px 1px rgba(0,0,0,0.3);
+            position: absolute; top: 32px; left: 0;}
+            .head__toolbar_item.active .head__toolbar_subMenu {display: inline-block; }
+            .head__toolbar_subMenu_item {white-space: nowrap; display: block; font-size: 12px; line-height: 12px; margin-bottom: 6px; padding: 0 9px;}
+            .head__toolbar_subMenu_item_divider {border-bottom: 1px solid #ccc; margin: 15px 0;}
+/* Settings */
+        .head__toolbar_item_settings {cursor: pointer; width: 32px; height: 32px; display: block; padding: 7px; margin-left: 4px; top: -2px; box-sizing: border-box; -moz-box-sizing: border-box; border: 1px solid transparent; }
+                .head__toolbar_item_settings:hover {background: #3c5779; border-radius: 2px;}
+                .head__toolbar_item_settings .icon {width: 16px; height: 16px; background-position: 0 0; top: 7px;}
+            .head__toolbar_item_settings.active {right: -1px; position: relative; margin-left: 2px; padding-left: 8px; padding-top: 9px; top: -3px; width: 34px; height: 33px; background: #fff; border-radius: 0; border-top-right-radius: 3px; border-top-left-radius: 3px;  border-color: #364e6c; border-bottom: none;}
+                .head__toolbar_item_settings.active .icon {background-position: -18px 0;}
+            .head__toolbar_item.active .head__toolbar_subMenu {left: auto; right: 0;}
+            .head__toolbar_item_settings .head__toolbar_subMenu_item {padding: 0 15px;}
+/* User */
+        .head__user {line-height: 20px; vertical-align: top; display: block; font-size: 14px; color: #fff; cursor: pointer; width: auto; height: 32px;
+                    padding: 5px 9px; border: 1px solid transparent; box-sizing: border-box; -moz-box-sizing: border-box; top: -2px;}
+            .head__user.active, .head__user.active:hover {background: #fff; border-radius: 0; border-top-right-radius: 3px; border-top-left-radius: 3px; height: 33px; border-color: #364e6c; border-bottom: none; color: #436187;}
+            .head__user:hover {color: #fff; background: #3c5779; border-radius: 2px;}
+            .head__user.active:hover {color: #436187; text-decoration: none;}
+            .head__user_pic {height: 20px; width: 20px; display: inline-block; margin-right: 10px;}
+            .head__user.active .head__toolbar_subMenu {right: auto; left: 0; }
+/* Notifications */
+        .head__toolbar_item_signals {cursor: pointer; width: 32px; padding: 8px 7px;  margin-left: 0; box-sizing: border-box; -moz-box-sizing: border-box; top: -2px;}
+            .head__toolbar_item_signals:hover {background: #3c5779; border-radius: 2px;}
+            .head__toolbar_item_signals .icon {width: 18px; height: 17px; background-position: 0 -37px;}
+            .head__toolbar_item_signals.action .icon {background-position: -20px -37px;}
+            .head__toolbar_item_signals.action {background: none;}
+/* Messages */
+        .head__toolbar_item_messages {cursor: pointer; width: 32px; padding: 8px 7px; margin-left: 0; box-sizing: border-box; -moz-box-sizing: border-box; top: -2px;}
+            .head__toolbar_item_messages:hover {background: #3c5779; border-radius: 2px;}
+            .head__toolbar_item_messages .icon {width: 19px; height: 17px; background-position: 0 -18px;}
+            .head__toolbar_item_messages.action .icon {background-position: -21px -18px;}
+            .head__toolbar_item_messages.action {background: none;}
+/* My Connections */
+    .head__menu_hovering {display: inline-block; position: relative;}
+    .head__menu_hovering:hover {background: #fff; color: #3c5779; cursor: pointer; border-radius: 0;  border-top-left-radius: 2px; border-top-right-radius: 2px;}
+    .head__menu_hovering > .head__toolbar_subMenu {font-weight: normal; top: 30px;}
+    .head__menu_hovering:hover > .head__toolbar_subMenu {display: block;}
+
+/* DropDowm */
+.head__dropDown {display: none; position: absolute; top: 32px; left: -131px; width: 272px; background: #fff; box-shadow: 0 0 4px 1px rgba(0,0,0,0.3);}
+    .head__dropDown_arrow {left: 50%; margin-left: 3px; position: absolute; top: -6px; height: 0; width: 0; display: block; border: 6px solid transparent; border-top: none; border-bottom-color: #fff;}
+    .head__dropDown_header {padding: 10px; font-weight: bold; font-size: 14px; color: #333;}
+    .head__dropDown_listItem {display: block; padding: 10px; background: #ecf4fb; border-top: 1px solid #ccc;}
+        .head__dropDown_listItem_userPic {display: block; float: left; width: 50px; height: 50px;}
+        .head__dropDown_listItem_descr {display: block; float: left; margin: 0 10px; max-width: 182px; min-width: 132px;}
+            .head__dropDown_listItem_who {font-weight: bold; font-size: 16px; display: block; color: #000;}
+                .head__dropDown_listItem_name {color: #436187;}
+            .head__dropDown_listItem_when {font-size: 10px; color: #999; display: block;}
+            .head__dropDown_listItem_what {font-size: 12px; color: #000;}
+            .head__dropDown_clear {display: block; width: 100%; clear: both;}
+    .head__dropDown_last {padding: 15px; text-align: center; font-weight: bold; font-size: 12px; border-top: 1px solid #ccc;}
+.active > .head__dropDown {display: block;}

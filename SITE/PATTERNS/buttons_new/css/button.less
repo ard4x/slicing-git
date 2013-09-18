@@ -149,6 +149,13 @@
                   #197bbb, #35a9dd, #3797bd);
   }
 
+  &.lite_blue {
+    .button_bg_color(#779ac4, #627ea1);
+    .button_borders(#547db3, #6a88ae, #4b5f7a,
+                  #547db3, #7596c0, #5b7596,
+                  #446691, #6a88ae, #5b7595);
+  }
+
   // SIZE of buttons
 
   &.small {
@@ -262,14 +269,15 @@
 
   &.favorite {
     .iconedButton(@btnBgPosY:-195px);
-    padding-left: 38px;
+    padding-left: 8px;
     i.icon {
-      width: 31px;
+      width: 0;
     }
 
     &.added {
       .iconedButton(@btnBgPosY:-224px);
       padding-left: 38px;
+      font-weight: normal!important;
       i.icon {
         width: 31px;
       }

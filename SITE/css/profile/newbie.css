@@ -1,0 +1,7 @@
+.profile__newbie {}
+    .profile__newbie_coll {width: 700px;}
+    .profile__newbie_block {background: #436187; border-radius: 4px; padding: 18px 20px 20px; text-align: center}
+    .profile__newbie_blockHeader {color: #fff; margin-bottom: 21px;}
+    .profile__newbie_block_img {width: 660px; height: 290px; margin-bottom: 10px;}
+    .profile__newbie_blockMsg {color: #fff; display: inline-block; margin: 17px 0 0;}
+    .profile__newbie_blockMsg .button {margin-left: 20px;}

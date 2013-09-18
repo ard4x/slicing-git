@@ -1,0 +1,39 @@
+.srch__searchBlock_item .field {position: relative!important;}
+.wid__tooltip {display: inline-block; width: 170px; box-sizing: border-box; -moz-box-sizing: border-box; border: 5px solid #e8eff5;
+    position: relative; padding: 12px 15px 14px; border-radius: 4px; background: #fff; color: #333; font: 12px Arial;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.5);
+    position: absolute;
+    top: -14px;
+    left: 205px;
+    z-index:100;
+}
+.wid__tooltip .arr {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-left: none;
+    border-right-color: #e8eff5;
+    top: 6px;
+    left: -15px;
+}
+.wid__tooltip .arrInn {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 9px solid transparent;
+    border-left: none;
+    border-right-color: #fff;
+    top: -9px;
+    left: 6px;
+}
+
+.wid__tooltip_big {width: 240px; top: 10px; left: 10px;}
+    .wid__tooltip_big .arr {top: 43%;}
+    .wid__tooltip_big > .wid__tooltip_header {padding-bottom: 2px; margin-bottom: 14px; margin-top: 1px;}
+    .wid__tooltip_big > .wid__tooltip_header .small {color: #999; font-size: 11px; float: right; display: inline-block; padding-top: 2px;}
+    .wid__tooltip_message {font-size: 12px; line-height: 14px; color: #333; margin-bottom: 15px;}
+    .wid__tooltip_slider {margin-bottom: 0;}
+    .wid__tooltip_slider .slider-item { font-size: 12px!important; padding: 3px; height: 25px!important;}
+    .wid__tooltip_slider .icon-arrow-left {margin: 0 10px 0 0!important; top: 1px;}
+    .wid__tooltip_slider .icon-arrow-right {margin: 0 0 0 10px!important; top: 1px;}

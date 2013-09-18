@@ -1,0 +1,37 @@
+/* Widget Interests*/
+.wid__interests {padding: 13px 15px 12px; margin-top: 20px;}
+    .wid__interests_header {margin-bottom: 12px; text-align: center;}
+    .wid__interests_item {font-size: 12px; color: #333; font-weight: bold; display: block; background: #fff; border: 1px solid #ccc; padding: 8px 10px; border-radius: 4px; margin-bottom: 5px; line-height: 25px;}
+.wid__interests_icon {display: inline-block; width: 25px; height: 25px; background: url(../../img/widgets/interests_icons.png) no-repeat; margin-right: 10px; vertical-align: middle;}
+    .wid__interests_icon.icon_camping {background-position: 0 0;}
+    .wid__interests_icon.icon_charity {background-position: 0 -27px;}
+    .wid__interests_icon.icon_cycling {background-position: 0 -54px;}
+    .wid__interests_icon.icon_collecting {background-position: 0 -81px;}
+    .wid__interests_icon.icon_compGames {background-position: 0 -108px;}
+    .wid__interests_icon.icon_cooking {background-position: 0 -135px;}
+    .wid__interests_icon.icon_dancing {background-position: 0 -162px;}
+    .wid__interests_icon.icon_painting {background-position: 0 -189px;}
+    .wid__interests_icon.icon_crafts {background-position: 0 -216px;}
+    .wid__interests_icon.icon_fitness {background-position: 0 -243px;}
+
+    .wid__interests_icon.icon_gardening {background-position: -27px 0;}
+    .wid__interests_icon.icon_internet {background-position: -27px -27px;}
+    .wid__interests_icon.icon_listenMusic {background-position: -27px -54px;}
+    .wid__interests_icon.icon_outdoor {background-position: -27px -81px;}
+    .wid__interests_icon.icon_pets {background-position: -27px -108px;}
+    .wid__interests_icon.icon_photography {background-position: -27px -135px;}
+    .wid__interests_icon.icon_playingCards {background-position: -27px -162px;}
+    .wid__interests_icon.icon_playSport {background-position: -27px -189px;}
+    .wid__interests_icon.icon_reading {background-position: -27px -216px;}
+    .wid__interests_icon.icon_running {background-position: -27px -243px;}
+
+    .wid__interests_icon.icon_shopping {background-position: -54px 0;}
+    .wid__interests_icon.icon_singing {background-position: -54px -27px;}
+    .wid__interests_icon.icon_socialNet {background-position: -54px -54px;}
+    .wid__interests_icon.icon_spirituality {background-position: -54px -81px;}
+    .wid__interests_icon.icon_swimming {background-position: -54px -108px;}
+    .wid__interests_icon.icon_traveling {background-position: -54px -135px;}
+    .wid__interests_icon.icon_walking {background-position: -54px -162px;}
+    .wid__interests_icon.icon_watchMovies {background-position: -54px -189px;}
+    .wid__interests_icon.icon_watchSport {background-position: -54px -216px;}
+    .wid__interests_icon.icon_watchTV {background-position: -54px -243px;}

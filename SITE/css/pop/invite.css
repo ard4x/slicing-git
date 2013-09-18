@@ -1,0 +1,8 @@
+.pop__invite {width: 580px; text-align: center; padding-top: 45px; padding-bottom: 114px;}
+    .pop__invite_title {font-size: 30px; font-weight: normal; margin-bottom: 32px; line-height: 36px;}
+    .pop__invite_bottom {background-color: #ecf4fb; width: 100%; padding: 20px 0 15px; position: absolute; bottom: 0; left: 0;}
+
+.pop__invite_button {display: inline-block; box-sizing: border-box; -moz-box-sizing: border-box; color: #fff !important; font: bold 18px Arial; text-decoration: none !important;
+    height: 41px; width: 270px; line-height: 39px; text-align: center; border-radius: 3px; border: 1px solid #334a67; background: #436187;}
+.pop__invite_button:hover {border-color: #436187; background-color: #537aaa;}
+.pop__invite_button:active {border-color: #334a67; background-color: #334a67;}

@@ -1,0 +1,893 @@
+<html lang="en" xml:lang="en" class="stylish-select"><head>    <meta charset="utf-8">
+<title>Meetville | Chat &amp; meet new people, make new friends</title>    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic" media="screen" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/style.css">
+<link href="../css/std.css" media="screen" rel="stylesheet" type="text/css">
+<link href="../css/btns.css" media="screen" rel="stylesheet" type="text/css">
+<link href="../css/button.css" media="screen" rel="stylesheet" type="text/css">
+<link href="../css/vip.css" media="screen" rel="stylesheet" type="text/css">
+    <script src="../js/jquery.js"></script>
+
+
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'})
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+</head>
+<body class="lang-en" data-theme="0">
+<table style="position: fixed; right: 30px; bottom: 30px; z-index: 999">
+    <tbody><tr>
+        <td class="chat_notif_original hidden chat_notif_item">
+            <div class="yangutu_popap rubber chat_usrCard chat" data-action="chat-usr-card">
+                <input type="hidden" value="" class="chat_notif_rel">
+                <div class="yp_top"><div class="rubber_top_right"></div></div>
+                <div class="yp_content_left">
+                    <div class="yp_content_right">
+                        <div class="yp_grad">
+                            <div class="bic_up_name">
+                                <div class="bic_up_name_bot"></div>
+                                <a class="usr_answer_link" href="#"><b class="chat_notif_name"></b></a>, <span class="chat_notif_age"></span>
+                            </div>
+                            <div class="brdpic">
+                                <span class="new_event"></span>
+                                <a href="#" title=""><img class="chat_notif_pic" title="" alt="" src="/img/blank.gif"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="yp_bot"><div class="rubber_bot_right"></div></div>
+            </div>
+        </td>
+        <td class="hidden chat_notif_item chat_notif_more">
+            <div class="yangutu_popap rubber chat_usrCard chat" data-action="chat-usr-card">
+                <input type="hidden" value="" class="chat_notif_rel">
+                <div class="yp_top"><div class="rubber_top_right"></div></div>
+                <div class="yp_content_left">
+                    <div class="yp_content_right">
+                        <div class="yp_grad">
+                            <div class="bic_up_name">
+                                <div class="bic_up_name_bot"></div>
+                                <a class="usr_answer_link" href="#"><b class="chat_notif_name">More people</b></a>
+                            </div>
+                            <div class="brdpic">
+                                <span class="new_event">12</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="yp_bot"><div class="rubber_bot_right"></div></div>
+            </div>
+        </td>
+    </tr>
+    </tbody></table>
+
+<div class="" id="slideshow" style="display:none;"></div>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            var indentLeft = $(document).scrollLeft();
+            $("#topHeadMenu").css('left', '-'+indentLeft+'px');
+        });
+    });
+
+</script>
+<div class="header ">
+<div class="header_inn" id="topHeadMenu" style="left: 0px;">
+
+
+<div class="top_navigation">
+
+    <ul class="left">
+        <li><a id="chat-main-link" href="#" class="chat " data-action="chat-messages">Messages</a>
+            <a id="new-messages-count" href="/chat" style="display:none" class="notify_list_icn chatm chat" data-action="chat"><span class="new_event">0</span></a>
+        </li>
+        <li>    <a href="#1" class="msbx notify_list_icn notif ">Notifications</a>
+
+            <a id="new-notifications-count" href="#2" class="notify_list_icn notif" style="display:none"><span class="new_event upd">0</span></a>
+
+            <div class="ya_mbx3 hl_mbx" style="display: none">
+                <div class="ya_mbx3_top"></div>
+                <div class="ya_mbx_mid3">
+                    <div class="inn" id="notif-ttip">
+                        <div class="poptitebar">
+                            <h2>Notifications</h2>
+                        </div>
+                        <div class="indentLeft15 indentTop15"><img src="/img/preloader.gif"><br><br></div>
+                    </div>
+                </div>
+                <div class="ya_mbx_bot3"> &nbsp; </div>
+            </div>
+        </li>
+    </ul>
+
+    <ul class="right">
+
+        <li>
+            <a href="/invite" class="button red small invite_button">Invite friends</a>
+        </li>
+
+        <li id="profileMenu">
+            <a class="header-userPic" href="/profile">
+                <img src="/photos/2f/1c/27/46x46_5053718.jpeg" alt="dating Vovka, 36, Minsk, Belarus">                            </a>
+            <a href="/profile">
+                                <span>
+                                    Vovka                                </span>
+            </a>
+            <ul class="wid__dropDown wid__dropDown-profile" style="display: none;">
+                <li class="wid__dropDown-top"></li>
+                <li><a href="/profile">Edit / View profile</a></li>
+
+                <li><a href="/profile/photo-viewer">Photos</a></li>
+                <li><a href="/photo/add-popup" onclick="return(function(self,$){$.ajax({url:$(self).attr('href'),success:function(html){$('body').append(html);}});return false;})(this,jQuery);">Upload photos</a></li>
+            </ul>
+        </li>
+
+        <li class="account" id="accountMenu">
+            <a href="#">Account</a>
+            <ul class="wid__dropDown" style="display: none;">
+                <li class="wid__dropDown-top"></li>
+                <li class="wid__dropDown-user">
+                                <span class="b-user__photoFrame">
+                                    <a href="/profile"><img src="/photos/2f/1c/27/46x46_5053718.jpeg" alt="dating Vovka, 36, Minsk, Belarus"></a>
+                                </span>
+                                <span class="b-user__person">
+                                    <a href="/profile">Vovka</a>, 36                                </span>
+                                <span class="user__location">
+                                    Minsk, Belarus                                </span>
+                </li>
+                <li><a href="/invite">Invite Friends</a></li>
+                <li><a href="/settings/profile-settings">Settings</a></li>
+                <li><a href="/settings/email-notifications">Email Notifications</a></li>
+                <li><a href="/settings/payments">Payments</a></li>
+                <li><a href="/settings/change-password">Change Password</a></li>
+                <li><a href="/settings/blocked">Blocked Users</a></li>
+                <li class="delimit"></li>
+                <li><a href="https://itunes.apple.com/us/app/yangutu.-dating-for-40+/id633404424" target="_blank">Meetville iPhone</a></li>
+                <!--                            <li><a href="--><!--" target="_blank">--><!--</a></li>-->
+                <li class="delimit"></li>
+                <li><a class="logout-fb" target="_top" href="/logout">Logout</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <div class="clear"></div>
+</div>
+
+
+<div class="bot_navigation">
+    <a href="/dashboard">
+        <img src="/img/logo.png" class="logo" alt="Meetville">
+    </a>
+
+    <ul class="main_menu">
+        <li>
+            <a href="/dashboard">Home</a>
+        </li>
+        <li>
+            <a href="/search">Search</a>
+        </li>
+        <li>
+            <a href="/face-to-face">Encounters</a>
+        </li>
+        <li>
+            <a href="/video">Videobox</a>
+            <div class="main-menu-popap" style="display: none;">
+                <div class="arrow"></div>
+                <div class="main-menu-popap-inner cell2">
+                    <table><tbody><tr><td><ul>
+
+                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Accidents+%26+Fails">Accidents &amp; Fails</a></li>
+
+                        <li class=" hot"><a href="http://dev8.yangutu.com/video/tag/Adult">Adult</a></li>
+
+                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Animals%2C+Birds%2C+Fish">Animals, Birds, Fish</a></li>
+
+                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Art+%26+Animation">Art &amp; Animation</a></li>
+
+                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Cars">Cars</a></li>
+
+                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Cool+commercials">Cool commercials</a></li>
+
+                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Crazy%2C+Cranks%2C+Extreme">Crazy, Cranks, Extreme</a></li>
+
+                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Dating%2C+Sex%2C+Relationships">Dating, Sex, Relationships</a></li>
+
+                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Entertainment">Entertainment</a></li>
+
+                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Family+%26+Children">Family &amp; Children</a></li>
+
+                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Funny+%26+Cute">Funny &amp; Cute</a></li>
+                    </ul></td><td><ul>
+                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Hobbies+%26+Records">Hobbies &amp; Records</a></li>
+
+                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Humor%2C+Parody%2C+Satire">Humor, Parody, Satire</a></li>
+
+                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Lifehack+tips+%26+advice">Lifehack tips &amp; advice</a></li>
+
+                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Miscellaneous">Miscellaneous</a></li>
+
+                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Movies+%26+Trailers">Movies &amp; Trailers</a></li>
+
+                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Music+%26+Dance">Music &amp; Dance</a></li>
+
+                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/News%2C+Events%2C+Opinions">News, Events, Opinions</a></li>
+
+                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/People+%26+Stories">People &amp; Stories</a></li>
+
+                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Science+%26+Tech">Science &amp; Tech</a></li>
+
+                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Sports">Sports</a></li>
+
+                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Travel+%26+Outdoors">Travel &amp; Outdoors</a></li>
+
+                        <li class=" "><a href="http://dev8.yangutu.com/video/tag/Yangutu+Editor%27s+Choice">Yangutu Editor's Choice</a></li>
+                    </ul></td></tr></tbody></table>
+                </div>
+            </div>
+        </li>
+        <li class=" connections-menu floatRight">
+            <a href="#">My Connections</a>
+            <div class="main-menu-popap" style="display: none;">
+                <div class="arrow"></div>
+                <div class="main-menu-popap-inner ">
+                    <ul>
+                        <li><a href="/visitors">My guests</a></li>
+                        <li><a href="/favorites">Favorites</a></li>
+                        <li><a href="/signals/filter/photo-like">Photo likes</a></li>
+                        <li><a href="/favorites/added-you">Added you to favorites</a></li>
+                        <li class="wborder"><a href="/profile/hidden">Hidden users</a></li>
+                        <li><a href="/invite">Invite your friends</a></li>
+                    </ul>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+
+    <!-- // YNGTU-5095
+        //  deleted by YNGTU-6837-->
+
+    <div class="clr2"></div>
+</div>
+
+<script type="text/javascript">
+    //<![CDATA[
+    jQuery(document).ready(function() {
+        jQuery('div.bot_navigation > ul > li').bind('mouseenter', function () {
+            var $self = jQuery(this), $active,
+                    $submenu = $self.find('div.main-menu-popap');
+
+            if ($self.hasClass('active') && $submenu.is('visible')) {
+                return false;
+            }
+
+            $active = $self.parent().find('li.active:not(.current)');
+            $active.find('div.main-menu-popap').hide()
+                    .end().removeClass('active');
+
+            $self.addClass('active');
+
+            $submenu.css({
+                'position': 'absolute',
+                'top': '24px',
+                'left': 0,
+                'z-index': 1000
+            }).show();
+
+            $submenu.parent().css('z');
+
+            return false;
+        }).bind('mouseleave', function () {
+                    var $self = jQuery(this);
+
+                    $self.parents('ul')
+                            .find('li.active:not(.current)')
+                            .removeClass('active');
+
+                    $self.find('div.main-menu-popap').hide();
+
+                    $self.parents('.header')
+                            .attr('style', ''); // someday you'll fill it! :)
+
+                    return false;
+                });
+    });
+    //]]>
+</script>
+
+</div>
+</div>
+
+<div class="content">
+
+<div class="content_inn">
+
+<div class="vip__block_payment">
+<div class="vip__payment_colLeft">
+    <div class="vip__payment_colLeft">
+        <h2 class="std__header std__fs-mainH std__underline">Step 1. Choose your subscription plan</h2>
+
+        <div class="vip__block_inner">
+            <div class="vip__pay_label">
+                <label for="fid-28" class="vip__pay_label_label">
+                    <input type="radio" id="fid-28" name="fid" data-price="$107.88" value="28">
+                </label>
+
+                <div class="vip__pay_label_cost">
+                    <span class="vip__pay_label_cost_price">$8.99</span>
+                    <div class="vip__pay_label_term">per month</div>
+                </div>
+
+                <div class="vip__pay_label_descript">
+                    <span class="vip__pay_label_descript_term">1 year.</span><span class="vip__pay_label_descript_save"> Save 70%</span>
+                    <div class="vip__pay_label_descript_msg">one easy $107.88 payment</div>
+
+                </div>
+
+                <div class="currentPlanLabel hidden"></div>
+            </div><!-- /.label -->
+            <div class="vip__pay_label">
+                <label for="fid-27" class="vip__pay_label_label">
+                    <input type="radio" id="fid-27" name="fid" data-price="$65.94" value="27">
+                </label>
+
+                <div class="vip__pay_label_cost">
+                    <span class="vip__pay_label_cost_price">$10.99</span>
+                    <div class="vip__pay_label_term">per month</div>
+                </div>
+
+                <div class="vip__pay_label_descript">
+                    <span class="vip__pay_label_descript_term">6 month.</span><span class="vip__pay_label_descript_save"> Save 60%</span>
+                    <div class="vip__pay_label_descript_msg">one easy $65.94 payment</div>
+
+                </div>
+
+                <div class="currentPlanLabel hidden"></div>
+            </div><!-- /.label -->
+            <div class="vip__pay_label active">
+                <label for="fid-26" class="vip__pay_label_label">
+                    <input type="radio" id="fid-26" name="fid" data-price="$50.97" value="26" checked="checked">
+                </label>
+
+                <div class="vip__pay_label_cost">
+                    <span class="vip__pay_label_cost_price">$16.99</span>
+                    <div class="vip__pay_label_term">per month</div>
+                </div>
+
+                <div class="vip__pay_label_descript">
+                    <span class="vip__pay_label_descript_term">3 month.</span><span class="vip__pay_label_descript_save"> Save 40%</span>
+                    <div class="vip__pay_label_descript_msg">one easy $50.97 payment</div>
+
+                    <div class="vip__pay_label_mostPop"></div>
+                </div>
+
+                <div class="currentPlanLabel hidden"></div>
+            </div><!-- /.label -->
+            <div class="vip__pay_label">
+                <label for="fid-25" class="vip__pay_label_label">
+                    <input type="radio" id="fid-25" name="fid" data-price="$32.99" value="25">
+                </label>
+
+                <div class="vip__pay_label_cost">
+                    <span class="vip__pay_label_cost_price">$32.99</span>
+                    <div class="vip__pay_label_term">per month</div>
+                </div>
+
+                <div class="vip__pay_label_descript">
+                    <span class="vip__pay_label_descript_term">1 month.</span><span class="vip__pay_label_descript_save"> </span>
+                    <div class="vip__pay_label_descript_msg">one easy $32.99 payment</div>
+
+                </div>
+
+                <div class="currentPlanLabel hidden"></div>
+            </div><!-- /.label -->
+        </div>
+
+        <p id="vip-block" class="">
+            <b>Take notice: </b>The subscription plans are not cumulative. It means that if you change your subscription plan, the current one will be canceled and a new plan will enter into force.    </p>
+    </div>
+
+</div><!-- /.vip__payment_colLeft -->
+
+<div class="vip__payment_colRight">
+    <h2 class="std__header std__fs-mainH std__underline">Step 2. Choose your payment method</h2>
+
+    <div class="vip__block_inner">
+        <div class="vip__tabs">
+
+            <a id="pmc-cc-tab" href="#cc" class="vip__tab_item active" data-open="pmc-cc" data-close="pmc-paypal">
+                <i class="vip__tab_icon cards"></i>
+            </a>
+            <a id="pmc-paypal-tab" href="#paypal" class="vip__tab_item" data-close="pmc-cc" data-open="pmc-paypal">
+                <i class="vip__tab_icon paypal"></i>
+            </a>
+
+            <div class="std__clear"></div>
+        </div>
+
+        <div class="vip__tabContent">
+            <div id="pmc-cc-block" class="vip__tabContent_inner tab1">
+
+                <form action="/payments/index/stripe" method="POST" id="payment-form">
+                    <input type="hidden" name="fid" id="frm-fid" value="26">
+                    <span class="payment-errors">Please, enter valid ZIP code</span><!-- @Changed : example of error text -->
+                    <div class="vip__tabContent_dataCard">
+                        <div class="vip__tabContent_dataCard_number">
+                            <div class="vip__tabContent_dataCard_label">Card Number:</div>
+                            <input class="vip__tabContent_dataCard_field" type="text" data-stripe="number">
+
+                        </div>
+
+                        <div class="vip__tabContent_dataCard_date">
+                            <div class="vip__tabContent_dataCard_label">Exp. Date:</div>
+                            <div class="vip__tabContent_dataCard_field month">
+                                <input type="hidden" class="date-stripe" data-stripe="exp-month" value="01">
+                                <select class="sSelect">
+                                    <option selected="selected" value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </div>
+                            <span>/</span>
+                            <div class="vip__tabContent_dataCard_field year">
+                                <input type="hidden" class="date-stripe" data-stripe="exp-year" value="2013">
+                                <select class="sSelect">
+                                    <option selected="selected" value="2013">13</option>
+                                    <option value="2014">14</option>
+                                    <option value="2015">15</option>
+                                    <option value="2016">16</option>
+                                    <option value="2017">17</option>
+                                    <option value="2018">18</option>
+                                    <option value="2019">19</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="vip__tabContent_dataCard_code">
+                            <div class="vip__tabContent_dataCard_label">CVC:</div>
+                            <input class="vip__tabContent_dataCard_field" type="text" data-stripe="cvc">
+                        </div>
+
+                        <!-- @Changed : added block, start -->
+                        <div class="vip__tabContent_dataCard_code zip">
+                            <div class="vip__tabContent_dataCard_label">ZIP code:</div>
+                            <input class="vip__tabContent_dataCard_field" type="text">
+                        </div>
+                        <!-- @Changed : added block, end -->
+
+                        <div class="std__clear"></div>
+
+                        <div class="vip__tabContent_currency">
+                            <i class="vip__tab_icon visa"></i><i class="vip__tab_icon mc"></i><i class="vip__tab_icon dn"></i><i class="vip__tab_icon ae"></i><i class="vip__tab_icon dc"></i><i class="vip__tab_icon jcb"></i>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="vip__tabContent_descript">
+                        Your card will be charged <span id="chosen-vip-price">$50.97</span>. <br>
+                        <a class="vip__tabContent_details ygPopup" data-selector="#service_popup" href="#">Billing details</a>
+                    </div>
+
+                    <div class="vip__tabContent_purchaseBtn">
+                        <input type="submit" class="button big red" value="Purchase now"><!-- @Changed : button class from dark-red to red -->
+                    </div>
+
+                    <div class="std__clear"></div>
+                </form>
+            </div>
+            <div id="pmc-paypal-block" class="vip__tabContent_inner tab2" style="display:none;">
+                <div class="vip__tabContent_descript servInfo_vip_iframe">
+                    Your card will be charged <span id="chosen-vip-price"></span>. <a id="service_conditions" class="vip__tabContent_details ygPopup" data-selector="#service_popup" href="#">Billing details</a>
+                </div>
+
+                <div class="vip__tabContent_currency">
+                    Make secure payment with&nbsp;&nbsp;<i class="vip__tab_icon paypal_big"></i>
+                </div>
+
+                <div class="vip__tabContent_purchaseBtn">
+                    <form method="post" action="/payment/form/pm/paypal" id="paypal-form">
+                        <input type="hidden" name="gateway" value="paypal">
+                        <input type="hidden" name="fid" id="frm-fid" value="26">
+
+
+                        <input type="hidden" name="backurl" value="/payments/vip/information">
+
+                        <table class="hidden">
+                            <tbody><tr>
+                                <td class="first-cell"><span>Meetville VIP:</span></td>
+                                <td>
+                                    <div class="fixWidth240 left indentRight10">
+                                        <select name="payment_option" id="group_options" class="sselect" style="display: none;">
+                                            <option value="24" label="3 days subscription">3 days subscription</option>
+                                            <option value="25" label="1 month subscription">1 month subscription</option>
+                                            <option value="26" label="3 months subscription">3 months subscription</option>
+                                            <option value="27" label="6 months subscription" selected="selected">6 months subscription</option>
+                                            <option value="28" label="1 year subscription">1 year subscription</option>
+                                        </select><div class="newListSelected" tabindex="0" style="position: static;"><div class="selectedTxt">6 months subscription</div><div class="SSContainerDivWrapper" style="visibility: visible; top: 17px; height: 0px; left: 0px; display: none;"><ul class="newList" style="height: 0px;"><li><a href="JavaScript:void(0);">3 days subscription</a></li><li><a href="JavaScript:void(0);">1 month subscription</a></li><li><a href="JavaScript:void(0);">3 months subscription</a></li><li><a href="JavaScript:void(0);" class="hiLite">6 months subscription</a></li><li><a href="JavaScript:void(0);">1 year subscription</a></li></ul></div></div>			</div>
+                                    <span class="gray fs9 indentTop5 tipsUnder">Choose your subscription period.</span>
+                                    <div class="clr2"></div>
+                                </td>
+                            </tr>
+                            </tbody></table>
+                        <a id="submit-form" href="#" class="button big dark-red">Purchase now</a>
+                    </form>
+
+                    <script type="text/javascript">
+                        $(function(){
+                            $('#paypal-form a#submit-form').on('click', function(){
+                                $('#paypal-form').submit();
+                            });
+
+                            $('#paypal-form').submit(function(){
+                                if ($(this).data('inprogress')) {
+                                    return false;
+                                }
+
+                                $(this).data('inprogress', true);
+                                $('#submit-info').show();
+                                return true;
+                            });
+                        });
+                    </script>                        </div>
+            </div>
+
+        </div>
+    </div>
+</div><!-- /.vip__payment_colRight -->
+<div class="clr2"></div>
+</div><!-- /.vip__block_payment -->
+
+<div class="vip__block_descript">
+    <h2 class="std__header std__fs-bigH">VIP subscription includes</h2>
+
+    <div class="vip__block_descript_item">
+        <h3 class="std__header std__fs-smallH vip__block_descript_item_header">Unlimited communication</h3>
+
+        <ul class="vip__block_descript_list">
+            <li><i class="vip__block_descript_list_point"></i>Send unlimited messages</li>
+            <li><i class="vip__block_descript_list_point"></i>Receive and reply to messages</li>
+            <li><i class="vip__block_descript_list_point"></i>Read and respond to messages on your mobile</li>
+            <li><i class="vip__block_descript_list_point"></i>Real-time chat with online users</li>
+        </ul>
+    </div><!-- /.vip__block_descript_item -->
+
+    <div class="vip__block_descript_item">
+        <h3 class="std__header std__fs-smallH vip__block_descript_item_header">Easy connections</h3>
+
+        <ul class="vip__block_descript_list">
+            <li><i class="vip__block_descript_list_point"></i>See who added you to Favorites</li>
+            <li><i class="vip__block_descript_list_point"></i>Browse singles  anonymously</li>
+            <li><i class="vip__block_descript_list_point"></i>Access to profiles in Encounters</li>
+            <li><i class="vip__block_descript_list_point"></i>View who's interested in you in Encounters</li>
+        </ul>
+    </div><!-- /.vip__block_descript_item -->
+
+    <div class="vip__block_descript_item">
+        <h3 class="std__header std__fs-smallH vip__block_descript_item_header">More benefits</h3>
+
+        <ul class="vip__block_descript_list">
+            <li><i class="vip__block_descript_list_point"></i>Hide members from view</li>
+            <li><i class="vip__block_descript_list_point"></i>Easy to turn off billing renewal to avoid unwanted payment</li>
+            <li><i class="vip__block_descript_list_point"></i>Top priority customer service</li>
+        </ul>
+    </div><!-- /.vip__block_descript_item -->
+
+    <div class="std__justify_helper"></div>
+</div><!-- /.vip__block_descript -->
+
+<div class="vip__block_faq std__layer_grey-lite">
+    <h2 class="std__header std__fs-mainH std__underline">FAQ</h2>
+
+    <div class="vip__block_faq_colLeft">
+
+        <div class="vip__block_faq_item">
+            <h3 class="std__header std__fs-smallH">Why was my subscription automatically continued?</h3>
+
+            <p>
+                So you're happily emailing along with someone you're discovering to be a really great match, when, without warning, your subscription expires! No one wants that. Uninterrupted access to the millions of potential matches on Meetville.com is very important to our subscribers; therefore, all subscriptions paid for by a credit card or PayPal are automatically renewed at the end of the subscription period.
+            </p>
+        </div>
+
+        <div class="vip__block_faq_item">
+            <h3 class="std__header std__fs-smallH">Do I have to subscribe to Meetville to see my daily matches?</h3>
+
+            <p>
+                No, everyone can see their daily matches every day. Only those who wish to contact one of their matches must subscribe to Meetville.
+            </p>
+        </div>
+
+    </div><!-- /.vip__block_faq_colLeft -->
+
+    <div class="vip__block_faq_colRight">
+
+        <div class="vip__block_faq_item">
+            <h3 class="std__header std__fs-smallH">How can I cancel my Meetville subscription?</h3>
+
+            <p>
+                To cancel your subscription, go to Account → Payments. In this section you’ll find all information about subscription canceling.
+            </p>
+        </div>
+
+        <div class="vip__block_faq_item">
+            <h3 class="std__header std__fs-smallH">What can I do as free member?</h3>
+
+            <p>
+                As a free member, you'll be able only to receive daily matches, perform people searches, view users profiles, send and receive winks, view and post photos, rate users photos, watch videos. The same features are available with our mobile apps.
+            </p>
+        </div>
+
+    </div><!-- /.vip__block_faq_colRight -->
+    <div class="std__clear"></div>
+</div><!-- /.vip__block_faq -->
+
+<div class="vip__block_testimon">
+    <h2 class="std__header std__fs-mainH std__underline">Testimonials</h2>
+
+    <div class="vip__block_testimon_item">
+        <span class="quot">”</span>
+        <blockquote>Short messages turned into a long serious and wonderful relationships!</blockquote>
+        <div class="author">
+            ― <span class="vip__link">Vasilioc</span>, 38
+            <span class="vip__block_tooltip">
+                <span class="vip__block_tooltip_img">
+                    <img src="/img/vip/user1.jpg" alt="#">
+                </span>
+                <span class="vip__block_tooltip_content">
+                    <span class="vip__block_tooltip_name"><span class="vip__link">Vasilioc</span>, 38</span>
+                    <span class="vip__block_tooltip_location">
+                        San Francisco, <br>
+                        United States
+                    </span>
+                </span><!-- /.vip__block_tooltip_content -->
+                <span class="arr"><span class="arr-i"></span></span>
+            </span><!-- /.vip__block_tooltip -->
+        </div><!-- /.author -->
+    </div>
+
+    <div class="vip__block_testimon_item">
+        <span class="quot">”</span>
+        <blockquote>I just want to thank you so very much. Over one year ago I met my love here and we are still together!</blockquote>
+        <div class="author">
+            ― <span class="vip__link">Richardson</span>, 45
+
+            <span class="vip__block_tooltip">
+                    <span class="vip__block_tooltip_img">
+                        <img src="/img/vip/user2.jpg" alt="#">
+                    </span>
+                    <span class="vip__block_tooltip_content">
+                        <span class="vip__block_tooltip_name"><span class="vip__link">Richardson</span>, 45</span>
+                        <span class="vip__block_tooltip_location">
+                            New York, <br>
+                            United States
+                        </span>
+                    </span><!-- /.vip__block_tooltip_content -->
+                    <span class="arr"><span class="arr-i"></span></span>
+                </span><!-- /.vip__block_tooltip -->
+        </div>
+    </div>
+
+    <div class="vip__block_testimon_item">
+        <span class="quot">”</span>
+        <blockquote>I’m a newcomer here, but I’ve already met new nice people and soon I’m going out on a date!</blockquote>
+        <div class="author">
+            ― <span class="vip__link">Olivia</span>, 48
+            <span class="vip__block_tooltip">
+                <span class="vip__block_tooltip_img">
+                    <img src="/img/vip/user3.jpg" alt="#">
+                </span>
+                <span class="vip__block_tooltip_content">
+                    <span class="vip__block_tooltip_name"><span class="vip__link">Olivia</span>, 48</span>
+                    <span class="vip__block_tooltip_location">
+                        Boston, <br>
+                        United States
+                    </span>
+                </span><!-- /.vip__block_tooltip_content -->
+                <span class="arr"><span class="arr-i"></span></span>
+            </span><!-- /.vip__block_tooltip -->
+        </div>
+    </div>
+    <div class="std__justify_helper"></div>
+</div><!-- /.vip__block_testimon -->
+
+<!-- http://jira.yangutu.com/browse/YNGTU-7531 Ethnio High Traffic Activation Code -->
+<script type="text/javascript" language="javascript" src="//ethn.io/remotes/81616" async="true" charset="utf-8"> </script>
+
+<a href="#" id="service_conditions" class="ygPopup service_conditions_on hidden" data-selector="#service_popup"></a>
+
+<div class="yangutu_popap rubber" id="service_popup" style="width:50%; display: none;">
+    <a href="#" id="service_popup_close" class="popCloseServiceCond"><img alt="" class="cls4 ygPopupClose" src="/img/close_ic.png"></a>
+    <div class="yp_top">
+        <div class="rubber_top_right"></div>
+    </div>
+    <div class="yp_content_left">
+        <div class="yp_content_right">
+            <div class="yp_grad service_conditions">
+                <h2>Subscriptions and Billing</h2>
+
+                <p>
+                    <b>Subscription Plans and Policies.</b>
+                    The Subscription Policies that are disclosed to you in subscribing to the Services are deemed part of these Terms.                    </p>
+
+                <p>
+                    <b>Acceptable Methods of Payments.</b>
+                    Payment for services can only be made via a credit/debit card (Visa, Mastercard) or PayPal. Wire transfers cannot be used for subscription based products.                    </p>
+
+                <p>
+                    <b>Recurring Billing.</b>
+                    All subscription plans to the Services consist of an initial period with a one-time charge. By choosing a recurring subscription plan, you agree that your subscription has an initial and recurring payment feature and you accept responsibility for all recurring charges prior to cancellation. We may submit periodic charges (e.g., monthly, per 3 months, per half year, depending on chosen subscription plan) without further authorization from you, until you provide prior notice (receipt of which is confirmed by us) that you have terminated this authorization or wish to change your payment method. Such notice will not affect charges submitted before we reasonably could act. To terminate your authorization or change your payment method, go to Payment Settings.                    </p>
+
+                <p>
+                    <b>Current Information Required.</b>
+                    You must provide complete and accurate information for your billing account and update any changes (such as a change in billing address, credit card number, or credit card expiration date) to keep your account current. You must also notify us or our payment processor if your payment method is canceled or if you become aware of a potential breach of security (such as the unauthorized disclosure or use of your user name or password). If you fail to provide any of the foregoing information, you agree that we may continue charging you for any use of the service under your billing account unless you have terminated your subscription for the service as set forth above.                    </p>
+
+                <p>
+                    <b>Change in Amount Authorized.</b>
+                    If the amount to be charged to your Billing Account varies from then-current amount (other than due to the imposition or change in the amount of state sales taxes), you have the right to receive, and we shall provide, notice of the amount to be charged and the date of the charge before the scheduled date of the transaction. Any agreement you have with your payment provider will govern your use of your Payment Method. You agree that we may accumulate charges incurred and submit them as one or more aggregate charges during or at the end of each billing cycle.                    </p>
+
+                <p>
+                    <b>Auto-Renewal.</b>
+                    Unless you opt out of auto-renewal, which can be done through your Payment Settings, your subscription to the Services will be automatically extended for successive renewal periods of the same duration as the originally selected subscription term. To change or resign your subscription, go to Payment Settings. Your subscription will not be renewed after your then-current term expires. However, you won't be eligible for a prorated refund of any portion of the subscription fee paid for the then-current subscription period.                    </p>
+
+
+                <h2 class="indentTop40">Termination</h2>
+
+                <p>
+                    <b>By Member.</b>
+                    You may terminate your membership and/or subscription at any time, for any reason, by following the instructions in your Payment Settings.                    </p>
+
+                <p>
+                    <b>By Us.</b>
+                    We may terminate your membership and/or subscription for any reason or no reason. We are not required, and may be prohibited, from disclosing a reason for the termination of your account.                    </p>
+
+                <p>
+                    <b>Subscriptions.</b>
+                    If you terminate your subscription, your subscription will remain active until the end of your then-current subscription period (that is, the subscription period through which you had paid prior to your termination).                        <b>If we terminate your membership because you have breached these Terms, you will not be entitled to any refund of unused subscription fees.</b>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="yp_bot">
+        <div class="rubber_bot_right"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+</script>
+<script type="text/javascript">
+    $(function(){
+        $('.vip__block_inner div.active').click();
+    })
+</script>
+
+<div class="clr2"></div>
+
+</div>
+
+</div>
+
+<div class="clr2"></div>
+<input type="hidden" class="yangutu_user_id" value="1038367">
+<div class="footer" id="footer">
+
+    <div class="footer_inn">
+
+        <ul>
+            <li><a href="http://dev8.yangutu.com">Home</a></li>
+            <li><a href="http://dev8.yangutu.com/dating/about">About Meetville</a></li>
+            <li><a href="http://dev8.yangutu.com/dating/help ">Help Center</a></li>
+        </ul>
+        <ul>
+            <li><a href="http://dev8.yangutu.com/dating/terms">Terms of use</a></li>
+            <li><a href="http://dev8.yangutu.com/dating/policy">Privacy</a></li>
+            <li><a href="http://dev8.yangutu.com/dating/safety">Safety Tips</a></li>
+            <li><a rel="nofollow" href="http://dev8.yangutu.com/dating/scams">Scam warning</a></li>
+        </ul>
+        <ul>
+            <li><a href="https://dev8.yangutu.com/payments/vip" class="iVip" style="position:relative; left:-20px;">Meetville VIP</a></li>
+            <li><a href="https://www.facebook.com/meetville.dating">Our news</a></li>
+            <li><a href="http://dev8.yangutu.com/dating/feedback">Contact Us</a></li>
+            <li><a href="http://dev8.yangutu.com/invite">Invite friends</a></li>
+        </ul>
+        <ul>
+            <li><a href="https://itunes.apple.com/us/app/yangutu.-dating-for-40+/id633404424">Meetville iPhone</a></li>
+            <!--    <li><a href="--><!--">--><!--</a></li>-->
+        </ul>
+        <div class="left">
+            <p>© 2010-2013 Meetville.  All rights reserved.</p>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+
+</div>
+
+
+
+
+<div id="fb-root" class=" fb_reset"><script src="https://connect.facebook.net/en_US/all.js" async=""></script><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tab-index="-1" src="https://s-static.ak.facebook.com/connect/xd_arbiter.php?version=25#channel=f3483297e4&amp;origin=https%3A%2F%2Fdev8.yangutu.com&amp;channel_path=%2Ffb_receiver.php%3Ffb_xd_fragment%23xd_sig%3Df3460c7774%26" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<script type="text/javascript" async="true">
+    var fbReady = false;
+    $(document).ready(function() {
+        checkCanvas("https://dev8.yangutu.com/dyangutucom");
+
+        window.fbAsyncInit = function() {
+            FB.init({
+                appId : '411595028907523',
+                status : false, // check login status
+                cookie : true, // enable cookies to allow the server to access the session
+                xfbml  : true,  // parse XFBML
+                oauth : true,
+                channelUrl: document.location.protocol + '//dev8.yangutu.com/fb_receiver.php'
+            });
+
+            fbReady = true;
+
+
+
+
+            //delay checked for login/logout
+            setTimeout(function(){
+                FB.getLoginStatus(function(){})
+            }, 250);
+        };
+        var e = document.createElement('script');
+        e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+        e.async = true;
+        document.getElementById('fb-root').appendChild(e);
+    });
+</script>
+
+
+<script type="text/javascript">
+    var _gaq = _gaq || [],
+            _gat,
+            gaTracker;
+
+    _gaq.push(['_setAccount', 'UA-15423329-4']);
+    _gaq.push(['_setDomainName', '.meetville.com']);
+    _gaq.push(['_setCustomVar', 1, 'User Type', 'Member', 3]);
+
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        ga.onload = function() {
+            window.gaTracker = _gat._getTracker("UA-15423329-4");
+        };
+    })();
+</script>
+
+
+<div id="cluetip-waitimage" style="position: absolute; display: none;"></div><div id="cluetip" style="display: none; position: absolute;"><div id="cluetip-outer" class="ui-cluetip-outer" style="position: relative; z-index: 97;"><h3 id="cluetip-title" class="ui-widget-header ui-cluetip-header"></h3><div id="cluetip-inner" class="ui-widget-content ui-cluetip-content"></div></div><div id="cluetip-extra"></div><div id="cluetip-arrows" class="cluetip-arrows"></div></div><div id="top-msg" class="notification"><div class="inner"><a href="#" class="close"></a><div class="icon"></div><div class="message"></div></div></div><div id="tooltip" style="display: none; top: 33px; left: 377px; right: auto;" class=""><h3 style="">Your correspondence is here</h3><div class="body" style="display: none;"></div><div class="url" style="display: none;"></div></div></body></html>

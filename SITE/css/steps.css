@@ -52,6 +52,11 @@ textarea.err, .err .newListSelected, .err .newList{border-color: #990000; border
             .steps.step-4 .steps__progress_point.point-3 {font-weight: normal; color: #333;}
             .steps.step-4 .steps__progress_point.point-4 {color: #436187;}
 
+            .steps.step-3.stepFull-3 .steps__progress_line {background-position: 0 -128px;}
+            .steps.step-2.stepFull-2 .steps__progress_line {background-position: 0 -160px;}
+            .steps.step-1.stepFull-1 .steps__progress_line {background-position: 0 -192px;}
+
+
 .steps__description {width: 190px; float: left; font-size: 14px; color: #333; padding-top: 13px;}
     .steps__description > .std__header {margin-bottom: 12px;}
 .steps__content {margin-left: 250px;}
