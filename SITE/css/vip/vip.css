@@ -2,7 +2,8 @@
 .vip__head {text-align: center; height: 82px; margin-bottom: 30px;}
     .vip__head_userPic {width: 76px; height: 76px; }
     .vip__head > .std__header {display: inline-block; margin: 0; vertical-align: middle; line-height: 116px;}
-    .vip__head.single_header > .std__header {font-size: 36px;}
+    .vip__head.single_header {height: 40px;}
+    .vip__head.single_header > .std__header {font-size: 36px; line-height: 40px}
     .vip__head.withUser > .std__header {text-align: left;   line-height: 36px; width: auto; vertical-align: top;}
     .vip__head > .std__header span {font-weight: normal;}
     .vip__head .b-user__photoFrame {width: 80px; display: inline-block; box-sizing: border-box; -moz-box-sizing: border-box; margin-right: 27px; vertical-align: middle;}
