@@ -1,0 +1,586 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <title>Page title</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/head.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/elements/select.css">
+    <link rel="stylesheet" href="../css/vip/vip.css"><script src="../js/jquery.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'})
+                console.log(obj.width())
+
+            });
+        }
+        stsStyle();
+    </script>
+
+</head>
+<body>
+<!-- Start of Pattern Header  for guests -->
+<div class="head__wrap">
+    <div class="head__inner">
+
+        <a href="#" class="head__logo">
+            <img class="head__logo_img" src="../img/head/logo.png" alt="Meetville"/>
+        </a>
+
+        <div class="head__menu">
+            <a class="head__menu_item active" href="#">Search</a>
+            <a class="head__menu_item"  href="#">Encounters</a>
+            <div class="head__menu_item head__menu_hovering _jDropDown_widthFix _jDropDown_hover">Connections
+
+                <ul class="head__toolbar_subMenu _jDropDown_widthFix_menu">
+                    <li class="head__toolbar_subMenu_item"><a href="#">My guests</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">My favorites</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">My likes</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Added you to favorites</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Hidden users</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Likes me</a></li>
+                    <li class="head__toolbar_subMenu_item head__toolbar_subMenu_item_divider"></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Invite your friends</a></li>
+                </ul>
+            </div>
+            <a class="head__menu_item" href="#">Messages<span class="bubble_counter">197</span></a>
+
+        </div><!-- /.head__menu -->
+
+        <ul class="head__toolbar">
+            <li class="head__toolbar_item head__toolbar_item_iconed head__toolbar_item_signals action _jDropDownActivate"><i  title="Notifications" class="icon"></i><span class="counter">197</span>
+
+                <div class="head__dropDown">
+
+                    <div class="head__dropDown_arrow"></div>
+                    <div class="head__dropDown_header">Notifications</div>
+                    <!-- dropDown list -->
+                    <div class="head__dropDown_listItem">
+                        <img class="head__dropDown_listItem_userPic" src="../img/user/user1.jpg" alt=""/>
+                        <span class="head__dropDown_listItem_descr">
+                            <span class="head__dropDown_listItem_who"><span class="head__dropDown_listItem_name">Jeannette</span>, 37</span>
+                            <span class="head__dropDown_listItem_when">Today 8:13 AM</span>
+                            <div class="head__dropDown_listItem_what">Checked out your profile</div>
+                        </span>
+                        <span class="head__dropDown_clear"></span>
+                    </div><!-- /.head__dropDown_listItem -->
+
+                    <div class="head__dropDown_listItem">
+                        <img class="head__dropDown_listItem_userPic" src="../img/user/user1.jpg" alt=""/>
+                        <span class="head__dropDown_listItem_descr">
+                            <span class="head__dropDown_listItem_who"><span class="head__dropDown_listItem_name">Jeannette</span>, 37</span>
+                            <span class="head__dropDown_listItem_when">Today 8:13 AM</span>
+                            <span class="head__dropDown_listItem_what">Has liked your photo</span>
+                        </span>
+                        <img class="head__dropDown_listItem_userPic" src="../img/user/user2.jpg" alt=""/>
+                        <span class="head__dropDown_clear"></span>
+                    </div><!-- /.head__dropDown_listItem -->
+
+                    <div class="head__dropDown_listItem">
+                        <img class="head__dropDown_listItem_userPic" src="../img/user/user1.jpg" alt=""/>
+                        <span class="head__dropDown_listItem_descr">
+                            <span class="head__dropDown_listItem_who"><span class="head__dropDown_listItem_name">Jeannette</span>, 37</span>
+                            <span class="head__dropDown_listItem_when">Today 8:13 AM</span>
+                            <span class="head__dropDown_listItem_what">Request you to upload more photos of yours</span>
+                        </span>
+                        <span class="head__dropDown_clear"></span>
+                    </div><!-- /.head__dropDown_listItem -->
+
+                    <div class="head__dropDown_listItem">
+                        <img class="head__dropDown_listItem_userPic" src="../img/user/user1.jpg" alt=""/>
+                        <span class="head__dropDown_listItem_descr">
+                            <span class="head__dropDown_listItem_who"><span class="head__dropDown_listItem_name">Jeannette</span>, 37</span>
+                            <span class="head__dropDown_listItem_when">Today 8:13 AM</span>
+                            <span class="head__dropDown_listItem_what">Wants to get to know you better</span>
+                        </span>
+                        <span class="head__dropDown_clear"></span>
+                    </div><!-- /.head__dropDown_listItem -->
+                    <!-- /dropDown list -->
+                    <div class="head__dropDown_last"><a href="#">View All Notifications</a></div>
+
+                </div><!-- /.head__dropDown -->
+
+            </li>
+            <!--
+            <li class="head__toolbar_item head__toolbar_item_iconed head__toolbar_item_messages action"><i title="Messages" class="icon"></i><span class="counter">25</span></li>
+            -->
+            <li class="head__toolbar_item head__toolbar_item_divider"></li>
+            <li class="head__toolbar_item _jDropDownActivate head__user _jDropDown_widthFix">
+                <img class="head__user_pic" src="../img/head/user.jpg" alt="Andersonas"/>Andersonads
+
+                <ul class="head__toolbar_subMenu _jDropDown_widthFix_menu">
+                    <li class="head__toolbar_subMenu_item"><a href="#">Edit / View profile</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Photos</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Upload photos</a></li>
+                </ul>
+
+            </li>
+            <li class="head__toolbar_item head__toolbar_item_divider"></li>
+            <li class="head__toolbar_item head__toolbar_item_iconed head__toolbar_item_settings _jDropDownActivate"><i title="Settings" class="icon"></i>
+
+                <ul class="head__toolbar_subMenu">
+                    <li class="head__toolbar_subMenu_item"><a href="#">Invite friends</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Settings</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Email Notifications</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Payments</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Blocked Users</a></li>
+                    <li class="head__toolbar_subMenu_item head__toolbar_subMenu_item_divider"></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Meetville iPhone</a></li>
+                    <li class="head__toolbar_subMenu_item head__toolbar_subMenu_item_divider"></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Logout</a></li>
+                </ul>
+
+            </li>
+        </ul>
+
+    </div><!-- /.head__inner -->
+</div><!-- /.head__wrap -->
+<!-- End of Pattern Header  for guests -->
+
+<!-- CONTENT -->
+<div class="content">
+
+<div class="content_inn vip__page">
+
+<div class="vip__head single_header">
+
+    <h1 class="std__header std__fs-bigH">
+        Take full advantage of Meetville VIP
+    </h1>
+
+</div><!-- /.vip__head -->
+
+<div class="vip__section">
+
+<div class="vip__section_left">
+
+<h2 class="std__header std__fs-mainH">1. Choose your plan</h2>
+
+<ul class="vip__plan_list">
+
+    <li class="vip__plan_list_item">
+
+        <input type="radio" name="1" id="1"/>
+        <label for="1">
+
+            <span class="vip__plan_list_check"></span>
+
+                            <span class="vip__plan_price">
+                                $8.99<span class="vip__plan_price_sup">/mo</span>
+                            </span>
+
+                            <span class="vip__plan_description">
+
+                                <span class="vip__plan_description_term">1 year</span>
+                                <span class="vip__plan_description_bill">billed $107.88</span>
+                                <span class="vip__plan_description_tips bright">Meetville Guarantee </span>
+                                <span class="vip__plan_description_tips vip__withTooltip">Email Read Notification
+                                    <span class="vip__tooltip">
+
+                                        <h3 class="std__header std__fs-smallH std__underline ">Email Read Notification</h3>
+
+                                        Find out when your matches read the messages you send.
+
+                                        <a class="vip__tooltip_more" href="#">Learn more</a>
+
+                                        <span class="vip__tooltip_arr">
+                                            <span class="vip__tooltip_arr_inn"></span>
+                                        </span>
+                                    </span>
+                                </span>
+
+                            </span>
+
+                            <span class="vip__plan_description_label">
+                                Save <span class="vip__plan_description_discount">70%</span>
+                            </span>
+
+        </label>
+    </li><!-- /.vip__plan_list_item -->
+
+    <li class="vip__plan_list_item">
+
+        <input type="radio" name="1" id="2"/>
+        <label for="2">
+            <span class="vip__plan_list_check"></span>
+
+                            <span class="vip__plan_price">
+                                $10.99<span class="vip__plan_price_sup">/mo</span>
+                            </span>
+
+                            <span class="vip__plan_description rows_3">
+
+                                <span class="vip__plan_description_term">6 months</span>
+                                <span class="vip__plan_description_bill">billed $65.94</span>
+                                <span class="vip__plan_description_tips bright">Meetville Guarantee</span>
+
+                            </span>
+
+                            <span class="vip__plan_description_label">
+                                Save <span class="vip__plan_description_discount">60%</span>
+                            </span>
+
+        </label>
+    </li><!-- /.vip__plan_list_item -->
+
+    <li class="vip__plan_list_item">
+
+        <input type="radio" name="1" id="3"/>
+        <label for="3">
+            <span class="vip__plan_list_check"></span>
+
+                            <span class="vip__plan_price">
+                                $16.99<span class="vip__plan_price_sup">/mo</span>
+                            </span>
+
+                            <span class="vip__plan_description rows_2">
+
+                                <span class="vip__plan_description_term">3 months</span>
+                                <span class="vip__plan_description_bill">billed $50.97</span>
+
+                            </span>
+
+                            <span class="vip__plan_description_label">
+                                Save <span class="vip__plan_description_discount">40%</span>
+                            </span>
+
+        </label>
+    </li><!-- /.vip__plan_list_item -->
+
+    <li class="vip__plan_list_item">
+
+        <input type="radio" name="1" id="4"/>
+        <label for="4">
+
+            <span class="vip__plan_list_check"></span>
+
+                            <span class="vip__plan_price">
+                                $32.99<span class="vip__plan_price_sup">/mo</span>
+                            </span>
+
+                            <span class="vip__plan_description rows_2">
+
+                                <span class="vip__plan_description_term">1 month</span>
+                                <span class="vip__plan_description_bill">billed $32.99</span>
+
+                            </span>
+
+        </label>
+    </li><!-- /.vip__plan_list_item -->
+
+</ul><!-- /.vip__plan_list -->
+
+<h2 class="std__header std__fs-mainH">2. Enter payment information</h2>
+
+<div class="vip__payment active_2">
+
+    <div class="vip__payment_tabs">
+        <div class="vip__payment_tabItem tab_1">
+            <i class="icon icon-visa"></i>
+            <i class="icon icon-mc"></i>
+            <i class="icon icon-ae"></i>
+            <i class="icon icon-dn"></i>
+            <i class="icon icon-jcb"></i>
+            <i class="icon icon-dc"></i>
+        </div>
+        <div class="vip__payment_tabItem tab_2">
+            <i class="icon icon-paypal"></i>
+        </div>
+    </div><!-- /.vip__payment_tabs -->
+
+    <div class="vip__payment_tabContent content_1">
+
+        <div class="vip__payment_form">
+            <div class="vip__payment_form_row">
+                <div class="vip__payment_form_label">Card Number</div>
+                <div class="vip__payment_form_field">
+                    <input type="text" class="vip__payment_form_field_cardNumber">
+
+                </div>
+            </div><!-- /.vip__payment_form_row -->
+
+            <div class="vip__payment_form_row">
+                <div class="vip__payment_form_label">Exp. Date</div>
+                <div class="vip__payment_form_field">
+
+                    <div class="vip__payment_form_field_select">
+                        <select class="sSelect" name="11" id="11">
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                            <option value="4">04</option>
+                        </select>
+                    </div>
+                    <div class="vip__payment_form_field_separator">/</div>
+                    <div class="vip__payment_form_field_select">
+                        <select class="sSelect" name="22" id="22">
+                            <option value="1">0011</option>
+                            <option value="2">0022</option>
+                            <option value="3">0033</option>
+                            <option value="4">0044</option>
+                        </select>
+                    </div>
+                </div><!-- /.vip__payment_form_field -->
+            </div><!-- /.vip__payment_form_row -->
+
+            <div class="vip__payment_form_row">
+                <div class="vip__payment_form_label">CVC/CVV</div>
+                <div class="vip__payment_form_field">
+                    <input type="text" class="vip__payment_form_field_code">
+                    <i class="icon icon-card"></i>
+                    <span class="vip__payment_form_field_code_tip">See on the back of your card</span>
+                </div>
+            </div><!-- /.vip__payment_form_row -->
+
+            <div class="vip__payment_form_row">
+                <div class="vip__payment_form_label">ZIP Code</div>
+                <div class="vip__payment_form_field">
+                    <input type="text" class="vip__payment_form_field_zip">
+                </div>
+            </div><!-- /.vip__payment_form_row -->
+
+            <div class="vip__payment_form_message">Your card will be charged $65.94. <a href="#">Billing details</a></div>
+
+            <div class="vip__payment_form_submit">
+                <a class="button big dark-red flat" href>Subscribe Now</a>
+            </div>
+
+        </div><!-- /.vip__payment_form -->
+    </div><!-- /.vip__payment_tabContent -->
+
+    <div class="vip__payment_tabContent content_2">
+        <div class="vip__payment_form_message">Your card will be charged $65.94. <a href="#">Billing details</a></div>
+
+        <div class="vip__payment_form_paypalMessage">MAKE SECURE PAYMENT WITH <i class="icon icon-paypal"></i></div>
+
+        <div class="vip__payment_form_submit">
+            <a class="button big dark-red flat" href>Subscribe Now</a>
+        </div>
+    </div><!-- /.vip__payment_tabContent -->
+
+</div><!-- /.vip__payment -->
+
+<div class="vip__payment_agreement vip__withTooltip">By clicking Subscribe Now I agree to the Meetville <a href>Terms of use</a>. Learn <a href class="vip__withTooltip">more</a>.
+                    <span class="vip__tooltip big billing">
+
+                        <h3 class="std__header std__fs-smallH std__underline">Billing – Continuous Service</h3>
+
+                        Your subscription will continue indefinitely unless cancelled by you. After your initial subscription commitment period, and again after any subsequent subscription period, your subscription will automatically continue for an additional equivalent period, at the same price. By subscribing, you authorize Meetville to charge your credit or debit card now and again at the beginning of any subsequent subscription period. To cancel future subscription periods at any time, go to your "account" page.
+
+                        <span class="vip__tooltip_arr">
+                            <span class="vip__tooltip_arr_inn"></span>
+                        </span>
+
+                        <a class="close" href="#"><i class="icon icon-close-grey"></i></a>
+                    </span>
+</div>
+
+</div><!-- /.vip__section_left -->
+
+<div class="vip__section_right">
+
+    <table class="vip__features">
+        <tr>
+            <th>Meetville features</th>
+            <th>VIP</th>
+            <th>Free</th>
+        </tr>
+
+        <tr>
+            <td>Send unlimited messages</td>
+            <td><i class="icon icon-ok"></i></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Full unlimited mobile access</td>
+            <td><i class="icon icon-ok"></i></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Free & VIP members can talk with you</td>
+            <td><i class="icon icon-ok"></i></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>See who added you to Favorites</td>
+            <td><i class="icon icon-ok"></i></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>See who liked your photos</td>
+            <td><i class="icon icon-ok"></i></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>See who's viewed you</td>
+            <td><i class="icon icon-ok"></i></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Appear higher in search results</td>
+            <td><i class="icon icon-ok"></i></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Browse singles anonymously</td>
+            <td><i class="icon icon-ok"></i></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Hide members from view</td>
+            <td><i class="icon icon-ok"></i></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Unlimited access to members profiles</td>
+            <td><i class="icon icon-ok"></i></td>
+            <td><i class="icon icon-ok"></i></td>
+        </tr>
+        <tr>
+            <td>Advanced searching using filters</td>
+            <td><i class="icon icon-ok"></i></td>
+            <td><i class="icon icon-ok"></i></td>
+        </tr>
+        <tr>
+            <td>Advanced searching by member's interests</td>
+            <td><i class="icon icon-ok"></i></td>
+            <td><i class="icon icon-ok"></i></td>
+        </tr>
+        <tr>
+            <td>Add unlimited profile's photos</td>
+            <td><i class="icon icon-ok"></i></td>
+            <td><i class="icon icon-ok"></i></td>
+        </tr>
+        <tr>
+            <td>Add members to Favorites</td>
+            <td><i class="icon icon-ok"></i></td>
+            <td><i class="icon icon-ok"></i></td>
+        </tr>
+        <tr>
+            <td>Send unlimited winks</td>
+            <td><i class="icon icon-ok"></i></td>
+            <td><i class="icon icon-ok"></i></td>
+        </tr>
+        <tr>
+            <td>Send unlimited likes</td>
+            <td><i class="icon icon-ok"></i></td>
+            <td><i class="icon icon-ok"></i></td>
+        </tr>
+
+    </table>
+
+</div><!-- /.vip__section_right -->
+
+<div class="std__clear"></div>
+</div><!-- /.vip__section -->
+
+<div class="vip__section vip__section_testimon">
+    <h2 class="std__header std__fs-mainH std__underline">What people are saying</h2>
+
+    <div class="vip__section_testimon_item first">
+        <img src="../img/vip/vasilioc.jpg" alt="" class="vip__section_testimon_userpic"/>
+        <div class="vip__section_testimon_message">
+            The love I found here helped me to get over my painful divorce. Thank you!
+            <div class="vip__section_testimon_message_author">&mdash; <span class="name">Vasilioc</span>, 28</div>
+        </div>
+    </div>
+
+    <div class="vip__section_testimon_item">
+        <img src="../img/vip/richardson.jpg" alt="" class="vip__section_testimon_userpic"/>
+        <div class="vip__section_testimon_message">
+            I spotted my dream girls among users and now she’s with me.
+            <div class="vip__section_testimon_message_author">&mdash; <span class="name">Richardson</span>, 35</div>
+        </div>
+    </div>
+
+    <div class="vip__section_testimon_item">
+        <img src="../img/vip/olivia.jpg" alt="" class="vip__section_testimon_userpic"/>
+        <div class="vip__section_testimon_message">
+            There are lots of men and I can’t choose who to go on date with. They are all so nice!
+            <div class="vip__section_testimon_message_author">&mdash; <span class="name">Olivia</span>, 33</div>
+        </div>
+    </div>
+
+    <div class="std__clear"></div>
+</div><!-- /.vip__section -->
+
+<div class="vip__section vip__section_faq">
+
+    <h2 class="std__header std__fs-mainH std__underline">FAQ</h2>
+
+    <div class="vip__section_faq_coll first">
+        <h3 class="vip__section_faq_question">Why was my subscription automatically continued?</h3>
+        So you're happily emailing along with someone you're discovering to be a really great match, when, without warning, your subscription expires! No one wants that. Uninterrupted access to the millions of potential matches on Meetville.com is very important to our subscribers; therefore, all subscriptions paid for by a credit card or PayPal are automatically renewed at the end of the subscription period.
+        <h3 class="vip__section_faq_question">Do I have to subscribe to Meetville to see my daily matches?</h3>
+        No, everyone can see their daily matches every day. Only those who wish to contact one of their matches must subscribe to Meetville.
+    </div><!-- /.vip__section_faq_coll -->
+
+    <div class="vip__section_faq_coll coll_right">
+        <h3 class="vip__section_faq_question">How can I cancel my Meetville subscription?</h3>
+        To cancel your subscription, go to Account → Payments. In this section you’ll find all information about subscription canceling.
+        <h3 class="vip__section_faq_question">What can I do as free member?</h3>
+        As a free member, you'll be able only to receive daily matches, perform people searches, view users profiles, send and receive winks, view and post photos, rate users photos, watch videos. The same features are available with our mobile apps.
+    </div><!-- /.vip__section_faq_coll -->
+
+    <div class="std__clear"></div>
+</div><!-- /.vip__section -->
+</div><!-- /.content_inn -->
+
+</div><!-- /.content -->
+
+
+<!--/CONTENT -->
+
+<!-- start of Footer Pattern -->
+<div class="footer" id="footer">
+    <div class="footer_inn">
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/dating/about/">About Meetville</a></li>
+            <li><a href="/forum/categories/faq-help.84/ ">Help Center</a></li>
+            <li><a href="/dating/sitemap/">Site map</a></li>
+        </ul>
+        <ul>
+            <li><a href="/dating/terms/">Terms of use</a></li>
+            <li><a href="/dating/policy/">Privacy</a></li>
+            <li><a href="/dating/safety/">Safety Tips</a></li>
+            <li><a rel="nofollow" href="/dating/scams/">Scam warning</a></li>
+        </ul>
+        <ul>
+            <li><a href="/payments/vip/" class="iVip" style="position:relative; left:-20px;">Meetville VIP</a></li>
+            <li><a href="/affiliates/">Affiliate program</a></li>
+            <li><a href="/forum/forums/our-blog.127/">Our blog</a></li>
+            <li><a href="/dating/feedback/">Contact Us</a></li>
+        </ul>
+        <ul>
+            <li><a href="http://itunes.apple.com/app/yangutu-meet-new-people/id508760385">Meetville iPhone</a></li>
+        </ul>
+
+        <div class="left">
+            <p>© 2010-2013 Meetville. All rights reserved.</p>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+</div>
+<!-- end of Footer Pattern -->
+
+
+
+</body>
+
+</html>
