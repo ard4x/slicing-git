@@ -30,6 +30,28 @@
         stsStyle();
     </script>
 
+    <script type="text/javascript">
+        $(function(){
+
+
+
+            $('._jGuarantee').on('click', function(){
+                var left =  Math.floor( $(window).width()/2 ) + 50;
+                var options = [
+                    "menubar=no",
+                    "location=no",
+                    "resizable=yes",
+                    "scrollbars=yes",
+                    "width=520",
+                    "height=420",
+                    "top=250",
+                    "left="+left
+                ];
+               window.open("guarantee.html", "Guarantee", options.join(","));
+            });
+        });
+    </script>
+
 </head>
 <body>
 <!-- Start of Pattern Header  for guests -->
@@ -39,112 +61,6 @@
         <a href="#" class="head__logo">
             <img class="head__logo_img" src="../img/head/logo.png" alt="Meetville"/>
         </a>
-
-        <div class="head__menu">
-            <a class="head__menu_item active" href="#">Search</a>
-            <a class="head__menu_item"  href="#">Encounters</a>
-            <div class="head__menu_item head__menu_hovering _jDropDown_widthFix _jDropDown_hover">Connections
-
-                <ul class="head__toolbar_subMenu _jDropDown_widthFix_menu">
-                    <li class="head__toolbar_subMenu_item"><a href="#">My guests</a></li>
-                    <li class="head__toolbar_subMenu_item"><a href="#">My favorites</a></li>
-                    <li class="head__toolbar_subMenu_item"><a href="#">My likes</a></li>
-                    <li class="head__toolbar_subMenu_item"><a href="#">Added you to favorites</a></li>
-                    <li class="head__toolbar_subMenu_item"><a href="#">Hidden users</a></li>
-                    <li class="head__toolbar_subMenu_item"><a href="#">Likes me</a></li>
-                    <li class="head__toolbar_subMenu_item head__toolbar_subMenu_item_divider"></li>
-                    <li class="head__toolbar_subMenu_item"><a href="#">Invite your friends</a></li>
-                </ul>
-            </div>
-            <a class="head__menu_item" href="#">Messages<span class="bubble_counter">197</span></a>
-
-        </div><!-- /.head__menu -->
-
-        <ul class="head__toolbar">
-            <li class="head__toolbar_item head__toolbar_item_iconed head__toolbar_item_signals action _jDropDownActivate"><i  title="Notifications" class="icon"></i><span class="counter">197</span>
-
-                <div class="head__dropDown">
-
-                    <div class="head__dropDown_arrow"></div>
-                    <div class="head__dropDown_header">Notifications</div>
-                    <!-- dropDown list -->
-                    <div class="head__dropDown_listItem">
-                        <img class="head__dropDown_listItem_userPic" src="../img/user/user1.jpg" alt=""/>
-                        <span class="head__dropDown_listItem_descr">
-                            <span class="head__dropDown_listItem_who"><span class="head__dropDown_listItem_name">Jeannette</span>, 37</span>
-                            <span class="head__dropDown_listItem_when">Today 8:13 AM</span>
-                            <div class="head__dropDown_listItem_what">Checked out your profile</div>
-                        </span>
-                        <span class="head__dropDown_clear"></span>
-                    </div><!-- /.head__dropDown_listItem -->
-
-                    <div class="head__dropDown_listItem">
-                        <img class="head__dropDown_listItem_userPic" src="../img/user/user1.jpg" alt=""/>
-                        <span class="head__dropDown_listItem_descr">
-                            <span class="head__dropDown_listItem_who"><span class="head__dropDown_listItem_name">Jeannette</span>, 37</span>
-                            <span class="head__dropDown_listItem_when">Today 8:13 AM</span>
-                            <span class="head__dropDown_listItem_what">Has liked your photo</span>
-                        </span>
-                        <img class="head__dropDown_listItem_userPic" src="../img/user/user2.jpg" alt=""/>
-                        <span class="head__dropDown_clear"></span>
-                    </div><!-- /.head__dropDown_listItem -->
-
-                    <div class="head__dropDown_listItem">
-                        <img class="head__dropDown_listItem_userPic" src="../img/user/user1.jpg" alt=""/>
-                        <span class="head__dropDown_listItem_descr">
-                            <span class="head__dropDown_listItem_who"><span class="head__dropDown_listItem_name">Jeannette</span>, 37</span>
-                            <span class="head__dropDown_listItem_when">Today 8:13 AM</span>
-                            <span class="head__dropDown_listItem_what">Request you to upload more photos of yours</span>
-                        </span>
-                        <span class="head__dropDown_clear"></span>
-                    </div><!-- /.head__dropDown_listItem -->
-
-                    <div class="head__dropDown_listItem">
-                        <img class="head__dropDown_listItem_userPic" src="../img/user/user1.jpg" alt=""/>
-                        <span class="head__dropDown_listItem_descr">
-                            <span class="head__dropDown_listItem_who"><span class="head__dropDown_listItem_name">Jeannette</span>, 37</span>
-                            <span class="head__dropDown_listItem_when">Today 8:13 AM</span>
-                            <span class="head__dropDown_listItem_what">Wants to get to know you better</span>
-                        </span>
-                        <span class="head__dropDown_clear"></span>
-                    </div><!-- /.head__dropDown_listItem -->
-                    <!-- /dropDown list -->
-                    <div class="head__dropDown_last"><a href="#">View All Notifications</a></div>
-
-                </div><!-- /.head__dropDown -->
-
-            </li>
-            <!--
-            <li class="head__toolbar_item head__toolbar_item_iconed head__toolbar_item_messages action"><i title="Messages" class="icon"></i><span class="counter">25</span></li>
-            -->
-            <li class="head__toolbar_item head__toolbar_item_divider"></li>
-            <li class="head__toolbar_item _jDropDownActivate head__user _jDropDown_widthFix">
-                <img class="head__user_pic" src="../img/head/user.jpg" alt="Andersonas"/>Andersonads
-
-                <ul class="head__toolbar_subMenu _jDropDown_widthFix_menu">
-                    <li class="head__toolbar_subMenu_item"><a href="#">Edit / View profile</a></li>
-                    <li class="head__toolbar_subMenu_item"><a href="#">Photos</a></li>
-                    <li class="head__toolbar_subMenu_item"><a href="#">Upload photos</a></li>
-                </ul>
-
-            </li>
-            <li class="head__toolbar_item head__toolbar_item_divider"></li>
-            <li class="head__toolbar_item head__toolbar_item_iconed head__toolbar_item_settings _jDropDownActivate"><i title="Settings" class="icon"></i>
-
-                <ul class="head__toolbar_subMenu">
-                    <li class="head__toolbar_subMenu_item"><a href="#">Invite friends</a></li>
-                    <li class="head__toolbar_subMenu_item"><a href="#">Settings</a></li>
-                    <li class="head__toolbar_subMenu_item"><a href="#">Email Notifications</a></li>
-                    <li class="head__toolbar_subMenu_item"><a href="#">Payments</a></li>
-                    <li class="head__toolbar_subMenu_item"><a href="#">Blocked Users</a></li>
-                    <li class="head__toolbar_subMenu_item head__toolbar_subMenu_item_divider"></li>
-                    <li class="head__toolbar_subMenu_item"><a href="#">Meetville iPhone</a></li>
-                    <li class="head__toolbar_subMenu_item head__toolbar_subMenu_item_divider"></li>
-                    <li class="head__toolbar_subMenu_item"><a href="#">Logout</a></li>
-                </ul>
-
-            </li>
-        </ul>
 
     </div><!-- /.head__inner -->
 </div><!-- /.head__wrap -->
@@ -186,21 +102,8 @@
 
                                 <span class="vip__plan_description_term">1 year</span>
                                 <span class="vip__plan_description_bill">billed $107.88</span>
-                                <span class="vip__plan_description_tips bright">Meetville Guarantee </span>
-                                <span class="vip__plan_description_tips vip__withTooltip">Email Read Notification
-                                    <span class="vip__tooltip">
+                                <span class="vip__plan_description_tips bright _jGuarantee">Meetville Guarantee </span>
 
-                                        <h3 class="std__header std__fs-smallH std__underline ">Email Read Notification</h3>
-
-                                        Find out when your matches read the messages you send.
-
-                                        <a class="vip__tooltip_more" href="#">Learn more</a>
-
-                                        <span class="vip__tooltip_arr">
-                                            <span class="vip__tooltip_arr_inn"></span>
-                                        </span>
-                                    </span>
-                                </span>
 
                             </span>
 
