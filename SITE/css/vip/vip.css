@@ -1,13 +1,15 @@
 .vip__page {padding-top: 20px;}
-.vip__head {text-align: center; height: 82px; margin-bottom: 30px;}
+.vip__head {text-align: center; height: 40px; margin-bottom: 30px;}
     .vip__head_userPic {width: 76px; height: 76px; }
-    .vip__head > .std__header {display: inline-block; margin: 0; vertical-align: middle; line-height: 116px;}
-    .vip__head.single_header {height: 40px;}
-    .vip__head.single_header > .std__header {font-size: 36px; line-height: 40px}
+    .vip__head > .std__header {display: inline-block; margin: 0; vertical-align: middle; line-height: 40px;}
+    .vip__head.single_header > .std__header {font-size: 36px;}
+    .vip__head.withUser {height: 82px;}
     .vip__head.withUser > .std__header {text-align: left;   line-height: 36px; width: auto; vertical-align: top;}
     .vip__head > .std__header span {font-weight: normal;}
     .vip__head .b-user__photoFrame {width: 80px; display: inline-block; box-sizing: border-box; -moz-box-sizing: border-box; margin-right: 27px; vertical-align: middle;}
-
+.vip__or {display: inline-block; width: 26px; height: 26px; border-radius: 13px; text-align: center; line-height: 24px;
+    vertical-align: top; font-size: 14px; font-weight: bold!important; color: #fff; background: #ccc; margin: 10px 30px;}
+    .vip__head.single_header .button {vertical-align: top; margin-top: 6px;}
 .vip__section {margin-bottom: 30px;}
     .vip__section_right,
     .vip__section_left  {width: 460px; float: left; box-sizing: border-box; -moz-box-sizing: border-box;}
@@ -129,3 +131,4 @@ i.icon.icon-close-grey {background-image: url(../../img/button/btns-icos.png)}
 .vip__error_arr_inn {display: block; width: 0; height: 0; border: 15px solid transparent; border-bottom: none; border-top-color: #fc3e39;
     position: absolute; bottom: -15px; left: 50%; margin-left: -15px;}
 .vip__error_arr_inn {border-top-color: #fff; bottom: 6px; left: 0;}
+

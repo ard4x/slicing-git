@@ -109,6 +109,19 @@ input.button {
 .button.green:active {
   border-color: #3b6a35 #64954a #5b8344 !important;
 }
+.button.green.flat {
+  background: #3a9508;
+  border-color: #2a7700 !important;
+  box-shadow: none;
+}
+.button.green.flat:hover {
+  background: #77ad5a;
+  border-color: #5b8444 !important;
+}
+.button.green.flat:active {
+  background: #2a7700;
+  border-color: #2a7700 !important;
+}
 .button.orange {
   background: #ca5b34;
   background: -ms-linear-gradient(top, #da6b44 0%, #c54517 100%);
