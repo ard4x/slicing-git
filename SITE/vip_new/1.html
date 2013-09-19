@@ -24,10 +24,29 @@
                         w = obj.width() / count;
                 objElement.css({'width': w+'px'})
                 console.log(obj.width())
-
             });
         }
         stsStyle();
+    </script>
+
+    <script type="text/javascript">
+        $(function(){
+            $('._jGuarantee').on('click', function(){
+                var left =  Math.floor( $(window).width()/2 ) + 50;
+                var options = [
+                    "menubar=no",
+                    "location=no",
+                    "resizable=yes",
+                    "scrollbars=yes",
+                    "width=520",
+                    "height=420",
+                    "top=250",
+                    "left="+left
+                ];
+                window.open("guarantee.html", "Guarantee", options.join(","));
+                return 0;
+            });
+        });
     </script>
 
 </head>
@@ -91,7 +110,7 @@
 
                                         If you don't find anyone special within your 6 months' subscription, we'll give you additional 6 months'  for free.
 
-                                        <a class="vip__tooltip_more" href="#">Learn more</a>
+                                        <a class="vip__tooltip_more _jGuarantee" href="#">Learn more</a>
 
                                         <span class="vip__tooltip_arr">
                                             <span class="vip__tooltip_arr_inn"></span>
