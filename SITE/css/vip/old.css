@@ -1,0 +1,303 @@
+/** @required  user.css  **/
+
+/** old styles from styles.css **/
+/*popups-vip*/
+.list-2cells{width:49%; display:inline-block; *display:inline; position:relative; *zoom:1; vertical-align:top;}
+.list-2cells img{position:absolute; left:0; top:5px;}
+.list-2cells .inner{padding:5px 10px 0 50px!important;}
+/** / old */
+
+body.payments {padding-top: 0;}
+.guestVip .btn-reg {width:178px; display: block; margin-top: 33px;}
+.guestVip .topIcon {width: 220px; float:left;}
+.guestVip h1 {font: bold 36px 'PT Sans'; color:#436187;  margin: 0 0 0 0; text-transform: uppercase; line-height: 36px; }
+.guestVip p {font: 16px Arial; color:#333333; margin: 10px 0 18px 0; padding: 0; line-height: 20px;}
+.guestVip {margin-top: 15px; margin-bottom: 30px;}
+.guestVip img {margin-top: 4px;}
+
+.hide {display: none}
+div.topMessage {position: relative; width: 900px; background-color: #ecf4fb; border-radius: 4px; padding: 25px; margin-bottom: 20px;}
+div.topMessage .message {position: relative; top: -6px;}
+div.topMessage h1 {font: bold 36px 'PT Sans'; color:#436187;  margin: 0 0 0 0; text-transform: uppercase; }
+div.topMessage p {font: 16px Arial; color:#333333; margin: 10px 0 15px 0; padding: 0;}
+div.topMessage .topIcon {width: 145px; height: 145px; background: url(/img/vip/upg_icon_top.png) no-repeat; float: left; margin-right: 40px;}
+div.v2 .topIcon {background-position: 0 -145px;}
+div.v3 .topIcon {background-position: 0 -290px;}
+div.v4 .topIcon {background-position: 0 -435px;}
+div.v5 .topIcon {background-position: 0 -580px;}
+div.v6 .topIcon {background-position: 0 -725px;}
+div.v7 .topIcon {background-position: 0 -870px;}
+div.v8 .topIcon {background-position: 0 -1015px;}
+div.v9 .topIcon {background-position: 0 -1160px;}
+div.v10 .topIcon {background-position: 0 -1305px;}
+div.vipPayment    {margin-bottom: 25px; position: relative; }
+div.vipPayment h2 {font: bold 24px 'PT Sans'; color:#333333; margin-top:0;}
+
+
+
+div.vipPayment .paymentInfo {position: relative; width: 465px; float:right;}
+.tabBlock {position: relative; border: solid 1px #dde0e6; border-top-color: #f4f5f7; border-bottom-color: #bbc0ce; padding: 20px;
+    border-radius: 9px; border-top-left-radius: 0; box-shadow: 0 2px 2px #dde0e6; margin-top: 73px; min-height: 290px;}
+.tabBlock .label {font: 12px Arial;}
+.tabBlock .tabs li {float: left; width: 110px; height: 50px; margin-right: 9px; border-top-left-radius: 9px; border-top-right-radius: 9px;
+    background-color: #e3e3e3; border-bottom: solid 1px #d3d4d6;}
+.tabBlock .tabs li.active {border: solid 1px #dde0e6; border-top-color: #f4f5f7; border-bottom: none; background-color: #ffffff;}
+.tabBlock .tabs li a {display: block; width: 100%; height: 50px; }
+.tabBlock .tabs li span {display: block; width: 42px; position: relative; margin: 12px auto;}
+.tabBlock .tabs .firstTab a span {width: 41px; height: 31px; background: url(/img/p_master_ico.gif) no-repeat; display: block;}
+.tabBlock .tabs .secondTab a span {width: 59px; height: 23px; background: url(/img/p_paypal_ico.gif) no-repeat; display: block; margin-top: 15px;}
+.visa_icon_vip_iframe {width: 29px; height: 21px; background: url(/img/type_visa.gif) no-repeat; display: inline-block;}
+.mc_icon_vip_iframe {width: 29px; height: 21px; background: url(/img/type_master.gif) no-repeat; display: inline-block;}
+
+.tabBlock .firstTab table {width: 100%; border: none; border-collapse: collapse; border-spacing: 0; }
+.tabBlock .firstTab td {padding-bottom: 13px; vertical-align: top;}
+table.vip_iframe td {vertical-align: middle;}
+td.label_vip_iframe {width: 125px; vertical-align: middle;}
+input.vip_iframe {width: 295px}
+.cardCode_vip_iframe {width: 123px; margin-right: 13px; float: left;}
+.helper_vip_iframe {background: url(/img/help-icons.png) 0 0 no-repeat; width: 16px; height: 16px; cursor: pointer; display: inline-block; margin-right: 10px;}
+
+.cardtype_vip_iframe {width: 120px; margin-right: 13px; float: left;}
+.month_vip_iframe {width: 58px; margin-right: 10px; display: inline-block;}
+.year_vip_iframe {width: 58px; display: inline-block;}
+.country_vip_iframe {width: 240px; display: inline-block;}
+.tabBlock .firstTab .servInfo {font: 12px Arial; color: #999999; text-align: center;}
+.servInfo_vip_iframe {font: 12px Arial; text-align: left; margin-top: 10px; margin-bottom: 10px;}
+.rapidSSL_vip_iframe {background: url(/img/RapidSSL_SEAL-90x50.gif) no-repeat; width: 90px; height: 50px; display: block; position: absolute; bottom: 0px; left: 0px;}
+.btn-next_vip_iframe {float: right; margin-top: 25px; padding: 0 35px!important;}
+.collapse_vip_iframe {float: right; margin-top: 35px; padding: 0 10px!important;}
+
+a.paypal {width: 150px; height: 52px; background: url(/img/paypalbut.jpg) no-repeat; position: relative; margin: 20px auto; display: block;}
+.tabBlock .secondTab .servInfo {font: 12px Arial; color: #999999; text-align: center; margin-bottom: 20px;}
+
+div.whatGet .g1, div.whatGet .g3, div.whatGet .g5, div.whatGet .g7 {float: left;}
+div.whatGet .g2, div.whatGet .g4, div.whatGet .g6, div.whatGet .g8 {float: right;}
+div.whatGet h2 {font: bold 30px 'PT Sans'; color:#333333; margin: 0 0 15px 0; text-align: center;}
+div.whatGet h3 {font: bold 24px 'PT Sans'; color:#436187; margin: 0 0 10px 0; line-height: 24px;}
+div.whatGet p {font: 14px Arial; color:#333333; width: 330px;}
+div.whatGet ul {overflow: hidden; margin-bottom: 30px;}
+div.whatGet li {padding: 15px; background-color: #ecf4fb; border-radius: 4px; margin-bottom: 10px; position: relative; height: 90px; width: 435px;}
+div.whatGet .icon {background: url(/img/vip/upg_icon_small.png); width: 90px; height: 90px; float: right;}
+div.whatGet .g2 .icon {background-position: 0 -90px;}
+div.whatGet .g3 .icon {background-position: 0 -180px;}
+div.whatGet .g4 .icon {background-position: 0 -270px;}
+div.whatGet .g5 .icon {background-position: 0 -360px;}
+div.whatGet .g6 .icon {background-position: 0 -450px;}
+div.whatGet .g7 .icon {background-position: 0 -540px;}
+div.whatGet .g8 .icon {background-position: 0 -630px;}
+
+
+div.vipBottom {overflow: hidden;}
+div.vipBottom h2 {font: bold 24px 'PT Sans'; color:#333333; margin: 0 0 18px 0;}
+div.vipBottom .testimon {width: 450px; float: left; padding-right: 15px}
+div.vipBottom .testimon .user {margin-bottom: 20px; position: relative;}
+div.vipBottom .testimon .user .userpic {display: block; position: absolute; width: 50px; height: 50px; top: 3px;}
+div.vipBottom .testimon .user .userMsg {width: 395px; margin-left: 70px;}
+div.vipBottom .testimon .user .userMsg .username {font: bold 14px Arial; color:#333333;}
+div.vipBottom .testimon .user .userMsg .postdate {font: 10px Arial; color:#666666; margin-bottom: 7px;}
+div.vipBottom .testimon .user .userMsg .textMsg {font: 12px Arial;}
+
+div.vipBottom .faq {width: 450px; float: right; padding-right: 15px;}
+div.vipBottom .faq strong {font: bold 14px Arial; color:#333333; margin-bottom: 6px; display: inline-block;}
+div.vipBottom .faq p {font: 12px Arial; padding-bottom: 20px;}
+
+.vip_iframe h1 {font: bold 18px 'PT Sans'; color:#333333; margin: 0;}
+.vip_iframe h3 {font: 12px Arial; color:#787878; margin: 0 0 5px 0;}
+table.vip_iframe {margin: 10px 0;}
+body.payments {padding-right: 80px;}
+
+.paym_bottom {position: absolute; bottom:0; left:0; width: 420px; height: 88px;}
+
+/* Congratulations */
+.vip__conrgat {position: relative; width: 910px; margin: 10px auto; }
+.vip__conrgat_velcome{border-radius: 4px; background-color: #e8eff5; padding: 15px 20px 20px; margin-bottom: 27px;}
+.vip__conrgat_velcome_head{margin: 0 0 15px; text-align: center;}
+.vip__conrgat_velcome_head .vipIcon{width: 64px; height: 64px; display: inline-block; background: url(/img/vip/vip-ico64.png) no-repeat; margin-right: 18px;}
+.vip__conrgat_velcome_head h1{font: bold 30px 'PT Sans'; color: #424242; margin: 0; padding: 0;}
+.vip__conrgat_velcome_head h1 span {vertical-align: middle;}
+.vip__conrgat_velcome_msg{background-color: #ffffff; border-radius: 3px; padding: 18px 20px 20px; color: #333333; font-size: 14px;}
+.vip__conrgat_velcome_msg p{padding:0; line-height: 17px;}
+.vip__conrgat_velcome_msg .msgDescript{padding: 0; font-size: 18px; font-weight: bold; margin-bottom: 10px; margin-top: 22px;}
+.vip__conrgat_velcome_msg .btn-congrat{width: 118px; float: right; margin-top: -6px;}
+
+.vip__conrgat_content{}
+.vip__conrgat_content_title{margin: 0 0 18px; padding: 0; text-align: center; font-size: 14px; color: #333333}
+.vip__conrgat_content_title.big{font-size: 18px; font-weight: bold; }
+.vip__conrgat_content_title.big span{width: 690px; display: inline-block;}
+.specList{display: block; text-align: center;}
+.specList .g {width: 280px; height: 48px; text-align: left; vertical-align: middle; display: inline-table; margin: 0 10px 20px 10px; text-align: left; color: #436187; font-size: 14px;}
+.r{display: table-row;}
+.specList .icon {display: table-cell;width: 48px; height: 48px; background: url(/img/vip/upg_icon_48.png) no-repeat;}
+.specList .label {display: table-cell; padding-left: 20px; vertical-align: middle;}
+.specList .g1 .icon{background-position: 0 -240px;}
+.specList .g2 .icon{background-position: 0 0;}
+.specList .g3 .icon{background-position: 0 -96px;}
+.specList .g4 .icon{background-position: 0 -144px;}
+.specList .g5 .icon{background-position: 0 -288px;}
+.specList .g6 .icon{background-position: 0 -336px;}
+.specList .g7 .icon{background-position: 0 -192px;}
+.specList .g8 .icon{background-position: 0 -48px;}
+.vip_iframe .newList {height:100px!important}
+
+/********************************************************************
+** NEW Vip styles
+** @TODO: remove old styles
+********************************************************************/
+.vip_page {margin-top: 10px;}
+.vip__ssl {width: 90px; height: 50px; display: block; position: absolute; top: 22px; right: 0; background: 0 -113px url(/img/vip/vip.png) no-repeat;}
+.vip__head {background-color: #f5f5f5; border: 3px solid #fff; text-align: center; border-radius: 5px; box-shadow: 0 1px 4px rgb(168, 168, 168); height: 124px;margin-bottom: 40px;}
+.vip__head_userPic {width: 76px; height: 76px; }
+.vip__head > .std__header {display: inline-block; margin: 0; vertical-align: middle; line-height: 116px;}
+.vip__head.withUser > .std__header {text-align: left;   line-height: 36px; padding-top: 8px; width: 680px;}
+.vip__head > .std__header span {font-weight: normal;}
+.vip__head .b-user__photoFrame {width: 80px; display: inline-block; box-sizing: border-box; -moz-box-sizing: border-box; margin-right: 27px; vertical-align: middle; margin-top: 22px;}
+.vip__pay_label {position: relative; height: 65px; border: solid 1px #dde0e6; border-top-color: #f4f5f7; border-bottom-color: #bbc0ce; box-shadow: 0 2px 2px #dde0e6;
+    border-radius: 7px; margin-bottom: 8px; cursor: pointer; line-height: 60px;}
+.vip__pay_label.last   {margin:2px}
+.vip__pay_label_label {height: 65px; width: 44px; float:left; margin-right: 9px; line-height: 72px; vertical-align: middle; text-align: center; cursor: pointer}
+.vip__pay_label.active .vip__pay_label_label {border-top-left-radius: 6px; border-bottom-left-radius: 5px; background-color:#eda71e; }
+.vip__pay_label_label input {margin: 0;}
+.vip__pay_label_cost {text-align: center; vertical-align: middle; display: inline-block; font: 12px Arial; color:#525e76; width: 90px; height: 40px; margin-right: 19px;}
+.vip__pay_label_cost_price {font: bold 24px Arial; color:#51575e;}
+.vip__pay_label_term { margin-top: -5px}
+.vip__pay_label_descript {font: bold 16px Arial; color:#525e76; vertical-align: middle; display: inline-block; height: 30px;}
+.vip__pay_label_descript_term {color:#333333;}
+.vip__pay_label_descript_save {color:#ff9c5c;}
+.vip__pay_label_descript_msg {font: 12px Arial; margin-top: -3px; color: #525e76}
+.vip__pay_label_mostPop {width: 60px; height: 59px; background: 0 0 url(/img/vip/vip.png) no-repeat; position: absolute; top: 2px; right: 13px;}
+.vip__block_payment {margin-bottom: 19px;}
+.vip__block_payment .std__header {margin-bottom: 18px;}
+.vip__payment_colLeft {width: 410px; float:left; }
+.vip__payment_colLeft .vip__block_inner {padding-top: 1px;}
+.vip__payment_colRight {width: 508px; float: right;}
+.vip__block_descript {margin-bottom: 17px;}
+.vip__block_descript .std__header {text-align: center; margin-bottom: 23px;}
+/* TABS */
+.vip__tabContent {position: relative; text-align: center; border: solid 1px #dde0e6; background-color: #fff; border-top-color: #f4f5f7; border-bottom-color: #bbc0ce; padding: 25px; border-radius: 6px; box-shadow: 0 2px 2px #dde0e6;}
+.vip__tabContent_inner {background-color: #f5f5f5; border-radius: 4px; padding: 15px; box-sizing: border-box; -moz-box-sizing: border-box; width: 456px;}
+.vip__tabContent_inner.tab2 {height: 190px;}
+.vip__tabContent_inner.tab1 {height: 152px; padding: 9px 20px; margin-bottom: 38px; position: relative;}
+.vip__tabs {}
+.vip__tab_item {border-top-left-radius: 5px; border-top-right-radius: 5px; position: relative; border: 1px solid #e3e3e3; background-color: #e3e3e3; border-bottom-color: #cdced0;
+    margin-right: 9px; float: left; box-sizing: border-box; -moz-box-sizing: border-box; bottom: -1px; box-shadow: inset 0px -5px 10px -4px rgb(202, 202, 202);
+    width: 102px; height: 51px; line-height: 50px; text-align: center; display: block; cursor: pointer;}
+.vip__tab_item.active {border: solid 1px #dde0e6; border-top-color: #f4f5f7; border-bottom: none; background-color: #ffffff; box-shadow: none; cursor: default; z-index: 2;}
+.vip__tab_item:first-child :after {content: ''; position: absolute; width: 7px; height: 7px; background-color: #d6d6d6; bottom: -6px; left: -1px; }
+.vip__tab_item.active:first-child :after {content: ''; position: absolute; width: 7px; height: 7px; background-color: #fff; border-left: 1px solid #e3e3e3; bottom: -7px; left: -1px; }
+.vip__tab_icon {width: 37px; height: 23px; margin-left: 10px; margin-right: 5px; background: url(/img/vip/vip.png) no-repeat; display: inline-block; vertical-align: middle;}
+.vip__tab_icon.cards {background-position: -64px 0; width: 40px; height: 30px; margin-left: 0;}
+.vip__tab_icon.paypal{background-position: -138px -33px; width: 59px; height: 17px; margin-left: 0;}
+.vip__tab_icon.visa  {background-position: -107px 0;}
+.vip__tab_icon.mc    {background-position: -147px 0;}
+.vip__tab_icon.dn    {background-position: -187px 0;}
+.vip__tab_icon.ae    {background-position: -226px 0;}
+.vip__tab_icon.dc    {background-position: -64px -33px;}
+.vip__tab_icon.jcb   {background-position: -102px -33px; width: 34px; height: 23px; }
+.vip__tab_icon.paypal_big {background-position: -201px -33px; width: 83px; height: 24px; }
+
+
+.vip__tabContent_dataCard {font-size: 14px; color: #333; text-align: left; margin-bottom: 22px;}
+.vip__tabContent_dataCard_label {margin-bottom: 7px;}
+[type=text].vip__tabContent_dataCard_field,
+.vip__tabContent_dataCard_field .newListSelected,
+.vip__tabContent_dataCard_field .select {box-sizing: border-box; -moz-box-sizing: border-box; height: 27px!important; width: 100%; padding: 5px;}
+.vip__tabContent_dataCard_field.month {display: inline-block; width: 60px;}
+.vip__tabContent_dataCard_field.year {display: inline-block; width: 70px;}
+.vip__tabContent_dataCard_number {width: 161px; float: left; margin-right: 30px;}
+.vip__tabContent_dataCard_date {width: 145px; float: left; margin-right: 30px;}
+.vip__tabContent_dataCard_code {width: 50px; float: left;}
+
+.vip__tabContent_descript{font-size: 14px; color: #333; padding-top: 7px; margin-bottom: 25px;}
+.vip__tabContent_details {margin-left: 16px; text-decoration: underline;}
+.vip__tabContent_details:hover {text-decoration: none;}
+.vip__tabContent_purchaseBtn {margin-bottom: 28px;}
+.vip__tabContent_purchaseBtn .button {width: 180px;}
+.vip__tabContent_currency  {font-size: 12px; font-weight: bold; color: #333; text-transform: uppercase; background-color: #fff; text-align: right;}
+
+.tab1 .vip__tabContent_dataCard {margin-bottom: 0;}
+.tab1 .vip__tabContent_descript{font-size: 12px; padding-top: 5px; float: left; text-align: left; margin: 12px 0 0 0;}
+.tab1 .vip__tabContent_details {margin: 0; }
+.tab1 .vip__tabContent_details:hover {text-decoration: none;}
+.tab1 .vip__tabContent_purchaseBtn {float: right; margin: 12px 0 0 0;}
+.tab1 .vip__tabContent_currency  {position: absolute; right: 0; bottom: -48px; height: 48px; padding-top: 20px; font-size: 12px; font-weight: bold; color: #333; text-transform: uppercase; background-color: #fff; box-sizing: border-box; -moz-box-sizing: border-box;}
+.tab2 .vip__tabContent_descript {margin-bottom: 21px; text-align: center;}
+.tab2 .vip__tabContent_currency {margin-bottom: 20px; text-align: center; padding: 10px;}
+.tab2 .vip__tabContent_purchaseBtn {margin-bottom: 0;}
+
+/* Description block */
+.vip__block_descript {padding: 0 15px; text-align: justify;}
+.vip__block_descript_item {display: inline-block; box-sizing: border-box; -moz-box-sizing: border-box; width: 280px; height: 212px; border: 3px solid #fff; background-color: #f5f5f5;
+    box-shadow: 0 1px 3px #aaa; padding: 69px 17px 5px 17px; vertical-align: top; position: relative;}
+.vip__block_descript_item .std__header {position: absolute; top: 7px; left: -8px; display: block; width: 290px; height: 48px; background: 0 -63px url(/img/vip/vip.png) no-repeat;
+    color: #fff; text-transform: uppercase; text-align: center; vertical-align: middle; line-height: 44px;}
+.vip__block_descript_list {font-size: 14px; line-height: 17px; color: #333;}
+.vip__block_descript_list li {margin-bottom: 13px; padding-left: 24px; position: relative;}
+.vip__block_descript_list_point {display: inline-block; width: 12px; height: 12px; background: -278px 0 url(/img/vip/vip.png) no-repeat;
+    position: absolute; top: 1px; left: 0; margin-right: 12px;}
+
+/* FAQ block */
+.vip__block_faq {padding: 17px 19px 9px 21px; margin-bottom: 28px;}
+.vip__block_faq > .std__header {margin-bottom: 17px;}
+.vip__block_faq_colLeft {width: 445px; float: left; margin-right: 30px;}
+.vip__block_faq_item {font-size: 12px; color: #333; line-height: 15px;}
+.vip__block_faq_item > .std__header {color: #666; font: bold 16px Arial; margin-bottom: 4px;}
+
+/* Testimonials block*/
+.vip__block_testimon {text-align: justify;}
+.vip__block_testimon .std__header {margin-bottom: 17px;}
+.vip__block_testimon_item {display: inline-block; width: 265px; vertical-align: top; margin: 0 15px  0 10px; position: relative;}
+.vip__block_testimon_item .quot { font: bold 72px/72px 'Times New Roman'; color: #ccc; position: absolute; top: -8px; left: -2px; text-align: left; vertical-align: top;}
+.vip__block_testimon_item blockquote { margin: 0 0 0 50px; font-size: 14px; line-height: 17px; font-style: italic; color: #333;}
+.vip__block_testimon_item .author {padding-top: 9px; position: relative; text-align: right; font-size: 18px; font-weight: bold; color:  #666;}
+.vip__block_testimon_item .author:hover .vip__block_tooltip {display: block}
+.vip__block_tooltip {display: none; box-shadow: 0 0 5px #ccc; box-sizing: border-box; -moz-box-sizing: border-box; border: 1px solid #ccc; border-radius: 2px;padding: 9px;
+    width: 190px; height: 70px; font-size: 0; position: relative; position: absolute; top: -67px; right: 0; background-color: #fff;}
+.vip__block_tooltip_img {width: 50px; height: 50px; float: left;}
+.vip__block_tooltip_content {margin-left: 61px; text-align: left; display: block;}
+.vip__block_tooltip_name {font-size: 14px; font-weight: bold; color: #666; display: block; padding-top: 1px; margin-bottom: 4px;}
+.vip__block_tooltip_location {font-size: 10px; line-height: 13px; font-weight: normal; color: #999;}
+.vip__block_tooltip .arr { position: absolute; bottom: -6px; left: 47%; display: block; height: 0; width: 0; border: 6px solid transparent; border-top-color: #ccc; border-bottom: none; }
+.vip__block_tooltip .arr-i {position: absolute; top: -6px; left: -5px; display: block; height: 0; width: 0; border: 5px solid transparent; border-top-color: #fff; border-bottom: none;}
+/* Guest page */
+.vip__guest {margin-top: 15px; margin-bottom: 30px;}
+.vip__guest .button {width:178px; display: block; margin-top: 33px;}
+.vip__guest .vip__guest_icon {width: 220px; float:left;}
+.vip__guest img {margin-top: 4px;}
+.vip__guest .std__header {font: bold 36px 'PT Sans'; color:#436187;  margin: 0 0 0 0; text-transform: uppercase; line-height: 36px; }
+.vip__guest_message {position: relative; top: -6px; margin-left: 197px;}
+.vip__guest_message p {font: 16px Arial; color:#333333; margin: 10px 0 18px 0; padding: 0; line-height: 20px;}
+.vip__link {color: #436187; cursor: default;}
+
+.payment-errors {
+    color: #900;
+    line-height: 22px;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 5px;}
+
+/* Error page*/
+.vip__errorPage {width: 600px; margin: 50px auto;}
+.vip__errorPage_subHeader {font: bold 16px Arial; color: #333;}
+.vip__errorPage_msgBlock {font-size: 16px; color: #333; text-align: center; padding: 25px; margin-bottom: 20px;}
+.vip__errorPage_msgBlock p {margin: 0 15px 15px;}
+/* vop.css:179*/
+
+/* Thanks */
+.vip__thx_header {font-size: 52px; text-align: center; margin-top: 11px; margin-bottom: 26px;}
+.vip__thx_shield {box-shadow: 0 1px 3px 0px #7D7D7D; border: 3px solid #fff; width: 650px; position: relative; margin: 0 auto; padding-top: 113px; box-sizing: border-box; -moz-box-sizing: border-box;}
+.vip__thx_shield_label {background: url(/img/vip/shield.png) no-repeat; width: 660px; height: 69px; text-align: center; padding-top: 8px; text-transform: uppercase;
+    position: absolute; left: -8px; top: 20px; font: bold 36px 'PT Sans'; color: #fff; text-shadow: 0 -1px 1px rgba(0,0,0,0.5);}
+.vip__thx_shield_list {font: 26px 'PT Sans'; color: #333; padding-left: 25px;}
+.vip__thx_shield_list li {padding-left: 55px; background: url(/img/vip/check.png) no-repeat; height: 32px; line-height: 32px; margin-bottom: 12px;}
+.vip__thx_message {margin-top: 29px; font-size: 14px; text-align: center; margin-bottom: 32px;}
+.vip__thx_message .button {margin-top: 16px;}
+.vip__thx_message .b-user__photoFrame {margin-top: 8px; margin-bottom: 12px;}
+.vip__thx_message .b-user__photoFrame_photo {width: 76px; height: 76px;}
+.vip__thx_message .button.send {margin-top: 0; width: 210px;}
+.vip__thx_appstore {display:block; margin: 0 auto 30px; position: relative; width: 650px; overflow: hidden; box-shadow: 0 1px 3px 0px #7D7D7D; border: 3px solid #fff; padding: 17px; box-sizing: border-box; -moz-box-sizing: border-box; background: #e8eff5; border-radius: 4px;}
+.vip__thx_appstore_icon {background: url(/img/vip/logo-icon.png) no-repeat; height: 72px; width: 72px; display: block; float: left;}
+.vip__thx_appstore_message {margin: 4px 20px 0 32px; font-weight: normal; font-size: 24px; width: 300px; text-shadow: 0 1px 1px #fff; float: left;}
+.vip__thx_message .b-user__person {font-size: 14px;}
+.vip__thx_appstore_button {background: url(/img/vip/appstore.png) no-repeat; width: 185px; height: 53px; display: block; float: left; margin-top: 10px;}

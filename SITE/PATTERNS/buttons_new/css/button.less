@@ -93,6 +93,7 @@
     .button_borders(#994c3e, #c54229, #912511,
                   #994c3e, #d45a42, #a64734,
                   #862714, #c7452d, #a64633);
+
   }
 
   &.green {
@@ -100,6 +101,20 @@
     .button_borders(#548d52, #64954a, #40642d,
                   #548d52, #74a858, #5b8444,
                   #3b6a35, #64954a, #5b8344);
+    &.flat {
+      background: #3a9508;
+      border-color: #2a7700 !important;
+      box-shadow: none;
+
+      &:hover {
+        background: #77ad5a;
+        border-color: #5b8444 !important;
+      }
+      &:active {
+        background: #2a7700;
+        border-color: #2a7700 !important;
+      }
+    }
   }
 
   &.orange {
@@ -124,6 +139,20 @@
     .button_borders(#99373e, #ca2e2e, #961111,
                   #994c3e, #d44242, #a64734,
                   #8a1214, #c92c2c, #a53333);
+    &.flat {
+      background: #c51818;
+      border-color: #8a1316 !important;
+      box-shadow: none;
+
+      &:hover {
+        background: #da4444;
+        border-color: #a63434 !important;
+      }
+      &:active {
+        background: #8a1316;
+        border-color: #8a1316 !important;
+      }
+    }
   }
 
   &.grey {

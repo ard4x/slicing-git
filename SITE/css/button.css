@@ -109,6 +109,19 @@ input.button {
 .button.green:active {
   border-color: #3b6a35 #64954a #5b8344 !important;
 }
+.button.green.flat {
+  background: #3a9508;
+  border-color: #2a7700 !important;
+  box-shadow: none;
+}
+.button.green.flat:hover {
+  background: #77ad5a;
+  border-color: #5b8444 !important;
+}
+.button.green.flat:active {
+  background: #2a7700;
+  border-color: #2a7700 !important;
+}
 .button.orange {
   background: #ca5b34;
   background: -ms-linear-gradient(top, #da6b44 0%, #c54517 100%);
@@ -182,6 +195,19 @@ input.button {
 }
 .button.dark-red:active {
   border-color: #8a1214 #c92c2c #a53333 !important;
+}
+.button.dark-red.flat {
+  background: #c51818;
+  border-color: #8a1316 !important;
+  box-shadow: none;
+}
+.button.dark-red.flat:hover {
+  background: #da4444;
+  border-color: #a63434 !important;
+}
+.button.dark-red.flat:active {
+  background: #8a1316;
+  border-color: #8a1316 !important;
 }
 .button.grey {
   background: #9a9a9a;
