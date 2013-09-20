@@ -13,6 +13,156 @@
   /*Forgot password form*/
 
 }
+.tb_theme.footered {
+  padding-bottom: 0;
+}
+.tb_theme.footered footer.index-footer nav li {
+  line-height: 16px;
+}
+.tb_theme .container.single {
+  width: 640px;
+}
+.tb_theme .container.single .sign_form {
+  padding-top: 30px;
+  border-top: 1px solid #d9dee1;
+}
+.tb_theme .container.single .sign_form h2 {
+  margin: 0 0 20px 170px;
+}
+.tb_theme .container.single .sign_form .control-group label {
+  width: 160px;
+}
+.tb_theme .container.single .sign_form .control-group .controls {
+  float: left;
+  width: 470px;
+}
+.tb_theme .container.single .sign_form .control-group .controls .triple_field {
+  width: 150px;
+  float: left;
+  margin-left: 10px;
+}
+.tb_theme .container.single .sign_form .control-group .controls .triple_field select {
+  width: 100%;
+}
+.tb_theme .container.single .sign_form .control-group .controls .triple_field.first {
+  margin-left: 0;
+}
+.tb_theme .container.single .sign_form .control-group .controls .button {
+  margin-top: 20px;
+}
+.tb_theme .container.single .sign_form_message {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #d9dee1;
+  padding-top: 25px;
+  font-size: 16px;
+}
+.tb_theme img.center {
+  margin: 0 auto;
+  position: relative;
+  display: block;
+}
+.tb_theme img.illustration {
+  width: 440px;
+  margin-bottom: 42px;
+}
+.tb_theme p.promo {
+  color: #565656;
+  font-size: 16px;
+}
+.tb_theme ul.promo {
+  padding: 0;
+  margin: 60px 0 0 30px;
+  color: #565656;
+  font-size: 14px;
+  margin-bottom: 40px;
+}
+.tb_theme ul.promo li {
+  list-style: none;
+  padding-left: 60px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.tb_theme ul.promo li [class^="custom-icon-"],
+.tb_theme ul.promo li [class*=" custom-icon-"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.tb_theme ul.promo li h3 {
+  font: bold 20px/20px "Trebuchet MS", Helvetica, Jamrul, sans-serif;
+  margin: 0;
+}
+.tb_theme .promo-bottom {
+  background: #f2f7fa;
+  border-top: 1px solid #dfe4e8;
+  padding: 30px 0;
+  text-align: center;
+  color: #565656;
+  font: bold 30px "Trebuchet MS", Helvetica, Jamrul, sans-serif;
+  line-height: 70px;
+  vertical-align: middle;
+}
+.tb_theme .promo-bottom .button {
+  margin-left: 35px;
+}
+.tb_theme .container.wide {
+  width: 1000px;
+}
+.tb_theme .coll_nav {
+  width: 270px;
+  float: left;
+}
+.tb_theme .coll_nav .nav_menu {
+  font-size: 16px;
+  margin: 50px 0 0;
+  padding: 0;
+}
+.tb_theme .coll_nav .nav_menu li {
+  list-style: none;
+  height: 53px;
+  display: block;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  line-height: 51px;
+  vertical-align: middle;
+  padding-left: 19px;
+}
+.tb_theme .coll_nav .nav_menu li.current {
+  border: 1px solid #dfe4e8;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-right: none;
+  position: relative;
+  font-weight: bold;
+  color: #e64509;
+}
+.tb_theme .coll_nav .nav_menu li.current a {
+  color: #e64509;
+}
+.tb_theme .coll_nav .nav_menu li.current:after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 51px;
+  position: absolute;
+  top: 0;
+  right: -1px;
+  background: #fff;
+}
+.tb_theme .coll_nav .nav_menu a {
+  color: #212121;
+}
+.tb_theme .coll_wide {
+  width: 700px;
+  float: left;
+  border-left: 1px solid #dfe4e8;
+  padding-left: 29px;
+  padding-top: 60px;
+}
+.tb_theme .coll_wide h1 {
+  margin-bottom: 26px;
+}
 .tb_theme .sign_reason .alert {
   padding: 30px;
   margin-left: 10px;
@@ -161,6 +311,7 @@
   margin-top: 30px;
   border-top: 1px solid #d9dee1;
   padding-top: 25px;
+  font-size: 16px;
 }
 .tb_theme .span-full {
   width: 100%;
@@ -168,6 +319,7 @@
 .tb_theme .input-prepend .add-on,
 .tb_theme .input-append .add-on {
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   width: 40px;
   height: 40px;
   line-height: 32px;
@@ -179,6 +331,7 @@
 .tb_theme input[type=password],
 .tb_theme select {
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
   height: 40px;
 }
 .tb_theme h1 {
@@ -187,17 +340,17 @@
   line-height: 36px;
   margin: 0 0 16px;
 }
+.tb_theme .sub_header {
+  font-size: 16px;
+  line-height: 16px;
+  color: #565656;
+  margin-bottom: 30px;
+}
 .tb_theme .forgot_form {
   position: relative;
   margin: 0 auto;
   width: 540px;
   margin-top: 60px;
-}
-.tb_theme .forgot_form .sub_header {
-  font-size: 16px;
-  line-height: 16px;
-  color: #565656;
-  margin-bottom: 30px;
 }
 .tb_theme .alert {
   padding: 12px;
@@ -277,6 +430,11 @@
   height: 17px;
   background-position: -45px 0;
 }
+.custom-icon-v {
+  width: 40px;
+  height: 40px;
+  background-position: 0 -22px;
+}
 /* Buttons */
 .button {
   display: inline-block;
@@ -338,11 +496,41 @@
   top: 2px;
 }
 .button.big {
-  height: 70px;
+  height: 70px !important;
   width: 470px;
   line-height: 68px;
   font-size: 30px;
   border-radius: 5px;
+}
+.button.green {
+  background: #fe6b1d;
+  /* Old browsers */
+
+  background: -moz-linear-gradient(top, #50c036 0%, #2ea412 100%);
+  /* FF3.6+ */
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #50c036), color-stop(100%, #2ea412));
+  /* Chrome,Safari4+ */
+
+  background: -webkit-linear-gradient(top, #50c036 0%, #2ea412 100%);
+  /* Chrome10+,Safari5.1+ */
+
+  background: -o-linear-gradient(top, #50c036 0%, #2ea412 100%);
+  /* Opera 11.10+ */
+
+  background: -ms-linear-gradient(top, #50c036 0%, #2ea412 100%);
+  /* IE10+ */
+
+  background: linear-gradient(to bottom, #50c036 0%, #2ea412 100%);
+  /* W3C */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#50c036', endColorstr='#2ea412', GradientType=0);
+  /* IE6-9 */
+
+  border: 1px solid #55c801;
+  color: #fff;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.45);
 }
 .button.red {
   background: #fe6b1d;
@@ -418,4 +606,72 @@
 }
 .tb_theme .button {
   height: 40px;
+}
+.matrix {
+  padding: 40px 0;
+}
+.matrix > h1 {
+  font-size: 24px;
+  text-align: center;
+}
+.matrix .matrix-list {
+  margin: 40px 0 40 -7px;
+}
+.matrix .matrix-list a {
+  display: block;
+  width: 160px;
+  height: 160px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  margin: 0 0 6px 6px;
+  padding: 12px;
+  vertical-align: middle;
+  font: bold 24px "Trebuchet MS", Helvetica, Jamrul, sans-serif;
+  color: #212121;
+  text-decoration: none;
+  float: left;
+  line-height: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  background: #fefefe;
+  background: -moz-linear-gradient(top, #fefefe 0%, #f2f2f2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fefefe), color-stop(100%, #f2f2f2));
+  background: -webkit-linear-gradient(top, #fefefe 0%, #f2f2f2 100%);
+  background: -o-linear-gradient(top, #fefefe 0%, #f2f2f2 100%);
+  background: -ms-linear-gradient(top, #fefefe 0%, #f2f2f2 100%);
+  background: linear-gradient(to bottom, #fefefe 0%, #f2f2f2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fefefe', endColorstr='#f2f2f2', GradientType=0);
+}
+.matrix .matrix-list a:hover {
+  background: #fff!important;
+}
+.matrix .matrix-list a:active {
+  box-shadow: none;
+}
+.matrix .matrix-list a span.img {
+  line-height: 134px;
+  width: 134px;
+  heigt: 134px;
+  background: #fff;
+  display: block;
+}
+.matrix .matrix-list a span.text {
+  line-height: 29px;
+}
+.matrix .matrix-list a span.add {
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+}
+.matrix .matrix-list a span.add .plus {
+  font: bold 112px/48px 'Times New Roman', 'times', serif;
+  display: block;
+  margin: 15px 0 20px;
+}
+.matrix .matrix-list a img {
+  max-width: 134px;
+  max-height: 134px;
 }

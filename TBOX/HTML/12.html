@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>-= Cats'n'tasks =-</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/datepicker.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/style_main.css" rel="stylesheet">
+    <link href="css/2_style.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <!--link rel="shortcut icon" href="../assets/ico/favicon.ico"-->
+
+</head>
+
+<body cz-shortcut-listen="true" class="tb_theme footered">
+<!-- Navigation -->
+
+<header class="index-header">
+    <div class="inner">
+        <a href="#" class="logo"><img src="img/logo.png" alt="32dayz"></a>
+            <span class="slogan">
+                Time tracking for teams
+            </span>
+
+        <nav>
+            <a href="#" class="active">About</a>
+            <a href="#">Sing up</a>
+            <a href="#">Login</a>
+        </nav>
+    </div>
+</header>
+
+<!-- PAGE -->
+<!-- Заголовок страницы -->
+
+
+<div class="container wide matrix">
+   <h1>List of companies</h1>
+
+    <div class="matrix-list">
+        <a href="#">
+            <span class="img">
+                <img src="img/small_banner.jpg" alt=""/>
+            </span>
+        </a>
+
+        <a href="#">
+            <span class="text">
+                Social Spread Media
+            </span>
+        </a>
+
+         <a href="#">
+            <span class="img">
+                <img src="img/small_banner.jpg" alt=""/>
+            </span>
+        </a>
+
+        <a href="#">
+            <span class="text">
+                Social Spread Media
+            </span>
+        </a>
+
+         <a href="#">
+            <span class="img">
+                <img src="img/small_banner.jpg" alt=""/>
+            </span>
+        </a>
+
+        <a href="#">
+            <span class="text">
+                Social Spread Media
+            </span>
+        </a>
+
+         <a href="#">
+            <span class="img">
+                <img src="img/small_banner.jpg" alt=""/>
+            </span>
+        </a>
+
+        <a href="#">
+            <span class="text">
+                Social Spread Media
+            </span>
+        </a>
+
+        <a href="#">
+            <span class="add">
+               <span class="plus">+</span>
+                <span class="msg">Create a new company</span>
+            </span>
+        </a>
+
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+<footer class="index-footer">
+    <div class="inner">
+        <a class="logo" href="#">
+            <img src="img/logo.png" alt="32dayz">
+        </a>
+
+        <div class="copyright">
+            Copyright © 2013 32dayz
+        </div>
+
+        <div class="social">
+            <a href="#"><i class="icon icon-fb"></i></a>
+            <a href="#"><i class="icon icon-tw"></i></a>
+            <a href="#"><i class="icon icon-gl"></i></a>
+        </div>
+
+        <nav>
+
+            <ul>
+                <li><h4>Product</h4></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Add-ons</a></li>
+                <li><a href="#">API</a></li>
+                <li><a href="#">Security</a></li>
+            </ul>
+
+            <ul>
+                <li><h4>Community</h4></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Help &amp; Support</a></li>
+                <li><a href="#">Webinars</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+
+            <ul>
+                <li><h4>Company</h4></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Giving Back</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</footer>
+
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".matrix-list a span.text").each(function(){
+            var parent = $(this).closest("a"),
+                indentTop = ( $(parent).outerHeight() - $(this).outerHeight() ) /2;
+                $(parent).css('padding-top', indentTop);
+            console.log(indentTop);console.log( $(this).outerHeight());console.log( $(parent).outerHeight());
+
+
+        });
+    });
+</script>
+
+</body>
+
+</html>
