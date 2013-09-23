@@ -515,6 +515,16 @@ i.icon {
     background-position: -43px -135px;
   }
 
+  &.icon-x {
+    width: 15px; height: 16px;
+    background-position: -70px -417px;
+  }
+
+  &.icon-v {
+    width: 20px; height: 15px;
+    background-position: -70px -435px;
+  }
+
 
 }
 
@@ -643,3 +653,37 @@ i.icon {
     }
   }
 }  // /.slider
+
+//Button Group
+.button-group {
+  font-size: 0;
+
+  .button {
+    border-radius: 0;
+    margin-left: 5px;
+    width: 130px;
+
+    &.button-group-first {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      margin-left: 0;
+
+    }
+    &.button-group-last {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+
+    .icon-v {
+      position: relative;
+      top: 1px;
+      margin-right: 11px;
+    }
+
+    .icon-x {
+      position: relative;
+      top: 2px;
+      margin-right: 14px;
+    }
+  }
+}

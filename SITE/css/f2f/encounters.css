@@ -1,0 +1,27 @@
+.enc {padding-top: 15px;}
+    .enc__collMain { width: 700px; float: left; margin-right: 30px; }
+    .enc__collSide {width: 220px; float: left; }
+    .enc__play {text-align: center; }
+    .enc__play_header {margin-bottom: 25px;}
+    .enc__play_buttons {margin-bottom: 25px;}
+    .enc__photoArea {width: 700px; height: 300px; margin: 0 auto 20px;}
+        .enc__photoArea_frame {display: inline-block; max-width: 700px; max-height: 300px; overflow: hidden;}
+        .enc__photoArea_photo {width: auto; height: auto; max-width: 700px; height: 300px;  }
+    .enc__user {margin-bottom: 20px;}
+        .enc__user_person {font-size: 24px; color: #000; font-weight: bold;}
+        .enc__user_location {font-size: 14px; color: #999; margin-left: 12px;}
+        .enc__user_search {font-size: 18px; color: #000; display: block; margin-top: 5px;}
+    .enc__user_information {width: 400px; margin: 0 auto; text-align: left;}
+    .enc__user_information .profile__info_list_label {width: 134px;}
+    .enc__user_information.closed .profile__info_list {display: none;}
+    .enc__user_information > .b-std__header {cursor: pointer;}
+
+.enc__arrow_up {
+    display: inline-block;
+    background: 0 -37px url(../../img/search/srch_sprt.png) no-repeat;
+    height: 6px;
+    width: 11px;
+    float: right;
+    margin-top: 7px;
+    margin-right: 4px;
+}

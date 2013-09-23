@@ -34,6 +34,21 @@
             </LessProfile>
           </value>
         </entry>
+        <entry key="TBox_work">
+          <value>
+            <LessProfile>
+              <option name="cssDirectories">
+                <list>
+                  <CssDirectory>
+                    <option name="path" value="Z:\home\slicing-git\TBOX\HTML\css" />
+                  </CssDirectory>
+                </list>
+              </option>
+              <option name="lessDirPath" value="Z:\home\slicing-git\TBOX\HTML\less" />
+              <option name="name" value="TBox_work" />
+            </LessProfile>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
