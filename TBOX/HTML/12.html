@@ -47,67 +47,51 @@
 <!-- Заголовок страницы -->
 
 
-<div class="container wide matrix">
-   <h1>List of companies</h1>
+<div class="container wide">
+    <div class="coll_nav">
+        <ul class="nav_menu">
+            <li class="current"><a href="#">Simple Time Tracking</a></li>
+            <li><a href="#">Powerful Reports</a></li>
+            <li><a href="#">Fast Online Invoicing</a></li>
+            <li><a href="#">Estimates</a></li>
+            <li><a href="#">Expenses</a></li>
+            <li><a href="#">Security & Privacy</a></li>
+        </ul>
 
-    <div class="matrix-list">
-        <a href="#">
-            <span class="img">
-                <img src="img/small_banner.jpg" alt=""/>
-            </span>
-        </a>
+    </div><!-- /.coll_nav -->
+    <div class="coll_wide">
+        <h1>Time Tracking Made Easy</h1>
 
-        <a href="#">
-            <span class="text">
-                Social Spread Media
-            </span>
-        </a>
+        <img class="center illustration" src="img/pic_1.jpg" alt=""/>
 
-         <a href="#">
-            <span class="img">
-                <img src="img/small_banner.jpg" alt=""/>
-            </span>
-        </a>
+        <p class="promo">
+            Time tracking is simple and lightning fast with Harvest. Set up takes seconds, and there's nothing to install. We've simplified the timesheet and timesheets approval process so you can stay focused on work.
+        </p>
 
-        <a href="#">
-            <span class="text">
-                Social Spread Media
-            </span>
-        </a>
+        <ul class="promo">
+            <li>
+                <i class="custom-icon-v"></i>
+                <h3>Simple to use</h3>
+                One click time tracking. It's never been this easy.
+            </li>
+            <li>
+                <i class="custom-icon-v"></i>
+                <h3>Simple to access</h3>
+                Track time anywhere. From your web browser, mobile phone or desktop.
+            </li>
+            <li>
+                <i class="custom-icon-v"></i>
+                <h3>Simple to deploy</h3>
+                No installation or lengthy manual to read.
+            </li>
+        </ul>
+    </div><!-- /.coll_wide -->
 
-         <a href="#">
-            <span class="img">
-                <img src="img/small_banner.jpg" alt=""/>
-            </span>
-        </a>
+    <div class="clearfix"></div>
 
-        <a href="#">
-            <span class="text">
-                Social Spread Media
-            </span>
-        </a>
-
-         <a href="#">
-            <span class="img">
-                <img src="img/small_banner.jpg" alt=""/>
-            </span>
-        </a>
-
-        <a href="#">
-            <span class="text">
-                Social Spread Media
-            </span>
-        </a>
-
-        <a href="#">
-            <span class="add">
-               <span class="plus">+</span>
-                <span class="msg">Create a new company</span>
-            </span>
-        </a>
-
-        <div class="clearfix"></div>
-    </div>
+</div>
+<div class="promo-bottom">
+    Free Trial. Get Started in 60 Seconds. <a class="button big green" href="#">Sign Up for Free</a>
 </div>
 
 <footer class="index-footer">
@@ -165,18 +149,6 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
-<script type="text/javascript">
-    $(function(){
-        $(".matrix-list a span.text").each(function(){
-            var parent = $(this).closest("a"),
-                indentTop = ( $(parent).outerHeight() - $(this).outerHeight() ) /2;
-                $(parent).css('padding-top', indentTop);
-            console.log(indentTop);console.log( $(this).outerHeight());console.log( $(parent).outerHeight());
-
-
-        });
-    });
-</script>
 
 </body>
 
