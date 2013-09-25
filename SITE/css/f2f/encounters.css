@@ -1,12 +1,14 @@
-.enc {padding-top: 15px;}
+.enc {padding-top: 15px; padding-bottom: 40px}
     .enc__collMain { width: 700px; float: left; margin-right: 30px; }
     .enc__collSide {width: 220px; float: left; }
+        .enc__collMain > .std__header {line-height: 20px; margin-bottom: 20px;}
     .enc__play {text-align: center; }
     .enc__play_header {margin-bottom: 25px;}
     .enc__play_buttons {margin-bottom: 25px;}
-    .enc__photoArea {width: 700px; height: 300px; margin: 0 auto 20px;}
-        .enc__photoArea_frame {display: inline-block; max-width: 700px; max-height: 300px; overflow: hidden;}
-        .enc__photoArea_photo {width: auto; height: auto; max-width: 700px; height: 300px;  }
+    .enc__photoArea {position: relative;}
+    .enc__photoArea_frame {position: relative; width: 500px; height: 307px; margin: 0 auto 20px;overflow: hidden; display: block;}
+        .enc__photoArea_photo {width: auto; height: 300px;}
+.enc__photoArea_canvas {display: block; width: 10000px; margin-left: -4750px; text-align: center; max-height: 300px; overflow: hidden;}
     .enc__user {margin-bottom: 20px;}
         .enc__user_person {font-size: 24px; color: #000; font-weight: bold;}
         .enc__user_location {font-size: 14px; color: #999; margin-left: 12px;}
@@ -18,10 +20,73 @@
 
 .enc__arrow_up {
     display: inline-block;
-    background: 0 -37px url(../../img/search/srch_sprt.png) no-repeat;
+    background: -15px -37px url(../../img/search/srch_sprt.png) no-repeat;
     height: 6px;
     width: 11px;
     float: right;
     margin-top: 7px;
     margin-right: 4px;
 }
+.enc__user_information.closed .enc__arrow_up {background-position: 0 -37px;}
+
+.enc__menu {border: 2px solid #f5f5f5; border-radius: 4px; margin-bottom: 30px;}
+    .enc__menu_item {display: block; box-sizing: border-box; -moz-box-sizing: border-box; height: 43px;
+    padding: 0 15px; vertical-align: middle; line-height: 40px; border-bottom: 1px solid #f5f5f5; font-size: 14px;}
+    .enc__menu_item a {display: inline-block; width: 100%;}
+    .enc__menu_item .bubble {display: inline-block; float: right; font-size: 12px; color: #999; line-height: 12px; padding: 4px; top: 11px;
+        position: relative; border-radius: 3px; min-width: 30px; text-align: center; font-weight: normal;}
+    .enc__menu_item .bubble.red {color: #fff; background: #fc3e39;}
+    .enc__menu_item .current {font-weight: bold; color: #333; cursor: default; text-decoration: none;}
+
+.enc__menu_item_set {display: block; box-sizing: border-box; -moz-box-sizing: border-box; background: #f5f5f5;
+    font-size: 12px;  text-align: center; padding: 17px}
+.enc__set_form {display: block;}
+    .enc__set_form_row {display: block; margin: 17px 0 15px;}
+        .enc__set_form_label {width: 32px; display: block; float: left; font-size: 12px; font-weight: bold; line-height: 25px; vertical-align: middle; text-align: left;}
+        .enc__set_form_field {width: 65px; float: left; display: block}
+        .enc__set_form_divider {float: left; display: block; width: 20px; text-align: center; line-height: 25px; vertical-align: middle;}
+    .enc__set_form_submit {display: block;}
+        .enc__set_form_submit .button {width: 100%}
+.enc__set_form .std__clear {display: block;}
+
+.enc__menu_item_set .show {display: none;}
+.enc__menu_item_set .hide {display: inline;}
+.enc__menu_item_set.closed .hide {display: none;}
+.enc__menu_item_set.closed .show {display: inline;}
+    .enc__menu_item_set.closed .enc__set_form {display: none;}
+
+.enc__widget_next_list {margin-left: -6px;}
+.enc__widget_next_list_item {margin-left: 6px; opacity: 0.2;}
+.enc__widget_next_list_item:first-child {opacity: 1;}
+
+.enc__play_noUser {padding: 30px 20px 20px; font-size: 14px; text-align: left; background: #f5f5f5; border-radius: 4px;
+    box-sizing: border-box; -moz-box-sizing: border-box; width: 400px; margin: 0 auto;}
+    .enc__play_noUser_pic {text-align: center; margin-bottom: 12px;}
+        .enc__play_noUser_pic_img {width: 200px; height: 200px;}
+    .enc__play_noUser_header {margin-bottom: 17px;}
+    .enc__play_noUser_msg {margin-bottom: 19px; line-height: 18px;}
+
+/* Lists */
+.enc__userList_date {font-size: 14px; font-weight: bold; color: #333; line-height: 14px; padding: 8px 10px 11px; background: #f5f5f5; border-radius: 4px; margin-bottom: 10px;}
+.enc__userList {overflow: hidden; margin-left: -20px; margin-bottom: 10px;}
+    .enc__userList_item {float: left; box-sizing: border-box; -moz-box-sizing: border-box; width: 340px; padding: 10px; margin-left: 20px;}
+        .enc__userList_item_pic {float: left; }
+            .enc__userList_item_pic .b-user__photoFrame {margin-bottom: 2px;}
+            .enc__userList_item_ava {width: 100px; height: 100px;}
+    .enc__userList_item_description {margin-left: 117px;}
+        .enc__userList_person {font-size: 18px; font-weight: bold; position: relative; margin-top: 1px;}
+        .enc__userList_location {font-size: 12px; color: #999; margin-bottom: 14px; position: relative; margin-top: -3px;}
+        .enc__userList_message {font-size: 14px; color: #999; font-weight: bold;  margin-bottom: 12px;}
+            .enc__userList_message.yes {color: #2a7700;}
+        .enc__userList_buttons .lite-grey {padding-left: 11px; padding-right: 11px;}
+.enc__paging {padding-top: 20px; border-top: 1px solid #ccc;}
+    .enc__paging ul {float: right;}
+
+    .enc__mutual .enc__userList_location {margin-bottom: 8px;}
+    .enc__mutual .enc__userList_message {margin-bottom: 1px;}
+    .enc__mutual .enc__userList_messages {margin-bottom: 9px;}
+    .enc__mutual .enc__userList_controls {font-size: 14px;}
+    .enc__mutual .enc__userList_controls .divider{color: #999;}
+
+ .enc__back_button {width: 100%; margin-bottom : 20px;}
+ .enc__page_empty {margin-top: 20px; border-top: 1px solid #ccc; padding: 50px 0;}

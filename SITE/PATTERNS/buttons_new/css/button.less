@@ -22,8 +22,8 @@
 }
 
 .gradient_off (@col1){
-  background: @col1;
-  filter: progid:DXImageTransform.Microsoft.gradient( enabled = false ); //* IE6-9 */
+    background: @col1 !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( enabled = false )!important; //* IE6-9 */
 }
 
 .button_borders ( @btnTopColor:#3a639a,       @btnBgColor:#496b94,        @btnBottomColor:#334b67,
@@ -46,6 +46,7 @@
 
 .height(@height){
   height: @height;
+  line-height: @height - 2;
   &.round {
     border-radius: @height/2;
     width: @height;
@@ -124,16 +125,6 @@
                   #8a3714, #c75127, #a55133);
   }
 
-  &.disabled, &[disabled], &[disabled="disabled"] {
-    .gradient_off(#666666);
-    .button_borders(#555555, #636363, #4e4e4e,
-                  #555555, #636363, #4e4e4e,
-                  #555555, #636363, #4e4e4e);
-    cursor: default;
-    color: #fff!important;
-    box-shadow: @highlight;
-  }
-
   &.dark-red {
     .button_bg_color(#da4444, #c51717);
     .button_borders(#99373e, #ca2e2e, #961111,
@@ -153,6 +144,7 @@
         border-color: #8a1316 !important;
       }
     }
+
   }
 
   &.grey {
@@ -183,6 +175,18 @@
     .button_borders(#547db3, #6a88ae, #4b5f7a,
                   #547db3, #7596c0, #5b7596,
                   #446691, #6a88ae, #5b7595);
+  }
+
+  &.disabled, &[disabled], &[disabled="disabled"] {
+    .button_bg_color(#666666, #666666);
+    .gradient_off(#666666);
+    .button_borders(#555555, #636363, #4e4e4e,
+                  #555555, #636363, #4e4e4e,
+                  #555555, #636363, #4e4e4e);
+    cursor: default;
+    color: #fff!important;
+    text-shadow: rgba(0,0,0,0.5) 0 1px 2px!important;
+    box-shadow: @highlight;
   }
 
   // SIZE of buttons
@@ -662,6 +666,12 @@ i.icon {
     border-radius: 0;
     margin-left: 5px;
     width: 130px;
+
+    &.small {
+      margin-left: 3px;
+      width: auto;
+      min-width: 60px;
+    }
 
     &.button-group-first {
       border-top-left-radius: 4px;

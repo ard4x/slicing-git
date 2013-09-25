@@ -1,0 +1,434 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <title>Page title</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/std.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/buttons/paging.css">
+
+    <link rel="stylesheet" href="../css/elements/select.css">
+    <link rel="stylesheet" href="../css/head.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/f2f/encounters.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="encounters.js"></script>
+    <script src="../js/jquery.stylish-select.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.sSelect').sSelect();
+        });
+
+        function stsStyle(){
+            $('.select_menu').each(function(){
+                var objElement = $(this).find('.sts > li'),
+                        obj = objElement.closest('.select_menu'),
+                        count =  objElement.length,
+                        w = obj.width() / count;
+                objElement.css({'width': w+'px'})
+                console.log(obj.width())
+            });
+        }
+        stsStyle();
+    </script>
+</head>
+<body>
+<!-- Start of Pattern Header  for guests -->
+<div class="head__wrap">
+    <div class="head__inner">
+
+        <a href="#" class="head__logo">
+            <img class="head__logo_img" src="../img/head/logo.png" alt="Meetville"/>
+        </a>
+
+        <div class="head__menu">
+            <a class="head__menu_item active" href="#">Search</a>
+            <a class="head__menu_item"  href="#">Encounters</a>
+            <div class="head__menu_item head__menu_hovering _jDropDown_widthFix _jDropDown_hover">Connections
+
+                <ul class="head__toolbar_subMenu _jDropDown_widthFix_menu">
+                    <li class="head__toolbar_subMenu_item"><a href="#">My guests</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">My favorites</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">My likes</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Added you to favorites</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Hidden users</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Likes me</a></li>
+                    <li class="head__toolbar_subMenu_item head__toolbar_subMenu_item_divider"></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Invite your friends</a></li>
+                </ul>
+            </div>
+            <a class="head__menu_item" href="#">Messages<span class="bubble_counter">197</span></a>
+
+        </div><!-- /.head__menu -->
+
+        <ul class="head__toolbar">
+            <li class="head__toolbar_item head__toolbar_item_iconed head__toolbar_item_signals action _jDropDownActivate"><i  title="Notifications" class="icon"></i><span class="counter">197</span>
+
+                <div class="head__dropDown">
+
+                    <div class="head__dropDown_arrow"></div>
+                    <div class="head__dropDown_header">Notifications</div>
+                    <!-- dropDown list -->
+                    <div class="head__dropDown_listItem">
+                        <img class="head__dropDown_listItem_userPic" src="../img/user/user1.jpg" alt=""/>
+                        <span class="head__dropDown_listItem_descr">
+                            <span class="head__dropDown_listItem_who"><span class="head__dropDown_listItem_name">Jeannette</span>, 37</span>
+                            <span class="head__dropDown_listItem_when">Today 8:13 AM</span>
+                            <div class="head__dropDown_listItem_what">Checked out your profile</div>
+                        </span>
+                        <span class="head__dropDown_clear"></span>
+                    </div><!-- /.head__dropDown_listItem -->
+
+                    <div class="head__dropDown_listItem">
+                        <img class="head__dropDown_listItem_userPic" src="../img/user/user1.jpg" alt=""/>
+                        <span class="head__dropDown_listItem_descr">
+                            <span class="head__dropDown_listItem_who"><span class="head__dropDown_listItem_name">Jeannette</span>, 37</span>
+                            <span class="head__dropDown_listItem_when">Today 8:13 AM</span>
+                            <span class="head__dropDown_listItem_what">Has liked your photo</span>
+                        </span>
+                        <img class="head__dropDown_listItem_userPic" src="../img/user/user2.jpg" alt=""/>
+                        <span class="head__dropDown_clear"></span>
+                    </div><!-- /.head__dropDown_listItem -->
+
+                    <div class="head__dropDown_listItem">
+                        <img class="head__dropDown_listItem_userPic" src="../img/user/user1.jpg" alt=""/>
+                        <span class="head__dropDown_listItem_descr">
+                            <span class="head__dropDown_listItem_who"><span class="head__dropDown_listItem_name">Jeannette</span>, 37</span>
+                            <span class="head__dropDown_listItem_when">Today 8:13 AM</span>
+                            <span class="head__dropDown_listItem_what">Request you to upload more photos of yours</span>
+                        </span>
+                        <span class="head__dropDown_clear"></span>
+                    </div><!-- /.head__dropDown_listItem -->
+
+                    <div class="head__dropDown_listItem">
+                        <img class="head__dropDown_listItem_userPic" src="../img/user/user1.jpg" alt=""/>
+                        <span class="head__dropDown_listItem_descr">
+                            <span class="head__dropDown_listItem_who"><span class="head__dropDown_listItem_name">Jeannette</span>, 37</span>
+                            <span class="head__dropDown_listItem_when">Today 8:13 AM</span>
+                            <span class="head__dropDown_listItem_what">Wants to get to know you better</span>
+                        </span>
+                        <span class="head__dropDown_clear"></span>
+                    </div><!-- /.head__dropDown_listItem -->
+                    <!-- /dropDown list -->
+                    <div class="head__dropDown_last"><a href="#">View All Notifications</a></div>
+
+                </div><!-- /.head__dropDown -->
+
+            </li>
+            <!--
+            <li class="head__toolbar_item head__toolbar_item_iconed head__toolbar_item_messages action"><i title="Messages" class="icon"></i><span class="counter">25</span></li>
+            -->
+            <li class="head__toolbar_item head__toolbar_item_divider"></li>
+            <li class="head__toolbar_item _jDropDownActivate head__user _jDropDown_widthFix">
+                <img class="head__user_pic" src="../img/head/user.jpg" alt="Andersonas"/>Andersonads
+
+                <ul class="head__toolbar_subMenu _jDropDown_widthFix_menu">
+                    <li class="head__toolbar_subMenu_item"><a href="#">Edit / View profile</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Photos</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Upload photos</a></li>
+                </ul>
+
+            </li>
+            <li class="head__toolbar_item head__toolbar_item_divider"></li>
+            <li class="head__toolbar_item head__toolbar_item_iconed head__toolbar_item_settings _jDropDownActivate"><i title="Settings" class="icon"></i>
+
+                <ul class="head__toolbar_subMenu">
+                    <li class="head__toolbar_subMenu_item"><a href="#">Invite friends</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Settings</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Email Notifications</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Payments</a></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Blocked Users</a></li>
+                    <li class="head__toolbar_subMenu_item head__toolbar_subMenu_item_divider"></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Meetville iPhone</a></li>
+                    <li class="head__toolbar_subMenu_item head__toolbar_subMenu_item_divider"></li>
+                    <li class="head__toolbar_subMenu_item"><a href="#">Logout</a></li>
+                </ul>
+
+            </li>
+        </ul>
+
+    </div><!-- /.head__inner -->
+</div><!-- /.head__wrap -->
+<!-- End of Pattern Header  for guests -->
+<!-- CONTENT -->
+<div class="content">
+
+    <div class="content_inn enc">
+        <div class="enc__collMain">
+            <h1 class="std__header std__fs-bigH">Want to meet me</h1>
+
+            <div class="enc__userList_date">August 24</div>
+
+            <div class="enc__userList">
+                <div class="enc__userList_item">
+                    <div class="enc__userList_item_pic">
+                        <div class="b-user__photoFrame">
+                            <img class="enc__userList_item_ava" src="../img/usr/100x100-2.jpg" alt=""/>
+                        </div>
+                    </div><!-- /.enc__userList_item -->
+                    <div class="enc__userList_item_description">
+                        <div class="enc__userList_person"><a href="#">Nurul</a>, 35</div>
+                        <div class="enc__userList_location">Karawang, Indonesia</div>
+                        <div class="enc__userList_message yes">She said "Yes"</div>
+                        <div class="enc__userList_buttons button-group">
+                            <a href class="button green button-group-first small">Yes</a>
+                            <a href class="button lite-grey small">Maybe...</a>
+                            <a href class="button red button-group-last small">No</a>
+                        </div>
+
+                    </div><!-- /.enc__userList_item_description -->
+                </div><!-- /.enc__userList_item -->
+
+                <div class="enc__userList_item">
+                    <div class="enc__userList_item_pic">
+                        <div class="b-user__photoFrame">
+                            <img class="enc__userList_item_ava" src="../img/usr/100x100-2.jpg" alt=""/>
+                        </div>
+                    </div><!-- /.enc__userList_item -->
+                    <div class="enc__userList_item_description">
+                        <div class="enc__userList_person"><a href="#">Nurul</a>, 35</div>
+                        <div class="enc__userList_location">Karawang, Indonesia</div>
+                        <div class="enc__userList_message yes">She said "Yes"</div>
+                        <div class="enc__userList_buttons button-group">
+                            <a href class="button green button-group-first small">Yes</a>
+                            <a href class="button lite-grey small">Maybe...</a>
+                            <a href class="button red button-group-last small">No</a>
+                        </div>
+
+                    </div><!-- /.enc__userList_item_description -->
+                </div><!-- /.enc__userList_item -->
+
+                <div class="enc__userList_item">
+                    <div class="enc__userList_item_pic">
+                        <div class="b-user__photoFrame">
+                            <img class="enc__userList_item_ava" src="../img/usr/100x100-2.jpg" alt=""/>
+                        </div>
+                    </div><!-- /.enc__userList_item -->
+                    <div class="enc__userList_item_description">
+                        <div class="enc__userList_person"><a href="#">Nurul</a>, 35</div>
+                        <div class="enc__userList_location">Karawang, Indonesia</div>
+                        <div class="enc__userList_message">She said "Maybe..."</div>
+                        <div class="enc__userList_buttons button-group">
+                            <a href class="button green button-group-first small">Yes</a>
+                            <a href class="button lite-grey small">Maybe...</a>
+                            <a href class="button red button-group-last small">No</a>
+                        </div>
+
+                    </div><!-- /.enc__userList_item_description -->
+                </div><!-- /.enc__userList_item -->
+
+            </div><!-- /.enc__userList -->
+
+
+            <div class="enc__userList_date">August 23</div>
+
+            <div class="enc__userList">
+                <div class="enc__userList_item">
+                    <div class="enc__userList_item_pic">
+                        <div class="b-user__photoFrame">
+                            <img class="enc__userList_item_ava" src="../img/usr/100x100-2.jpg" alt=""/>
+                        </div>
+                    </div><!-- /.enc__userList_item -->
+                    <div class="enc__userList_item_description">
+                        <div class="enc__userList_person"><a href="#">Nurul</a>, 35</div>
+                        <div class="enc__userList_location">Karawang, Indonesia</div>
+                        <div class="enc__userList_message yes">She said "Yes"</div>
+                        <div class="enc__userList_buttons button-group">
+                            <a href class="button green button-group-first small">Yes</a>
+                            <a href class="button lite-grey small">Maybe...</a>
+                            <a href class="button red button-group-last small">No</a>
+                        </div>
+
+                    </div><!-- /.enc__userList_item_description -->
+                </div><!-- /.enc__userList_item -->
+            </div><!-- /.enc__userList -->
+
+
+            <div class="enc__userList_date">August 22</div>
+
+            <div class="enc__userList">
+                <div class="enc__userList_item">
+                    <div class="enc__userList_item_pic">
+                        <div class="b-user__photoFrame">
+                            <img class="enc__userList_item_ava" src="../img/usr/100x100-2.jpg" alt=""/>
+                        </div>
+                    </div><!-- /.enc__userList_item -->
+                    <div class="enc__userList_item_description">
+                        <div class="enc__userList_person"><a href="#">Nurul</a>, 35</div>
+                        <div class="enc__userList_location">Karawang, Indonesia</div>
+                        <div class="enc__userList_message yes">She said "Yes"</div>
+                        <div class="enc__userList_buttons button-group">
+                            <a href class="button green button-group-first small">Yes</a>
+                            <a href class="button lite-grey small">Maybe...</a>
+                            <a href class="button red button-group-last small">No</a>
+                        </div>
+
+                    </div><!-- /.enc__userList_item_description -->
+                </div><!-- /.enc__userList_item -->
+
+                <div class="enc__userList_item">
+                    <div class="enc__userList_item_pic">
+                        <div class="b-user__photoFrame">
+                            <img class="enc__userList_item_ava" src="../img/usr/100x100-2.jpg" alt=""/>
+                        </div>
+                    </div><!-- /.enc__userList_item -->
+                    <div class="enc__userList_item_description">
+                        <div class="enc__userList_person"><a href="#">Nurul</a>, 35</div>
+                        <div class="enc__userList_location">Karawang, Indonesia</div>
+                        <div class="enc__userList_message yes">She said "Yes"</div>
+                        <div class="enc__userList_buttons button-group">
+                            <a href class="button green button-group-first small">Yes</a>
+                            <a href class="button lite-grey small">Maybe...</a>
+                            <a href class="button red button-group-last small">No</a>
+                        </div>
+
+                    </div><!-- /.enc__userList_item_description -->
+                </div><!-- /.enc__userList_item -->
+
+                <div class="enc__userList_item">
+                    <div class="enc__userList_item_pic">
+                        <div class="b-user__photoFrame">
+                            <img class="enc__userList_item_ava" src="../img/usr/100x100-2.jpg" alt=""/>
+                        </div>
+                    </div><!-- /.enc__userList_item -->
+                    <div class="enc__userList_item_description">
+                        <div class="enc__userList_person"><a href="#">Nurul</a>, 35</div>
+                        <div class="enc__userList_location">Karawang, Indonesia</div>
+                        <div class="enc__userList_message">She said "Maybe..."</div>
+                        <div class="enc__userList_buttons button-group">
+                            <a href class="button green button-group-first small">Yes</a>
+                            <a href class="button lite-grey small">Maybe...</a>
+                            <a href class="button red button-group-last small">No</a>
+                        </div>
+
+                    </div><!-- /.enc__userList_item_description -->
+                </div><!-- /.enc__userList_item -->
+                <div class="enc__userList_item">
+                    <div class="enc__userList_item_pic">
+                        <div class="b-user__photoFrame">
+                            <img class="enc__userList_item_ava" src="../img/usr/100x100-2.jpg" alt=""/>
+                        </div>
+                    </div><!-- /.enc__userList_item -->
+                    <div class="enc__userList_item_description">
+                        <div class="enc__userList_person"><a href="#">Nurul</a>, 35</div>
+                        <div class="enc__userList_location">Karawang, Indonesia</div>
+                        <div class="enc__userList_message yes">She said "Yes"</div>
+                        <div class="enc__userList_buttons button-group">
+                            <a href class="button green button-group-first small">Yes</a>
+                            <a href class="button lite-grey small">Maybe...</a>
+                            <a href class="button red button-group-last small">No</a>
+                        </div>
+
+                    </div><!-- /.enc__userList_item_description -->
+                </div><!-- /.enc__userList_item -->
+
+                <div class="enc__userList_item">
+                    <div class="enc__userList_item_pic">
+                        <div class="b-user__photoFrame">
+                            <img class="enc__userList_item_ava" src="../img/usr/100x100-2.jpg" alt=""/>
+                        </div>
+                    </div><!-- /.enc__userList_item -->
+                    <div class="enc__userList_item_description">
+                        <div class="enc__userList_person"><a href="#">Nurul</a>, 35</div>
+                        <div class="enc__userList_location">Karawang, Indonesia</div>
+                        <div class="enc__userList_message">She said "Maybe..."</div>
+                        <div class="enc__userList_buttons button-group">
+                            <a href class="button green button-group-first small">Yes</a>
+                            <a href class="button lite-grey small">Maybe...</a>
+                            <a href class="button red button-group-last small">No</a>
+                        </div>
+
+                    </div><!-- /.enc__userList_item_description -->
+                </div><!-- /.enc__userList_item -->
+
+            </div><!-- /.enc__userList -->
+
+            <div class="btn__paging enc__paging">
+                <ul>
+                    <li class="btn__paging-item btn__paging-item__disabled btn__paging-prew">
+                        <a href="#" onclick="return false;"><span>Prev</span></a>
+                    </li>
+
+                    <li class="btn__paging-item btn__paging-item__current btn__paging-page">
+                        <a href="#"><span>1</span></a>
+                    </li>
+                    <li class="btn__paging-item btn__paging-page">
+                        <a href="#"><span>2</span></a>
+                    </li>
+                    <li class="btn__paging-item btn__paging-page">
+                        <a href="#"><span>3</span></a>
+                    </li>
+                    <li class="btn__paging-item btn__paging-page">
+                        <a href="#"><span>4</span></a>
+                    </li>
+
+                    <li class="btn__paging-item btn__paging-next">
+                        <a href="#"><span>Next</span></a>
+                        <input class="paginator-next" type="hidden">
+                    </li>
+
+                </ul>
+            </div>
+
+        </div><!-- /.enc__collMain -->
+        <div class="enc__collSide">
+            <a class="button lite-grey enc__back_button" href="#">Back to game</a>
+            <ul class="enc__menu">
+                <li class="enc__menu_item"><span class="current">Want to meet me <span class="bubble red">+19</span></span></li>
+                <li class="enc__menu_item"><a href="#">I want to meet <span class="bubble">1</span></a></li>
+                <li class="enc__menu_item"><a href="#">Mutual attractions <span class="bubble red">+8</span></a></li>
+
+            </ul>
+
+        </div><!-- /.enc__collSide -->
+        <div class="std__clear"></div>
+
+    </div><!-- /.content_inn -->
+
+</div><!-- /.content -->
+
+
+<!--/CONTENT -->
+
+<!-- start of Footer Pattern -->
+<div class="footer" id="footer">
+    <div class="footer_inn">
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/dating/about/">About Meetville</a></li>
+            <li><a href="/forum/categories/faq-help.84/ ">Help Center</a></li>
+            <li><a href="/dating/sitemap/">Site map</a></li>
+        </ul>
+        <ul>
+            <li><a href="/dating/terms/">Terms of use</a></li>
+            <li><a href="/dating/policy/">Privacy</a></li>
+            <li><a href="/dating/safety/">Safety Tips</a></li>
+            <li><a rel="nofollow" href="/dating/scams/">Scam warning</a></li>
+        </ul>
+        <ul>
+            <li><a href="/payments/vip/" class="iVip" style="position:relative; left:-20px;">Meetville VIP</a></li>
+            <li><a href="/affiliates/">Affiliate program</a></li>
+            <li><a href="/forum/forums/our-blog.127/">Our blog</a></li>
+            <li><a href="/dating/feedback/">Contact Us</a></li>
+        </ul>
+        <ul>
+            <li><a href="http://itunes.apple.com/app/yangutu-meet-new-people/id508760385">Meetville iPhone</a></li>
+        </ul>
+
+        <div class="left">
+            <p>© 2010-2013 Meetville. All rights reserved.</p>
+        </div>
+
+        <div class="clear"></div>
+    </div>
+</div>
+<!-- end of Footer Pattern -->
+
+
+
+</body>
+
+</html>

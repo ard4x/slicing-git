@@ -158,109 +158,24 @@
         <div class="enc__collMain enc__play">
             <h1 class="std__header std__fs-bigH enc__play_header">Want to meet her?</h1>
             <div class="button-group enc__play_buttons">
-                <a href class="button green big button-group-first"><i class="icon icon-v"></i>Yes</a>
-                <a href class="button lite-grey big">Maybe...</a>
-                <a href class="button red big button-group-last"><i class="icon icon-x"></i>No</a>
-            </div>
-            <div class="enc__photoArea">
-                <a class="enc__photoArea_frame" href="#">
-                    <span class="enc__photoArea_canvas">
-                        <img class="enc__photoArea_photo" src="../img/usr/test/1.jpg" alt=""/>
-                    </span>
-                </a>
-            </div>
-            <div class="enc__user">
-                <span class="enc__user_person"><a href="#">Abbygail</a>, 28</span> <span class="enc__user_location">New York City, New York</span>
-                <div class="enc__user_search">Wants to meet with a man, 26 - 35</div>
+                <a href class="button green big button-group-first disabled"><i class="icon icon-v"></i>Yes</a>
+                <a href class="button lite-grey big disabled">Maybe...</a>
+                <a href class="button red big button-group-last disabled"><i class="icon icon-x"></i>No</a>
             </div>
 
-            <div class="profile__info_block enc__user_information closed _jBasicInfo">
-                <h2 class="b-std__header std__fs-smallH">
-                    Basic information <span class="enc__arrow_up"></span>
-                </h2>
-                <div class="profile__info_list">
-
-
-                    <div class="profile__info_list_row">
-                        <div class="profile__info_list_label">Relationship: </div>
-                        <div class="profile__info_list_item">
-                            <span class="view-stage" data-block="basic-information-popup" data-field="relationshipStatus">Married</span>
-                        </div>
-                    </div><!-- /.profile__info_list_row -->
-
-
-                    <div class="profile__info_list_row">
-                        <div class="profile__info_list_label">Have kids: </div>
-                        <div class="profile__info_list_item">
-                            <span class="view-stage" data-block="basic-information-popup" data-field="kidsAtHome">Yes</span>
-                        </div>
-                    </div><!-- /.profile__info_list_row -->
-
-
-                    <div class="profile__info_list_row">
-                        <div class="profile__info_list_label">Want kids: </div>
-                        <div class="profile__info_list_item">
-                            <span class="view-stage" data-block="basic-information-popup" data-field="wantsKids">No answer</span>
-                        </div>
-                    </div><!-- /.profile__info_list_row -->
-
-
-                    <div class="profile__info_list_row">
-                        <div class="profile__info_list_label">Ethnicity: </div>
-                        <div class="profile__info_list_item">
-                            <span class="view-stage" data-block="basic-information-popup" data-field="ethnicity">African-American / African descent</span>
-                        </div>
-                    </div><!-- /.profile__info_list_row -->
-
-
-                    <div class="profile__info_list_row">
-                        <div class="profile__info_list_label">Faith: </div>
-                        <div class="profile__info_list_item">
-                            <span class="view-stage" data-block="basic-information-popup" data-field="religion">Atheist</span>
-                        </div>
-                    </div><!-- /.profile__info_list_row -->
-
-
-                    <div class="profile__info_list_row">
-                        <div class="profile__info_list_label">Political views: </div>
-                        <div class="profile__info_list_item">
-                            <span class="view-stage" data-block="basic-information-popup" data-field="politicalViews">Conservative</span>
-                        </div>
-                    </div><!-- /.profile__info_list_row -->
-
-
-                    <div class="profile__info_list_row">
-                        <div class="profile__info_list_label">Body type: </div>
-                        <div class="profile__info_list_item">
-                            <span class="view-stage" data-block="basic-information-popup" data-field="bodyType">Athletic</span>
-                        </div>
-                    </div><!-- /.profile__info_list_row -->
-
-
-                    <div class="profile__info_list_row">
-                        <div class="profile__info_list_label">Height: </div>
-                        <div class="profile__info_list_item">
-                            <span class="view-stage" data-block="basic-information-popup" data-field="height">185 cm</span>
-                        </div>
-                    </div><!-- /.profile__info_list_row -->
-
-
-                    <div class="profile__info_list_row">
-                        <div class="profile__info_list_label">Smoke: </div>
-                        <div class="profile__info_list_item">
-                            <span class="view-stage" data-block="basic-information-popup" data-field="smokes">A few times a year</span>
-                        </div>
-                    </div><!-- /.profile__info_list_row -->
-
-
-                    <div class="profile__info_list_row">
-                        <div class="profile__info_list_label">Drink: </div>
-                        <div class="profile__info_list_item">
-                            <span class="view-stage" data-block="basic-information-popup" data-field="drinks">Never</span>
-                        </div>
-                    </div><!-- /.profile__info_list_row -->
-
-                </div><!-- /.profile__info_list -->
+            <div class="enc__play_noUser">
+                <div class="enc__play_noUser_pic">
+                    <div class="b-user__photoFrame">
+                        <img src="../img/usr/user-empty-m.png" class="enc__play_noUser_pic_img" alt=""/>
+                        <!--      ../img/usr/user-empty-f.png fo Female picture -->
+                    </div>
+                </div>
+                <h2 class="std__header std__fs-mainH std__underline enc__play_noUser_header">We are awfully sorry!</h2>
+                <div class="enc__play_noUser_msg">
+                    Unfortunately, there are no more users that correspond
+                    to your search criteria.
+                </div>
+                <div>Change <a href="#">your basic information</a> in profile or change age in the Encounters settings to find someone. </div>
             </div>
 
         </div>
@@ -300,20 +215,6 @@
                     </span>
                 </li>
             </ul>
-
-            <div class="enc__widget_next">
-                <h3 class="std__header std__fs-smallH std__underline">See who's up next</h3>
-                <div class="enc__widget_next_list">
-                    <img src="../img/usr/user1.jpg" alt="" class="enc__widget_next_list_item"
-                            /><img
-                        src="../img/usr/user2.jpg" alt="" class="enc__widget_next_list_item"
-                            /><img
-                        src="../img/usr/user3.jpg" alt="" class="enc__widget_next_list_item"
-                            /><img
-                        src="../img/usr/user4.jpg" alt="" class="enc__widget_next_list_item"/>
-                    <div class="enc__widget_next_stopper"></div>
-                </div>
-            </div>
 
         </div>
         <div class="std__clear"></div>

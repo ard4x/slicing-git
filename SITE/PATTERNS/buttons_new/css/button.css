@@ -2,6 +2,7 @@
   display: inline-block;
   position: relative;
   height: 31px;
+  line-height: 29px;
   line-height: 31px;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -43,8 +44,8 @@
   border-color: #486993 #2f4f7b #3f5c81 !important;
 }
 .button:hover {
-  background: #5279a9;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  background: #5279a9 !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false) !important;
 }
 .button:active {
   background: #345278;
@@ -66,8 +67,8 @@ input.button {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#d95b42, endColorstr=#c03218, GradientType=0);
 }
 .button.red:hover {
-  background: #d95b42;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  background: #d95b42 !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false) !important;
 }
 .button.red:active {
   background: #b02208;
@@ -91,8 +92,8 @@ input.button {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#77ad5a, endColorstr=#55833c, GradientType=0);
 }
 .button.green:hover {
-  background: #77ad5a;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  background: #77ad5a !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false) !important;
 }
 .button.green:active {
   background: #45732c;
@@ -129,8 +130,8 @@ input.button {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#da6b44, endColorstr=#c54517, GradientType=0);
 }
 .button.orange:hover {
-  background: #da6b44;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  background: #da6b44 !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false) !important;
 }
 .button.orange:active {
   background: #b53507;
@@ -147,30 +148,6 @@ input.button {
 .button.orange:active {
   border-color: #8a3714 #c75127 #a55133 !important;
 }
-.button.disabled,
-.button[disabled],
-.button[disabled="disabled"] {
-  background: #666666;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-  cursor: default;
-  color: #fff!important;
-  box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 0.4);
-}
-.button.disabled,
-.button[disabled],
-.button[disabled="disabled"] {
-  border-color: #555555 #636363 #4e4e4e !important;
-}
-.button.disabled:hover,
-.button[disabled]:hover,
-.button[disabled="disabled"]:hover {
-  border-color: #555555 #636363 #4e4e4e !important;
-}
-.button.disabled:active,
-.button[disabled]:active,
-.button[disabled="disabled"]:active {
-  border-color: #555555 #636363 #4e4e4e !important;
-}
 .button.dark-red {
   background: #ca3434;
   background: -ms-linear-gradient(top, #da4444 0%, #c51717 100%);
@@ -178,8 +155,8 @@ input.button {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#da4444, endColorstr=#c51717, GradientType=0);
 }
 .button.dark-red:hover {
-  background: #da4444;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  background: #da4444 !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false) !important;
 }
 .button.dark-red:active {
   background: #b50707;
@@ -216,8 +193,8 @@ input.button {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#aaaaaa, endColorstr=#9a9a9a, GradientType=0);
 }
 .button.grey:hover {
-  background: #aaaaaa;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  background: #aaaaaa !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false) !important;
 }
 .button.grey:active {
   background: #8a8a8a;
@@ -243,8 +220,8 @@ input.button {
   text-shadow: rgba(255, 255, 255, 0.5) 0 1px 2px;
 }
 .button.lite-grey:hover {
-  background: #efefef;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  background: #efefef !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false) !important;
 }
 .button.lite-grey:active {
   background: #cecece;
@@ -268,8 +245,8 @@ input.button {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#49c7fa, endColorstr=#2087b7, GradientType=0);
 }
 .button.azure:hover {
-  background: #49c7fa;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  background: #49c7fa !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false) !important;
 }
 .button.azure:active {
   background: #1077a7;
@@ -293,8 +270,8 @@ input.button {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#779ac4, endColorstr=#627ea1, GradientType=0);
 }
 .button.lite_blue:hover {
-  background: #779ac4;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  background: #779ac4 !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false) !important;
 }
 .button.lite_blue:active {
   background: #526e91;
@@ -311,8 +288,52 @@ input.button {
 .button.lite_blue:active {
   border-color: #446691 #6a88ae #5b7595 !important;
 }
+.button.disabled,
+.button[disabled],
+.button[disabled="disabled"] {
+  background: #565656;
+  background: -ms-linear-gradient(top, #666666 0%, #666666 100%);
+  background: linear-gradient(to bottom, #666666 0%, #666666 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#666666, endColorstr=#666666, GradientType=0);
+  background: #666666 !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false) !important;
+  cursor: default;
+  color: #fff!important;
+  text-shadow: rgba(0, 0, 0, 0.5) 0 1px 2px !important;
+  box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 0.4);
+}
+.button.disabled:hover,
+.button[disabled]:hover,
+.button[disabled="disabled"]:hover {
+  background: #666666 !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false) !important;
+}
+.button.disabled:active,
+.button[disabled]:active,
+.button[disabled="disabled"]:active {
+  background: #565656;
+  background: -ms-linear-gradient(top, #666666 0%, #666666 100%);
+  background: linear-gradient(to bottom, #666666 0%, #666666 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#666666, endColorstr=#666666, GradientType=0);
+}
+.button.disabled,
+.button[disabled],
+.button[disabled="disabled"] {
+  border-color: #555555 #636363 #4e4e4e !important;
+}
+.button.disabled:hover,
+.button[disabled]:hover,
+.button[disabled="disabled"]:hover {
+  border-color: #555555 #636363 #4e4e4e !important;
+}
+.button.disabled:active,
+.button[disabled]:active,
+.button[disabled="disabled"]:active {
+  border-color: #555555 #636363 #4e4e4e !important;
+}
 .button.small {
   height: 24px;
+  line-height: 22px;
   font-size: 12px!important;
   padding: 3px 13px 0;
 }
@@ -324,6 +345,7 @@ input.button {
 }
 .button.middle {
   height: 27px;
+  line-height: 25px;
   font-size: 14px!important;
   padding: 4px 15px 0;
 }
@@ -335,6 +357,7 @@ input.button {
 }
 .button.big {
   height: 41px;
+  line-height: 39px;
   font-size: 18px!important;
   padding: 8px 21px 0;
   border-radius: 4px;
@@ -347,6 +370,7 @@ input.button {
 }
 .button.large {
   height: 47px;
+  line-height: 45px;
   font-size: 18px!important;
   padding: 11px 23px 0;
   border-radius: 4px;
@@ -359,6 +383,7 @@ input.button {
 }
 .button.huge {
   height: 57px;
+  line-height: 55px;
   font-size: 28px!important;
   padding: 11px 28px 0;
   border-radius: 4px;
@@ -1051,8 +1076,8 @@ i.icon.icon-v {
   position: relative;
 }
 .slider .slider-item:hover {
-  background: #efefef;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  background: #efefef !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false) !important;
 }
 .slider .slider-item:active {
   background: #cecece;
@@ -1168,6 +1193,11 @@ i.icon.icon-v {
   border-radius: 0;
   margin-left: 5px;
   width: 130px;
+}
+.button-group .button.small {
+  margin-left: 3px;
+  width: auto;
+  min-width: 60px;
 }
 .button-group .button.button-group-first {
   border-top-left-radius: 4px;
