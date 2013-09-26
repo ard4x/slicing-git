@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Page title</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/std.css">
@@ -12,6 +12,23 @@
     <link rel="stylesheet" href="../css/f2f/encounters.css">
     <script type="text/javascript" src="../js/jquery.js"></script>
     <script type="text/javascript" src="encounters.js"></script>
+    <script type="text/javascript" src="../js/preloader/jquery.rotate.min.js"></script>
+    <script type="text/javascript" src="../js/preloader/jquery.preloader.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.loaderImage').preloaderPic({
+                'imgPath': '../js/preloader/images/'
+            });
+            $('.loaderImageSmall').preloaderPic({
+                'size': '24',
+                'imgPath': '../js/preloader/images/'
+            });
+            $('.loaderImageMainPhoto').preloaderPic({
+                top: '114px',
+                'imgPath': '../js/preloader/images/'
+            });
+        })
+    </script>
 </head>
 <body>
 <!-- Start of Pattern Header  for guests -->
@@ -24,7 +41,8 @@
 
         <div class="head__menu">
             <a class="head__menu_item active" href="#">Search</a>
-            <a class="head__menu_item"  href="#">Encounters</a>
+            <a class="head__menu_item" href="#">Encounters</a>
+
             <div class="head__menu_item head__menu_hovering _jDropDown_widthFix _jDropDown_hover">Connections
 
                 <ul class="head__toolbar_subMenu _jDropDown_widthFix_menu">
@@ -40,10 +58,12 @@
             </div>
             <a class="head__menu_item" href="#">Messages<span class="bubble_counter">197</span></a>
 
-        </div><!-- /.head__menu -->
+        </div>
+        <!-- /.head__menu -->
 
         <ul class="head__toolbar">
-            <li class="head__toolbar_item head__toolbar_item_iconed head__toolbar_item_signals action _jDropDownActivate"><i  title="Notifications" class="icon"></i><span class="counter">197</span>
+            <li class="head__toolbar_item head__toolbar_item_iconed head__toolbar_item_signals action _jDropDownActivate">
+                <i title="Notifications" class="icon"></i><span class="counter">197</span>
 
                 <div class="head__dropDown">
 
@@ -58,7 +78,8 @@
                             <div class="head__dropDown_listItem_what">Checked out your profile</div>
                         </span>
                         <span class="head__dropDown_clear"></span>
-                    </div><!-- /.head__dropDown_listItem -->
+                    </div>
+                    <!-- /.head__dropDown_listItem -->
 
                     <div class="head__dropDown_listItem">
                         <img class="head__dropDown_listItem_userPic" src="../img/user/user1.jpg" alt=""/>
@@ -69,7 +90,8 @@
                         </span>
                         <img class="head__dropDown_listItem_userPic" src="../img/user/user2.jpg" alt=""/>
                         <span class="head__dropDown_clear"></span>
-                    </div><!-- /.head__dropDown_listItem -->
+                    </div>
+                    <!-- /.head__dropDown_listItem -->
 
                     <div class="head__dropDown_listItem">
                         <img class="head__dropDown_listItem_userPic" src="../img/user/user1.jpg" alt=""/>
@@ -79,7 +101,8 @@
                             <span class="head__dropDown_listItem_what">Request you to upload more photos of yours</span>
                         </span>
                         <span class="head__dropDown_clear"></span>
-                    </div><!-- /.head__dropDown_listItem -->
+                    </div>
+                    <!-- /.head__dropDown_listItem -->
 
                     <div class="head__dropDown_listItem">
                         <img class="head__dropDown_listItem_userPic" src="../img/user/user1.jpg" alt=""/>
@@ -89,11 +112,13 @@
                             <span class="head__dropDown_listItem_what">Wants to get to know you better</span>
                         </span>
                         <span class="head__dropDown_clear"></span>
-                    </div><!-- /.head__dropDown_listItem -->
+                    </div>
+                    <!-- /.head__dropDown_listItem -->
                     <!-- /dropDown list -->
                     <div class="head__dropDown_last"><a href="#">View All Notifications</a></div>
 
-                </div><!-- /.head__dropDown -->
+                </div>
+                <!-- /.head__dropDown -->
 
             </li>
             <!--
@@ -111,7 +136,8 @@
 
             </li>
             <li class="head__toolbar_item head__toolbar_item_divider"></li>
-            <li class="head__toolbar_item head__toolbar_item_iconed head__toolbar_item_settings _jDropDownActivate"><i title="Settings" class="icon"></i>
+            <li class="head__toolbar_item head__toolbar_item_iconed head__toolbar_item_settings _jDropDownActivate"><i
+                    title="Settings" class="icon"></i>
 
                 <ul class="head__toolbar_subMenu">
                     <li class="head__toolbar_subMenu_item"><a href="#">Invite friends</a></li>
@@ -128,119 +154,142 @@
             </li>
         </ul>
 
-    </div><!-- /.head__inner -->
-</div><!-- /.head__wrap -->
+    </div>
+    <!-- /.head__inner -->
+</div>
+<!-- /.head__wrap -->
 <!-- End of Pattern Header  for guests -->
 <!-- CONTENT -->
 <div class="content">
 
 <div class="content_inn enc">
 <div class="enc__collMain enc__play">
+
 <h1 class="std__header std__fs-bigH enc__play_header">Want to meet her?</h1>
+
 <div class="button-group enc__play_buttons">
-    <a href class="button red big button-group-first"><i class="icon icon-v"></i>Yes</a>
+    <a href class="button green big button-group-first"><i class="icon icon-v"></i>Yes</a>
     <a href class="button lite-grey big">Maybe...</a>
-    <a href class="button green big button-group-last"><i class="icon icon-x"></i>No</a>
+    <a href class="button red big button-group-last"><i class="icon icon-x"></i>No</a>
 </div>
-<div class="enc__photoArea">
-    <a class="enc__photoArea_frame" href="#">
+
+<div class="enc__user_area">
+    <div class="loaderImageMainPhoto"></div>
+    <div class="enc__photoArea">
+        <a class="enc__photoArea_frame" href="#">
                     <span class="enc__photoArea_canvas">
                         <img class="enc__photoArea_photo" src="../img/usr/test/1.jpg" alt=""/>
                     </span>
-    </a>
-</div>
-<div class="enc__user">
-    <span class="enc__user_person"><a href="#">Abbygail</a>, 28</span> <span class="enc__user_location">New York City, New York</span>
-    <div class="enc__user_search">Wants to meet with a man, 26 - 35</div>
-</div>
+        </a>
+    </div>
+    <div class="enc__user">
+        <span class="enc__user_person"><a href="#">Abbygail</a>, 28</span> <span class="enc__user_location">New York City, New York</span>
 
+        <div class="enc__user_search">Wants to meet with a man, 26 - 35</div>
+    </div>
+</div><!-- /.enc__user_area -->
 <div class="profile__info_block enc__user_information closed _jBasicInfo">
     <h2 class="b-std__header std__fs-smallH">
         Basic information <span class="enc__arrow_up"></span>
     </h2>
+
     <div class="profile__info_list">
-
+        <div class="loaderImage"></div>
 
         <div class="profile__info_list_row">
-            <div class="profile__info_list_label">Relationship: </div>
+            <div class="profile__info_list_label">Relationship:</div>
             <div class="profile__info_list_item">
-                <span class="view-stage" data-block="basic-information-popup" data-field="relationshipStatus">Married</span>
+                <span class="view-stage" data-block="basic-information-popup"
+                      data-field="relationshipStatus">Married</span>
             </div>
-        </div><!-- /.profile__info_list_row -->
+        </div>
+        <!-- /.profile__info_list_row -->
 
 
         <div class="profile__info_list_row">
-            <div class="profile__info_list_label">Have kids: </div>
+            <div class="profile__info_list_label">Have kids:</div>
             <div class="profile__info_list_item">
                 <span class="view-stage" data-block="basic-information-popup" data-field="kidsAtHome">Yes</span>
             </div>
-        </div><!-- /.profile__info_list_row -->
+        </div>
+        <!-- /.profile__info_list_row -->
 
 
         <div class="profile__info_list_row">
-            <div class="profile__info_list_label">Want kids: </div>
+            <div class="profile__info_list_label">Want kids:</div>
             <div class="profile__info_list_item">
                 <span class="view-stage" data-block="basic-information-popup" data-field="wantsKids">No answer</span>
             </div>
-        </div><!-- /.profile__info_list_row -->
+        </div>
+        <!-- /.profile__info_list_row -->
 
 
         <div class="profile__info_list_row">
-            <div class="profile__info_list_label">Ethnicity: </div>
+            <div class="profile__info_list_label">Ethnicity:</div>
             <div class="profile__info_list_item">
                 <span class="view-stage" data-block="basic-information-popup" data-field="ethnicity">African-American / African descent</span>
             </div>
-        </div><!-- /.profile__info_list_row -->
+        </div>
+        <!-- /.profile__info_list_row -->
 
 
         <div class="profile__info_list_row">
-            <div class="profile__info_list_label">Faith: </div>
+            <div class="profile__info_list_label">Faith:</div>
             <div class="profile__info_list_item">
                 <span class="view-stage" data-block="basic-information-popup" data-field="religion">Atheist</span>
             </div>
-        </div><!-- /.profile__info_list_row -->
+        </div>
+        <!-- /.profile__info_list_row -->
 
 
         <div class="profile__info_list_row">
-            <div class="profile__info_list_label">Political views: </div>
+            <div class="profile__info_list_label">Political views:</div>
             <div class="profile__info_list_item">
-                <span class="view-stage" data-block="basic-information-popup" data-field="politicalViews">Conservative</span>
+                <span class="view-stage" data-block="basic-information-popup"
+                      data-field="politicalViews">Conservative</span>
             </div>
-        </div><!-- /.profile__info_list_row -->
+        </div>
+        <!-- /.profile__info_list_row -->
 
 
         <div class="profile__info_list_row">
-            <div class="profile__info_list_label">Body type: </div>
+            <div class="profile__info_list_label">Body type:</div>
             <div class="profile__info_list_item">
                 <span class="view-stage" data-block="basic-information-popup" data-field="bodyType">Athletic</span>
             </div>
-        </div><!-- /.profile__info_list_row -->
+        </div>
+        <!-- /.profile__info_list_row -->
 
 
         <div class="profile__info_list_row">
-            <div class="profile__info_list_label">Height: </div>
+            <div class="profile__info_list_label">Height:</div>
             <div class="profile__info_list_item">
                 <span class="view-stage" data-block="basic-information-popup" data-field="height">185 cm</span>
             </div>
-        </div><!-- /.profile__info_list_row -->
+        </div>
+        <!-- /.profile__info_list_row -->
 
 
         <div class="profile__info_list_row">
-            <div class="profile__info_list_label">Smoke: </div>
+            <div class="profile__info_list_label">Smoke:</div>
             <div class="profile__info_list_item">
-                <span class="view-stage" data-block="basic-information-popup" data-field="smokes">A few times a year</span>
+                <span class="view-stage" data-block="basic-information-popup"
+                      data-field="smokes">A few times a year</span>
             </div>
-        </div><!-- /.profile__info_list_row -->
+        </div>
+        <!-- /.profile__info_list_row -->
 
 
         <div class="profile__info_list_row">
-            <div class="profile__info_list_label">Drink: </div>
+            <div class="profile__info_list_label">Drink:</div>
             <div class="profile__info_list_item">
                 <span class="view-stage" data-block="basic-information-popup" data-field="drinks">Never</span>
             </div>
-        </div><!-- /.profile__info_list_row -->
+        </div>
+        <!-- /.profile__info_list_row -->
 
-    </div><!-- /.profile__info_list -->
+    </div>
+    <!-- /.profile__info_list -->
 
 
 </div>
@@ -263,6 +312,7 @@
 
 <div class="enc__user">
     <span class="enc__user_person"><a href="#">Abbygail</a>, 28</span> <span class="enc__user_location">New York City, New York</span>
+
     <div class="enc__user_search">Wants to meet with a man, 26 - 35</div>
 </div>
 
@@ -289,6 +339,7 @@
 
 <div class="enc__user">
     <span class="enc__user_person"><a href="#">Abbygail</a>, 28</span> <span class="enc__user_location">New York City, New York</span>
+
     <div class="enc__user_search">Wants to meet with a man, 26 - 35</div>
 </div>
 
@@ -314,6 +365,7 @@
 
 <div class="enc__user">
     <span class="enc__user_person"><a href="#">Abbygail</a>, 28</span> <span class="enc__user_location">New York City, New York</span>
+
     <div class="enc__user_search">Wants to meet with a man, 26 - 35</div>
 </div>
 
@@ -339,6 +391,7 @@
 
 <div class="enc__user">
     <span class="enc__user_person"><a href="#">Abbygail</a>, 28</span> <span class="enc__user_location">New York City, New York</span>
+
     <div class="enc__user_search">Wants to meet with a man, 26 - 35</div>
 </div>
 
@@ -364,6 +417,7 @@
 
 <div class="enc__user">
     <span class="enc__user_person"><a href="#">Abbygail</a>, 28</span> <span class="enc__user_location">New York City, New York</span>
+
     <div class="enc__user_search">Wants to meet with a man, 26 - 35</div>
 </div>
 
@@ -389,6 +443,7 @@
 
 <div class="enc__user">
     <span class="enc__user_person"><a href="#">Abbygail</a>, 28</span> <span class="enc__user_location">New York City, New York</span>
+
     <div class="enc__user_search">Wants to meet with a man, 26 - 35</div>
 </div>
 
@@ -414,6 +469,7 @@
 
 <div class="enc__user">
     <span class="enc__user_person"><a href="#">Abbygail</a>, 28</span> <span class="enc__user_location">New York City, New York</span>
+
     <div class="enc__user_search">Wants to meet with a man, 26 - 35</div>
 </div>
 
@@ -439,6 +495,7 @@
 
 <div class="enc__user">
     <span class="enc__user_person"><a href="#">Abbygail</a>, 28</span> <span class="enc__user_location">New York City, New York</span>
+
     <div class="enc__user_search">Wants to meet with a man, 26 - 35</div>
 </div>
 
@@ -464,6 +521,7 @@
 
 <div class="enc__user">
     <span class="enc__user_person"><a href="#">Abbygail</a>, 28</span> <span class="enc__user_location">New York City, New York</span>
+
     <div class="enc__user_search">Wants to meet with a man, 26 - 35</div>
 </div>
 
@@ -487,24 +545,37 @@
 
     <div class="enc__widget_next">
         <h3 class="std__header std__fs-smallH std__underline">See who's up next</h3>
+
         <div class="enc__widget_next_list">
-            <img src="../img/usr/user1.jpg" alt="" class="enc__widget_next_list_item first_item"
-                    /><img
-                src="../img/usr/user2.jpg" alt="" class="enc__widget_next_list_item"
-                /><img
-                src="../img/usr/user3.jpg" alt="" class="enc__widget_next_list_item"
-                /><img
-                src="../img/usr/user4.jpg" alt="" class="enc__widget_next_list_item"/>
-            <div class="enc__widget_next_stopper"></div>
+            <div class="enc__widget_next_list_item">
+                <img src="../img/usr/user1.jpg" alt="" class="enc__widget_next_list_item_pic"/>
+            </div>
+            <div class="enc__widget_next_list_item">
+                <img src="../img/usr/user2.jpg" alt="" class="enc__widget_next_list_item_pic"/>
+            </div>
+            <div class="enc__widget_next_list_item">
+                <img src="../img/usr/user3.jpg" alt="" class="enc__widget_next_list_item_pic"/>
+
+                <div class="loaderImageSmall"></div>
+            </div>
+            <div class="enc__widget_next_list_item">
+                <img src="../img/usr/user4.jpg" alt="" class="enc__widget_next_list_item_pic"/>
+
+                <div class="loaderImageSmall"></div>
+            </div>
         </div>
+        <!-- /.enc__widget_next_list -->
     </div>
+    <!-- /.enc__widget_next -->
 
 </div>
 <div class="std__clear"></div>
 
-</div><!-- /.content_inn -->
+</div>
+<!-- /.content_inn -->
 
-</div><!-- /.content -->
+</div>
+<!-- /.content -->
 
 
 <!--/CONTENT -->
@@ -543,7 +614,6 @@
     </div>
 </div>
 <!-- end of Footer Pattern -->
-
 
 
 </body>

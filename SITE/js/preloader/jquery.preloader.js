@@ -8,7 +8,10 @@
         options = $.extend({
             speed: 40,
             size: 72,
-            background: 'rgba(255,255,255,0.7)'
+            top: 'default',
+            background: 'rgba(255,255,255,0.7)',
+            imgPath: '/js/preloader/images/', // path to preloader images
+            parentPosition: 'relative'
         }, options);
 
 
@@ -16,23 +19,30 @@
 
             var holder = $(el),
                 parent = $(holder).parent(),
-                parentHeight = $(parent).outerWidth(),
-                parentWidth = $(parent).outerHeight(),
-                image = 'images/preloader_'+ options.size +'.png',
+                parentWidth = $(parent).outerWidth(),
+                parentHeight = $(parent).outerHeight(),
+                image = options.imgPath + '/preloader_'+ options.size +'.png',
                 preloaderImage = $('<div></div>').appendTo(holder),
                 preloaderCSS = {
                     width: options.size,
                     height: options.size,
                     backgroundImage: 'url('+ image +')',
                     position: 'relative',
-                    top: (parentHeight - options.size)/2,
+                    top: (options.top == 'default')? (parentHeight - options.size)/2 : options.top,
                     left: (parentWidth - options.size)/2
                 };
             $(holder).css('background', options.background);
 
             $(holder).width(parentWidth)
-                .height(parentHeight );
+                .height(parentHeight)
+                .css({
+                    'position':'absolute',
+                    'left':0,
+                    'top': 0,
+                    'z-index': 333
+                });
             $(preloaderImage).css(preloaderCSS);
+            $(parent).css('position', 'relative');
 
             return preloaderImage;
         }
@@ -46,8 +56,7 @@
         };
 
         var make = function () {
-            //interval = setInterval(function(){action(preloaderImage)}, 1000/ options.speed );
-            img = init(this);
+            var img = init(this);
             action(img);
         };
 
