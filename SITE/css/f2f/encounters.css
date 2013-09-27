@@ -87,8 +87,9 @@
     .enc__mutual .enc__userList_location {margin-bottom: 8px;}
     .enc__mutual .enc__userList_message {margin-bottom: 1px;}
     .enc__mutual .enc__userList_messages {margin-bottom: 9px;}
-    .enc__mutual .enc__userList_controls {font-size: 14px;}
-    .enc__mutual .enc__userList_controls .divider{color: #999;}
+    .enc__userList_controls {font-size: 14px; padding-top: 2px;}
+        .enc__mutual .enc__userList_controls {padding-top: 0;}
+    .enc__userList_controls .divider{color: #999;}
 
  .enc__back_button {width: 100%; margin-bottom : 20px;}
  .enc__page_empty {margin-top: 20px; border-top: 1px solid #ccc; padding: 50px 0;}
