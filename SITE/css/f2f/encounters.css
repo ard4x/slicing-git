@@ -67,6 +67,8 @@
         .enc__play_noUser_pic_img {width: 200px; height: 200px;}
     .enc__play_noUser_header {margin-bottom: 17px;}
     .enc__play_noUser_msg {margin-bottom: 19px; line-height: 18px;}
+    .enc__play_noUser.page {
+        padding-top: 20px; width: 418px;}
 
 /* Lists */
 .enc__userList_date {font-size: 14px; font-weight: bold; color: #333; line-height: 14px; padding: 8px 10px 11px; background: #f5f5f5; border-radius: 4px; margin-bottom: 10px;}
