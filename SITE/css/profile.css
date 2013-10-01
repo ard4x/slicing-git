@@ -81,7 +81,7 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 .profile__info_top_message {}
 .profile__info_top_message .profile__message_area {width: 305px; height: 50px; padding-right: 65px; }
 .profile__info_top_message .button {position: absolute; bottom: 27px; right: 47px; padding-left: 10px; padding-right: 10px;}
-.profile__top_message_close {width: 9px; height: 9px; display: block;  position: absolute; top: 15px; right:14px; background: 0 -116px url(/img/profile/profile.png) no-repeat;}
+.profile__top_message_close {width: 9px; height: 9px; display: block;  position: absolute; top: 15px; right:14px; background: 0 -116px url(../img/profile/profile.png) no-repeat;}
 .profile__top_message_close:hover {background-position: -11px -116px;}
 /** profile buttons **/
 .profile__buttons {padding-bottom: 1px;}
@@ -225,9 +225,9 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 .profile__photoViewer_stat_number {color: #999; float: right;}
 
 .profile__photoViewer_message {background-color: #353535; padding: 19px 100px; border-bottom: 1px solid #9a9a9a; margin-top: 5px;}
-    .profile__photoViewer_message_title {color: #fff; margin-bottom: 6px;}
-    .profile__photoViewer_message_field {font-size: 18px; box-sizing: border-box; -moz-box-sizing: border-box; height: 41px !important; width: 510px; margin-right: 26px !important; padding: 0 12px!important; }
-    .profile__photoViewer_message_button {width: 170px; padding-left: 5px !important; padding-right: 5px !important;}
+.profile__photoViewer_message_title {color: #fff; margin-bottom: 6px;}
+.profile__photoViewer_message_field {font-size: 18px; box-sizing: border-box; -moz-box-sizing: border-box; height: 41px !important; width: 510px; margin-right: 26px !important; padding: 0 12px!important; }
+.profile__photoViewer_message_button {width: 170px; padding-left: 5px !important; padding-right: 5px !important;}
 
 .profile__photoViewer_lastVotes {margin-bottom: 15px;}
 .profile__photoViewer_lastVotes_item {overflow: hidden; margin-bottom: 10px;}
@@ -261,12 +261,12 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 .profile__photo .profile__photoViewer_carousel_list {margin-left: 61px;}
 
 .profile__photoViewer_buttons {margin-bottom: 20px;}
-    .profile__photoViewer_buttons .button {padding-left: 12px; padding-right: 12px;}
-    .profile__photoViewer_buttons .button .icon {position: relative; margin-bottom: -4px; margin-right: 4px;}
-    .profile__photoViewer_buttons_leftGroup {float: left; text-align: left;}
-    .profile__photoViewer_buttons_leftGroup .button {margin-right: 8px;}
-    .profile__photoViewer_buttons_rightGroup {float: right; text-align: right;}
-    .profile__photoViewer_buttons_rightGroup .button {margin-left: 8px;}
+.profile__photoViewer_buttons .button {padding-left: 12px; padding-right: 12px;}
+.profile__photoViewer_buttons .button .icon {position: relative; margin-bottom: -4px; margin-right: 4px;}
+.profile__photoViewer_buttons_leftGroup {float: left; text-align: left;}
+.profile__photoViewer_buttons_leftGroup .button {margin-right: 8px;}
+.profile__photoViewer_buttons_rightGroup {float: right; text-align: right;}
+.profile__photoViewer_buttons_rightGroup .button {margin-left: 8px;}
 
 /** Slider **/
 .profile__slider {width: 910px; height: 560px; position: relative;}
@@ -321,7 +321,7 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 .profile__info_block_edit_buttons .cancel {text-align: right; margin-left: 30px;}
 .profile__info_block_edit_buttons .button {width: 105px;}
 .profile__info_block_edit_counter {float: left}
-    .err .profile__info_block_edit_counter {color: #900;}
+.err .profile__info_block_edit_counter {color: #900;}
 
 .profile__info_editList {position: relative; top: 1px; overflow: hidden; margin-bottom: 10px;}
 .profile__info_editList li {height: 27px; display: block; line-height: 27px; padding-left: 10px; }
@@ -451,23 +451,41 @@ a.label {padding: 1px 5px; border: 1px solid #d8d8d8; border-radius: 2px; font-s
 .profile__walker_right a {margin-left: 30px;}
 
 /* Email frequency settings */
-    .profile__settings_emailFreq {width: 660px; margin: 40px auto 100px; }
-    .profile__settings_emailFreq > .std__header {margin-bottom: 30px; padding-bottom: 8px}
-    .profile__settings_emailFreq_description {font-size: 14px; margin: 20px 0;}
-    .profile__settings_emailFreq_optList {margin: 30px 20px; font-size: 14px; display: block;}
-    .profile__settings_emailFreq_buttons {margin: 0; font-size: 14px; padding-bottom: 20px; border-bottom: 1px solid #ccc; position: relative;}
-        .profile__settings_emailFreq_buttons .button {margin-right: 20px;}
-        .profile__settings_emailFreq_unsubscribe {display: block; position: absolute; right: 0; bottom: 15px; font-size: 14px;}
-    .profile__settings_emailFreq_popup {text-align: center; font-size: 14px;}
-    .profile__settings_emailFreq_popup_description {margin: 30px;}
+.profile__settings_emailFreq {width: 660px; margin: 40px auto 100px; }
+.profile__settings_emailFreq > .std__header {margin-bottom: 30px; padding-bottom: 8px}
+.profile__settings_emailFreq_description {font-size: 14px; margin: 20px 0;}
+.profile__settings_emailFreq_optList {margin: 30px 20px; font-size: 14px; display: block;}
+.profile__settings_emailFreq_buttons {margin: 0; font-size: 14px; padding-bottom: 20px; border-bottom: 1px solid #ccc; position: relative;}
+.profile__settings_emailFreq_buttons .button {margin-right: 20px;}
+.profile__settings_emailFreq_unsubscribe {display: block; position: absolute; right: 0; bottom: 15px; font-size: 14px;}
+.profile__settings_emailFreq_popup {text-align: center; font-size: 14px;}
+.profile__settings_emailFreq_popup_description {margin: 30px;}
 
 /** Settings **/
 .profile__settings {}
-    .profile__settings .profile__collLeft {width: 220px;}
-    .profile__settings_paymentTable {border-collapse: collapse;}
-    .profile__settings_paymentTable th {border: 1px solid #ccc;}
-    .profile__settings_paymentTable td {border: 1px solid #ccc;}
-textarea.err, .err textarea, .err .newListSelected, .err .newList{border-color: #990000;}
+.profile__settings_collLeft {width: 150px;}
+.profile__settings h1.std__header {margin-bottom: 20px;}
+.profile__settings .profile__collLeft {width: 220px;}
+.profile__settings .profile__info_block {margin-bottom: 12px;}
+.profile__settings .profile__info_block > .b-std__header {padding-left: 15px;}
+.profile__settings .profile__info_list_label {width: 161px;}
+.profile__settings_tableHolder {padding-top: 8px;}
+.profile__settings_tableHolder > .std__header {margin-bottom: 11px;}
+.profile__settings_paymentTable {border-collapse: collapse; width: 100%; border: 1px solid #ccc;}
+.profile__settings_paymentTable th {border: 1px solid #ccc; width: 215px; height: 30px; padding-left: 15px; background-color: #ccc; box-sizing: border-box; -moz-box-sizing: border-box; vertical-align: middle;}
+.profile__settings_paymentTable th:last-child {width: auto;}
+.profile__settings_paymentTable td {border-bottom: 1px solid #ccc; height: 42px; padding-left: 15px; vertical-align: middle;}
+.profile__settings_cardChange {margin-left: 65px;}
+.profile__settings_cancelLink {margin-top: 28px; float: right;}
+.profile__settings_loader {text-align: center;}
+.profile__settings_payment_error {color:darkred; margin-bottom: 15px;}
+
+.profile__settings_nav {padding: 13px 15px 7px;}
+.profile__settings_menu_item {margin-bottom: 8px;}
+.profile__settings_no-pay {font-style: italic; color: #999; padding: 0 0 10px 5px;}
+.profile__settings_tableHolder .profile__settings_no-pay {padding: 8px 0 0; border-top: 1px solid #ccc;}
+.profile__settings .upgrade-button {margin-left: 80px; }
+.profile__settings .profile__info_list_label {vertical-align: middle; }
 
 /* Profile Y */
 .profile__y {margin-top: 20px;}
@@ -508,8 +526,8 @@ textarea.err, .err textarea, .err .newListSelected, .err .newList{border-color: 
 .profile__signals_likes_me .profile__block-signals_userPic.photo_like  {position: absolute; top: 10px; right: 40px;}
 .profile__signals_likes_me.profile__block-signals_user  {position: relative;}
 .profile_likes_empty {position: relative; background-color: #e8eff5; margin: 0 0 300px; padding: 70px 0; font: bold 28px 'PT Sans'; color: #333; text-align: center; border-radius: 4px;}
-    .profile_likes_empty p {padding: 0; margin: 0;}
-    .profile_likes_empty .button {margin-top: 30px;}
+.profile_likes_empty p {padding: 0; margin: 0;}
+.profile_likes_empty .button {margin-top: 30px;}
 
 /* Profile Invite */
 .profile__invite {padding-top: 15px;}

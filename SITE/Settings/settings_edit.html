@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/std.css">
     <link rel="stylesheet" href="../css/button.css">
     <link rel="stylesheet" href="../css/head.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/profile/settings.css">
     <script type="text/javascript" src="../js/jquery.js"></script>
 
 </head>
@@ -132,76 +134,169 @@
 <!-- CONTENT -->
 <div class="content">
 
-    <div class="content_inn ">
+    <div class="content_inn settings">
 
-        content
+        <div class="settings__coll_wide">
+            <h1 class="std__header std__fs-bigH settings__header">Settings</h1>
+
+            <div class="profile__info_block">
+                <h2 class="b-std__header std__fs-smallH">
+                    Privacy
+                    <span class="profile__info_edit" style="display: none;">
+                            <a href="#"><i class="icon icon-edit"></i>Edit settings</a>
+                    </span>
+                </h2>
+
+                <div class="profile__info_list">
+                    <div class="profile__info_list_row">
+                        <div class="profile__info_list_label">Profile visibility: </div>
+                        <div class="profile__info_list_item">
+                            <label>
+                                <input type="radio" name="1" value="11"/> Anyone
+                            </label>
+                            <label>
+                                <input type="radio" name="1" value="12"/> Only members
+                            </label>
+                        </div>
+                    </div><!-- /.profile__info_list_row -->
+
+                    <div class="profile__info_list_row row_controls">
+                        <a class="button" href="#">Save changes</a>
+                        <a href="#">Cancel</a>
+                    </div>
+
+                </div><!-- /.profile__info_list -->
+
+            </div><!-- /.profile__info_block -->
+
+
+            <div class="profile__info_block">
+                <h2 class="b-std__header std__fs-smallH">
+                    Chat Notifications
+                    <span class="profile__info_edit" style="display: none;">
+                        <a href="#"><i class="icon icon-edit"></i>Edit settings</a>
+                    </span>
+                </h2>
+
+                <div class="profile__info_list">
+                    <div class="profile__info_list_row">
+                        <div class="settings__list_description">
+                            Adjust your chat settings for convenient messaging.
+                        </div>
+                    </div><!-- /.profile__info_list_row -->
+                    <div class="profile__info_list_row">
+                        <div class="profile__info_list_label">New message sound: </div>
+                        <div class="profile__info_list_item">
+                            <label>
+                                <input type="radio" name="2" value="21"/> On
+                            </label>
+                            <label>
+                                <input type="radio" name="2" value="22"/> Off
+                            </label>
+                        </div>
+                    </div><!-- /.profile__info_list_row -->
+
+                    <div class="profile__info_list_row">
+                        <div class="profile__info_list_label">Pop-up notifications: </div>
+                        <div class="profile__info_list_item">
+                            <label>
+                                <input type="radio" name="3" value="31"/> On
+                            </label>
+                            <label>
+                                <input type="radio" name="3" value="32"/> Off
+                            </label>
+                        </div>
+                    </div><!-- /.profile__info_list_row -->
+
+                    <div class="profile__info_list_row row_controls">
+                        <a class="button" href="#">Save changes</a>
+                        <a href="#">Cancel</a>
+                    </div>
+
+                </div><!-- /.profile__info_list -->
+
+            </div><!-- /.profile__info_block -->
+
+
+            <div class="profile__info_block">
+                <h2 class="b-std__header std__fs-smallH">
+                    Facebook Integration
+                    <span class="profile__info_edit" style="display: none;">
+                        <a href="#"><i class="icon icon-edit"></i>Edit settings</a>
+                    </span>
+                </h2>
+
+                <div class="profile__info_list">
+                    <div class="profile__info_list_row">
+                        <div class="profile__info_list_label"></div>
+                        <div class="profile__info_list_item">
+                            <a class="button facebook large" href="#"><i class="icon"></i>Connect with Facebook</a>
+                        </div>
+                    </div><!-- /.profile__info_list_row -->
+
+                </div><!-- /.profile__info_list -->
+
+            </div><!-- /.profile__info_block -->
+
+            <div class="profile__info_block">
+                <h2 class="b-std__header std__fs-smallH">
+                    Change Email
+                    <span class="profile__info_edit" style="display: none;">
+                        <a href="#"><i class="icon icon-edit"></i>Edit settings</a>
+                    </span>
+                </h2>
+
+                <div class="profile__info_list">
+                    <div class="profile__info_list_row">
+                        <div class="profile__info_list_label">Current email: </div>
+                        <div class="profile__info_list_item">
+                            andy.anderson@mailforspam.net
+                        </div>
+                    </div><!-- /.profile__info_list_row -->
+
+                    <div class="profile__info_list_row">
+                        <div class="profile__info_list_label">New email: </div>
+                        <div class="profile__info_list_item">
+                            <input type="text" placeholder="Enter your new email address"/>
+                        </div>
+                    </div><!-- /.profile__info_list_row -->
+
+                    <div class="profile__info_list_row row_controls">
+                        <a class="button" href="#">Save changes</a>
+                        <a href="#">Cancel</a>
+                    </div>
+
+                </div><!-- /.profile__info_list -->
+
+            </div><!-- /.profile__info_block -->
+
+            <div class="settings__label settings__delete">
+                <a href="#">Delete my account</a>
+            </div>
+
+        </div><!-- /.profile__coll_wide -->
+
+        <div class="settings__coll_side">
+            <ul class="settings__side_menu">
+                <li class="settings__side_menu_item"><span class="current">Settings</span></li>
+                <li class="settings__side_menu_item"><a href="#">Email notifications</a></li>
+                <li class="settings__side_menu_item"><a href="#">Payments</a></li>
+                <li class="settings__side_menu_item"><a href="#">Change password</a></li>
+                <li class="settings__side_menu_item"><a href="#">Blocked users</a></li>
+                <li class="settings__side_menu_item"><a href="#">Hidden users</a></li>
+            </ul>
+
+        </div><!-- /.profile__coll_side -->
+
+        <div class="std__clear"></div>
 
     </div><!-- /.content_inn -->
 
 </div><!-- /.content -->
-
-
 <!--/CONTENT -->
 
 <!-- start of Footer Pattern -->
 <div class="footer" id="footer">
-    <div class="social_rate">
-        <div id="fb-root" class=" fb_reset"><script src="http://connect.facebook.net/en_US/all.js" async=""></script><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" scrolling="no" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tab-index="-1" style="border: none;" src="http://static.ak.facebook.com/connect/xd_arbiter.php?version=18#channel=f209d628b&amp;origin=http%3A%2F%2Fyangutu.com&amp;channel_path=%2Ffb_receiver.php%3Ffb_xd_fragment%23xd_sig%3Df317b3ad2c%26"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" scrolling="no" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tab-index="-1" style="border: none;" src="https://s-static.ak.facebook.com/connect/xd_arbiter.php?version=18#channel=f209d628b&amp;origin=http%3A%2F%2Fyangutu.com&amp;channel_path=%2Ffb_receiver.php%3Ffb_xd_fragment%23xd_sig%3Df317b3ad2c%26"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
-        <table>
-            <tbody><tr>
-                <td>
-                    <div class="srate-1" id="fbL_placebolder">
-                        <script type="text/javascript" async="true">
-                            //     $(document).ready(function() {
-                            (function() {
-                                var showLikeBtn = function() {
-                                    if (window.fbReady) {
-                                        var fbL = '<fb:like href="https://www.facebook.com/Yangutu.Meet.New.People" send="false" layout="button_count" width="100" height="22" show_faces="false" font=""></fb:like>';
-                                        $('#fbL_placebolder').append(fbL);
-                                        FB.XFBML.parse(document.getElementById('fbL_placeholder'));
-                                    } else {
-                                        setTimeout(showLikeBtn, 200);
-                                    }
-                                }
-                                showLikeBtn();
-                            })();
-                            //  });
-                        </script>
-                        <fb:like href="https://www.facebook.com/Yangutu.Meet.New.People" send="false" layout="button_count" width="100" height="22" show_faces="false" font="" fb-xfbml-state="rendered" class="fb_edge_widget_with_comment fb_iframe_widget"><span style="height: 20px; width: 79px;"><iframe id="ff3647f68" name="f130043a34" scrolling="no" style="border: none; overflow: hidden; height: 20px; width: 79px;" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=106186096099420&amp;locale=en_US&amp;sdk=joey&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D18%23cb%3Df35d9e9774%26origin%3Dhttp%253A%252F%252Fyangutu.com%252Ff209d628b%26domain%3Dyangutu.com%26relation%3Dparent.parent&amp;href=https%3A%2F%2Fwww.facebook.com%2FYangutu.Meet.New.People&amp;node_type=link&amp;width=100&amp;layout=button_count&amp;colorscheme=light&amp;show_faces=false&amp;send=false&amp;extended_social_context=false"></iframe></span></fb:like></div>
-                </td>
-
-                <td>
-                    <div class="srate-2"><div style="height: 20px; width: 90px; display: inline-block; text-indent: 0px; margin: 0px; padding: 0px; background-color: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; background-position: initial initial; background-repeat: initial initial;" id="___plusone_0"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 90px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1362045662339" name="I0_1362045662339" src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;size=medium&amp;width=75&amp;hl=en-US&amp;origin=http%3A%2F%2Fyangutu.com&amp;url=http%3A%2F%2Fyangutu.com%2F&amp;ic=1&amp;jsh=m%3B%2F_%2Fscs%2Fapps-static%2F_%2Fjs%2Fk%3Doz.gapi.ru.fexZq8oFIBA.O%2Fm%3D__features__%2Fam%3DqQ%2Frt%3Dj%2Fd%3D1%2Frs%3DAItRSTMu7JDcgXPmJKyGd-URLI9FYTaApw#_methods=onPlusOne%2C_ready%2C_close%2C_open%2C_resizeMe%2C_renderstart%2Concircled&amp;id=I0_1362045662339&amp;parent=http%3A%2F%2Fyangutu.com&amp;rpctoken=27063521" allowtransparency="true" data-gapiattached="true" title="+1"></iframe></div></div>
-                </td>
-
-                <td>
-                    <iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/follow_button.1362008198.html#_=1362045659150&amp;id=twitter-widget-1&amp;lang=en&amp;screen_name=yangutu&amp;show_count=true&amp;show_screen_name=true&amp;size=m" class="twitter-follow-button twitter-follow-button" style="width: 221px; height: 20px;" title="Twitter Follow Button" data-twttr-rendered="true"></iframe>
-                </td>
-                <td>
-                    <a href="https://pinterest.com/Pinsbook/">
-                        <img src="http://passets-lt.pinterest.com/images/about/buttons/follow-me-on-pinterest-button.png" width="121" height="20" alt="Follow Me on Pinterest">
-                    </a>
-                </td>
-            </tr>
-            </tbody></table>
-
-        <script type="text/javascript" async="true">
-            //    $(document).ready(function(){
-            window.___gcfg = {
-                lang: 'en-US'
-            };
-            //	setTimeout(function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = document.location.protocol + '//apis.google.com/js/plusone.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(ga, s);
-            var tw = document.createElement('script'); tw.type = 'text/javascript'; tw.async = true;
-            tw.src = 'http://platform.twitter.com/widgets.js';
-            s.parentNode.insertBefore(tw, s);
-            //     }, 3000);
-            //    });
-        </script>
-    </div>
     <div class="footer_inn">
 
         <ul>
