@@ -24,7 +24,7 @@ header.index-header {
 header.index-header .logo {
     position: absolute;
     top: 11px;
-    left: 30px;
+    left: 0;
 }
 
 header.index-header .slogan {
@@ -37,7 +37,7 @@ header.index-header .slogan {
 header.index-header nav {
     position: absolute;
     top: 20px;
-    right: 30px;
+    right: 0;
 }
 
 header.index-header nav a {
@@ -55,7 +55,7 @@ header.index-header nav a {
 .promo .inner h1 {
     width: 630px;
     position: absolute;
-    left: 30px;
+    left: 0;
     top: 88px;
 }
 
@@ -67,7 +67,7 @@ header.index-header nav a {
     background-color: rgba(0,0,0,0.6);
     border-radius: 4px;
     position: absolute;
-    left: 30px;
+    left: 0;
     top: 210px;
     line-height: 19px;
 }

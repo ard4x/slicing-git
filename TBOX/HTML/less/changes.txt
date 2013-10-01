@@ -1,0 +1,4 @@
+1. header.index-header nav { right: 0; }
+2. header.index-header .logo {left: 0; }
+3. .promo .inner h1 {left: 0}
+4. .promo-block {left: 0;}
