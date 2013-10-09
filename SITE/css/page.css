@@ -1,0 +1,11 @@
+.page__info .profile__info_list_item {margin-left: 237px;}
+.page__info.settings .profile__info_list_label {width: 227px;}
+
+.page__info_search_field {}
+.page__info_field_long {width: 100% !important}
+.page__info_field_short {width: 305px !important}
+.page__info_field_area {width: 100%; height: 85px; box-sizing: border-box; -moz-box-sizing: border-box; resize: vertical;}
+.page__info_field_submit {width: 150px; margin-top: 10px;}
+.page__info_address {font-size: 14px; line-height: 17px; color: #333;}
+.page__info_address .std__header {margin-bottom: 11px; padding-bottom: 2px;}
+.page__info_address_email {display: block; margin-top: 7px; text-decoration: underline;}
