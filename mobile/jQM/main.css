@@ -4336,3 +4336,46 @@ only screen and (min-resolution: 240dpi)
         background-image: url(photoswipe/3.0.4/icons@2x.png);
     }
 }
+/* Panel */
+#panel {}
+#panel [class^="icon-"], #panel [class*=" icon-"] {display: inline-block; width: 24px; height: 24px; background: url(icons/panel/panel-icons.png) no-repeat; background-size: 100px;}
+#panel .icon-search {background-position: 0 0;}
+#panel .icon-chat {background-position: -25px 0;}
+#panel .icon-signal {background-position: -50px 0;}
+#panel .icon-guest {background-position: -75px 0;}
+#panel .icon-favorites {background-position: 0 -25px;}
+#panel .icon-favorites-me {background-position: -25px -25px;}
+#panel .icon-encounters {background-position: 0 0;}
+#panel .icon-encounters-want {background-position: 0 0;}
+#panel .icon-encounters-want-i {background-position: 0 0;}
+#panel .icon-encounters-mutual {background-position: 0 0;}
+#panel .icon-edit {background-position: -50px -25px;}
+#panel .icon-photos {background-position: -75px -25px;}
+#panel .icon-settings {background-position: 0 -50px;}
+
+#panel .ui-listview .ui-link-inherit {padding-left: 45px; padding-right: 20px;}
+#panel .ui-listview .ui-li-has-count .ui-li-count {right: 15px;}
+
+#panel,
+#panel .ui-li-divider.main__user_title,
+#panel li.ui-btn:hover,
+#panel li.ui-btn:active {background: url(icons/panel/bg_dark.png) repeat;}
+#panel li.ui-btn  {background: url(icons/panel/bg.png) repeat;}
+#panel .ui-li-divider {background: url(icons/panel/bg_darken.png) repeat;}
+#panel li.ui-btn, #panel li.ui-li-divider {border: 1px solid transparent; border-top-color: #596894; border-bottom-color: #0f1326;}
+#panel li.ui-btn:hover, #panel li.ui-btn:active {border-color: transparent !important;}
+#panel li.ui-btn .ui-link-inherit {color: #fff; text-shadow: #000 0px 1px 1px;}
+#panel li.ui-btn .ui-li-count {border: 2px solid #fff; border-radius: 10px; color: #fff;
+    background: #f69ea3;
+    background: -moz-linear-gradient(top,  #f69ea3 0%, #ea2f38 50%, #ea131e 50%, #cc0307 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f69ea3), color-stop(50%,#ea2f38), color-stop(50%,#ea131e), color-stop(100%,#cc0307));
+    background: -webkit-linear-gradient(top,  #f69ea3 0%,#ea2f38 50%,#ea131e 50%,#cc0307 100%);
+    background: -o-linear-gradient(top,  #f69ea3 0%,#ea2f38 50%,#ea131e 50%,#cc0307 100%);
+    background: -ms-linear-gradient(top,  #f69ea3 0%,#ea2f38 50%,#ea131e 50%,#cc0307 100%);
+    background: linear-gradient(to bottom,  #f69ea3 0%,#ea2f38 50%,#ea131e 50%,#cc0307 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f69ea3', endColorstr='#cc0307',GradientType=0 );
+    box-shadow: 0 1px 2px 2px rgba(0,0,0,0.5);
+}
+#panel li.ui-li-divider {color: #e8eff5; text-transform: uppercase;}
+#panel .ui-li-divider.main__user_title {font-size: 20px; vertical-align: middle; line-height: 40px; padding-left: 10px; text-transform: none;}
+#panel .ui-li-divider.main__user_title img.avatar {width: 40px; height: 40px; border-radius: 4px; vertical-align: middle; margin-right: 10px; }

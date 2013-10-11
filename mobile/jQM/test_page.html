@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Mobile</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body class="ui-mobile-viewport ui-overlay-c">
+
+<div data-role="page" id="sign-up-first-page" class="ui-page ui-body-c ui-page-header-fixed ui-page-active">
+
+    <div data-theme="none" data-role="panel" data-display="reveal" data-theme="d" id="panel" data-position-fixed="true">
+
+        <ul data-role="listview" data-count-theme="b">
+            <li data-role="list-divider" class="main__user_title">
+                <span>
+                    <img class="avatar" class="ui-li-icon ui-li-thumb" src="http://dto9qqsm7pthx.cloudfront.net/5f/16/97/46x46_5079501.jpeg?1350891404">
+                    Roma
+                </span>
+            </li>
+            <li data-role="list-divider">Main</li>
+            <li data-icon="false" data-rel="close">
+                <a href="#"><span class="icon-search ui-li-icon ui-li-thumb"></span>People</a>
+            </li>
+            <li data-icon="false">
+                <a href="#"><span class="icon-chat ui-li-icon ui-li-thumb"></span>Messages</a>
+            </li>
+            <li data-icon="false">
+                <a href="#"><span class="icon-signal ui-li-icon ui-li-thumb"></span>Notifications</a>
+                <span class="ui-li-count">50</span>
+            </li>
+
+
+            <li data-role="list-divider">My Connections</li>
+            <li data-icon="false" data-rel="close">
+                <a href="#"><span class="icon-guest ui-li-icon ui-li-thumb"></span>My guests</a>
+            </li>
+            <li data-icon="false">
+                <a href="#"><span class="icon-favorites ui-li-icon ui-li-thumb"></span>My favorites</a>
+            </li>
+            <li data-icon="false">
+                <a href="#"><span class="icon-favorites-me ui-li-icon ui-li-thumb"></span>Added me to favorites</a>
+                <span class="ui-li-count">50</span>
+            </li>
+
+            <li data-role="list-divider">Encounters</li>
+            <li data-icon="false" data-rel="close">
+                <a href="#"><span class="icon-encounters ui-li-icon ui-li-thumb"></span>Play Encounters</a>
+            </li>
+            <li data-icon="false">
+                <a href="#"><span class="icon-encounters-want ui-li-icon ui-li-thumb"></span>Want to meet me</a>
+            </li>
+            <li data-icon="false">
+                <a href="#"><span class="icon-encounters-want-i ui-li-icon ui-li-thumb"></span>I want to meet</a>
+                <span class="ui-li-count">50</span>
+            </li>
+            <li data-icon="false">
+                <a href="#"><span class="icon-encounters-mutual ui-li-icon ui-li-thumb"></span>Mutual attractions</a>
+                <span class="ui-li-count">50</span>
+            </li>
+
+            <li data-role="list-divider">My account</li>
+            <li data-icon="false" data-rel="close">
+                <a href="#"><span class="icon-edit ui-li-icon ui-li-thumb"></span>Edit profile</a>
+            </li>
+            <li data-icon="false">
+                <a href="#"><span class="icon-photos ui-li-icon ui-li-thumb"></span>Photos</a>
+            </li>
+            <li data-icon="false">
+                <a href="#"><span class="icon-settings ui-li-icon ui-li-thumb"></span>Account settings</a>
+                <span class="ui-li-count">50</span>
+            </li>
+        </ul>
+
+
+    </div>
+
+
+    <div data-role="header" data-position="fixed" class="ui-header ui-bar-b ui-header-fixed slidedown">
+        <a href="#panel" data-role="button" data-icon="btn-list" data-iconpos="notext" data-inline="true" data-direction="reverse">Home</a>
+
+        <a class="ui-btn-right" data-direction="reverse">Next</a>
+        <h1>About me (Step 1 of 2)</h1>
+    </div>
+
+    <div data-role="content" id="sign-up-form" class="about-me ui-content ui-body-c">
+
+        <div class="header-tips">All fields are reuired</div>
+
+        <label for="file">Upload photo:</label>
+        <input type="file" name="file" id="file" value="1">
+
+        <ul data-role="listview" data-inset="true">
+            <li class="list-select">
+                <span class="list-select-label">Relationship</span>
+                <select name="kids" data-icon="arrow-r" data-corners="false" data-iconshadow="false">
+                    <option value="" disabled selected></option>
+                    <option value="1">Variant 1</option>
+                    <option value="2">Variant 2</option>
+                    <option value="3">Long text variant 123456789</option>
+                </select>
+            </li>
+            <li class="list-select">
+                <span class="list-select-label">Have kids</span>
+                <select name="kids" data-icon="arrow-r" data-corners="false" data-iconshadow="false">
+                    <option value="" selected disabled></option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="Ultra conservative">Ultra conservative</option>
+                </select>
+            </li>
+            <li class="list-select">
+                <span class="list-select-label">Education</span>
+                <select name="kids" data-icon="arrow-r" data-corners="false" data-iconshadow="false">
+                    <option value="" selected disabled></option>
+                    <option value="1">Variant 1</option>
+                    <option value="2">Variant 2</option>
+                    <option value="3">Long text variant 123456789</option>
+                </select>
+            </li>
+            <li class="list-select">
+                <span class="list-select-label">Ethnicity</span>
+                <select name="kids" data-icon="arrow-r" data-corners="false" data-iconshadow="false">
+                    <option value="" selected disabled></option>
+                    <option value="1">Variant 1</option>
+                    <option value="2">Variant 2</option>
+                    <option value="3">Long text variant 123456789</option>
+                </select>
+            </li>
+
+            <li><a href="list_choose.html">Occupation<p class="ui-li-aside">Ultra conservative</p></a></li>
+
+            <li class="list-select">
+                <span class="list-select-label">Faith</span>
+                <select name="kids" data-icon="arrow-r" data-corners="false" data-iconshadow="false">
+                    <option value="" selected disabled></option>
+                    <option value="1">Variant 1</option>
+                    <option value="2">Variant 2</option>
+                    <option value="3">Long text variant 123456789</option>
+                </select>
+            </li>
+
+            <li class="list-select">
+                <span class="list-select-label">Political views</span>
+                <select name="kids" data-icon="arrow-r" data-corners="false" data-iconshadow="false">
+                    <option value="" selected disabled></option>
+                    <option value="1">Variant 1</option>
+                    <option value="2">Variant 2</option>
+                    <option value="3">Long text variant 123456789</option>
+                </select>
+            </li>
+
+            <li class="list-select">
+                <span class="list-select-label">Height</span>
+                <select name="kids" data-icon="arrow-r" data-corners="false" data-iconshadow="false">
+                    <option value="" selected disabled></option>
+                    <option value="1">Variant 1</option>
+                    <option value="2">Variant 2</option>
+                    <option value="3">Long text variant 123456789</option>
+                </select>
+            </li>
+            <li class="list-select">
+                <span class="list-select-label">Body type</span>
+                <select name="kids" data-icon="arrow-r" data-corners="false" data-iconshadow="false">
+                    <option value="" selected disabled></option>
+                    <option value="1">Variant 1</option>
+                    <option value="2">Variant 2</option>
+                    <option value="3">Long text variant 123456789</option>
+                </select>
+            </li>
+            <li class="list-select">
+                <span class="list-select-label">Eye color</span>
+                <select name="kids" data-icon="arrow-r" data-corners="false" data-iconshadow="false">
+                    <option value="" selected disabled></option>
+                    <option value="1">Variant 1</option>
+                    <option value="2">Variant 2</option>
+                    <option value="3">Long text variant 123456789</option>
+                </select>
+            </li>
+            <li class="list-select">
+                <span class="list-select-label">Hair color</span>
+                <select name="kids" data-icon="arrow-r" data-corners="false" data-iconshadow="false">
+                    <option value="" selected disabled></option>
+                    <option value="1">Variant 1</option>
+                    <option value="2">Variant 2</option>
+                    <option value="3">Long text variant 123456789</option>
+                </select>
+            </li>
+            <li class="list-select">
+                <span class="list-select-label">Smoke</span>
+                <select name="kids" data-icon="arrow-r" data-corners="false" data-iconshadow="false">
+                    <option value="" selected disabled></option>
+                    <option value="1">Variant 1</option>
+                    <option value="2">Variant 2</option>
+                    <option value="3">Long text variant 123456789</option>
+                </select>
+            </li>
+            <li class="list-select">
+                <span class="list-select-label">Drink</span>
+                <select name="kids" data-icon="arrow-r" data-corners="false" data-iconshadow="false">
+                    <option value="" selected disabled></option>
+                    <option value="1">Variant 1</option>
+                    <option value="2">Variant 2</option>
+                    <option value="3">Long text variant 123456789</option>
+                </select>
+            </li>
+
+        </ul>
+
+        <a href="#" data-prefetch data-role="button" data-corners="true" data-shadow="true" data-iconshadow="true" data-wrapperels="span" data-theme="g">
+            Next
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+</html>
