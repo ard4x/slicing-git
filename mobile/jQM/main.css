@@ -4345,13 +4345,14 @@ only screen and (min-resolution: 240dpi)
 #panel .icon-guest {background-position: -75px 0;}
 #panel .icon-favorites {background-position: 0 -25px;}
 #panel .icon-favorites-me {background-position: -25px -25px;}
-#panel .icon-encounters {background-position: 0 0;}
-#panel .icon-encounters-want {background-position: 0 0;}
-#panel .icon-encounters-want-i {background-position: 0 0;}
-#panel .icon-encounters-mutual {background-position: 0 0;}
+#panel .icon-encounters {background-position: -25px -50px;}
+#panel .icon-encounters-want {background-position: -50px -50px;}
+#panel .icon-encounters-want-i {background-position: -75px -50px;}
+#panel .icon-encounters-mutual {background-position: 0 -75px;}
 #panel .icon-edit {background-position: -50px -25px;}
 #panel .icon-photos {background-position: -75px -25px;}
 #panel .icon-settings {background-position: 0 -50px;}
+#panel .icon-password {background-position: -25px -75px;}
 
 #panel .ui-listview .ui-link-inherit {padding-left: 45px; padding-right: 20px;}
 #panel .ui-listview .ui-li-has-count .ui-li-count {right: 15px;}
