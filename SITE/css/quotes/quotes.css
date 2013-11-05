@@ -1,0 +1,51 @@
+.quotes__page {padding-bottom: 35px; position: relative;}
+.quotes__header_main {color: #436187; text-transform: uppercase; text-align: center; margin-bottom: 7px;}
+.quotes__header_sub  {text-align: center; color: #666; font-size: 18px; font-weight: normal; margin: 0;}
+.quotes__header_group {padding-bottom: 30px;}
+.quotes__content {overflow: hidden;}
+    .quotes__coll_left {width: 220px; float: left; margin-right: 30px;}
+    .quotes__coll_right {width: 220px; float: left;}
+    .quotes__coll_main {margin-right: 30px; width: 450px; float: left;}
+    .qoutes__block_side .std__header {font-size: 18px; margin-bottom: 12px; padding-bottom: 5px; margin-top: -2px;   line-height: 18px;}
+    .qoutes__block_side a {font-size: 12px; line-height: 13px;}
+    .quotes__side_button_more {margin-top: 13px;}
+        .quotes__side_button_more .button {width: 100%;}
+
+/* Quotes Block */
+.quotes__block {box-sizing: border-box; -moz-box-sizing: border-box; border: 1px solid #f5f5f5; padding: 14px; border-radius: 4px; margin-bottom: 20px;}
+    .quotes__block_quotation_image {padding-bottom: 7px; border-bottom: 1px solid #f5f5f5; text-align: center;}
+        .quotes__block_quotation_image img {width: 403px; height: 275px; display: inline-block;}
+    .quotes__block_quotation {padding: 4px 0 10px; border-bottom: 1px solid #f5f5f5;}
+        .quotes__block_quotation h3 {font-size: 20px; margin: 0;}
+        .quotes__block_quotation .author {font-size: 14px; font-weight: bold; display: block; text-align: right; margin-top: 5px;}
+    .quotes__block_social {padding: 10px 0; border-bottom: 1px solid #f5f5f5;}
+        .social_label {line-height: 20px; vertical-align: middle; font-size: 12px; color: #999;}
+        .social_item {display: inline-block; float: right; margin-left: 20px;}
+        .social_item_1 {width: 80px;}
+        .social_item_2 {width: 75px;}
+    .quotes__block_tags {padding-top: 10px; color: #333; font-size: 12px;}
+    .qoutes__block_side .current {font-weight: bold; color: #333; text-decoration: none!important; cursor: default;}
+
+.quotes__paging {margin-top: 20px;}
+.quotes__paging ul {float: right;}
+.quotes__search {margin-bottom: 15px; position: relative;}
+    input.quotes__search_field {width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; height: 27px; padding-right: 23px; padding-left: 6px}
+    .quotes__search_submit {width: 13px; height: 14px; position: absolute; top: 2px; right: 2px; padding: 5px;}
+.quotes__search .quotes__header_main {color: #666; text-transform: none;}
+.quotes__search .quotes__header_main .search_item {color: #436187;}
+.quotes__search .quotes__header_sub {color: #333;}
+
+.quotes__header_search {width: 520px; box-sizing: border-box; -moz-box-sizing: border-box; margin: 30px auto 0; background: #f5f5f5; border-radius: 4px; padding: 15px;}
+.quotes__header_search .quotes__search {margin: 0;}
+.quotes__list {
+    font-size: 14px;
+    line-height: 17px;
+    -moz-columns: 4 215px;
+    -webkit-columns: 4 215px;
+    columns: 4 215px;
+    -moz-column-gap: 30px;
+    -webkit-column-gap: 30px;
+    column-gap: 30px;
+}
+.quotes__up {position: fixed; bottom: 20px; margin-left: -50px; display: none; box-sizing: border-box; -moz-box-sizing: border-box; width: 40px; height: 40px; padding: 9px; border-radius: 3px; background: #999;}
+.quotes__up .icon {display: block; width: 22px; height: 22px; background: url(../../img/icons/arr_up.png) no-repeat;}
