@@ -47,5 +47,6 @@
     -webkit-column-gap: 30px;
     column-gap: 30px;
 }
-.quotes__up {position: fixed; bottom: 20px; margin-left: -50px; display: none; box-sizing: border-box; -moz-box-sizing: border-box; width: 40px; height: 40px; padding: 9px; border-radius: 3px; background: #999;}
+.quotes__up {position: fixed; bottom: 60px; margin-left: 970px; display: none; box-sizing: border-box; -moz-box-sizing: border-box; width: 40px; height: 40px; padding: 9px; border-radius: 3px; background: #999;}
 .quotes__up .icon {display: block; width: 22px; height: 22px; background: url(../../img/icons/arr_up.png) no-repeat;}
+.quotes__up_title {display: block; position: absolute; left: 0; top: 40px; padding-top: 5px; text-align: center; color: #666; font-size: 10px; text-transform: uppercase;}
