@@ -29,6 +29,7 @@
     .vip__items .vip__items_cell {border-bottom: 1px solid #ababab; background: #f7f7f7; height: 43px; width: 43px; text-align: center; vertical-align: middle;}
     .vip__items .vip__items_cell:first-child {border-left: 1px solid #ababab; background: #f7f7f7; padding-left: 10px; line-height: 16px; width: auto; text-align: left;}
     .vip__items .vip__items_cell:last-child {border-right: 1px solid #ababab; background: #f7f7f7; width: 62px;}
+.vip__items .vip__items_head {border: none;}
     .vip__items .vip__items_head:first-child {border-top-left-radius: 10px; text-align: left; padding-left: 10px; width: auto;}
     .vip__items .vip__items_head:last-child {border-top-right-radius: 10px; width: 62px;}
 .vip__labels .ui-radio .ui-icon {width: 27px; height: 27px; background: 0 0 url(img/vip/srite.png) no-repeat; background-size: 94px auto; margin-top: -12px;}
