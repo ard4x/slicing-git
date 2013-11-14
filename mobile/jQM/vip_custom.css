@@ -1,0 +1,28 @@
+.vip__labels {}
+    .vip__labels .ui-btn-inner {padding: 15px;}
+    .vip__labels .ui-btn {background: #f7f7f7;}
+    .vip__labels .vip__label {width: 85px; display: inline-block;}
+        .vip__labels .vip__label .vip__label_term {font-size: 18px; color: #000; font-weight: bold; display: block;}
+        .vip__labels .vip__label .vip__label_disc {font-size: 12px; color: #ff6602; display: block; font-weight: normal;}
+    .vip__labels .vip__label_2 {width: 90px; display: inline-block; background: #068ed8; text-align: center; color: #fff; font-weight: bold; height: 48px; text-shadow: 0 1px 2px rgba(0,0,0,0.5);}
+        .vip__labels .vip__label_2 .vip__label_price {display: block; font-size: 20px;}
+        .vip__labels .vip__label_2 .vip__label_per {display: block; font-size: 9px;}
+    .vip__labels .ui-radio .ui-btn {border-width: 2px; border-color: #b7b9bd; box-shadow: none; }
+
+.vip__items {border-spacing: 0; border-collapse: collapse;}
+    .vip__items th {font-size: 17px; font-weight: bold; color: #f7f7f7; text-align: center; vertical-align: middle; text-shadow: 0 -1px 2px rgba(0,0,0,0.5);
+        border-bottom: 2px solid #1b2241;
+        background: #354175;
+        background: -moz-linear-gradient(top,  #3e4c84 0%, #2b3564 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3e4c84), color-stop(100%,#2b3564));
+        background: -webkit-linear-gradient(top,  #3e4c84 0%,#2b3564 100%);
+        background: -o-linear-gradient(top,  #3e4c84 0%,#2b3564 100%);
+        background: -ms-linear-gradient(top,  #3e4c84 0%,#2b3564 100%);
+        background: linear-gradient(to bottom,  #3e4c84 0%,#2b3564 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e4c84', endColorstr='#2b3564',GradientType=0 );
+    }
+    .vip__items td{border-bottom: 1px solid #ababab; background: #f7f7f7;}
+    .vip__items td:first-child {border-left: 1px solid #ababab; background: #f7f7f7;}
+    .vip__items td:last-child {border-right: 1px solid #ababab; background: #f7f7f7;}
+    .vip__items th:first-child {border-left: 1px solid #313c6e;}
+    .vip__items th:last-child {border-right: 1px solid #313c6e;}
