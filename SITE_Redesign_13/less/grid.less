@@ -1,0 +1,53 @@
+.grid__container {
+  .boxSizing('border-box');
+  width: @gridContainerWidth;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.grid__row {
+  .boxSizing('border-box');
+  width: 100%;
+  margin-left: -@gridGutterWidth/2;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  &:after {
+    clear:both;
+    display: table;
+    line-height: 0;
+    content: "";}
+}
+.grid__span {
+  .boxSizing(border-box);
+  margin-left: @gridGutterWidth;
+  float: left;
+  width: auto;
+}
+// Grid width
+.grid__span_1  {.grid__span; .gridSpanWidth(1);}
+.grid__span_2  {.grid__span; .gridSpanWidth(2);}
+.grid__span_3  {.grid__span; .gridSpanWidth(3);}
+.grid__span_4  {.grid__span; .gridSpanWidth(4);}
+.grid__span_5  {.grid__span; .gridSpanWidth(5);}
+.grid__span_6  {.grid__span; .gridSpanWidth(6);}
+.grid__span_7  {.grid__span; .gridSpanWidth(7);}
+.grid__span_8  {.grid__span; .gridSpanWidth(8);}
+.grid__span_9  {.grid__span; .gridSpanWidth(9);}
+.grid__span_10 {.grid__span; .gridSpanWidth(10);}
+.grid__span_11 {.grid__span; .gridSpanWidth(11);}
+.grid__span_12 {.grid__span; .gridSpanWidth(12);}
+
+// Elements width
+.grid__width_1 {.gridSpanWidth(1);}
+.grid__width_2 {.gridSpanWidth(2);}
+.grid__width_3 {.gridSpanWidth(3);}
+.grid__width_4 {.gridSpanWidth(4);}
+.grid__width_5 {.gridSpanWidth(5);}
+.grid__width_6 {.gridSpanWidth(6);}
+.grid__width_7 {.gridSpanWidth(7);}
+.grid__width_8 {.gridSpanWidth(8);}
+.grid__width_9 {.gridSpanWidth(9);}
+.grid__width_10 {.gridSpanWidth(10);}
+.grid__width_11 {.gridSpanWidth(11);}
+.grid__width_12 {.gridSpanWidth(12);}

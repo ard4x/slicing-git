@@ -1,11 +1,15 @@
+//Files
+@iconsPath: '../img/icons.png';
+
 // Fonts
 @basicFontSize: 14px;
 @basicLineHeight: 18px;
 @basicFontColor: #212121;
 @basicFontFamily: Arial;
 
-@linkColor: #436187;
-
+@mainBlueColor:#436187;
+@linkColor: @mainBlueColor;
+@headerColorLite: #5078a0;
 // Headers
 @headerFontFamily: 'PT Sans', Arial;
 @headerFontSize_1: 36px;
@@ -14,3 +18,19 @@
 @headerFontSize_4: 18px;
 @headerFontSize_5: 16px;
 @headerFontSize_6: 14px;
+
+// Grid
+@gridContainerWidth: 960px;
+@gridColumnWidth: 60px;
+@gridGutterWidth: 20px;
+
+// Z-index master list
+// -------------------------
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+@zindexDropdown:          1000;
+@zindexPopover:           1010;
+@zindexTooltip:           1030;
+@zindexFixedNavbar:       1030;
+@zindexModalBackdrop:     1040;
+@zindexModal:             1050;

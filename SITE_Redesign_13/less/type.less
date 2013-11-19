@@ -8,23 +8,35 @@ body {
 }
 
 // Headers
-h1 {
+h1, .type__header_1 {
   .HeaderInit(@headerFontSize_1);
 }
-h2 {
+h2, .type__header_2 {
   .HeaderInit(@headerFontSize_2);
 }
-h3 {
+h3, .type__header_3 {
   .HeaderInit(@headerFontSize_3);
 }
-h4 {
+h4, .type__header_4 {
   .HeaderInit(@headerFontSize_4);
 }
-h5 {
+h5, .type__header_5 {
   .HeaderInit(@headerFontSize_5);
 }
-h6 {
+h6, .type__header_6 {
   .HeaderInit(@headerFontSize_6);
+}
+
+.type__header_lite {
+  color: @headerColorLite;
+}
+
+//@TODO set personal rules to each type of headers
+.type__header_underline {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+
+  h2&{padding-bottom: 5px;}
 }
 
 // Links

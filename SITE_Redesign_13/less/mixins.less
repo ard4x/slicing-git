@@ -4,4 +4,22 @@
   line-height: @fontSize;
   font-family: @headerFontFamily;
   font-weight: bold;
+  margin-bottom: 10px;
+}
+.boxSizing( @rule ) {
+  box-sizing: @rule;
+  -moz-box-sizing: @rule;
+}
+
+.gridSpanWidth(@columns){
+  width: @columns * (@gridColumnWidth + @gridGutterWidth) - @gridGutterWidth;
+}
+
+.size(@width, @height) {
+  width: @width;
+  height: @height;
+}
+.size(@size) {
+  width: @size;
+  height: @size;
 }
