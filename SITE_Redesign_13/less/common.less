@@ -1,0 +1,26 @@
+body {
+  min-width: @gridContainerWidth;
+  padding-top: @headerHeight;
+  background-color: #eee;
+}
+img {border: none;}
+.avatar {border-radius: 3px;}
+
+.content {
+  padding: 30px 0;
+  & > .grid__container {
+    & > .grid__row {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.clearAfter {
+  &:after {
+    clear:both;
+    display: table;
+    line-height: 0;
+    content: "";
+  }
+}

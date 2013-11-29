@@ -1,16 +1,62 @@
 i.icon {
   display: inline-block;
   background: 0 0 url( @iconsPath ) no-repeat;
+  vertical-align: middle;
   .size(24px);
 
   &.favorite        {background-position: -25px 0;}
   &.favorite.added  {background-position: -50px 0;}
   &.wink            {background-position: 0 0;}
-  &.message {background-position: -75px 0;}
-  &.signal {background-position: -25px 0;}
+  &.message  {background-position: -75px 0;}
+  &.signal   {background-position: -25px 0;}
   &.settings {background-position: -25px 0;}
-  &.like {background-position: 0 -25px;}
-  &.liked {background-position: -25px -25px;}
-  &.arrow_left {background-position: -50px -25px;}
+  &.like     {background-position:  0 -25px;}
+  &.liked    {background-position: -25px -25px;}
+  &.arrow_left  {background-position: -50px -25px;}
   &.arrow_right {background-position: -75px -25px;}
+  &.photo_count {background-position:     0 -50px; width: 32px;}
+  &.tail {background-position: -38px -50px; width: 11px; height: 10px;}
+  &.signals        {background-position: -75px -50px;}
+  &.signals_active {background-position: -50px -50px;}
+  &.settings       {background-position:     0 -75px;}
+}
+
+i.interests-icon {
+  .size(25px);
+  display: inline-block;
+  background: url(@iconsInterests) no-repeat;
+  vertical-align: middle;
+
+  &.camping {background-position: 0 0;}
+  &.charity {background-position: 0 -27px;}
+  &.cycling {background-position: 0 -54px;}
+  &.collecting {background-position: 0 -81px;}
+  &.compGames {background-position: 0 -108px;}
+  &.cooking {background-position: 0 -135px;}
+  &.dancing {background-position: 0 -162px;}
+  &.painting {background-position: 0 -189px;}
+  &.crafts {background-position: 0 -216px;}
+  &.fitness {background-position: 0 -243px;}
+
+  &.gardening {background-position: -27px 0;}
+  &.internet {background-position: -27px -27px;}
+  &.listenMusic {background-position: -27px -54px;}
+  &.outdoor {background-position: -27px -81px;}
+  &.pets {background-position: -27px -108px;}
+  &.photography {background-position: -27px -135px;}
+  &.playingCards {background-position: -27px -162px;}
+  &.playSport {background-position: -27px -189px;}
+  &.reading {background-position: -27px -216px;}
+  &.running {background-position: -27px -243px;}
+
+  &.shopping {background-position: -54px 0;}
+  &.singing {background-position: -54px -27px;}
+  &.socialNet {background-position: -54px -54px;}
+  &.spirituality {background-position: -54px -81px;}
+  &.swimming {background-position: -54px -108px;}
+  &.traveling {background-position: -54px -135px;}
+  &.walking {background-position: -54px -162px;}
+  &.watchMovies {background-position: -54px -189px;}
+  &.watchSport {background-position: -54px -216px;}
+  &.watchTV {background-position: -54px -243px;}
 }

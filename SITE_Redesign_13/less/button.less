@@ -1,0 +1,98 @@
+@import "mixins";
+@import "icon";
+
+
+// Button constructor
+.buttonInit() {
+  .boxSizing(border-box);
+  display: inline-block;
+  height: @buttonHeight;
+  font-family: 'PT Sans', Arial;
+  font-size: @buttonFontSize;
+  line-height: @buttonHeight - 2 * @buttonBorderWidth;
+  vertical-align: middle;
+  font-weight: bold;
+  color: @buttonFontColor;
+  text-align: center;
+  width: 100%;
+  border: @buttonBorderWidth solid @buttonBorderColor; // it is blue button as default
+  text-decoration: none !important;
+  box-shadow:  inset 0px 1px 0px 0px rgba(255, 255, 255, 40%);
+  border-radius: 3px;
+  position: relative;
+  .gradientSimple(@buttonColorFirst, @buttonColorLast);
+
+  &:hover  {.gradientSimple(@buttonColorFirst, @buttonColorFirst);}
+  &:active {.gradientSimple(@buttonColorLast, @buttonColorFirst); box-shadow: none;}
+
+  &.iconed {
+    padding-left: @buttonHeight;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: @buttonBorderWidth;
+      height: @buttonHeight - 2 * @buttonBorderWidth;
+      left: @buttonHeight;
+      top: 0px;
+      background: @buttonBorderColor;
+    }
+
+    i.icon {
+      position: absolute; left: 8px; top: 7px;
+    }
+  }
+}
+
+
+.button {
+  // Default button parameters
+  @buttonHeight: 40px;
+  @buttonFontSize: 20px;
+  @buttonBorderColor: #364e6d;
+  @buttonBorderWidth: 1px;
+  @buttonColorFirst: #5175a2;
+  @buttonColorLast: #436288;
+  @buttonFontColor: #fff;
+  .buttonInit();
+}
+
+.button.red {
+
+  @buttonBorderColor: #aa2801;
+  @buttonColorFirst: #e03501;
+  @buttonColorLast: #c82f02;
+
+  @buttonHeight: 40px;
+  @buttonFontSize: 20px;
+  @buttonBorderWidth: 1px;
+  @buttonFontColor: #fff;
+  .buttonInit();
+}
+
+.button.white {
+
+  @buttonBorderColor: #ccc;
+  @buttonColorFirst:  #f5f5f5;
+  @buttonColorLast:   #dedede;
+  @buttonFontColor: #676767;
+
+  @buttonHeight: 40px;
+  @buttonFontSize: 20px;
+  @buttonBorderWidth: 1px;
+  .buttonInit();
+}
+
+.button.green {
+
+  @buttonBorderColor: #27a23b;
+  @buttonColorFirst:  #40c456;
+  @buttonColorLast:   #2eb244;
+  @buttonFontColor: #fff;
+
+  @buttonHeight: 40px;
+  @buttonFontSize: 20px;
+  @buttonBorderWidth: 1px;
+  .buttonInit();
+}

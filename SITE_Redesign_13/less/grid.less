@@ -1,12 +1,12 @@
 .grid__container {
-  .boxSizing('border-box');
+  .boxSizing(padding-box);
   width: @gridContainerWidth;
   margin-left: auto;
   margin-right: auto;
   position: relative;
 }
 .grid__row {
-  .boxSizing('border-box');
+  .boxSizing(padding-box);
   width: 100%;
   margin-left: -@gridGutterWidth/2;
   margin-top: 10px;
@@ -25,15 +25,18 @@
   width: auto;
 }
 // Grid width
+
 .grid__span_1  {.grid__span; .gridSpanWidth(1);}
 .grid__span_2  {.grid__span; .gridSpanWidth(2);}
-.grid__span_3  {.grid__span; .gridSpanWidth(3);}
+.grid__span_3,
+.grid__col_side{.grid__span; .gridSpanWidth(3);}
 .grid__span_4  {.grid__span; .gridSpanWidth(4);}
 .grid__span_5  {.grid__span; .gridSpanWidth(5);}
 .grid__span_6  {.grid__span; .gridSpanWidth(6);}
 .grid__span_7  {.grid__span; .gridSpanWidth(7);}
 .grid__span_8  {.grid__span; .gridSpanWidth(8);}
-.grid__span_9  {.grid__span; .gridSpanWidth(9);}
+.grid__span_9,
+.grid__col_main {.grid__span; .gridSpanWidth(9);}
 .grid__span_10 {.grid__span; .gridSpanWidth(10);}
 .grid__span_11 {.grid__span; .gridSpanWidth(11);}
 .grid__span_12 {.grid__span; .gridSpanWidth(12);}
@@ -51,3 +54,11 @@
 .grid__width_10 {.gridSpanWidth(10);}
 .grid__width_11 {.gridSpanWidth(11);}
 .grid__width_12 {.gridSpanWidth(12);}
+
+// Responsive
+@media (min-width: 1200px) {
+  .grid__container {
+    width: @gridContainerWidth_1200;
+  }
+  .grid__col_main {.gridSpanWidth(12);}
+}

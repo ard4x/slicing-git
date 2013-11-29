@@ -1,0 +1,33 @@
+// Default style for inputs
+
+.input(){
+  .boxSizing(border-box);
+  .gradientSimple(#f7f7f7, #fff);
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  height: 40px;
+  width: 100%;
+  padding: 11px 15px;
+  &::-webkit-input-placeholder {font-style: italic; color: #999;}
+  &:-moz-placeholder {font-style: italic; color: #999;}
+  box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.1);
+  outline: none;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=tel],
+input[type=date],
+input[type=search] {
+  .input();
+}
+
+.form__input_tail {
+  position: relative;
+  i.icon.tail {
+    position: absolute;
+    top: 10px;
+    left: -10px;
+  }
+}

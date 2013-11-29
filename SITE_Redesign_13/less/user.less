@@ -1,0 +1,45 @@
+// Simple user-list
+.user__list {
+  margin-left: -20px;
+  overflow: hidden;
+  margin-bottom: -20px;
+
+  .user__list_item {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.user__list_item {
+  display: block;
+  overflow: hidden;
+  width: 200px;
+  float: left;
+  text-overflow: ellipsis;
+
+  .user__list_avatar {
+    .size(60px);
+    float: left;
+    margin-right: 10px;
+  }
+
+  .user__name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 13px;
+    display: block;
+
+    a {font-weight: bold;}
+  }
+  .user__description {
+    display: block;
+    color: #787878;
+    font-size: 12px;
+    margin-bottom: 3px;
+
+    .age {
+      font-weight: bold;
+      color: #212121;
+    }
+  }
+}

@@ -1,0 +1,354 @@
+<!doctype HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Elements.html</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" media="screen" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/style.css"/>
+
+    <style type="text/css">
+        fieldset {border: 1px solid #ccc; border-radius: 4px; padding: 10px; margin: 10px;/* background-color: #ccc;*/}
+            /*legend {background: #fff; padding: 0 5px; border: 1px solid #333; border-radius: 2px}*/
+    </style>
+</head>
+<body>
+<fieldset>
+    <legend>Like button</legend>
+
+    <a href="#" class="el__like_button">
+        <i class="icon like"></i>
+    </a>
+
+    <a href="#" class="el__like_button liked">
+        <i class="icon liked"></i>
+    </a>
+
+</fieldset>
+
+<fieldset>
+    <legend>Control button</legend>
+
+    <a href="#" class="el__button_control">
+        More similar people
+    </a>
+
+</fieldset>
+
+<fieldset>
+    <legend>Slider elements</legend>
+
+    <a class="button white el__slider_control_left" href="#"><i class="icon arrow_left"></i></a>
+    <a class="button white el__slider_control_right" href="#"><i class="icon arrow_right"></i></a>
+
+    <div style="display: inline-block; margin-top: 10px;">
+
+        <div class="el__slider noControl">
+            <div class="el__slider_controls">
+                <a class="button white el__slider_control_left" href="#"><i class="icon arrow_left"></i></a>
+                <a class="button white el__slider_control_right" href="#"><i class="icon arrow_right"></i></a>
+            </div>
+
+            <div class="el__slider_frame">
+                <div class="el__slider_list">
+                    <div class="el__slider_list_item">
+                        <img src="../img/user/photo_example_2.jpg" alt=""/>
+                    </div>
+                    <div class="el__slider_list_item">
+                        <img src="../img/user/photo_example.jpg" alt=""/>
+                    </div>
+                    <div class="el__slider_list_item">
+                        <img src="../img/user/photo_example_3.jpg" alt=""/>
+                    </div>
+                    <div class="el__slider_list_item">
+                        <img src="../img/user/photo_example_2.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </div>
+<br>
+        <div class="el__slider">
+            <div class="el__slider_controls">
+                <a class="button white el__slider_control_left" href="#"><i class="icon arrow_left"></i></a>
+                <a class="button white el__slider_control_right" href="#"><i class="icon arrow_right"></i></a>
+            </div>
+
+            <div class="el__slider_frame">
+                <div class="el__slider_list" style="width: 1000px"><!-- width equal to width of all el__slider_list_item with its margins -->
+                    <div class="el__slider_list_item">
+                        <img src="../img/user/photo_example_2.jpg" alt=""/>
+                    </div>
+                    <div class="el__slider_list_item">
+                        <img src="../img/user/photo_example.jpg" alt=""/>
+                    </div>
+                    <div class="el__slider_list_item">
+                        <img src="../img/user/photo_example_3.jpg" alt=""/>
+                    </div>
+                    <div class="el__slider_list_item">
+                        <img src="../img/user/photo_example_2.jpg" alt=""/>
+                    </div>
+                    <div class="el__slider_list_item">
+                        <img src="../img/user/photo_example_2.jpg" alt=""/>
+                    </div>
+                    <div class="el__slider_list_item">
+                        <img src="../img/user/photo_example.jpg" alt=""/>
+                    </div>
+                    <div class="el__slider_list_item">
+                        <img src="../img/user/photo_example_3.jpg" alt=""/>
+                    </div>
+                    <div class="el__slider_list_item">
+                        <img src="../img/user/photo_example_2.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</fieldset>
+
+<fieldset>
+    <legend>User online status pointer</legend>
+
+    <span class="el__status online">Online Now</span>
+    <span class="el__status">Recently Online</span>
+    <span class="el__status offline">Offline</span>
+
+    <span class="el__status small online"></span>
+    <span class="el__status small"></span>
+    <span class="el__status small offline"></span>
+
+</fieldset>
+
+<fieldset>
+    <legend>Tabs</legend>
+
+    <div class="el__tabs">
+        <div class="el__tabs_holder">
+            <div class="el__tabs_item active">First tab</div>
+            <div class="el__tabs_item">Second tab <small>(99)</small></div>
+            <div class="el__tabs_item">Third tab</div>
+        </div>
+    </div>
+
+    <div class="el__box">
+       Example tab box content
+    </div>
+
+</fieldset>
+
+<fieldset>
+    <legend>Badges</legend>
+
+    <span class="el__badge">197</span>
+
+</fieldset>
+
+<fieldset style="border: 1px solid #333; border-radius: 4px; padding: 10px; margin: 10px; background-color: #ccc;">
+    <legend style="background: #fff;padding: 0 5px;border: 1px solid #333; border-radius: 2px;">Counter</legend>
+
+    <div class="el__photo_counter">
+        <i class="icon photo_count"></i>
+        <span class="counter">99</span>
+    </div>
+
+</fieldset>
+
+<fieldset style="background-color: #fff;">
+    <legend>Counter</legend>
+
+
+    <table class="el__info_table short_table">
+            <tr>
+                <th>Relationship:</th>
+                <td>Never married</td>
+            </tr>
+            <tr>
+                <th>Have kids:</th>
+                <td>No</td>
+            </tr>
+            <tr>
+                <th>Want kids:</th>
+                <td>Don't want yet</td>
+            </tr>
+            <tr>
+                <th>Ethnicity:</th>
+                <td>I'll tell you later</td>
+            </tr>
+            <tr>
+                <th>Faith:</th>
+                <td>I'll tell you later</td>
+            </tr>
+            <tr>
+                <th>Political views:</th>
+                <td>I'll tell you later</td>
+            </tr>
+            <tr>
+                <th>Body type:</th>
+                <td>Stocky</td>
+            </tr>
+            <tr>
+                <th>Height:</th>
+                <td>5' 4"</td>
+            </tr>
+            <tr>
+                <th>Eye color:</th>
+                <td>I'll tell you later</td>
+            </tr>
+            <tr>
+                <th>Hair color:</th>
+                <td>I'll tell you later</td>
+            </tr>
+            <tr>
+                <th>Smoke:</th>
+                <td>A few times a year</td>
+            </tr>
+            <tr>
+                <th>Drink:</th>
+                <td>Moderately</td>
+            </tr>
+        </table>
+
+    <hr>
+
+    <table class="el__info_table">
+        <caption>Appearance</caption>
+        <tr>
+            <th>Height:</th>
+            <td>5' 4"</td>
+            <td class="last">5' 4"</td>
+        </tr>
+        <tr>
+            <th>Body type:</th>
+            <td>Stocky</td>
+            <td class="last">Stocky</td>
+        </tr>
+        <tr>
+            <th>Eye color:</th>
+            <td>I'll tell you later</td>
+            <td class="last">I'll tell you later</td>
+        </tr>
+        <tr>
+            <th>Hair color:</th>
+            <td>I'll tell you later</td>
+            <td class="last">I'll tell you later</td>
+        </tr>
+    </table>
+
+    <table class="el__info_table">
+        <caption>Lifestyle</caption>
+        <tr>
+            <th>Smoke:</th>
+            <td>A few times a year</td>
+            <td class="last">A few times a year</td>
+        </tr>
+        <tr>
+            <th>Drink:</th>
+            <td>Moderately</td>
+            <td class="last">Moderately</td>
+        </tr>
+        <tr>
+            <th>Occupation:</th>
+            <td>Business Services - Other</td>
+            <td class="last">No preference</td>
+        </tr>
+        <tr>
+            <th>Income:</th>
+            <td>I'll tell you later</td>
+            <td class="last">No preference</td>
+        </tr>
+        <tr>
+            <th>Relationship:</th>
+            <td>Never married</td>
+            <td class="last">Never married</td>
+        </tr>
+        <tr>
+            <th>Have kids:</th>
+            <td>No</td>
+            <td class="last">No</td>
+        </tr>
+        <tr>
+            <th>Want kids:</th>
+            <td>Don't want yet</td>
+            <td class="last">Don't want yet</td>
+        </tr>
+    </table>
+
+    <table class="el__info_table">
+        <caption>Background / Values</caption>
+        <tr>
+            <th>Ethnicity:</th>
+            <td>White / Caucasian</td>
+            <td class="last">African-American / African descent,
+                Latino / Hispanic, White / Caucasian</td>
+        </tr>
+        <tr>
+            <th>Faith:</th>
+            <td>Other</td>
+            <td class="last">Agnostic, Atheist, Neither religious nor
+                spiritual, Other, Spiritual, but not religious</td>
+        </tr>
+        <tr>
+            <th>Languages:</th>
+            <td>I'll tell you later</td>
+            <td class="last">English</td>
+        </tr>
+        <tr>
+            <th>Education:</th>
+            <td>Bachelor's degree</td>
+            <td class="last">Bachelor's degree, Master's degree,
+                Doctor of Philosophy</td>
+        </tr>
+    </table>
+
+
+</fieldset>
+
+
+<fieldset style="background: #fff">
+    <legend>Interests iconed</legend>
+
+    <span class="el__interest">
+        <i class="interests-icon camping"></i>You both like <a href="#">Charity</a>
+    </span>
+</fieldset>
+
+<fieldset style="background: #fff">
+    <legend>Activity iconed</legend>
+
+    <span class="el__activity">
+        <i class="activity-icon photo"></i><span class="name">Marcene</span> added new photo(s)
+    </span>
+<br>
+
+    <span class="el__activity">
+        <i class="activity-icon profile"></i><span class="name">Marcene</span> added new photo(s)
+    </span>
+<br>
+
+    <span class="el__activity">
+        <i class="activity-icon interest"></i><span class="name">Marcene</span> added new photo(s)
+    </span>
+</fieldset>
+
+<fieldset style="background: #fff">
+    <legend>Ask form</legend>
+
+    <div class="el__ask">
+        <div class="el__ask_avatar">
+            <img src="../img/user/user_60.png" alt="" class="avatar"/>
+        </div>
+
+        <div class="form__input_tail el__ask_input">
+            <input type="text" placeholder="Ask her about interests...">
+            <i class="icon tail"></i>
+        </div>
+
+       <div class="el__ask_button">
+           <a class="button green" href="#">Ask</a>
+       </div>
+
+    </div><!-- /.el__ask -->
+</fieldset>
+
+</body>
+</html>

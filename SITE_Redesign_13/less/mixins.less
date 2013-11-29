@@ -23,3 +23,47 @@
   width: @size;
   height: @size;
 }
+
+.gradientSimple(@colorStart, @colorEnd){
+  background: @colorStart - #101010; /* Old browsers */
+  background: -ms-linear-gradient(top, @colorStart 0%,@colorEnd 100%); //* IE10+ */
+  background: linear-gradient(to bottom, @colorStart 0%,@colorEnd 100%); //* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=@colorStart, endColorstr=@colorEnd,GradientType=0 ); //* IE6-9 */
+}
+
+.gradientOff (@color){
+  background: @color !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( enabled = false )!important; //* IE6-9 */
+}
+
+.triangle(@height, @color, @borderWidth, @borderColor){
+  display: block;
+  .size(0);
+  border: @height solid transparent;
+  border-top: none;
+  border-bottom-color: @color;
+  position: absolute;
+  top: -(@height);
+
+  .inner {
+    display: block;
+    .size(0);
+    border: (@height - @borderWidth) solid transparent;
+    border-top: none;
+    border-bottom-color: @borderColor;
+    position: absolute;
+    top: @borderWidth;
+    left: -(@height - @borderWidth);
+  }
+}
+
+.triangle(@height, @color){
+  display: block;
+  .size(0);
+  border: @height solid transparent;
+  border-top: none;
+  border-bottom-color: @color;
+  position: absolute;
+  top: -(@height);
+
+}
