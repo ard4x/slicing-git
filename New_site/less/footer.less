@@ -1,23 +1,36 @@
 .footer {
-  background-color: #565656;
-  padding-top: 28px;
-  padding-bottom: 30px;
-  position: relative;
+
   font-size: 12px;
   min-width: @gridContainerWidth;
   width: 100%;
 
-  a {
-    color: #fff;}
+  .footer__content {
+    background-color: #565656;
+    padding-top: 28px;
+    padding-bottom: 30px;
+    position: relative;
 
-  .grid__row {margin-top: 0; margin-bottom: 0;}
-
-  .footer__copy {
-    font-size: 12px;
-    color: #999;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+    a {
+      color: #fff;}
+    .footer__copy {
+      font-size: 12px;
+      color: #999;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
   }
 
+  .footer__social {
+    padding: 15px 0;
+    border-top: 1px solid #ccc;
+    .footer__social_list {
+      text-align: center;
+
+      .footer__social_item {
+        display: inline-block;
+        margin-left: 5px;
+      }
+    }
+  }
 }
