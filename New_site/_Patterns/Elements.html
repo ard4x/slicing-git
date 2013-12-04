@@ -10,6 +10,20 @@
         fieldset {border: 1px solid #ccc; border-radius: 4px; padding: 10px; margin: 10px;/* background-color: #ccc;*/}
             /*legend {background: #fff; padding: 0 5px; border: 1px solid #333; border-radius: 2px}*/
     </style>
+
+    <!-- Require jquery included before -->
+    <!--[if  IE]>
+    <script src="../js/jquery.columnizer.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        $(function(){
+            $('._jInterestColumns').columnize({
+                columns : 3,
+                accuracy : 1,
+                buildOnce : true
+            })
+        });
+    </script>
+    <![endif]-->
 </head>
 <body>
 <fieldset>
@@ -31,6 +45,8 @@
     <a href="#" class="el__button_control">
         More similar people
     </a>
+
+
 
 </fieldset>
 
@@ -150,6 +166,10 @@
         <i class="icon photo_count"></i>
         <span class="counter">99</span>
     </div>
+
+    <span class="el__menu_counter">12</span>
+
+    <span class="el__menu_counter new">+12</span>
 
 </fieldset>
 
@@ -303,6 +323,11 @@
 
 </fieldset>
 
+<fieldset style="background: #fff">
+    <legend>Interests</legend>
+
+    <span class="el__interest simple">Internet Browsing<a class="close" href="#"></a></span>
+</fieldset>
 
 <fieldset style="background: #fff">
     <legend>Interests iconed</legend>
@@ -330,6 +355,160 @@
     </span>
 </fieldset>
 
+<fieldset>
+    <legend>Users empty</legend>
+
+    <img src="../img/user/user_empty_m_220.png" alt=""/>
+    <img src="../img/user/user_empty_m_120.png" alt=""/>
+    <img src="../img/user/user_empty_m_60.png" alt=""/>
+    <img src="../img/user/user_empty_m.png" alt=""/>
+    <img src="../img/user/user_empty_f_220.png" alt=""/>
+    <img src="../img/user/user_empty_f_120.png" alt=""/>
+    <img src="../img/user/user_empty_f_60.png" alt=""/>
+    <img src="../img/user/user_empty_f.png" alt=""/>
+
+</fieldset>
+
+<fieldset style="background-color: #fff;">
+    <legend>Interest box</legend>
+
+    <div class="el__interest_box">
+        <div class="el__interest_box_tabs">
+            <div class="tab_item active">Most popular</div>
+            <div class="tab_item">Activities</div>
+            <div class="tab_item">Books</div>
+            <div class="tab_item">Brands</div>
+            <div class="tab_item">Cars</div>
+            <div class="tab_item">Countries</div>
+            <div class="tab_item">Food</div>
+            <div class="tab_item">Movies</div>
+            <div class="tab_item">Music</div>
+            <div class="tab_item">Sports</div>
+            <div class="tab_item">TV</div>
+            <div class="tab_item">Websites</div>
+        </div><!-- el__interest_box_tabs -->
+        <div class="el__interest_box_content">
+
+            <div class="content_wrapper">
+
+                <div class="content_frame _jInterestColumns">
+
+                    <span class="content_group">
+                        <span class="title">A</span><br>
+                        <a href="#">Asterix</a><br>
+                        <a class="selected" href="#">Axious</a><br>
+                    </span>
+                    <span class="content_group">
+                        <span class="title">B</span><br>
+                        <a href="#">Batman</a><br>
+                    </span>
+                    <span class="content_group">
+                        <span class="title">C</span><br>
+                        <a class="selected" href="#">Croatoan</a><br>
+                        <a href="#">Crown</a><br>
+                        <a class="selected" href="#">Cupidon</a><br>
+                    </span>
+                    <span class="content_group">
+                        <span class="title">D</span><br>
+                        <a href="#">Dexter</a><br>
+                        <a href="#">Dishonored</a><br>
+                        <a href="#">Driver</a><br>
+                    </span>
+                    <span class="content_group">
+                        <span class="title">R</span><br>
+                        <a href="#">Robocop</a><br>
+                        <a href="#">Roboticus</a><br>
+                        <a href="#">Ryu Ken</a><br>
+                    </span>
+                    <span class="content_group">
+                        <span class="title">S</span><br>
+                        <a href="#">Sherlock</a><br>
+                        <a href="#">Sniper</a><br>
+                        <a href="#">Street fighter</a><br>
+                    </span>
+                    <span class="content_group">
+                        <span class="title">T</span><br>
+                        <a href="#">Tahoma</a><br>
+                        <a href="#">Talented John</a><br>
+                        <a href="#">Transformers</a><br>
+                        <a href="#">Trine</a><br>
+                    </span>
+
+                    <span class="content_group">
+                        <span class="title">A</span><br>
+                        <a href="#">Asterix</a><br>
+                        <a href="#">Axious</a><br>
+                    </span>
+                    <span class="content_group">
+                        <span class="title">B</span><br>
+                        <a href="#">Batman</a><br>
+                    </span>
+                    <span class="content_group">
+                        <span class="title">C</span><br>
+                        <a href="#">Croatoan</a><br>
+                        <a href="#">Crown</a><br>
+                        <a href="#">Cupidon</a><br>
+                    </span>
+                    <span class="content_group">
+                        <span class="title">D</span><br>
+                        <a href="#">Dexter</a><br>
+                        <a href="#">Dishonored</a><br>
+                        <a href="#">Driver</a><br>
+                    </span>
+                    <span class="content_group">
+                        <span class="title">R</span><br>
+                        <a href="#">Robocop</a><br>
+                        <a href="#">Roboticus</a><br>
+                        <a href="#">Ryu Ken</a><br>
+                    </span>
+                    <span class="content_group">
+                        <span class="title">S</span><br>
+                        <a href="#">Sherlock</a><br>
+                        <a href="#">Sniper</a><br>
+                        <a href="#">Street fighter</a><br>
+                    </span>
+                    <span class="content_group">
+                        <span class="title">T</span><br>
+                        <a href="#">Tahoma</a><br>
+                        <a href="#">Talented John</a><br>
+                        <a href="#">Transformers</a><br>
+                        <a href="#">Trine</a><br>
+                    </span>
+
+                        <span class="content_group">
+                        <span class="title">A</span><br>
+                        <a href="#">Asterix</a><br>
+                        <a href="#">Axious</a><br>
+                    </span>
+                    <span class="content_group">
+                        <span class="title">B</span><br>
+                        <a href="#">Batman</a><br>
+                    </span>
+                    <span class="content_group">
+                        <span class="title">C</span><br>
+                        <a href="#">Croatoan</a><br>
+                        <a href="#">Crown</a><br>
+                        <a href="#">Cupidon</a><br>
+                    </span>
+                    <span class="content_group">
+                        <span class="title">D</span><br>
+                        <a href="#">Dexter</a><br>
+                        <a href="#">Dishonored</a><br>
+                        <a href="#">Driver</a><br>
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="content_controls">
+                <a class="el__button_control" href="#">&laquo; Prev</a>
+                <a class="el__button_control" href="#">Next &raquo;</a>
+            </div>
+        </div><!-- el__interest_box_content -->
+    </div><!-- /.el__interest_box -->
+</fieldset>
+
 <fieldset style="background: #fff">
     <legend>Ask form</legend>
 
@@ -343,9 +522,9 @@
             <i class="icon tail"></i>
         </div>
 
-       <div class="el__ask_button">
-           <a class="button green" href="#">Ask</a>
-       </div>
+        <div class="el__ask_button">
+            <a class="button green" href="#">Ask</a>
+        </div>
 
     </div><!-- /.el__ask -->
 </fieldset>

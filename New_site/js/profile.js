@@ -35,11 +35,29 @@ $('._jTab').on('click', function(){             // When Tab clicked
 });
 // Tabs
 
+// Photo Likers View All
+
+
 $(function(){
+
+    // Button of Show Similar block in profile
     $('._jShowAll').on('click', function(e){
         $(this).parent().parent().find('._jSimilar').css('height', 'auto');
         $(this).hide();
         e.preventDefault();
         return 0;
+    });
+
+    // Init TextCounter Plugin
+    $('._jTextCounter').textCounter();
+
+    // Set action to View All link in My Photos
+    // @TODO checking is need display View All link on page load and resize window
+
+    $("._jPhotoLikesViewAll").on('click', function(e){
+        e.preventDefault();
+        var $this = $(this);
+        $this.closest("._jPhotoLikes").find("._jPhotoLikesList").css('height', 'auto');
+        $this.hide();
     });
 });

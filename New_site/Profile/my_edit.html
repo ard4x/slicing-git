@@ -1,0 +1,1469 @@
+<!doctype HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile Edit</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" media="screen" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../css/profile.css"/>
+
+</head>
+<body>
+<div class="header" id="pageHeader">
+    <div class="grid__container">
+        <div class="grid__row">
+            <div class="grid__col_side">
+                <a href="#">
+                    <img src="../img/logo.png" alt="Meetville"/>
+                </a>
+            </div>
+            <div class="grid__col_main">
+
+                <div class="header__menu">
+
+                    <div class="header__menu_item">
+                        <a href="#">Search</a>
+                    </div>
+
+                    <div class="header__menu_item">
+                        <a href="#">Encounters</a>
+                    </div>
+
+                    <div class="header__menu_item">
+                        <a href="#">Connections</a>
+
+                        <div class="header__tooltip">
+
+                            <div class="header__tooltip_item"><a href="#">My guests</a></div>
+                            <div class="header__tooltip_item"><a href="#">My favorites</a></div>
+                            <div class="header__tooltip_item"><a href="#">Added me to favorites</a></div>
+                            <div class="header__tooltip_item"><a href="#">Likes me</a></div>
+                            <div class="header__tooltip_item separator"></div>
+                            <div class="header__tooltip_item"><a href="#">Invite your friends</a></div>
+
+                            <div class="header__tail">
+                                <div class="inner"></div>
+                            </div>
+                        </div><!-- /.header__tooltip -->
+                    </div><!-- /.header__menu_item -->
+
+                    <div class="header__menu_item">
+                        <a href="#">Messages</a>
+                        <span class="el__badge">197</span>
+                    </div>
+
+                </div><!-- /.header__menu -->
+
+                <div class="header__settings">
+                    <div class="header__settings_item header__holder_signals header__holder_signals">
+                        <a href="#">
+                            <i class="icon signals_active"></i>
+                        </a>
+                        <span class="el__badge">197</span>
+
+                        <div class="header__tooltip">
+                            <div class="type__header_4 type__header_lite header__signals_title">
+                                Notifications
+                            </div>
+                            <div class="header__signals_userList">
+                                <div class="user__list_item">
+                                    <img src="../img/user/user_60.png" class="user__list_avatar avatar" alt=""/>
+                                    <span class="user__name"><a href="#">Maria</a><span class="el__status small online"></span></span>
+                                    <span class="user__description">Yesterday 12:05 PM</span>
+                                    <span>Added you to favorites</span>
+                                </div><!-- /.user__list_item -->
+
+                                <div class="user__list_item">
+                                    <img src="../img/user/user_60.png" class="user__list_avatar avatar" alt=""/>
+                                    <span class="user__name"><a href="#">Sally Jones</a><span class="el__status small online"></span></span>
+                                    <span class="user__description">Nov 12 2:20 PM</span>
+                                    <span>Checked out your profile</span>
+                                </div><!-- /.user__list_item -->
+
+                                <div class="user__list_item">
+                                    <img src="../img/user/user_60.png" class="user__list_avatar avatar" alt=""/>
+                                    <span class="user__name"><a href="#">Sally Jones</a><span class="el__status small online"></span></span>
+                                    <span class="user__description">Nov 12 2:20 PM</span>
+                                    <span>Checked out your profile</span>
+                                </div><!-- /.user__list_item -->
+
+                                <div class="user__list_item">
+                                    <img src="../img/user/user_60.png" class="user__list_avatar avatar" alt=""/>
+                                    <img src="../img/user/user_60.png" class="header__signals_secondUser avatar" alt=""/>
+                                    <span class="user__name"><a href="#">Maria</a><span class="el__status small online"></span></span>
+                                    <span class="user__description">Nov 12 2:20 PM</span>
+                                    <span>Has liked your photo</span>
+                                </div><!-- /.user__list_item -->
+
+                                <div class="user__list_item">
+                                    <img src="../img/user/user_60.png" class="user__list_avatar avatar" alt=""/>
+                                    <img src="../img/user/user_60.png" class="header__signals_secondUser avatar" alt=""/>
+                                    <span class="user__name"><a href="#">Maria</a><span class="el__status small online"></span></span>
+                                    <span class="user__description">Nov 12 2:20 PM</span>
+                                    <span>Has liked your photo</span>
+                                </div><!-- /.user__list_item -->
+                            </div><!-- /.header__signals_userList -->
+
+                            <div class="header__signals_more">
+                                <a href="#">View all Notifications</a>
+                            </div>
+
+                            <div class="header__tail">
+                                <div class="inner"></div>
+                            </div>
+                        </div><!-- /.header__tooltip -->
+                    </div>
+                    <div class="header__settings_item separator"></div>
+                    <div class="header__settings_item header__holder_user">
+                        <a class="user">
+                            <img class="avatar" src="../img/user/user_empty_f.png" alt=""/>Anderson
+                        </a>
+
+                        <div class="header__tooltip">
+
+                            <div class="header__tooltip_item"><a href="#">Edit / View profile</a></div>
+                            <div class="header__tooltip_item"><a href="#">Photos</a></div>
+                            <div class="header__tooltip_item"><a href="#">Upload photos</a></div>
+
+                            <div class="header__tail">
+                                <div class="inner"></div>
+                            </div>
+                        </div><!-- /.header__tooltip -->
+                    </div>
+                    <div class="header__settings_item separator"></div>
+                    <div class="header__settings_item header__holder_settings">
+                        <a href="#">
+                            <i class="icon settings"></i>
+                        </a>
+
+                        <div class="header__tooltip">
+
+                            <div class="header__tooltip_item"><a href="#">Account settings</a></div>
+                            <div class="header__tooltip_item"><a href="#">Email notifications</a></div>
+                            <div class="header__tooltip_item"><a href="#">Payments</a></div>
+                            <div class="header__tooltip_item"><a href="#">Blocked users</a></div>
+                            <div class="header__tooltip_item"><a href="#">Hidden users</a></div>
+                            <div class="header__tooltip_item separator"></div>
+                            <div class="header__tooltip_item"><a href="#">Invite friends</a></div>
+                            <div class="header__tooltip_item"><a href="#">Meetville iPhone</a></div>
+                            <div class="header__tooltip_item"><a href="#">Meetville iPad</a></div>
+                            <div class="header__tooltip_item separator"></div>
+                            <div class="header__tooltip_item"><a href="#">Logout</a></div>
+
+                            <div class="header__tail">
+                                <div class="inner"></div>
+                            </div>
+                        </div><!-- /.header__tooltip -->
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- /.grid__row -->
+    </div><!-- /.grid__container -->
+</div><!-- /.header -->
+
+<div class="content profile" id="pageContent">
+    <div class="grid__container">
+        <div class="grid__row">
+            <div class="grid__col_side">
+                <div class="profile__sidebar" id="profileSidebar">
+                    <div class="profile__user_avatar">
+                        <img src="../img/user/user_empty_m_220.png" alt=""/>
+                    </div>
+
+                    <div class="profile__user_buttons">
+                        <a class="button red" href="#">Upload More Photos</a>
+                    </div>
+
+                    <div class="profile__user_menu">
+                        <a class="profile__user_menu_item" href="#">All messages<span class="el__menu_counter">12</span></a>
+                        <a class="profile__user_menu_item" href="#">My guests<span class="el__menu_counter">12</span></a>
+                        <a class="profile__user_menu_item" href="#">My favorites<span class="el__menu_counter new">+25</span></a>
+                        <a class="profile__user_menu_item" href="#">Added me to favorites<span class="el__menu_counter">12</span></a>
+                        <a class="profile__user_menu_item" href="#">Winks sent to me<span class="el__menu_counter new">+12</span></a>
+                        <a class="profile__user_menu_item" href="#">Hidden users<span class="el__menu_counter">12</span></a>
+                        <a class="profile__user_menu_item" href="#">Likes me<span class="el__menu_counter">12</span></a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="grid__col_main">
+
+                <div class="grid__container profile__content_header">
+                    <div class="grid__row profile__edit_list">
+                        <div class="grid__span_3 profile__edit_item">
+                            <div class="profile__edit_label">Nickname:</div>
+                            <div class="profile__edit_content">
+                                <select>
+                                    <option value="AK">Alaska</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="CA">California</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grid__span_3 profile__edit_item">
+                            <div class="profile__edit_label">I am a:</div>
+                            <div class="profile__edit_content">
+                                <select>
+                                    <option value="AK">Alaska</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="CA">California</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grid__span_3 profile__edit_item">
+                            <div class="profile__edit_label">Between ages:</div>
+                            <div class="profile__edit_item double">
+                                <div class="select_short first">
+                                    <select>
+                                        <option value="AK">Alaska</option>
+                                        <option value="HI">Hawaii</option>
+                                        <option value="CA">California</option>
+                                    </select>
+                                </div>
+
+                                <div class="select_short">
+                                    <select>
+                                        <option value="AK">Alaska</option>
+                                        <option value="HI">Hawaii</option>
+                                        <option value="CA">California</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid__span_3 profile__edit_item">
+                            <div class="profile__edit_label">Country:</div>
+                            <div class="profile__edit_content">
+                                <select>
+                                    <option value="AK">Alaska</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="CA">California</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grid__span_3 profile__edit_item">
+                            <div class="profile__edit_label">Region:</div>
+                            <div class="profile__edit_content">
+                                <select>
+                                    <option value="AK">Alaska</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="CA">California</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grid__span_3 profile__edit_item">
+                            <div class="profile__edit_label">City:</div>
+                            <div class="profile__edit_content">
+                                <select>
+                                    <option value="AK">Alaska</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="CA">California</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile__edit_controls">
+                        <a class="button small" href="#">Save</a><a class="button small white" href="#">Cancel</a>
+                    </div>
+                </div><!-- /.profile__content_header -->
+
+                <div class="el__tabs">
+                    <div class="el__tabs_holder">
+                        <div data-content="tabContent_1" class="_jTab el__tabs_item active">About me</div>
+                        <div data-content="tabContent_2" class="_jTab el__tabs_item">My photos <small>(99)</small></div>
+                        <div data-content="tabContent_3" class="_jTab el__tabs_item">Q&A</div>
+                    </div>
+                </div><!-- /.el__tabs -->
+
+                <div class="_jTabContent" id="tabContent_1">
+                    <div class="el__box">
+                        <h2 class="type__header_underline type__header_lite">Personal Information</h2>
+
+                        <div class="profile__content_box profile__user_personal_info clearAfter profile__edit_list">
+
+                            <div class="profile__content_box_half">
+                                <div class="profile__edit_item">
+                                    <div class="profile__edit_label">Relationship:</div>
+                                    <div class="profile__edit_content">
+                                            <select>
+                                                <option value="AK">Alaska</option>
+                                                <option value="HI">Hawaii</option>
+                                                <option value="CA">California</option>
+                                            </select>
+                                    </div>
+                                </div>
+                                <div class="profile__edit_item">
+                                    <div class="profile__edit_label">Have kids:</div>
+                                    <div class="profile__edit_content">
+                                        <select>
+                                            <option value="AK">Alaska</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="CA">California</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="profile__edit_item">
+                                    <div class="profile__edit_label">Want kids:</div>
+                                    <div class="profile__edit_content">
+                                        <select>
+                                            <option value="AK">Alaska</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="CA">California</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="profile__edit_item">
+                                    <div class="profile__edit_label">Ethnicity:</div>
+                                    <div class="profile__edit_content">
+                                        <select>
+                                            <option value="AK">Alaska</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="CA">California</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="profile__edit_item">
+                                    <div class="profile__edit_label">Faith:</div>
+                                    <div class="profile__edit_content">
+                                        <select>
+                                            <option value="AK">Alaska</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="CA">California</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="profile__edit_item">
+                                    <div class="profile__edit_label">Political views:</div>
+                                    <div class="profile__edit_content">
+                                        <select>
+                                            <option value="AK">Alaska</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="CA">California</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="profile__content_box_half">
+                                <div class="profile__edit_item">
+                                    <div class="profile__edit_label">Body type:</div>
+                                    <div class="profile__edit_content">
+                                        <select>
+                                            <option value="AK">Alaska</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="CA">California</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="profile__edit_item">
+                                    <div class="profile__edit_label">Height:</div>
+                                    <div class="profile__edit_content">
+                                        <div class="select_short">
+                                            <select>
+                                                <option value="AK">Alaska</option>
+                                                <option value="HI">Hawaii</option>
+                                                <option value="CA">California</option>
+                                            </select>
+                                        </div>
+                                        <span class="form__switch">Centimeters</span>
+
+                                    </div>
+                                </div>
+                                <div class="profile__edit_item">
+                                    <div class="profile__edit_label">Eye color:</div>
+                                    <div class="profile__edit_content">
+                                        <select>
+                                            <option value="AK">Alaska</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="CA">California</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="profile__edit_item">
+                                    <div class="profile__edit_label">Hair color:</div>
+                                    <div class="profile__edit_content">
+                                        <select>
+                                            <option value="AK">Alaska</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="CA">California</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="profile__edit_item">
+                                    <div class="profile__edit_label">Smoke:</div>
+                                    <div class="profile__edit_content">
+                                        <select>
+                                            <option value="AK">Alaska</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="CA">California</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="profile__edit_item">
+                                    <div class="profile__edit_label">Drink:</div>
+                                    <div class="profile__edit_content">
+                                        <select>
+                                            <option value="AK">Alaska</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="CA">California</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <h2 class="type__header_underline type__header_lite">In My Own Words</h2>
+                        <div class="el__tabs_content">
+                            <div class="profile__edit_wrap _jTextCounter" data-limit="11">
+                                <textarea name="" id="" class="_jTextCounter_field"></textarea>
+
+                                <div class="profile__edit_controls">
+                                    <span class="form__textarea_counter">
+                                    At least <span class="_jTextCounter_counter_limit">xxx</span> characters required:
+                                    <span class="counter_items">
+                                        <span class="counter_current _jTextCounter_counter">273</span> / <span class="counter_limit _jTextCounter_counter_limit">200</span>
+                                    </span>
+                                </span>
+                                    <a class="button small _jTextCounter_button" href="#">Save</a><a class="button small white" href="#">Cancel</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="el__box">
+                        <h2 class="type__header_underline type__header_lite">My Interests</h2>
+
+                        <div class="profile__edit_wrap">
+
+                            <div class="profile__edit_interest_list">
+                                <span class="el__interest simple">Internet Browsing<a class="close" href="#"></a></span><span
+                                    class="el__interest simple">Reading<a class="close" href="#"></a></span><span
+                                    class="el__interest simple">Watching Movies<a class="close" href="#"></a></span><span
+                                    class="el__interest simple">Computer Games<a class="close" href="#"></a></span><span
+                                    class="el__interest simple">Pets<a class="close" href="#"></a></span><span
+                                    class="el__interest simple">Science fiction<a class="close" href="#"></a></span><span
+                                    class="el__interest simple">Acid<a class="close" href="#"></a></span><span
+                                    class="el__interest simple">Ambient<a class="close" href="#"></a></span><span
+                                    class="el__interest simple">Ancient Greek Andean<a class="close" href="#"></a></span><span
+                                    class="el__interest simple">Baroque<a class="close" href="#"></a></span><span
+                                    class="el__interest simple">Bhangra<a class="close" href="#"></a></span><span
+                                    class="el__interest simple">Bluegrass<a class="close" href="#"></a></span><span
+                                    class="el__interest simple">Bossa <Nova></Nova><a class="close" href="#"></a></span>
+                            </div><!-- /.profile__edit_interest_list -->
+
+                            <div class="profile__edit_interest_search">
+                                <div class="profile__edit_interest_search_label">Quick search:</div>
+                                <div class="form__input_drop">
+                                    <input type="text" placeholder="Start to type your interests here">
+
+                                    <ul class="form__input_drop_list">
+                                        <li>di<span class="addition">scovery channel</span> <i class="category">in television</i></li>
+                                        <li>di<span class="addition">scovery science</span> <i class="category">in television</i></li>
+                                        <li>di<span class="addition">stortion</span> <i class="category">in music</i></li>
+                                        <li>di<span class="addition">vision</span> <i class="category">in books</i></li>
+                                        <li>di<span class="addition">vergence theory</span> <i class="category">in books</i></li>
+                                        <li class="no_result">Sorry, no results found</li>
+                                    </ul>
+                                </div>
+                            </div><!-- /.profile__edit_interest_search -->
+
+                            <div class="profile__edit_interest_or">or browse:</div>
+
+                            <div class="el__interest_box">
+                                <div class="el__interest_box_tabs">
+                                    <div class="tab_item active">Most popular</div>
+                                    <div class="tab_item">Activities</div>
+                                    <div class="tab_item">Books</div>
+                                    <div class="tab_item">Brands</div>
+                                    <div class="tab_item">Cars</div>
+                                    <div class="tab_item">Countries</div>
+                                    <div class="tab_item">Food</div>
+                                    <div class="tab_item">Movies</div>
+                                    <div class="tab_item">Music</div>
+                                    <div class="tab_item">Sports</div>
+                                    <div class="tab_item">TV</div>
+                                    <div class="tab_item">Websites</div>
+                                </div><!-- el__interest_box_tabs -->
+                                <div class="el__interest_box_content">
+
+                                    <div class="content_wrapper">
+
+                                        <div class="content_frame _jInterestColumns">
+
+                                            <span class="content_group">
+                                                <span class="title">A</span><br>
+                                                <a href="#">Asterix</a><br>
+                                                <a class="selected" href="#">Axious</a><br>
+                                            </span>
+                                            <span class="content_group">
+                                                <span class="title">B</span><br>
+                                                <a href="#">Batman</a><br>
+                                            </span>
+                                            <span class="content_group">
+                                                <span class="title">C</span><br>
+                                                <a href="#">Croatoan</a><br>
+                                                <a href="#">Crown</a><br>
+                                                <a class="selected" href="#">Cupidon</a><br>
+                                            </span>
+                                            <span class="content_group">
+                                                <span class="title">D</span><br>
+                                                <a class="selected" href="#">Dexter</a><br>
+                                                <a href="#">Dishonored</a><br>
+                                                <a href="#">Driver</a><br>
+                                            </span>
+                                            <span class="content_group">
+                                                <span class="title">R</span><br>
+                                                <a href="#">Robocop</a><br>
+                                                <a href="#">Roboticus</a><br>
+                                                <a href="#">Ryu Ken</a><br>
+                                            </span>
+                                            <span class="content_group">
+                                                <span class="title">S</span><br>
+                                                <a href="#">Sherlock</a><br>
+                                                <a href="#">Sniper</a><br>
+                                                <a href="#">Street fighter</a><br>
+                                            </span>
+                                            <span class="content_group">
+                                                <span class="title">T</span><br>
+                                                <a href="#">Tahoma</a><br>
+                                                <a href="#">Talented John</a><br>
+                                                <a href="#">Transformers</a><br>
+                                                <a href="#">Trine</a><br>
+                                            </span>
+
+                                            <span class="content_group">
+                                                <span class="title">A</span><br>
+                                                <a href="#">Asterix</a><br>
+                                                <a href="#">Axious</a><br>
+                                            </span>
+                                            <span class="content_group">
+                                                <span class="title">B</span><br>
+                                                <a href="#">Batman</a><br>
+                                            </span>
+                                            <span class="content_group">
+                                                <span class="title">C</span><br>
+                                                <a href="#">Croatoan</a><br>
+                                                <a href="#">Crown</a><br>
+                                                <a href="#">Cupidon</a><br>
+                                            </span>
+                                            <span class="content_group">
+                                                <span class="title">D</span><br>
+                                                <a href="#">Dexter</a><br>
+                                                <a href="#">Dishonored</a><br>
+                                                <a href="#">Driver</a><br>
+                                            </span>
+                                            <span class="content_group">
+                                                <span class="title">R</span><br>
+                                                <a href="#">Robocop</a><br>
+                                                <a href="#">Roboticus</a><br>
+                                                <a href="#">Ryu Ken</a><br>
+                                            </span>
+                                            <span class="content_group">
+                                                <span class="title">S</span><br>
+                                                <a href="#">Sherlock</a><br>
+                                                <a href="#">Sniper</a><br>
+                                                <a href="#">Street fighter</a><br>
+                                            </span>
+                                            <span class="content_group">
+                                                <span class="title">T</span><br>
+                                                <a href="#">Tahoma</a><br>
+                                                <a href="#">Talented John</a><br>
+                                                <a href="#">Transformers</a><br>
+                                                <a href="#">Trine</a><br>
+                                            </span>
+
+                                                <span class="content_group">
+                                                <span class="title">A</span><br>
+                                                <a href="#">Asterix</a><br>
+                                                <a href="#">Axious</a><br>
+                                            </span>
+                                            <span class="content_group">
+                                                <span class="title">B</span><br>
+                                                <a href="#">Batman</a><br>
+                                            </span>
+                                            <span class="content_group">
+                                                <span class="title">C</span><br>
+                                                <a href="#">Croatoan</a><br>
+                                                <a href="#">Crown</a><br>
+                                                <a href="#">Cupidon</a><br>
+                                            </span>
+                                            <span class="content_group">
+                                                <span class="title">D</span><br>
+                                                <a href="#">Dexter</a><br>
+                                                <a href="#">Dishonored</a><br>
+                                                <a href="#">Driver</a><br>
+                                            </span>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="content_controls">
+                                        <a class="el__button_control" href="#">« Prev</a>
+                                        <a class="el__button_control" href="#">Next »</a>
+                                    </div>
+                                </div><!-- el__interest_box_content -->
+                            </div><!-- el__interest_box -->
+
+                            <div class="profile__edit_controls">
+                                <a class="button small" href="#">Save</a><a class="button small white" href="#">Cancel</a>
+                            </div>
+                        </div>
+
+                    </div><!-- /.el__box -->
+
+                    <div class="el__box profile__about">
+                        <h2 class="type__header_underline type__header_lite">
+                            <span class="profile__about_col1">About</span>
+                            <span class="profile__about_col2">Me</span>
+                            <span class="profile__about_col3">My Partner</span></h2>
+
+                        <table class="el__info_table profile__edit_list">
+                            <caption>Appearance <a class="profile__edit" href="#"></caption>
+                            <tr>
+                                <th>Height:</th>
+                                <td>
+                                    <div class="profile__edit_item">
+                                        <div class="profile__edit_content">
+                                            <div class="select_short">
+                                                <select>
+                                                    <option value="AK">Alaska</option>
+                                                    <option value="HI">Hawaii</option>
+                                                    <option value="CA">California</option>
+                                                </select>
+                                            </div>
+                                            <span class="form__switch">Centimeters</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="last">
+
+                                    <div class="profile__edit_item">
+                                        <div class="profile__edit_content">
+                                            <div class="select_short">
+                                                <select>
+                                                    <option value="AK">Alaska</option>
+                                                    <option value="HI">Hawaii</option>
+                                                    <option value="CA">California</option>
+                                                </select>
+                                            </div>
+                                            <span class="select_divider">-</span>
+                                            <div class="select_short">
+                                                <select>
+                                                    <option value="AK">Alaska</option>
+                                                    <option value="HI">Hawaii</option>
+                                                    <option value="CA">California</option>
+                                                </select>
+                                            </div>
+                                            <span class="form__switch">Centimeters</span>
+                                        </div>
+                                    </div>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Body type:</th>
+                                <td>
+                                    <div class="profile__edit_item">
+                                        <div class="profile__edit_content">
+                                            <label><input type="radio"/>A few extra pounds</label>
+                                            <label><input type="radio"/>Athletic</label>
+                                            <label><input type="radio"/>Average</label>
+                                            <label><input type="radio"/>Big and beautiful</label>
+                                            <label><input type="radio"/>Curvy</label>
+                                            <label><input type="radio"/>Fit</label>
+                                            <label><input type="radio"/>Full-figured</label>
+                                            <label><input type="radio"/>Muscular</label>
+                                            <label><input type="radio"/>Other</label>
+                                            <label><input type="radio"/>Overweight</label>
+                                            <label><input type="radio"/>Skinny</label>
+                                            <label><input type="radio"/>Slender</label>
+                                            <label><input type="radio"/>Slim</label>
+                                            <label><input type="radio"/>Stocky</label>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="last">
+                                    <div class="profile__edit_item">
+                                        <div class="profile__edit_content">
+                                            <label><input type="checkbox"/>A few extra pounds</label>
+                                            <label><input type="checkbox"/>Athletic</label>
+                                            <label><input type="checkbox"/>Average</label>
+                                            <label><input type="checkbox"/>Big and beautiful</label>
+                                            <label><input type="checkbox"/>Curvy</label>
+                                            <label><input type="checkbox"/>Fit</label>
+                                            <label><input type="checkbox"/>Full-figured</label>
+                                            <label><input type="checkbox"/>Muscular</label>
+                                            <label><input type="checkbox"/>Other</label>
+                                            <label><input type="checkbox"/>Overweight</label>
+                                            <label><input type="checkbox"/>Skinny</label>
+                                            <label><input type="checkbox"/>Slender</label>
+                                            <label><input type="checkbox"/>Slim</label>
+                                            <label><input type="checkbox"/>Stocky</label>
+                                            <label><input type="checkbox"/>Not important</label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Eye color:</th>
+                                <td>
+                                    <div class="profile__edit_item">
+                                        <div class="profile__edit_content">
+                                            <label><input type="radio"/>Black</label>
+                                            <label><input type="radio"/>Blue</label>
+                                            <label><input type="radio"/>Blue-gray</label>
+                                            <label><input type="radio"/>Brown</label>
+                                            <label><input type="radio"/>Green</label>
+                                            <label><input type="radio"/>Green-gray</label>
+                                            <label><input type="radio"/>Blue-gray</label>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="last">
+                                    <div class="profile__edit_item">
+                                        <div class="profile__edit_content">
+                                            <label><input type="checkbox"/>Black</label>
+                                            <label><input type="checkbox"/>Blue</label>
+                                            <label><input type="checkbox"/>Blue-gray</label>
+                                            <label><input type="checkbox"/>Brown</label>
+                                            <label><input type="checkbox"/>Green</label>
+                                            <label><input type="checkbox"/>Green-gray</label>
+                                            <label><input type="checkbox"/>Blue-gray</label>
+                                            <label><input type="checkbox"/>Not important</label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Hair color:</th>
+                                <td>
+                                    <div class="profile__edit_item">
+                                        <div class="profile__edit_content">
+                                            <label><input type="radio"/>Bald</label>
+                                            <label><input type="radio"/>Black</label>
+                                            <label><input type="radio"/>Blonde</label>
+                                            <label><input type="radio"/>Brown</label>
+                                            <label><input type="radio"/>Light brown</label>
+                                            <label><input type="radio"/>Red</label>
+                                            <label><input type="radio"/>White/gray</label>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="last">
+                                    <div class="profile__edit_item">
+                                        <div class="profile__edit_content">
+                                            <label><input type="checkbox"/>Bald</label>
+                                            <label><input type="checkbox"/>Black</label>
+                                            <label><input type="checkbox"/>Blonde</label>
+                                            <label><input type="checkbox"/>Brown</label>
+                                            <label><input type="checkbox"/>Light brown</label>
+                                            <label><input type="checkbox"/>Red</label>
+                                            <label><input type="checkbox"/>White/gray</label>
+                                            <label><input type="checkbox"/>Not important</label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <div class="profile__edit_controls">
+                            <a class="button small" href="#">Save</a><a class="button small white" href="#">Cancel</a>
+                        </div>
+
+                        <table class="el__info_table">
+                            <caption>Lifestyle <a class="profile__edit" href="#"><i class="icon edit"></i>Edit</a></caption>
+                            <tr>
+                                <th>Smoke:</th>
+                                <td>A few times a year</td>
+                                <td class="last">A few times a year</td>
+                            </tr>
+                            <tr>
+                                <th>Drink:</th>
+                                <td>Moderately</td>
+                                <td class="last">Moderately</td>
+                            </tr>
+                            <tr>
+                                <th>Occupation:</th>
+                                <td>Business Services - Other</td>
+                                <td class="last">No preference</td>
+                            </tr>
+                            <tr>
+                                <th>Income:</th>
+                                <td>I'll tell you later</td>
+                                <td class="last">No preference</td>
+                            </tr>
+                            <tr>
+                                <th>Relationship:</th>
+                                <td>Never married</td>
+                                <td class="last">Never married</td>
+                            </tr>
+                            <tr>
+                                <th>Have kids:</th>
+                                <td>No</td>
+                                <td class="last">No</td>
+                            </tr>
+                            <tr>
+                                <th>Want kids:</th>
+                                <td>Don't want yet</td>
+                                <td class="last">Don't want yet</td>
+                            </tr>
+                        </table>
+
+                        <table class="el__info_table">
+                            <caption>Background / Values <a class="profile__edit" href="#"><i class="icon edit"></i>Edit</a></caption>
+                            <tr>
+                                <th>Ethnicity:</th>
+                                <td>White / Caucasian</td>
+                                <td class="last">African-American / African descent,
+                                    Latino / Hispanic, White / Caucasian</td>
+                            </tr>
+                            <tr>
+                                <th>Faith:</th>
+                                <td>Other</td>
+                                <td class="last">Agnostic, Atheist, Neither religious nor
+                                    spiritual, Other, Spiritual, but not religious</td>
+                            </tr>
+                            <tr>
+                                <th>Languages:</th>
+                                <td>I'll tell you later</td>
+                                <td class="last">English</td>
+                            </tr>
+                            <tr>
+                                <th>Education:</th>
+                                <td>Bachelor's degree</td>
+                                <td class="last">Bachelor's degree, Master's degree,
+                                    Doctor of Philosophy</td>
+                            </tr>
+                        </table>
+
+                    </div><!-- /.profile__about -->
+
+                </div><!-- /#tabContent_1-->
+
+                <div class="_jTabContent" id="tabContent_2" style="display: none">
+
+                    <div class="el__box profile__view">
+
+                        <div class="profile__view_controls">
+                            <a class="profile__view_controls_item" href="#"><i class="icon rotate_left"></i>Rotate left</a>
+                            <a class="profile__view_controls_item" href="#"><i class="icon rotate_right"></i>Rotate right</a>
+                            <a class="profile__view_controls_item" href="#"><i class="icon crop"></i>Crop</a>
+
+                            <div class="right_part">
+                                <span class="profile__view_controls_item disabled" href="#"><i class="icon set_main_disabled"></i>Set as main</span>
+                                <a class="profile__view_controls_item" href="#"><i class="icon delete"></i>Delete</a>
+                            </div>
+                        </div>
+
+                        <div class="profile__view_image">
+                            <img src="../img/user/test/2.jpg" alt=""/>
+                        </div>
+                        <div class="profile__view_photo_likes _jPhotoLikes">
+                            <div class="profile__view_photo_likes_header type__header_2 type__header_underline type__header_lite">Like <small>5 people</small>
+
+                            </div>
+
+                            <div class="profile__view_photo_likes_list _jPhotoLikesList">
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="el__box profile__view">
+
+                        <div class="profile__view_controls">
+                            <a class="profile__view_controls_item" href="#"><i class="icon rotate_left"></i>Rotate left</a>
+                            <a class="profile__view_controls_item" href="#"><i class="icon rotate_right"></i>Rotate right</a>
+                            <a class="profile__view_controls_item" href="#"><i class="icon crop"></i>Crop</a>
+
+                            <div class="right_part">
+                                <a class="profile__view_controls_item" href="#"><i class="icon set_main"></i>Set as main</a>
+                                <a class="profile__view_controls_item" href="#"><i class="icon delete"></i>Delete</a>
+                            </div>
+                        </div>
+
+                        <div class="profile__view_image">
+                            <img src="../img/user/test/3.jpg" alt=""/>
+                        </div>
+                        <div class="profile__view_photo_likes _jPhotoLikes">
+                            <div class="profile__view_photo_likes_header type__header_2 type__header_underline type__header_lite">Like <small>5 people</small>
+                                <a class="_jPhotoLikesViewAll view_all" href="#">View all</a>
+                            </div>
+
+                            <div class="profile__view_photo_likes_list _jPhotoLikesList">
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="el__box profile__view">
+
+                        <div class="profile__view_controls">
+                            <a class="profile__view_controls_item" href="#"><i class="icon rotate_left"></i>Rotate left</a>
+                            <a class="profile__view_controls_item" href="#"><i class="icon rotate_right"></i>Rotate right</a>
+                            <a class="profile__view_controls_item" href="#"><i class="icon crop"></i>Crop</a>
+
+                            <div class="right_part">
+                                <a class="profile__view_controls_item" href="#"><i class="icon set_main"></i>Set as main</a>
+                                <a class="profile__view_controls_item" href="#"><i class="icon delete"></i>Delete</a>
+                            </div>
+                        </div>
+
+                        <div class="profile__view_image">
+                            <img src="../img/user/test/4.jpg" alt=""/>
+                        </div>
+                        <div class="profile__view_photo_likes _jPhotoLikes">
+                            <div class="profile__view_photo_likes_header type__header_2 type__header_underline type__header_lite">Like <small>5 people</small>
+                                <a class="_jPhotoLikesViewAll view_all" href="#">View all</a>
+                            </div>
+
+                            <div class="profile__view_photo_likes_list _jPhotoLikesList">
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="el__box profile__view">
+
+                        <div class="profile__view_controls">
+                            <a class="profile__view_controls_item" href="#"><i class="icon rotate_left"></i>Rotate left</a>
+                            <a class="profile__view_controls_item" href="#"><i class="icon rotate_right"></i>Rotate right</a>
+                            <a class="profile__view_controls_item" href="#"><i class="icon crop"></i>Crop</a>
+
+                            <div class="right_part">
+                                <a class="profile__view_controls_item" href="#"><i class="icon set_main"></i>Set as main</a>
+                                <a class="profile__view_controls_item" href="#"><i class="icon delete"></i>Delete</a>
+                            </div>
+                        </div>
+
+                        <div class="profile__view_image">
+                            <img src="../img/user/test/5.jpg" alt=""/>
+                        </div>
+                        <div class="profile__view_photo_likes _jPhotoLikes">
+                            <div class="profile__view_photo_likes_header type__header_2 type__header_underline type__header_lite">Like <small>5 people</small>
+                                <a class="_jPhotoLikesViewAll view_all" href="#">View all</a>
+                            </div>
+
+                            <div class="profile__view_photo_likes_list _jPhotoLikesList">
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="el__box profile__view">
+
+                        <div class="profile__view_controls">
+                            <a class="profile__view_controls_item" href="#"><i class="icon rotate_left"></i>Rotate left</a>
+                            <a class="profile__view_controls_item" href="#"><i class="icon rotate_right"></i>Rotate right</a>
+                            <a class="profile__view_controls_item" href="#"><i class="icon crop"></i>Crop</a>
+
+                            <div class="right_part">
+                                <a class="profile__view_controls_item" href="#"><i class="icon set_main"></i>Set as main</a>
+                                <a class="profile__view_controls_item" href="#"><i class="icon delete"></i>Delete</a>
+                            </div>
+                        </div>
+
+                        <div class="profile__view_image">
+                            <img src="../img/user/test/6.jpg" alt=""/>
+                        </div>
+                        <div class="profile__view_photo_likes _jPhotoLikes">
+                            <div class="profile__view_photo_likes_header type__header_2 type__header_underline type__header_lite">Like <small>5 people</small>
+                                <a class="_jPhotoLikesViewAll view_all" href="#">View all</a>
+                            </div>
+
+                            <div class="profile__view_photo_likes_list _jPhotoLikesList">
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="el__box profile__view">
+
+                        <div class="profile__view_controls">
+                            <a class="profile__view_controls_item" href="#"><i class="icon rotate_left"></i>Rotate left</a>
+                            <a class="profile__view_controls_item" href="#"><i class="icon rotate_right"></i>Rotate right</a>
+                            <a class="profile__view_controls_item" href="#"><i class="icon crop"></i>Crop</a>
+
+                            <div class="right_part">
+                                <a class="profile__view_controls_item" href="#"><i class="icon set_main"></i>Set as main</a>
+                                <a class="profile__view_controls_item" href="#"><i class="icon delete"></i>Delete</a>
+                            </div>
+                        </div>
+
+                        <div class="profile__view_image">
+                            <img src="../img/user/test/7.png" alt=""/>
+                        </div>
+                        <div class="profile__view_photo_likes _jPhotoLikes">
+                            <div class="profile__view_photo_likes_header type__header_2 type__header_underline type__header_lite">Like <small>5 people</small>
+                                <a class="_jPhotoLikesViewAll view_all" href="#">View all</a>
+                            </div>
+
+                            <div class="profile__view_photo_likes_list _jPhotoLikesList">
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="el__box profile__view">
+
+                        <div class="profile__view_controls">
+                            <a class="profile__view_controls_item" href="#"><i class="icon rotate_left"></i>Rotate left</a>
+                            <a class="profile__view_controls_item" href="#"><i class="icon rotate_right"></i>Rotate right</a>
+                            <a class="profile__view_controls_item" href="#"><i class="icon crop"></i>Crop</a>
+
+                            <div class="right_part">
+                                <a class="profile__view_controls_item" href="#"><i class="icon set_main"></i>Set as main</a>
+                                <a class="profile__view_controls_item" href="#"><i class="icon delete"></i>Delete</a>
+                            </div>
+                        </div>
+
+                        <div class="profile__view_image">
+                            <img src="../img/user/test/8.jpg" alt=""/>
+                        </div>
+                        <div class="profile__view_photo_likes _jPhotoLikes">
+                            <div class="profile__view_photo_likes_header type__header_2 type__header_underline type__header_lite">Like <small>5 people</small>
+                                <a class="_jPhotoLikesViewAll view_all" href="#">View all</a>
+                            </div>
+
+                            <div class="profile__view_photo_likes_list _jPhotoLikesList">
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="el__box profile__view">
+
+                        <div class="profile__view_controls">
+                            <a class="profile__view_controls_item" href="#"><i class="icon rotate_left"></i>Rotate left</a>
+                            <a class="profile__view_controls_item" href="#"><i class="icon rotate_right"></i>Rotate right</a>
+                            <a class="profile__view_controls_item" href="#"><i class="icon crop"></i>Crop</a>
+
+                            <div class="right_part">
+                                <a class="profile__view_controls_item" href="#"><i class="icon set_main"></i>Set as main</a>
+                                <a class="profile__view_controls_item" href="#"><i class="icon delete"></i>Delete</a>
+                            </div>
+                        </div>
+
+                        <div class="profile__view_image">
+                            <img src="../img/user/test/9.jpg" alt=""/>
+                        </div>
+                        <div class="profile__view_photo_likes _jPhotoLikes">
+                            <div class="profile__view_photo_likes_header type__header_2 type__header_underline type__header_lite">Like <small>5 people</small>
+                                <a class="_jPhotoLikesViewAll view_all" href="#">View all</a>
+                            </div>
+
+                            <div class="profile__view_photo_likes_list _jPhotoLikesList">
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="el__box profile__view">
+
+                        <div class="profile__view_controls">
+                            <a class="profile__view_controls_item" href="#"><i class="icon rotate_left"></i>Rotate left</a>
+                            <a class="profile__view_controls_item" href="#"><i class="icon rotate_right"></i>Rotate right</a>
+                            <a class="profile__view_controls_item" href="#"><i class="icon crop"></i>Crop</a>
+
+                            <div class="right_part">
+                                <a class="profile__view_controls_item" href="#"><i class="icon set_main"></i>Set as main</a>
+                                <a class="profile__view_controls_item" href="#"><i class="icon delete"></i>Delete</a>
+                            </div>
+                        </div>
+
+                        <div class="profile__view_image">
+                            <img src="../img/user/test/10.png" alt=""/>
+                        </div>
+                        <div class="profile__view_photo_likes _jPhotoLikes">
+                            <div class="profile__view_photo_likes_header type__header_2 type__header_underline type__header_lite">Like <small>5 people</small>
+                                <a class="_jPhotoLikesViewAll view_all" href="#">View all</a>
+                            </div>
+
+                            <div class="profile__view_photo_likes_list _jPhotoLikesList">
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                                <img class="avatar" src="../img/user/user_60.png" alt=""/>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="profile__view_button">
+                        <a href="#" class="el__button_control">
+                            Load 10 more photos...
+                        </a>
+                    </div>
+                </div><!-- /#tabContent_2-->
+
+                <div class="_jTabContent" id="tabContent_3" style="display: none">
+                    <div class="el__box profile__qa_tab">
+                        <span class="profile__qa_title type__header_2">
+                            We will be introducing this new service to the site soon.
+                        </span>
+                        <div class="profile__qa_logo">
+                            <img src="../img/qa_logo.png" alt=""/>
+                        </div>
+
+                        <h2 class="type__header_underline type__header_lite">In Her Own Words</h2>
+                        <ul class="profile__qa_list">
+                            <li><span class="bullet">&#9679;</span>Find your mathces with similar life values and interests. </li>
+                            <li><span class="bullet">&#9679;</span>Test your compatibility with the person you liked.</li>
+                            <li><span class="bullet">&#9679;</span>Get to know people by asking them questions.</li>
+                        </ul>
+
+                        <div class="profile__qa_message">
+                            You'll be the first to know about Q&A launch.
+                            <span class="author">Meetville Team</span>
+                        </div>
+                    </div><!-- /.profile__tab_qa-->
+
+                </div><!-- /#tabContent_3-->
+
+            </div><!-- /.grid__col_main -->
+        </div>
+    </div>
+</div><!-- /.content -->
+
+<div class="footer" id="pageFooter">
+    <div class="footer__social">
+        <div class="grid__container">
+            <div class="grid__row footer__social_list">
+                <div class="footer__social_item">
+                    <!-- Social code must be here -->
+                    <img src="../img/temp/social_fb_like.png" alt=""/>
+                    <!-- ------------------------ -->
+                </div>
+                <div class="footer__social_item">
+                    <!-- Social code must be here -->
+                    <img src="../img/temp/social_g+.png" alt=""/>
+                    <!-- ------------------------ -->
+                </div>
+                <div class="footer__social_item">
+                    <!-- Social code must be here -->
+                    <img src="../img/temp/social_tw.png" alt=""/>
+                    <!-- ------------------------ -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__content">
+        <div class="grid__container">
+            <div class="grid__row">
+
+                <ul class="grid__span_2">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Meetville</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+
+                <ul class="grid__span_2">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Safety Tips</a></li>
+                    <li><a href="#">Scam Warning</a></li>
+                </ul>
+
+                <ul class="grid__span_2">
+                    <li><a href="#">Meetville VIP</a></li>
+                    <li><a href="#">Meetville iPhone</a></li>
+                    <li><a href="#">Invite Friends</a></li>
+                </ul>
+
+                <ul class="grid__span_2">
+                    <li><a href="#">Our News</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+
+                <div class="footer__copy">&copy; 2010-2013 Meetville. All rights reserved.</div>
+
+            </div>
+        </div>
+    </div>
+</div><!-- /#pageFooter -->
+
+
+<script src="../js/jquery.js"></script>
+<script src="../js/select/select2.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/profile.js"></script>
+<script src="../js/jquery.textCounter.js"></script>
+<!--[if  IE]>
+<script src="../js/jquery.columnizer.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    $(function(){
+        $('._jInterestColumns').columnize({
+            columns : 3,
+            accuracy : 1,
+            buildOnce : true
+        })
+    });
+</script>
+<![endif]-->
+</body>
+</html>

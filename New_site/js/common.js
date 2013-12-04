@@ -10,4 +10,8 @@ $(function(){
     if ($(window).height() >= $(document).height()){
         $('#pageFooter').css({position: 'absolute', bottom: 0})
     }
+
+    // Selects custom
+    $("select").select2({minimumResultsForSearch: -1});
+    $("select.search").select2({minimumResultsForSearch: 3});
 });

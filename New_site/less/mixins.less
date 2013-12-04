@@ -58,12 +58,11 @@
 }
 
 .triangle(@height, @color){
-  display: block;
   .size(0);
+  display: block;
   border: @height solid transparent;
-  border-top: none;
   border-bottom-color: @color;
-  position: absolute;
+    position: absolute;
+  border-top: none;
   top: -(@height);
-
 }

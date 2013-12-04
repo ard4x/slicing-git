@@ -1,3 +1,5 @@
+@import "variables";
+
 // Default style for inputs
 
 .input(){
@@ -5,7 +7,7 @@
   .gradientSimple(#f7f7f7, #fff);
   border: 1px solid #ccc;
   border-radius: 3px;
-  height: 40px;
+  height: 30px;
   width: 100%;
   padding: 11px 15px;
   &::-webkit-input-placeholder {font-style: italic; color: #999;}
@@ -30,4 +32,98 @@ input[type=search] {
     top: 10px;
     left: -10px;
   }
+  input {height: 40px;}
+}
+.form__search_field {
+  position: relative;
+
+  input {padding-right: 25px;}
+
+  &::before {
+    content: '';
+    display: block;
+    width: 13px;
+    height: 13px;
+    background: 0 -113px url(@iconsPath) no-repeat;
+    position: absolute;
+    top: 9px;
+    right: 11px;
+  }
+}
+
+// Input with dropdown tips
+.form__input_drop {
+  position: relative;
+  
+  .form__input_drop_list {
+    display: none;
+    padding: 3px 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fff;
+    
+    li {
+      font-weight: bold;
+      cursor: pointer;
+      padding: 2px 10px;
+
+      &:hover {background: #ddd;}
+      
+      .addition {
+        font-weight: normal;
+      }
+      .category {
+        font-weight: normal;
+        font-style: italic;
+        color: #999;
+        margin-left: 3px;
+      }
+    }
+    .no_result {
+      font-weight: normal;
+      font-style: italic;
+      color: #999;
+    }
+  }
+
+  &.active {
+    input {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .form__input_drop_list {
+      display: block;
+    }
+  }
+}
+
+textarea {
+  .input();
+  height: 120px;
+  resize: vertical;
+  padding: 7px 10px;
+  font-size: @basicFontSize;
+  font-family: @basicFontFamily;
+  color: @basicFontColor;
+
+  &.error,
+  .error & {border: 1px solid #fc3e39;}
+}
+.form__textarea_counter {
+  font-size: 12px;
+  color: #999;
+
+  .counter_items {
+    color: #565656;
+
+    .counter_current {
+      font-weight: bold;
+      color: #fc3e39;
+
+      &.ok {color: #27a23b;}
+    }
+    .counter_limit {}
+  }
+
 }

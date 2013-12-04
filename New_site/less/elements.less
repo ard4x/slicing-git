@@ -1,3 +1,5 @@
+@import "elements/select";
+
 // Independent elements on page
 
 // Like buttons
@@ -46,7 +48,6 @@
 
   &:hover {.gradientSimple(#fff, #fff);}
   &:active {.gradientSimple(#eee, #fff);}
-
 }
 
 // User online status pointer
@@ -243,6 +244,30 @@
   .interests-icon {
     margin-right: 12px;
   }
+
+  &.simple {
+    padding: 0 9px;
+    height: 26px;
+    font-size: 12px;
+    color: @linkColor;
+    text-decoration: none;
+    display: inline-block;
+    width: auto;
+    line-height: 24px;
+
+    .close {
+      display: inline-block;
+      .size(10px);
+      background: -25px -113px url(@iconsPath) no-repeat;
+      margin-left: 10px;
+      position: relative;
+      top: 1px;
+
+      &:hover {
+        background-position: -14px -113px;
+      }
+    }
+  }
 }
 
 .el__ask {
@@ -358,6 +383,112 @@
   p {padding-right: 30px;}
 }
 
+.el__interest_box {
+  .el__interest_box_tabs {
+    width: 130px;
+    float: left;
+    font-size: 12px;
+    clear: both;
+
+    .tab_item {
+      .boxSizing(border-box);
+      display: block;
+      margin-bottom: 1px;
+      width: inherit;
+      height: 35px;
+      padding-left: 15px;
+      background-color: #eee;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+      line-height: 35px;
+      cursor: pointer;
+      color: @linkColor;
+      border-right: 1px solid #ccc;
+
+      &:hover {text-decoration: underline;}
+
+      &.active {
+        border: 1px solid #ccc;
+        border-right: 0;
+        background-color: #fff;
+        color: @basicFontColor;
+        font-weight: bold;
+        line-height: 33px;
+        &:hover {text-decoration: none;}
+      }
+    }
+  }
+
+
+  // Interest select box
+  .el__interest_box_content {
+    margin-left: 129px;
+    .boxSizing(border-box);
+    padding: 25px 30px 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    border-top-left-radius: 0;
+
+    .content_wrapper {
+      height: 390px;
+      overflow: hidden;
+    }
+    .content_frame {
+      height: inherit;
+      -moz-columns: 3 130px;
+      -webkit-columns: 3 130px;
+      columns: 3 130px;
+      -moz-column-gap: 20px;
+      -webkit-column-gap: 20px;
+      column-gap: 20px;
+
+      .title {
+        font-weight: bold;
+        display: inline-block;
+        margin-bottom: 6px;
+      }
+
+      .selected {color: #999;}
+
+      .content_group {
+        display: block;
+        margin-bottom: 6px;
+      }
+    }
+
+  }
+
+  .content_controls {
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+
+    .el__button_control {
+      width: 65px;
+      margin-right: 10px;
+    }
+  }
+
+}// Interest select box
+
+// Counter in Menu
+.el__menu_counter {
+  display: inline-block;
+  padding: 0 10px;
+  line-height: 20px;
+  vertical-align: middle;
+  color: #787878;
+
+  &.new {
+    background-color: #fc3e39;
+    height: 20px;
+    .boxSizing(border-box);
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #fff;
+  }
+}
 
 // Responsive
 @media (min-width: 1200px) {
@@ -378,4 +509,17 @@
     }
 
   }
+  .el__interest_box {
+    .el__interest_box_content {
+      .content_frame {
+        -moz-columns: 5 120px;
+        -webkit-columns: 5 120px;
+        columns: 5 120px;
+        -moz-column-gap: 20px;
+        -webkit-column-gap: 20px;
+        column-gap: 20px;
+      }
+    }
+  }
+
 }
