@@ -254,6 +254,7 @@
     display: inline-block;
     width: auto;
     line-height: 24px;
+    cursor: pointer;
 
     .close {
       display: inline-block;
@@ -263,9 +264,10 @@
       position: relative;
       top: 1px;
 
-      &:hover {
-        background-position: -14px -113px;
-      }
+    }
+
+    &:hover .close{
+      background-position: -14px -113px;
     }
   }
 }
