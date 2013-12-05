@@ -51,6 +51,20 @@
 </fieldset>
 
 <fieldset>
+    <legend>Navigation Control</legend>
+
+    <a href="#" class="el__nav">
+        Favorites (198)
+    </a>
+<br>
+    <a href="#" class="el__nav current">
+        Online
+    </a>
+
+
+</fieldset>
+
+<fieldset>
     <legend>Slider elements</legend>
 
     <a class="button white el__slider_control_left" href="#"><i class="icon arrow_left"></i></a>
@@ -355,20 +369,6 @@
     </span>
 </fieldset>
 
-<fieldset>
-    <legend>Users empty</legend>
-
-    <img src="../img/user/user_empty_m_220.png" alt=""/>
-    <img src="../img/user/user_empty_m_120.png" alt=""/>
-    <img src="../img/user/user_empty_m_60.png" alt=""/>
-    <img src="../img/user/user_empty_m.png" alt=""/>
-    <img src="../img/user/user_empty_f_220.png" alt=""/>
-    <img src="../img/user/user_empty_f_120.png" alt=""/>
-    <img src="../img/user/user_empty_f_60.png" alt=""/>
-    <img src="../img/user/user_empty_f.png" alt=""/>
-
-</fieldset>
-
 <fieldset style="background-color: #fff;">
     <legend>Interest box</legend>
 
@@ -528,6 +528,54 @@
 
     </div><!-- /.el__ask -->
 </fieldset>
+
+<fieldset>
+    <legend>Radius</legend>
+Used Jquery UI
+<br>
+    <div style="width: 220px;">
+
+        <div class="el__radius_holder">
+            <div class="el__radius_wrapper">
+                <div id="slider" class="el__radius"></div>
+                <div class="el__radius_point first"><span class="title">10 mi.</span></div>
+                <div class="el__radius_point"><span class="title">20 mi.</span></div>
+                <div class="el__radius_point"><span class="title">30 mi.</span></div>
+                <div class="el__radius_point"><span class="title">60 mi.</span></div>
+            </div>
+        </div>
+
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+</fieldset>
+
+<!-- Scripts for Radius element -->
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery.ui.js"></script>
+
+<script type="text/javascript">
+   $(function(){
+       $("#slider").slider({
+           range: "min",
+           min: 1,
+           max: 4,
+           value: 2,
+           slide: function( event, ui ) {
+               $slider = $("#slider");
+                if (ui.value == $slider.slider( "option", "max" ) ){
+                   $slider.addClass('max');
+                }else{
+                    $slider.removeClass('max');
+                }
+           }
+       });
+   });
+
+</script>
 
 </body>
 </html>

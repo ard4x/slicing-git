@@ -77,15 +77,34 @@
         </div>
     </div>
 
+    <div class="form__item">
+        <div class="form__item_label">Age:</div>
+        <div class="form__item_content double">
+            <div class="form__item__short first">
+                <select>
+                    <option value="AK">1</option>
+                    <option value="HI">2</option>
+                </select>
+            </div>
+
+            <div class="form__item__short">
+                <select>
+                    <option value="AK">1</option>
+                    <option value="HI">2</option>
+                </select>
+            </div>
+        </div>
+    </div><!-- /.form__item -->
+
 </fieldset>
 
 <fieldset>
     <legend>Form group</legend>
 
-    <div style="width: 220px;">
+    <div style="width: 220px; float: left; margin-right: 30px;">
         <div class="form__group">
-            <div class="form__group_title">
-                Body type
+            <div class="form__group_title _jFormGroup">
+                Body type <i class="icon"></i>
             </div>
             <div class="form__group_list">
                 <label class="form__group_item">
@@ -95,10 +114,67 @@
                     <input type="checkbox" class="form__group_item_input"><span class="form__group_item_description">Not specified <span class="count">(43)</span></span>
                 </label>
                 <label class="form__group_item">
-                    <input type="checkbox" class="form__group_item_input"><span class="form__group_item_description">Long description for some field<span class="count">(43)</span></span>
+                    <input type="checkbox" class="form__group_item_input"><span class="form__group_item_description">Long description for some field<span class="count"> (43)</span></span>
                 </label>
             </div>
         </div>
+    </div>
+
+    <div style="width: 220px; float: left; margin-right: 30px;">
+        <div class="form__group closed">
+            <div class="form__group_title _jFormGroup">
+                Body type <i class="icon"></i>
+            </div>
+            <div class="form__group_list">
+                <label class="form__group_item">
+                    <input type="checkbox" class="form__group_item_input"><span class="form__group_item_description">Not specified <span class="count">(43)</span></span>
+                </label>
+                <label class="form__group_item">
+                    <input type="checkbox" class="form__group_item_input"><span class="form__group_item_description">Not specified <span class="count">(43)</span></span>
+                </label>
+                <label class="form__group_item">
+                    <input type="checkbox" class="form__group_item_input"><span class="form__group_item_description">Long description for some field<span class="count"> (43)</span></span>
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 220px; float: left; margin-right: 30px;">
+        <div class="form__group closed">
+            <div class="form__group_title _jFormGroup">
+                Double <i class="icon"></i>
+            </div>
+            <div class="form__group_list">
+                <div class="form__group_item double">
+                    <div class="short">
+                        <div class="form__item">
+                            <div class="form__item_label">From:</div>
+                            <div class="form__item_content">
+                                <select>
+                                    <option value="AK">4' 2"</option>
+                                    <option value="HI">4' 3"</option>
+                                </select>
+                            </div>
+                        </div><!-- /.form__item -->
+                    </div>
+                    <div class="short">
+                        <div class="form__item">
+                            <div class="form__item_label">To:</div>
+                            <div class="form__item_content">
+                                <select>
+                                    <option value="AK">4' 2"</option>
+                                    <option value="HI">4' 3"</option>
+                                </select>
+                            </div>
+                        </div><!-- /.form__item -->
+
+                    </div>
+                </div>
+                <div class="form__group_item">
+                    <span class="form__switch">Centimeters</span>
+                </div>
+            </div>
+        </div><!-- /.form__group -->
     </div>
 </fieldset>
 
@@ -371,6 +447,7 @@
 <script>
     $(document).ready(function() {
         $('._jTextCounter').textCounter();
+
     });
 </script>
 </body>

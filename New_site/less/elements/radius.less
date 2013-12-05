@@ -1,0 +1,107 @@
+@import "../mixins";
+
+.el__radius {
+
+  &.ui-slider-horizontal {
+    z-index: 1;
+    height: 4px;
+    position: relative;
+    text-align: left;
+    .boxSizing(border-box);
+    border: none;
+    background-color: #ccc;
+
+    .ui-slider-range {
+      background-color: #436187;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: inherit;
+    }
+
+    .ui-slider-handle {
+      @pointerSize: 16px;
+      .size(@pointerSize);
+      .boxSizing(border-box);
+      .gradientSimple(#f5f5f5, #dedede);
+      display: block;
+      position: absolute;
+      border: 1px solid #ccc;
+      box-shadow:  inset 0px 1px 0px 0px rgba(255, 255, 255, 40%);
+      margin-left: -(@pointerSize /2);
+      border-radius: @pointerSize / 2;
+      top: -((@pointerSize /2) - 2);
+      outline: none;
+      z-index: 1;
+    }
+  }
+
+  &:before, &:after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 4px;
+    position: absolute;
+    top: 0;
+  }
+
+  &:before {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-color: #436187;
+    left: -15px;
+  }
+
+  &:after {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: #ccc;
+    right: -15px;
+  }
+
+  &.max:after {
+    background-color: #436187;
+  }
+
+  .el__radius_point {
+    display: block;
+    height: 14px;
+    width: 1px;
+    background-color: #ccc;
+    position: absolute;
+    top: -5px;
+
+  }
+}
+
+.el__radius_holder {}
+
+.el__radius_wrapper {
+  width: 186px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.el__radius_point {
+  display: block;
+  height: 14px;
+  width: 1px;
+  background-color: #ccc;
+  position: relative;
+  top: -9px;
+  margin-left: 32.6%;
+  float: left;
+
+  &.first {margin-left: 0;}
+
+  .title {
+    display: block;
+    font-size: 11px;
+    color: #999;
+    position: absolute;
+    width: 40px;
+    top: 19px;
+    margin-left: -20px;
+    text-align: center;
+  }
+}

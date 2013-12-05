@@ -1,8 +1,8 @@
 // Simple user-list
 .user__list {
   margin-left: -20px;
-  overflow: hidden;
   margin-bottom: -20px;
+  .clearAfter();
 
   .user__list_item {
     margin-left: 20px;
@@ -42,4 +42,118 @@
       color: #212121;
     }
   }
+  .user__action {
+    display: block;
+  }
+}
+
+// User card
+.user__card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 9px;
+  width: 340px;
+  position: relative;
+  overflow: visible;
+  .boxSizing(border-box);
+
+  .user__list_avatar {
+    .size(120px);
+    margin-right: 20px;
+  }
+
+  .user__name {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 4px;
+  }
+
+  .user__description {
+    font-size: 13px;
+    margin-bottom: 17px;
+  }
+
+  .el__status {margin-bottom: 14px;}
+
+  .user__action {
+    font-size: 13px;
+    .icon {
+      vertical-align: top;
+      margin-top: 1px;
+      margin-right: 8px;
+    }
+  }
+
+  .user__card_close {
+    display: block;
+    .size(21px);
+    .boxSizing(border-box);
+    background-color: #cccccc;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    .icon {
+      width: 11px;
+      height: 11px;
+      background-position: -48px -113px;
+      display: block;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+    }
+
+    &:hover {
+      background-color: #436187;
+      .icon {
+        background-position: -36px -113px;
+      }
+    }
+
+  }
+
+  .user__card_button {
+    display: none;
+    .size(30px);
+    background-color: #8c8c8c;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 4px;
+    position: absolute;
+    bottom: 14px;
+    .boxSizing(border-box);
+    padding: 3px;
+
+    &.left {
+      left: 14px;
+    }
+
+    &.right {
+      left: 94px;
+    }
+  }
+
+  &:hover {
+    .user__card_button {
+      display: block;
+    }
+  }
+
+  &.hidden {
+    opacity: 0.25;
+
+    &:hover {
+      .user__card_button {
+        display: none;
+      }
+    }
+    .user__card_close {display: none}
+  }
+}
+
+// Responsive
+@media (min-width: 1200px) {
+  .user__card {width: 300px;}
 }
